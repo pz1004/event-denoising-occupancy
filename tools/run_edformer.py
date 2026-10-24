@@ -1,7 +1,7 @@
 """Score an event stream with the released EDformer checkpoint.
 
 Runs under the pinned `.venv-edformer-cu118` interpreter, because `sparseconvnet` and
-`pytorch3d` are only installed there (see `reproduction/REBUILD_EDFORMER_ENV.md`). It is
+`pytorch3d` are installed in that environment (see `environments/README.md`). It is
 invoked as a subprocess so the calling phase can stay on the project's own interpreter.
 
 The protocol is copied from the released `EDformer/eval_auc.py`, not reinvented:

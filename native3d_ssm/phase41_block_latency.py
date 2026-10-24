@@ -1,24 +1,16 @@
-"""Phase 41: how long a 10,240-event block actually lasts, in wall-clock time.
+"""Phase 41: timestamp spans of fixed-count event blocks.
 
-Reviewer question this answers
-------------------------------
-The block-local bidirectional pass is disclosed and priced in AUC and MESR, but the
-manuscript never says what the lookahead *costs in time*. Because a block holds a fixed
-number of *events* rather than a fixed *duration*, its temporal span is a function of
-scene activity and illumination: the same 10,240 events span milliseconds in a bright
-busy scene and a substantial fraction of a second in a dark quiet one. A reader deciding
-whether this filter can sit immediately after a sensor needs that distribution, not the
-event count.
+A fixed count of 10,240 events covers a variable duration as scene activity and
+illumination change. This measurement quantifies the lookahead associated with
+block-local bidirectional scoring.
 
-What this phase measures
-------------------------
-For every dataset and every condition, the span ``t[last] - t[first]`` of each complete
-``N``-event block, reported as median / p90 / p95 / max in milliseconds, together with the
-implied event rate. Blocks are cut exactly as the filter cuts them, so these are the
-spans the adopted configuration actually waits for.
+For every dataset and condition, report the span ``t[last] - t[first]`` of each
+complete ``N``-event block as median, p90, p95 and maximum in milliseconds, together
+with the implied event rate. Blocks follow the filter's partitioning, so their
+spans describe the corresponding buffering requirement.
 
-This is a pure measurement over the event timestamps. No score is computed, nothing is
-fitted, and the numbers do not depend on any constant of the method other than ``N``.
+Only event timestamps are measured. No score is computed or parameter fitted;
+the results depend on the block size ``N``.
 """
 
 from __future__ import annotations

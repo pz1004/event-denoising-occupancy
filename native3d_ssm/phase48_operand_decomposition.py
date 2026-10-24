@@ -1,54 +1,36 @@
-"""Phase 48: is the support advantage occupancy, or is it the fusion convention?
+"""Phase 48: operand and directional-fusion controls.
 
-THE CONFOUND. The manuscript substitutes one local operand for another and attributes
-the gain to counting occupancy instead of accumulating amplitude. But the two operands
-of Section 3 differ in more than that. Written out:
+Support and magnitude differ in operand type and in where directional fusion
+occurs relative to the nonlinear transform:
 
-    support    S = sum_ring 1[ a_fwd + a_rev > 0 ]          fuse taps, THEN count
-    magnitude  R = sum_d log(1 + sum_ring a^d)              transform, THEN sum passes
+    support    S = sum_ring 1[a_fwd+a_rev>0]
+    magnitude  R = sum_d log(1+sum_ring a^d)
 
-Three differences ride together: (a) count versus summed amplitude, (b) the passes are
-fused before the nonlinearity for support and after it for magnitude, and (c) support
-carries no temporal decay while magnitude does. A reviewer is entitled to ask which one
-the 0.95-point pooled gain belongs to.
-
-(c) IS ALREADY SETTLED and needs no arm here. Phase 47 showed S is *exactly* whole-block
-occupancy: the extractor clamps age at 20*tau, flooring the decay at exp(-20) > 0, so no
-tap ever decays away and S carries no age information at all. There is no temporal-window
-difference left to ablate -- the difference is total, and it is part of (a).
-
-That leaves a clean 2x2 on the fusion point and the operand type:
+The clamped positive decay makes S exactly whole-block occupancy, without event-age
+information. This experiment decomposes the 0.95-point pooled contrast through a
+2-by-2 comparison of operand type and fusion convention:
 
                      fuse-then-transform          transform-then-sum
-    count            support        (adopted)     support_split
-    amplitude        magnitude_fused              magnitude      (adopted)
+    count            support                     support_split
+    amplitude        magnitude_fused             magnitude
 
-    support         S       = sum_ring 1[a_fwd + a_rev > 0]           in [0, 24]
-    support_split   S_split = sum_ring 1[a_fwd>0] + sum_ring 1[a_rev>0]  in [0, 48]
-    magnitude_fused Rf      = log(1 + sum_ring(a_fwd + a_rev))
-    magnitude       R       = log(1 + sum_ring a_fwd) + log(1 + sum_ring a_rev)
+    support         S = sum_ring 1[a_fwd+a_rev>0]                  in [0,24]
+    support_split   S_split = sum_ring 1[a_fwd>0]+sum_ring 1[a_rev>0] in [0,48]
+    magnitude_fused Rf = log(1+sum_ring(a_fwd+a_rev))
+    magnitude       R = log(1+sum_ring a_fwd)+log(1+sum_ring a_rev)
 
-The two contrasts that decompose the headline:
+Report support-minus-magnitude_fused for operand type at matched fusion,
+magnitude_fused-minus-magnitude for amplitude fusion, and
+support_split-minus-support for count fusion. These controls do not isolate
+occupancy from exact integer multiplicity at a matched horizon.
 
-    support - magnitude_fused   count vs amplitude AT MATCHED FUSION   <- the real claim
-    magnitude_fused - magnitude the fusion convention ALONE
-    support_split - support     the fusion convention on the count side
+Every arm shares blocks, the radius-1 magnitude gate key with beta=1 iff corr(G,K)<0,
+and score shape ``s=beta*G-operand``. The support arm must reproduce Phase 14's
+``log_support|float``. Nothing is trained.
 
-If `support - magnitude_fused` keeps the sign and most of the size of
-`support - magnitude`, the operand claim survives. If instead the gain migrates into
-`magnitude_fused - magnitude`, the paper has been crediting occupancy for a fusion
-convention and the central claim has to be rewritten.
-
-Every arm uses the same gate (radius-1 magnitude key, beta = 1 iff corr(G,K) < 0), the
-same blocks, and the same score shape s = beta*G - operand, so the arms are exactly
-paired and differ in the operand alone.
-
-The `support` arm must reproduce Phase 14's `log_support|float`, which certifies the
-harness measures the paper's headline. Read-only; nothing is trained.
-
-Unit of analysis: 20 labelled development conditions, paired within condition. Those 20
-nest in 2 datasets, so a 20-condition interval understates between-condition correlation;
-the two dataset means are reported alongside it, never in place of it.
+The 20 labelled development conditions are paired within condition and nested in
+two datasets. Dataset means accompany condition-level intervals because the latter
+do not capture all within-dataset correlation.
 """
 
 from __future__ import annotations

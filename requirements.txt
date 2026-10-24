@@ -13,6 +13,6 @@ pandas>=2.0
 # Optional: reading E-MLB .aedat4 recordings (Track B only)
 # dv-processing==1.7.9   # pin required by the EDformer baseline; see DATA.md
 
-# Historical package exports import torch even though RSF
+# Package exports import torch even though RSF
 # has no learned weights. Select a CPU/CUDA wheel for the host before this file.
 torch>=2.2

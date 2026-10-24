@@ -100,7 +100,7 @@ def cluster_bootstrap(clusters: List[Tuple[str, List[float]]], replicates: int,
 
 
 def naive_bootstrap(values: np.ndarray, replicates: int, rng: np.random.Generator) -> Dict:
-    """The condition-level interval the manuscript currently prints. Kept for contrast."""
+    """Condition-level bootstrap interval for comparison with scene-clustered estimates."""
 
     draws = rng.integers(0, len(values), size=(replicates, len(values)))
     means = values[draws].mean(axis=1)

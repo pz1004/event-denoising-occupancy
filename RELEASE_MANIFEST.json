@@ -5,32 +5,20 @@
       "sha256": "a356ce01ae5c54a1f2536fb7401c534e47b2c2fc1e3d56ff57844a984f749dcf"
     },
     "DATA.md": {
-      "bytes": 14623,
-      "sha256": "b83bb46d56e5e5b73d53696491a42afe2c63c2d875093331b529e590033d7d27"
+      "bytes": 14185,
+      "sha256": "e7fd348ef22738e08a13abf18a30e791ac1a04811165342c787478dea062bf59"
     },
     "LICENSE": {
       "bytes": 1912,
       "sha256": "0482e4113bc558d1be8416f1e15891c111655bac5161194fe95842560a1823bf"
     },
-    "PROVENANCE.md": {
-      "bytes": 3794,
-      "sha256": "e5aec3a4ec1f064ea40a30da9ab51194f7aa5ca69d8671480f4a1fae485022a0"
-    },
     "README.md": {
-      "bytes": 12140,
-      "sha256": "c0bb91ba3247f69b6d76099e5b32a0f4d7fe918c5d61fb2266377782a4d9f4e9"
-    },
-    "SOURCE_PROVENANCE.json": {
-      "bytes": 90548,
-      "sha256": "3ae9085d774b1f0996384ad7d705801e96f3f05e2dadf1fb5ffffe0b65e12030"
-    },
-    "VALIDATION.md": {
-      "bytes": 4806,
-      "sha256": "15c08a9bec02829560af395047084c0c2bbb66f24fea9d565a8898fbf0df85ab"
+      "bytes": 12167,
+      "sha256": "8c4ec6265137bbade84acad0dc72fcda58bb484579a94e802c3a72c29732df98"
     },
     "environments/README.md": {
-      "bytes": 8085,
-      "sha256": "c12ffba8bb77905da1f611a26c0e5ed52ffa295b629faec5977af2a4672ef3fc"
+      "bytes": 9358,
+      "sha256": "f997a452710b82bb0064b132ea7ada7f7eb460e0bcd455b0b1e63dc6617d93c1"
     },
     "environments/environment-edmamba.yml": {
       "bytes": 792,
@@ -45,16 +33,16 @@
       "sha256": "7d06b0cc49375a26408e5756c908aec6834152b591670ab1c0687787f7edf5e9"
     },
     "environments/requirements-recorded-cpu.txt": {
-      "bytes": 445,
-      "sha256": "a60ffcc3d34f79e0b58c1eea29d50bbf0917f177ffffc996f7a835c9febffd71"
+      "bytes": 434,
+      "sha256": "5d0afaa39f5a72423d46afe187d4deff245a939552ae447c061156b478850702"
     },
     "environments/requirements-recorded-rotation.txt": {
-      "bytes": 382,
-      "sha256": "28aca7e3940a14f8b44926f7aac1b64e151ddd7406553f316b97369b02c97594"
+      "bytes": 371,
+      "sha256": "9c8f424118b35a8d4b0b165c2ba33be48be5506ca7415e5b7ac6bf7834a0f395"
     },
     "native3d_ssm/README.md": {
-      "bytes": 12330,
-      "sha256": "72fb70863372aa9cab1624d840f610c11f91a218adc160a936fbdb5f4187317c"
+      "bytes": 12200,
+      "sha256": "cc6cef4bf3db6a54ff4e73d65daf60a9a1c54e68f5e730bf1df31fd3ff2d41a5"
     },
     "native3d_ssm/__init__.py": {
       "bytes": 917,
@@ -92,10 +80,6 @@
       "bytes": 3508,
       "sha256": "274a81b0585d51f6896eba00c871f3754cf39a8b9b10e97c6e4f3c58877f6f07"
     },
-    "native3d_ssm/diagnose_occupancy.py": {
-      "bytes": 9675,
-      "sha256": "306f5689bdab617eaf1b6c926f7ad6585ca00538c2b3f761ca9c7242dc6408e9"
-    },
     "native3d_ssm/ebf.py": {
       "bytes": 14219,
       "sha256": "c0da1da979e741bf9e3f6448ee86858ff2670e2bbb8fb60eafe1e18f52ae66f2"
@@ -104,18 +88,6 @@
       "bytes": 13263,
       "sha256": "19555434b7da2d22dae0cb060faf66f605d30ea007cec9f799789c6195897349"
     },
-    "native3d_ssm/evaluate_advanced.py": {
-      "bytes": 4960,
-      "sha256": "175b1245cf35a86b6f0aaa75bb779d051130589ec3055027c2a1678f42212a1d"
-    },
-    "native3d_ssm/evaluate_advanced_suite.py": {
-      "bytes": 12054,
-      "sha256": "25fa1beade53e3bb3f3e9ab2ae06e0182f75541defb0e45a0029aef3044037b8"
-    },
-    "native3d_ssm/evaluate_analytic.py": {
-      "bytes": 9467,
-      "sha256": "f356a5154f8458a5144471852417a323f6455c6238eaaf912a84ba879ed57e2c"
-    },
     "native3d_ssm/evaluate_dnd21.py": {
       "bytes": 5319,
       "sha256": "08344ddbddc27a1dabccaa119074bfb80a23c3bb611ff83762003117abb6f8b2"
@@ -123,10 +95,6 @@
     "native3d_ssm/evaluate_dvsclean_analytic.py": {
       "bytes": 14347,
       "sha256": "8290ab893dc14d641453448b5b66c892a89f0aaae97a861f7330313fdb3e8a14"
-    },
-    "native3d_ssm/evaluate_robust_suite.py": {
-      "bytes": 7377,
-      "sha256": "4777513a26ee22b2a31fc6526fc9fff0579be0adc10a726e598929205d195c61"
     },
     "native3d_ssm/experiments/analytic_contrast/dnd21_fixed_point.json": {
       "bytes": 11350,
@@ -144,17 +112,9 @@
       "bytes": 55348,
       "sha256": "4b484d2f6a134062a73069c916663f74fdfdc506b978c47cb50f2a4479f56965"
     },
-    "native3d_ssm/experiments/analytic_contrast/matched_horizon_validation.json": {
-      "bytes": 13196,
-      "sha256": "6b8905a0ad1981ff6b51a0a9daad38e04f984c2f3d0e99fc3bc1aff3090315a3"
-    },
     "native3d_ssm/experiments/analytic_contrast/phase0_occupancy.json": {
       "bytes": 35400,
       "sha256": "c1256289261c7a348ac4970ce67fd6593ef14f2fc799ef50e6204b975f34a1c1"
-    },
-    "native3d_ssm/experiments/analytic_contrast/phase10_emlb_blind.json": {
-      "bytes": 4635,
-      "sha256": "ef10f32b9110344b3903cf949f72425a3cac3091593a400e821f4d544274fe23"
     },
     "native3d_ssm/experiments/analytic_contrast/phase10_emlb_blind_support.json": {
       "bytes": 5551,
@@ -171,10 +131,6 @@
     "native3d_ssm/experiments/analytic_contrast/phase13_fixed_point_adaptive.json": {
       "bytes": 59289,
       "sha256": "246a946a1b305854a3667633ab65eb266c5f29eaaeb8b5d7d48436010aef0b6b"
-    },
-    "native3d_ssm/experiments/analytic_contrast/phase13_fixed_point_support.json": {
-      "bytes": 59205,
-      "sha256": "ce37f410a7980ffcef8a37420e89e0f0cbee9a0fcf83fb860e8f41d0f908944e"
     },
     "native3d_ssm/experiments/analytic_contrast/phase14_quantizable_operand.json": {
       "bytes": 22519,
@@ -204,10 +160,6 @@
       "bytes": 9630,
       "sha256": "43ad06c591778a99877168ec66ad5b011a81c55c2d3b643590ba90ee2f3f4909"
     },
-    "native3d_ssm/experiments/analytic_contrast/phase20_analytic_bound.json": {
-      "bytes": 61303,
-      "sha256": "52d88f95539dd8d1da1a99fe66d03a7cc1f76a7193c11bca945cf29d499e05da"
-    },
     "native3d_ssm/experiments/analytic_contrast/phase20_emlb_random_null.json": {
       "bytes": 2530,
       "sha256": "0fc885c972c4c6485791976724a0413eae424582bffb01036207ac289e73bc5b"
@@ -215,14 +167,6 @@
     "native3d_ssm/experiments/analytic_contrast/phase21_uncertainty.json": {
       "bytes": 279467,
       "sha256": "67b3c2145867a29868ecbf8290eaf1d5cacbd8d521628a2aad2ee6f0d65edd92"
-    },
-    "native3d_ssm/experiments/analytic_contrast/phase22_ed24_theta0.json": {
-      "bytes": 1427,
-      "sha256": "ed3450169222ba1840691d5f9ff1f4103bc666fe3e6dc3ca999c55fb146bb1ab"
-    },
-    "native3d_ssm/experiments/analytic_contrast/phase22b_ed24_theta0_support.json": {
-      "bytes": 1953,
-      "sha256": "f5b4d1d230af94abd0e5ed273053cce3d91dbbc86caaadec80f376446278f826"
     },
     "native3d_ssm/experiments/analytic_contrast/phase23_ablation_statistic.json": {
       "bytes": 49273,
@@ -256,10 +200,6 @@
       "bytes": 8098,
       "sha256": "7ba14e0830cfd3accbe5cb048a89116c98a671ad86d13e7b312afda60c150e7c"
     },
-    "native3d_ssm/experiments/analytic_contrast/phase30_retention_rule_cost.json": {
-      "bytes": 1059,
-      "sha256": "929431164d369765323cfbd1e51aac1b1d116ec257211f455170358c752d6935"
-    },
     "native3d_ssm/experiments/analytic_contrast/phase31_emlb_causal.json": {
       "bytes": 222536,
       "sha256": "6d5563377a3d8dfd6e7a7e060ab0290dc494c9ccc82bba35f08717b7c145384a"
@@ -267,22 +207,6 @@
     "native3d_ssm/experiments/analytic_contrast/phase32_ed24_full.json": {
       "bytes": 435725,
       "sha256": "cb76b42e52411e36acb46219aee914c41c5f499325db1b7f1f7a27f48fda0b14"
-    },
-    "native3d_ssm/experiments/analytic_contrast/phase32b_ed24_per_block.json": {
-      "bytes": 2210506,
-      "sha256": "795208cbe5af7b622ba0a92e8dd14df78d049661147c403732d6200e41e3a7b9"
-    },
-    "native3d_ssm/experiments/analytic_contrast/phase33_ed24_baselines.json": {
-      "bytes": 114341,
-      "sha256": "f8f8bfd21c44c1911e596b97f31ffa3aed54698ce0170e68e652a21c56b3daef"
-    },
-    "native3d_ssm/experiments/analytic_contrast/phase34_dnd21_statistic.json": {
-      "bytes": 3397,
-      "sha256": "c4630160bc6aa0305515e0f90491a5c5c42556ea54c18ce3c3702831ebc9ee5f"
-    },
-    "native3d_ssm/experiments/analytic_contrast/phase35_ed24_paired.json": {
-      "bytes": 202548,
-      "sha256": "5f3fb912a24f330826ae6b84cb7f0d58e69cb757042140a8b45b6a24c7cf3d85"
     },
     "native3d_ssm/experiments/analytic_contrast/phase36_ed24_inrange_ours.json": {
       "bytes": 10193767,
@@ -348,14 +272,6 @@
       "bytes": 332271,
       "sha256": "5eeeb4e9fe91ae06599af4ccb81f0acae602b5643a7e0eb6012ae8e40119f610"
     },
-    "native3d_ssm/experiments/analytic_contrast/phase4_ed24_blind.json": {
-      "bytes": 1693,
-      "sha256": "b351e4d687b704f6ebc2bc1954d00c9723488fda8684db6c5771b198609d6375"
-    },
-    "native3d_ssm/experiments/analytic_contrast/phase4_ed24_blind_phase8score.json": {
-      "bytes": 3251,
-      "sha256": "7d8eeace0ac177dce60d934e61cc2abc95912469db490d86aeadd5aa45d409bb"
-    },
     "native3d_ssm/experiments/analytic_contrast/phase50_random_null_seeds.json": {
       "bytes": 4253,
       "sha256": "046352ccc39e9dc6fe4e91b8628a3928339c767339d9a9c11e98317db4d8c8b6"
@@ -396,30 +312,6 @@
       "bytes": 84305,
       "sha256": "2cee87cf7edff30f43a1f71faca9e8f1ca57b8f519ffe2bec32e9284bf21bbd4"
     },
-    "native3d_ssm/experiments/analytic_contrast/phase5_dnd21_mesr.json": {
-      "bytes": 3433,
-      "sha256": "02b5d33c621f10ceab79fd3e189c81577d917fbeb5fffaee4c4772597df448f3"
-    },
-    "native3d_ssm/experiments/analytic_contrast/phase5_emlb_mesr.json": {
-      "bytes": 4673,
-      "sha256": "5c1bc184828c487286cae9b65609c573c98eaf3f0e25824d132c23d3ac4c6682"
-    },
-    "native3d_ssm/experiments/analytic_contrast/phase5_emlb_mesr_capped300k.json": {
-      "bytes": 4647,
-      "sha256": "1af5e11be292319ea42cfeb5093932897f4bfc27c81917e18ca1ce026d4f4deb"
-    },
-    "native3d_ssm/experiments/analytic_contrast/phase5b_causal_corr.json": {
-      "bytes": 49963,
-      "sha256": "2c2d41e63b74eeeef5a220a479ad2ea9d406abf67f6fc8715ebfd00c8634d855"
-    },
-    "native3d_ssm/experiments/analytic_contrast/phase5b_causal_corr_phase8score.json": {
-      "bytes": 87500,
-      "sha256": "fdafdc654936e2fb648d4785bad6c3aec535d4bc1d61cfce12344196036c9acd"
-    },
-    "native3d_ssm/experiments/analytic_contrast/phase5b_causal_corr_radius2.json": {
-      "bytes": 124831,
-      "sha256": "7bbb53547fd01b8ae5073ce3a11ef4c456be22b5bcd36b616f155c49bdc1c87b"
-    },
     "native3d_ssm/experiments/analytic_contrast/phase5b_causal_corr_support.json": {
       "bytes": 158302,
       "sha256": "324109774099644e531e1ab1611768b87624edda023a2f944c6245039aea2132"
@@ -439,10 +331,6 @@
     "native3d_ssm/experiments/analytic_contrast/phase63_gap_predictors.json": {
       "bytes": 26166,
       "sha256": "5e3aa10c3a7370c39ac7feb911644956ea0cdfe6e983b3c9405db6547f4802b0"
-    },
-    "native3d_ssm/experiments/analytic_contrast/phase64_deflection_reversal.json": {
-      "bytes": 18544,
-      "sha256": "0134d257d478cf8b1941eb525cc11b94cbae301952f1dbf2205c47877e0cccb0"
     },
     "native3d_ssm/experiments/analytic_contrast/phase65_campus_baselines.json": {
       "bytes": 11856,
@@ -464,29 +352,9 @@
       "bytes": 79005,
       "sha256": "afa1d9fc3bfe886c4aa593c6100d0853f5910a28b2a038da9d442271c4d8e329"
     },
-    "native3d_ssm/experiments/analytic_contrast/phase6_dev_retention.json": {
-      "bytes": 29843,
-      "sha256": "59010369ffcf6044e0958d9fb0832ac01f97b2d976bec616dd637758719acfbe"
-    },
-    "native3d_ssm/experiments/analytic_contrast/phase6_dev_retention_phase8score.json": {
-      "bytes": 29902,
-      "sha256": "0d795f42a38121c25098878c01f44f9a1b62d5fcb96fca1f9a9cb1d6c3c37c9d"
-    },
-    "native3d_ssm/experiments/analytic_contrast/phase6_dev_retention_radius2.json": {
-      "bytes": 29922,
-      "sha256": "ce908cb2e616b106b240cb596ca58c0610acff4005cb81c1bdd5454877adf8c1"
-    },
     "native3d_ssm/experiments/analytic_contrast/phase6_dev_retention_support.json": {
       "bytes": 29970,
       "sha256": "7dc7b47f17a079a7e07cfb43eeba05cb949658cab0e2be84cbaaed681657fa61"
-    },
-    "native3d_ssm/experiments/analytic_contrast/phase6_emlb_adaptive.json": {
-      "bytes": 5598,
-      "sha256": "5f4791539a5fe506c2a9f5e0ca2ccfeef2c51e0e6b360ec6410d80edc4f955f0"
-    },
-    "native3d_ssm/experiments/analytic_contrast/phase6_emlb_adaptive_capped300k.json": {
-      "bytes": 5603,
-      "sha256": "c69725c8cba1b186df07f2ee1a35fb93558cd25b532223be5545b2809799b6f4"
     },
     "native3d_ssm/experiments/analytic_contrast/phase70_operand_isolation_led.json": {
       "bytes": 364527,
@@ -576,14 +444,6 @@
       "bytes": 173252,
       "sha256": "ffd7b71af33686985a420e989f32880c9b7cf00a0eeef44e854e53adc565d0fe"
     },
-    "native3d_ssm/filter_aedat.py": {
-      "bytes": 4112,
-      "sha256": "ccbc4ffbfb8d1b2178c3f2c2b87b6c8b11d0a016561720467c080f7738f7e42c"
-    },
-    "native3d_ssm/filter_analytic_aedat.py": {
-      "bytes": 5535,
-      "sha256": "b066f522d274c84e9fdf5ee61e924724b42d295a377c0a6368637756dd81beb6"
-    },
     "native3d_ssm/matched_horizon.py": {
       "bytes": 8801,
       "sha256": "6e31081ae2bab3eb47ecd7fa928aed5b111d7c4ea7a81656d065049d00d70f19"
@@ -632,10 +492,6 @@
       "bytes": 7967,
       "sha256": "cc5a79b2c664db3a8158096259bbf2f5b5561cc456198bcf9f05e42b595e5f7f"
     },
-    "native3d_ssm/phase20_analytic_bound.py": {
-      "bytes": 11004,
-      "sha256": "f117892d3f285dc158343d2b92dad49798454598942b2bffc709818dc6ca34bf"
-    },
     "native3d_ssm/phase20_emlb_random_null.py": {
       "bytes": 6503,
       "sha256": "cc3574c421caedd71a1e14eff6dbde5ce55698f8159ede32cad174a0bf69fe61"
@@ -643,10 +499,6 @@
     "native3d_ssm/phase21_uncertainty.py": {
       "bytes": 19891,
       "sha256": "04bc8311701646636a204949243c4b3be579ad6d812dc9a15d50cfcff4b633de"
-    },
-    "native3d_ssm/phase22_ed24_theta0.py": {
-      "bytes": 4060,
-      "sha256": "d8acd3e1412a2b29a3637efc9ef738573cd8ebef1cd94653a610a7972db0a80a"
     },
     "native3d_ssm/phase22b_ed24_theta0_support.py": {
       "bytes": 10774,
@@ -676,17 +528,13 @@
       "bytes": 8210,
       "sha256": "87502c7f005eadc033e8c45263943670a96fc3673dbd634e624e73efac7154d7"
     },
-    "native3d_ssm/phase30_retention_rule_cost.py": {
-      "bytes": 4023,
-      "sha256": "c7cde1e9a0eeb1c6e1131a6e16fa18107daa429517db8c6aa8aa8024171a6653"
-    },
     "native3d_ssm/phase31_emlb_causal.py": {
       "bytes": 18635,
       "sha256": "bc7a4964fdaf171a438d0f2dbec822276350f50f49e1e4e5352d17bfcc83ec52"
     },
     "native3d_ssm/phase32_ed24_full.py": {
-      "bytes": 15613,
-      "sha256": "bb93a8e55682bdfb674bff2e76f792f60c34e2c9bb53bf2586a59df8cae7fb30"
+      "bytes": 14017,
+      "sha256": "70363ba2828a87962bacb084b0aa88e340ecacbca370c37881fc7410e451b01d"
     },
     "native3d_ssm/phase33_ed24_baselines.py": {
       "bytes": 13659,
@@ -705,36 +553,36 @@
       "sha256": "a02a1954cfcc2605517a6fce99aba1ed858fb98a7bd020fc9baab9134da93b2e"
     },
     "native3d_ssm/phase41_block_latency.py": {
-      "bytes": 11681,
-      "sha256": "83b1a5e41a6d6a58bcb6f393e5e520cc2f595737cd6108b19ae7981091465151"
+      "bytes": 11141,
+      "sha256": "09f1b274df98604f27ca98640a7551d90095a094e27ad4ebc8289a0d439c187f"
     },
     "native3d_ssm/phase42_integer_gate_key.py": {
-      "bytes": 10881,
-      "sha256": "b21786b88500779f15c18fb67a52c0a2b4fc1f45694c2ceb689024be91ca8ff5"
+      "bytes": 10153,
+      "sha256": "ce3297de4c408eabb7df79f12fab78430493cc7087c290d590f5e4b206fc4890"
     },
     "native3d_ssm/phase43_memory_accounting.py": {
-      "bytes": 11730,
-      "sha256": "ed2f8f8468f249a06ee4929aa025d7a8ad40a81966ddfd0d4e16f9c0f8cc6c62"
+      "bytes": 11302,
+      "sha256": "22446c57a98a44078915695863515c1c3e2312c1c3fcb3184dc73d3b0a4ad7c9"
     },
     "native3d_ssm/phase44_occupancy_model.py": {
-      "bytes": 14595,
-      "sha256": "1c6c0fb4793e6c03f895298f308b5e5b4246f052528c8c20a0533d80fb8d2642"
+      "bytes": 14035,
+      "sha256": "a849fc1b6f0699bd7a7a39cd327da92c2b9447fbfb2ca20ca68072f9ef4ccda9"
     },
     "native3d_ssm/phase45_emlb_missingness.py": {
-      "bytes": 7386,
-      "sha256": "30930dafb63d6aec383e320042fd25b8952c207be24e5b1d715063e79a0a0a3b"
+      "bytes": 6855,
+      "sha256": "4742390a5b70fa07c429caadeb7a3eb44f6bbcd60227eb89db9e8908e2a6a65e"
     },
     "native3d_ssm/phase46_closed_loop.py": {
-      "bytes": 18887,
-      "sha256": "163ad10ba9606c2c15987c8d79047aa0d95f31dba8a58ab4ace98af24325ec05"
+      "bytes": 17341,
+      "sha256": "ccc7d3104183bffaa67abd30aaf96f6235f8028806c3bed76eb7cd0957f4fc15"
     },
     "native3d_ssm/phase47_gate_and_occupancy.py": {
-      "bytes": 14320,
-      "sha256": "bb8e666f1bddfe58cc6b1992bf986ae9a77d52d57dab850590fae371093a95b0"
+      "bytes": 13114,
+      "sha256": "3c0f323ea4a4532b2dec9099c7b62a8a17f4df887a2c17ba048a4cb32a63192d"
     },
     "native3d_ssm/phase48_operand_decomposition.py": {
-      "bytes": 14440,
-      "sha256": "56f1329052f8146537118a5e98d2461f9822c5e8f30d9e0163078262eb501102"
+      "bytes": 13206,
+      "sha256": "79e127df4cd6d5c240ecd5b5baf3fa45b23bb64f77682bc28eb3611ad00f851c"
     },
     "native3d_ssm/phase49_emlb_operand_clustered.py": {
       "bytes": 23377,
@@ -745,20 +593,20 @@
       "sha256": "424267a6424b973c21df996b10db0e683bbe352b0d803d4dc456c451e64f3567"
     },
     "native3d_ssm/phase50_random_null_seeds.py": {
-      "bytes": 4974,
-      "sha256": "86ce8e653382447a1ec87ca826cfa6bd7f02e90c21faa1b31116aa390362ace7"
+      "bytes": 4424,
+      "sha256": "a912b1074e60d17494d36fd1e47f7bba8a2e9cfc1273ac3c031409234721884b"
     },
     "native3d_ssm/phase51_ed24_scene_clustered.py": {
-      "bytes": 11219,
-      "sha256": "732cb2a1837150fec4721acaed81c07d9f24acf1e22c4e8836f12e747a124410"
+      "bytes": 11220,
+      "sha256": "dd2874fa0f545e4be9bf38cf74ca1834079bbce2a65fcd333cfc9a572313e768"
     },
     "native3d_ssm/phase52_bitmap_profile.py": {
       "bytes": 13858,
       "sha256": "0dfde0f7f34ac492d9a83ed695e3b1f1b036569b0803b3e01849b903060fbfb9"
     },
     "native3d_ssm/phase53_block_size_eventlevel.py": {
-      "bytes": 14713,
-      "sha256": "a757e80e915190f186aa3dc09419395f3bf573e9a34b19c38d576361406e0b0e"
+      "bytes": 13709,
+      "sha256": "b99e54e662e9dbed956a6110736e1e2b1ce92759e7841c194a66fe494c0e4021"
     },
     "native3d_ssm/phase54_led.py": {
       "bytes": 23744,
@@ -808,13 +656,9 @@
       "bytes": 9773,
       "sha256": "52e06c358f7376c5028a623bb73108e90a400c2bbc630c34f19a6be205c40739"
     },
-    "native3d_ssm/phase64_deflection_reversal.py": {
-      "bytes": 9056,
-      "sha256": "1042b88f49b3ee33773fe45d5b895289e8b8cf1a6257e89b2db32df8f4caa6f1"
-    },
     "native3d_ssm/phase65_campus_baselines.py": {
-      "bytes": 13821,
-      "sha256": "ccfc63fe1a50a028107300e1820fff0313c85990e955cce95d57b34524cb7dc4"
+      "bytes": 12695,
+      "sha256": "bf4b75e3f4555d799c339ef821ff11d2368241a2e7aa4b5edd38014d71589540"
     },
     "native3d_ssm/phase66_time_budget.py": {
       "bytes": 17626,
@@ -831,14 +675,6 @@
     "native3d_ssm/phase69_operand_isolation.py": {
       "bytes": 13057,
       "sha256": "4f4e41abd8c923f8ae47e13160ba2a97e3397dcfd495911b1a46c4e97da390e0"
-    },
-    "native3d_ssm/phase6_dev_retention.py": {
-      "bytes": 15487,
-      "sha256": "5b8fe66b6d9180960a6052211fe509918da78184088efc4e1cc4590e89347363"
-    },
-    "native3d_ssm/phase6_emlb_adaptive.py": {
-      "bytes": 9205,
-      "sha256": "525cf20efb99678f21f2bec393c33736c68300f8720ff7a0528bc047462cfc42"
     },
     "native3d_ssm/phase70_operand_isolation_led.py": {
       "bytes": 9995,
@@ -896,25 +732,9 @@
       "bytes": 8723,
       "sha256": "f5a2f2f9e35560b652327ab96610f91389b3d5656050394a4eac7552168164c3"
     },
-    "native3d_ssm/robust.py": {
-      "bytes": 4373,
-      "sha256": "c5c02ba6aad7b3222f5834ca5d74f6e4808a36d5405dbe01b54db852de6edcc1"
-    },
     "native3d_ssm/rule_filters.py": {
       "bytes": 9604,
       "sha256": "e067f2f43ac9e096213e31104aa853a3ec99391021f018d45a471a646aed7e3f"
-    },
-    "native3d_ssm/train.py": {
-      "bytes": 11623,
-      "sha256": "583b03892e9d553be6ed58909e738d484a367ca3cce00b2175403ca4ba4fb28a"
-    },
-    "native3d_ssm/train_advanced.py": {
-      "bytes": 24791,
-      "sha256": "c886ac8b0f464dd7f8e870098d6ea6b2e57513e4184d5e6a1c9d1edc12a96318"
-    },
-    "native3d_ssm/train_robust.py": {
-      "bytes": 22667,
-      "sha256": "9a6214387dd3a4baea91dbe741d9f14443d4647c7ebb3f2883ab3618707872aa"
     },
     "protocols/protocol_frozen_dsec_downstream_20261022.md": {
       "bytes": 6094,
@@ -932,17 +752,9 @@
       "bytes": 4801,
       "sha256": "b5c7735a3a6d09709ec766df871702790bebadc55ba7e48e5064dd20221a5917"
     },
-    "reproduction/EDMAMBA_REPRODUCIBILITY_REPORT.md": {
-      "bytes": 20019,
-      "sha256": "dc702e89c129cb9b2ad8e3182831ee064ebd235dd23431d7869111f34a26fdf5"
-    },
-    "reproduction/REBUILD_EDFORMER_ENV.md": {
-      "bytes": 1371,
-      "sha256": "128155ff27eb328f09132e5eb249bc4ae401c2f5a4197d89817589a21c3eeab3"
-    },
     "reproduction/UPSTREAM.md": {
-      "bytes": 2716,
-      "sha256": "46a657678dcf1ca8652239e16a231ab15f69b33149e85d1997542b39c0942a0a"
+      "bytes": 5629,
+      "sha256": "a8e4b18107553bdd63dfd147fcf33f5f5a2f6bcbaeaa1d61077dc8e42580c524"
     },
     "reproduction/evaluate_dvsclean.py": {
       "bytes": 26073,
@@ -960,10 +772,6 @@
       "bytes": 11901,
       "sha256": "1d29e5c4745c221c8a1626d35e9e18bf30d353b66f7792d1aa1ad722ffe0429c"
     },
-    "reproduction/reproduce_edmamba_emlb.py": {
-      "bytes": 18644,
-      "sha256": "923103b4a0512edb0bf9ea73da77ca8aa5bfbf29f1bdd68a1f44a737de225325"
-    },
     "reproduction/results/dnd21_auc_10hz_fresh_seed.json": {
       "bytes": 1769,
       "sha256": "4a405a0cc85072573a35dc74b30e840badb813ac0166f6663cf6c3b2f9dc2308"
@@ -976,10 +784,6 @@
       "bytes": 108203,
       "sha256": "9a4d1ca0309f30d896b8019676a78e0a301014d73f0f7eae83c5c4d9cdb60e22"
     },
-    "reproduction/results/dnd21_auc_smoke.json": {
-      "bytes": 1748,
-      "sha256": "c860699c0c3685d01c9ce7d28b22a92e9719138fc56e39e6e6166d0eb4c5da32"
-    },
     "reproduction/results/dvsclean_paired.json": {
       "bytes": 112809,
       "sha256": "5cefd4dc666b14a6243fe0e7a4ca6db3ad605074ba3491c21f342328c76256dc"
@@ -987,14 +791,6 @@
     "reproduction/results/dvsclean_paired_scaled_ed24.json": {
       "bytes": 65637,
       "sha256": "2b5c7aa3d1fa41a4b86c128c7e53b735f712d18572dbbe3eae8493c7cc9e35e2"
-    },
-    "reproduction/results/dvsclean_smoke.json": {
-      "bytes": 5891,
-      "sha256": "7b46b05553ed1540b2e6c45416f9aed18640631ac44de5fb3fd5767a5890474f"
-    },
-    "reproduction/results/dvsclean_wholesequence_smoke.json": {
-      "bytes": 5914,
-      "sha256": "764693b35951c80dcf6df96277437d6e014366a0a8409577f03c38d86694fb06"
     },
     "reproduction/results/emlb_edformer_mesr.json": {
       "bytes": 4073,
@@ -1004,25 +800,21 @@
       "bytes": 73167,
       "sha256": "7f0fad16479b2548866360114fbed757188eebae34ba3e9aaa9cbfa0607e83ec"
     },
-    "reproduction/results/emlb_edmamba_mesr.json": {
-      "bytes": 1854,
-      "sha256": "5361529da212193e7d35a03a52a7f7a9ac923e6fa4e0e36da71e2cf746acb6fe"
-    },
     "reproduction/upstream_manifest.json": {
       "bytes": 1650,
       "sha256": "77e5af94a057816871eae16f8b4273ffaece1aeb6c729e33b5fc4645892b3b7e"
     },
     "requirements.txt": {
-      "bytes": 563,
-      "sha256": "226b3e1d2306bd39021ddb13a7255597daf0f071b7fdfe01ab9ecd0f12855ba6"
+      "bytes": 552,
+      "sha256": "b8afe860c121cb789693a1cd97964e528e90d301ac6f133381324f89db1c86a6"
     },
     "tools/precompute_edformer.py": {
-      "bytes": 3081,
-      "sha256": "859b3dccf4a00f3216e42847bce212cb945b75a8e4d42d5f04beaa0b595b1a7a"
+      "bytes": 3004,
+      "sha256": "13ca29b19d46e7a26a9334cf12927ceba1b46b3b9eddc840d034700eeca7440f"
     },
     "tools/run_edformer.py": {
-      "bytes": 3595,
-      "sha256": "67774b156f36d497ba343911fce54473b5b28229a63de868c9c150543109b9e4"
+      "bytes": 3590,
+      "sha256": "83494805a8c083d6c681be6e72f97ae15f73b2bc6be577a00604cf555f8887db"
     },
     "tools/run_frozen_study.py": {
       "bytes": 4585,

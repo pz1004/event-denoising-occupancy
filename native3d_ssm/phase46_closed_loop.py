@@ -1,60 +1,38 @@
-"""Phase 46: does excluding rejected events from the state change the filter?
+"""Phase 46: selective state updates with density-matched controls.
 
-Section 3.1 of the manuscript states that scoring is open-loop -- every event in a
-block updates the state at unit weight, and retention is applied to the finished
-score vector with no path back into the state. The consequence is that the
-statistics the filter scores against are computed on the unfiltered stream: the
-background activity being rejected also contributes to G and to ring occupancy.
+Open-loop scoring lets every event update the state at unit weight before applying
+retention. This experiment measures one refinement iteration:
 
-That was written as a disclosure. This phase turns it into a measurement, because
-"we never tried the obvious alternative" is not a defence a reviewer has to accept.
+    pass A   unit weights                 -> scores -> retention mask (no labels)
+    pass B   weight 0 for rejected events -> scores -> AUC
 
-The alternative, one refinement iteration:
+A zero update weight leaves the accumulator and reference timestamp untouched,
+so an excluded event cannot affect later reads in either direction. The pass-A
+scores determine the mask without labels.
 
-    pass A   unit weights                  -> scores -> retention mask (no labels)
-    pass B   weight 0 for rejected events  -> scores -> AUC
+Exclusion changes both which events build the state and their number. At r=0.28,
+72% fewer events update the state. Each selective arm therefore has a random
+control withholding the same count per block; its contrast with that control
+isolates selectivity from the effect of sparser state.
 
-`NativeStateBank` already supports fractional update weights, and a zero weight
-leaves both the accumulator and its reference timestamp untouched, so a rejected
-event becomes invisible to every later read in both directions. The mask is
-derived from the filter's own pass-A scores; no label is consulted at any point.
+All arms use identical blocks:
 
-THE CONFOUND THIS PHASE EXISTS TO BREAK. Withholding the rejected events changes
-two things at once: *which* events build the state (noise excluded) and *how many*
-(at r = 0.28, 72% fewer). Ring occupancy must fall under the second alone, so a
-closed-loop arm on its own cannot distinguish "excluding noise hurts" from "a state
-built from a quarter of the events is sparser". Every selective arm therefore has a
-density-matched random control that withholds the same COUNT of events per block,
-chosen uniformly at random. The selectivity effect is the gap between the two, not
-the drop from `open`.
-
-Arms, all on identical blocks so every comparison is exactly paired:
-
-    open           the adopted filter, s = beta*G - log(1 + S_r2)
-    closed@28      one refinement iteration, mask at the frozen r = 0.28
-    random@28      density control: same count withheld, chosen at random
-    closed@50      the same at r = 0.50
-    random@50      its density control
-    oracle         withhold the TRUE noise, using labels
+    open           gated score s = beta*G - log(1 + S_r2)
+    closed@28      one refinement iteration at r=0.28
+    random@28      density-matched random control
+    closed@50      one refinement iteration at r=0.50
+    random@50      density-matched random control
+    oracle         withhold labelled noise
     random@oracle  density control at the oracle's per-block retention
 
-`oracle` uses labels and is a diagnostic, not a deployable configuration. It exists
-to test the premise directly: if excluding every genuine noise event does not beat
-its own density control, then no score-based refinement rule can be blamed for the
-closed-loop failure, and open-loop scoring is vindicated rather than merely excused.
+The oracle uses labels and is a diagnostic, not a deployable configuration.
+Class-conditional support measures how the refinement changes occupancy for
+signal and noise. The open arm must reproduce Phase 14's ``log_support|float``
+measurement. Nothing is trained.
 
-Support is also broken out by true class, because "the refinement strips the ring
-for signal and noise alike" is a claim about class-conditional occupancy and has to
-be measured rather than inferred from the aggregate.
-
-The open arm must reproduce Phase 14's `log_support|float` figures, which is what
-certifies this harness measures the same thing the headline does. Read-only;
-nothing is trained.
-
-Unit of analysis: the 20 labelled development conditions, paired within condition.
-Those 20 are nested in 2 datasets, so the condition-level interval understates the
-correlation between conditions drawn from the same recordings; the two dataset means
-are reported alongside it rather than replaced by it.
+The 20 labelled development conditions are paired within condition and nested
+in two datasets. Condition-level intervals understate their within-dataset
+correlation, so dataset means are reported alongside them.
 """
 
 from __future__ import annotations

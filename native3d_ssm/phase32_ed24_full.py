@@ -1,42 +1,22 @@
-"""Phase 32: ED24 as a third labelled benchmark, at full scene coverage.
+"""Phase 32: full-coverage ED24 evaluation of the gated operand controls.
 
-Section 4.4 of the manuscript says a third labelled dataset with a different noise model
-"is the single measurement that would most improve Table 1, and we do not have one". That
-sentence is wrong: ED24 is on disk, it has a loader that runs, and two earlier phases
-already score it. What they do not do is score it as a *benchmark*. Phase 4 and Phase 22b
-read 16 of the 100 scenes, capped at 8 blocks per condition, for one purpose only -- to
-check that theta = 0 is not a DND21/DVSCLEAN coincidence. This phase reads all 100 scenes
-with no block cap and reports the statistics Table 1 and Table 6 report, so that ED24 can
-enter the paper as a labelled benchmark rather than a threshold sanity check.
+Score all 100 scenes without a block cap, covering 600 scene-by-level conditions.
+ED24 supplies a third labelled noise model and dataset cluster. It is prior-contact
+data: a subset of 16 scenes, capped at eight blocks per condition, was used to check
+threshold zero. The ED24-fitted plateau [-0.40, -0.03] excludes zero; transferring the
+fitted value to the development sets costs 0.0005. No constant was changed by that
+check, but ED24 must not be described as an untouched validation set.
 
-What that buys, and it is the paper's largest open weakness:
+Arms use identical blocks for paired comparisons:
 
-  * The effective sample size behind every labelled interval is currently 2 -- two datasets
-    differing in noise model, sensor geometry, density regime and provenance, with the 20
-    conditions nested inside them (Section 4.4). ED24 is a third cluster, and unlike
-    DVSCLEAN it needs no reconstruction, so its rows are protocol-matched by construction.
-  * The lead contribution is "the count improves 20 of 20 labelled conditions". ED24 adds
-    600 more scene x level conditions under a third noise model. Either the claim survives
-    that, in which case it is a much stronger claim, or it does not, in which case the
-    paper needs to know before a reviewer does.
-
-WHAT THIS SET IS NOT. ED24 is not held out the way E-MLB is. Phase 4 and Phase 22b already
-looked at it: theta = 0 was checked against an ED24-fitted threshold, on one side only, and
-no constant was changed as a result (the fitted plateau [-0.40, -0.03] excludes zero, and
-carrying the fitted value to the dev sets *costs* 0.0005). So ED24 is prior-contact data
-for exactly one constant. Any text this artifact feeds must say so. It is a third noise
-model and a third cluster; it is not a second held-out set, and E-MLB remains the only
-benchmark nothing in the paper has ever been selected or checked on.
-
-Arms, all on identical blocks so every comparison is exactly paired:
-
-    adopted    s = beta*G - log(1 + S_r2)     the filter the paper proposes
-    magnitude  s = beta*G - R_r2              the conventional operand it replaces
+    support    s = beta*G - log(1 + S_r2)
+    magnitude  s = beta*G - R_r2
     beta0/1    the two gate branches, for both operands
 
-Operand construction, the gate key and beta are taken verbatim from
-`phase14_quantizable_operand.scan_condition`, so an ED24 row is the same measurement as a
-DND21 row and the two are directly comparable. Read-only; nothing is trained.
+Operand construction, the gate key and beta come from
+``phase14_quantizable_operand.scan_condition``, making the measurement consistent
+with the DND21/DVSCLEAN controls. These are gated-control measurements; they do not
+change the selected beta=0 RSF configuration. Nothing is trained or fitted.
 """
 
 from __future__ import annotations

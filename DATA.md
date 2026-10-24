@@ -1,8 +1,8 @@
 # Datasets and baselines
 
-Neither the datasets nor the learned baselines are vendored in this repository. Both are
-redistributed by their original authors under their own terms, and the datasets are far too large
-for git. This file records what is needed and where each result came from.
+Datasets, learned baselines and model checkpoints must be obtained from their original
+providers under their respective terms. This guide identifies the inputs, directory
+layouts and evaluation scope for the supplied results.
 See [environment recipes](environments/README.md) and [upstream revisions and
 compatibility changes](reproduction/UPSTREAM.md) before rerunning external models.
 
@@ -12,14 +12,14 @@ compatibility changes](reproduction/UPSTREAM.md) before rerunning external model
 |---|---|---|---|
 | **DND21** | 346×260 | per-event | Dense synthetic noise, 10 conditions, 3,393 blocks. Track-A development |
 | **DVSCLEAN** | 1280×720 | per-event | Sparse simulated noise, 10 conditions, 315 blocks. Track-A development |
-| **ED24** | 346×260 | per-event | Current manuscript: 100 scenes × 21 attenuator-voltage levels (1.5–3.5 V), 2,100 conditions; prior-contact evaluation |
+| **ED24** | 346×260 | per-event | 100 scenes × 21 attenuator-voltage levels (1.5–3.5 V), 2,100 conditions; prior-contact evaluation |
 | **E-MLB** | 346×260 | none | 8 cells (Daylight/Night × ND1/4/16/64), 48 scenes per lighting condition × 3 reps; structural evaluation |
 | **LED** | 1280×720 | per-event partition | 66 released test scenes; recorded raw, denoised, and noise events |
 | **BUAA_Campus** | 346×260 | per-event | 2 base scenes × 3 simulated noise rates; first 3 million events per sequence |
 
 DND21 and ED24 are linked by the [EDmamba release](https://github.com/gongzihang/EDmamba)
 and [EDformer release](https://github.com/NJUVISION/EDformer). The ED24 row describes
-the in-range evaluation subset, not all historical experiment artifacts. E-MLB is
+the evaluated 1.5–3.5 V subset of the released data. E-MLB is
 from [Ding et al., IEEE TMM](https://doi.org/10.1109/TMM.2023.3260638); its reference
 software is [cuke-emlb](https://github.com/KugaMaxx/cuke-emlb). BUAA_Campus is
 released with [EBF](https://github.com/shicy17/EBF),
@@ -58,19 +58,21 @@ ambiguous keys and skipped chunks. BUAA's polarity field contains invalid values
 of six sequences; phase62 documents the label-free random-polarity repair, and current
 paper tables use the repaired stream. These preprocessing choices are part of the protocol.
 
-### Selection history
+### Dataset roles and evaluation scope
 
-The operand, radius, and fixed operating point `r = 0.28` were selected on labelled
-development data before E-MLB evaluation. ED24 was checked during earlier development.
-E-MLB and LED were initially outside development, but their results informed the later
-decision to retire the global-density gate. They therefore do not independently confirm
-the final ungated configuration. Preserve this history when interpreting old artifacts or
-extending the experiments; a new confirmation needs untouched data.
+DND21 and DVSCLEAN are development datasets for operand selection, radius and the
+fixed operating point `r = 0.28`. ED24 has prior development contact. E-MLB and
+LED results informed selection of the final ungated configuration, so neither
+independently confirms that choice. Their recorded-noise comparisons are
+retrospective and use lookahead and buffering. DSEC and DAVIS were selected for
+frozen downstream evaluation with no known prior use in developing or tuning the
+denoiser; they do not supply independent per-event sensor-noise labels. New
+confirmation of method choices requires untouched data.
 
 ## Learned baselines
 
-We reproduced both locally rather than quoting published tables. Neither is included here; obtain
-them from their authors.
+The learned-baseline results use the authors' released checkpoints and evaluation
+runners. Obtain the external implementations and weights from their authors.
 
 | Baseline | Used for | Our reproduction |
 |---|---|---|
@@ -79,12 +81,12 @@ them from their authors.
 
 Runners are in `reproduction/`. Measured outputs are in `reproduction/results/`.
 
-**Two cautions carried from our audit, both verifiable from the released artifacts:**
+**Baseline interpretation:**
 
 1. **EDmamba's structural row is not regenerable from its released code** — `compute_average_esr`
    is commented out and defined nowhere, and its E-MLB reader sets `labels = polarity` and covers
-   13 scenes at one ND rather than 48 × 4. We therefore do **not** cite that row, and neither
-   should you.
+   13 scenes at one ND rather than 48 × 4. The structural comparison therefore uses EDformer;
+   the EDmamba results are restricted to labelled DND21 and DVSCLEAN evaluations.
 2. **The EDformer checkpoint count differs from the reported efficiency table.** The table reports 49.80K;
    counting the released checkpoint gives **584,019 tensor elements, of which 46 are BatchNorm
    buffers → 583,973 trainable**. The gap is exactly the two SparseConvNet weight tensors
@@ -104,33 +106,32 @@ that sits in a dense part of the score distribution.
 ## Metric reference
 
 Our ESR implementation (`native3d_ssm/phase5_emlb_mesr.py`, reused by `phase9`/`phase10`) was
-verified **bit-exact** against the official `cuke-emlb` implementation during development. That
-check requires `cuke-emlb`, which is not vendored here, so this historical metric comparison is not a bundled public command. Obtain `cuke-emlb` from its authors for an independent metric comparison.
+verified **bit-exact** against the official `cuke-emlb` implementation. An independent
+metric comparison requires obtaining `cuke-emlb` from its authors; it is not vendored here.
 
 MESR is the mean ESR over 30,000-event slices. Absolute MESR moves with event caps and repetition
 subsets (capped vs uncapped Raw differs by 0.0151), so **always compare Δ-over-Raw**, which is
 stable to 0.0004.
 
-## Baseline reproduction reports
+## Baseline setup and evaluation scope
 
-[EDMAMBA_REPRODUCIBILITY_REPORT.md](reproduction/EDMAMBA_REPRODUCIBILITY_REPORT.md)
-preserves the original audit, including historical environment paths and limitations.
-Use [the public setup recipes](environments/README.md) for portable commands.
-The import-only compatibility patch mentioned by the audit is included in
-[reproduction/patches](reproduction/patches/edmamba-import-compatibility.patch),
-with revisions, scope and license information in [UPSTREAM.md](reproduction/UPSTREAM.md).
-No third-party source checkout or checkpoint is vendored.
+Use [the environment recipes](environments/README.md) for executable setup commands
+and [UPSTREAM.md](reproduction/UPSTREAM.md) for source revisions, checkpoint hashes,
+compatibility changes and evaluation restrictions. The
+[EDmamba compatibility patch](reproduction/patches/edmamba-import-compatibility.patch)
+changes optional imports only. Third-party source checkouts and checkpoints remain
+external.
 
-## Frozen downstream validation inputs (22 October 2026)
+## Frozen DSEC optical-flow inputs
 
-The follow-up protocol is in
+The frozen protocol is in
 [`protocol_frozen_dsec_downstream_20261022.md`](protocols/protocol_frozen_dsec_downstream_20261022.md).
 It fixes three DSEC public-flow training recordings: `thun_00_a`,
-`zurich_city_02_a`, and `zurich_city_11_a`. A workspace audit found no previous
-DSEC outcomes, and the author confirmed no known external prior use for tuning
-this denoiser. DSEC's release-split name does not imply training in this study:
+`zurich_city_02_a`, and `zurich_city_11_a`. These recordings had no known prior
+use in developing or tuning this denoiser when the protocol was frozen. DSEC's
+release-split name does not imply training in this study:
 the frozen E-RAFT checkpoint was trained on MVSEC outdoor_day_2. These recordings
-provide new downstream task evidence, not per-event sensor-noise labels.
+provide downstream task evidence, not per-event sensor-noise labels.
 
 Official inputs are under
 `https://download.ifi.uzh.ch/rpg/DSEC/train/<sequence>/` with each remote filename
@@ -167,13 +168,13 @@ The public launcher locates the unchanged protocols under `protocols/`; the pipe
 protocol or tune on these recordings and continue to describe them as untouched.
 The public data and third-party model remain outside this repository.
 
-## Frozen application-level rotation inputs (23 October 2026)
+## Frozen DAVIS rotation inputs
 
 The [rotation cost–quality protocol](protocols/protocol_frozen_rotation_application_20261023.md)
 selects all three static-scene DAVIS240C rotation recordings from the
 [Event-Camera Dataset](https://www.ifi.uzh.ch/en/rpg/software_datasets/davis_datasets.html):
-`shapes_rotation`, `poster_rotation`, and `boxes_rotation`. The workspace audit and
-author confirmation established no known prior use in developing this denoiser.
+`shapes_rotation`, `poster_rotation`, and `boxes_rotation`. These recordings had
+no known prior use in developing or tuning this denoiser when the protocol was frozen.
 `dynamic_rotation` was excluded prospectively because its moving person violates
 the static-scene motion model. The selected hand-held recordings still contain
 residual translation; the application estimates rotation rather than full camera pose.
@@ -203,8 +204,9 @@ payloads, preparation and optimization are inside. The input archives and canoni
 arrays remain outside the repository. The result artifact contains the full provenance
 and all per-update estimates, coverage exclusions and repeated timing results.
 
-The [pre-outcome timestamp clarification](protocols/protocol_rotation_timestamp_adapter_20261023.md)
-records the source-format audit. All 378,165,371 events differ from the common
+The [frozen timestamp adapter](protocols/protocol_rotation_timestamp_adapter_20261023.md)
+defines the conversion from the source timestamp format. All 378,165,371 events
+differ from the common
 nearest-microsecond clock by at most one nanosecond; the original ZIP/text hashes
 and canonical payload hashes are distinct. Both frozen protocol digests are checked.
 
@@ -220,6 +222,4 @@ The [complete result artifact](native3d_ssm/experiments/analytic_contrast/phase8
 has SHA-256 `f4f4af9b96074411c658c0e45aa98ad3db4e081f27d61ce40bdd0dad524eb19c`.
 It accounts for all 378,165,371 source events and 45 trials, with 1,794 application
 outputs per arm and 1,760 shared eligible mocap targets. No result was excluded for
-poor quality or failure to converge. The initial interrupted signature-logging
-attempt is preserved in the artifact's provenance and the external data directory;
-its incomplete timing and unscored partial estimates are not used in the results.
+poor quality or failure to converge.

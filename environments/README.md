@@ -1,7 +1,7 @@
 # Environments and independent setup
 
 Run commands from the public repository root. The root `requirements.txt` is a
-general execution environment; it is not an exact lock of every historical
+general execution environment; it is not an exact lock of every recorded
 experiment. Different recorded studies used different Python/NumPy stacks.
 Do not install these profiles together. CPU timing depends on the processor,
 compiler, memory and workload as well as package versions.
@@ -11,7 +11,7 @@ compiler, memory and workload as well as package versions.
 Use Python 3.12 or 3.13 in a fresh virtual environment. Install a suitable PyTorch
 wheel first, then the root requirements. CPU PyTorch is sufficient for the
 synthetic rotation example; RSF itself has no trained weights. The preserved
-package initializer imports historical learned-model classes, which require torch.
+package initializer also imports learned-model classes, which require torch.
 
 ```bash
 python3 -m venv .venv
@@ -32,8 +32,8 @@ Use the launcher for the fixed-time, DSEC and rotation studies as shown in the
 The phase75/79 artifacts record Python 3.13.9, NumPy 2.3.5, Numba 0.62.1 and
 llvmlite 0.45.1. Use `requirements-recorded-cpu.txt` in a separate Python 3.13.9
 environment and install PyTorch for package imports. Additional pins in that file
-come from the retained environment inspected during release preparation; they
-are not a recovered complete lock from the measurement date.
+describe the available environment; only the versions recorded in the result
+artifact establish the measurement stack. The recipe is not a complete environment lock.
 
 ```bash
 python -m pip install -r environments/requirements-recorded-cpu.txt
@@ -42,14 +42,15 @@ python -m pip install -r environments/requirements-recorded-cpu.txt
 Run complete filtering timings on a quiet machine. Warm compilation is separate
 from measured processing. Use fresh output paths so the released evidence is not
 overwritten. A fresh run is new evidence and its source/runtime hashes can differ
-from historical artifacts.
+from the supplied artifacts.
 
 ## Frozen rotation application
 
 Use Python 3.12.12 and `requirements-recorded-rotation.txt`, plus a PyTorch wheel
 for the preserved package imports. The stored phase81 environment establishes
 NumPy 1.26.4 and SciPy 1.17.1; the retained environment also has Numba 0.64.0 and
-llvmlite 0.46.0. Ancillary package pins are a release-time inventory. The runner
+llvmlite 0.46.0. Ancillary package pins describe the available environment rather
+than a complete lock established by the result artifact. The runner
 records thread pools and controls exercised BLAS pools during timed evaluation.
 The three exact protocol files used by phase79/81 are included under `protocols/`.
 
@@ -69,7 +70,9 @@ git -C ../external/E-RAFT checkout c58ce0524ea0ebfa9849991caafb547f44fe9bfd
 The frozen adapter loads `model.eraft` and `utils.dsec_utils` from that checkout.
 It does not require the original upstream Python 3.7 environment. Put the official
 MVSEC 20-Hz checkpoint at `../downstream/assets/eraft/mvsec_20.tar`; the exact URL
-and SHA-256 are in [DATA.md](../DATA.md). Dataset paths can use `--data-root`.
+and SHA-256 are in [DATA.md](../DATA.md). Acquire and verify this checkpoint before
+the data-download stage: the runner checks it at startup. Dataset paths can use
+`--data-root`.
 The upstream source and checkpoint paths intentionally retain their recorded
 sibling-directory layout. This avoids changing frozen source bytes.
 
@@ -90,12 +93,13 @@ python3.10 -m venv ../.venv-edformer-cu118
 Build [SparseConvNet](https://github.com/facebookresearch/SparseConvNet) and
 [PyTorch3D v0.7.5](https://github.com/facebookresearch/pytorch3d/tree/v0.7.5) with
 that interpreter and matching CUDA toolkit; set `TORCH_CUDA_ARCH_LIST` to the GPU
-architecture actually used. The original SparseConvNet source revision was not
+architecture actually used. The SparseConvNet source revision was not
 recorded, so the version 0.2 and compiled environment cannot constitute a complete
 source lock. Obtain the released `pretrained_model.pth` from the EDformer authors.
 
-The E-MLB reproduction uses batch size one; larger inference batches change
-floating reduction order and are not the recorded protocol:
+The E-MLB reproduction uses batch size one, repetition 1 and uncapped streams;
+larger inference batches change floating-point reduction order and are not the
+recorded protocol:
 
 ```bash
 ../.venv-edformer-cu118/bin/python reproduction/reproduce_edformer_emlb.py --batch-blocks 1 --reps 1 --max-events 0 --output reproduced-results/emlb-edformer.json
@@ -104,9 +108,17 @@ floating reduction order and are not the recorded protocol:
 The public `tools/run_edformer.py` uses `EDformer/` under this checkout by default.
 It accepts `--edformer-dir`, `--model`, or `RSF_EDFORMER_ROOT`. The precomputation
 helper accepts `RSF_EDFORMER_PYTHON` for a nondefault interpreter. Precompute phase65
-cache units with that helper before running the unchanged historical phase65
+cache units with that helper before running the phase65
 module, whose direct fallback still expects `../.venv-edformer-cu118/bin/python`.
 The standard sibling environment above satisfies that fallback.
+
+The reference cell output is [emlb_edformer_mesr.json](../reproduction/results/emlb_edformer_mesr.json);
+D-END/ND00 has `edformer_mesr = 0.9520324576641584`. Differences in fresh outputs
+must be reported rather than silently replacing the supplied baseline. RSF's
+E-MLB cell summaries use up to 144 sequences (repetitions 1–3), whereas the
+EDformer comparison has 48 sequences per cell (repetition 1). Only repetition 1
+can be sequence-paired. Structural scores may be undefined on short filtered
+streams; use the finite intersection and report its denominator for paired analysis.
 
 ## EDmamba baseline
 
@@ -124,12 +136,12 @@ conda activate rsf-edmamba
 python -m pip install torch-scatter==2.1.0 torch-cluster torch-sparse -f https://data.pyg.org/whl/torch-1.12.1+cu116.html
 ```
 
-Complete the upstream PointOps/Mamba installation. The original runners explicitly
+Complete the upstream PointOps/Mamba installation. The runners explicitly
 add `EDmamba/libs/pointops/build/lib.linux-x86_64-cpython-38` to the import path;
 use the supplied compatible binary or build PointOps in that Python environment.
 Install causal-conv1d 1.1.3 and mamba-ssm 1.1.4 from source as described upstream
 or use the release wheels recorded below. Their tags use cu118 despite the
-PyTorch CUDA 11.6 runtime in this historical environment; this is the recorded
+PyTorch CUDA 11.6 runtime in this environment; this is the recorded
 combination, not a general compatibility promise.
 
 | Wheel from upstream release assets | SHA-256 |
@@ -141,10 +153,18 @@ Download from the [causal-conv1d v1.1.3 release](https://github.com/Dao-AILab/ca
 and [Mamba v1.1.4 release](https://github.com/state-spaces/mamba/releases/tag/v1.1.4),
 verify the hashes, and install the wheels in the EDmamba environment. Model
 weights remain external at `EDmamba/exp/ED24/EDmamba/model/model_best.pth` unless
-overridden using a runner's `--checkpoint` option. The dataset converters and
-training details missing from upstream are documented in the reproduction report;
-this release does not claim to recover them.
+overridden using a runner's `--checkpoint` option. Verify its digest against
+[UPSTREAM.md](../reproduction/UPSTREAM.md#checkpoint-identities), which also states
+the dataset-preprocessing and checkpoint-evaluation restrictions.
 
-This recipe captures known dependencies and local compatibility changes. It has
-not rebuilt every third-party GPU extension from an empty machine during public
-release preparation. The recorded numerical results and provenance remain available without those GPU environments.
+On WSL, add `/usr/lib/wsl/lib` to `LD_LIBRARY_PATH` if the CUDA driver library is
+not found. The DND21 runner offers `--hard-exit` for environments that abort during
+interpreter cleanup after writing results; it does not skip model execution or
+result computation. Omit it when normal shutdown works.
+
+These recipes state the recorded versions and known compatibility requirements;
+they are not a claim that every third-party GPU extension builds on every host.
+The numerical result artifacts remain readable without those GPU environments.
+Absolute machine paths within immutable artifacts identify the measurement
+environment; they do not require recreating the authors' home directory. Use the
+portable paths in these instructions and [DATA.md](../DATA.md).

@@ -1,10 +1,9 @@
-"""Compute and cache EDformer scores for one unit, as a single flat process.
+"""Compute and cache EDformer scores for one evaluation unit.
 
-`phase65` used to spawn the EDformer runner as a child of itself. Nested long-running
-processes do not survive in this environment, so the expensive step is hoisted out: this
-script prepares one unit's stream, calls the runner once, and stores the result where
-`phase65` looks for it. EDformer is deterministic given the stream, so caching changes
-nothing about the number.
+Prepare the unit's event stream, invoke the EDformer runner once, and save scores
+at the cache path consumed by ``phase65_campus_baselines``. The cache supports
+separate execution of the learned baseline and the paired comparison. EDformer
+uses the same stream and checkpoint when scores are computed or reused.
 """
 
 from __future__ import annotations

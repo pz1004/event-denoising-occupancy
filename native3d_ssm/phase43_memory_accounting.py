@@ -1,26 +1,19 @@
-"""Phase 43: end-to-end memory and data-movement accounting.
+"""Phase 43: memory and data-movement accounting for state-based controls.
 
-Reviewer question this answers
-------------------------------
-Phase 12 counted arithmetic and reported "zero stored weights". A reviewer pointed out
-that a hardware claim needs the other half of the ledger: a filter with no weights but a
-persistent per-pixel state still moves data, and at $1280\\times720$ that state is larger
-than several of the learned models it is being compared against. Reporting operations
-without reporting state and traffic flatters the method.
+A parameter-free filter still stores and accesses per-pixel state. This ledger
+accounts for that state and traffic separately from arithmetic operations and
+learned weights, including sensor geometries such as 1280 by 720 pixels.
 
-This phase computes, for each sensor geometry and each configuration:
+For each geometry and configuration, compute:
 
-  * persistent state bytes, broken down by array and by direction;
-  * transient block-buffer bytes, both as implemented and in a packed deployment layout;
-  * memory reads and writes per event, worst case and at measured ring occupancy;
-  * bits per stored variable, stated honestly as what is *stored* rather than what the
-    fixed-point certificate covers.
+  * persistent state bytes by array and direction;
+  * transient block-buffer bytes as implemented and in a packed layout;
+  * memory reads and writes per event, at worst-case and measured ring occupancy;
+  * stored bits per variable, distinct from the fixed-point certificate.
 
-Everything except ring occupancy is exact and derived from ``StateConfig`` and
-``NativeStateBank``; occupancy is read from the ``dir_support`` operands the extractor
-already produces, so no new pass over the data is needed beyond counting them.
-
-Read-only. Nothing is trained and no constant moves.
+Storage and traffic follow ``StateConfig`` and ``NativeStateBank``. Ring occupancy
+is measured from the extractor's ``dir_support`` operands. Nothing is trained or
+fitted, and no configuration is changed.
 """
 
 from __future__ import annotations

@@ -1,36 +1,23 @@
-"""Phase 65: BAF, STCF and EDformer on the repaired BUAA_Campus, measured rather than cited.
+"""Phase 65: measured BAF, STCF and EDformer controls on repaired BUAA_Campus.
 
-WHAT THIS REPLACES. Table VII's lower panel carried three baseline values transcribed from
-\\cite{guo2025ebf} -- and from its Fig. 3(a) legend rather than a table, because its only
-Campus table is an EBF-on-Campus tau ablation. Worse, those values are measured on
-`campus1_5Hz`, one of the four sequences Phase 62 shows carries a label leak. Cited numbers
-on contaminated data are the weakest evidence in this paper. This phase runs all three
-ourselves, on the repaired stream, on the same events and the same aggregation as every
-other row.
+Run all methods on the repaired event stream with a shared event population and
+aggregation. The original campus1_5Hz stream is among the four sequences diagnosed
+with label leakage; measurements on that stream are not interchangeable with the
+repaired-data comparison.
 
-THE VALIDATION GATE, AND WHAT IT SAYS ABOUT EACH ROW. Before any Campus number is reported,
-each method is run on DND21 driving at 1, 3 and 5 Hz/pixel and compared against the values
-\\cite{guo2025ebf} Tab.~II publishes for exactly those conditions. The three outcomes differ
-and the paper has to say so:
+Before the Campus evaluation, compare each implementation on DND21 driving at
+1, 3 and 5 Hz/pixel with the published reference values:
 
-  EDformer  reproduces to about 1e-4 against its published 0.954/0.947/0.942. Since it shares
-            our preprocessing, label convention and AUC call, that also validates the data
-            path for the other two.
-  BAF/STCF  do NOT reproduce: ours score above the published values. Two reasons, neither of
-            which is a defect we can remove. The published BAF row is itself transcribed by
-            that source from \\cite{jiang2024edformer} rather than measured, and our own
-            Tab.~III caption already records that the two available sources disagree by up to
-            0.34 AUC on these same filters. And our score-based ROC is the continuous limit of
-            the `dt` sweep those papers perform over a grid, so it upper-bounds any finite
-            sweep of the same rule by construction. We therefore report ours as measured rows
-            and do not claim they reproduce anything.
+  EDformer  reproduces the reference 0.954/0.947/0.942 to about 1e-4, checking the
+            shared preprocessing, label convention and AUC calculation.
+  BAF/STCF  score above the reference values and are reported as measured controls,
+            not reproduced results. Available sources disagree by up to 0.34 AUC.
+            A score-based ROC gives the continuous limit of the finite dt sweeps
+            used for these rules and can exceed a grid-based sweep.
 
-Reporting a baseline HIGHER than its published value is the safe direction for a paper that
-compares itself against it, and it is the direction our implementations land in.
-
-Every method is truncated to a common event prefix so the rows are exactly paired: EDformer
-consumes 4,096-event slices and our own score 10,240-event blocks, so the shorter of the two
-governs. Read-only. Nothing is trained; EDformer's released checkpoint is used as released.
+EDformer uses 4,096-event slices and the occupancy control uses 10,240-event blocks.
+Truncate each method to the shorter complete prefix so comparisons are paired.
+Nothing is trained; EDformer's released checkpoint is used unchanged.
 """
 
 from __future__ import annotations

@@ -1,34 +1,23 @@
-"""Phase 44: testing the occupancy model that explains why a count beats a magnitude.
+"""Phase 44: empirical diagnostics for the conditional occupancy model.
 
-Reviewer question this answers
-------------------------------
-The operand result is currently an empirical substitution: "this count worked better on
-these benchmarks". A reviewer asked for the level above that --- conditions under which
-binary spatial occupancy is *preferable* to accumulated magnitude --- so that the
-contribution transfers beyond this filter family.
+The model assumes that each of ``n`` ring taps is occupied independently with a
+class-conditional probability, so ``S | y ~ Binomial(n, p_y)``. Magnitude weights
+that occupancy pattern by amplitudes ``A_k`` whose distribution is shared by the
+two classes. Under these assumptions the occupancy count is sufficient, its
+likelihood ratio is monotone, and amplitude variability determines the predicted
+separation penalty. Uniform fixed-point quantisation can collapse small magnitude
+values while leaving the integer count exact.
 
-\\ref{app:occupancy} of the manuscript develops the model. Under it, each of the ``n`` ring
-taps carries history independently with a class-conditional probability, so
-
-    S | y  ~  Binomial(n, p_y),
-
-and the magnitude is that same occupancy pattern weighted by amplitudes ``A_k`` whose
-distribution is *shared* by the two classes. Three consequences follow analytically: the
-count is sufficient and its likelihood ratio is monotone; the magnitude's separation is
-strictly smaller by a factor set by the amplitude's coefficient of variation; and uniform
-fixed point collapses the magnitude's discriminative tail while leaving the count exact.
-
-This phase measures the four quantities the model is built on, so that the assumptions are
-checked rather than assumed:
+Measure the quantities needed to assess these assumptions:
 
   ``p_noise``, ``p_signal``  class-conditional per-tap occupancy;
-  ``cv_amplitude``          coefficient of variation of *nonzero* tap magnitudes;
-  ``amplitude_auc``         how well the mean nonzero tap amplitude alone separates the
-                            classes --- the model assumes this is near 0.5;
-  ``predicted_ratio``       d_M / d_S, the model's predicted separation penalty for
-                            using the magnitude, which should be below 1.
+  ``cv_amplitude``          coefficient of variation of nonzero tap magnitudes;
+  ``amplitude_auc``         class separation from mean nonzero tap amplitude,
+                            expected to be near 0.5 under the shared-amplitude model;
+  ``predicted_ratio``       d_M / d_S, the model's magnitude-to-count separation ratio.
 
-Read-only. Nothing is trained and no constant of the method moves.
+These diagnostics assess model applicability; they do not establish the assumptions
+for arbitrary sensor data. Nothing is trained or fitted.
 """
 
 from __future__ import annotations

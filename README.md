@@ -1,10 +1,6 @@
 # Occupancy versus multiplicity in training-free event denoising
 
-Research code and reproducibility artifacts for **Rank-Support Filter (RSF)** and the study *Occupancy versus Multiplicity in Training-Free Event Denoising: Representation, Horizon, and Application Cost*.
-
-**Release status:** Public research release of the RSF implementation, experiment runners, and recorded results. External datasets and pretrained model checkpoints must be obtained from their original providers.
-
-Repository: [pz1004/event-denoising-occupancy](https://github.com/pz1004/event-denoising-occupancy). See [PROVENANCE.md](PROVENANCE.md) for release boundaries and frozen hashes, and [VALIDATION.md](VALIDATION.md) for the validation record.
+Research code and reproducibility artifacts for **Rank-Support Filter (RSF)** and the study *Occupancy versus Multiplicity in Training-Free Event Denoising: Representation, Horizon, and Application Cost*. External datasets and pretrained model checkpoints must be obtained from their original providers.
 
 ## Overview
 
@@ -30,18 +26,19 @@ reproduction/                Learned-baseline runners and measured results
 protocols/                   Four unchanged frozen scientific protocols
 tools/run_frozen_study.py     Launcher for fixed-time, DSEC and rotation studies
 environments/                General and experiment-specific setup guidance
-DATA.md                      External acquisition, directory layout and selection history
-PROVENANCE.md                Frozen hashes and redistribution boundaries
-VALIDATION.md                Validation record and its scope
+DATA.md                      External acquisition, directory layout and dataset roles
+RELEASE_MANIFEST.json        Payload sizes and SHA-256 digests
 SHA256SUMS                   Release file checksums
 LICENSE                      License for repository-authored material
 ```
 
-Historical `phase` numbers are provenance identifiers, not an execution order. Some older artifacts describe the non-adopted gated control, RSF-G. The magnitude control RSF-M uses decay at 250 µs; it is different from exact integer multiplicity. The current matched controls require complete schema-2 phase69/70 evidence. Superseded `legacy_mislabelled` files are excluded.
+Module and artifact `phase` numbers are stable identifiers, not an execution order. The [implementation and evidence map](native3d_ssm/README.md) groups the retained material by representation, temporal horizon and application cost. RSF-G denotes the gated global control; RSF-M denotes a decayed-magnitude control at 250 µs, distinct from exact integer multiplicity. Match result rows to their documented score definitions when comparing these controls.
+
+The four frozen protocols and recorded numerical results retain their original bytes. Source hashes, protocol hashes and acquisition metadata remain in the evidence artifacts. Absolute paths and original `plan/` paths inside those records identify the recorded environment; they are not required local directory layouts. The launcher resolves the protocols from `protocols/`. [RELEASE_MANIFEST.json](RELEASE_MANIFEST.json) lists payload sizes and digests, and [SHA256SUMS](SHA256SUMS) also covers that manifest.
 
 ## Installation and quick start
 
-Run commands from the release root. Use Python 3.12 or 3.13 for the general installation and the recorded environments for numerical reproduction. PyTorch is required by historical package exports even though RSF itself has no learned weights.
+Run commands from the release root. Use Python 3.12 or 3.13 for the general installation and the recorded environments for numerical reproduction. PyTorch is required by package exports even though RSF itself has no learned weights.
 
 ```bash
 python3 -m venv .venv
@@ -53,7 +50,7 @@ sha256sum -c SHA256SUMS
 python tools/run_frozen_study.py rotation --stage synthetic
 ```
 
-The synthetic example exercises the rotation adapter without acquiring recordings or running a benchmark. The checksum command verifies the supplied file bytes; it does not establish scientific correctness. See [environments/README.md](environments/README.md) for the separate recorded CPU, rotation, DSEC and learned-baseline environments. The studies used different Python, NumPy, PyTorch and CUDA versions; one general installation does not reproduce every historical timing or floating-point result.
+The synthetic example exercises the rotation adapter without acquiring recordings or running a benchmark. The checksum command verifies the supplied file bytes; it does not establish scientific correctness. See [environments/README.md](environments/README.md) for the separate recorded CPU, rotation, DSEC and learned-baseline environments. The studies used different Python, NumPy, PyTorch and CUDA versions; one general installation does not reproduce every recorded timing or floating-point result.
 
 ## Results and their limits
 
@@ -66,22 +63,22 @@ The following values describe distinct experiments and must not be pooled into a
 | Frozen DAVIS rotation | Raw → RSF: **0.9343° → 0.8510°** mean error and **183.28 s → 173.76 s** complete time | Meets the frozen aggregate joint criterion; the improvement is driven by `boxes_rotation`, while `shapes_rotation` and `poster_rotation` worsen |
 | Rotation controls | Exact count **0.8433° / 175.24 s**; EBF **0.8292° / 203.29 s**; random deletion **0.9601° / 172.79 s** | Exact count and EBF are more accurate than RSF; filtering-rate savings alone do not predict accuracy or complete application time |
 
-LED quality includes all **111,502,674** original events in the fixed-time study. The earlier common-target diagnostic instead evaluates **111,134,720** eligible events while preserving original scoring context; its matched 80% balanced accuracies are **0.8417** for RSF and **0.8078** for EBF. That retrospective diagnostic is separate from the full-source cost study.
+LED quality includes all **111,502,674** original events in the fixed-time study. The common-target diagnostic evaluates **111,134,720** eligible events while preserving original scoring context; its matched 80% balanced accuracies are **0.8417** for RSF and **0.8078** for EBF. That retrospective diagnostic is separate from the full-source cost study.
 
 DSEC covers all **336** forward-flow pairs from three previously unused recordings, with a frozen cross-domain E-RAFT checkpoint. Each recording's endpoint error uses valid-pixel weighting, followed by an equal-recording mean. Rotation covers **378,165,371** events, **1,760** target-covered outputs and **1,794** timed outputs per arm. Unsuccessful solver outputs remain in the evaluation. Complete times sum recording-median totals; stage breakdowns select the actual median-total-time trial within each recording and arm, breaking ties by repeat index.
 
-DND21 and DVSCLEAN selected the development configuration; ED24 had prior contact. E-MLB and LED informed the later removal of the global gate and therefore do not independently confirm that selection. The recorded-noise comparisons remain retrospective and use lookahead and buffering. E-MLB's MESR measures structural concentration, not event classification accuracy. BUAA results use the documented label-free polarity repair; ten repair seeds are an imputation sensitivity study, not ten independent datasets. DSEC and DAVIS provide frozen downstream evidence, not independent per-event sensor-noise labels or complete SLAM validation.
+DND21 and DVSCLEAN selected the development configuration; ED24 had prior contact. E-MLB and LED informed the selection of the support-only score and therefore do not independently confirm that selection. The recorded-noise comparisons remain retrospective and use lookahead and buffering. E-MLB's MESR measures structural concentration, not event classification accuracy. BUAA results use the documented label-free polarity repair; ten repair seeds are an imputation sensitivity study, not ten independent datasets. DSEC and DAVIS provide frozen downstream evidence, not independent per-event sensor-noise labels or complete SLAM validation.
 
 ## Reproducing the experiments
 
 Obtain inputs from their original authors using [DATA.md](DATA.md). Datasets, checkpoints, external repositories and their licenses remain separate from this release. Keep the frozen protocol files and scientific implementations unchanged when reproducing the recorded evidence. A changed configuration or new dataset constitutes a new experiment.
 
-Use **fresh output paths** and an otherwise idle machine for timed experiments. The commands below use the documented default dataset layout; each runner's `--help` lists available path overrides. The output directory is local and ignored by Git. The launcher selects the relocated frozen protocols without editing the scientific runner sources; original protocol paths inside result metadata remain historical provenance.
+Use **fresh output paths** and an otherwise idle machine for timed experiments. The commands below use the documented default dataset layout; each runner's `--help` lists available path overrides. The output directory is local and ignored by Git. The launcher resolves the frozen protocols without editing the scientific runner sources.
 
 ```bash
 mkdir -p reruns
 
-# Corrected matched-horizon controls, including exact integer counts.
+# Matched-horizon controls, including exact integer counts.
 python -m native3d_ssm.phase69_operand_isolation --output reruns/phase69.json
 python -m native3d_ssm.phase70_operand_isolation_led --output reruns/phase70.json
 
@@ -114,7 +111,7 @@ python tools/run_frozen_study.py rotation --stage prepare
 python tools/run_frozen_study.py rotation --stage evaluate --output reruns/phase81.json
 ```
 
-The download/prepare stages write external input caches, not shipped result artifacts. Timing is hardware- and environment-dependent. Dataset runs may be lengthy and require substantial storage. For older runners without an output option, use a disposable copy so that archived evidence remains untouched. Learned-baseline reconstruction, including the EDmamba compatibility patch, is documented in [reproduction/UPSTREAM.md](reproduction/UPSTREAM.md).
+The download/prepare stages write external input caches, not shipped result artifacts. Timing is hardware- and environment-dependent. Dataset runs may be lengthy and require substantial storage. For runners without an output option, use a disposable copy so that supplied evidence remains untouched. Learned-baseline setup, including the EDmamba compatibility patch, is documented in [reproduction/UPSTREAM.md](reproduction/UPSTREAM.md).
 
 ## Citation
 

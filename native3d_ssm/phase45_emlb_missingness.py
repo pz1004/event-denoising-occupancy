@@ -1,30 +1,23 @@
-"""Phase 45: bounding the Night ND16/ND64 deficit under MESR missingness.
+"""Phase 45: E-MLB MESR sensitivity to undefined baseline outputs.
 
-Reviewer question this answers
-------------------------------
-MESR is undefined once a filtered stream holds fewer than one 30,000-event slice, and the
-reproduced transformer filters hardest exactly where the manuscript reports an unresolved
-deficit. A reviewer asked what that deficit is once the missingness is accounted for,
-rather than left as a caveat.
+MESR is undefined when filtering leaves fewer than one 30,000-event slice. The
+Night ND16/ND64 comparison therefore uses paired sequences on which both methods
+have finite values. This complete-case estimate need not represent the full cell:
+missingness is related to how many events the baseline removes.
 
-The manuscript currently compares the two methods on the sequences where both are defined.
-That is a *complete-case* analysis, and complete-case analysis is unbiased only if the
-missingness is unrelated to the value --- which here it plainly is not, since a sequence
-goes missing precisely because the baseline removed most of it.
+Using two stored artifacts, compute for each cell:
 
-This phase replaces the caveat with an interval. For each cell it computes:
+  * the complete-case paired margin;
+  * a lower margin, imputing missing baseline values at that baseline's observed
+    maximum within the cell;
+  * an upper margin, imputing them at the observed minimum;
+  * a mean-imputed margin.
 
-  * the complete-case paired margin, which is what the manuscript reports;
-  * a **worst case** for us, imputing every missing baseline sequence at the largest value
-    that baseline achieved anywhere in the cell;
-  * a **best case** for us, imputing at the smallest;
-  * a mean-imputed margin, which is the assumption complete-case analysis makes implicitly.
-
-If the sign of the margin is the same at both extremes, the missingness cannot explain it.
-If it is not, the honest statement is that the deficit is unresolved --- and this phase
-says by how much, which the manuscript could not before.
-
-Read-only over two stored artefacts. Nothing is re-run and no constant moves.
+These are sensitivity bounds within the observed baseline range, not assumptions
+that missing values must lie inside that range. If both bounds have the same sign,
+that sign is unchanged by these imputations; otherwise the margin remains
+unresolved under this sensitivity analysis. No experiment is rerun or parameter
+changed.
 """
 
 from __future__ import annotations

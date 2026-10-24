@@ -1,29 +1,23 @@
-"""Phase 42: can the gate key on an integer count instead of the decayed ring magnitude?
+"""Phase 42: integer and covariance alternatives for the gated-control key.
 
-Reviewer question this answers
-------------------------------
-The score path was made integer in Phase 14 by replacing the decayed ring magnitude with
-a bounded support count. The *gate* was left alone, and it keys on ``corr(G, R_same)``
-where ``R_same`` is still the radius-1 decayed magnitude. A reviewer observed the obvious
-consequence: the filter still reads a decayed-magnitude accumulator somewhere, so the
-"no magnitude in the neighbour loop" claim holds for the score and not for the filter.
-The same reviewer noted that only the *sign* of the correlation is used, so the
-normalisation, the division and the square root in ``corr`` are all avoidable.
+The gated control uses ``corr(G, R_same)``, where ``R_same`` is the radius-1 decayed
+magnitude, even when its score uses bounded support. These measurements separate
+score-path arithmetic from the additional operations required by the gate.
 
-Four gate keys are compared, with everything else -- the score, the radius-2 support
-operand, the block size, the threshold at zero -- frozen at the adopted configuration:
+Compare four keys with the score, radius-2 support operand, block size and zero
+threshold held fixed:
 
-``magnitude``      ``beta = 1 iff corr(G, R_same) < 0``    the adopted key (radius-1 magnitude)
-``log_support``    ``beta = 1 iff corr(G, log1p(S1)) < 0`` integer key in the score's log domain
-``support``        ``beta = 1 iff corr(G, S1) < 0``        the raw integer count
-``covariance``     ``beta = 1 iff Cov(G, R_same) < 0``     no division, no square root
+``magnitude``    ``beta = 1 iff corr(G, R_same) < 0``
+``log_support``  ``beta = 1 iff corr(G, log1p(S1)) < 0``
+``support``      ``beta = 1 iff corr(G, S1) < 0``
+``covariance``   ``beta = 1 iff Cov(G, R_same) < 0``
 
-The covariance row is a strict algebraic check rather than a new idea: whenever both
-variances are positive, ``sign(corr) = sign(Cov)``, so any disagreement with the
-``magnitude`` row is a degenerate-variance block and nothing else. Reporting it makes the
-cheaper implementation auditable rather than merely asserted.
+When both variances are positive, ``sign(corr) = sign(Cov)``. The covariance key
+therefore removes normalisation, division and square root; disagreements with
+the correlation key identify degenerate-variance blocks.
 
-Read-only. Nothing is trained, nothing is fitted, and no constant moves as a result.
+This is a gated-control comparison. Nothing is trained or fitted, and no selected
+configuration is changed.
 """
 
 from __future__ import annotations

@@ -1,34 +1,22 @@
-"""Phase 53: does the block-size gain survive a metric that block size cannot inflate?
+"""Phase 53: event-level and rank-normalised block-size sensitivity.
 
-THE OBJECTION. Section 5 of the manuscript concedes that "quadrupling $N$ raises pooled
-block-mean AUC to 0.9937 with no evidence of better ranking". That concession rests on an
-argument, not a measurement: a block-mean AUC over N-event blocks is a *different
-statistic* at every N, because larger blocks mean fewer and individually harder ranking
-problems, and the block-local bidirectional pass grants more lookahead as N grows. Phase 28
-swept N under block-mean AUC only and said so in its own `comparability` field. A reader is
-entitled to ask for the measurement.
+Block-mean AUC changes its aggregation when block size N changes. Larger blocks
+also grant more lookahead. The block-mean value 0.9937 at four times N therefore
+requires comparison using a common event population.
 
-THE MEASUREMENT. Two aggregations that block size cannot inflate by construction:
+Report two additional aggregations:
 
-    event_level      one ROC-AUC per condition over every scored event, pooled across
-                     blocks. The event set and the labels are identical at every N, so
-                     this number is directly comparable down the N column.
-    rank_normalised  each event's score is replaced by its within-block rank divided by
-                     the block size before pooling. This removes every between-block
-                     offset, so a larger block cannot help by making blocks individually
-                     easier to separate -- only by ranking events better inside a block.
+    event_level     one ROC-AUC per condition over all scored events, with the
+                    same event set and labels at every N;
+    rank_normalised replace each score by its within-block rank divided by block
+                    size before pooling, removing between-block score offsets.
 
-If the block-mean series is an artefact of the aggregation, the event-level series is flat
-or falls while block-mean rises. If larger blocks genuinely rank better, all three rise
-together. The manuscript currently asserts the first without testing it.
-
-Everything except `block_size` is frozen and taken verbatim from Phase 28, which in turn
-takes it from Phase 19: the same 20 labelled conditions, the same gate key
-corr(G, R_same) at radius 1, the same score s = beta*G - log(1 + S_r2), float64. The
-`block_mean` column must reproduce Phase 28 at every N; `audit` reports the deviation and
-the run refuses to continue if it is large.
-
-Read-only. Nothing is trained, fitted, or selected.
+Compare these with block-mean AUC to distinguish aggregation effects from changes
+in event ranking. Everything except block size follows Phase 28 and Phase 19:
+20 labelled conditions, the radius-1 key corr(G,R_same), the gated score
+``s=beta*G-log(1+S_r2)``, and float64 arithmetic. The block-mean column must reproduce
+Phase 28 at every N; the audit reports deviations and refuses large mismatches.
+Nothing is trained, fitted or selected.
 """
 
 from __future__ import annotations
@@ -53,7 +41,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 ARTIFACTS = PROJECT_ROOT / "native3d_ssm/experiments/analytic_contrast"
 PHASE28 = ARTIFACTS / "phase28_block_size_sweep.json"
 
-#: N/8 .. 8N around the frozen 10,240; the reviewer asked for N/4 .. 4N, which this covers.
+#: N/8 .. 8N around the fixed 10,240-event configuration.
 BLOCK_SIZES: Tuple[int, ...] = (1280, 2560, 5120, 10240, 20480, 40960, 81920)
 ADOPTED_BLOCK_SIZE = 10240
 AUDIT_TOLERANCE = 1e-4

@@ -10,4 +10,4 @@ h5py==3.16.0
 threadpoolctl==3.6.0
 matplotlib==3.10.8
 pytest==9.0.3
-# Install an appropriate torch wheel separately; historical package exports need it.
+# Install an appropriate torch wheel separately; package exports need it.

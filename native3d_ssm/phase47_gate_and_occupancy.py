@@ -1,48 +1,24 @@
-"""Phase 47: two things the comments file says the manuscript gets wrong.
+"""Phase 47: gate-key geometry, occupancy identity and retention ties.
 
-ARM 1 -- the gate's empirical check is measured on a score the paper does not adopt.
+The gate key K is a radius-1 magnitude, whereas the support score uses
+L=log(1+S) at radius 2. Evaluate beta=0 versus beta=1 for both the key score
+``beta*G-K`` and the support score ``beta*G-L``. This distinguishes a key-score
+selection rate of 94.2% from performance on the different support operand.
 
-`phase26_gate_derivation` runs at `radius=1`, so its local operand `r` is exactly the
-gate key `K`. Its decisive statistic
+The analysis separates two sign conditions:
 
-    auc_beta1_minus_beta0 = AUC(g - r) - AUC(-r)
+    (A1a) Delta K < 0 -- gate implication: rho < 0 => Delta G > 0
+    (A1b) Delta L < 0 -- score implication: Delta G > 0 widens the mean gap
 
-therefore asks whether admitting `G` helps the score `beta*G - K`. The adopted score is
-`beta*G - L` with `L = log(1 + S)` at radius 2. `K != L`: different radius, different
-functional form. So "the implemented rule selects the better beta on 94.2% of blocks"
-is a statement about a score the paper does not use. This arm recomputes it on the
-adopted score, and keeps the key-score column so the old number is reproduced rather
-than merely replaced.
+The occupancy arm compares ``sum_ring 1[a_fwd+a_rev>0]`` with a reference count
+built from (x,y,p) alone. The extractor clamps age at ``20*taus_us[-1]``; with
+one tau the maximum age is 5 ms and exp(-20)=2.06e-9 remains positive in float32.
+Thus combined forward and reverse positivity represents same-polarity occupancy
+anywhere in the block, independent of event age and tau.
 
-It also separates the two sign assumptions the derivation currently runs together:
-
-    (A1a)  Delta K < 0   -- needed for the GATE arm, rho < 0  =>  Delta G > 0
-    (A1b)  Delta L < 0   -- needed for the SCORE arm, Delta G > 0 => wider mean gap
-
-ARM 2 -- is the support operand just whole-block occupancy?
-
-`S` counts ring taps with `a_fwd + a_rev > 0`. In exact arithmetic a tap that ever fired
-stays positive, so `S` would be "did this same-polarity tap fire anywhere in the block",
-carrying no age information and no dependence on tau. The obvious escape is float
-underflow at large age. That escape is closed by `core.py`: the kernel CLAMPS age,
-
-    age = min(timestamp - neighbor_last, max_age),   max_age = 20 * taus_us[-1]
-
-and the adopted configuration has a single tau, so max_age = 5 ms and the decay factor
-is floored at exp(-20) = 2.06e-9 > 0, comfortably inside float32. No tap can decay to
-zero at any age. The prediction is therefore EXACT equality, and this arm tests it
-against a reference occupancy count built only from (x, y, p) with no state, no decay
-and no reverse pass.
-
-ARM 3 -- ties at the retention quantile.
-
-`S` is an integer in [0, 24] and `beta = 0` on most blocks, so on those blocks the score
-takes at most 25 distinct values and the retention cut lands inside a large tie group.
-`keep_mask` breaks ties by `argsort(kind="stable")`, i.e. by arrival order, which the
-manuscript never states. This arm measures the tie mass at the cut and re-runs retention
-with random tie-breaking to bound what the convention is worth.
-
-Read-only. Nothing is trained.
+The retention arm measures tie mass at the cutoff and compares stable arrival-order
+ties with random tie-breaking. With S in [0,24] and beta=0, the score takes at most
+25 distinct values. No parameter is trained or fitted.
 """
 
 from __future__ import annotations

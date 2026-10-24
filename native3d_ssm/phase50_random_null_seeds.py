@@ -1,22 +1,15 @@
-"""Phase 50: the E-MLB random-deletion null over multiple seeds.
+"""Phase 50: seed sensitivity of the E-MLB random-deletion control.
 
-Section 3.4 leans on one number: randomly discarding the same 72% of events at r = 0.28
-lowers mean E-MLB MESR by 0.053, which is what separates "the score discriminates" from
-"MESR rewards discarding". Until now that came from a single seed, and a control reported
-without its own uncertainty is a weak control -- a reviewer cannot tell whether 0.053 is a
-stable property of undirected deletion or one draw that happened to land there.
+Randomly retaining r=0.28 discards 72% of events. The recorded reference seed lowers
+mean E-MLB MESR by 0.053. This experiment measures variation across independently
+seeded repetitions of ``phase20_emlb_random_null`` rather than treating a single
+draw as the random-deletion expectation.
 
-This aggregates independent replications of `phase20_emlb_random_null`, each a full pass
-over all eight cells with a different seed for the uniform per-event ranking. Seed
-20260726 is the published one and must reproduce the stored artefact cell for cell; the
-rest are new draws.
-
-The expectation is a tight spread, and the reason is structural rather than lucky: each
-cell averages 144 sequences, and each sequence's MESR averages ESR over consecutive
-30,000-event slices, so a per-event uniform ranking has a great deal to average over
-before it reaches the reported figure. Reporting the spread is still the point --
-"stable for a reason we can name" is a stronger claim than "stable", and only the
-measurement distinguishes them.
+Each repetition processes all eight cells with a uniform per-event ranking. Seed
+20260726 must reproduce the reference artifact cell by cell. Each cell averages
+144 sequences; sequence MESR averages ESR over consecutive 30,000-event slices.
+Report the observed spread across seeds without treating seeds as independent
+datasets.
 """
 
 from __future__ import annotations
