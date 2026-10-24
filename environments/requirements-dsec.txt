@@ -1,0 +1,4 @@
+# Python 3.12.12; install torch==2.10.0 from its cu128 wheel index separately.
+-r requirements-recorded-rotation.txt
+hdf5plugin==7.1.0
+pypng==0.20220715.0

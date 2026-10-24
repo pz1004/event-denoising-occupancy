@@ -1,0 +1,171 @@
+{
+  "benchmark": "DVSCLEAN labeled simulated paper subset",
+  "edmamba": {
+    "checkpoint": "EDmamba/exp/ED24/EDmamba/model/model_best.pth",
+    "checkpoint_best_metric": 0.8879312271384658,
+    "checkpoint_epoch": 13,
+    "trainable_parameters": 88978
+  },
+  "environment": {
+    "gpu": "NVIDIA GeForce GTX 1660 SUPER",
+    "numpy": "1.24.4",
+    "python": "3.8.20",
+    "torch": "1.12.1",
+    "torch_cuda": "11.6"
+  },
+  "native": {
+    "fixed_point": {
+      "native_q12_8": "four unsigned score operands, 12 total / 8 fractional bits",
+      "native_q8_4": "four unsigned score operands, 8 total / 4 fractional bits"
+    },
+    "method": "bidirectional 250-us same-polarity local/global log contrast",
+    "state_config": {
+      "global_reference_pixels": 100000.0,
+      "height": 720,
+      "max_age_factor": 20.0,
+      "radius": 1,
+      "taus_us": [
+        250.0,
+        1000.0,
+        4000.0,
+        16000.0
+      ],
+      "width": 1280
+    },
+    "trained_parameters": 0
+  },
+  "protocol": {
+    "aggregation": "unweighted mean of per-block ROC AUC within each condition; unweighted mean of ten conditions",
+    "block_size": 372936,
+    "edmamba_input": "HDF5 polarity threshold p>=0.5, then transformed to 2*p-1",
+    "first_grid_size": 0.05,
+    "label_convention": "0=simulated signal, 1=injected noise",
+    "max_blocks_per_stream": null,
+    "native_input": "timestamp seconds rounded to relative microseconds; polarity threshold p>=0.5",
+    "native_score_direction": "DND21-frozen: higher score means noise",
+    "oriented_auc": "diagnostic only; not used for the primary comparison",
+    "seed": 1024,
+    "sequence_mapping_provenance": "released EDmamba loader commented test-list order matched to paper table order",
+    "tail_policy": "drop incomplete final block",
+    "test_grid_size": 0.1
+  },
+  "results": {
+    "MAH00470": {
+      "100": {
+        "dropped_tail_events": 0,
+        "edmamba_delta_vs_paper": 0.09379211610716176,
+        "edmamba_fragments": 2,
+        "edmamba_sampled_events": 368268,
+        "evaluated_blocks": 1,
+        "evaluated_events": 372936,
+        "methods": {
+          "edmamba": {
+            "block_aucs": [
+              0.9973921161071617
+            ],
+            "event_global_auc": 0.9973921161071617,
+            "mean_block_auc": 0.9973921161071617,
+            "std_block_auc": 0.0
+          },
+          "native_float": {
+            "block_aucs": [
+              0.5294458830842718
+            ],
+            "event_global_auc": 0.5294458830842718,
+            "mean_block_auc": 0.5294458830842718,
+            "std_block_auc": 0.0
+          },
+          "native_q12_8": {
+            "block_aucs": [
+              0.5294048712326673
+            ],
+            "event_global_auc": 0.5294048712326673,
+            "mean_block_auc": 0.5294048712326673,
+            "std_block_auc": 0.0
+          },
+          "native_q8_4": {
+            "block_aucs": [
+              0.5287194797001619
+            ],
+            "event_global_auc": 0.5287194797001619,
+            "mean_block_auc": 0.5287194797001619,
+            "std_block_auc": 0.0
+          }
+        },
+        "noise_events": 186468,
+        "noise_level_percent_of_signal_count": 100,
+        "paper_edmamba_auc": 0.9036,
+        "peak_cuda_memory_mib": 637.24267578125,
+        "scene_alias": "multi-car",
+        "signal_events": 186468,
+        "source": "DVSCLEAN/simulated_data/MAH00470_100.hdf5",
+        "source_sha256": "0f9bae5f9a980c6bb754ca0c0179b6575ebefacdc9a6380e6cb26454c500f4eb",
+        "timing": {
+          "edmamba_block_wall_seconds": 3.0757587219704874,
+          "edmamba_gpu_inference_seconds": 2.8218595259822905,
+          "native_block_wall_seconds": 0.9302448490052484
+        },
+        "total_source_events": 372936
+      }
+    }
+  },
+  "summary": {
+    "candidates": {
+      "native_float": {
+        "conditions_beating_reproduced_edmamba": 0,
+        "delta_vs_reproduced_edmamba": -0.46794623302288996,
+        "mean_auc": 0.5294458830842718,
+        "mean_oriented_auc_diagnostic": 0.5294458830842718,
+        "paired_cluster_bootstrap": {
+          "95ci": [
+            -0.46794623302288996,
+            -0.46794623302288996
+          ],
+          "cluster_blocks": 10,
+          "cluster_events": 102400,
+          "observed_paired_mean_delta": -0.46794623302288996,
+          "replicates": 100,
+          "stratification": "unweighted mean of condition-level paired deltas"
+        }
+      },
+      "native_q12_8": {
+        "conditions_beating_reproduced_edmamba": 0,
+        "delta_vs_reproduced_edmamba": -0.4679872448744944,
+        "mean_auc": 0.5294048712326673,
+        "mean_oriented_auc_diagnostic": 0.5294048712326673,
+        "paired_cluster_bootstrap": {
+          "95ci": [
+            -0.4679872448744944,
+            -0.4679872448744944
+          ],
+          "cluster_blocks": 10,
+          "cluster_events": 102400,
+          "observed_paired_mean_delta": -0.4679872448744944,
+          "replicates": 100,
+          "stratification": "unweighted mean of condition-level paired deltas"
+        }
+      },
+      "native_q8_4": {
+        "conditions_beating_reproduced_edmamba": 0,
+        "delta_vs_reproduced_edmamba": -0.46867263640699985,
+        "mean_auc": 0.5287194797001619,
+        "mean_oriented_auc_diagnostic": 0.5287194797001619,
+        "paired_cluster_bootstrap": {
+          "95ci": [
+            -0.46867263640699985,
+            -0.46867263640699985
+          ],
+          "cluster_blocks": 10,
+          "cluster_events": 102400,
+          "observed_paired_mean_delta": -0.46867263640699985,
+          "replicates": 100,
+          "stratification": "unweighted mean of condition-level paired deltas"
+        }
+      }
+    },
+    "conditions": 1,
+    "paper_edmamba_mean_auc": 0.9036,
+    "reproduced_edmamba_delta_vs_paper": 0.09379211610716176,
+    "reproduced_edmamba_mean_auc": 0.9973921161071617
+  }
+}

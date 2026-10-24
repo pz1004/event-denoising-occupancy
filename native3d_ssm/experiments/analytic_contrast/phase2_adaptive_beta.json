@@ -1,0 +1,273 @@
+{
+  "beta_grid": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0,
+    1.1,
+    1.2
+  ],
+  "conditions": {
+    "DND21": {
+      "10hz_driving": {
+        "auc_beta0": 0.8523928868972339,
+        "auc_beta1": 0.9847882974096787,
+        "auc_oracle": 0.9848137930935703,
+        "blocks": 607,
+        "corr_GR_mean": -0.19984786117320408,
+        "oracle_beta": 0.9,
+        "rho_mean": 13.131301634121671
+      },
+      "10hz_hotel-bar": {
+        "auc_beta0": 0.882929816748898,
+        "auc_beta1": 0.9970809928697434,
+        "auc_oracle": 0.9971068320550062,
+        "blocks": 405,
+        "corr_GR_mean": -0.14783649508475222,
+        "oracle_beta": 0.8,
+        "rho_mean": 7.507163560493595
+      },
+      "1hz_driving": {
+        "auc_beta0": 0.9350476271842558,
+        "auc_beta1": 0.9427336656290589,
+        "auc_oracle": 0.9493487549323651,
+        "blocks": 300,
+        "corr_GR_mean": -0.05261627614362772,
+        "oracle_beta": 0.1,
+        "rho_mean": 8.628008244446848
+      },
+      "1hz_hotel-bar": {
+        "auc_beta0": 0.9741816284430097,
+        "auc_beta1": 0.9971739848916772,
+        "auc_oracle": 0.9971854632994841,
+        "blocks": 87,
+        "corr_GR_mean": -0.3180177470875266,
+        "oracle_beta": 0.8,
+        "rho_mean": 1.687371719669077
+      },
+      "3hz_driving": {
+        "auc_beta0": 0.9156542797484697,
+        "auc_beta1": 0.9720704109513507,
+        "auc_oracle": 0.9720704109513507,
+        "blocks": 368,
+        "corr_GR_mean": -0.18529526038608446,
+        "oracle_beta": 1.0,
+        "rho_mean": 9.401131907467263
+      },
+      "3hz_hotel-bar": {
+        "auc_beta0": 0.9571699400982654,
+        "auc_beta1": 0.9950373592088545,
+        "auc_oracle": 0.9950373592088545,
+        "blocks": 157,
+        "corr_GR_mean": -0.3429637746142023,
+        "oracle_beta": 1.0,
+        "rho_mean": 2.9490621493234292
+      },
+      "5hz_driving": {
+        "auc_beta0": 0.8901183816988727,
+        "auc_beta1": 0.9849085364697605,
+        "auc_oracle": 0.9849085364697605,
+        "blocks": 437,
+        "corr_GR_mean": -0.21465021477289972,
+        "oracle_beta": 1.0,
+        "rho_mean": 10.365223980150692
+      },
+      "5hz_hotel-bar": {
+        "auc_beta0": 0.9197198920189502,
+        "auc_beta1": 0.9978943100371709,
+        "auc_oracle": 0.9979184818122766,
+        "blocks": 229,
+        "corr_GR_mean": -0.23461598888947768,
+        "oracle_beta": 0.7,
+        "rho_mean": 4.258538734517429
+      },
+      "7hz_driving": {
+        "auc_beta0": 0.879980911562426,
+        "auc_beta1": 0.9816345035849099,
+        "auc_oracle": 0.9816483617496551,
+        "blocks": 504,
+        "corr_GR_mean": -0.22701879275717263,
+        "oracle_beta": 0.9,
+        "rho_mean": 11.382316437570577
+      },
+      "7hz_hotel-bar": {
+        "auc_beta0": 0.9018955616893466,
+        "auc_beta1": 0.9973946074276125,
+        "auc_oracle": 0.9974318246354318,
+        "blocks": 299,
+        "corr_GR_mean": -0.1908143020841254,
+        "oracle_beta": 0.7,
+        "rho_mean": 5.5717064842611315
+      }
+    },
+    "DVSCLEAN": {
+      "MAH00446_100": {
+        "auc_beta0": 0.9675253454535806,
+        "auc_beta1": 0.5653501276872851,
+        "auc_oracle": 0.9675253454535806,
+        "blocks": 37,
+        "corr_GR_mean": 0.0998237122683125,
+        "oracle_beta": 0.0,
+        "rho_mean": 0.7023296577650074
+      },
+      "MAH00446_50": {
+        "auc_beta0": 0.9800032207968646,
+        "auc_beta1": 0.5322610761673501,
+        "auc_oracle": 0.9800032207968646,
+        "blocks": 28,
+        "corr_GR_mean": 0.1133483244366189,
+        "oracle_beta": 0.0,
+        "rho_mean": 0.5221433163025122
+      },
+      "MAH00454_100": {
+        "auc_beta0": 0.9141614146725505,
+        "auc_beta1": 0.5309652725935656,
+        "auc_oracle": 0.9141614146725505,
+        "blocks": 36,
+        "corr_GR_mean": 0.10807704785873468,
+        "oracle_beta": 0.0,
+        "rho_mean": 0.5015155329941658
+      },
+      "MAH00454_50": {
+        "auc_beta0": 0.9434715950302441,
+        "auc_beta1": 0.5138806726247777,
+        "auc_oracle": 0.9434715950302441,
+        "blocks": 27,
+        "corr_GR_mean": 0.12338282883111604,
+        "oracle_beta": 0.0,
+        "rho_mean": 0.3742543832881193
+      },
+      "MAH00455_100": {
+        "auc_beta0": 0.8635485895219361,
+        "auc_beta1": 0.524494663162299,
+        "auc_oracle": 0.8635485895219361,
+        "blocks": 35,
+        "corr_GR_mean": 0.04563554216136393,
+        "oracle_beta": 0.0,
+        "rho_mean": 0.7806274944030732
+      },
+      "MAH00455_50": {
+        "auc_beta0": 0.9012212944299459,
+        "auc_beta1": 0.5136298906278914,
+        "auc_oracle": 0.9012212944299459,
+        "blocks": 26,
+        "corr_GR_mean": 0.04883501637889362,
+        "oracle_beta": 0.0,
+        "rho_mean": 0.5832608648582117
+      },
+      "MAH00456_100": {
+        "auc_beta0": 0.8845974795255407,
+        "auc_beta1": 0.49166596944938934,
+        "auc_oracle": 0.8845974795255407,
+        "blocks": 36,
+        "corr_GR_mean": 0.04953884094778078,
+        "oracle_beta": 0.0,
+        "rho_mean": 0.5358286178606974
+      },
+      "MAH00456_50": {
+        "auc_beta0": 0.9222200512689378,
+        "auc_beta1": 0.48283304613240746,
+        "auc_oracle": 0.9222200512689378,
+        "blocks": 27,
+        "corr_GR_mean": 0.05593637949319795,
+        "oracle_beta": 0.0,
+        "rho_mean": 0.4012572612069784
+      },
+      "MAH00465_100": {
+        "auc_beta0": 0.9657931940660642,
+        "auc_beta1": 0.5266035849030453,
+        "auc_oracle": 0.9657931940660642,
+        "blocks": 36,
+        "corr_GR_mean": 0.17417745924316938,
+        "oracle_beta": 0.0,
+        "rho_mean": 0.3196766541115832
+      },
+      "MAH00465_50": {
+        "auc_beta0": 0.9780213227132181,
+        "auc_beta1": 0.5164637962524239,
+        "auc_oracle": 0.9780213227132181,
+        "blocks": 27,
+        "corr_GR_mean": 0.19811961312310686,
+        "oracle_beta": 0.0,
+        "rho_mean": 0.2385125808130562
+      }
+    }
+  },
+  "phase": "2' rate-adaptive global weight beta",
+  "rho_definition": "per-block events / second / pixel (label-free)",
+  "score": "s = beta*(G_fwd+G_rev) - (R_fwd+R_rev), 250us plane",
+  "summary": {
+    "DND21": {
+      "edmamba": 0.98186,
+      "in_sample_rule": {
+        "beta0_ring_only": 0.9109090926089728,
+        "beta1_current_contrast": 0.985071666847982,
+        "frozen_rule_kc": [
+          12.0,
+          0.4
+        ],
+        "frozen_rule_realized": 0.9839561978500513,
+        "oracle_beta_per_condition": 0.9857469818207756
+      },
+      "lodo_rule_from_DVSCLEAN": {
+        "beta0_ring_only": 0.9109090926089728,
+        "beta1_current_contrast": 0.985071666847982,
+        "frozen_rule_kc": [
+          4.0,
+          0.9
+        ],
+        "frozen_rule_realized": 0.9815994951261805,
+        "oracle_beta_per_condition": 0.9857469818207756
+      }
+    },
+    "DVSCLEAN": {
+      "edmamba": 0.995098,
+      "in_sample_rule": {
+        "beta0_ring_only": 0.9320563507478884,
+        "beta1_current_contrast": 0.5198148099600435,
+        "frozen_rule_kc": [
+          12.0,
+          0.4
+        ],
+        "frozen_rule_realized": 0.9320563507478882,
+        "oracle_beta_per_condition": 0.9320563507478884
+      },
+      "lodo_rule_from_DND21": {
+        "beta0_ring_only": 0.9320563507478884,
+        "beta1_current_contrast": 0.5198148099600435,
+        "frozen_rule_kc": [
+          2.0,
+          1.1102230246251565e-16
+        ],
+        "frozen_rule_realized": 0.5603971726771679,
+        "oracle_beta_per_condition": 0.9320563507478884
+      }
+    },
+    "beta_key_predictiveness": {
+      "pearson_betastar_vs_corrGR": -0.9295356218417841,
+      "pearson_betastar_vs_log10rho": 0.8480890350507805
+    },
+    "rule_forms": {
+      "in_sample_all": {
+        "k": 12.0,
+        "log_rho_c": 0.4
+      },
+      "lodo_fit_on_DND21": {
+        "k": 2.0,
+        "log_rho_c": 1.1102230246251565e-16
+      },
+      "lodo_fit_on_DVSCLEAN": {
+        "k": 4.0,
+        "log_rho_c": 0.9
+      }
+    }
+  },
+  "wall_seconds": 114.69845040503424
+}

@@ -1,0 +1,62 @@
+{
+  "exactness": {
+    "bits_required": 5,
+    "blocks": 3708,
+    "events": 37969920,
+    "max_support_observed": 24,
+    "mismatches_gather_vs_extractor": 0,
+    "mismatches_rowmask_vs_extractor": 0,
+    "support_upper_bound": 24
+  },
+  "persistent_state": {
+    "1280x720": {
+      "bitplane_bytes": 254848,
+      "bitplane_kb": 254.848,
+      "float_decayed_bytes": 14745600,
+      "float_timestamp_bytes": 29491200,
+      "float_total_bytes": 44236800,
+      "float_total_mb": 44.2368,
+      "reduction_factor": 173.5811150175791
+    },
+    "DND21 346x260": {
+      "bitplane_bytes": 29568,
+      "bitplane_kb": 29.568,
+      "float_decayed_bytes": 1439360,
+      "float_timestamp_bytes": 2878720,
+      "float_total_bytes": 4318080,
+      "float_total_mb": 4.31808,
+      "reduction_factor": 146.03896103896105
+    }
+  },
+  "phase": "52 the occupancy-bitmap primitive, implemented, proved exact, and timed",
+  "question": "Section 3.1 claims two bitmaps suffice for the support operand but prices the float extractor instead. Build the bitmap path, check it event by event, and measure both on one host.",
+  "scope": "The bitmap replaces the closed-gate score s = -log(1 + S), whose ranking is the ranking of the integer S. The gated score still needs the decayed state for G and K; the gate cost is reported separately as the extractor-only row.",
+  "timing": {
+    "by_sensor": {
+      "1280x720": {
+        "bitmap_path_events_per_second": 13338733.520531163,
+        "bitmap_path_seconds": 0.15353781502926722,
+        "blocks": 200,
+        "events": 2048000,
+        "extractor_only_seconds": 1.247433326963801,
+        "float_path_events_per_second": 1291724.9372204905,
+        "float_path_seconds": 1.5854768619756214,
+        "speedup_bitmap_over_float": 10.326295588310929
+      },
+      "346x260": {
+        "bitmap_path_events_per_second": 13888458.735450156,
+        "bitmap_path_seconds": 0.14746056700823829,
+        "blocks": 200,
+        "events": 2048000,
+        "extractor_only_seconds": 1.0536023220047355,
+        "float_path_events_per_second": 1532392.895374986,
+        "float_path_seconds": 1.3364718710072339,
+        "speedup_bitmap_over_float": 9.063249234166909
+      }
+    },
+    "host_note": "same process, same NumPy, same input blocks; best of 3 repeats",
+    "numpy_version": "2.3.5",
+    "timing_blocks_per_sensor": 200
+  },
+  "wall_seconds": 56.607700998021755
+}

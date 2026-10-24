@@ -1,0 +1,914 @@
+{
+  "dataset": {
+    "events_per_sequence": 3000000,
+    "geometry": [
+      346,
+      260
+    ],
+    "label_convention": "released column 0 is 1 for SIGNAL; inverted here so 1 = noise",
+    "protocol_note": "first 3M events, as the release states its own experiments use",
+    "source": "BUAA_Campus, released with EBF (Guo et al., IEEE TCSVT 2025)"
+  },
+  "ebf": {
+    "kernel_vs_released_max_abs_diff": 4.440892098500626e-16,
+    "refitted_here": false,
+    "s": 5,
+    "tau_us": 32000
+  },
+  "ebf_paper_transcribed": {
+    "fig3a_four_filters_campus_5hz": {
+      "BAF": 0.753,
+      "EBF": 0.88,
+      "EDformer": 0.828,
+      "STCF": 0.803
+    },
+    "note": "both are measured on campus1 at 5 Hz/pixel, which this phase finds contaminated; Fig. 3 values are figure-legend values, not a table",
+    "table1_campus_tau_sweep_5hz": {
+      "128ms": 0.836,
+      "16ms": 0.878,
+      "32ms": 0.88,
+      "64ms": 0.865
+    }
+  },
+  "leak": {
+    "affected_sequences": [
+      "campus1_5Hz",
+      "campus2_1Hz",
+      "campus2_3Hz",
+      "campus2_5Hz"
+    ],
+    "clean_sequences": [
+      "campus1_1Hz",
+      "campus1_3Hz"
+    ],
+    "repair": "label-free: polarities outside {-1,+1} are redrawn uniformly from {-1,+1}; no signal event is touched, since signal never carries them",
+    "what": "the polarity column takes values outside {-1,+1}, and only on noise events; 'polarity > 1' then separates the classes with no filtering"
+  },
+  "ours": {
+    "block": 10240,
+    "gate_radius": 1,
+    "refitted_here": false,
+    "score_radius": 2,
+    "tau_us": 250.0
+  },
+  "per_sequence": {
+    "campus1_1Hz": {
+      "leak": {
+        "auc_polarity_gt_1": 0.5,
+        "auc_polarity_sign_released": 0.4981234775236113,
+        "auc_polarity_sign_repaired": 0.4981234775236113,
+        "contaminated": false,
+        "corrupt_on_signal": 0,
+        "corrupt_polarity_fraction": 0.0
+      },
+      "leak_cost": {
+        "beta0_magnitude": {
+          "block_mean_auc": 0.0,
+          "event_auc": 0.0
+        },
+        "beta0_support": {
+          "block_mean_auc": 0.0,
+          "event_auc": 0.0
+        },
+        "ebf": {
+          "block_mean_auc": 0.0,
+          "event_auc": 0.0
+        },
+        "magnitude": {
+          "block_mean_auc": 0.0,
+          "event_auc": 0.0
+        },
+        "support": {
+          "block_mean_auc": 0.0,
+          "event_auc": 0.0
+        }
+      },
+      "released": {
+        "_meta": {
+          "blocks": 292,
+          "gate_open_rate": 0.003424657534246575,
+          "scored_events": 2990080
+        },
+        "_occupancy": {
+          "block_span_ms_median": 5.558,
+          "block_span_us_median": 5558.0,
+          "blocks": 292,
+          "fraction_support_saturated": 0.021985364940068492,
+          "fraction_support_zero": 0.08797858251284246,
+          "mean_support": 6.715465806934931
+        },
+        "beta0_magnitude": {
+          "block_mean_auc": 0.9008932777182457,
+          "event_auc": 0.902246693440192
+        },
+        "beta0_support": {
+          "block_mean_auc": 0.865367025982672,
+          "event_auc": 0.8657872445078877
+        },
+        "diagnostics": {
+          "auc_polarity_gt_1": 0.5,
+          "auc_polarity_sign": 0.4981234775236113,
+          "corrupt_on_noise": 0,
+          "corrupt_on_signal": 0,
+          "corrupt_polarity_fraction": 0.0,
+          "events": 3000000,
+          "noise_fraction": 0.045420666666666665,
+          "noise_on_fraction": 0.5001174208510076,
+          "signal_on_fraction": 0.5038704658037851
+        },
+        "ebf": {
+          "block_mean_auc": 0.8871018394467011,
+          "event_auc": 0.8896838879808143
+        },
+        "magnitude": {
+          "block_mean_auc": 0.8983031433294298,
+          "event_auc": 0.8992261136093173
+        },
+        "support": {
+          "block_mean_auc": 0.8626535885377034,
+          "event_auc": 0.8629510755230271
+        }
+      },
+      "repaired": {
+        "_meta": {
+          "blocks": 292,
+          "gate_open_rate": 0.003424657534246575,
+          "scored_events": 2990080
+        },
+        "_occupancy": {
+          "block_span_ms_median": 5.558,
+          "block_span_us_median": 5558.0,
+          "blocks": 292,
+          "fraction_support_saturated": 0.021985364940068492,
+          "fraction_support_zero": 0.08797858251284246,
+          "mean_support": 6.715465806934931
+        },
+        "beta0_magnitude": {
+          "block_mean_auc": 0.9008932777182457,
+          "event_auc": 0.902246693440192
+        },
+        "beta0_support": {
+          "block_mean_auc": 0.865367025982672,
+          "event_auc": 0.8657872445078877
+        },
+        "diagnostics": {
+          "auc_polarity_gt_1": 0.5,
+          "auc_polarity_sign": 0.4981234775236113,
+          "corrupt_on_noise": 0,
+          "corrupt_on_signal": 0,
+          "corrupt_polarity_fraction": 0.0,
+          "events": 3000000,
+          "noise_fraction": 0.045420666666666665,
+          "noise_on_fraction": 0.5001174208510076,
+          "signal_on_fraction": 0.5038704658037851
+        },
+        "ebf": {
+          "block_mean_auc": 0.8871018394467011,
+          "event_auc": 0.8896838879808143
+        },
+        "magnitude": {
+          "block_mean_auc": 0.8983031433294298,
+          "event_auc": 0.8992261136093173
+        },
+        "support": {
+          "block_mean_auc": 0.8626535885377034,
+          "event_auc": 0.8629510755230271
+        }
+      }
+    },
+    "campus1_3Hz": {
+      "leak": {
+        "auc_polarity_gt_1": 0.5,
+        "auc_polarity_sign_released": 0.500050220124609,
+        "auc_polarity_sign_repaired": 0.500050220124609,
+        "contaminated": false,
+        "corrupt_on_signal": 0,
+        "corrupt_polarity_fraction": 0.0
+      },
+      "leak_cost": {
+        "beta0_magnitude": {
+          "block_mean_auc": 0.0,
+          "event_auc": 0.0
+        },
+        "beta0_support": {
+          "block_mean_auc": 0.0,
+          "event_auc": 0.0
+        },
+        "ebf": {
+          "block_mean_auc": 0.0,
+          "event_auc": 0.0
+        },
+        "magnitude": {
+          "block_mean_auc": 0.0,
+          "event_auc": 0.0
+        },
+        "support": {
+          "block_mean_auc": 0.0,
+          "event_auc": 0.0
+        }
+      },
+      "released": {
+        "_meta": {
+          "blocks": 292,
+          "gate_open_rate": 0.0,
+          "scored_events": 2990080
+        },
+        "_occupancy": {
+          "block_span_ms_median": 5.095,
+          "block_span_us_median": 5095.0,
+          "blocks": 292,
+          "fraction_support_saturated": 0.01864164169520548,
+          "fraction_support_zero": 0.1203195232234589,
+          "mean_support": 6.003425995291096
+        },
+        "beta0_magnitude": {
+          "block_mean_auc": 0.8960139908853271,
+          "event_auc": 0.8968134074365453
+        },
+        "beta0_support": {
+          "block_mean_auc": 0.8586313280461453,
+          "event_auc": 0.8583035753856364
+        },
+        "diagnostics": {
+          "auc_polarity_gt_1": 0.5,
+          "auc_polarity_sign": 0.500050220124609,
+          "corrupt_on_noise": 0,
+          "corrupt_on_signal": 0,
+          "corrupt_polarity_fraction": 0.0,
+          "events": 3000000,
+          "noise_fraction": 0.119587,
+          "noise_on_fraction": 0.500140762234468,
+          "signal_on_fraction": 0.5000403219852501
+        },
+        "ebf": {
+          "block_mean_auc": 0.8852668058890887,
+          "event_auc": 0.8860902510196716
+        },
+        "magnitude": {
+          "block_mean_auc": 0.8960139908853271,
+          "event_auc": 0.8968134074365453
+        },
+        "support": {
+          "block_mean_auc": 0.8586313280461453,
+          "event_auc": 0.8583035753856364
+        }
+      },
+      "repaired": {
+        "_meta": {
+          "blocks": 292,
+          "gate_open_rate": 0.0,
+          "scored_events": 2990080
+        },
+        "_occupancy": {
+          "block_span_ms_median": 5.095,
+          "block_span_us_median": 5095.0,
+          "blocks": 292,
+          "fraction_support_saturated": 0.01864164169520548,
+          "fraction_support_zero": 0.1203195232234589,
+          "mean_support": 6.003425995291096
+        },
+        "beta0_magnitude": {
+          "block_mean_auc": 0.8960139908853271,
+          "event_auc": 0.8968134074365453
+        },
+        "beta0_support": {
+          "block_mean_auc": 0.8586313280461453,
+          "event_auc": 0.8583035753856364
+        },
+        "diagnostics": {
+          "auc_polarity_gt_1": 0.5,
+          "auc_polarity_sign": 0.500050220124609,
+          "corrupt_on_noise": 0,
+          "corrupt_on_signal": 0,
+          "corrupt_polarity_fraction": 0.0,
+          "events": 3000000,
+          "noise_fraction": 0.119587,
+          "noise_on_fraction": 0.500140762234468,
+          "signal_on_fraction": 0.5000403219852501
+        },
+        "ebf": {
+          "block_mean_auc": 0.8852668058890887,
+          "event_auc": 0.8860902510196716
+        },
+        "magnitude": {
+          "block_mean_auc": 0.8960139908853271,
+          "event_auc": 0.8968134074365453
+        },
+        "support": {
+          "block_mean_auc": 0.8586313280461453,
+          "event_auc": 0.8583035753856364
+        }
+      }
+    },
+    "campus1_5Hz": {
+      "leak": {
+        "auc_polarity_gt_1": 0.7996578272027374,
+        "auc_polarity_sign_released": 0.6491597079212313,
+        "auc_polarity_sign_repaired": 0.49924571103022075,
+        "contaminated": true,
+        "corrupt_on_signal": 0,
+        "corrupt_polarity_fraction": 0.108593
+      },
+      "leak_cost": {
+        "beta0_magnitude": {
+          "block_mean_auc": -0.0052880972865001485,
+          "event_auc": -0.005466032979219326
+        },
+        "beta0_support": {
+          "block_mean_auc": -0.005410147286882161,
+          "event_auc": -0.006052839620049655
+        },
+        "ebf": {
+          "block_mean_auc": -0.0016715370362321291,
+          "event_auc": -0.001299742210569721
+        },
+        "magnitude": {
+          "block_mean_auc": -0.0052880972865001485,
+          "event_auc": -0.005466032979219326
+        },
+        "support": {
+          "block_mean_auc": -0.005410147286882161,
+          "event_auc": -0.006052839620049655
+        }
+      },
+      "released": {
+        "_meta": {
+          "blocks": 292,
+          "gate_open_rate": 0.0,
+          "scored_events": 2990080
+        },
+        "_occupancy": {
+          "block_span_ms_median": 3.986,
+          "block_span_us_median": 3986.0,
+          "blocks": 292,
+          "fraction_support_saturated": 0.016708248608732875,
+          "fraction_support_zero": 0.13974208047945205,
+          "mean_support": 5.524583288741439
+        },
+        "beta0_magnitude": {
+          "block_mean_auc": 0.8873152327309249,
+          "event_auc": 0.8879779246483077
+        },
+        "beta0_support": {
+          "block_mean_auc": 0.8478456093833353,
+          "event_auc": 0.8473125214771519
+        },
+        "diagnostics": {
+          "auc_polarity_gt_1": 0.7996578272027374,
+          "auc_polarity_sign": 0.6491597079212313,
+          "corrupt_on_noise": 325779,
+          "corrupt_on_signal": 0,
+          "corrupt_polarity_fraction": 0.108593,
+          "events": 3000000,
+          "noise_fraction": 0.181195,
+          "noise_on_fraction": 0.7991040959555543,
+          "signal_on_fraction": 0.5007846801130916
+        },
+        "ebf": {
+          "block_mean_auc": 0.8836888787284279,
+          "event_auc": 0.884708986557051
+        },
+        "magnitude": {
+          "block_mean_auc": 0.8873152327309249,
+          "event_auc": 0.8879779246483077
+        },
+        "support": {
+          "block_mean_auc": 0.8478456093833353,
+          "event_auc": 0.8473125214771519
+        }
+      },
+      "repaired": {
+        "_meta": {
+          "blocks": 292,
+          "gate_open_rate": 0.0,
+          "scored_events": 2990080
+        },
+        "_occupancy": {
+          "block_span_ms_median": 3.986,
+          "block_span_us_median": 3986.0,
+          "blocks": 292,
+          "fraction_support_saturated": 0.016609589041095888,
+          "fraction_support_zero": 0.143995143942637,
+          "mean_support": 5.519399815389555
+        },
+        "beta0_magnitude": {
+          "block_mean_auc": 0.8926033300174251,
+          "event_auc": 0.893443957627527
+        },
+        "beta0_support": {
+          "block_mean_auc": 0.8532557566702175,
+          "event_auc": 0.8533653610972015
+        },
+        "diagnostics": {
+          "auc_polarity_gt_1": 0.7996578272027374,
+          "auc_polarity_sign": 0.49924571103022075,
+          "corrupt_on_noise": 325779,
+          "corrupt_on_signal": 0,
+          "corrupt_polarity_fraction": 0.108593,
+          "events": 3000000,
+          "noise_fraction": 0.181195,
+          "noise_on_fraction": 0.49927610217353313,
+          "signal_on_fraction": 0.5007846801130916
+        },
+        "ebf": {
+          "block_mean_auc": 0.8853604157646601,
+          "event_auc": 0.8860087287676207
+        },
+        "magnitude": {
+          "block_mean_auc": 0.8926033300174251,
+          "event_auc": 0.893443957627527
+        },
+        "support": {
+          "block_mean_auc": 0.8532557566702175,
+          "event_auc": 0.8533653610972015
+        }
+      }
+    },
+    "campus2_1Hz": {
+      "leak": {
+        "auc_polarity_gt_1": 0.7998156580377822,
+        "auc_polarity_sign_released": 0.6440171247183782,
+        "auc_polarity_sign_repaired": 0.4942432193472521,
+        "contaminated": true,
+        "corrupt_on_signal": 0,
+        "corrupt_polarity_fraction": 0.025372
+      },
+      "leak_cost": {
+        "beta0_magnitude": {
+          "block_mean_auc": -0.0010850034961880084,
+          "event_auc": -0.001213727822595767
+        },
+        "beta0_support": {
+          "block_mean_auc": -0.002325703903386045,
+          "event_auc": -0.002658009887554713
+        },
+        "ebf": {
+          "block_mean_auc": 0.0004961304243243925,
+          "event_auc": 0.00039826697439637737
+        },
+        "magnitude": {
+          "block_mean_auc": -0.0010850034961880084,
+          "event_auc": -0.001213727822595767
+        },
+        "support": {
+          "block_mean_auc": -0.002325703903386045,
+          "event_auc": -0.002658009887554713
+        }
+      },
+      "released": {
+        "_meta": {
+          "blocks": 292,
+          "gate_open_rate": 0.0,
+          "scored_events": 2990080
+        },
+        "_occupancy": {
+          "block_span_ms_median": 5.521,
+          "block_span_us_median": 5521.0,
+          "blocks": 292,
+          "fraction_support_saturated": 0.00010902718321917807,
+          "fraction_support_zero": 0.07341241705907535,
+          "mean_support": 5.764300620719178
+        },
+        "beta0_magnitude": {
+          "block_mean_auc": 0.9101346018858664,
+          "event_auc": 0.9112461681361692
+        },
+        "beta0_support": {
+          "block_mean_auc": 0.864534337088656,
+          "event_auc": 0.8650188278252906
+        },
+        "diagnostics": {
+          "auc_polarity_gt_1": 0.7998156580377822,
+          "auc_polarity_sign": 0.6440171247183782,
+          "corrupt_on_noise": 76116,
+          "corrupt_on_signal": 0,
+          "corrupt_polarity_fraction": 0.025372,
+          "events": 3000000,
+          "noise_fraction": 0.042312666666666665,
+          "noise_on_fraction": 0.7992720855850888,
+          "signal_on_fraction": 0.5112378361483323
+        },
+        "ebf": {
+          "block_mean_auc": 0.8677950447749861,
+          "event_auc": 0.8720195662895948
+        },
+        "magnitude": {
+          "block_mean_auc": 0.9101346018858664,
+          "event_auc": 0.9112461681361692
+        },
+        "support": {
+          "block_mean_auc": 0.864534337088656,
+          "event_auc": 0.8650188278252906
+        }
+      },
+      "repaired": {
+        "_meta": {
+          "blocks": 292,
+          "gate_open_rate": 0.0,
+          "scored_events": 2990080
+        },
+        "_occupancy": {
+          "block_span_ms_median": 5.521,
+          "block_span_us_median": 5521.0,
+          "blocks": 292,
+          "fraction_support_saturated": 0.00010835830479452056,
+          "fraction_support_zero": 0.07351074218749999,
+          "mean_support": 5.7630227284888695
+        },
+        "beta0_magnitude": {
+          "block_mean_auc": 0.9112196053820544,
+          "event_auc": 0.912459895958765
+        },
+        "beta0_support": {
+          "block_mean_auc": 0.8668600409920421,
+          "event_auc": 0.8676768377128453
+        },
+        "diagnostics": {
+          "auc_polarity_gt_1": 0.7998156580377822,
+          "auc_polarity_sign": 0.4942432193472521,
+          "corrupt_on_noise": 76116,
+          "corrupt_on_signal": 0,
+          "corrupt_polarity_fraction": 0.025372,
+          "events": 3000000,
+          "noise_fraction": 0.042312666666666665,
+          "noise_on_fraction": 0.49972427484283666,
+          "signal_on_fraction": 0.5112378361483323
+        },
+        "ebf": {
+          "block_mean_auc": 0.8672989143506618,
+          "event_auc": 0.8716212993151984
+        },
+        "magnitude": {
+          "block_mean_auc": 0.9112196053820544,
+          "event_auc": 0.912459895958765
+        },
+        "support": {
+          "block_mean_auc": 0.8668600409920421,
+          "event_auc": 0.8676768377128453
+        }
+      }
+    },
+    "campus2_3Hz": {
+      "leak": {
+        "auc_polarity_gt_1": 0.8005507736661861,
+        "auc_polarity_sign_released": 0.6413013079809697,
+        "auc_polarity_sign_repaired": 0.4909925914252633,
+        "contaminated": true,
+        "corrupt_on_signal": 0,
+        "corrupt_polarity_fraction": 0.07214
+      },
+      "leak_cost": {
+        "beta0_magnitude": {
+          "block_mean_auc": -0.0042700202210596006,
+          "event_auc": -0.004347980791524875
+        },
+        "beta0_support": {
+          "block_mean_auc": -0.006144536796721223,
+          "event_auc": -0.006386296711528128
+        },
+        "ebf": {
+          "block_mean_auc": -0.004688232627252931,
+          "event_auc": -0.0044666819754625164
+        },
+        "magnitude": {
+          "block_mean_auc": -0.0042700202210596006,
+          "event_auc": -0.004347980791524875
+        },
+        "support": {
+          "block_mean_auc": -0.006144536796721223,
+          "event_auc": -0.006386296711528128
+        }
+      },
+      "released": {
+        "_meta": {
+          "blocks": 292,
+          "gate_open_rate": 0.0,
+          "scored_events": 2990080
+        },
+        "_occupancy": {
+          "block_span_ms_median": 4.8695,
+          "block_span_us_median": 4869.5,
+          "blocks": 292,
+          "fraction_support_saturated": 3.5784995719178084e-05,
+          "fraction_support_zero": 0.10703626658818495,
+          "mean_support": 5.128660102739726
+        },
+        "beta0_magnitude": {
+          "block_mean_auc": 0.8992034375938418,
+          "event_auc": 0.900774424811563
+        },
+        "beta0_support": {
+          "block_mean_auc": 0.8529636145252486,
+          "event_auc": 0.853796614870743
+        },
+        "diagnostics": {
+          "auc_polarity_gt_1": 0.8005507736661861,
+          "auc_polarity_sign": 0.6413013079809697,
+          "corrupt_on_noise": 216420,
+          "corrupt_on_signal": 0,
+          "corrupt_polarity_fraction": 0.07214,
+          "events": 3000000,
+          "noise_fraction": 0.120013,
+          "noise_on_fraction": 0.8003549615458325,
+          "signal_on_fraction": 0.517752345583893
+        },
+        "ebf": {
+          "block_mean_auc": 0.8620215546759767,
+          "event_auc": 0.8667289348741566
+        },
+        "magnitude": {
+          "block_mean_auc": 0.8992034375938418,
+          "event_auc": 0.900774424811563
+        },
+        "support": {
+          "block_mean_auc": 0.8529636145252486,
+          "event_auc": 0.853796614870743
+        }
+      },
+      "repaired": {
+        "_meta": {
+          "blocks": 292,
+          "gate_open_rate": 0.0,
+          "scored_events": 2990080
+        },
+        "_occupancy": {
+          "block_span_ms_median": 4.8695,
+          "block_span_us_median": 4869.5,
+          "blocks": 292,
+          "fraction_support_saturated": 3.545055650684931e-05,
+          "fraction_support_zero": 0.10926430062071917,
+          "mean_support": 5.1204228649400685
+        },
+        "beta0_magnitude": {
+          "block_mean_auc": 0.9034734578149014,
+          "event_auc": 0.9051224056030879
+        },
+        "beta0_support": {
+          "block_mean_auc": 0.8591081513219698,
+          "event_auc": 0.8601829115822711
+        },
+        "diagnostics": {
+          "auc_polarity_gt_1": 0.8005507736661861,
+          "auc_polarity_sign": 0.4909925914252633,
+          "corrupt_on_noise": 216420,
+          "corrupt_on_signal": 0,
+          "corrupt_polarity_fraction": 0.07214,
+          "events": 3000000,
+          "noise_fraction": 0.120013,
+          "noise_on_fraction": 0.4997375284344196,
+          "signal_on_fraction": 0.517752345583893
+        },
+        "ebf": {
+          "block_mean_auc": 0.8667097873032297,
+          "event_auc": 0.8711956168496191
+        },
+        "magnitude": {
+          "block_mean_auc": 0.9034734578149014,
+          "event_auc": 0.9051224056030879
+        },
+        "support": {
+          "block_mean_auc": 0.8591081513219698,
+          "event_auc": 0.8601829115822711
+        }
+      }
+    },
+    "campus2_5Hz": {
+      "leak": {
+        "auc_polarity_gt_1": 0.799662332889236,
+        "auc_polarity_sign_released": 0.6384973646706863,
+        "auc_polarity_sign_repaired": 0.48867194086400645,
+        "contaminated": true,
+        "corrupt_on_signal": 0,
+        "corrupt_polarity_fraction": 0.113061
+      },
+      "leak_cost": {
+        "beta0_magnitude": {
+          "block_mean_auc": -0.006517171735594407,
+          "event_auc": -0.006524807597452775
+        },
+        "beta0_support": {
+          "block_mean_auc": -0.010405363842672322,
+          "event_auc": -0.010779390006789624
+        },
+        "ebf": {
+          "block_mean_auc": -0.009495062816776478,
+          "event_auc": -0.008962725322609444
+        },
+        "magnitude": {
+          "block_mean_auc": -0.006517171735594407,
+          "event_auc": -0.006524807597452775
+        },
+        "support": {
+          "block_mean_auc": -0.010405363842672322,
+          "event_auc": -0.010779390006789624
+        }
+      },
+      "released": {
+        "_meta": {
+          "blocks": 292,
+          "gate_open_rate": 0.0,
+          "scored_events": 2990080
+        },
+        "_occupancy": {
+          "block_span_ms_median": 4.167,
+          "block_span_us_median": 4167.0,
+          "blocks": 292,
+          "fraction_support_saturated": 2.5751819349315068e-05,
+          "fraction_support_zero": 0.12998448202054794,
+          "mean_support": 4.611036828446061
+        },
+        "beta0_magnitude": {
+          "block_mean_auc": 0.8911755372414493,
+          "event_auc": 0.8930281531040075
+        },
+        "beta0_support": {
+          "block_mean_auc": 0.8412798106481159,
+          "event_auc": 0.8423256851295411
+        },
+        "diagnostics": {
+          "auc_polarity_gt_1": 0.799662332889236,
+          "auc_polarity_sign": 0.6384973646706863,
+          "corrupt_on_noise": 339183,
+          "corrupt_on_signal": 0,
+          "corrupt_polarity_fraction": 0.113061,
+          "events": 3000000,
+          "noise_fraction": 0.18864733333333333,
+          "noise_on_fraction": 0.8002304123037343,
+          "signal_on_fraction": 0.5232356829623617
+        },
+        "ebf": {
+          "block_mean_auc": 0.8571435812817919,
+          "event_auc": 0.8616280814736558
+        },
+        "magnitude": {
+          "block_mean_auc": 0.8911755372414493,
+          "event_auc": 0.8930281531040075
+        },
+        "support": {
+          "block_mean_auc": 0.8412798106481159,
+          "event_auc": 0.8423256851295411
+        }
+      },
+      "repaired": {
+        "_meta": {
+          "blocks": 292,
+          "gate_open_rate": 0.0,
+          "scored_events": 2990080
+        },
+        "_occupancy": {
+          "block_span_ms_median": 4.167,
+          "block_span_us_median": 4167.0,
+          "blocks": 292,
+          "fraction_support_saturated": 2.5082940924657533e-05,
+          "fraction_support_zero": 0.13563550139126712,
+          "mean_support": 4.589682215860445
+        },
+        "beta0_magnitude": {
+          "block_mean_auc": 0.8976927089770437,
+          "event_auc": 0.8995529607014603
+        },
+        "beta0_support": {
+          "block_mean_auc": 0.8516851744907882,
+          "event_auc": 0.8531050751363307
+        },
+        "diagnostics": {
+          "auc_polarity_gt_1": 0.799662332889236,
+          "auc_polarity_sign": 0.48867194086400645,
+          "corrupt_on_noise": 339183,
+          "corrupt_on_signal": 0,
+          "corrupt_polarity_fraction": 0.113061,
+          "events": 3000000,
+          "noise_fraction": 0.18864733333333333,
+          "noise_on_fraction": 0.5005795646903747,
+          "signal_on_fraction": 0.5232356829623617
+        },
+        "ebf": {
+          "block_mean_auc": 0.8666386440985684,
+          "event_auc": 0.8705908067962652
+        },
+        "magnitude": {
+          "block_mean_auc": 0.8976927089770437,
+          "event_auc": 0.8995529607014603
+        },
+        "support": {
+          "block_mean_auc": 0.8516851744907882,
+          "event_auc": 0.8531050751363307
+        }
+      }
+    }
+  },
+  "phase": "62 BUAA_Campus, EBF's own dataset, and its label leak",
+  "summary": {
+    "clean_sequences": [
+      "campus1_1Hz",
+      "campus1_3Hz"
+    ],
+    "contaminated_sequences": [
+      "campus1_5Hz",
+      "campus2_1Hz",
+      "campus2_3Hz",
+      "campus2_5Hz"
+    ],
+    "released_beta0_magnitude_block_mean_auc": {
+      "all": 0.8974560130092758,
+      "clean": 0.8984536343017864,
+      "contaminated": 0.8969572023630206
+    },
+    "released_beta0_magnitude_event_auc": {
+      "all": 0.8986811285961308,
+      "clean": 0.8995300504383686,
+      "contaminated": 0.8982566676750118
+    },
+    "released_beta0_support_block_mean_auc": {
+      "all": 0.8551036209456955,
+      "clean": 0.8619991770144086,
+      "contaminated": 0.851655842911339
+    },
+    "released_beta0_support_event_auc": {
+      "all": 0.8554240781993752,
+      "clean": 0.862045409946762,
+      "contaminated": 0.8521134123256817
+    },
+    "released_ebf_block_mean_auc": {
+      "all": 0.8738362841328288,
+      "clean": 0.8861843226678949,
+      "contaminated": 0.8676622648652956
+    },
+    "released_ebf_event_auc": {
+      "all": 0.8768099513658241,
+      "clean": 0.887887069500243,
+      "contaminated": 0.8712713922986145
+    },
+    "released_magnitude_block_mean_auc": {
+      "all": 0.8970243239444732,
+      "clean": 0.8971585671073785,
+      "contaminated": 0.8969572023630206
+    },
+    "released_magnitude_event_auc": {
+      "all": 0.8981776986243184,
+      "clean": 0.8980197605229312,
+      "contaminated": 0.8982566676750118
+    },
+    "released_support_block_mean_auc": {
+      "all": 0.8546513813715341,
+      "clean": 0.8606424582919243,
+      "contaminated": 0.851655842911339
+    },
+    "released_support_event_auc": {
+      "all": 0.854951383368565,
+      "clean": 0.8606273254543317,
+      "contaminated": 0.8521134123256817
+    },
+    "repaired_beta0_magnitude_block_mean_auc": {
+      "all": 0.9003160617991662,
+      "clean": 0.8984536343017864,
+      "contaminated": 0.9012472755478562
+    },
+    "repaired_beta0_magnitude_event_auc": {
+      "all": 0.9016065534612628,
+      "clean": 0.8995300504383686,
+      "contaminated": 0.90264480497271
+    },
+    "repaired_beta0_support_block_mean_auc": {
+      "all": 0.8591512462506391,
+      "clean": 0.8619991770144086,
+      "contaminated": 0.8577272808687545
+    },
+    "repaired_beta0_support_event_auc": {
+      "all": 0.859736834237029,
+      "clean": 0.862045409946762,
+      "contaminated": 0.8585825463821621
+    },
+    "repaired_ebf_block_mean_auc": {
+      "all": 0.8763960678088183,
+      "clean": 0.8861843226678949,
+      "contaminated": 0.8715019403792799
+    },
+    "repaired_ebf_event_auc": {
+      "all": 0.8791984317881983,
+      "clean": 0.887887069500243,
+      "contaminated": 0.8748541129321759
+    },
+    "repaired_magnitude_block_mean_auc": {
+      "all": 0.8998843727343635,
+      "clean": 0.8971585671073785,
+      "contaminated": 0.9012472755478562
+    },
+    "repaired_magnitude_event_auc": {
+      "all": 0.9011031234894505,
+      "clean": 0.8980197605229312,
+      "contaminated": 0.90264480497271
+    },
+    "repaired_support_block_mean_auc": {
+      "all": 0.8586990066764777,
+      "clean": 0.8606424582919243,
+      "contaminated": 0.8577272808687545
+    },
+    "repaired_support_event_auc": {
+      "all": 0.8592641394062186,
+      "clean": 0.8606273254543317,
+      "contaminated": 0.8585825463821621
+    }
+  },
+  "wall_seconds": 127.23271491203923
+}

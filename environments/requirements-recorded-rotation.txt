@@ -1,0 +1,13 @@
+# Recorded phase81 numeric profile; Python 3.12.12.
+# Ancillary versions are the release-time inventory of the retained run environment.
+numpy==1.26.4
+numba==0.64.0
+llvmlite==0.46.0
+scipy==1.17.1
+scikit-learn==1.8.0
+pandas==3.0.1
+h5py==3.16.0
+threadpoolctl==3.6.0
+matplotlib==3.10.8
+pytest==9.0.3
+# Install an appropriate torch wheel separately; historical package exports need it.

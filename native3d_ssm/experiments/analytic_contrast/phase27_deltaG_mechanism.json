@@ -1,0 +1,275 @@
+{
+  "conditions": {
+    "DND21 10hz driving": {
+      "blocks": 25,
+      "corr_G_with_block_position": -0.021189682584200887,
+      "delta_G": 2.4131889724731446,
+      "delta_G_dithered": 2.3398608207702636,
+      "delta_G_trimmed": 2.4455779075622557,
+      "gate_value_dithered": 0.10590108990953699,
+      "gate_value_raw": 0.10805727860611611,
+      "rate_ratio_noise_over_signal": 11.169523714563656,
+      "timestamp_multiplicity_noise": 1040.1931746031746,
+      "timestamp_multiplicity_signal": 47.96170833281526
+    },
+    "DND21 10hz hotel-bar": {
+      "blocks": 25,
+      "corr_G_with_block_position": -0.0034777526191991635,
+      "delta_G": 3.3710355377197265,
+      "delta_G_dithered": 3.3567048263549806,
+      "delta_G_trimmed": 3.3920861434936525,
+      "gate_value_dithered": 0.06293314733118845,
+      "gate_value_raw": 0.06309169894209257,
+      "rate_ratio_noise_over_signal": 29.108654565792737,
+      "timestamp_multiplicity_noise": 1025.6633333333332,
+      "timestamp_multiplicity_signal": 1.0657850505074773
+    },
+    "DND21 1hz driving": {
+      "blocks": 25,
+      "corr_G_with_block_position": 0.09416859327470367,
+      "delta_G": 0.1688130569458008,
+      "delta_G_dithered": 0.15087778091430665,
+      "delta_G_trimmed": 0.16424428939819335,
+      "gate_value_dithered": -0.07496989729910117,
+      "gate_value_raw": -0.06515944609493964,
+      "rate_ratio_noise_over_signal": 1.1838987965785117,
+      "timestamp_multiplicity_noise": 79.91004641641884,
+      "timestamp_multiplicity_signal": 81.36216352556967
+    },
+    "DND21 1hz hotel-bar": {
+      "blocks": 25,
+      "corr_G_with_block_position": 0.0019899428074937665,
+      "delta_G": 2.168479633331299,
+      "delta_G_dithered": 2.155669116973877,
+      "delta_G_trimmed": 2.1728579330444338,
+      "gate_value_dithered": 0.014113897337833511,
+      "gate_value_raw": 0.014196122907624096,
+      "rate_ratio_noise_over_signal": 8.744978354933902,
+      "timestamp_multiplicity_noise": 187.93406110174467,
+      "timestamp_multiplicity_signal": 1.0621985727878631
+    },
+    "DND21 3hz driving": {
+      "blocks": 25,
+      "corr_G_with_block_position": 0.04110327532642008,
+      "delta_G": 1.0326642990112305,
+      "delta_G_dithered": 0.9927137184143067,
+      "delta_G_trimmed": 1.034613208770752,
+      "gate_value_dithered": 0.03801793892447701,
+      "gate_value_raw": 0.04040084844153229,
+      "rate_ratio_noise_over_signal": 2.808538662135753,
+      "timestamp_multiplicity_noise": 334.7300432900432,
+      "timestamp_multiplicity_signal": 72.94823760324942
+    },
+    "DND21 3hz hotel-bar": {
+      "blocks": 25,
+      "corr_G_with_block_position": -0.02152495163941142,
+      "delta_G": 1.0295708465576172,
+      "delta_G_dithered": 1.0195890426635743,
+      "delta_G_trimmed": 1.026861915588379,
+      "gate_value_dithered": 0.013306530116387782,
+      "gate_value_raw": 0.013448486939624806,
+      "rate_ratio_noise_over_signal": 2.7998640055567794,
+      "timestamp_multiplicity_noise": 168.45209854541744,
+      "timestamp_multiplicity_signal": 1.0693978060929838
+    },
+    "DND21 5hz driving": {
+      "blocks": 25,
+      "corr_G_with_block_position": 0.001916427259196949,
+      "delta_G": 1.525315990447998,
+      "delta_G_dithered": 1.4721557807922363,
+      "delta_G_trimmed": 1.535221691131592,
+      "gate_value_dithered": 0.06288284940747875,
+      "gate_value_raw": 0.06524431331606026,
+      "rate_ratio_noise_over_signal": 4.596595820218393,
+      "timestamp_multiplicity_noise": 547.4754444444444,
+      "timestamp_multiplicity_signal": 64.59443753473312
+    },
+    "DND21 5hz hotel-bar": {
+      "blocks": 25,
+      "corr_G_with_block_position": 0.010192171583726985,
+      "delta_G": 3.2924017333984374,
+      "delta_G_dithered": 3.2792171478271483,
+      "delta_G_trimmed": 3.3157018280029296,
+      "gate_value_dithered": 0.040885935514050474,
+      "gate_value_raw": 0.04101233317829964,
+      "rate_ratio_noise_over_signal": 26.907410539226095,
+      "timestamp_multiplicity_noise": 727.9731135531136,
+      "timestamp_multiplicity_signal": 1.0693976361036257
+    },
+    "DND21 7hz driving": {
+      "blocks": 25,
+      "corr_G_with_block_position": 0.02733322315319613,
+      "delta_G": 1.9239640998840333,
+      "delta_G_dithered": 1.8603202247619628,
+      "delta_G_trimmed": 1.9305996322631835,
+      "gate_value_dithered": 0.08263805532525036,
+      "gate_value_raw": 0.08475859978645559,
+      "rate_ratio_noise_over_signal": 6.848051093423973,
+      "timestamp_multiplicity_noise": 745.949673992674,
+      "timestamp_multiplicity_signal": 57.86985745576354
+    },
+    "DND21 7hz hotel-bar": {
+      "blocks": 25,
+      "corr_G_with_block_position": 0.011536364874325052,
+      "delta_G": 3.0183568954467774,
+      "delta_G_dithered": 3.0039602661132814,
+      "delta_G_trimmed": 3.0471033096313476,
+      "gate_value_dithered": 0.04490659728211769,
+      "gate_value_raw": 0.04504162394990991,
+      "rate_ratio_noise_over_signal": 20.457649995499963,
+      "timestamp_multiplicity_noise": 741.1572121212121,
+      "timestamp_multiplicity_signal": 1.0687674875128166
+    },
+    "DVSCLEAN MAH00446_100": {
+      "blocks": 25,
+      "corr_G_with_block_position": 0.10956868587134276,
+      "delta_G": -0.08519502639770508,
+      "delta_G_dithered": -0.08503702163696289,
+      "delta_G_trimmed": -0.06594722747802734,
+      "gate_value_dithered": -0.40802723312891986,
+      "gate_value_raw": -0.4081542697863538,
+      "rate_ratio_noise_over_signal": 0.9183331677261903,
+      "timestamp_multiplicity_noise": 1.171023185298529,
+      "timestamp_multiplicity_signal": 6.908419381074563
+    },
+    "DVSCLEAN MAH00446_50": {
+      "blocks": 25,
+      "corr_G_with_block_position": 0.08620590316017752,
+      "delta_G": -0.12172737121582031,
+      "delta_G_dithered": -0.12135318756103515,
+      "delta_G_trimmed": -0.10385456085205078,
+      "gate_value_dithered": -0.4495539637014737,
+      "gate_value_raw": -0.44973135610036985,
+      "rate_ratio_noise_over_signal": 0.88538971832411,
+      "timestamp_multiplicity_noise": 1.0831078350878176,
+      "timestamp_multiplicity_signal": 3.677054215012451
+    },
+    "DVSCLEAN MAH00454_100": {
+      "blocks": 25,
+      "corr_G_with_block_position": 0.10792631820356824,
+      "delta_G": -0.04780776977539063,
+      "delta_G_dithered": -0.047414665222167966,
+      "delta_G_trimmed": -0.04434471130371094,
+      "gate_value_dithered": -0.3947515090411426,
+      "gate_value_raw": -0.39514359405340493,
+      "rate_ratio_noise_over_signal": 0.9533170258109246,
+      "timestamp_multiplicity_noise": 1.1174564035274586,
+      "timestamp_multiplicity_signal": 2.7999795869265593
+    },
+    "DVSCLEAN MAH00454_50": {
+      "blocks": 25,
+      "corr_G_with_block_position": 0.06826943994299267,
+      "delta_G": -0.06712782859802247,
+      "delta_G_dithered": -0.06635978698730469,
+      "delta_G_trimmed": -0.06100250244140625,
+      "gate_value_dithered": -0.4371381772956223,
+      "gate_value_raw": -0.4377659141676422,
+      "rate_ratio_noise_over_signal": 0.935075664285602,
+      "timestamp_multiplicity_noise": 1.0589452145942146,
+      "timestamp_multiplicity_signal": 2.7673418050351684
+    },
+    "DVSCLEAN MAH00455_100": {
+      "blocks": 25,
+      "corr_G_with_block_position": 0.031133588527774744,
+      "delta_G": -0.04832571029663086,
+      "delta_G_dithered": -0.04809013366699219,
+      "delta_G_trimmed": -0.04672994613647461,
+      "gate_value_dithered": -0.34739032451406243,
+      "gate_value_raw": -0.3475984123632845,
+      "rate_ratio_noise_over_signal": 0.9528233921411443,
+      "timestamp_multiplicity_noise": 1.2001316196410683,
+      "timestamp_multiplicity_signal": 3.2186988122097553
+    },
+    "DVSCLEAN MAH00455_50": {
+      "blocks": 25,
+      "corr_G_with_block_position": 0.10376761201203952,
+      "delta_G": -0.05475461959838867,
+      "delta_G_dithered": -0.05429082870483398,
+      "delta_G_trimmed": -0.04808204650878906,
+      "gate_value_dithered": -0.3892979212734416,
+      "gate_value_raw": -0.38965859352814447,
+      "rate_ratio_noise_over_signal": 0.9467174253562035,
+      "timestamp_multiplicity_noise": 1.0927690321965524,
+      "timestamp_multiplicity_signal": 3.167520531321657
+    },
+    "DVSCLEAN MAH00456_100": {
+      "blocks": 25,
+      "corr_G_with_block_position": 0.10336847488047603,
+      "delta_G": -0.07784088134765625,
+      "delta_G_dithered": -0.0773063850402832,
+      "delta_G_trimmed": -0.07518123626708985,
+      "gate_value_dithered": -0.4139929776240965,
+      "gate_value_raw": -0.4144964169949843,
+      "rate_ratio_noise_over_signal": 0.9251116173466474,
+      "timestamp_multiplicity_noise": 1.1207682797524265,
+      "timestamp_multiplicity_signal": 3.8702426537439187
+    },
+    "DVSCLEAN MAH00456_50": {
+      "blocks": 25,
+      "corr_G_with_block_position": 0.08237372091586806,
+      "delta_G": -0.09323570251464844,
+      "delta_G_dithered": -0.0920467185974121,
+      "delta_G_trimmed": -0.08560756683349609,
+      "gate_value_dithered": -0.4505015944431424,
+      "gate_value_raw": -0.45128656885205715,
+      "rate_ratio_noise_over_signal": 0.9109787550057861,
+      "timestamp_multiplicity_noise": 1.062987147845767,
+      "timestamp_multiplicity_signal": 3.6009878397696333
+    },
+    "DVSCLEAN MAH00465_100": {
+      "blocks": 25,
+      "corr_G_with_block_position": -0.00621436601860485,
+      "delta_G": -0.05071760177612305,
+      "delta_G_dithered": -0.05039434432983399,
+      "delta_G_trimmed": -0.05158946990966797,
+      "gate_value_dithered": -0.4431372649005456,
+      "gate_value_raw": -0.4434541990484297,
+      "rate_ratio_noise_over_signal": 0.9505470654365119,
+      "timestamp_multiplicity_noise": 1.077716280824756,
+      "timestamp_multiplicity_signal": 1.9044721358846746
+    },
+    "DVSCLEAN MAH00465_50": {
+      "blocks": 25,
+      "corr_G_with_block_position": 0.06119434750988096,
+      "delta_G": -0.06672345161437988,
+      "delta_G_dithered": -0.06591548919677734,
+      "delta_G_trimmed": -0.06830883026123047,
+      "gate_value_dithered": -0.46682365366923156,
+      "gate_value_raw": -0.467396631460553,
+      "rate_ratio_noise_over_signal": 0.9354538638246441,
+      "timestamp_multiplicity_noise": 1.0384745956448171,
+      "timestamp_multiplicity_signal": 1.8689059623956417
+    }
+  },
+  "phase": "27 what drives the sign of Delta G",
+  "summary": {
+    "G_is": "log1p(c * A) with A_i = A_{i-1} exp(-dt/tau) + 1, i.e. ~ log Lambda(t)",
+    "conditions": 20,
+    "control_timestamp_ties": {
+      "max_abs_gate_value_shift": 0.009810451204161533,
+      "max_abs_shift_when_dithered": 0.07332815170288098,
+      "of": 20,
+      "sign_preserved": 20,
+      "verdict": "rejected as the mechanism"
+    },
+    "control_warmup": {
+      "max_abs_shift_when_trimmed": 0.032388935089111115,
+      "mean_corr_G_with_position": 0.04448206682208834,
+      "of": 20,
+      "sign_preserved": 20,
+      "verdict": "rejected as the mechanism"
+    },
+    "delta_G_is": "a purely temporal contrast: G has no spatial argument",
+    "dense_delta_G_range": [
+      0.1688130569458008,
+      3.3710355377197265
+    ],
+    "max_rate_ratio_dense": 29.108654565792737,
+    "remaining_explanation": "a contrast in temporal burstiness at the tau scale: the class arriving at the higher instantaneous global rate is the one G marks. Which class that is differs between these two synthetic-noise datasets, so the correlation with noise density is observed, not explained.",
+    "sparse_delta_G_range": [
+      -0.12172737121582031,
+      -0.04780776977539063
+    ]
+  },
+  "wall_seconds": 17.697196238994366
+}

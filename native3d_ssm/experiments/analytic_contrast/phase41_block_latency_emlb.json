@@ -1,0 +1,102 @@
+{
+  "block_size": 10240,
+  "note": "Spans are measured over complete blocks only. The adopted configuration waits one block before emitting, so p95 is the latency figure a deployment budget should use, not the median.",
+  "per_condition": {
+    "E-MLB": {
+      "Daylight ND1": {
+        "blocks": 14423,
+        "max_ms": 1854.281,
+        "mean_ms": 19.581545170907578,
+        "median_event_rate_hz": 889274.8588797221,
+        "p50_ms": 11.515,
+        "p90_ms": 33.60660000000002,
+        "p95_ms": 48.34679999999999,
+        "p99_ms": 146.64480000000063
+      },
+      "Daylight ND16": {
+        "blocks": 16157,
+        "max_ms": 1299.214,
+        "mean_ms": 18.021026428173545,
+        "median_event_rate_hz": 1006882.9891838742,
+        "p50_ms": 10.17,
+        "p90_ms": 30.496799999999997,
+        "p95_ms": 45.72099999999998,
+        "p99_ms": 154.12476000000018
+      },
+      "Daylight ND4": {
+        "blocks": 15158,
+        "max_ms": 1722.124,
+        "mean_ms": 18.342075009895765,
+        "median_event_rate_hz": 965172.7225599699,
+        "p50_ms": 10.6095,
+        "p90_ms": 32.439000000000014,
+        "p95_ms": 46.52519999999998,
+        "p99_ms": 150.67263000000008
+      },
+      "Daylight ND64": {
+        "blocks": 15295,
+        "max_ms": 1216.248,
+        "mean_ms": 18.33507819548872,
+        "median_event_rate_hz": 1074614.335187323,
+        "p50_ms": 9.529,
+        "p90_ms": 34.7552,
+        "p95_ms": 54.71909999999996,
+        "p99_ms": 138.3162199999998
+      },
+      "Night ND1": {
+        "blocks": 21062,
+        "max_ms": 1537.059,
+        "mean_ms": 12.856210046529295,
+        "median_event_rate_hz": 1331772.662244765,
+        "p50_ms": 7.689,
+        "p90_ms": 26.06210000000001,
+        "p95_ms": 37.51730000000001,
+        "p99_ms": 70.3026999999998
+      },
+      "Night ND16": {
+        "blocks": 12829,
+        "max_ms": 193.107,
+        "mean_ms": 21.22902166965469,
+        "median_event_rate_hz": 670727.7133687037,
+        "p50_ms": 15.267,
+        "p90_ms": 48.20460000000002,
+        "p95_ms": 60.92199999999986,
+        "p99_ms": 83.95083999999983
+      },
+      "Night ND4": {
+        "blocks": 16395,
+        "max_ms": 296.285,
+        "mean_ms": 16.442222140896614,
+        "median_event_rate_hz": 985373.364126251,
+        "p50_ms": 10.392,
+        "p90_ms": 35.4946,
+        "p95_ms": 46.0408,
+        "p99_ms": 78.48393999999998
+      },
+      "Night ND64": {
+        "blocks": 9505,
+        "max_ms": 165.318,
+        "mean_ms": 28.61555265649658,
+        "median_event_rate_hz": 495739.7366382649,
+        "p50_ms": 20.656,
+        "p90_ms": 64.7754,
+        "p95_ms": 75.67579999999997,
+        "p99_ms": 103.47775999999966
+      }
+    }
+  },
+  "phase": "41 wall-clock temporal span of one event block",
+  "pooled": {
+    "E-MLB": {
+      "best_condition_p50_ms": 7.689,
+      "blocks": 120824,
+      "conditions": 8,
+      "median_of_condition_p50_ms": 10.50075,
+      "worst_condition_max_ms": 1854.281,
+      "worst_condition_p50_ms": 20.656,
+      "worst_condition_p95_ms": 75.67579999999997
+    }
+  },
+  "question": "A block holds a fixed number of events, so the lookahead latency it implies varies with scene activity. What is that distribution?",
+  "wall_seconds": 33.480871830999604
+}

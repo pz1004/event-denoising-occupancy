@@ -1,0 +1,101 @@
+{
+  "block_span": {
+    "development_median_ms": 24.3024,
+    "ebf_window_ms": 32.0,
+    "led_median_ms": 0.774530303030303,
+    "note": "Our block is fixed in events, so its temporal extent shrinks as the event rate rises; EBF's window is fixed in time and does not."
+  },
+  "development": {
+    "conditions": 20,
+    "conditions_ebf_wins": [
+      "DVSCLEAN/MAH00454_100",
+      "DVSCLEAN/MAH00454_50",
+      "DVSCLEAN/MAH00455_100",
+      "DVSCLEAN/MAH00455_50",
+      "DVSCLEAN/MAH00456_100",
+      "DVSCLEAN/MAH00456_50"
+    ],
+    "corr_support_vs_ebf": -0.4039292218295899,
+    "corr_support_vs_gap": -0.546578248463976,
+    "corr_support_vs_ours": 0.44686741195237917,
+    "ebf_losses": 14,
+    "ebf_wins": 6,
+    "max_support_where_ebf_wins": 3.2544379340277776,
+    "mean_support_range": [
+      1.5355496651785716,
+      10.13733723958333
+    ],
+    "mean_support_where_ebf_loses": 5.459638458431402,
+    "mean_support_where_ebf_wins": 2.354444125812941,
+    "note": "On development the two methods move opposite ways in occupancy: ours improves as the ring fills, EBF degrades, which is what a window fixed in time does when the event rate rises."
+  },
+  "led": {
+    "corr_support_vs_ebf": {
+      "ci95": [
+        0.6101107705270915,
+        0.779546787132186
+      ],
+      "point": 0.6980512480504972,
+      "replicates": 20000
+    },
+    "corr_support_vs_gap": {
+      "ci95": [
+        -0.9070975743654228,
+        -0.8004472496439233
+      ],
+      "point": -0.8547196544517508,
+      "replicates": 20000
+    },
+    "corr_support_vs_ours_beta0": {
+      "ci95": [
+        0.8692828543122968,
+        0.9324221110197979
+      ],
+      "point": 0.9014117722209437,
+      "replicates": 20000
+    },
+    "corr_support_vs_ours_gated": {
+      "ci95": [
+        0.8753383107684883,
+        0.9365591578715531
+      ],
+      "point": 0.9066749394553374,
+      "replicates": 20000
+    },
+    "corr_zero_fraction_vs_gap": 0.8829338924727176,
+    "corr_zero_fraction_vs_ours_gated": -0.8915493936345494,
+    "mean_support_range": [
+      0.37306126644736837,
+      7.402469308035713
+    ],
+    "scenes": 66
+  },
+  "led_scenes_at_development_occupancy": {
+    "ebf_at_or_above": 0.959318254378424,
+    "ebf_below": 0.8903467934493344,
+    "gap_at_or_above": 0.054068965208230464,
+    "gap_below": 0.15720577289609758,
+    "n_at_or_above": 15,
+    "n_below": 51,
+    "ours_at_or_above": 0.9052492891701935,
+    "ours_below": 0.7331410205532369,
+    "threshold_mean_support": 4.5280801586458646,
+    "threshold_source": "development's own mean occupancy, not chosen here"
+  },
+  "phase": "61 the support gradient behind the LED gap",
+  "pooled_86_units": {
+    "corr_support_vs_ebf": 0.5988407498166792,
+    "corr_support_vs_ours": 0.7786248665820434
+  },
+  "provenance": {
+    "inputs": [
+      "phase60_occupancy_regime.json",
+      "phase59_ebf_led.json",
+      "phase57_ebf_labelled.json"
+    ],
+    "phase60_verdict": "LED does not sit in the near-empty-ring regime; the empty-ring account of the LED gap is not supported",
+    "recomputed": "nothing; every value is read from a stored artefact",
+    "status": "POST-HOC with respect to Phase 60's pre-registered pooled rule, which LED failed. The quantity, direction and mechanism were fixed in Supplementary S5 before LED was scored; only the unit of analysis changed, from the benchmark to the scene."
+  },
+  "wall_seconds": 2.4938225059886463
+}

@@ -1,0 +1,519 @@
+{
+  "agreement_with_adopted": {
+    "DND21": {
+      "covariance": 1.0,
+      "log_support": 0.9533993730473078,
+      "magnitude": 1.0,
+      "support": 0.9550660397139747
+    },
+    "DVSCLEAN": {
+      "covariance": 1.0,
+      "log_support": 0.9522446072446072,
+      "magnitude": 1.0,
+      "support": 0.9086073986073986
+    }
+  },
+  "anchors": {
+    "DND21": 0.9917,
+    "DVSCLEAN": 0.9706,
+    "overall_20": 0.9811
+  },
+  "config": {
+    "block_size": 10240,
+    "gate_radius": 1,
+    "score_radius": 2
+  },
+  "frozen": "score s = beta*G - log1p(support@r2), threshold theta = 0, block 10,240. Only the gate key changes between rows.",
+  "gate_open_fraction": {
+    "DND21": {
+      "covariance": 0.9455841556560035,
+      "log_support": 0.9921847826086957,
+      "magnitude": 0.9455841556560035,
+      "support": 0.9905181159420291
+    },
+    "DVSCLEAN": {
+      "covariance": 0.012116402116402115,
+      "log_support": 0.046750101750101754,
+      "magnitude": 0.012116402116402115,
+      "support": 0.09038731038731039
+    }
+  },
+  "paired_vs_magnitude": {
+    "covariance": {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "conditions": 20,
+      "conditions_not_worse": 20,
+      "paired_mean_vs_magnitude": 0.0
+    },
+    "log_support": {
+      "ci95": [
+        -7.379691912399468e-05,
+        0.0013418303562214749
+      ],
+      "conditions": 20,
+      "conditions_not_worse": 13,
+      "paired_mean_vs_magnitude": 0.000575824353692539
+    },
+    "support": {
+      "ci95": [
+        -0.000677285844982056,
+        0.0010763473919416238
+      ],
+      "conditions": 20,
+      "conditions_not_worse": 11,
+      "paired_mean_vs_magnitude": 0.0001734296023513604
+    }
+  },
+  "per_condition": {
+    "DND21": {
+      "10hz_driving": {
+        "agreement_with_adopted": {
+          "covariance": 1.0,
+          "log_support": 0.9884678747940692,
+          "magnitude": 1.0,
+          "support": 0.9884678747940692
+        },
+        "auc": {
+          "covariance": 0.9914300633937203,
+          "log_support": 0.9925296044815891,
+          "magnitude": 0.9914300633937203,
+          "support": 0.9925296044815891
+        },
+        "blocks": 607,
+        "gate_open_fraction": {
+          "covariance": 0.9884678747940692,
+          "log_support": 1.0,
+          "magnitude": 0.9884678747940692,
+          "support": 1.0
+        }
+      },
+      "10hz_hotel-bar": {
+        "agreement_with_adopted": {
+          "covariance": 1.0,
+          "log_support": 0.9358024691358025,
+          "magnitude": 1.0,
+          "support": 0.9358024691358025
+        },
+        "auc": {
+          "covariance": 0.9942499143424773,
+          "log_support": 0.999072367919626,
+          "magnitude": 0.9942499143424773,
+          "support": 0.999072367919626
+        },
+        "blocks": 405,
+        "gate_open_fraction": {
+          "covariance": 0.9358024691358025,
+          "log_support": 1.0,
+          "magnitude": 0.9358024691358025,
+          "support": 1.0
+        }
+      },
+      "1hz_driving": {
+        "agreement_with_adopted": {
+          "covariance": 1.0,
+          "log_support": 0.72,
+          "magnitude": 1.0,
+          "support": 0.7366666666666667
+        },
+        "auc": {
+          "covariance": 0.9701765624806251,
+          "log_support": 0.9742394757122143,
+          "magnitude": 0.9701765624806251,
+          "support": 0.97397151105979
+        },
+        "blocks": 300,
+        "gate_open_fraction": {
+          "covariance": 0.65,
+          "log_support": 0.93,
+          "magnitude": 0.65,
+          "support": 0.9133333333333333
+        }
+      },
+      "1hz_hotel-bar": {
+        "agreement_with_adopted": {
+          "covariance": 1.0,
+          "log_support": 1.0,
+          "magnitude": 1.0,
+          "support": 1.0
+        },
+        "auc": {
+          "covariance": 0.9995857258579701,
+          "log_support": 0.9995857258579701,
+          "magnitude": 0.9995857258579701,
+          "support": 0.9995857258579701
+        },
+        "blocks": 87,
+        "gate_open_fraction": {
+          "covariance": 1.0,
+          "log_support": 1.0,
+          "magnitude": 1.0,
+          "support": 1.0
+        }
+      },
+      "3hz_driving": {
+        "agreement_with_adopted": {
+          "covariance": 1.0,
+          "log_support": 0.967391304347826,
+          "magnitude": 1.0,
+          "support": 0.967391304347826
+        },
+        "auc": {
+          "covariance": 0.985139362345199,
+          "log_support": 0.9855545480980915,
+          "magnitude": 0.985139362345199,
+          "support": 0.9855545480980915
+        },
+        "blocks": 368,
+        "gate_open_fraction": {
+          "covariance": 0.9592391304347826,
+          "log_support": 0.9918478260869565,
+          "magnitude": 0.9592391304347826,
+          "support": 0.9918478260869565
+        }
+      },
+      "3hz_hotel-bar": {
+        "agreement_with_adopted": {
+          "covariance": 1.0,
+          "log_support": 1.0,
+          "magnitude": 1.0,
+          "support": 1.0
+        },
+        "auc": {
+          "covariance": 0.9989527216094188,
+          "log_support": 0.9989527216094188,
+          "magnitude": 0.9989527216094188,
+          "support": 0.9989527216094188
+        },
+        "blocks": 157,
+        "gate_open_fraction": {
+          "covariance": 1.0,
+          "log_support": 1.0,
+          "magnitude": 1.0,
+          "support": 1.0
+        }
+      },
+      "5hz_driving": {
+        "agreement_with_adopted": {
+          "covariance": 1.0,
+          "log_support": 1.0,
+          "magnitude": 1.0,
+          "support": 1.0
+        },
+        "auc": {
+          "covariance": 0.9922969407599614,
+          "log_support": 0.9922969407599614,
+          "magnitude": 0.9922969407599614,
+          "support": 0.9922969407599614
+        },
+        "blocks": 437,
+        "gate_open_fraction": {
+          "covariance": 1.0,
+          "log_support": 1.0,
+          "magnitude": 1.0,
+          "support": 1.0
+        }
+      },
+      "5hz_hotel-bar": {
+        "agreement_with_adopted": {
+          "covariance": 1.0,
+          "log_support": 0.982532751091703,
+          "magnitude": 1.0,
+          "support": 0.982532751091703
+        },
+        "auc": {
+          "covariance": 0.9984133791222269,
+          "log_support": 0.9994960333396117,
+          "magnitude": 0.9984133791222269,
+          "support": 0.9994960333396117
+        },
+        "blocks": 229,
+        "gate_open_fraction": {
+          "covariance": 0.982532751091703,
+          "log_support": 1.0,
+          "magnitude": 0.982532751091703,
+          "support": 1.0
+        }
+      },
+      "7hz_driving": {
+        "agreement_with_adopted": {
+          "covariance": 1.0,
+          "log_support": 1.0,
+          "magnitude": 1.0,
+          "support": 1.0
+        },
+        "auc": {
+          "covariance": 0.990902130454507,
+          "log_support": 0.990902130454507,
+          "magnitude": 0.990902130454507,
+          "support": 0.990902130454507
+        },
+        "blocks": 504,
+        "gate_open_fraction": {
+          "covariance": 1.0,
+          "log_support": 1.0,
+          "magnitude": 1.0,
+          "support": 1.0
+        }
+      },
+      "7hz_hotel-bar": {
+        "agreement_with_adopted": {
+          "covariance": 1.0,
+          "log_support": 0.939799331103679,
+          "magnitude": 1.0,
+          "support": 0.939799331103679
+        },
+        "auc": {
+          "covariance": 0.9957014870924559,
+          "log_support": 0.9993073206627039,
+          "magnitude": 0.9957014870924559,
+          "support": 0.9993073206627039
+        },
+        "blocks": 299,
+        "gate_open_fraction": {
+          "covariance": 0.939799331103679,
+          "log_support": 1.0,
+          "magnitude": 0.939799331103679,
+          "support": 1.0
+        }
+      }
+    },
+    "DVSCLEAN": {
+      "MAH00446_100": {
+        "agreement_with_adopted": {
+          "covariance": 1.0,
+          "log_support": 1.0,
+          "magnitude": 1.0,
+          "support": 0.918918918918919
+        },
+        "auc": {
+          "covariance": 0.989431438773313,
+          "log_support": 0.989431438773313,
+          "magnitude": 0.989431438773313,
+          "support": 0.9878019428672452
+        },
+        "blocks": 37,
+        "gate_open_fraction": {
+          "covariance": 0.0,
+          "log_support": 0.0,
+          "magnitude": 0.0,
+          "support": 0.08108108108108109
+        }
+      },
+      "MAH00446_50": {
+        "agreement_with_adopted": {
+          "covariance": 1.0,
+          "log_support": 0.9642857142857143,
+          "magnitude": 1.0,
+          "support": 0.7857142857142857
+        },
+        "auc": {
+          "covariance": 0.9936715383811066,
+          "log_support": 0.9933337688155287,
+          "magnitude": 0.9936715383811066,
+          "support": 0.9896972189656704
+        },
+        "blocks": 28,
+        "gate_open_fraction": {
+          "covariance": 0.0,
+          "log_support": 0.03571428571428571,
+          "magnitude": 0.0,
+          "support": 0.21428571428571427
+        }
+      },
+      "MAH00454_100": {
+        "agreement_with_adopted": {
+          "covariance": 1.0,
+          "log_support": 1.0,
+          "magnitude": 1.0,
+          "support": 1.0
+        },
+        "auc": {
+          "covariance": 0.9595611487466235,
+          "log_support": 0.9595611487466235,
+          "magnitude": 0.9595611487466235,
+          "support": 0.9595611487466235
+        },
+        "blocks": 36,
+        "gate_open_fraction": {
+          "covariance": 0.027777777777777776,
+          "log_support": 0.027777777777777776,
+          "magnitude": 0.027777777777777776,
+          "support": 0.027777777777777776
+        }
+      },
+      "MAH00454_50": {
+        "agreement_with_adopted": {
+          "covariance": 1.0,
+          "log_support": 0.9259259259259259,
+          "magnitude": 1.0,
+          "support": 0.8518518518518519
+        },
+        "auc": {
+          "covariance": 0.9757891153693583,
+          "log_support": 0.9759993990012504,
+          "magnitude": 0.9757891153693583,
+          "support": 0.9750480738808297
+        },
+        "blocks": 27,
+        "gate_open_fraction": {
+          "covariance": 0.037037037037037035,
+          "log_support": 0.037037037037037035,
+          "magnitude": 0.037037037037037035,
+          "support": 0.1111111111111111
+        }
+      },
+      "MAH00455_100": {
+        "agreement_with_adopted": {
+          "covariance": 1.0,
+          "log_support": 0.9142857142857143,
+          "magnitude": 1.0,
+          "support": 0.8857142857142857
+        },
+        "auc": {
+          "covariance": 0.9329624088890542,
+          "log_support": 0.9324621181025651,
+          "magnitude": 0.9329624088890542,
+          "support": 0.9318853240046443
+        },
+        "blocks": 35,
+        "gate_open_fraction": {
+          "covariance": 0.02857142857142857,
+          "log_support": 0.05714285714285714,
+          "magnitude": 0.02857142857142857,
+          "support": 0.08571428571428572
+        }
+      },
+      "MAH00455_50": {
+        "agreement_with_adopted": {
+          "covariance": 1.0,
+          "log_support": 0.8846153846153846,
+          "magnitude": 1.0,
+          "support": 0.8846153846153846
+        },
+        "auc": {
+          "covariance": 0.9576587065464781,
+          "log_support": 0.9558064479769075,
+          "magnitude": 0.9576587065464781,
+          "support": 0.9558064479769075
+        },
+        "blocks": 26,
+        "gate_open_fraction": {
+          "covariance": 0.0,
+          "log_support": 0.11538461538461539,
+          "magnitude": 0.0,
+          "support": 0.11538461538461539
+        }
+      },
+      "MAH00456_100": {
+        "agreement_with_adopted": {
+          "covariance": 1.0,
+          "log_support": 0.9722222222222222,
+          "magnitude": 1.0,
+          "support": 0.9722222222222222
+        },
+        "auc": {
+          "covariance": 0.9494475171997662,
+          "log_support": 0.9490580809706672,
+          "magnitude": 0.9494475171997662,
+          "support": 0.9490580809706672
+        },
+        "blocks": 36,
+        "gate_open_fraction": {
+          "covariance": 0.027777777777777776,
+          "log_support": 0.05555555555555555,
+          "magnitude": 0.027777777777777776,
+          "support": 0.05555555555555555
+        }
+      },
+      "MAH00456_50": {
+        "agreement_with_adopted": {
+          "covariance": 1.0,
+          "log_support": 0.9259259259259259,
+          "magnitude": 1.0,
+          "support": 0.8518518518518519
+        },
+        "auc": {
+          "covariance": 0.9697925632063554,
+          "log_support": 0.9692628124672926,
+          "magnitude": 0.9697925632063554,
+          "support": 0.9682770470671609
+        },
+        "blocks": 27,
+        "gate_open_fraction": {
+          "covariance": 0.0,
+          "log_support": 0.07407407407407407,
+          "magnitude": 0.0,
+          "support": 0.14814814814814814
+        }
+      },
+      "MAH00465_100": {
+        "agreement_with_adopted": {
+          "covariance": 1.0,
+          "log_support": 0.9722222222222222,
+          "magnitude": 1.0,
+          "support": 0.9722222222222222
+        },
+        "auc": {
+          "covariance": 0.9861995549777443,
+          "log_support": 0.9861202532448338,
+          "magnitude": 0.9861995549777443,
+          "support": 0.9861202532448338
+        },
+        "blocks": 36,
+        "gate_open_fraction": {
+          "covariance": 0.0,
+          "log_support": 0.027777777777777776,
+          "magnitude": 0.0,
+          "support": 0.027777777777777776
+        }
+      },
+      "MAH00465_50": {
+        "agreement_with_adopted": {
+          "covariance": 1.0,
+          "log_support": 0.9629629629629629,
+          "magnitude": 1.0,
+          "support": 0.9629629629629629
+        },
+        "auc": {
+          "covariance": 0.9913107653565442,
+          "log_support": 0.9912171949840809,
+          "magnitude": 0.9913107653565442,
+          "support": 0.9912171949840809
+        },
+        "blocks": 27,
+        "gate_open_fraction": {
+          "covariance": 0.0,
+          "log_support": 0.037037037037037035,
+          "magnitude": 0.0,
+          "support": 0.037037037037037035
+        }
+      }
+    }
+  },
+  "phase": "42 integer gate key",
+  "question": "The score is an integer count; the gate still keys on the radius-1 decayed ring magnitude. Can an integer count key it instead, and is the covariance sign enough to avoid the division and square root?",
+  "summary": {
+    "DND21": {
+      "covariance": 0.9916848287458562,
+      "log_support": 0.9931936868895693,
+      "magnitude": 0.9916848287458562,
+      "support": 0.9931668904243269
+    },
+    "DVSCLEAN": {
+      "covariance": 0.9705824757446344,
+      "log_support": 0.9702252663083064,
+      "magnitude": 0.9705824757446344,
+      "support": 0.9694472732708664
+    },
+    "overall_20": {
+      "covariance": 0.9811336522452453,
+      "log_support": 0.9817094765989378,
+      "magnitude": 0.9811336522452453,
+      "support": 0.9813070818475966
+    }
+  },
+  "wall_seconds": 78.04347822300042
+}

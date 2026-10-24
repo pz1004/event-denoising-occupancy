@@ -1,0 +1,214 @@
+{
+  "arm": "log_support|gated",
+  "auc_source": "phase19_gate_ablation.json (published values, not recomputed)",
+  "density_control": {
+    "band": 0.3,
+    "caveat": "ruling density out is not the same as establishing that recording is the cause: scene content, sensor and noise process differ too, and only 2 development condition(s) sit inside the density band",
+    "conditions_at_led_density": {
+      "1hz_driving": {
+        "block_mean_auc": 0.9701765624806251,
+        "noise_fraction": 0.11355013020833332
+      },
+      "3hz_driving": {
+        "block_mean_auc": 0.985139362345199,
+        "noise_fraction": 0.2769764775815217
+      }
+    },
+    "n_at_led_density": 2,
+    "nearest_condition": {
+      "block_mean_auc": 0.9701765624806251,
+      "dataset": "DND21",
+      "name": "1hz_driving",
+      "noise_fraction": 0.11355013020833332
+    },
+    "verdict": "density does not account for the LED gap"
+  },
+  "development": {
+    "block_mean_auc_max": 0.9995857258579701,
+    "block_mean_auc_min": 0.9329624088890542,
+    "conditions": 20,
+    "corr_noise_fraction_vs_auc": 0.30051903838456845,
+    "noise_fraction_max": 0.8711031539351852,
+    "noise_fraction_mean": 0.4776802227250819,
+    "noise_fraction_min": 0.11355013020833332,
+    "per_condition": {
+      "10hz_driving": {
+        "block_mean_auc": 0.9914300633937203,
+        "blocks": 607,
+        "dataset": "DND21",
+        "height": 260,
+        "noise_fraction": 0.5609091845140033,
+        "width": 346
+      },
+      "10hz_hotel-bar": {
+        "block_mean_auc": 0.9942499143424773,
+        "blocks": 405,
+        "dataset": "DND21",
+        "height": 260,
+        "noise_fraction": 0.8711031539351852,
+        "width": 346
+      },
+      "1hz_driving": {
+        "block_mean_auc": 0.9701765624806251,
+        "blocks": 300,
+        "dataset": "DND21",
+        "height": 260,
+        "noise_fraction": 0.11355013020833332,
+        "width": 346
+      },
+      "1hz_hotel-bar": {
+        "block_mean_auc": 0.9995857258579701,
+        "blocks": 87,
+        "dataset": "DND21",
+        "height": 260,
+        "noise_fraction": 0.403180001795977,
+        "width": 346
+      },
+      "3hz_driving": {
+        "block_mean_auc": 0.985139362345199,
+        "blocks": 368,
+        "dataset": "DND21",
+        "height": 260,
+        "noise_fraction": 0.2769764775815217,
+        "width": 346
+      },
+      "3hz_hotel-bar": {
+        "block_mean_auc": 0.9989527216094188,
+        "blocks": 157,
+        "dataset": "DND21",
+        "height": 260,
+        "noise_fraction": 0.6686766023089172,
+        "width": 346
+      },
+      "5hz_driving": {
+        "block_mean_auc": 0.9922969407599614,
+        "blocks": 437,
+        "dataset": "DND21",
+        "height": 260,
+        "noise_fraction": 0.38985246531750567,
+        "width": 346
+      },
+      "5hz_hotel-bar": {
+        "block_mean_auc": 0.9984133791222269,
+        "blocks": 229,
+        "dataset": "DND21",
+        "height": 260,
+        "noise_fraction": 0.7719074099344979,
+        "width": 346
+      },
+      "7hz_driving": {
+        "block_mean_auc": 0.990902130454507,
+        "blocks": 504,
+        "dataset": "DND21",
+        "height": 260,
+        "noise_fraction": 0.472260005890377,
+        "width": 346
+      },
+      "7hz_hotel-bar": {
+        "block_mean_auc": 0.9957014870924559,
+        "blocks": 299,
+        "dataset": "DND21",
+        "height": 260,
+        "noise_fraction": 0.8254072820861204,
+        "width": 346
+      },
+      "MAH00446_100": {
+        "block_mean_auc": 0.989431438773313,
+        "blocks": 37,
+        "dataset": "DVSCLEAN",
+        "height": 720,
+        "noise_fraction": 0.5008894636824326,
+        "width": 1280
+      },
+      "MAH00446_50": {
+        "block_mean_auc": 0.9936715383811066,
+        "blocks": 28,
+        "dataset": "DVSCLEAN",
+        "height": 720,
+        "noise_fraction": 0.3335239955357143,
+        "width": 1280
+      },
+      "MAH00454_100": {
+        "block_mean_auc": 0.9595611487466235,
+        "blocks": 36,
+        "dataset": "DVSCLEAN",
+        "height": 720,
+        "noise_fraction": 0.5024468315972221,
+        "width": 1280
+      },
+      "MAH00454_50": {
+        "block_mean_auc": 0.9757891153693583,
+        "blocks": 27,
+        "dataset": "DVSCLEAN",
+        "height": 720,
+        "noise_fraction": 0.33497902199074076,
+        "width": 1280
+      },
+      "MAH00455_100": {
+        "block_mean_auc": 0.9329624088890542,
+        "blocks": 35,
+        "dataset": "DVSCLEAN",
+        "height": 720,
+        "noise_fraction": 0.506010044642857,
+        "width": 1280
+      },
+      "MAH00455_50": {
+        "block_mean_auc": 0.9576587065464781,
+        "blocks": 26,
+        "dataset": "DVSCLEAN",
+        "height": 720,
+        "noise_fraction": 0.3388784555288461,
+        "width": 1280
+      },
+      "MAH00456_100": {
+        "block_mean_auc": 0.9494475171997662,
+        "blocks": 36,
+        "dataset": "DVSCLEAN",
+        "height": 720,
+        "noise_fraction": 0.5019205729166666,
+        "width": 1280
+      },
+      "MAH00456_50": {
+        "block_mean_auc": 0.9697925632063554,
+        "blocks": 27,
+        "dataset": "DVSCLEAN",
+        "height": 720,
+        "noise_fraction": 0.33464988425925923,
+        "width": 1280
+      },
+      "MAH00465_100": {
+        "block_mean_auc": 0.9861995549777443,
+        "blocks": 36,
+        "dataset": "DVSCLEAN",
+        "height": 720,
+        "noise_fraction": 0.5078260633680556,
+        "width": 1280
+      },
+      "MAH00465_50": {
+        "block_mean_auc": 0.9913107653565442,
+        "blocks": 27,
+        "dataset": "DVSCLEAN",
+        "height": 720,
+        "noise_fraction": 0.3386574074074074,
+        "width": 1280
+      }
+    }
+  },
+  "led": {
+    "block_mean_auc": 0.7722565361479999,
+    "noise_fraction_max": 0.5273050944010417,
+    "noise_fraction_mean": 0.14889417016775838,
+    "noise_fraction_median": 0.11676690091853822,
+    "noise_fraction_min": 0.036241039787371136,
+    "scenes": 66
+  },
+  "phase": "56 density control for the LED gap",
+  "question": "Section 4.5 attributes a 0.9811 -> 0.7723 drop in block-mean AUC to recorded rather than injected noise. LED is also far sparser. Does AUC track noise fraction across the development conditions?",
+  "resolution_control": {
+    "block_mean_auc_max": 0.9936715383811066,
+    "block_mean_auc_min": 0.9329624088890542,
+    "conditions_at_1280x720": 10,
+    "note": "DVSCLEAN is 1280x720, the same geometry as LED, so a resolution explanation can be excluded by comparison rather than by argument"
+  },
+  "wall_seconds": 12.719235135009512
+}

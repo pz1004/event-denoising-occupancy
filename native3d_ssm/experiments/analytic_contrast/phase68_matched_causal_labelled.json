@@ -1,0 +1,629 @@
+{
+  "block": 10240,
+  "buaa_max_events": 3000000,
+  "kernel_check": {
+    "events": 4000,
+    "worst_diff_vs_reference": 0
+  },
+  "per_unit": {
+    "BUAA_Campus/campus1_1Hz": {
+      "benchmark": "BUAA_Campus",
+      "ebf": {
+        "block_mean_auc": 0.8871018394467011,
+        "blocks": 292,
+        "event_auc": 0.889675515004964
+      },
+      "events": 3000000,
+      "mean_occupancy_w32ms": 14.725887333333333,
+      "noise_fraction": 0.045420666666666665,
+      "occupancy_w32ms": {
+        "block_mean_auc": 0.8710542924737796,
+        "blocks": 292,
+        "event_auc": 0.8738714696634483
+      },
+      "occupancy_wTstar": {
+        "block_mean_auc": 0.8771914851978235,
+        "blocks": 292,
+        "event_auc": 0.8801996708710732
+      }
+    },
+    "BUAA_Campus/campus1_3Hz": {
+      "benchmark": "BUAA_Campus",
+      "ebf": {
+        "block_mean_auc": 0.8852668058890887,
+        "blocks": 292,
+        "event_auc": 0.8860483331472828
+      },
+      "events": 3000000,
+      "mean_occupancy_w32ms": 14.272801333333334,
+      "noise_fraction": 0.119587,
+      "occupancy_w32ms": {
+        "block_mean_auc": 0.86885894600927,
+        "blocks": 292,
+        "event_auc": 0.8694170461984557
+      },
+      "occupancy_wTstar": {
+        "block_mean_auc": 0.8752310567117231,
+        "blocks": 292,
+        "event_auc": 0.8761794474971519
+      }
+    },
+    "BUAA_Campus/campus1_5Hz": {
+      "benchmark": "BUAA_Campus",
+      "ebf": {
+        "block_mean_auc": 0.8852055500260292,
+        "blocks": 292,
+        "event_auc": 0.8857857875563352
+      },
+      "events": 3000000,
+      "mean_occupancy_w32ms": 13.918101,
+      "noise_fraction": 0.181195,
+      "occupancy_w32ms": {
+        "block_mean_auc": 0.869042336595886,
+        "blocks": 292,
+        "event_auc": 0.8691347659560664
+      },
+      "occupancy_wTstar": {
+        "block_mean_auc": 0.8750765996467267,
+        "blocks": 292,
+        "event_auc": 0.8756463058715511
+      }
+    },
+    "BUAA_Campus/campus2_1Hz": {
+      "benchmark": "BUAA_Campus",
+      "ebf": {
+        "block_mean_auc": 0.8661512810062986,
+        "blocks": 292,
+        "event_auc": 0.87072680455422
+      },
+      "events": 3000000,
+      "mean_occupancy_w32ms": 14.628152333333333,
+      "noise_fraction": 0.042312666666666665,
+      "occupancy_w32ms": {
+        "block_mean_auc": 0.832164262188068,
+        "blocks": 292,
+        "event_auc": 0.8383850946194175
+      },
+      "occupancy_wTstar": {
+        "block_mean_auc": 0.8467909611162148,
+        "blocks": 292,
+        "event_auc": 0.8526611486251447
+      }
+    },
+    "BUAA_Campus/campus2_3Hz": {
+      "benchmark": "BUAA_Campus",
+      "ebf": {
+        "block_mean_auc": 0.8668623270084316,
+        "blocks": 292,
+        "event_auc": 0.8711372685843617
+      },
+      "events": 3000000,
+      "mean_occupancy_w32ms": 13.950848333333333,
+      "noise_fraction": 0.120013,
+      "occupancy_w32ms": {
+        "block_mean_auc": 0.8350756579600703,
+        "blocks": 292,
+        "event_auc": 0.8402776231584712
+      },
+      "occupancy_wTstar": {
+        "block_mean_auc": 0.8484548819677314,
+        "blocks": 292,
+        "event_auc": 0.8536551324795132
+      }
+    },
+    "BUAA_Campus/campus2_5Hz": {
+      "benchmark": "BUAA_Campus",
+      "ebf": {
+        "block_mean_auc": 0.8663699128634228,
+        "blocks": 292,
+        "event_auc": 0.8703210322885899
+      },
+      "events": 3000000,
+      "mean_occupancy_w32ms": 13.398993,
+      "noise_fraction": 0.18864733333333333,
+      "occupancy_w32ms": {
+        "block_mean_auc": 0.8358328184247666,
+        "blocks": 292,
+        "event_auc": 0.8403102167232059
+      },
+      "occupancy_wTstar": {
+        "block_mean_auc": 0.8486199271420364,
+        "blocks": 292,
+        "event_auc": 0.8532215283542086
+      }
+    },
+    "DND21/10hz_driving": {
+      "benchmark": "DND21",
+      "ebf": {
+        "block_mean_auc": 0.9179457361729311,
+        "blocks": 607,
+        "event_auc": 0.9371057739642855
+      },
+      "events": 6215680,
+      "mean_occupancy_w32ms": 7.439229818780889,
+      "noise_fraction": 0.5609091845140033,
+      "occupancy_w32ms": {
+        "block_mean_auc": 0.9040784212047205,
+        "blocks": 607,
+        "event_auc": 0.9257095079458194
+      },
+      "occupancy_wTstar": {
+        "block_mean_auc": 0.9068493713441323,
+        "blocks": 607,
+        "event_auc": 0.9286685677705684
+      }
+    },
+    "DND21/10hz_hotel-bar": {
+      "benchmark": "DND21",
+      "ebf": {
+        "block_mean_auc": 0.9693139973923606,
+        "blocks": 405,
+        "event_auc": 0.9725673634152447
+      },
+      "events": 4147200,
+      "mean_occupancy_w32ms": 3.5741449652777777,
+      "noise_fraction": 0.8711031539351852,
+      "occupancy_w32ms": {
+        "block_mean_auc": 0.9655974168215921,
+        "blocks": 405,
+        "event_auc": 0.9692114781747038
+      },
+      "occupancy_wTstar": {
+        "block_mean_auc": 0.9645089490394779,
+        "blocks": 405,
+        "event_auc": 0.9685108394144261
+      }
+    },
+    "DND21/1hz_driving": {
+      "benchmark": "DND21",
+      "ebf": {
+        "block_mean_auc": 0.937186077639387,
+        "blocks": 300,
+        "event_auc": 0.9500711321332875
+      },
+      "events": 3072000,
+      "mean_occupancy_w32ms": 10.896996419270833,
+      "noise_fraction": 0.11355013020833334,
+      "occupancy_w32ms": {
+        "block_mean_auc": 0.9231397691658602,
+        "blocks": 300,
+        "event_auc": 0.9411609511127547
+      },
+      "occupancy_wTstar": {
+        "block_mean_auc": 0.9280029166096062,
+        "blocks": 300,
+        "event_auc": 0.943960332988911
+      }
+    },
+    "DND21/1hz_hotel-bar": {
+      "benchmark": "DND21",
+      "ebf": {
+        "block_mean_auc": 0.9835371975900888,
+        "blocks": 87,
+        "event_auc": 0.9846751217813028
+      },
+      "events": 890880,
+      "mean_occupancy_w32ms": 6.4776322288074715,
+      "noise_fraction": 0.403180001795977,
+      "occupancy_w32ms": {
+        "block_mean_auc": 0.982776942894785,
+        "blocks": 87,
+        "event_auc": 0.9840144702744403
+      },
+      "occupancy_wTstar": {
+        "block_mean_auc": 0.9814921620179201,
+        "blocks": 87,
+        "event_auc": 0.9828015178434548
+      }
+    },
+    "DND21/3hz_driving": {
+      "benchmark": "DND21",
+      "ebf": {
+        "block_mean_auc": 0.9323887326213315,
+        "blocks": 368,
+        "event_auc": 0.9465461263301521
+      },
+      "events": 3768320,
+      "mean_occupancy_w32ms": 9.386456564198369,
+      "noise_fraction": 0.2769764775815217,
+      "occupancy_w32ms": {
+        "block_mean_auc": 0.9188877207826546,
+        "blocks": 368,
+        "event_auc": 0.9371688798770623
+      },
+      "occupancy_wTstar": {
+        "block_mean_auc": 0.9229774696017639,
+        "blocks": 368,
+        "event_auc": 0.9399462643580851
+      }
+    },
+    "DND21/3hz_hotel-bar": {
+      "benchmark": "DND21",
+      "ebf": {
+        "block_mean_auc": 0.9800492973419629,
+        "blocks": 157,
+        "event_auc": 0.9818575590842407
+      },
+      "events": 1607680,
+      "mean_occupancy_w32ms": 4.150837231289809,
+      "noise_fraction": 0.6686766023089172,
+      "occupancy_w32ms": {
+        "block_mean_auc": 0.9790799289093998,
+        "blocks": 157,
+        "event_auc": 0.980976100330044
+      },
+      "occupancy_wTstar": {
+        "block_mean_auc": 0.9777479678789948,
+        "blocks": 157,
+        "event_auc": 0.9798326641131426
+      }
+    },
+    "DND21/5hz_driving": {
+      "benchmark": "DND21",
+      "ebf": {
+        "block_mean_auc": 0.9280271466789327,
+        "blocks": 437,
+        "event_auc": 0.9435017837796633
+      },
+      "events": 4474880,
+      "mean_occupancy_w32ms": 8.475591077302632,
+      "noise_fraction": 0.3898524653175057,
+      "occupancy_w32ms": {
+        "block_mean_auc": 0.9140957628688672,
+        "blocks": 437,
+        "event_auc": 0.9331442163846055
+      },
+      "occupancy_wTstar": {
+        "block_mean_auc": 0.9175967902711271,
+        "blocks": 437,
+        "event_auc": 0.9359645826104112
+      }
+    },
+    "DND21/5hz_hotel-bar": {
+      "benchmark": "DND21",
+      "ebf": {
+        "block_mean_auc": 0.9764709813470182,
+        "blocks": 229,
+        "event_auc": 0.9788250264722185
+      },
+      "events": 2344960,
+      "mean_occupancy_w32ms": 3.5509872236626636,
+      "noise_fraction": 0.7719074099344978,
+      "occupancy_w32ms": {
+        "block_mean_auc": 0.9744941616506158,
+        "blocks": 229,
+        "event_auc": 0.9770680383098895
+      },
+      "occupancy_wTstar": {
+        "block_mean_auc": 0.9728828781562803,
+        "blocks": 229,
+        "event_auc": 0.9757409797896055
+      }
+    },
+    "DND21/7hz_driving": {
+      "benchmark": "DND21",
+      "ebf": {
+        "block_mean_auc": 0.9237000767691363,
+        "blocks": 504,
+        "event_auc": 0.9406964653977554
+      },
+      "events": 5160960,
+      "mean_occupancy_w32ms": 7.8977554563492065,
+      "noise_fraction": 0.472260005890377,
+      "occupancy_w32ms": {
+        "block_mean_auc": 0.9103490001662498,
+        "blocks": 504,
+        "event_auc": 0.9302695931090151
+      },
+      "occupancy_wTstar": {
+        "block_mean_auc": 0.9135319189946548,
+        "blocks": 504,
+        "event_auc": 0.9331530289687071
+      }
+    },
+    "DND21/7hz_hotel-bar": {
+      "benchmark": "DND21",
+      "ebf": {
+        "block_mean_auc": 0.9734682685270628,
+        "blocks": 299,
+        "event_auc": 0.9762616221313646
+      },
+      "events": 3061760,
+      "mean_occupancy_w32ms": 3.4309119591346153,
+      "noise_fraction": 0.8254072820861204,
+      "occupancy_w32ms": {
+        "block_mean_auc": 0.970760453935011,
+        "blocks": 299,
+        "event_auc": 0.9738424182115123
+      },
+      "occupancy_wTstar": {
+        "block_mean_auc": 0.9692656599540669,
+        "blocks": 299,
+        "event_auc": 0.9727289972637095
+      }
+    },
+    "DVSCLEAN/MAH00446_100": {
+      "benchmark": "DVSCLEAN",
+      "ebf": {
+        "block_mean_auc": 0.9854208209505112,
+        "blocks": 37,
+        "event_auc": 0.9800609719182252
+      },
+      "events": 378880,
+      "mean_occupancy_w32ms": 7.897355363175675,
+      "noise_fraction": 0.5008894636824325,
+      "occupancy_w32ms": {
+        "block_mean_auc": 0.9851851595764255,
+        "blocks": 37,
+        "event_auc": 0.9790188115369299
+      },
+      "occupancy_wTstar": {
+        "block_mean_auc": 0.9851851595764255,
+        "blocks": 37,
+        "event_auc": 0.9790188115369299
+      }
+    },
+    "DVSCLEAN/MAH00446_50": {
+      "benchmark": "DVSCLEAN",
+      "ebf": {
+        "block_mean_auc": 0.9860758025617387,
+        "blocks": 28,
+        "event_auc": 0.9835024735653299
+      },
+      "events": 286720,
+      "mean_occupancy_w32ms": 9.856399972098215,
+      "noise_fraction": 0.33352399553571427,
+      "occupancy_w32ms": {
+        "block_mean_auc": 0.9859133272315946,
+        "blocks": 28,
+        "event_auc": 0.9825796758145728
+      },
+      "occupancy_wTstar": {
+        "block_mean_auc": 0.9859098007393451,
+        "blocks": 28,
+        "event_auc": 0.9825787087714599
+      }
+    },
+    "DVSCLEAN/MAH00454_100": {
+      "benchmark": "DVSCLEAN",
+      "ebf": {
+        "block_mean_auc": 0.9788742244979629,
+        "blocks": 36,
+        "event_auc": 0.9646700339817214
+      },
+      "events": 368640,
+      "mean_occupancy_w32ms": 7.069656032986111,
+      "noise_fraction": 0.5024468315972223,
+      "occupancy_w32ms": {
+        "block_mean_auc": 0.9785466920301662,
+        "blocks": 36,
+        "event_auc": 0.9656107742635817
+      },
+      "occupancy_wTstar": {
+        "block_mean_auc": 0.978333323259545,
+        "blocks": 36,
+        "event_auc": 0.964964665427963
+      }
+    },
+    "DVSCLEAN/MAH00454_50": {
+      "benchmark": "DVSCLEAN",
+      "ebf": {
+        "block_mean_auc": 0.9819575096770335,
+        "blocks": 27,
+        "event_auc": 0.9743761158827382
+      },
+      "events": 276480,
+      "mean_occupancy_w32ms": 8.735539641203705,
+      "noise_fraction": 0.33497902199074076,
+      "occupancy_w32ms": {
+        "block_mean_auc": 0.9822569955082813,
+        "blocks": 27,
+        "event_auc": 0.9753069415505095
+      },
+      "occupancy_wTstar": {
+        "block_mean_auc": 0.9812240610283199,
+        "blocks": 27,
+        "event_auc": 0.9736256420480277
+      }
+    },
+    "DVSCLEAN/MAH00455_100": {
+      "benchmark": "DVSCLEAN",
+      "ebf": {
+        "block_mean_auc": 0.9770026566557968,
+        "blocks": 35,
+        "event_auc": 0.9614162399856044
+      },
+      "events": 358400,
+      "mean_occupancy_w32ms": 6.5875502232142855,
+      "noise_fraction": 0.5060100446428571,
+      "occupancy_w32ms": {
+        "block_mean_auc": 0.9763351996167602,
+        "blocks": 35,
+        "event_auc": 0.9618451105592373
+      },
+      "occupancy_wTstar": {
+        "block_mean_auc": 0.9761023059674948,
+        "blocks": 35,
+        "event_auc": 0.9612308450545173
+      }
+    },
+    "DVSCLEAN/MAH00455_50": {
+      "benchmark": "DVSCLEAN",
+      "ebf": {
+        "block_mean_auc": 0.9805991122381779,
+        "blocks": 26,
+        "event_auc": 0.9721941837428776
+      },
+      "events": 266240,
+      "mean_occupancy_w32ms": 8.102467698317307,
+      "noise_fraction": 0.33887845552884616,
+      "occupancy_w32ms": {
+        "block_mean_auc": 0.9812306636160149,
+        "blocks": 26,
+        "event_auc": 0.9731194735802033
+      },
+      "occupancy_wTstar": {
+        "block_mean_auc": 0.9807132861480496,
+        "blocks": 26,
+        "event_auc": 0.9720473073780553
+      }
+    },
+    "DVSCLEAN/MAH00456_100": {
+      "benchmark": "DVSCLEAN",
+      "ebf": {
+        "block_mean_auc": 0.9809023306702002,
+        "blocks": 36,
+        "event_auc": 0.9690750494985113
+      },
+      "events": 368640,
+      "mean_occupancy_w32ms": 7.198038736979167,
+      "noise_fraction": 0.5019205729166667,
+      "occupancy_w32ms": {
+        "block_mean_auc": 0.9805950245642528,
+        "blocks": 36,
+        "event_auc": 0.9699750298059528
+      },
+      "occupancy_wTstar": {
+        "block_mean_auc": 0.9801553486452563,
+        "blocks": 36,
+        "event_auc": 0.9687548211597122
+      }
+    },
+    "DVSCLEAN/MAH00456_50": {
+      "benchmark": "DVSCLEAN",
+      "ebf": {
+        "block_mean_auc": 0.9810565427284734,
+        "blocks": 27,
+        "event_auc": 0.9745673980213547
+      },
+      "events": 276480,
+      "mean_occupancy_w32ms": 8.745883969907407,
+      "noise_fraction": 0.33464988425925923,
+      "occupancy_w32ms": {
+        "block_mean_auc": 0.9824645443924193,
+        "blocks": 27,
+        "event_auc": 0.9763957644617758
+      },
+      "occupancy_wTstar": {
+        "block_mean_auc": 0.9814773729556013,
+        "blocks": 27,
+        "event_auc": 0.9748144090845166
+      }
+    },
+    "DVSCLEAN/MAH00465_100": {
+      "benchmark": "DVSCLEAN",
+      "ebf": {
+        "block_mean_auc": 0.98252429524375,
+        "blocks": 36,
+        "event_auc": 0.9759108100335347
+      },
+      "events": 368640,
+      "mean_occupancy_w32ms": 7.3076171875,
+      "noise_fraction": 0.5078260633680556,
+      "occupancy_w32ms": {
+        "block_mean_auc": 0.9843662349196044,
+        "blocks": 36,
+        "event_auc": 0.9774353567728989
+      },
+      "occupancy_wTstar": {
+        "block_mean_auc": 0.9825750879339754,
+        "blocks": 36,
+        "event_auc": 0.9755410097505098
+      }
+    },
+    "DVSCLEAN/MAH00465_50": {
+      "benchmark": "DVSCLEAN",
+      "ebf": {
+        "block_mean_auc": 0.9720240772903895,
+        "blocks": 27,
+        "event_auc": 0.9690705291831858
+      },
+      "events": 276480,
+      "mean_occupancy_w32ms": 8.22958984375,
+      "noise_fraction": 0.3386574074074074,
+      "occupancy_w32ms": {
+        "block_mean_auc": 0.9852868770908428,
+        "blocks": 27,
+        "event_auc": 0.9818300019518862
+      },
+      "occupancy_wTstar": {
+        "block_mean_auc": 0.9821550212517265,
+        "blocks": 27,
+        "event_auc": 0.9787361174080217
+      }
+    }
+  },
+  "phase": "68 matched causal operand contrast on development and BUAA_Campus",
+  "primary": "occupancy_w32ms",
+  "summary": {
+    "BUAA_Campus": {
+      "ebf": {
+        "block_mean_auc": 0.8761596193733286,
+        "event_auc": 0.8789491235226256
+      },
+      "mean_occupancy_w32ms": 14.149130555555557,
+      "occupancy_w32ms": {
+        "block_mean_auc": 0.8520047189419735,
+        "event_auc": 0.8552327027198442
+      },
+      "occupancy_wTstar": {
+        "block_mean_auc": 0.8618941519637092,
+        "event_auc": 0.8652605389497738
+      },
+      "units": 6
+    },
+    "DND21": {
+      "ebf": {
+        "block_mean_auc": 0.9522087512080212,
+        "event_auc": 0.9612107974489514
+      },
+      "mean_occupancy_w32ms": 6.528054294407427,
+      "occupancy_w32ms": {
+        "block_mean_auc": 0.9443259578399756,
+        "event_auc": 0.9552565653729846
+      },
+      "occupancy_wTstar": {
+        "block_mean_auc": 0.9454856083868023,
+        "event_auc": 0.9561307775121021
+      },
+      "units": 10
+    },
+    "DVSCLEAN": {
+      "ebf": {
+        "block_mean_auc": 0.9806437372514034,
+        "event_auc": 0.9724843805813084
+      },
+      "mean_occupancy_w32ms": 7.973009866913188,
+      "occupancy_w32ms": {
+        "block_mean_auc": 0.9822180718546363,
+        "event_auc": 0.9743116940297549
+      },
+      "occupancy_wTstar": {
+        "block_mean_auc": 0.9813830767505738,
+        "event_auc": 0.9731312337619714
+      },
+      "units": 10
+    },
+    "development": {
+      "ebf": {
+        "block_mean_auc": 0.966426244229712,
+        "event_auc": 0.9668475890151299
+      },
+      "mean_occupancy_w32ms": 7.250532080660307,
+      "occupancy_w32ms": {
+        "block_mean_auc": 0.9632720148473058,
+        "event_auc": 0.9647841297013697
+      },
+      "occupancy_wTstar": {
+        "block_mean_auc": 0.9634343425686882,
+        "event_auc": 0.9646310056370367
+      },
+      "units": 20
+    }
+  },
+  "wall_seconds": 74.33020313689485,
+  "windows_us": {
+    "occupancy_w32ms": 32000.0,
+    "occupancy_wTstar": 24302.0
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "cells": {
+    "Daylight ND1": {
+      "baseline_observed_max": 1.8281917348480823,
+      "baseline_observed_mean": 0.9462310801732824,
+      "baseline_observed_min": 0.47070782725046484,
+      "best_case_margin": 0.01971275827433103,
+      "complete_case_margin": 0.01971275827433103,
+      "mean_imputed_margin": 0.01971275827433103,
+      "missing": 0,
+      "observed": 46,
+      "sequences": 46,
+      "sign_is_robust_to_missingness": true,
+      "worst_case_margin": 0.01971275827433103
+    },
+    "Daylight ND16": {
+      "baseline_observed_max": 1.2073718574574663,
+      "baseline_observed_mean": 0.9364504898492987,
+      "baseline_observed_min": 0.6540773750172555,
+      "best_case_margin": 0.036355271269131885,
+      "complete_case_margin": 0.035019997648385766,
+      "mean_imputed_margin": 0.03047249804346432,
+      "missing": 1,
+      "observed": 47,
+      "our_mean_on_missing_sequences": 0.7531905064614549,
+      "sequences": 48,
+      "sign_is_robust_to_missingness": true,
+      "worst_case_margin": 0.024828302884960834
+    },
+    "Daylight ND4": {
+      "baseline_observed_max": 1.2344264770056999,
+      "baseline_observed_mean": 0.9513341608725796,
+      "baseline_observed_min": 0.5847963789371412,
+      "best_case_margin": 0.032305709485598195,
+      "complete_case_margin": 0.03263481170413128,
+      "mean_imputed_margin": 0.024669505695276567,
+      "missing": 1,
+      "observed": 47,
+      "our_mean_on_missing_sequences": 0.6016342841516845,
+      "sequences": 48,
+      "sign_is_robust_to_missingness": true,
+      "worst_case_margin": 0.018771749109169896
+    },
+    "Daylight ND64": {
+      "baseline_observed_max": 1.3390507953151516,
+      "baseline_observed_mean": 0.9350158648685821,
+      "baseline_observed_min": 0.6472221575880506,
+      "best_case_margin": 0.047469600255599396,
+      "complete_case_margin": 0.01728437013520093,
+      "mean_imputed_margin": 0.0234867913155551,
+      "missing": 4,
+      "observed": 44,
+      "our_mean_on_missing_sequences": 1.026729289168033,
+      "sequences": 48,
+      "sign_is_robust_to_missingness": false,
+      "worst_case_margin": -0.010182786221659024
+    },
+    "Night ND1": {
+      "baseline_observed_max": 1.773148496617346,
+      "baseline_observed_mean": 1.0362627862529636,
+      "baseline_observed_min": 0.6718675654054925,
+      "best_case_margin": 0.051030657483672116,
+      "complete_case_margin": 0.053114257180270116,
+      "mean_imputed_margin": 0.04343909038268314,
+      "missing": 1,
+      "observed": 47,
+      "our_mean_on_missing_sequences": 0.6249690371490587,
+      "sequences": 48,
+      "sign_is_robust_to_missingness": true,
+      "worst_case_margin": 0.028087304750091843
+    },
+    "Night ND16": {
+      "baseline_observed_max": 1.985405473915663,
+      "baseline_observed_mean": 1.1015086064416286,
+      "baseline_observed_min": 0.8210191024955839,
+      "best_case_margin": -0.03052041867502232,
+      "complete_case_margin": -0.017522135306429043,
+      "mean_imputed_margin": -0.09479926332932424,
+      "missing": 11,
+      "observed": 37,
+      "our_mean_on_missing_sequences": 0.7467771852171114,
+      "sequences": 48,
+      "sign_is_robust_to_missingness": true,
+      "worst_case_margin": -0.29735896212545715
+    },
+    "Night ND4": {
+      "baseline_observed_max": 1.9128768916683596,
+      "baseline_observed_mean": 1.0591558101925767,
+      "baseline_observed_min": 0.5527416715954213,
+      "best_case_margin": 0.08665197489438121,
+      "complete_case_margin": 0.024530033548634766,
+      "mean_imputed_margin": 0.012799913015629391,
+      "missing": 7,
+      "observed": 41,
+      "our_mean_on_missing_sequences": 1.0032507315148889,
+      "sequences": 48,
+      "sign_is_robust_to_missingness": false,
+      "worst_case_margin": -0.11170107803292229
+    },
+    "Night ND64": {
+      "baseline_observed_max": 1.5613825148219274,
+      "baseline_observed_mean": 1.083437000444596,
+      "baseline_observed_min": 0.7141144086485364,
+      "best_case_margin": 0.045262547055745665,
+      "complete_case_margin": -0.013105348354520364,
+      "mean_imputed_margin": -0.08553920420535875,
+      "missing": 17,
+      "observed": 31,
+      "our_mean_on_missing_sequences": 0.8658125296877084,
+      "sequences": 48,
+      "sign_is_robust_to_missingness": false,
+      "worst_case_margin": -0.2548115738806636
+    }
+  },
+  "cells_left_open_by_missingness": [
+    "Daylight ND64",
+    "Night ND4",
+    "Night ND64"
+  ],
+  "cells_with_sign_robust_to_missingness": [
+    "Daylight ND1",
+    "Daylight ND16",
+    "Daylight ND4",
+    "Night ND1",
+    "Night ND16"
+  ],
+  "method": "Complete-case margin, plus the interval spanned by imputing every missing baseline sequence at the cell's observed baseline maximum (worst case for us) and minimum (best case for us), on the rep-1 sequences both artefacts share.",
+  "ours_field": "support_score_fixed_mesr",
+  "phase": "45 bounding the E-MLB comparison under MESR missingness",
+  "question": "The baseline's MESR is undefined on the sequences it filters hardest. What does that leave open about the per-cell margin?",
+  "wall_seconds": 0.0028361339991533896
+}

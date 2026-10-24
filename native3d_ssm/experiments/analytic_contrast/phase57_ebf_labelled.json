@@ -1,0 +1,526 @@
+{
+  "anchor_drift_vs_published": {
+    "DND21/1hz_driving": 0.0,
+    "DVSCLEAN/MAH00446_100": 0.0
+  },
+  "baseline": {
+    "causality": "strictly causal; ours takes a block-local bidirectional pass",
+    "implementation": "ours, verified against a literal transcription of the released repository (github.com/shicy17/EBF)",
+    "kernel_vs_released_max_abs_diff": 4.440892098500626e-16,
+    "method": "EBF, Guo et al., IEEE TCSVT 35(10):9889-9894, 2025",
+    "operating_point": "the paper's own Sec. V-A choice, not refitted per dataset",
+    "s": 5,
+    "tau_us": 32000,
+    "threshold": "not required: ROC-AUC is threshold-free"
+  },
+  "block_size": 10240,
+  "conditions": 20,
+  "ours_source": "phase23_ablation_statistic.json (published values, not recomputed)",
+  "paired_block_mean": {
+    "conditions_ebf_ahead": 6,
+    "conditions_ours_ahead": 14,
+    "conditions_tied": 0,
+    "mean_delta_ebf_minus_ours": -0.014707408015532991
+  },
+  "per_condition": {
+    "DND21/10hz_driving": {
+      "block_mean_auc": 0.9179457361729311,
+      "blocks": 607,
+      "dataset": "DND21",
+      "delta_block_mean_vs_ours": -0.07348432722078924,
+      "event_auc": 0.9371057739642855,
+      "events": 6215680,
+      "noise_fraction": 0.5609091845140033,
+      "ours_block_mean_auc": 0.9914300633937203,
+      "ours_event_auc": 0.9733435165702198,
+      "score_seconds": 1.7706685269949958,
+      "throughput_mev_s": 3.5103577576705676
+    },
+    "DND21/10hz_hotel-bar": {
+      "block_mean_auc": 0.9693139973923606,
+      "blocks": 405,
+      "dataset": "DND21",
+      "delta_block_mean_vs_ours": -0.024935916950116765,
+      "event_auc": 0.9725673634152447,
+      "events": 4147200,
+      "noise_fraction": 0.8711031539351852,
+      "ours_block_mean_auc": 0.9942499143424773,
+      "ours_event_auc": 0.9330123194199399,
+      "score_seconds": 0.657406518002972,
+      "throughput_mev_s": 6.308425436057589
+    },
+    "DND21/1hz_driving": {
+      "block_mean_auc": 0.937186077639387,
+      "blocks": 300,
+      "dataset": "DND21",
+      "delta_block_mean_vs_ours": -0.03299048484123812,
+      "event_auc": 0.9500711321332875,
+      "events": 3072000,
+      "noise_fraction": 0.11355013020833334,
+      "ours_block_mean_auc": 0.9701765624806251,
+      "ours_event_auc": 0.8531008332303179,
+      "score_seconds": 0.687166691001039,
+      "throughput_mev_s": 4.470531008313025
+    },
+    "DND21/1hz_hotel-bar": {
+      "block_mean_auc": 0.9835371975900888,
+      "blocks": 87,
+      "dataset": "DND21",
+      "delta_block_mean_vs_ours": -0.01604852826788128,
+      "event_auc": 0.9846751217813028,
+      "events": 890880,
+      "noise_fraction": 0.403180001795977,
+      "ours_block_mean_auc": 0.9995857258579701,
+      "ours_event_auc": 0.9993638609094049,
+      "score_seconds": 0.13789286999963224,
+      "throughput_mev_s": 6.4606676182922005
+    },
+    "DND21/3hz_driving": {
+      "block_mean_auc": 0.9323887326213315,
+      "blocks": 368,
+      "dataset": "DND21",
+      "delta_block_mean_vs_ours": -0.05275062972386757,
+      "event_auc": 0.9465461263301521,
+      "events": 3768320,
+      "noise_fraction": 0.2769764775815217,
+      "ours_block_mean_auc": 0.985139362345199,
+      "ours_event_auc": 0.9515666641190563,
+      "score_seconds": 0.4620979870087467,
+      "throughput_mev_s": 8.154807218254929
+    },
+    "DND21/3hz_hotel-bar": {
+      "block_mean_auc": 0.9800492973419629,
+      "blocks": 157,
+      "dataset": "DND21",
+      "delta_block_mean_vs_ours": -0.01890342426745595,
+      "event_auc": 0.9818575590842407,
+      "events": 1607680,
+      "noise_fraction": 0.6686766023089172,
+      "ours_block_mean_auc": 0.9989527216094188,
+      "ours_event_auc": 0.9982666614713553,
+      "score_seconds": 0.2183803099906072,
+      "throughput_mev_s": 7.361835872790675
+    },
+    "DND21/5hz_driving": {
+      "block_mean_auc": 0.9280271466789327,
+      "blocks": 437,
+      "dataset": "DND21",
+      "delta_block_mean_vs_ours": -0.06426979408102873,
+      "event_auc": 0.9435017837796633,
+      "events": 4474880,
+      "noise_fraction": 0.3898524653175057,
+      "ours_block_mean_auc": 0.9922969407599614,
+      "ours_event_auc": 0.9823843237907075,
+      "score_seconds": 1.1849293039995246,
+      "throughput_mev_s": 3.7764953444022478
+    },
+    "DND21/5hz_hotel-bar": {
+      "block_mean_auc": 0.9764709813470182,
+      "blocks": 229,
+      "dataset": "DND21",
+      "delta_block_mean_vs_ours": -0.02194239777520879,
+      "event_auc": 0.9788250264722185,
+      "events": 2344960,
+      "noise_fraction": 0.7719074099344978,
+      "ours_block_mean_auc": 0.9984133791222269,
+      "ours_event_auc": 0.9789464856158904,
+      "score_seconds": 0.3264260340365581,
+      "throughput_mev_s": 7.183740742128968
+    },
+    "DND21/7hz_driving": {
+      "block_mean_auc": 0.9237000767691363,
+      "blocks": 504,
+      "dataset": "DND21",
+      "delta_block_mean_vs_ours": -0.06720205368537069,
+      "event_auc": 0.9406964653977554,
+      "events": 5160960,
+      "noise_fraction": 0.472260005890377,
+      "ours_block_mean_auc": 0.990902130454507,
+      "ours_event_auc": 0.978718009748912,
+      "score_seconds": 0.6955888569937088,
+      "throughput_mev_s": 7.419555313616357
+    },
+    "DND21/7hz_hotel-bar": {
+      "block_mean_auc": 0.9734682685270628,
+      "blocks": 299,
+      "dataset": "DND21",
+      "delta_block_mean_vs_ours": -0.022233218565393065,
+      "event_auc": 0.9762616221313646,
+      "events": 3061760,
+      "noise_fraction": 0.8254072820861204,
+      "ours_block_mean_auc": 0.9957014870924559,
+      "ours_event_auc": 0.9358322457374406,
+      "score_seconds": 0.439502262044698,
+      "throughput_mev_s": 6.966426033294487
+    },
+    "DVSCLEAN/MAH00446_100": {
+      "block_mean_auc": 0.9854208209505112,
+      "blocks": 37,
+      "dataset": "DVSCLEAN",
+      "delta_block_mean_vs_ours": -0.004010617822801765,
+      "event_auc": 0.9800609719182252,
+      "events": 378880,
+      "noise_fraction": 0.5008894636824325,
+      "ours_block_mean_auc": 0.989431438773313,
+      "ours_event_auc": 0.9897067821385526,
+      "score_seconds": 0.030498579959385097,
+      "throughput_mev_s": 12.422873474914367
+    },
+    "DVSCLEAN/MAH00446_50": {
+      "block_mean_auc": 0.9860758025617387,
+      "blocks": 28,
+      "dataset": "DVSCLEAN",
+      "delta_block_mean_vs_ours": -0.007595735819367899,
+      "event_auc": 0.9835024735653299,
+      "events": 286720,
+      "noise_fraction": 0.33352399553571427,
+      "ours_block_mean_auc": 0.9936715383811066,
+      "ours_event_auc": 0.9937288084826862,
+      "score_seconds": 0.03960051597096026,
+      "throughput_mev_s": 7.240309702284099
+    },
+    "DVSCLEAN/MAH00454_100": {
+      "block_mean_auc": 0.9788742244979629,
+      "blocks": 36,
+      "dataset": "DVSCLEAN",
+      "delta_block_mean_vs_ours": 0.019313075751339448,
+      "event_auc": 0.9646700339817214,
+      "events": 368640,
+      "noise_fraction": 0.5024468315972223,
+      "ours_block_mean_auc": 0.9595611487466235,
+      "ours_event_auc": 0.9258100847782387,
+      "score_seconds": 0.028746290015988052,
+      "throughput_mev_s": 12.823915705121271
+    },
+    "DVSCLEAN/MAH00454_50": {
+      "block_mean_auc": 0.9819575096770335,
+      "blocks": 27,
+      "dataset": "DVSCLEAN",
+      "delta_block_mean_vs_ours": 0.00616839430767524,
+      "event_auc": 0.9743761158827382,
+      "events": 276480,
+      "noise_fraction": 0.33497902199074076,
+      "ours_block_mean_auc": 0.9757891153693583,
+      "ours_event_auc": 0.9433128220025114,
+      "score_seconds": 0.024038563948124647,
+      "throughput_mev_s": 11.501519000745857
+    },
+    "DVSCLEAN/MAH00455_100": {
+      "block_mean_auc": 0.9770026566557968,
+      "blocks": 35,
+      "dataset": "DVSCLEAN",
+      "delta_block_mean_vs_ours": 0.044040247766742535,
+      "event_auc": 0.9614162399856044,
+      "events": 358400,
+      "noise_fraction": 0.5060100446428571,
+      "ours_block_mean_auc": 0.9329624088890542,
+      "ours_event_auc": 0.9121821903401099,
+      "score_seconds": 0.06631318002473563,
+      "throughput_mev_s": 5.4046571113964434
+    },
+    "DVSCLEAN/MAH00455_50": {
+      "block_mean_auc": 0.9805991122381779,
+      "blocks": 26,
+      "dataset": "DVSCLEAN",
+      "delta_block_mean_vs_ours": 0.02294040569169975,
+      "event_auc": 0.9721941837428776,
+      "events": 266240,
+      "noise_fraction": 0.33887845552884616,
+      "ours_block_mean_auc": 0.9576587065464781,
+      "ours_event_auc": 0.9576888551619794,
+      "score_seconds": 0.06371960398973897,
+      "throughput_mev_s": 4.1783059424360784
+    },
+    "DVSCLEAN/MAH00456_100": {
+      "block_mean_auc": 0.9809023306702002,
+      "blocks": 36,
+      "dataset": "DVSCLEAN",
+      "delta_block_mean_vs_ours": 0.031454813470433995,
+      "event_auc": 0.9690750494985113,
+      "events": 368640,
+      "noise_fraction": 0.5019205729166667,
+      "ours_block_mean_auc": 0.9494475171997662,
+      "ours_event_auc": 0.9177055006919113,
+      "score_seconds": 0.06371939094970003,
+      "throughput_mev_s": 5.78536603231195
+    },
+    "DVSCLEAN/MAH00456_50": {
+      "block_mean_auc": 0.9810565427284734,
+      "blocks": 27,
+      "dataset": "DVSCLEAN",
+      "delta_block_mean_vs_ours": 0.011263979522117995,
+      "event_auc": 0.9745673980213547,
+      "events": 276480,
+      "noise_fraction": 0.33464988425925923,
+      "ours_block_mean_auc": 0.9697925632063554,
+      "ours_event_auc": 0.9698286753476739,
+      "score_seconds": 0.025486483005806804,
+      "throughput_mev_s": 10.848103284278462
+    },
+    "DVSCLEAN/MAH00465_100": {
+      "block_mean_auc": 0.98252429524375,
+      "blocks": 36,
+      "dataset": "DVSCLEAN",
+      "delta_block_mean_vs_ours": -0.003675259733994296,
+      "event_auc": 0.9759108100335347,
+      "events": 368640,
+      "noise_fraction": 0.5078260633680556,
+      "ours_block_mean_auc": 0.9861995549777443,
+      "ours_event_auc": 0.9862656822228997,
+      "score_seconds": 0.03627263504313305,
+      "throughput_mev_s": 10.163033360042284
+    },
+    "DVSCLEAN/MAH00465_50": {
+      "block_mean_auc": 0.9720240772903895,
+      "blocks": 27,
+      "dataset": "DVSCLEAN",
+      "delta_block_mean_vs_ours": -0.019286688066154634,
+      "event_auc": 0.9690705291831858,
+      "events": 276480,
+      "noise_fraction": 0.3386574074074074,
+      "ours_block_mean_auc": 0.9913107653565442,
+      "ours_event_auc": 0.991345723064226,
+      "score_seconds": 0.021376568998675793,
+      "throughput_mev_s": 12.933787457525433
+    }
+  },
+  "phase": "57 EBF on the labelled development benchmarks",
+  "summary": {
+    "block_mean_auc": {
+      "DND21": 0.9522087512080212,
+      "DVSCLEAN": 0.9806437372514034,
+      "pooled": 0.9664262442297122
+    },
+    "event_auc": {
+      "DND21": 0.9612107974489514,
+      "DVSCLEAN": 0.9724843805813084,
+      "pooled": 0.9668475890151299
+    },
+    "ours_block_mean_auc": {
+      "DND21": 0.9916848287458562,
+      "DVSCLEAN": 0.9705824757446344,
+      "pooled": 0.9811336522452453
+    },
+    "ours_event_auc": {
+      "DND21": 0.9584534920613244,
+      "DVSCLEAN": 0.9587575124230788,
+      "pooled": 0.9586055022422015
+    }
+  },
+  "tau_sweep": {
+    "grid_ms": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "note": "reported as a property of EBF; the adopted row stays at 32 ms",
+    "per_condition": {
+      "DND21/10hz_driving": {
+        "128ms": 0.8960326641854234,
+        "16ms": 0.9111857448712889,
+        "1ms": 0.7084517920438833,
+        "2ms": 0.7999948826218881,
+        "32ms": 0.9179457361729311,
+        "4ms": 0.8642806340204239,
+        "64ms": 0.9129642717822205,
+        "8ms": 0.89382895707041
+      },
+      "DND21/10hz_hotel-bar": {
+        "128ms": 0.9649474498683049,
+        "16ms": 0.9601631814854829,
+        "1ms": 0.6987895937722013,
+        "2ms": 0.8093586404671776,
+        "32ms": 0.9693139973923606,
+        "4ms": 0.8949837501984828,
+        "64ms": 0.9711708319198085,
+        "8ms": 0.9401334123823669
+      },
+      "DND21/1hz_driving": {
+        "128ms": 0.9092388134630954,
+        "16ms": 0.9356464026422661,
+        "1ms": 0.7772162270677859,
+        "2ms": 0.8547258694499908,
+        "32ms": 0.937186077639387,
+        "4ms": 0.9046554289203764,
+        "64ms": 0.9280160704451632,
+        "8ms": 0.9234309944577611
+      },
+      "DND21/1hz_hotel-bar": {
+        "128ms": 0.9844594135687371,
+        "16ms": 0.977826288803226,
+        "1ms": 0.7572902964339253,
+        "2ms": 0.8598807239227888,
+        "32ms": 0.9835371975900888,
+        "4ms": 0.9330604539547775,
+        "64ms": 0.985445087604167,
+        "8ms": 0.9646962186012332
+      },
+      "DND21/3hz_driving": {
+        "128ms": 0.9071159127557481,
+        "16ms": 0.9290956022224017,
+        "1ms": 0.7604244823613743,
+        "2ms": 0.8411755697089351,
+        "32ms": 0.9323887326213315,
+        "4ms": 0.8941485348232472,
+        "64ms": 0.9248017521568197,
+        "8ms": 0.9154030687060609
+      },
+      "DND21/3hz_hotel-bar": {
+        "128ms": 0.9808488430091579,
+        "16ms": 0.9734557046302822,
+        "1ms": 0.7504832589059773,
+        "2ms": 0.8519926252193145,
+        "32ms": 0.9800492973419629,
+        "4ms": 0.9250396489925571,
+        "64ms": 0.9823128109832024,
+        "8ms": 0.9588828361956511
+      },
+      "DND21/5hz_driving": {
+        "128ms": 0.9043031497967794,
+        "16ms": 0.9231374216471119,
+        "1ms": 0.7353164403620753,
+        "2ms": 0.8221098997156233,
+        "32ms": 0.9280271466789327,
+        "4ms": 0.8818440703067899,
+        "64ms": 0.921472529426013,
+        "8ms": 0.90731535827953
+      },
+      "DND21/5hz_hotel-bar": {
+        "128ms": 0.9764221139971961,
+        "16ms": 0.9685644641701966,
+        "1ms": 0.7148251466495171,
+        "2ms": 0.8246388375029413,
+        "32ms": 0.9764709813470182,
+        "4ms": 0.909229542426315,
+        "64ms": 0.9789557911971437,
+        "8ms": 0.9510451106853995
+      },
+      "DND21/7hz_driving": {
+        "128ms": 0.9009954128498422,
+        "16ms": 0.9181885592565734,
+        "1ms": 0.7324559184401295,
+        "2ms": 0.8188439667759534,
+        "32ms": 0.9237000767691363,
+        "4ms": 0.8768394107995952,
+        "64ms": 0.9179108828404786,
+        "8ms": 0.9023630245844804
+      },
+      "DND21/7hz_hotel-bar": {
+        "128ms": 0.9721838438025467,
+        "16ms": 0.9650157757775745,
+        "1ms": 0.7061377214745823,
+        "2ms": 0.8167028284586558,
+        "32ms": 0.9734682685270628,
+        "4ms": 0.9024162823402113,
+        "64ms": 0.9758983334158501,
+        "8ms": 0.9462903160597111
+      },
+      "DVSCLEAN/MAH00446_100": {
+        "128ms": 0.9853962129285752,
+        "16ms": 0.9846757098843942,
+        "1ms": 0.2620912772047265,
+        "2ms": 0.3687080997413118,
+        "32ms": 0.9854208209505112,
+        "4ms": 0.6136517162779672,
+        "64ms": 0.9854051887333545,
+        "8ms": 0.908186913571112
+      },
+      "DVSCLEAN/MAH00446_50": {
+        "128ms": 0.9860481582621705,
+        "16ms": 0.9799060648708176,
+        "1ms": 0.23636027803513185,
+        "2ms": 0.32129975913882475,
+        "32ms": 0.9860758025617387,
+        "4ms": 0.49628325560454256,
+        "64ms": 0.9860415579326415,
+        "8ms": 0.8011469327314129
+      },
+      "DVSCLEAN/MAH00454_100": {
+        "128ms": 0.979142180651608,
+        "16ms": 0.9648792944399758,
+        "1ms": 0.21562080149658142,
+        "2ms": 0.27727802310298566,
+        "32ms": 0.9788742244979629,
+        "4ms": 0.4419139418252012,
+        "64ms": 0.9791667330887596,
+        "8ms": 0.7553260289335683
+      },
+      "DVSCLEAN/MAH00454_50": {
+        "128ms": 0.9829389592783739,
+        "16ms": 0.9230154621012531,
+        "1ms": 0.1791235126944484,
+        "2ms": 0.2259630648394525,
+        "32ms": 0.9819575096770335,
+        "4ms": 0.3484891023396927,
+        "64ms": 0.9829780255763494,
+        "8ms": 0.6188709811103488
+      },
+      "DVSCLEAN/MAH00455_100": {
+        "128ms": 0.9771158277246239,
+        "16ms": 0.9688037200944632,
+        "1ms": 0.2286518873980411,
+        "2ms": 0.3248450396888951,
+        "32ms": 0.9770026566557968,
+        "4ms": 0.5815434154463914,
+        "64ms": 0.9771308272692256,
+        "8ms": 0.8849520674860477
+      },
+      "DVSCLEAN/MAH00455_50": {
+        "128ms": 0.982286810413862,
+        "16ms": 0.9588140504551801,
+        "1ms": 0.19348374324299347,
+        "2ms": 0.2636426616791168,
+        "32ms": 0.9805991122381779,
+        "4ms": 0.45431600416315604,
+        "64ms": 0.9822972049273283,
+        "8ms": 0.7890178698000022
+      },
+      "DVSCLEAN/MAH00456_100": {
+        "128ms": 0.9811118984904597,
+        "16ms": 0.9516096934013785,
+        "1ms": 0.19761952591654772,
+        "2ms": 0.2477431152682682,
+        "32ms": 0.9809023306702002,
+        "4ms": 0.39849479624349526,
+        "64ms": 0.9811866086177713,
+        "8ms": 0.7272944091517937
+      },
+      "DVSCLEAN/MAH00456_50": {
+        "128ms": 0.983315614078674,
+        "16ms": 0.9052669439457044,
+        "1ms": 0.1641857850876448,
+        "2ms": 0.20084543047784664,
+        "32ms": 0.9810565427284734,
+        "4ms": 0.30622980186516496,
+        "64ms": 0.9834124446909519,
+        "8ms": 0.5878814126396649
+      },
+      "DVSCLEAN/MAH00465_100": {
+        "128ms": 0.9851537823299831,
+        "16ms": 0.8827471410871276,
+        "1ms": 0.22651189651635134,
+        "2ms": 0.27096613756899735,
+        "32ms": 0.98252429524375,
+        "4ms": 0.3746066682765281,
+        "64ms": 0.9851023918611257,
+        "8ms": 0.5944593919640007
+      },
+      "DVSCLEAN/MAH00465_50": {
+        "128ms": 0.9875814166420502,
+        "16ms": 0.7651678575110205,
+        "1ms": 0.1987194074942305,
+        "2ms": 0.2360732158895621,
+        "32ms": 0.9720240772903895,
+        "4ms": 0.31499806890592935,
+        "64ms": 0.98746643525553,
+        "8ms": 0.47525877231074753
+      }
+    }
+  },
+  "wall_seconds": 173.5153285249835
+}

@@ -1,0 +1,128 @@
+{
+  "caveat": "The scalarisation is a design choice. Product and harmonic mean are both reported; they agree on the support score, so the choice is not load-bearing there.",
+  "phase": "15 Track-B operating point without a MESR argmax",
+  "results": {
+    "old_score_r1": {
+      "oracle_gain": 0.2927429652739148,
+      "pinned_at_evaluable_floor": 0,
+      "pinned_conditions": [],
+      "rules": {
+        "argmax_balanced_accuracy": {
+          "balanced_accuracy": 0.85030431637552,
+          "dev_mesr_gain": 0.21158004434547079,
+          "pct_of_oracle": 72.27502261155918,
+          "r": 0.5,
+          "signal_recall": 0.8328361877245698
+        },
+        "argmax_dev_mesr_DEGENERATE": {
+          "balanced_accuracy": 0.7659915586128803,
+          "dev_mesr_gain": 0.2652215548626931,
+          "pct_of_oracle": 90.59877992782155,
+          "r": 0.28,
+          "signal_recall": 0.562909868435334
+        },
+        "argmax_harmonic_mean": {
+          "balanced_accuracy": 0.806128517662137,
+          "dev_mesr_gain": 0.2580030746613695,
+          "pct_of_oracle": 88.13297167361827,
+          "r": 0.35,
+          "signal_recall": 0.6635934715402969
+        },
+        "argmax_normalised_mesr_x_balanced_accuracy": {
+          "balanced_accuracy": 0.806128517662137,
+          "dev_mesr_gain": 0.2580030746613695,
+          "pct_of_oracle": 88.13297167361827,
+          "r": 0.35,
+          "signal_recall": 0.6635934715402969
+        }
+      },
+      "scalarisations_agree": true,
+      "selected_r": 0.35,
+      "strict_gameability_flag": false
+    },
+    "old_score_r2": {
+      "oracle_gain": 0.2921697821707263,
+      "pinned_at_evaluable_floor": 0,
+      "pinned_conditions": [],
+      "rules": {
+        "argmax_balanced_accuracy": {
+          "balanced_accuracy": 0.858995712374875,
+          "dev_mesr_gain": 0.21179171811292927,
+          "pct_of_oracle": 72.48926173657857,
+          "r": 0.5,
+          "signal_recall": 0.8415046795889738
+        },
+        "argmax_dev_mesr_DEGENERATE": {
+          "balanced_accuracy": 0.7396189874606959,
+          "dev_mesr_gain": 0.26590993804548996,
+          "pct_of_oracle": 91.01212865679187,
+          "r": 0.24,
+          "signal_recall": 0.5003203738438695
+        },
+        "argmax_harmonic_mean": {
+          "balanced_accuracy": 0.8053943601799742,
+          "dev_mesr_gain": 0.2548892080149666,
+          "pct_of_oracle": 87.2400992742038,
+          "r": 0.35,
+          "signal_recall": 0.6618894301895091
+        },
+        "argmax_normalised_mesr_x_balanced_accuracy": {
+          "balanced_accuracy": 0.8053943601799742,
+          "dev_mesr_gain": 0.2548892080149666,
+          "pct_of_oracle": 87.2400992742038,
+          "r": 0.35,
+          "signal_recall": 0.6618894301895091
+        }
+      },
+      "scalarisations_agree": true,
+      "selected_r": 0.35,
+      "strict_gameability_flag": false
+    },
+    "support_r2": {
+      "oracle_gain": 0.3434167871312149,
+      "pinned_at_evaluable_floor": 5,
+      "pinned_conditions": [
+        "DVSCLEAN/MAH00454_50",
+        "DVSCLEAN/MAH00454_100",
+        "DVSCLEAN/MAH00455_50",
+        "DVSCLEAN/MAH00455_100",
+        "DVSCLEAN/MAH00465_100"
+      ],
+      "rules": {
+        "argmax_balanced_accuracy": {
+          "balanced_accuracy": 0.8644582752564818,
+          "dev_mesr_gain": 0.22730545195711632,
+          "pct_of_oracle": 66.18938283592584,
+          "r": 0.5,
+          "signal_recall": 0.845647527421297
+        },
+        "argmax_dev_mesr_DEGENERATE": {
+          "balanced_accuracy": 0.6990557704254575,
+          "dev_mesr_gain": 0.3250168322492586,
+          "pct_of_oracle": 94.64209218318557,
+          "r": 0.18,
+          "signal_recall": 0.40448371513669545
+        },
+        "argmax_harmonic_mean": {
+          "balanced_accuracy": 0.7735410640146082,
+          "dev_mesr_gain": 0.31103435314180317,
+          "pct_of_oracle": 90.57051512830128,
+          "r": 0.28,
+          "signal_recall": 0.5706699794547724
+        },
+        "argmax_normalised_mesr_x_balanced_accuracy": {
+          "balanced_accuracy": 0.7735410640146082,
+          "dev_mesr_gain": 0.31103435314180317,
+          "pct_of_oracle": 90.57051512830128,
+          "r": 0.28,
+          "signal_recall": 0.5706699794547724
+        }
+      },
+      "scalarisations_agree": true,
+      "selected_r": 0.28,
+      "strict_gameability_flag": false
+    }
+  },
+  "rule": "maximise (dev-MESR gain / oracle) x (dev balanced accuracy); both measured on dev only, so E-MLB is untouched. Balanced accuracy is not the reported Track-B metric, so it cannot be gamed in MESR's direction.",
+  "why": "With the Phase 14 support operand the dev-MESR argmax is degenerate: 5/20 conditions are monotone to the evaluable floor because support and MESR both reward spatial concentration. Selecting on MESR alone drives r toward zero."
+}

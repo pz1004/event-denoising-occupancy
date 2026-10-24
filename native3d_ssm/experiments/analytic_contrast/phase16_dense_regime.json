@@ -1,0 +1,100 @@
+{
+  "how_to_read": "oracle >> hard at high noise only -> gate is the problem; oracle ~= hard and both fall -> operand is the problem; neither falls -> ranking is fine and the E-MLB deficit is retention/MESR-specific",
+  "levels": {
+    "0.5": {
+      "auc_beta0": 0.9426217921880891,
+      "auc_hard_gate": 0.9407540269376198,
+      "auc_oracle_beta": 0.9426217921880891,
+      "auc_soft_gate": 0.9393309060909081,
+      "blocks": 69,
+      "frac_blocks_corr_negative": 0.028985507246376812,
+      "gate_headroom": 0.0018677652504692777,
+      "mean_corr": 0.09849191402380363,
+      "mean_soft_beta": 0.022153900921447513,
+      "oracle_beta": 0.0,
+      "std_corr": 0.07875261461036893
+    },
+    "1.0": {
+      "auc_beta0": 0.9604541864529148,
+      "auc_hard_gate": 0.9578243922518029,
+      "auc_oracle_beta": 0.9604541864529148,
+      "auc_soft_gate": 0.9570660820850265,
+      "blocks": 71,
+      "frac_blocks_corr_negative": 0.028169014084507043,
+      "gate_headroom": 0.002629794201111868,
+      "mean_corr": 0.09679446933155567,
+      "mean_soft_beta": 0.02199648132369628,
+      "oracle_beta": 0.0,
+      "std_corr": 0.07759988328338192
+    },
+    "2.0": {
+      "auc_beta0": 0.9511456535959396,
+      "auc_hard_gate": 0.9490205562517017,
+      "auc_oracle_beta": 0.9511456535959396,
+      "auc_soft_gate": 0.9486725643127303,
+      "blocks": 78,
+      "frac_blocks_corr_negative": 0.02564102564102564,
+      "gate_headroom": 0.002125097344237936,
+      "mean_corr": 0.09840435830118295,
+      "mean_soft_beta": 0.024023175541443204,
+      "oracle_beta": 0.0,
+      "std_corr": 0.07401548918327246
+    },
+    "3.0": {
+      "auc_beta0": 0.9315864498883583,
+      "auc_hard_gate": 0.9314962781397247,
+      "auc_oracle_beta": 0.9315864498883583,
+      "auc_soft_gate": 0.9306191907504566,
+      "blocks": 80,
+      "frac_blocks_corr_negative": 0.0125,
+      "gate_headroom": 9.01717486335718e-05,
+      "mean_corr": 0.06369262939523797,
+      "mean_soft_beta": 0.02616954628667973,
+      "oracle_beta": 0.0,
+      "std_corr": 0.04472151028634828
+    },
+    "4.0": {
+      "auc_beta0": 0.9303031738740261,
+      "auc_hard_gate": 0.930303173874026,
+      "auc_oracle_beta": 0.9303031738740261,
+      "auc_soft_gate": 0.929258101542025,
+      "blocks": 80,
+      "frac_blocks_corr_negative": 0.0,
+      "gate_headroom": 1.1102230246251565e-16,
+      "mean_corr": 0.05689305728864678,
+      "mean_soft_beta": 0.02159493753243996,
+      "oracle_beta": 0.0,
+      "std_corr": 0.04370460403588678
+    }
+  },
+  "phase": "16 dense low-corr regime on ED24 (dev analogue of N-ND16/N-ND64)",
+  "score": "s = beta*G - log1p(ring_support), score radius 2, gate key radius 1",
+  "soft_gate": "beta = Phi(-corr / se), se = (1-corr^2)/sqrt(n-1); parameter-free, no fitted threshold",
+  "split": {
+    "half_used": "dev",
+    "note": "scenes[0::2] = dev, scenes[1::2] = reserved blind half",
+    "scenes": [
+      "Bicycle_01",
+      "Bicycle_03",
+      "Car_02",
+      "Car_04",
+      "Car_06",
+      "Car_08",
+      "Car_10",
+      "Crossing_01",
+      "Drop_01",
+      "Drop_03",
+      "Fire_01",
+      "Floor_01",
+      "Headset_01",
+      "House_01",
+      "House_03",
+      "House_05",
+      "Key_01",
+      "Knife_01",
+      "Knife_03",
+      "Library_01"
+    ]
+  },
+  "wall_seconds": 15.276338967960328
+}

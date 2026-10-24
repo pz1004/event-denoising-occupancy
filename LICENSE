@@ -1,0 +1,40 @@
+MIT License
+
+Copyright (c) 2026 The Authors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+The copyright notice retains the original "The Authors" designation. This
+release preserves the MIT grant above and does not assert a publication or
+review status.
+
+This license covers the code, evidence artifacts and documentation authored in
+this repository. It does NOT cover:
+  - the datasets (DND21, DVSCLEAN, ED24, E-MLB, LED, BUAA_Campus, DSEC,
+    and the DAVIS Event-Camera Dataset), which remain under their
+    original authors' terms -- see DATA.md;
+  - the learned baselines (EDformer, EDmamba, E-RAFT) and the reference metric
+    implementation (cuke-emlb), which are not vendored here and remain under
+    their own licenses.
+
+Third-party revisions, observed licenses and compatibility-patch scope are
+recorded in reproduction/UPSTREAM.md. The MIT grant does not relicense upstream
+patch context or third-party materials.

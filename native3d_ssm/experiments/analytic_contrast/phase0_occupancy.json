@@ -1,0 +1,800 @@
+{
+  "datasets": {
+    "DND21": {
+      "alpha_100k": 1.1116051578479325,
+      "conditions": {
+        "10hz_driving": {
+          "blocks": 30,
+          "events": 307200,
+          "noise_events": 172273,
+          "per_scale": {
+            "16ms": {
+              "contrast_auc": 0.8614099895651696,
+              "frac_ring_zero_all": 0.5752506510416666,
+              "frac_ring_zero_noise": 0.837310547793328,
+              "frac_ring_zero_signal": 0.240656058461242,
+              "global_only_auc": 0.4514368641827085,
+              "mean_ring_noise": 0.18064868450164795,
+              "mean_ring_signal": 2.0127902030944824,
+              "occupancy_gap_signal_minus_noise": 1.8321415185928345,
+              "ring_only_auc": 0.9331863834427288
+            },
+            "1ms": {
+              "contrast_auc": 0.7420142323113998,
+              "frac_ring_zero_all": 0.5752506510416666,
+              "frac_ring_zero_noise": 0.837310547793328,
+              "frac_ring_zero_signal": 0.240656058461242,
+              "global_only_auc": 0.4884779122991111,
+              "mean_ring_noise": 0.0480806864798069,
+              "mean_ring_signal": 0.5816073417663574,
+              "occupancy_gap_signal_minus_noise": 0.5335266590118408,
+              "ring_only_auc": 0.9167627201260942
+            },
+            "250us": {
+              "contrast_auc": 0.9486496833971867,
+              "frac_ring_zero_all": 0.5752506510416666,
+              "frac_ring_zero_noise": 0.837310547793328,
+              "frac_ring_zero_signal": 0.240656058461242,
+              "global_only_auc": 0.9344313973625669,
+              "mean_ring_noise": 0.029641656205058098,
+              "mean_ring_signal": 0.18046358227729797,
+              "occupancy_gap_signal_minus_noise": 0.15082192420959473,
+              "ring_only_auc": 0.8964951187278748
+            },
+            "4ms": {
+              "contrast_auc": 0.821308560363911,
+              "frac_ring_zero_all": 0.5752506510416666,
+              "frac_ring_zero_noise": 0.837310547793328,
+              "frac_ring_zero_signal": 0.240656058461242,
+              "global_only_auc": 0.4127029982387531,
+              "mean_ring_noise": 0.11255184561014175,
+              "mean_ring_signal": 1.379245638847351,
+              "occupancy_gap_signal_minus_noise": 1.2666938304901123,
+              "ring_only_auc": 0.9324752442652343
+            }
+          },
+          "signal_events": 134927
+        },
+        "1hz_driving": {
+          "blocks": 30,
+          "events": 307200,
+          "noise_events": 24760,
+          "per_scale": {
+            "16ms": {
+              "contrast_auc": 0.8592965877751438,
+              "frac_ring_zero_all": 0.230400390625,
+              "frac_ring_zero_noise": 0.9048465266558966,
+              "frac_ring_zero_signal": 0.17127531511117405,
+              "global_only_auc": 0.39056889046616383,
+              "mean_ring_noise": 0.1472981572151184,
+              "mean_ring_signal": 2.899970293045044,
+              "occupancy_gap_signal_minus_noise": 2.7526721954345703,
+              "ring_only_auc": 0.9581370464632115
+            },
+            "1ms": {
+              "contrast_auc": 0.5608415313993519,
+              "frac_ring_zero_all": 0.230400390625,
+              "frac_ring_zero_noise": 0.9048465266558966,
+              "frac_ring_zero_signal": 0.17127531511117405,
+              "global_only_auc": 0.3505830891585421,
+              "mean_ring_noise": 0.029160000383853912,
+              "mean_ring_signal": 0.692466676235199,
+              "occupancy_gap_signal_minus_noise": 0.6633066534996033,
+              "ring_only_auc": 0.9561883824840263
+            },
+            "250us": {
+              "contrast_auc": 0.49808687246883204,
+              "frac_ring_zero_all": 0.23157877604166666,
+              "frac_ring_zero_noise": 0.912156704361874,
+              "frac_ring_zero_signal": 0.17191615918425152,
+              "global_only_auc": 0.41955038773014025,
+              "mean_ring_noise": 0.009222432039678097,
+              "mean_ring_signal": 0.2093183994293213,
+              "occupancy_gap_signal_minus_noise": 0.20009596645832062,
+              "ring_only_auc": 0.951875008222256
+            },
+            "4ms": {
+              "contrast_auc": 0.7324516270372033,
+              "frac_ring_zero_all": 0.230400390625,
+              "frac_ring_zero_noise": 0.9048465266558966,
+              "frac_ring_zero_signal": 0.17127531511117405,
+              "global_only_auc": 0.3584083189269873,
+              "mean_ring_noise": 0.08220178633928299,
+              "mean_ring_signal": 1.8034838438034058,
+              "occupancy_gap_signal_minus_noise": 1.7212820053100586,
+              "ring_only_auc": 0.9590394864770626
+            }
+          },
+          "signal_events": 282440
+        },
+        "5hz_driving": {
+          "blocks": 30,
+          "events": 307200,
+          "noise_events": 104933,
+          "per_scale": {
+            "16ms": {
+              "contrast_auc": 0.8803309864500946,
+              "frac_ring_zero_all": 0.42631184895833335,
+              "frac_ring_zero_noise": 0.8598915498460923,
+              "frac_ring_zero_signal": 0.20137738731478688,
+              "global_only_auc": 0.42594303122579347,
+              "mean_ring_noise": 0.1691678762435913,
+              "mean_ring_signal": 2.4581515789031982,
+              "occupancy_gap_signal_minus_noise": 2.2889838218688965,
+              "ring_only_auc": 0.9484832238654936
+            },
+            "1ms": {
+              "contrast_auc": 0.6446782100153261,
+              "frac_ring_zero_all": 0.42631184895833335,
+              "frac_ring_zero_noise": 0.8598915498460923,
+              "frac_ring_zero_signal": 0.20137738731478688,
+              "global_only_auc": 0.4243305761982191,
+              "mean_ring_noise": 0.03766205906867981,
+              "mean_ring_signal": 0.6378352642059326,
+              "occupancy_gap_signal_minus_noise": 0.6001732349395752,
+              "ring_only_auc": 0.9388434954476098
+            },
+            "250us": {
+              "contrast_auc": 0.8574493478038132,
+              "frac_ring_zero_all": 0.4265625,
+              "frac_ring_zero_noise": 0.8605967617432075,
+              "frac_ring_zero_signal": 0.2013922191954199,
+              "global_only_auc": 0.7996262575508428,
+              "mean_ring_noise": 0.018437501043081284,
+              "mean_ring_signal": 0.19500404596328735,
+              "occupancy_gap_signal_minus_noise": 0.17656654119491577,
+              "ring_only_auc": 0.9262005795944115
+            },
+            "4ms": {
+              "contrast_auc": 0.8004654634060264,
+              "frac_ring_zero_all": 0.42631184895833335,
+              "frac_ring_zero_noise": 0.8598915498460923,
+              "frac_ring_zero_signal": 0.20137738731478688,
+              "global_only_auc": 0.38147291093764246,
+              "mean_ring_noise": 0.09767017513513565,
+              "mean_ring_signal": 1.5976258516311646,
+              "occupancy_gap_signal_minus_noise": 1.499955654144287,
+              "ring_only_auc": 0.9482607270925308
+            }
+          },
+          "signal_events": 202267
+        }
+      },
+      "sensor": [
+        346,
+        260
+      ],
+      "summary_per_scale": {
+        "16ms": {
+          "contrast_auc": 0.8670125212634693,
+          "frac_ring_zero_all": 0.410654296875,
+          "frac_ring_zero_noise": 0.8673495414317722,
+          "frac_ring_zero_signal": 0.20443625362906767,
+          "global_only_auc": 0.42264959529155527,
+          "mean_ring_noise": 0.1657049059867859,
+          "mean_ring_signal": 2.456970691680908,
+          "occupancy_gap_signal_minus_noise": 2.291265845298767,
+          "ring_only_auc": 0.9466022179238113
+        },
+        "1ms": {
+          "contrast_auc": 0.6491779912420259,
+          "frac_ring_zero_all": 0.410654296875,
+          "frac_ring_zero_noise": 0.8673495414317722,
+          "frac_ring_zero_signal": 0.20443625362906767,
+          "global_only_auc": 0.4211305258852908,
+          "mean_ring_noise": 0.038300915310780205,
+          "mean_ring_signal": 0.637303094069163,
+          "occupancy_gap_signal_minus_noise": 0.5990021824836731,
+          "ring_only_auc": 0.9372648660192434
+        },
+        "250us": {
+          "contrast_auc": 0.768061967889944,
+          "frac_ring_zero_all": 0.41113064236111113,
+          "frac_ring_zero_noise": 0.8700213379661365,
+          "frac_ring_zero_signal": 0.20465481228030447,
+          "global_only_auc": 0.71786934754785,
+          "mean_ring_noise": 0.019100529762605827,
+          "mean_ring_signal": 0.19492867588996887,
+          "occupancy_gap_signal_minus_noise": 0.17582814395427704,
+          "ring_only_auc": 0.9248569021815141
+        },
+        "4ms": {
+          "contrast_auc": 0.7847418836023802,
+          "frac_ring_zero_all": 0.410654296875,
+          "frac_ring_zero_noise": 0.8673495414317722,
+          "frac_ring_zero_signal": 0.20443625362906767,
+          "global_only_auc": 0.38419474270112763,
+          "mean_ring_noise": 0.09747460236152013,
+          "mean_ring_signal": 1.5934517780939739,
+          "occupancy_gap_signal_minus_noise": 1.4959771633148193,
+          "ring_only_auc": 0.946591819278276
+        }
+      }
+    },
+    "DVSCLEAN": {
+      "alpha_100k": 0.10850694444444445,
+      "conditions": {
+        "MAH00446_100": {
+          "blocks": 37,
+          "events": 378880,
+          "noise_events": 189777,
+          "per_scale": {
+            "16ms": {
+              "contrast_auc": 0.8899136215193264,
+              "frac_ring_zero_all": 0.6327465160472973,
+              "frac_ring_zero_noise": 0.9887183378386211,
+              "frac_ring_zero_signal": 0.275505941206644,
+              "global_only_auc": 0.4831364626309727,
+              "mean_ring_noise": 0.008373272605240345,
+              "mean_ring_signal": 1.3460341691970825,
+              "occupancy_gap_signal_minus_noise": 1.3376609086990356,
+              "ring_only_auc": 0.9711619330431845
+            },
+            "1ms": {
+              "contrast_auc": 0.6875009795272844,
+              "frac_ring_zero_all": 0.6327465160472973,
+              "frac_ring_zero_noise": 0.9887183378386211,
+              "frac_ring_zero_signal": 0.275505941206644,
+              "global_only_auc": 0.44309930026315425,
+              "mean_ring_noise": 0.0014030308229848742,
+              "mean_ring_signal": 0.28216487169265747,
+              "occupancy_gap_signal_minus_noise": 0.28076183795928955,
+              "ring_only_auc": 0.9682476217832532
+            },
+            "250us": {
+              "contrast_auc": 0.5176746905585828,
+              "frac_ring_zero_all": 0.6327465160472973,
+              "frac_ring_zero_noise": 0.9887183378386211,
+              "frac_ring_zero_signal": 0.275505941206644,
+              "global_only_auc": 0.4203166649149892,
+              "mean_ring_noise": 0.0003916702407877892,
+              "mean_ring_signal": 0.08751292526721954,
+              "occupancy_gap_signal_minus_noise": 0.08712125569581985,
+              "ring_only_auc": 0.9676340529964094
+            },
+            "4ms": {
+              "contrast_auc": 0.8394592538043091,
+              "frac_ring_zero_all": 0.6327465160472973,
+              "frac_ring_zero_noise": 0.9887183378386211,
+              "frac_ring_zero_signal": 0.275505941206644,
+              "global_only_auc": 0.46757346800005634,
+              "mean_ring_noise": 0.0043182275258004665,
+              "mean_ring_signal": 0.780241072177887,
+              "occupancy_gap_signal_minus_noise": 0.7759228348731995,
+              "ring_only_auc": 0.9701949382909867
+            }
+          },
+          "signal_events": 189103
+        },
+        "MAH00446_50": {
+          "blocks": 28,
+          "events": 286720,
+          "noise_events": 95628,
+          "per_scale": {
+            "16ms": {
+              "contrast_auc": 0.9116088494772984,
+              "frac_ring_zero_all": 0.48136509486607143,
+              "frac_ring_zero_noise": 0.9929309407286568,
+              "frac_ring_zero_signal": 0.2253626525443242,
+              "global_only_auc": 0.48733726389014853,
+              "mean_ring_noise": 0.004801730625331402,
+              "mean_ring_signal": 1.519010305404663,
+              "occupancy_gap_signal_minus_noise": 1.5142085552215576,
+              "ring_only_auc": 0.9818503063047102
+            },
+            "1ms": {
+              "contrast_auc": 0.6654848227926884,
+              "frac_ring_zero_all": 0.48136509486607143,
+              "frac_ring_zero_noise": 0.9929309407286568,
+              "frac_ring_zero_signal": 0.2253626525443242,
+              "global_only_auc": 0.4376051346299522,
+              "mean_ring_noise": 0.0006437920965254307,
+              "mean_ring_signal": 0.28587818145751953,
+              "occupancy_gap_signal_minus_noise": 0.28523439168930054,
+              "ring_only_auc": 0.9802066184769276
+            },
+            "250us": {
+              "contrast_auc": 0.5019210119496192,
+              "frac_ring_zero_all": 0.48136509486607143,
+              "frac_ring_zero_noise": 0.9929309407286568,
+              "frac_ring_zero_signal": 0.2253626525443242,
+              "global_only_auc": 0.4171084375054951,
+              "mean_ring_noise": 0.0001999981323024258,
+              "mean_ring_signal": 0.0875578224658966,
+              "occupancy_gap_signal_minus_noise": 0.08735782653093338,
+              "ring_only_auc": 0.9799076489571057
+            },
+            "4ms": {
+              "contrast_auc": 0.8552240535175539,
+              "frac_ring_zero_all": 0.48136509486607143,
+              "frac_ring_zero_noise": 0.9929309407286568,
+              "frac_ring_zero_signal": 0.2253626525443242,
+              "global_only_auc": 0.46497419175325183,
+              "mean_ring_noise": 0.0021921133156865835,
+              "mean_ring_signal": 0.8199329972267151,
+              "occupancy_gap_signal_minus_noise": 0.8177408576011658,
+              "ring_only_auc": 0.9812304589762615
+            }
+          },
+          "signal_events": 191092
+        },
+        "MAH00454_100": {
+          "blocks": 36,
+          "events": 368640,
+          "noise_events": 185222,
+          "per_scale": {
+            "16ms": {
+              "contrast_auc": 0.8023707851975146,
+              "frac_ring_zero_all": 0.7070556640625,
+              "frac_ring_zero_noise": 0.9885110839965014,
+              "frac_ring_zero_signal": 0.4228320012212542,
+              "global_only_auc": 0.5015286778149306,
+              "mean_ring_noise": 0.0076892985962331295,
+              "mean_ring_signal": 0.6902619004249573,
+              "occupancy_gap_signal_minus_noise": 0.682572603225708,
+              "ring_only_auc": 0.9170215456249569
+            },
+            "1ms": {
+              "contrast_auc": 0.6098589910317214,
+              "frac_ring_zero_all": 0.7070556640625,
+              "frac_ring_zero_noise": 0.9885110839965014,
+              "frac_ring_zero_signal": 0.4228320012212542,
+              "global_only_auc": 0.4908143152569592,
+              "mean_ring_noise": 0.0010231414344161749,
+              "mean_ring_signal": 0.12313439697027206,
+              "occupancy_gap_signal_minus_noise": 0.1221112534403801,
+              "ring_only_auc": 0.9143957343227194
+            },
+            "250us": {
+              "contrast_auc": 0.5151569249816822,
+              "frac_ring_zero_all": 0.7071723090277777,
+              "frac_ring_zero_noise": 0.988532679703275,
+              "frac_ring_zero_signal": 0.4230446302980078,
+              "global_only_auc": 0.467277228747545,
+              "mean_ring_noise": 0.00026540490216575563,
+              "mean_ring_signal": 0.04587821662425995,
+              "occupancy_gap_signal_minus_noise": 0.04561281204223633,
+              "ring_only_auc": 0.9140197352454302
+            },
+            "4ms": {
+              "contrast_auc": 0.7306524308446115,
+              "frac_ring_zero_all": 0.7070556640625,
+              "frac_ring_zero_noise": 0.9885110839965014,
+              "frac_ring_zero_signal": 0.4228320012212542,
+              "global_only_auc": 0.4989741231141992,
+              "mean_ring_noise": 0.0034686101134866476,
+              "mean_ring_signal": 0.3501029908657074,
+              "occupancy_gap_signal_minus_noise": 0.3466343879699707,
+              "ring_only_auc": 0.9155490560406282
+            }
+          },
+          "signal_events": 183418
+        },
+        "MAH00454_50": {
+          "blocks": 27,
+          "events": 276480,
+          "noise_events": 92615,
+          "per_scale": {
+            "16ms": {
+              "contrast_auc": 0.8279774053937099,
+              "frac_ring_zero_all": 0.569972511574074,
+              "frac_ring_zero_noise": 0.9918803649516817,
+              "frac_ring_zero_signal": 0.3574524787208006,
+              "global_only_auc": 0.49900939583639714,
+              "mean_ring_noise": 0.004895859397947788,
+              "mean_ring_signal": 0.7861540913581848,
+              "occupancy_gap_signal_minus_noise": 0.781258225440979,
+              "ring_only_auc": 0.9452289039958185
+            },
+            "1ms": {
+              "contrast_auc": 0.6042175045633627,
+              "frac_ring_zero_all": 0.569972511574074,
+              "frac_ring_zero_noise": 0.9918803649516817,
+              "frac_ring_zero_signal": 0.3574524787208006,
+              "global_only_auc": 0.48316537414425187,
+              "mean_ring_noise": 0.0005697205197066069,
+              "mean_ring_signal": 0.12430501729249954,
+              "occupancy_gap_signal_minus_noise": 0.12373529374599457,
+              "ring_only_auc": 0.9432337648870868
+            },
+            "250us": {
+              "contrast_auc": 0.5036307979302637,
+              "frac_ring_zero_all": 0.5724066840277777,
+              "frac_ring_zero_noise": 0.9920963126923285,
+              "frac_ring_zero_signal": 0.3610039974981644,
+              "global_only_auc": 0.45756855061671714,
+              "mean_ring_noise": 0.00015072776295710355,
+              "mean_ring_signal": 0.04588986933231354,
+              "occupancy_gap_signal_minus_noise": 0.04573914036154747,
+              "ring_only_auc": 0.9404069573725147
+            },
+            "4ms": {
+              "contrast_auc": 0.7432450336266169,
+              "frac_ring_zero_all": 0.569972511574074,
+              "frac_ring_zero_noise": 0.9918803649516817,
+              "frac_ring_zero_signal": 0.3574524787208006,
+              "global_only_auc": 0.4944695918686799,
+              "mean_ring_noise": 0.001995427766814828,
+              "mean_ring_signal": 0.36545559763908386,
+              "occupancy_gap_signal_minus_noise": 0.3634601831436157,
+              "ring_only_auc": 0.944004338163609
+            }
+          },
+          "signal_events": 183865
+        },
+        "MAH00455_100": {
+          "blocks": 35,
+          "events": 358400,
+          "noise_events": 181354,
+          "per_scale": {
+            "16ms": {
+              "contrast_auc": 0.7496074885110089,
+              "frac_ring_zero_all": 0.7546595982142857,
+              "frac_ring_zero_noise": 0.9877091213869008,
+              "frac_ring_zero_signal": 0.5159393603922144,
+              "global_only_auc": 0.49204448563471304,
+              "mean_ring_noise": 0.009229320101439953,
+              "mean_ring_signal": 0.569341242313385,
+              "occupancy_gap_signal_minus_noise": 0.560111939907074,
+              "ring_only_auc": 0.8659249651979977
+            },
+            "1ms": {
+              "contrast_auc": 0.5726419694895253,
+              "frac_ring_zero_all": 0.7546595982142857,
+              "frac_ring_zero_noise": 0.9877091213869008,
+              "frac_ring_zero_signal": 0.5159393603922144,
+              "global_only_auc": 0.485646564659162,
+              "mean_ring_noise": 0.0014941158005967736,
+              "mean_ring_signal": 0.12571732699871063,
+              "occupancy_gap_signal_minus_noise": 0.12422320991754532,
+              "ring_only_auc": 0.8637805993268441
+            },
+            "250us": {
+              "contrast_auc": 0.5055895748540102,
+              "frac_ring_zero_all": 0.75466796875,
+              "frac_ring_zero_noise": 0.9877256636192199,
+              "frac_ring_zero_signal": 0.5159393603922144,
+              "global_only_auc": 0.4754633510797436,
+              "mean_ring_noise": 0.00033704598899930716,
+              "mean_ring_signal": 0.04070153459906578,
+              "occupancy_gap_signal_minus_noise": 0.04036448895931244,
+              "ring_only_auc": 0.8635375029355721
+            },
+            "4ms": {
+              "contrast_auc": 0.6816664636042957,
+              "frac_ring_zero_all": 0.7546595982142857,
+              "frac_ring_zero_noise": 0.9877091213869008,
+              "frac_ring_zero_signal": 0.5159393603922144,
+              "global_only_auc": 0.4899650686075097,
+              "mean_ring_noise": 0.0048593273386359215,
+              "mean_ring_signal": 0.33515465259552,
+              "occupancy_gap_signal_minus_noise": 0.3302953243255615,
+              "ring_only_auc": 0.8649815492975346
+            }
+          },
+          "signal_events": 177046
+        },
+        "MAH00455_50": {
+          "blocks": 26,
+          "events": 266240,
+          "noise_events": 90223,
+          "per_scale": {
+            "16ms": {
+              "contrast_auc": 0.7828746774006977,
+              "frac_ring_zero_all": 0.632245342548077,
+              "frac_ring_zero_noise": 0.9917537656695078,
+              "frac_ring_zero_signal": 0.44796809399092136,
+              "global_only_auc": 0.4961594259777208,
+              "mean_ring_noise": 0.005653874017298222,
+              "mean_ring_signal": 0.6675902605056763,
+              "occupancy_gap_signal_minus_noise": 0.6619364023208618,
+              "ring_only_auc": 0.9029583350000203
+            },
+            "1ms": {
+              "contrast_auc": 0.5720687756788283,
+              "frac_ring_zero_all": 0.632245342548077,
+              "frac_ring_zero_noise": 0.9917537656695078,
+              "frac_ring_zero_signal": 0.44796809399092136,
+              "global_only_auc": 0.4826714897842147,
+              "mean_ring_noise": 0.0008296774467453361,
+              "mean_ring_signal": 0.12776213884353638,
+              "occupancy_gap_signal_minus_noise": 0.12693245708942413,
+              "ring_only_auc": 0.9012070517593072
+            },
+            "250us": {
+              "contrast_auc": 0.49928202952159056,
+              "frac_ring_zero_all": 0.6323354867788461,
+              "frac_ring_zero_noise": 0.9918535185041508,
+              "frac_ring_zero_signal": 0.4480533130322639,
+              "global_only_auc": 0.4691252383256174,
+              "mean_ring_noise": 0.00022258900571614504,
+              "mean_ring_signal": 0.04081093892455101,
+              "occupancy_gap_signal_minus_noise": 0.04058834910392761,
+              "ring_only_auc": 0.9010398257980824
+            },
+            "4ms": {
+              "contrast_auc": 0.6960259006432687,
+              "frac_ring_zero_all": 0.632245342548077,
+              "frac_ring_zero_noise": 0.9917537656695078,
+              "frac_ring_zero_signal": 0.44796809399092136,
+              "global_only_auc": 0.4910051286907705,
+              "mean_ring_noise": 0.0026680531445890665,
+              "mean_ring_signal": 0.35839855670928955,
+              "occupancy_gap_signal_minus_noise": 0.35573050379753113,
+              "ring_only_auc": 0.9020601029615899
+            }
+          },
+          "signal_events": 176017
+        },
+        "MAH00456_100": {
+          "blocks": 36,
+          "events": 368640,
+          "noise_events": 185028,
+          "per_scale": {
+            "16ms": {
+              "contrast_auc": 0.7592990062047535,
+              "frac_ring_zero_all": 0.7404296875,
+              "frac_ring_zero_noise": 0.9887908857037854,
+              "frac_ring_zero_signal": 0.4901531490316537,
+              "global_only_auc": 0.4967874034140135,
+              "mean_ring_noise": 0.007472748402506113,
+              "mean_ring_signal": 0.5738490223884583,
+              "occupancy_gap_signal_minus_noise": 0.566376268863678,
+              "ring_only_auc": 0.88689752820988
+            },
+            "1ms": {
+              "contrast_auc": 0.547664170378011,
+              "frac_ring_zero_all": 0.7404296875,
+              "frac_ring_zero_noise": 0.9887908857037854,
+              "frac_ring_zero_signal": 0.4901531490316537,
+              "global_only_auc": 0.49029630373691024,
+              "mean_ring_noise": 0.0010492806322872639,
+              "mean_ring_signal": 0.09066317975521088,
+              "occupancy_gap_signal_minus_noise": 0.0896138995885849,
+              "ring_only_auc": 0.884455562336445
+            },
+            "250us": {
+              "contrast_auc": 0.4893015609481496,
+              "frac_ring_zero_all": 0.7410861545138889,
+              "frac_ring_zero_noise": 0.9889097866268889,
+              "frac_ring_zero_signal": 0.4913513277999259,
+              "global_only_auc": 0.46964797792976315,
+              "mean_ring_noise": 0.0002823210961651057,
+              "mean_ring_signal": 0.028947532176971436,
+              "occupancy_gap_signal_minus_noise": 0.0286652110517025,
+              "ring_only_auc": 0.8833832935416626
+            },
+            "4ms": {
+              "contrast_auc": 0.6509919588752227,
+              "frac_ring_zero_all": 0.7404296875,
+              "frac_ring_zero_noise": 0.9887908857037854,
+              "frac_ring_zero_signal": 0.4901531490316537,
+              "global_only_auc": 0.49393665905839035,
+              "mean_ring_noise": 0.0034260156098753214,
+              "mean_ring_signal": 0.279758483171463,
+              "occupancy_gap_signal_minus_noise": 0.27633246779441833,
+              "ring_only_auc": 0.8854207995518244
+            }
+          },
+          "signal_events": 183612
+        },
+        "MAH00456_50": {
+          "blocks": 27,
+          "events": 276480,
+          "noise_events": 92524,
+          "per_scale": {
+            "16ms": {
+              "contrast_auc": 0.7827102394417842,
+              "frac_ring_zero_all": 0.6085575810185185,
+              "frac_ring_zero_noise": 0.9914940988284121,
+              "frac_ring_zero_signal": 0.41595272782621934,
+              "global_only_auc": 0.4924854602876255,
+              "mean_ring_noise": 0.005020380951464176,
+              "mean_ring_signal": 0.6670536994934082,
+              "occupancy_gap_signal_minus_noise": 0.6620333194732666,
+              "ring_only_auc": 0.9237810194054079
+            },
+            "1ms": {
+              "contrast_auc": 0.5407730669844408,
+              "frac_ring_zero_all": 0.6085575810185185,
+              "frac_ring_zero_noise": 0.9914940988284121,
+              "frac_ring_zero_signal": 0.41595272782621934,
+              "global_only_auc": 0.4814606865173296,
+              "mean_ring_noise": 0.0005650562816299498,
+              "mean_ring_signal": 0.09186819940805435,
+              "occupancy_gap_signal_minus_noise": 0.09130313992500305,
+              "ring_only_auc": 0.9217309848370838
+            },
+            "250us": {
+              "contrast_auc": 0.47603541160052765,
+              "frac_ring_zero_all": 0.6126302083333334,
+              "frac_ring_zero_noise": 0.9919480351044053,
+              "frac_ring_zero_signal": 0.42184544130118073,
+              "global_only_auc": 0.456175658075429,
+              "mean_ring_noise": 0.0001605114812264219,
+              "mean_ring_signal": 0.029026756063103676,
+              "occupancy_gap_signal_minus_noise": 0.028866244480013847,
+              "ring_only_auc": 0.9175476502904416
+            },
+            "4ms": {
+              "contrast_auc": 0.653250693219323,
+              "frac_ring_zero_all": 0.6085575810185185,
+              "frac_ring_zero_noise": 0.9914940988284121,
+              "frac_ring_zero_signal": 0.41595272782621934,
+              "global_only_auc": 0.48776582621062536,
+              "mean_ring_noise": 0.002025252440944314,
+              "mean_ring_signal": 0.2953369617462158,
+              "occupancy_gap_signal_minus_noise": 0.2933117151260376,
+              "ring_only_auc": 0.9224300565385768
+            }
+          },
+          "signal_events": 183956
+        },
+        "MAH00465_100": {
+          "blocks": 36,
+          "events": 368640,
+          "noise_events": 187205,
+          "per_scale": {
+            "16ms": {
+              "contrast_auc": 0.8689647933728112,
+              "frac_ring_zero_all": 0.6322102864583333,
+              "frac_ring_zero_noise": 0.988509922277717,
+              "frac_ring_zero_signal": 0.2645796015101827,
+              "global_only_auc": 0.4924731540788208,
+              "mean_ring_noise": 0.006237562280148268,
+              "mean_ring_signal": 1.1575514078140259,
+              "occupancy_gap_signal_minus_noise": 1.1513139009475708,
+              "ring_only_auc": 0.967892072539137
+            },
+            "1ms": {
+              "contrast_auc": 0.653268167912132,
+              "frac_ring_zero_all": 0.6322102864583333,
+              "frac_ring_zero_noise": 0.988509922277717,
+              "frac_ring_zero_signal": 0.2645796015101827,
+              "global_only_auc": 0.46939503130970095,
+              "mean_ring_noise": 0.0006273980834521353,
+              "mean_ring_signal": 0.1592406928539276,
+              "occupancy_gap_signal_minus_noise": 0.15861329436302185,
+              "ring_only_auc": 0.9652919705344263
+            },
+            "250us": {
+              "contrast_auc": 0.5200320488214362,
+              "frac_ring_zero_all": 0.6354519314236111,
+              "frac_ring_zero_noise": 0.9893806255174808,
+              "frac_ring_zero_signal": 0.27026758894369884,
+              "global_only_auc": 0.4535171509168307,
+              "mean_ring_noise": 0.00017814640887081623,
+              "mean_ring_signal": 0.0543065145611763,
+              "occupancy_gap_signal_minus_noise": 0.05412836745381355,
+              "ring_only_auc": 0.9613408599894543
+            },
+            "4ms": {
+              "contrast_auc": 0.8008346806848533,
+              "frac_ring_zero_all": 0.6322102864583333,
+              "frac_ring_zero_noise": 0.988509922277717,
+              "frac_ring_zero_signal": 0.2645796015101827,
+              "global_only_auc": 0.48413640387912377,
+              "mean_ring_noise": 0.0022958433255553246,
+              "mean_ring_signal": 0.4860296845436096,
+              "occupancy_gap_signal_minus_noise": 0.4837338328361511,
+              "ring_only_auc": 0.9663654444843652
+            }
+          },
+          "signal_events": 181435
+        },
+        "MAH00465_50": {
+          "blocks": 27,
+          "events": 276480,
+          "noise_events": 93632,
+          "per_scale": {
+            "16ms": {
+              "contrast_auc": 0.8951773664186911,
+              "frac_ring_zero_all": 0.47587528935185186,
+              "frac_ring_zero_noise": 0.9918617566643882,
+              "frac_ring_zero_signal": 0.21165120756037803,
+              "global_only_auc": 0.5067481085709021,
+              "mean_ring_noise": 0.00379904150031507,
+              "mean_ring_signal": 1.2913492918014526,
+              "occupancy_gap_signal_minus_noise": 1.2875502109527588,
+              "ring_only_auc": 0.9791546230201948
+            },
+            "1ms": {
+              "contrast_auc": 0.6454682114362333,
+              "frac_ring_zero_all": 0.47587528935185186,
+              "frac_ring_zero_noise": 0.9918617566643882,
+              "frac_ring_zero_signal": 0.21165120756037803,
+              "global_only_auc": 0.4653513315314203,
+              "mean_ring_noise": 0.0002897837257478386,
+              "mean_ring_signal": 0.16004161536693573,
+              "occupancy_gap_signal_minus_noise": 0.15975183248519897,
+              "ring_only_auc": 0.9775411498022849
+            },
+            "250us": {
+              "contrast_auc": 0.508478814516664,
+              "frac_ring_zero_all": 0.4890082465277778,
+              "frac_ring_zero_noise": 0.993421052631579,
+              "frac_ring_zero_signal": 0.2307107542877144,
+              "global_only_auc": 0.44691357717556934,
+              "mean_ring_noise": 5.95794954278972e-05,
+              "mean_ring_signal": 0.05425897613167763,
+              "occupancy_gap_signal_minus_noise": 0.054199397563934326,
+              "ring_only_auc": 0.9678424328709333
+            },
+            "4ms": {
+              "contrast_auc": 0.8256181656096581,
+              "frac_ring_zero_all": 0.47587528935185186,
+              "frac_ring_zero_noise": 0.9918617566643882,
+              "frac_ring_zero_signal": 0.21165120756037803,
+              "global_only_auc": 0.48725516235370864,
+              "mean_ring_noise": 0.001246972824446857,
+              "mean_ring_signal": 0.49688318371772766,
+              "occupancy_gap_signal_minus_noise": 0.4956362247467041,
+              "ring_only_auc": 0.9781564248409976
+            }
+          },
+          "signal_events": 182848
+        }
+      },
+      "sensor": [
+        1280,
+        720
+      ],
+      "summary_per_scale": {
+        "16ms": {
+          "contrast_auc": 0.8270504232937596,
+          "frac_ring_zero_all": 0.623511757164101,
+          "frac_ring_zero_noise": 0.9902160278046171,
+          "frac_ring_zero_signal": 0.3627397214004593,
+          "global_only_auc": 0.49477098381362455,
+          "mean_ring_noise": 0.006317308847792446,
+          "mean_ring_signal": 0.9268195390701294,
+          "occupancy_gap_signal_minus_noise": 0.9205022335052491,
+          "ring_only_auc": 0.9341871232341307
+        },
+        "1ms": {
+          "contrast_auc": 0.6098946659794227,
+          "frac_ring_zero_all": 0.623511757164101,
+          "frac_ring_zero_noise": 0.9902160278046171,
+          "frac_ring_zero_signal": 0.3627397214004593,
+          "global_only_auc": 0.47295055318330553,
+          "mean_ring_noise": 0.0008494996844092384,
+          "mean_ring_signal": 0.15707756206393242,
+          "occupancy_gap_signal_minus_noise": 0.1562280610203743,
+          "ring_only_auc": 0.9320091058066378
+        },
+        "250us": {
+          "contrast_auc": 0.5037102865682527,
+          "frac_ring_zero_all": 0.6258870600296381,
+          "frac_ring_zero_noise": 0.9905516952966605,
+          "frac_ring_zero_signal": 0.3663085007304138,
+          "global_only_auc": 0.45331138352877,
+          "mean_ring_noise": 0.00022479945146187675,
+          "mean_ring_signal": 0.051489108614623545,
+          "occupancy_gap_signal_minus_noise": 0.05126430932432413,
+          "ring_only_auc": 0.9296659959997605
+        },
+        "4ms": {
+          "contrast_auc": 0.7476968634429713,
+          "frac_ring_zero_all": 0.623511757164101,
+          "frac_ring_zero_noise": 0.9902160278046171,
+          "frac_ring_zero_signal": 0.3627397214004593,
+          "global_only_auc": 0.4860055623536315,
+          "mean_ring_noise": 0.0028495843405835332,
+          "mean_ring_signal": 0.4567294180393219,
+          "occupancy_gap_signal_minus_noise": 0.45387983322143555,
+          "ring_only_auc": 0.9330393169146374
+        }
+      }
+    }
+  },
+  "hypothesis": "improve_plan.md Section 3.3 sparsity floor",
+  "note": "ring occupancy is the forward-pass unlogged same-polarity ring; AUCs are bidirectional and oriented so label 1 (noise) scores high",
+  "phase": "0 occupancy diagnostic",
+  "scales_us": [
+    250,
+    1000,
+    4000,
+    16000
+  ],
+  "wall_seconds": 11.922438075998798
+}

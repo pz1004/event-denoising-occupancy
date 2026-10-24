@@ -1,0 +1,180 @@
+{
+  "bit_plane_padding": 2,
+  "block_size": 10240,
+  "ebf_neighbourhood": 5,
+  "implemented_event_bytes": 32,
+  "neighbourhood": 5,
+  "occupancy_bits": 5,
+  "occupancy_max": 24,
+  "packed_timestamp_bits": 32,
+  "per_sensor": {
+    "1280x720": {
+      "bitplane_share_of_total": 0.7623149909664142,
+      "block_bitplane": {
+        "block_buffer_bytes": 71680.0,
+        "bytes_per_event_buffered": 7.0,
+        "keep_mask_bytes": 1280.0,
+        "operand_state_bytes": 254848.0,
+        "score_bytes": 6400.0,
+        "selection_bytes": 100.0,
+        "selection_note": "25-bin counting sort, 4 B/bin",
+        "total_bytes": 334308.0,
+        "total_kb": 334.308
+      },
+      "block_buffer_share_of_total": 0.21441305622360218,
+      "block_float": {
+        "block_buffer_bytes": 327680.0,
+        "bytes_per_event_buffered": 32.0,
+        "keep_mask_bytes": 1280.0,
+        "operand_state_bytes": 44236800.0,
+        "score_bytes": 81920.0,
+        "selection_bytes": 81920.0,
+        "selection_note": "argsort index, 8 B/event",
+        "total_bytes": 44729600.0,
+        "total_kb": 44729.6
+      },
+      "causal_occupancy": {
+        "block_buffer_bytes": 0.0,
+        "kind": "ours, trailing window",
+        "polarity_map_bytes": 921600.0,
+        "score_bytes": 0.0,
+        "selection_bytes": 0.0,
+        "timestamp_map_bytes": 7372800.0,
+        "total_bytes": 8294400.0,
+        "total_kb": 8294.4
+      },
+      "ebf": {
+        "block_buffer_bytes": 0.0,
+        "kind": "EBF, decayed magnitude",
+        "polarity_map_bytes": 921600.0,
+        "score_bytes": 0.0,
+        "selection_bytes": 0.0,
+        "timestamp_map_bytes": 7372800.0,
+        "total_bytes": 8294400.0,
+        "total_kb": 8294.4
+      },
+      "height": 720,
+      "packed_event_bytes": 7,
+      "streaming_state_equals_ebf": true,
+      "throughput": {
+        "ebf_mev_s": 8.369244365777712,
+        "ebf_seconds": [
+          0.47794040001463145,
+          0.48033943108748645,
+          0.4815247179940343,
+          0.4815396540798247,
+          0.4844873900292441,
+          0.4866128640715033,
+          0.48855766491033137,
+          0.4888389359693974,
+          0.49982321390416473
+        ],
+        "events": 4000000,
+        "occupancy_mev_s": 9.01465482087857,
+        "occupancy_seconds": [
+          0.4437219260726124,
+          0.44622451707255095,
+          0.4480762940365821,
+          0.4483911721035838,
+          0.452850905014202,
+          0.4538633800111711,
+          0.45507343497592956,
+          0.45680476597044617,
+          0.4617430550279096
+        ],
+        "repeats": 9,
+        "speedup": 1.0771169327711325,
+        "speedup_max": 1.0824704529101221,
+        "speedup_median": 1.07392759723776,
+        "speedup_min": 1.0698607083804987
+      },
+      "width": 1280
+    },
+    "346x260": {
+      "bitplane_share_of_total": 0.2711963899181862,
+      "block_bitplane": {
+        "block_buffer_bytes": 71680.0,
+        "bytes_per_event_buffered": 7.0,
+        "keep_mask_bytes": 1280.0,
+        "operand_state_bytes": 29568.0,
+        "score_bytes": 6400.0,
+        "selection_bytes": 100.0,
+        "selection_note": "25-bin counting sort, 4 B/bin",
+        "total_bytes": 109028.0,
+        "total_kb": 109.028
+      },
+      "block_buffer_share_of_total": 0.6574457937410574,
+      "block_float": {
+        "block_buffer_bytes": 327680.0,
+        "bytes_per_event_buffered": 32.0,
+        "keep_mask_bytes": 1280.0,
+        "operand_state_bytes": 4318080.0,
+        "score_bytes": 81920.0,
+        "selection_bytes": 81920.0,
+        "selection_note": "argsort index, 8 B/event",
+        "total_bytes": 4810880.0,
+        "total_kb": 4810.88
+      },
+      "causal_occupancy": {
+        "block_buffer_bytes": 0.0,
+        "kind": "ours, trailing window",
+        "polarity_map_bytes": 89960.0,
+        "score_bytes": 0.0,
+        "selection_bytes": 0.0,
+        "timestamp_map_bytes": 719680.0,
+        "total_bytes": 809640.0,
+        "total_kb": 809.64
+      },
+      "ebf": {
+        "block_buffer_bytes": 0.0,
+        "kind": "EBF, decayed magnitude",
+        "polarity_map_bytes": 89960.0,
+        "score_bytes": 0.0,
+        "selection_bytes": 0.0,
+        "timestamp_map_bytes": 719680.0,
+        "total_bytes": 809640.0,
+        "total_kb": 809.64
+      },
+      "height": 260,
+      "packed_event_bytes": 7,
+      "streaming_state_equals_ebf": true,
+      "throughput": {
+        "ebf_mev_s": 6.234556274216943,
+        "ebf_seconds": [
+          0.6415853549260646,
+          0.6439814560580999,
+          0.6475070749875158,
+          0.6491335169412196,
+          0.6499551589367911,
+          0.651142928050831,
+          0.6516455189557746,
+          0.6519786270800978,
+          0.6520936340093613
+        ],
+        "events": 4000000,
+        "occupancy_mev_s": 8.88275846442095,
+        "occupancy_seconds": [
+          0.4503105669282377,
+          0.45309118705336004,
+          0.45548143493942916,
+          0.4561219459865242,
+          0.4570942979771644,
+          0.4580734199844301,
+          0.4592526559717953,
+          0.4606723999604583,
+          0.4645072310231626
+        ],
+        "repeats": 9,
+        "speedup": 1.424761935529505,
+        "speedup_max": 1.424761935529505,
+        "speedup_median": 1.4214815783744084,
+        "speedup_min": 1.4038395754851978
+      },
+      "width": 346
+    }
+  },
+  "phase": "71 end-to-end memory and arithmetic accounting",
+  "question": "Table X prices the operand's state. What does the whole filter hold, and what does the streaming form hold instead?",
+  "score_radius": 2,
+  "wall_seconds": 18.81145217490848
+}

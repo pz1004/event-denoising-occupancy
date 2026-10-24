@@ -1,0 +1,407 @@
+{
+  "implementations": {
+    "BAF": "ours, jaer BackgroundActivityFilter; score is the age of the most recent neighbour event, whose ROC is the dt sweep at infinite resolution",
+    "EDformer": "the released pretrained_model.pth, run under its pinned environment with the released 4,096-event slicing",
+    "STCF": "ours, jaer SpatioTemporalCorrelationFilter, polarity-agnostic; score is the k-th smallest neighbour age, k chosen by sweep and recorded",
+    "baf_equals_stcf_k1": 0.0,
+    "ebf_kernel_vs_released": 4.440892098500626e-16
+  },
+  "per_sequence": {
+    "campus1_1Hz": {
+      "BAF": {
+        "block_mean_auc": 0.7884165046686333,
+        "event_auc": 0.7940267151933786
+      },
+      "EBF": {
+        "block_mean_auc": 0.8871018394467011,
+        "event_auc": 0.8896838879808143
+      },
+      "EDformer": {
+        "block_mean_auc": 0.8383150410688136,
+        "event_auc": 0.8321607909070432
+      },
+      "RSF": {
+        "block_mean_auc": 0.8626535885377034,
+        "event_auc": 0.8629510755230271
+      },
+      "RSF_magnitude": {
+        "block_mean_auc": 0.8983031433294298,
+        "event_auc": 0.8992261136093173
+      },
+      "STCF": {
+        "block_mean_auc": 0.8091455920282992,
+        "event_auc": 0.8135922369343044
+      },
+      "events_available": 3000000,
+      "events_scored": 2990080,
+      "noise_fraction": 0.045420666666666665,
+      "stcf_auc_by_k": {
+        "1": 0.794107292801033,
+        "2": 0.8076339794323122,
+        "3": 0.8136403990313054,
+        "4": 0.8071748827142751,
+        "5": 0.7898981215801147,
+        "6": 0.761144884364367,
+        "7": 0.7375065822605755,
+        "8": 0.7084592196797406
+      },
+      "stcf_best_k": 3
+    },
+    "campus1_3Hz": {
+      "BAF": {
+        "block_mean_auc": 0.7757031642962116,
+        "event_auc": 0.779045988085853
+      },
+      "EBF": {
+        "block_mean_auc": 0.8852668058890887,
+        "event_auc": 0.8860902510196716
+      },
+      "EDformer": {
+        "block_mean_auc": 0.8357188869518555,
+        "event_auc": 0.829536690809301
+      },
+      "RSF": {
+        "block_mean_auc": 0.8586313280461453,
+        "event_auc": 0.8583035753856364
+      },
+      "RSF_magnitude": {
+        "block_mean_auc": 0.8960139908853271,
+        "event_auc": 0.8968134074365453
+      },
+      "STCF": {
+        "block_mean_auc": 0.8046686188185056,
+        "event_auc": 0.8069271839543289
+      },
+      "events_available": 3000000,
+      "events_scored": 2990080,
+      "noise_fraction": 0.119587,
+      "stcf_auc_by_k": {
+        "1": 0.7790230402989581,
+        "2": 0.7968349270735674,
+        "3": 0.8068862781691876,
+        "4": 0.8037379935583283,
+        "5": 0.7888302208125159,
+        "6": 0.7614014478186276,
+        "7": 0.7373033100287891,
+        "8": 0.7071412205873309
+      },
+      "stcf_best_k": 3
+    },
+    "campus1_5Hz": {
+      "BAF": {
+        "block_mean_auc": 0.7678252238329856,
+        "event_auc": 0.7709195900860129
+      },
+      "EBF": {
+        "block_mean_auc": 0.8853604157646601,
+        "event_auc": 0.8860087287676207
+      },
+      "EDformer": {
+        "block_mean_auc": 0.8329328243502666,
+        "event_auc": 0.8285337322573646
+      },
+      "RSF": {
+        "block_mean_auc": 0.8532557566702175,
+        "event_auc": 0.8533653610972015
+      },
+      "RSF_magnitude": {
+        "block_mean_auc": 0.8926033300174251,
+        "event_auc": 0.893443957627527
+      },
+      "STCF": {
+        "block_mean_auc": 0.8020150937426017,
+        "event_auc": 0.8041378683074442
+      },
+      "events_available": 3000000,
+      "events_scored": 2990080,
+      "noise_fraction": 0.181195,
+      "stcf_auc_by_k": {
+        "1": 0.7709087307029411,
+        "2": 0.7898498320504278,
+        "3": 0.8041000451115558,
+        "4": 0.8032726716056279,
+        "5": 0.7912257697937181,
+        "6": 0.7656194258286371,
+        "7": 0.7417914716221969,
+        "8": 0.7110092194442088
+      },
+      "stcf_best_k": 3
+    },
+    "campus2_1Hz": {
+      "BAF": {
+        "block_mean_auc": 0.7711087438411907,
+        "event_auc": 0.77810525874847
+      },
+      "EBF": {
+        "block_mean_auc": 0.8672989143506618,
+        "event_auc": 0.8716212993151984
+      },
+      "EDformer": {
+        "block_mean_auc": 0.844195533815376,
+        "event_auc": 0.8435449087962634
+      },
+      "RSF": {
+        "block_mean_auc": 0.8668600409920421,
+        "event_auc": 0.8676768377128453
+      },
+      "RSF_magnitude": {
+        "block_mean_auc": 0.9112196053820544,
+        "event_auc": 0.912459895958765
+      },
+      "STCF": {
+        "block_mean_auc": 0.770719141328781,
+        "event_auc": 0.7786112799233595
+      },
+      "events_available": 3000000,
+      "events_scored": 2990080,
+      "noise_fraction": 0.042312666666666665,
+      "stcf_auc_by_k": {
+        "1": 0.7780861428914951,
+        "2": 0.7785925658120937,
+        "3": 0.7751088839980076,
+        "4": 0.7608192673629758,
+        "5": 0.7377685337609514,
+        "6": 0.7052484272364997,
+        "7": 0.6804157728146975,
+        "8": 0.6518528133625385
+      },
+      "stcf_best_k": 2
+    },
+    "campus2_3Hz": {
+      "BAF": {
+        "block_mean_auc": 0.7595468254044907,
+        "event_auc": 0.7666819561433841
+      },
+      "EBF": {
+        "block_mean_auc": 0.8667097873032297,
+        "event_auc": 0.8711956168496191
+      },
+      "EDformer": {
+        "block_mean_auc": 0.8429523254580458,
+        "event_auc": 0.842552096105794
+      },
+      "RSF": {
+        "block_mean_auc": 0.8591081513219698,
+        "event_auc": 0.8601829115822711
+      },
+      "RSF_magnitude": {
+        "block_mean_auc": 0.9034734578149014,
+        "event_auc": 0.9051224056030879
+      },
+      "STCF": {
+        "block_mean_auc": 0.7679056897532376,
+        "event_auc": 0.7752979609804419
+      },
+      "events_available": 3000000,
+      "events_scored": 2990080,
+      "noise_fraction": 0.120013,
+      "stcf_auc_by_k": {
+        "1": 0.7665563818959955,
+        "2": 0.7735460921975434,
+        "3": 0.7751009740097008,
+        "4": 0.7628413371891613,
+        "5": 0.7415313248984209,
+        "6": 0.7095993594552377,
+        "7": 0.6837706993907045,
+        "8": 0.6537502043688779
+      },
+      "stcf_best_k": 3
+    },
+    "campus2_5Hz": {
+      "BAF": {
+        "block_mean_auc": 0.7507367614856035,
+        "event_auc": 0.7577408229036159
+      },
+      "EBF": {
+        "block_mean_auc": 0.8666386440985684,
+        "event_auc": 0.8705908067962652
+      },
+      "EDformer": {
+        "block_mean_auc": 0.8406120363737528,
+        "event_auc": 0.8399854152141097
+      },
+      "RSF": {
+        "block_mean_auc": 0.8516851744907882,
+        "event_auc": 0.8531050751363307
+      },
+      "RSF_magnitude": {
+        "block_mean_auc": 0.8976927089770437,
+        "event_auc": 0.8995529607014603
+      },
+      "STCF": {
+        "block_mean_auc": 0.7681860031055233,
+        "event_auc": 0.7750759942785351
+      },
+      "events_available": 3000000,
+      "events_scored": 2990080,
+      "noise_fraction": 0.18864733333333333,
+      "stcf_auc_by_k": {
+        "1": 0.7578080798133376,
+        "2": 0.7691419260993657,
+        "3": 0.7750594333656218,
+        "4": 0.7652088519171243,
+        "5": 0.7454088185526104,
+        "6": 0.7144339770961659,
+        "7": 0.6876629523252777,
+        "8": 0.6562933347492754
+      },
+      "stcf_best_k": 3
+    }
+  },
+  "phase": "65 BAF, STCF and EDformer measured on the repaired BUAA_Campus",
+  "protocol": {
+    "alignment": "all methods truncated to a common event prefix",
+    "edformer_slice": 4096,
+    "events_per_sequence": "first 3M, as the release states",
+    "geometry": [
+      346,
+      260
+    ],
+    "our_block": 10240
+  },
+  "stream": "repaired: polarities outside {-1,+1} redrawn, no signal event touched",
+  "summary_all_six": {
+    "BAF": {
+      "block_mean_auc": 0.7688895372548527,
+      "event_auc": 0.7744200551934523
+    },
+    "EBF": {
+      "block_mean_auc": 0.8763960678088183,
+      "event_auc": 0.8791984317881983
+    },
+    "EDformer": {
+      "block_mean_auc": 0.8391211080030184,
+      "event_auc": 0.8360522723483127
+    },
+    "RSF": {
+      "block_mean_auc": 0.8586990066764777,
+      "event_auc": 0.8592641394062186
+    },
+    "RSF_magnitude": {
+      "block_mean_auc": 0.8998843727343635,
+      "event_auc": 0.9011031234894505
+    },
+    "STCF": {
+      "block_mean_auc": 0.787106689796158,
+      "event_auc": 0.7922737540630691
+    }
+  },
+  "summary_clean_pair": {
+    "BAF": 0.7865363516396158,
+    "EBF": 0.887887069500243,
+    "EDformer": 0.8308487408581722,
+    "RSF": 0.8606273254543317,
+    "RSF_magnitude": 0.8980197605229312,
+    "STCF": 0.8102597104443167
+  },
+  "validation_note": "EDformer reproduces its published DND21 values, which also validates the shared preprocessing and AUC path; BAF and STCF score above their published values and are reported as measured rows, not as reproductions",
+  "validation_vs_published": {
+    "1hz": {
+      "BAF": {
+        "delta": 0.07028471830042171,
+        "ours": 0.9182847183004217,
+        "published": 0.848,
+        "reproduces": false
+      },
+      "EDformer": {
+        "delta": 0.0001788979995205331,
+        "ours": 0.9541788979995205,
+        "published": 0.954,
+        "reproduces": true
+      },
+      "STCF": {
+        "delta": 0.011444190080317496,
+        "ours": 0.9234441900803175,
+        "published": 0.912,
+        "reproduces": false
+      },
+      "meta": {
+        "events_available": 3072000,
+        "events_scored": 3072000,
+        "stcf_auc_by_k": {
+          "1": 0.9182847183004217,
+          "2": 0.9234441900803175,
+          "3": 0.9122907686886538,
+          "4": 0.8924291913686971,
+          "5": 0.8600825711818496,
+          "6": 0.8176591695311848,
+          "7": 0.7897107191727845,
+          "8": 0.7570489817732318
+        },
+        "stcf_best_k": 2
+      }
+    },
+    "3hz": {
+      "BAF": {
+        "delta": 0.07812106091638094,
+        "ours": 0.8941210609163809,
+        "published": 0.816,
+        "reproduces": false
+      },
+      "EDformer": {
+        "delta": 0.00010969001983918147,
+        "ours": 0.9471096900198391,
+        "published": 0.947,
+        "reproduces": true
+      },
+      "STCF": {
+        "delta": 0.030295997102508188,
+        "ours": 0.9172959971025082,
+        "published": 0.887,
+        "reproduces": false
+      },
+      "meta": {
+        "events_available": 3768320,
+        "events_scored": 3768320,
+        "stcf_auc_by_k": {
+          "1": 0.8941210609163809,
+          "2": 0.9172959971025082,
+          "3": 0.9115428923560744,
+          "4": 0.8964915981449093,
+          "5": 0.8699692824772626,
+          "6": 0.8310521457509193,
+          "7": 0.8009738178640432,
+          "8": 0.7642739821062696
+        },
+        "stcf_best_k": 2
+      }
+    },
+    "5hz": {
+      "BAF": {
+        "delta": 0.07071006242137601,
+        "ours": 0.863710062421376,
+        "published": 0.793,
+        "reproduces": false
+      },
+      "EDformer": {
+        "delta": 0.0005092434823200653,
+        "ours": 0.94250924348232,
+        "published": 0.942,
+        "reproduces": true
+      },
+      "STCF": {
+        "delta": 0.04966495824524797,
+        "ours": 0.909664958245248,
+        "published": 0.86,
+        "reproduces": false
+      },
+      "meta": {
+        "events_available": 4474880,
+        "events_scored": 4472832,
+        "stcf_auc_by_k": {
+          "1": 0.863696346377989,
+          "2": 0.9096372416278538,
+          "3": 0.9084558954064296,
+          "4": 0.8961476052234187,
+          "5": 0.8728721808204857,
+          "6": 0.8371369882110099,
+          "7": 0.8078638276457077,
+          "8": 0.7693911416220413
+        },
+        "stcf_best_k": 2
+      }
+    }
+  },
+  "wall_seconds": 60.66627011401579,
+  "why": "Table VII's baseline panel was transcribed from a figure legend and measured on a contaminated sequence; these rows replace it"
+}

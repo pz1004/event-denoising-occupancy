@@ -1,0 +1,55 @@
+{
+  "frac_blocks_corr_negative": 0.007621951219512195,
+  "levels": [
+    "0.1",
+    "0.3",
+    "0.5",
+    "1.0",
+    "2.0",
+    "4.0"
+  ],
+  "max_blocks_per_condition": 8,
+  "new_score": {
+    "best_fitted_gated_auc": 0.9364714820178913,
+    "cost_of_theta0_vs_fitted": -0.0036853420506708368,
+    "gate_theta0_on_ed24": 0.9327861399672205,
+    "plateau_width": 0.37,
+    "theta0_inside_plateau": false,
+    "theta_plateau": [
+      -0.4,
+      -0.03
+    ]
+  },
+  "old_score": {
+    "best_fitted_gated_auc": 0.9425808292682462,
+    "cost_of_theta0_vs_fitted": -0.0037861437086084138,
+    "gate_theta0_on_ed24": 0.9387946855596377,
+    "plateau_width": 0.37,
+    "theta0_inside_plateau": false,
+    "theta_plateau": [
+      -0.4,
+      -0.03
+    ]
+  },
+  "phase": "22 theta = 0 evaluated on ED24 itself",
+  "reading": "ED24 is effectively single-regime (corr > 0 almost everywhere), so the fit cannot locate theta from below and its plateau runs to the grid edge. theta = 0 sits just outside that plateau: the cost is what the gate pays for occasionally activating G on a dataset where it never helps.",
+  "scenes": [
+    "Bicycle_01",
+    "Car_04",
+    "Car_10",
+    "Drop_03",
+    "Headset_01",
+    "House_05",
+    "Knife_03",
+    "Monitor_01",
+    "Pedestrain_03",
+    "Pedestrain_09",
+    "PingPong_02",
+    "Roll_04",
+    "Sign_02",
+    "Stairs_01",
+    "Throw_05",
+    "Tree_03"
+  ],
+  "wall_seconds": 9.412612293002894
+}

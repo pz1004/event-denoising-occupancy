@@ -1,0 +1,168 @@
+{
+  "denoiser": "frozen corr-gated Native3D: beta=1 iff corr(G,R)<0, s=beta*G-R, 250us bidirectional, 10,240-event blocks",
+  "integrity_note": "MESR is no-reference, so Phase 5's r=0.3 headline is an oracle on the test metric. This run chooses retention blind, per block.",
+  "metric": "MESR = mean ESR over 30,000-event slices (official cuke-emlb definition, numpy verified bit-exact)",
+  "phase": "6b E-MLB MESR with frozen adaptive retention",
+  "results": {
+    "D-END": {
+      "ND00": {
+        "adaptive_mesr": 0.8518897661443601,
+        "frac_blocks_beta1": 0.007901629156123762,
+        "mean_actual_retention": 0.8947023004829107,
+        "mean_block_retention": 0.8660246570618408,
+        "mean_corr_GR": 0.07278027608933836,
+        "paper_edmamba": 0.976,
+        "paper_raw": 0.821,
+        "phase5_fixed_mesr": {
+          "0.3": 0.8863,
+          "0.5": 0.8953,
+          "0.7": 0.8805,
+          "0.9": 0.8443
+        },
+        "raw_mesr": 0.8208399845380558,
+        "sequences": 144,
+        "std_block_retention": 0.10248046417936943
+      },
+      "ND04": {
+        "adaptive_mesr": 0.8578868266816871,
+        "frac_blocks_beta1": 0.005339117377158588,
+        "mean_actual_retention": 0.879284811591801,
+        "mean_block_retention": 0.8543530064431966,
+        "mean_corr_GR": 0.07283706661726563,
+        "paper_edmamba": 0.99,
+        "paper_raw": 0.824,
+        "phase5_fixed_mesr": {
+          "0.3": 0.895,
+          "0.5": 0.9009,
+          "0.7": 0.8839,
+          "0.9": 0.8459
+        },
+        "raw_mesr": 0.824378356951288,
+        "sequences": 144,
+        "std_block_retention": 0.10029985244053234
+      },
+      "ND16": {
+        "adaptive_mesr": 0.8520146244174831,
+        "frac_blocks_beta1": 0.0031830763147489127,
+        "mean_actual_retention": 0.8556806554145838,
+        "mean_block_retention": 0.8364969042491454,
+        "mean_corr_GR": 0.07180455066150566,
+        "paper_edmamba": 0.985,
+        "paper_raw": 0.815,
+        "phase5_fixed_mesr": {
+          "0.3": 0.8919,
+          "0.5": 0.8971,
+          "0.7": 0.8749,
+          "0.9": 0.8365
+        },
+        "raw_mesr": 0.8155549504292987,
+        "sequences": 144,
+        "std_block_retention": 0.09577254963882237
+      },
+      "ND64": {
+        "adaptive_mesr": 0.8423694688762398,
+        "frac_blocks_beta1": 0.003588072751268198,
+        "mean_actual_retention": 0.7968778402045188,
+        "mean_block_retention": 0.8021821001431539,
+        "mean_corr_GR": 0.07062492801091876,
+        "paper_edmamba": 0.972,
+        "paper_raw": 0.786,
+        "phase5_fixed_mesr": {
+          "0.3": 0.8846,
+          "0.5": 0.8815,
+          "0.7": 0.8514,
+          "0.9": 0.8084
+        },
+        "raw_mesr": 0.7876095239838672,
+        "sequences": 144,
+        "std_block_retention": 0.10284569895233162
+      }
+    },
+    "N-END": {
+      "ND00": {
+        "adaptive_mesr": 0.9509053185472887,
+        "frac_blocks_beta1": 0.03883766415199776,
+        "mean_actual_retention": 0.7986695137386026,
+        "mean_block_retention": 0.7736414494253555,
+        "mean_corr_GR": 0.09576893712745271,
+        "paper_edmamba": 1.002,
+        "paper_raw": 0.89,
+        "phase5_fixed_mesr": {
+          "0.3": 1.036,
+          "0.5": 1.0105,
+          "0.7": 0.9712,
+          "0.9": 0.9199
+        },
+        "raw_mesr": 0.8916544613222285,
+        "sequences": 144,
+        "std_block_retention": 0.1407042831078684
+      },
+      "ND04": {
+        "adaptive_mesr": 0.9190702411321234,
+        "frac_blocks_beta1": 0.027316497985653925,
+        "mean_actual_retention": 0.7318473530814538,
+        "mean_block_retention": 0.7419638253910484,
+        "mean_corr_GR": 0.09423282240851943,
+        "paper_edmamba": 1.025,
+        "paper_raw": 0.824,
+        "phase5_fixed_mesr": {
+          "0.3": 1.0346,
+          "0.5": 0.9864,
+          "0.7": 0.9205,
+          "0.9": 0.8542
+        },
+        "raw_mesr": 0.8244670685155211,
+        "sequences": 144,
+        "std_block_retention": 0.1331004374836722
+      },
+      "ND16": {
+        "adaptive_mesr": 0.8757964597292994,
+        "frac_blocks_beta1": 0.02722195787733841,
+        "mean_actual_retention": 0.6772441577311132,
+        "mean_block_retention": 0.7212869708596475,
+        "mean_corr_GR": 0.06133464341888726,
+        "paper_edmamba": 1.082,
+        "paper_raw": 0.786,
+        "phase5_fixed_mesr": {
+          "0.3": 0.9754,
+          "0.5": 0.9297,
+          "0.7": 0.8691,
+          "0.9": 0.8115
+        },
+        "raw_mesr": 0.786015637190598,
+        "sequences": 144,
+        "std_block_retention": 0.13569570748516221
+      },
+      "ND64": {
+        "adaptive_mesr": 0.8684032466686679,
+        "frac_blocks_beta1": 0.040033159476356606,
+        "mean_actual_retention": 0.607855288784518,
+        "mean_block_retention": 0.6808598418449529,
+        "mean_corr_GR": 0.05423313337410168,
+        "paper_edmamba": 1.089,
+        "paper_raw": 0.768,
+        "phase5_fixed_mesr": {
+          "0.3": 0.961,
+          "0.5": 0.9082,
+          "0.7": 0.8437,
+          "0.9": 0.7884
+        },
+        "raw_mesr": 0.7671173614382237,
+        "sequences": 144,
+        "std_block_retention": 0.1448314131860724
+      }
+    }
+  },
+  "retention_rule": "frozen gated_retention from Phase 6a: corr<0 -> Otsu on the score histogram; corr>=0 -> reject the top-score atom. Calibrated on labeled DND21+DVSCLEAN only; not refitted on E-MLB.",
+  "settings": {
+    "max_events_per_sequence": 0,
+    "reps": [
+      1,
+      2,
+      3
+    ],
+    "slice": 30000
+  },
+  "timestamp_repairs": 1,
+  "wall_seconds": 1888.6601182109443
+}

@@ -1,0 +1,2076 @@
+{
+  "environment": {
+    "gpu": "NVIDIA GeForce GTX 1660 SUPER",
+    "python": "3.10.12",
+    "torch": "2.2.1+cu118",
+    "torch_cuda": "11.8"
+  },
+  "model": {
+    "checkpoint": "/home/pz1004/Workspaces/dvs-noise-filter/EDformer/pretrained_model.pth",
+    "strict_load": true,
+    "tensors": 118,
+    "trainable_parameters": 583973
+  },
+  "paper_reference": {
+    "edformer": {
+      "D-END": {
+        "ND00": 0.952,
+        "ND04": 0.955,
+        "ND16": 0.956,
+        "ND64": 0.942
+      },
+      "N-END": {
+        "ND00": 1.048,
+        "ND04": 1.019,
+        "ND16": 1.076,
+        "ND64": 1.099
+      }
+    },
+    "raw": {
+      "D-END": {
+        "ND00": 0.821,
+        "ND04": 0.824,
+        "ND16": 0.815,
+        "ND64": 0.786
+      },
+      "N-END": {
+        "ND00": 0.89,
+        "ND04": 0.824,
+        "ND16": 0.786,
+        "ND64": 0.768
+      }
+    }
+  },
+  "protocol": {
+    "batch_blocks": 1,
+    "coordinates": "raw pixel x,y passed unnormalised (matches dataset.py training convention)",
+    "max_events_per_sequence": 0,
+    "metric": "metrics.EventStructuralRatio.evalEventStorePerNumber, 30,000-event slices",
+    "noise_threshold": 0.005,
+    "reps": [
+      1
+    ],
+    "retention_rule": "keep iff sigmoid(f) < 0.005 (as released, not 0.5)",
+    "seed": 230086,
+    "seq_len": 4096,
+    "timestamp_normalisation": "min-max over the whole recording, before blocking (as released)"
+  },
+  "reader_repairs": 0,
+  "released_path": "EDformer/eval_mesr.py is complete and runnable; model.py and metrics.py are imported unmodified. Only the aggregation (by ND level) and a Raw row are added.",
+  "results": {
+    "D-END": {
+      "ND00": {
+        "edformer_mesr": 0.9520324576641584,
+        "mean_retention": 0.4832529999272099,
+        "paper_edformer": 0.952,
+        "paper_raw": 0.821,
+        "per_sequence": {
+          "Architecture-ND00-1": {
+            "edformer_mesr": 0.8709305813854133,
+            "raw_mesr": 0.7289136708030264,
+            "retention": 0.2714110137195122
+          },
+          "Bicycle-ND00-1": {
+            "edformer_mesr": 0.8888439032115796,
+            "raw_mesr": 0.7064712554012829,
+            "retention": 0.05683008829752604
+          },
+          "Boat-ND00-1": {
+            "edformer_mesr": 1.090097122954225,
+            "raw_mesr": 1.0484839714780787,
+            "retention": 0.5696637064053868
+          },
+          "Books-ND00-1": {
+            "edformer_mesr": 0.8230803567121512,
+            "raw_mesr": 0.6272317590180111,
+            "retention": 0.038970882746432345
+          },
+          "Bubble-ND00-1": {
+            "edformer_mesr": 0.9495037528372308,
+            "raw_mesr": 0.9450772996141342,
+            "retention": 0.8798496576003086
+          },
+          "Camera-ND00-1": {
+            "edformer_mesr": 0.9564075641575502,
+            "raw_mesr": 0.892719124485105,
+            "retention": 0.6144784702788143
+          },
+          "Car_Day-ND00-1": {
+            "edformer_mesr": 1.0256182797017261,
+            "raw_mesr": 1.0051927052927538,
+            "retention": 0.8438472925395717
+          },
+          "Checker_Highlight-ND00-1": {
+            "edformer_mesr": 0.8339928336540802,
+            "raw_mesr": 0.8352058999705099,
+            "retention": 0.7762894031613372
+          },
+          "Checker_Shadow-ND00-1": {
+            "edformer_mesr": 0.8921993551537876,
+            "raw_mesr": 0.9028072278001836,
+            "retention": 0.873803409529321
+          },
+          "Consturcture-ND00-1": {
+            "edformer_mesr": 0.886307285117974,
+            "raw_mesr": 0.6784768703850568,
+            "retention": 0.11912593604123443
+          },
+          "Corridor-ND00-1": {
+            "edformer_mesr": 1.2569001721490474,
+            "raw_mesr": 0.6069325649982976,
+            "retention": 0.032195912811147184
+          },
+          "Courtyard-ND00-1": {
+            "edformer_mesr": 0.6607775777447504,
+            "raw_mesr": 0.6091532186085474,
+            "retention": 0.20983176614439059
+          },
+          "Dance-ND00-1": {
+            "edformer_mesr": 0.9711572773197455,
+            "raw_mesr": 0.9610970778729463,
+            "retention": 0.80873593151341
+          },
+          "Decoration-ND00-1": {
+            "edformer_mesr": 0.47070782725046484,
+            "raw_mesr": 0.45648167914253257,
+            "retention": 0.06799144959181883
+          },
+          "Drop_Balls-ND00-1": {
+            "edformer_mesr": 1.2449917609981276,
+            "raw_mesr": 1.2604897892349893,
+            "retention": 0.9495584239130435
+          },
+          "Dump-ND00-1": {
+            "edformer_mesr": 0.808619972988771,
+            "raw_mesr": 0.7607873175682699,
+            "retention": 0.7350929054054054
+          },
+          "Fence-ND00-1": {
+            "edformer_mesr": 0.8373725531023801,
+            "raw_mesr": 0.6053560971343933,
+            "retention": 0.04749672898968447
+          },
+          "Ferriswheel-ND00-1": {
+            "edformer_mesr": 1.8281917348480823,
+            "raw_mesr": 0.6440940109991571,
+            "retention": 0.02254623061860614
+          },
+          "Food-ND00-1": {
+            "edformer_mesr": 0.9228380622938838,
+            "raw_mesr": 0.7759889491908621,
+            "retention": 0.2817431518859102
+          },
+          "Hall-ND00-1": {
+            "edformer_mesr": 1.0697519685179628,
+            "raw_mesr": 0.751985482669819,
+            "retention": 0.09487358000904937
+          },
+          "Hands-ND00-1": {
+            "edformer_mesr": 0.7189704666915717,
+            "raw_mesr": 0.635665167136913,
+            "retention": 0.049721654901649745
+          },
+          "Leaf-ND00-1": {
+            "edformer_mesr": 0.713171560565297,
+            "raw_mesr": 0.5696138953470222,
+            "retention": 0.09743403220663266
+          },
+          "Lockers-ND00-1": {
+            "edformer_mesr": 0.9984479833043389,
+            "raw_mesr": 0.8288707743171039,
+            "retention": 0.32688996871403914
+          },
+          "Meeting_Room-ND00-1": {
+            "edformer_mesr": 1.1111088661556106,
+            "raw_mesr": 0.8393824057085897,
+            "retention": 0.22774053502965858
+          },
+          "Minions-ND00-1": {
+            "edformer_mesr": 1.1812075610013404,
+            "raw_mesr": 1.1739179093269088,
+            "retention": 0.8261783854166667
+          },
+          "Mirror-ND00-1": {
+            "edformer_mesr": 0.8982074285811544,
+            "raw_mesr": 0.8851310177000428,
+            "retention": 0.8302578125
+          },
+          "Newton-ND00-1": {
+            "edformer_mesr": 1.0318629994757686,
+            "raw_mesr": 1.0269295218090533,
+            "retention": 0.935156969021921
+          },
+          "Pedestrians-ND00-1": {
+            "edformer_mesr": 0.8904428601828762,
+            "raw_mesr": 0.847117784923811,
+            "retention": 0.6484195484834558
+          },
+          "Pendulum-ND00-1": {
+            "edformer_mesr": 0.950630167893906,
+            "raw_mesr": 0.8182376691822777,
+            "retention": 0.49850027901785715
+          },
+          "Poker-ND00-1": {
+            "edformer_mesr": 0.9485562406638092,
+            "raw_mesr": 0.8329244853900838,
+            "retention": 0.6940886801861702
+          },
+          "Punch-ND00-1": {
+            "edformer_mesr": 0.9504206686830184,
+            "raw_mesr": 0.9455694097710645,
+            "retention": 0.9341359105603448
+          },
+          "Reflact-ND00-1": {
+            "edformer_mesr": 0.8387066566349325,
+            "raw_mesr": 0.6456467019696293,
+            "retention": 0.1813235425362478
+          },
+          "Ride-ND00-1": {
+            "edformer_mesr": 0.9535661332123188,
+            "raw_mesr": 0.9236360735464326,
+            "retention": 0.7911807156869494
+          },
+          "Ruler-ND00-1": {
+            "edformer_mesr": 0.8259361048924464,
+            "raw_mesr": 0.8035491379912317,
+            "retention": 0.6504501714939024
+          },
+          "Shapes_Day-ND00-1": {
+            "edformer_mesr": 0.9396842733880433,
+            "raw_mesr": 0.9398746886289502,
+            "retention": 0.902292385349026
+          },
+          "Shuttlecock-ND00-1": {
+            "edformer_mesr": 1.0100652769793579,
+            "raw_mesr": 1.000376655585343,
+            "retention": 0.8551724894662921
+          },
+          "Snackery-ND00-1": {
+            "edformer_mesr": 0.6567893897013528,
+            "raw_mesr": 0.5345374541652725,
+            "retention": 0.02428512242965368
+          },
+          "Snow-ND00-1": {
+            "edformer_mesr": 0.9259365189104858,
+            "raw_mesr": 0.8684381052651817,
+            "retention": 0.5533780184659091
+          },
+          "Spinning-ND00-1": {
+            "edformer_mesr": 1.068110945295647,
+            "raw_mesr": 1.0689936526166839,
+            "retention": 0.9671149176520271
+          },
+          "Stacks-ND00-1": {
+            "edformer_mesr": 0.9382306193922809,
+            "raw_mesr": 0.6871991483876116,
+            "retention": 0.11162926225031211
+          },
+          "Stairs-ND00-1": {
+            "edformer_mesr": 0.8894896890278469,
+            "raw_mesr": 0.7752037016251422,
+            "retention": 0.3580833462601534
+          },
+          "Study_Lounge-ND00-1": {
+            "edformer_mesr": 1.238863184716313,
+            "raw_mesr": 1.0173442933429884,
+            "retention": 0.33175106031719714
+          },
+          "Swan-ND00-1": {
+            "edformer_mesr": 1.0043441255268424,
+            "raw_mesr": 0.7731131661403737,
+            "retention": 0.14799407130741127
+          },
+          "Temple-ND00-1": {
+            "edformer_mesr": 0.9174607240999386,
+            "raw_mesr": 0.7803577492823545,
+            "retention": 0.3455345339891387
+          },
+          "Toys-ND00-1": {
+            "edformer_mesr": 0.9532798664513759,
+            "raw_mesr": 0.9468549828114029,
+            "retention": 0.9454464382595487
+          },
+          "Tree-ND00-1": {
+            "edformer_mesr": 0.8186183548364404,
+            "raw_mesr": 0.5756169473719214,
+            "retention": 0.023315650429475587
+          },
+          "UAV-ND00-1": {
+            "edformer_mesr": 1.043547335044106,
+            "raw_mesr": 1.0539509580887634,
+            "retention": 0.9665188931002475
+          },
+          "Windows-ND00-1": {
+            "edformer_mesr": 0.9936120244722528,
+            "raw_mesr": 0.9745982938472842,
+            "retention": 0.6778136602722772
+          }
+        },
+        "raw_mesr": 0.8244916192280707,
+        "sequences": 48,
+        "std_retention": 0.3435221063435337
+      },
+      "ND04": {
+        "edformer_mesr": 0.9513341608725797,
+        "mean_retention": 0.4436677510865643,
+        "paper_edformer": 0.955,
+        "paper_raw": 0.824,
+        "per_sequence": {
+          "Architecture-ND04-1": {
+            "edformer_mesr": 0.8698805034252172,
+            "raw_mesr": 0.7149092717703212,
+            "retention": 0.21061926055372807
+          },
+          "Bicycle-ND04-1": {
+            "edformer_mesr": 0.9074136107661573,
+            "raw_mesr": 0.6614069678401596,
+            "retention": 0.023165307310368043
+          },
+          "Boat-ND04-1": {
+            "edformer_mesr": 1.1240126069057306,
+            "raw_mesr": 1.0419019670883922,
+            "retention": 0.49041000677614793
+          },
+          "Books-ND04-1": {
+            "edformer_mesr": 0.8599971186839106,
+            "raw_mesr": 0.6036813795949928,
+            "retention": 0.019998722145108044
+          },
+          "Bubble-ND04-1": {
+            "edformer_mesr": 0.9666497000920585,
+            "raw_mesr": 0.9630150805302451,
+            "retention": 0.8877066153067129
+          },
+          "Camera-ND04-1": {
+            "edformer_mesr": 0.9557765312452937,
+            "raw_mesr": 0.8945569046374121,
+            "retention": 0.6327858756108539
+          },
+          "Car_Day-ND04-1": {
+            "edformer_mesr": 1.022421366560699,
+            "raw_mesr": 1.010564729592872,
+            "retention": 0.8109908989598811
+          },
+          "Checker_Highlight-ND04-1": {
+            "edformer_mesr": 0.8717995286188075,
+            "raw_mesr": 0.8732811034276241,
+            "retention": 0.8619653078589109
+          },
+          "Checker_Shadow-ND04-1": {
+            "edformer_mesr": 0.8925929368884494,
+            "raw_mesr": 0.9018906643317258,
+            "retention": 0.8585357666015625
+          },
+          "Consturcture-ND04-1": {
+            "edformer_mesr": 0.7678744319731868,
+            "raw_mesr": 0.5999914831959422,
+            "retention": 0.028547130508592016
+          },
+          "Corridor-ND04-1": {
+            "edformer_mesr": 1.2344264770056999,
+            "raw_mesr": 0.7064231067670885,
+            "retention": 0.0700771525754767
+          },
+          "Courtyard-ND04-1": {
+            "edformer_mesr": 0.7003746379391786,
+            "raw_mesr": 0.6317248296896816,
+            "retention": 0.17925712738376948
+          },
+          "Dance-ND04-1": {
+            "edformer_mesr": 0.993697712707335,
+            "raw_mesr": 0.9893620595416953,
+            "retention": 0.7942628788768797
+          },
+          "Decoration-ND04-1": {
+            "edformer_mesr": 0.655684410305244,
+            "raw_mesr": 0.5186017286483328,
+            "retention": 0.035086666922604426
+          },
+          "Drop_Balls-ND04-1": {
+            "edformer_mesr": 1.0643786592675508,
+            "raw_mesr": 1.0908686663338147,
+            "retention": 0.9354359019886364
+          },
+          "Dump-ND04-1": {
+            "edformer_mesr": 0.7712376788560737,
+            "raw_mesr": 0.575295764166786,
+            "retention": 0.260446478028065
+          },
+          "Fence-ND04-1": {
+            "edformer_mesr": 0.7821639503206314,
+            "raw_mesr": 0.5881451733294195,
+            "retention": 0.052211274582061595
+          },
+          "Ferriswheel-ND04-1": {
+            "edformer_mesr": 1.2152170395503858,
+            "raw_mesr": 0.6387425935312413,
+            "retention": 0.020196235201457958
+          },
+          "Food-ND04-1": {
+            "edformer_mesr": 0.8980626946755941,
+            "raw_mesr": 0.7301021576865524,
+            "retention": 0.20199092741935484
+          },
+          "Hall-ND04-1": {
+            "edformer_mesr": 1.0521177632534218,
+            "raw_mesr": 0.7273473214890778,
+            "retention": 0.06283366839463658
+          },
+          "Hands-ND04-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.612177332519122,
+            "retention": 0.002825701678240741
+          },
+          "Leaf-ND04-1": {
+            "edformer_mesr": 0.7712946105556946,
+            "raw_mesr": 0.5886547826765032,
+            "retention": 0.06389436541863208
+          },
+          "Lockers-ND04-1": {
+            "edformer_mesr": 1.11258256439322,
+            "raw_mesr": 0.8534876721883269,
+            "retention": 0.2915431659615744
+          },
+          "Meeting_Room-ND04-1": {
+            "edformer_mesr": 1.0912169314383147,
+            "raw_mesr": 0.9137533854350413,
+            "retention": 0.25963078682490226
+          },
+          "Minions-ND04-1": {
+            "edformer_mesr": 1.1683290239574828,
+            "raw_mesr": 1.1600232058390458,
+            "retention": 0.7932512947682584
+          },
+          "Mirror-ND04-1": {
+            "edformer_mesr": 0.9034770516442269,
+            "raw_mesr": 0.8794764284527331,
+            "retention": 0.7064505131286982
+          },
+          "Newton-ND04-1": {
+            "edformer_mesr": 1.0316857719180534,
+            "raw_mesr": 1.0287579298457548,
+            "retention": 0.8835698565516273
+          },
+          "Pedestrians-ND04-1": {
+            "edformer_mesr": 0.8757520725949932,
+            "raw_mesr": 0.8443870182346368,
+            "retention": 0.654927055242703
+          },
+          "Pendulum-ND04-1": {
+            "edformer_mesr": 1.0030137029957884,
+            "raw_mesr": 0.9387792413063232,
+            "retention": 0.754872311827957
+          },
+          "Poker-ND04-1": {
+            "edformer_mesr": 0.9391562834836034,
+            "raw_mesr": 0.9008936409002581,
+            "retention": 0.8206289668903622
+          },
+          "Punch-ND04-1": {
+            "edformer_mesr": 0.9456986539406672,
+            "raw_mesr": 0.9428799236439752,
+            "retention": 0.9314061670060199
+          },
+          "Reflact-ND04-1": {
+            "edformer_mesr": 0.8392383987582507,
+            "raw_mesr": 0.6106120182171318,
+            "retention": 0.1185269485651751
+          },
+          "Ride-ND04-1": {
+            "edformer_mesr": 0.9707297202825838,
+            "raw_mesr": 0.9156485728192939,
+            "retention": 0.5067430629119586
+          },
+          "Ruler-ND04-1": {
+            "edformer_mesr": 0.8205867356591462,
+            "raw_mesr": 0.7706452132218592,
+            "retention": 0.5796921402537797
+          },
+          "Shapes_Day-ND04-1": {
+            "edformer_mesr": 0.9387991494664446,
+            "raw_mesr": 0.9388146161028288,
+            "retention": 0.8118094053766707
+          },
+          "Shuttlecock-ND04-1": {
+            "edformer_mesr": 0.9859778190721421,
+            "raw_mesr": 0.9648575495021432,
+            "retention": 0.8566332267992425
+          },
+          "Snackery-ND04-1": {
+            "edformer_mesr": 0.5847963789371412,
+            "raw_mesr": 0.47602251742077445,
+            "retention": 0.025044771822298563
+          },
+          "Snow-ND04-1": {
+            "edformer_mesr": 0.8889876548968948,
+            "raw_mesr": 0.8753427093811359,
+            "retention": 0.64068603515625
+          },
+          "Spinning-ND04-1": {
+            "edformer_mesr": 1.1237125409480162,
+            "raw_mesr": 1.1339088285021917,
+            "retention": 0.9349502015063424
+          },
+          "Stacks-ND04-1": {
+            "edformer_mesr": 0.9537833031049157,
+            "raw_mesr": 0.6695005086481719,
+            "retention": 0.07698403401499407
+          },
+          "Stairs-ND04-1": {
+            "edformer_mesr": 0.9252626057131599,
+            "raw_mesr": 0.7262242799225288,
+            "retention": 0.10439796818112865
+          },
+          "Study_Lounge-ND04-1": {
+            "edformer_mesr": 1.2060698700496697,
+            "raw_mesr": 0.9849426385558834,
+            "retention": 0.3088179913453111
+          },
+          "Swan-ND04-1": {
+            "edformer_mesr": 1.1331315914735383,
+            "raw_mesr": 0.6598717462633757,
+            "retention": 0.02325980968045113
+          },
+          "Temple-ND04-1": {
+            "edformer_mesr": 0.9281389507743989,
+            "raw_mesr": 0.7785088387314691,
+            "retention": 0.24207170118979357
+          },
+          "Toys-ND04-1": {
+            "edformer_mesr": 0.9267143682041155,
+            "raw_mesr": 0.910483406123595,
+            "retention": 0.9133393787202381
+          },
+          "Tree-ND04-1": {
+            "edformer_mesr": 0.9096409270858881,
+            "raw_mesr": 0.6063467829401261,
+            "retention": 0.03321571521160314
+          },
+          "UAV-ND04-1": {
+            "edformer_mesr": 1.122180752509388,
+            "raw_mesr": 1.3473506141429463,
+            "retention": 0.8579178659539474
+          },
+          "Windows-ND04-1": {
+            "edformer_mesr": 1.0069687681128827,
+            "raw_mesr": 0.9804101868153837,
+            "retention": 0.6624384071621193
+          }
+        },
+        "raw_mesr": 0.8223869696155403,
+        "sequences": 48,
+        "std_retention": 0.3504761691333368
+      },
+      "ND16": {
+        "edformer_mesr": 0.9364504898492988,
+        "mean_retention": 0.398031794687264,
+        "paper_edformer": 0.956,
+        "paper_raw": 0.815,
+        "per_sequence": {
+          "Architecture-ND16-1": {
+            "edformer_mesr": 0.8826940116648703,
+            "raw_mesr": 0.7192138385038442,
+            "retention": 0.2019081059040676
+          },
+          "Bicycle-ND16-1": {
+            "edformer_mesr": 0.8115980859985001,
+            "raw_mesr": 0.6323607764145601,
+            "retention": 0.01668158183528428
+          },
+          "Boat-ND16-1": {
+            "edformer_mesr": 1.0849352495835685,
+            "raw_mesr": 0.9668390877452342,
+            "retention": 0.2840169270833333
+          },
+          "Books-ND16-1": {
+            "edformer_mesr": 0.810440695985828,
+            "raw_mesr": 0.5442153764570362,
+            "retention": 0.016289579395085067
+          },
+          "Bubble-ND16-1": {
+            "edformer_mesr": 0.9605474119194006,
+            "raw_mesr": 0.9649248818301515,
+            "retention": 0.9097856794084821
+          },
+          "Camera-ND16-1": {
+            "edformer_mesr": 0.9431488381803573,
+            "raw_mesr": 0.8698203535764113,
+            "retention": 0.5852178436478758
+          },
+          "Car_Day-ND16-1": {
+            "edformer_mesr": 1.0223040087329758,
+            "raw_mesr": 1.013316575451478,
+            "retention": 0.8601444128787878
+          },
+          "Checker_Highlight-ND16-1": {
+            "edformer_mesr": 0.8654364295037248,
+            "raw_mesr": 0.8660263361779009,
+            "retention": 0.8580300943299672
+          },
+          "Checker_Shadow-ND16-1": {
+            "edformer_mesr": 0.8761658566116997,
+            "raw_mesr": 0.8852019880939332,
+            "retention": 0.8562775485985533
+          },
+          "Consturcture-ND16-1": {
+            "edformer_mesr": 0.743008156673576,
+            "raw_mesr": 0.6125605105745725,
+            "retention": 0.03887188946759259
+          },
+          "Corridor-ND16-1": {
+            "edformer_mesr": 1.2073718574574663,
+            "raw_mesr": 0.8036196000700119,
+            "retention": 0.07203200767780173
+          },
+          "Courtyard-ND16-1": {
+            "edformer_mesr": 0.6794016172594117,
+            "raw_mesr": 0.6114221066392556,
+            "retention": 0.11491184270539077
+          },
+          "Dance-ND16-1": {
+            "edformer_mesr": 0.9978256571442682,
+            "raw_mesr": 0.9994065697379092,
+            "retention": 0.8597057253815407
+          },
+          "Decoration-ND16-1": {
+            "edformer_mesr": 0.6711390529674869,
+            "raw_mesr": 0.5024672190517138,
+            "retention": 0.04849687473299726
+          },
+          "Drop_Balls-ND16-1": {
+            "edformer_mesr": 1.1121567488496957,
+            "raw_mesr": 1.4772517620715253,
+            "retention": 0.6405120394123134
+          },
+          "Dump-ND16-1": {
+            "edformer_mesr": 0.8677549086467472,
+            "raw_mesr": 0.6056928759196488,
+            "retention": 0.195997506133781
+          },
+          "Fence-ND16-1": {
+            "edformer_mesr": 0.7727575149400585,
+            "raw_mesr": 0.6272997983406852,
+            "retention": 0.021086049765106852
+          },
+          "Ferriswheel-ND16-1": {
+            "edformer_mesr": 1.130049855468197,
+            "raw_mesr": 0.6505378805627923,
+            "retention": 0.022742749675445102
+          },
+          "Food-ND16-1": {
+            "edformer_mesr": 0.8816363350094228,
+            "raw_mesr": 0.7015660163029047,
+            "retention": 0.14244475188078703
+          },
+          "Hall-ND16-1": {
+            "edformer_mesr": 1.029965926458401,
+            "raw_mesr": 0.6765352562937281,
+            "retention": 0.04475191043374317
+          },
+          "Hands-ND16-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.7144379643087577,
+            "retention": 2.043968023255814e-05
+          },
+          "Leaf-ND16-1": {
+            "edformer_mesr": 0.709519145351672,
+            "raw_mesr": 0.5936908938765642,
+            "retention": 0.13093406837303323
+          },
+          "Lockers-ND16-1": {
+            "edformer_mesr": 1.031901511508041,
+            "raw_mesr": 0.7667403990406871,
+            "retention": 0.1784205970090412
+          },
+          "Meeting_Room-ND16-1": {
+            "edformer_mesr": 1.0515967643228545,
+            "raw_mesr": 0.9253146540201347,
+            "retention": 0.29505381078079357
+          },
+          "Minions-ND16-1": {
+            "edformer_mesr": 1.1490610220500808,
+            "raw_mesr": 1.138875624300743,
+            "retention": 0.6451026068793403
+          },
+          "Mirror-ND16-1": {
+            "edformer_mesr": 0.8874808091062297,
+            "raw_mesr": 0.8412306404819786,
+            "retention": 0.39101077946087787
+          },
+          "Newton-ND16-1": {
+            "edformer_mesr": 1.0352012822754721,
+            "raw_mesr": 1.0186974744934625,
+            "retention": 0.7722766804245284
+          },
+          "Pedestrians-ND16-1": {
+            "edformer_mesr": 0.917665306064376,
+            "raw_mesr": 0.9029134222891471,
+            "retention": 0.775289178438927
+          },
+          "Pendulum-ND16-1": {
+            "edformer_mesr": 0.9680994123757773,
+            "raw_mesr": 0.8809472831646668,
+            "retention": 0.6121401463347921
+          },
+          "Poker-ND16-1": {
+            "edformer_mesr": 0.95817332312314,
+            "raw_mesr": 0.9443376566190116,
+            "retention": 0.8630036654537672
+          },
+          "Punch-ND16-1": {
+            "edformer_mesr": 0.9387468381648317,
+            "raw_mesr": 0.9265864574951583,
+            "retention": 0.9192463077910958
+          },
+          "Reflact-ND16-1": {
+            "edformer_mesr": 0.8393054604603792,
+            "raw_mesr": 0.5955731114659171,
+            "retention": 0.09620266602992314
+          },
+          "Ride-ND16-1": {
+            "edformer_mesr": 0.9774779249162596,
+            "raw_mesr": 0.8462186303305196,
+            "retention": 0.24110957554408483
+          },
+          "Ruler-ND16-1": {
+            "edformer_mesr": 0.8112256411583384,
+            "raw_mesr": 0.7394615947092568,
+            "retention": 0.42334820993964173
+          },
+          "Shapes_Day-ND16-1": {
+            "edformer_mesr": 0.8655550766817814,
+            "raw_mesr": 0.9056796132457252,
+            "retention": 0.27372546073717946
+          },
+          "Shuttlecock-ND16-1": {
+            "edformer_mesr": 0.979305748642613,
+            "raw_mesr": 0.9620507448528947,
+            "retention": 0.8436870771585051
+          },
+          "Snackery-ND16-1": {
+            "edformer_mesr": 0.6540773750172555,
+            "raw_mesr": 0.40033610555356774,
+            "retention": 0.013552100257535952
+          },
+          "Snow-ND16-1": {
+            "edformer_mesr": 0.8958196936941719,
+            "raw_mesr": 0.8785353208406426,
+            "retention": 0.5783868963068182
+          },
+          "Spinning-ND16-1": {
+            "edformer_mesr": 1.1774694929397984,
+            "raw_mesr": 1.2546676125109142,
+            "retention": 0.8963908095198306
+          },
+          "Stacks-ND16-1": {
+            "edformer_mesr": 0.941753305980179,
+            "raw_mesr": 0.6659885227912528,
+            "retention": 0.07470703125
+          },
+          "Stairs-ND16-1": {
+            "edformer_mesr": 0.9131245473937892,
+            "raw_mesr": 0.618133142391208,
+            "retention": 0.06659473755569888
+          },
+          "Study_Lounge-ND16-1": {
+            "edformer_mesr": 1.184515374967044,
+            "raw_mesr": 0.958458177301878,
+            "retention": 0.24977971810499158
+          },
+          "Swan-ND16-1": {
+            "edformer_mesr": 0.9635476149194049,
+            "raw_mesr": 0.5762270202105519,
+            "retention": 0.011418362780199252
+          },
+          "Temple-ND16-1": {
+            "edformer_mesr": 0.9054259762799599,
+            "raw_mesr": 0.7962036463268916,
+            "retention": 0.3926459733829942
+          },
+          "Toys-ND16-1": {
+            "edformer_mesr": 0.9658260827745645,
+            "raw_mesr": 0.9566989645965751,
+            "retention": 0.9185891347388698
+          },
+          "Tree-ND16-1": {
+            "edformer_mesr": 0.8384179311762014,
+            "raw_mesr": 0.5420294094172777,
+            "retention": 0.025935285820503848
+          },
+          "UAV-ND16-1": {
+            "edformer_mesr": 1.0991280841664608,
+            "raw_mesr": 1.225235553713244,
+            "retention": 0.8959867037259616
+          },
+          "Windows-ND16-1": {
+            "edformer_mesr": 1.003414058350708,
+            "raw_mesr": 0.989630505823609,
+            "retention": 0.7310630011615707
+          }
+        },
+        "raw_mesr": 0.8186495615830737,
+        "sequences": 48,
+        "std_retention": 0.3408686681900811
+      },
+      "ND64": {
+        "edformer_mesr": 0.9350158648685823,
+        "mean_retention": 0.3005655692951436,
+        "paper_edformer": 0.942,
+        "paper_raw": 0.786,
+        "per_sequence": {
+          "Architecture-ND64-1": {
+            "edformer_mesr": 0.8872017728504867,
+            "raw_mesr": 0.7001651413399287,
+            "retention": 0.13463294697317849
+          },
+          "Bicycle-ND64-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.5839816862223135,
+            "retention": 0.006366402762276786
+          },
+          "Boat-ND64-1": {
+            "edformer_mesr": 1.0717353817294024,
+            "raw_mesr": 0.9242241665140659,
+            "retention": 0.17958663881515444
+          },
+          "Books-ND64-1": {
+            "edformer_mesr": 0.8127149472592978,
+            "raw_mesr": 0.523065730483097,
+            "retention": 0.01575498739159125
+          },
+          "Bubble-ND64-1": {
+            "edformer_mesr": 0.9569148204652773,
+            "raw_mesr": 0.9723622375389133,
+            "retention": 0.9267252604166667
+          },
+          "Camera-ND64-1": {
+            "edformer_mesr": 0.9605928818617825,
+            "raw_mesr": 0.8359578851732498,
+            "retention": 0.43613695340106007
+          },
+          "Car_Day-ND64-1": {
+            "edformer_mesr": 1.0138781441374003,
+            "raw_mesr": 0.9843279608670198,
+            "retention": 0.7690135104597108
+          },
+          "Checker_Highlight-ND64-1": {
+            "edformer_mesr": 0.8860064221219904,
+            "raw_mesr": 0.8860978401209617,
+            "retention": 0.8645724826388889
+          },
+          "Checker_Shadow-ND64-1": {
+            "edformer_mesr": 0.8875891185891803,
+            "raw_mesr": 0.8987748664074914,
+            "retention": 0.8212099746919014
+          },
+          "Consturcture-ND64-1": {
+            "edformer_mesr": 0.8046500321336321,
+            "raw_mesr": 0.6193890335744796,
+            "retention": 0.04182579581486858
+          },
+          "Corridor-ND64-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.8997178638925263,
+            "retention": 0.02778693521098726
+          },
+          "Courtyard-ND64-1": {
+            "edformer_mesr": 0.7199175468846912,
+            "raw_mesr": 0.6070202463033187,
+            "retention": 0.06710298055512899
+          },
+          "Dance-ND64-1": {
+            "edformer_mesr": 1.0068998349706995,
+            "raw_mesr": 1.0015792497835398,
+            "retention": 0.7846742087659745
+          },
+          "Decoration-ND64-1": {
+            "edformer_mesr": 0.7028655236916963,
+            "raw_mesr": 0.4809874136580485,
+            "retention": 0.010968964675377155
+          },
+          "Drop_Balls-ND64-1": {
+            "edformer_mesr": 1.142587791463277,
+            "raw_mesr": 1.0677221742556486,
+            "retention": 0.11061171234631148
+          },
+          "Dump-ND64-1": {
+            "edformer_mesr": 0.8016927173963705,
+            "raw_mesr": 0.5567352446528608,
+            "retention": 0.15437699472107938
+          },
+          "Fence-ND64-1": {
+            "edformer_mesr": 0.8115697597007873,
+            "raw_mesr": 0.5594935156395758,
+            "retention": 0.040843308574021464
+          },
+          "Ferriswheel-ND64-1": {
+            "edformer_mesr": 1.142088033494974,
+            "raw_mesr": 0.6730574107985693,
+            "retention": 0.023503658011091128
+          },
+          "Food-ND64-1": {
+            "edformer_mesr": 0.8607519306179332,
+            "raw_mesr": 0.6625881035097843,
+            "retention": 0.06896147392165493
+          },
+          "Hall-ND64-1": {
+            "edformer_mesr": 1.115567815541072,
+            "raw_mesr": 0.6686951960604515,
+            "retention": 0.03957891212079043
+          },
+          "Hands-ND64-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.7574162994806594,
+            "retention": 4.48421556122449e-05
+          },
+          "Leaf-ND64-1": {
+            "edformer_mesr": 0.7482953717240303,
+            "raw_mesr": 0.5601651879012248,
+            "retention": 0.04676379118940903
+          },
+          "Lockers-ND64-1": {
+            "edformer_mesr": 1.0772110338327137,
+            "raw_mesr": 0.7522724652371251,
+            "retention": 0.13096078165781133
+          },
+          "Meeting_Room-ND64-1": {
+            "edformer_mesr": 1.0255708160532766,
+            "raw_mesr": 0.8698941955847794,
+            "retention": 0.24471134925956156
+          },
+          "Minions-ND64-1": {
+            "edformer_mesr": 1.3390507953151516,
+            "raw_mesr": 1.0474286942096867,
+            "retention": 0.14462563426224226
+          },
+          "Mirror-ND64-1": {
+            "edformer_mesr": 0.8346399086738001,
+            "raw_mesr": 0.7222721319633122,
+            "retention": 0.12551561745897682
+          },
+          "Newton-ND64-1": {
+            "edformer_mesr": 1.0128179902085352,
+            "raw_mesr": 0.9509168896616865,
+            "retention": 0.44218208384049534
+          },
+          "Pedestrians-ND64-1": {
+            "edformer_mesr": 0.9371186920596969,
+            "raw_mesr": 0.9164772187858617,
+            "retention": 0.8004294448757764
+          },
+          "Pendulum-ND64-1": {
+            "edformer_mesr": 0.9454539063933672,
+            "raw_mesr": 0.770914366894239,
+            "retention": 0.4390328426489094
+          },
+          "Poker-ND64-1": {
+            "edformer_mesr": 0.8765328038853817,
+            "raw_mesr": 0.8767278115502165,
+            "retention": 0.7041744989657871
+          },
+          "Punch-ND64-1": {
+            "edformer_mesr": 0.9160309717333235,
+            "raw_mesr": 0.9068786230325586,
+            "retention": 0.882717597775343
+          },
+          "Reflact-ND64-1": {
+            "edformer_mesr": 0.8643154518113245,
+            "raw_mesr": 0.5693712684273566,
+            "retention": 0.05579654333726415
+          },
+          "Ride-ND64-1": {
+            "edformer_mesr": 0.9017128861062532,
+            "raw_mesr": 0.7677791261577708,
+            "retention": 0.11024970250413907
+          },
+          "Ruler-ND64-1": {
+            "edformer_mesr": 0.8051345912953896,
+            "raw_mesr": 0.6376300452782498,
+            "retention": 0.09320478909753363
+          },
+          "Shapes_Day-ND64-1": {
+            "edformer_mesr": 0.7362318941115875,
+            "raw_mesr": 0.7227280250351122,
+            "retention": 0.05018744276556777
+          },
+          "Shuttlecock-ND64-1": {
+            "edformer_mesr": 1.0225145771508568,
+            "raw_mesr": 1.0523024211958472,
+            "retention": 0.8464604130497685
+          },
+          "Snackery-ND64-1": {
+            "edformer_mesr": 0.6472221575880506,
+            "raw_mesr": 0.36343006917167797,
+            "retention": 0.012974044478190866
+          },
+          "Snow-ND64-1": {
+            "edformer_mesr": 0.8918982627116534,
+            "raw_mesr": 0.9414297075767362,
+            "retention": 0.4687687800480769
+          },
+          "Spinning-ND64-1": {
+            "edformer_mesr": 1.3026716427933869,
+            "raw_mesr": 1.4181484636916712,
+            "retention": 0.3176071579391892
+          },
+          "Stacks-ND64-1": {
+            "edformer_mesr": 0.9607405862591248,
+            "raw_mesr": 0.628210183803497,
+            "retention": 0.03423905866616685
+          },
+          "Stairs-ND64-1": {
+            "edformer_mesr": 0.8875274316451804,
+            "raw_mesr": 0.5605132481314704,
+            "retention": 0.03344119247512438
+          },
+          "Study_Lounge-ND64-1": {
+            "edformer_mesr": 1.1532028844279747,
+            "raw_mesr": 0.9672039518797999,
+            "retention": 0.24308222251647835
+          },
+          "Swan-ND64-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.689139479721987,
+            "retention": 0.005953383171695402
+          },
+          "Temple-ND64-1": {
+            "edformer_mesr": 0.9169932393876684,
+            "raw_mesr": 0.76839606514533,
+            "retention": 0.2562890625
+          },
+          "Toys-ND64-1": {
+            "edformer_mesr": 0.8880587699757997,
+            "raw_mesr": 0.8817428530597358,
+            "retention": 0.7679278938137755
+          },
+          "Tree-ND64-1": {
+            "edformer_mesr": 0.7741143986298051,
+            "raw_mesr": 0.519838213291253,
+            "retention": 0.014606893757284382
+          },
+          "UAV-ND64-1": {
+            "edformer_mesr": 1.1017115975276606,
+            "raw_mesr": 1.1093443435507517,
+            "retention": 0.9664007222877359
+          },
+          "Windows-ND64-1": {
+            "edformer_mesr": 0.9887009180066725,
+            "raw_mesr": 0.9513120972195022,
+            "retention": 0.6645654374012638
+          }
+        },
+        "raw_mesr": 0.7872047169465612,
+        "sequences": 48,
+        "std_retention": 0.32340585440163305
+      }
+    },
+    "N-END": {
+      "ND00": {
+        "edformer_mesr": 1.0362627862529636,
+        "mean_retention": 0.3595606753013402,
+        "paper_edformer": 1.048,
+        "paper_raw": 0.89,
+        "per_sequence": {
+          "Bat-ND00-1": {
+            "edformer_mesr": 0.9430077498074169,
+            "raw_mesr": 0.9355902745331518,
+            "retention": 0.8806523190268988
+          },
+          "Beams-ND00-1": {
+            "edformer_mesr": 0.9182959015583418,
+            "raw_mesr": 0.8731594885114392,
+            "retention": 0.7849642761752137
+          },
+          "Bed-ND00-1": {
+            "edformer_mesr": 0.9689624407699574,
+            "raw_mesr": 0.9146636252298416,
+            "retention": 0.3077225815403005
+          },
+          "Bridge-ND00-1": {
+            "edformer_mesr": 1.428034523130378,
+            "raw_mesr": 1.7194271462964732,
+            "retention": 0.10957396923182819
+          },
+          "Car_Night-ND00-1": {
+            "edformer_mesr": 1.1680658710274663,
+            "raw_mesr": 1.044433007217928,
+            "retention": 0.29832551591552875
+          },
+          "Ceiling-ND00-1": {
+            "edformer_mesr": 0.7492830916242106,
+            "raw_mesr": 0.6202715700512661,
+            "retention": 0.014809389467592592
+          },
+          "Checker_Blur-ND00-1": {
+            "edformer_mesr": 0.7298470659700029,
+            "raw_mesr": 0.6851913086824438,
+            "retention": 0.19293043348524305
+          },
+          "Checker_Lowlight-ND00-1": {
+            "edformer_mesr": 0.9050012433687842,
+            "raw_mesr": 0.7525190119025065,
+            "retention": 0.1633104269696453
+          },
+          "Cloth-ND00-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.405424032229536,
+            "retention": 0.002541804186163102
+          },
+          "Cola_Can-ND00-1": {
+            "edformer_mesr": 1.138603504086838,
+            "raw_mesr": 1.1977225412240955,
+            "retention": 0.8915749289772728
+          },
+          "Dark_Building-ND00-1": {
+            "edformer_mesr": 0.6945729886827099,
+            "raw_mesr": 0.5709753264500363,
+            "retention": 0.04035320320359658
+          },
+          "Fire-ND00-1": {
+            "edformer_mesr": 1.0986043948926068,
+            "raw_mesr": 1.004754809134951,
+            "retention": 0.5340215426772388
+          },
+          "Flip_Chariot-ND00-1": {
+            "edformer_mesr": 1.019220186948122,
+            "raw_mesr": 1.0231162977157535,
+            "retention": 0.9419811059397163
+          },
+          "Fly_Soccer-ND00-1": {
+            "edformer_mesr": 1.1061449139700488,
+            "raw_mesr": 1.3401583252651526,
+            "retention": 0.6667161421342329
+          },
+          "Garage-ND00-1": {
+            "edformer_mesr": 0.9844975131346745,
+            "raw_mesr": 0.7984777427274724,
+            "retention": 0.17296420742113935
+          },
+          "Gas_Tank-ND00-1": {
+            "edformer_mesr": 1.043214930420421,
+            "raw_mesr": 0.5101578166851938,
+            "retention": 0.025237511641142383
+          },
+          "Gun-ND00-1": {
+            "edformer_mesr": 1.0293332282914032,
+            "raw_mesr": 0.999239802611438,
+            "retention": 0.8310867745535714
+          },
+          "Hall_Lowlight-ND00-1": {
+            "edformer_mesr": 1.1486852306968536,
+            "raw_mesr": 0.6398075212412163,
+            "retention": 0.030681235293273646
+          },
+          "Keyboard-ND00-1": {
+            "edformer_mesr": 1.2324571343037385,
+            "raw_mesr": 1.0556306830901308,
+            "retention": 0.03532262297540492
+          },
+          "LED-ND00-1": {
+            "edformer_mesr": 1.110759149289748,
+            "raw_mesr": 1.1757391524208396,
+            "retention": 0.5860188802083334
+          },
+          "LEGO-ND00-1": {
+            "edformer_mesr": 0.9595580508057289,
+            "raw_mesr": 0.7484801430656064,
+            "retention": 0.10053379732622565
+          },
+          "Landmark-ND00-1": {
+            "edformer_mesr": 0.8984503792192993,
+            "raw_mesr": 0.7400371449033906,
+            "retention": 0.45497172263250807
+          },
+          "Lantern-ND00-1": {
+            "edformer_mesr": 1.773148496617346,
+            "raw_mesr": 0.8878957616407253,
+            "retention": 0.13890085018382353
+          },
+          "Light_Board-ND00-1": {
+            "edformer_mesr": 1.251071238988517,
+            "raw_mesr": 0.7586145664840692,
+            "retention": 0.04904783040646664
+          },
+          "Lounge-ND00-1": {
+            "edformer_mesr": 1.3916658759509852,
+            "raw_mesr": 0.5753546542035587,
+            "retention": 0.008502467692949022
+          },
+          "Machine-ND00-1": {
+            "edformer_mesr": 1.4318883406237326,
+            "raw_mesr": 1.3384990584993173,
+            "retention": 0.302767687646028
+          },
+          "Mall-ND00-1": {
+            "edformer_mesr": 1.31328515820576,
+            "raw_mesr": 0.7812351025307643,
+            "retention": 0.06537254820478723
+          },
+          "Office-ND00-1": {
+            "edformer_mesr": 0.9438738167353954,
+            "raw_mesr": 0.8397213368835814,
+            "retention": 0.41832671008448874
+          },
+          "Party-ND00-1": {
+            "edformer_mesr": 0.7542058054915313,
+            "raw_mesr": 0.5584529542559384,
+            "retention": 0.48675789917714496
+          },
+          "Pedestrian-ND00-1": {
+            "edformer_mesr": 0.9261606877987971,
+            "raw_mesr": 0.7808755599621664,
+            "retention": 0.2726599651834239
+          },
+          "Rain-ND00-1": {
+            "edformer_mesr": 0.8327413571519362,
+            "raw_mesr": 0.852798274107294,
+            "retention": 0.2541320666045806
+          },
+          "Rowing-ND00-1": {
+            "edformer_mesr": 1.1756996460095437,
+            "raw_mesr": 1.0915892113590437,
+            "retention": 0.35161188570554647
+          },
+          "School-ND00-1": {
+            "edformer_mesr": 0.8790902251662355,
+            "raw_mesr": 0.6736769668109841,
+            "retention": 0.046745665141803935
+          },
+          "Screen-ND00-1": {
+            "edformer_mesr": 1.028705285176208,
+            "raw_mesr": 1.0079019546857173,
+            "retention": 0.8507105321616507
+          },
+          "Shapes_Night-ND00-1": {
+            "edformer_mesr": 0.9001306391541417,
+            "raw_mesr": 0.9425313331143093,
+            "retention": 0.31587292676303474
+          },
+          "Signage-ND00-1": {
+            "edformer_mesr": 0.8144963829891312,
+            "raw_mesr": 0.7606096506805164,
+            "retention": 0.10745776204064587
+          },
+          "Ski_Walker-ND00-1": {
+            "edformer_mesr": 1.0638345018974231,
+            "raw_mesr": 1.0416899396385428,
+            "retention": 0.3317194559487952
+          },
+          "Snowball-ND00-1": {
+            "edformer_mesr": 0.8877706711638048,
+            "raw_mesr": 1.0583563782818652,
+            "retention": 0.37638050426136366
+          },
+          "Sparkler-ND00-1": {
+            "edformer_mesr": 1.0794750785200966,
+            "raw_mesr": 0.9991126583176347,
+            "retention": 0.5634894710847701
+          },
+          "Squating-ND00-1": {
+            "edformer_mesr": 1.0370614497260535,
+            "raw_mesr": 0.965323100412896,
+            "retention": 0.4592052892736487
+          },
+          "Station-ND00-1": {
+            "edformer_mesr": 0.9703384960886741,
+            "raw_mesr": 0.5901378467558547,
+            "retention": 0.025980801956397563
+          },
+          "String-ND00-1": {
+            "edformer_mesr": 0.9041891106666694,
+            "raw_mesr": 0.8838686000040499,
+            "retention": 0.806189968161387
+          },
+          "Tyre-ND00-1": {
+            "edformer_mesr": 0.9947947903761633,
+            "raw_mesr": 0.9502986945400532,
+            "retention": 0.621593009736349
+          },
+          "Wall-ND00-1": {
+            "edformer_mesr": 0.6718675654054925,
+            "raw_mesr": 0.49645146666338075,
+            "retention": 0.007022677123091603
+          },
+          "Water-ND00-1": {
+            "edformer_mesr": 1.2128113663670426,
+            "raw_mesr": 1.1475280685404499,
+            "retention": 0.6086924935159413
+          },
+          "Water_Cooler-ND00-1": {
+            "edformer_mesr": 1.0068211333686614,
+            "raw_mesr": 1.008455868458901,
+            "retention": 0.1569595025510204
+          },
+          "Wheelchair-ND00-1": {
+            "edformer_mesr": 0.9639145121565599,
+            "raw_mesr": 0.946633712760663,
+            "retention": 0.8274291659570845
+          },
+          "Windmill-ND00-1": {
+            "edformer_mesr": 1.2207098300946346,
+            "raw_mesr": 1.1378149156307755,
+            "retention": 0.7390888869160354
+          }
+        },
+        "raw_mesr": 0.8923000918002689,
+        "sequences": 48,
+        "std_retention": 0.2963675171852288
+      },
+      "ND04": {
+        "edformer_mesr": 1.0591558101925767,
+        "mean_retention": 0.23630442802149423,
+        "paper_edformer": 1.019,
+        "paper_raw": 0.824,
+        "per_sequence": {
+          "Bat-ND04-1": {
+            "edformer_mesr": 0.9923723576998948,
+            "raw_mesr": 0.979758134573415,
+            "retention": 0.5880121112440191
+          },
+          "Beams-ND04-1": {
+            "edformer_mesr": 1.0052549656439074,
+            "raw_mesr": 0.9325168527228651,
+            "retention": 0.7244332582895993
+          },
+          "Bed-ND04-1": {
+            "edformer_mesr": 0.9659509881070134,
+            "raw_mesr": 0.8197497077794488,
+            "retention": 0.11696173555107527
+          },
+          "Bridge-ND04-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 1.5348481259381057,
+            "retention": 0.0015724311440677965
+          },
+          "Car_Night-ND04-1": {
+            "edformer_mesr": 1.288320725257901,
+            "raw_mesr": 1.1127066878534084,
+            "retention": 0.21180112092391304
+          },
+          "Ceiling-ND04-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.5480799623372193,
+            "retention": 0.00746301951142132
+          },
+          "Checker_Blur-ND04-1": {
+            "edformer_mesr": 0.5527416715954213,
+            "raw_mesr": 0.524964335067877,
+            "retention": 0.03616664720618207
+          },
+          "Checker_Lowlight-ND04-1": {
+            "edformer_mesr": 1.081489016256326,
+            "raw_mesr": 0.5491289823066985,
+            "retention": 0.016165915215588723
+          },
+          "Cloth-ND04-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.39277409292963655,
+            "retention": 0.0024185514408355206
+          },
+          "Cola_Can-ND04-1": {
+            "edformer_mesr": 1.1158187315961472,
+            "raw_mesr": 1.1557909053262905,
+            "retention": 0.598968948143116
+          },
+          "Dark_Building-ND04-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.5871082830119294,
+            "retention": 0.007454289442389007
+          },
+          "Fire-ND04-1": {
+            "edformer_mesr": 1.1800533961223783,
+            "raw_mesr": 1.0399626404378195,
+            "retention": 0.4018377241932957
+          },
+          "Flip_Chariot-ND04-1": {
+            "edformer_mesr": 0.9955355232998067,
+            "raw_mesr": 1.0033775411895267,
+            "retention": 0.7890203028549383
+          },
+          "Fly_Soccer-ND04-1": {
+            "edformer_mesr": 1.0469956002743601,
+            "raw_mesr": 1.2094437069176278,
+            "retention": 0.43732854246183206
+          },
+          "Garage-ND04-1": {
+            "edformer_mesr": 1.0041890319664282,
+            "raw_mesr": 0.6850056820028442,
+            "retention": 0.0681682261385659
+          },
+          "Gas_Tank-ND04-1": {
+            "edformer_mesr": 1.0560252463409723,
+            "raw_mesr": 0.5817931176311311,
+            "retention": 0.030582481706646125
+          },
+          "Gun-ND04-1": {
+            "edformer_mesr": 0.9741743362873657,
+            "raw_mesr": 0.9417806186849713,
+            "retention": 0.7036634891336342
+          },
+          "Hall_Lowlight-ND04-1": {
+            "edformer_mesr": 1.1996680997105948,
+            "raw_mesr": 0.6986241288188619,
+            "retention": 0.04291786877285192
+          },
+          "Keyboard-ND04-1": {
+            "edformer_mesr": 1.0534314672404235,
+            "raw_mesr": 0.799811016226016,
+            "retention": 0.11043159126805054
+          },
+          "LED-ND04-1": {
+            "edformer_mesr": 1.2653285967917136,
+            "raw_mesr": 0.9384346089108242,
+            "retention": 0.15013694763183594
+          },
+          "LEGO-ND04-1": {
+            "edformer_mesr": 0.9557509696335493,
+            "raw_mesr": 0.7329680319644061,
+            "retention": 0.07482516970973782
+          },
+          "Landmark-ND04-1": {
+            "edformer_mesr": 0.988749795659357,
+            "raw_mesr": 0.8558707618756398,
+            "retention": 0.4018168965850092
+          },
+          "Lantern-ND04-1": {
+            "edformer_mesr": 1.9128768916683596,
+            "raw_mesr": 0.8154620815212728,
+            "retention": 0.10556230753877738
+          },
+          "Light_Board-ND04-1": {
+            "edformer_mesr": 1.0915924156835457,
+            "raw_mesr": 0.7228290559942853,
+            "retention": 0.04608767313728166
+          },
+          "Lounge-ND04-1": {
+            "edformer_mesr": 1.7285588829426355,
+            "raw_mesr": 0.5717031485316043,
+            "retention": 0.01272429859623623
+          },
+          "Machine-ND04-1": {
+            "edformer_mesr": 1.2360804980241404,
+            "raw_mesr": 0.9654878193209311,
+            "retention": 0.11322928961518286
+          },
+          "Mall-ND04-1": {
+            "edformer_mesr": 1.115848778072045,
+            "raw_mesr": 0.6578198436390265,
+            "retention": 0.04070460153910928
+          },
+          "Office-ND04-1": {
+            "edformer_mesr": 0.9737418646246575,
+            "raw_mesr": 0.8236663809915797,
+            "retention": 0.25833914620535714
+          },
+          "Party-ND04-1": {
+            "edformer_mesr": 0.7442611095453264,
+            "raw_mesr": 0.5287758352776084,
+            "retention": 0.2540224969762601
+          },
+          "Pedestrian-ND04-1": {
+            "edformer_mesr": 1.0226873422089837,
+            "raw_mesr": 0.8726107942917073,
+            "retention": 0.11355707849373156
+          },
+          "Rain-ND04-1": {
+            "edformer_mesr": 0.7084334938306889,
+            "raw_mesr": 0.787924005193085,
+            "retention": 0.09244392254601227
+          },
+          "Rowing-ND04-1": {
+            "edformer_mesr": 1.1755261532096462,
+            "raw_mesr": 1.0668301997287932,
+            "retention": 0.20027005709134615
+          },
+          "School-ND04-1": {
+            "edformer_mesr": 0.9314743268172965,
+            "raw_mesr": 0.6004467765057395,
+            "retention": 0.031294234538327526
+          },
+          "Screen-ND04-1": {
+            "edformer_mesr": 1.0214713277129361,
+            "raw_mesr": 1.0020423543817751,
+            "retention": 0.8672572544642857
+          },
+          "Shapes_Night-ND04-1": {
+            "edformer_mesr": 0.8162579850674085,
+            "raw_mesr": 0.7294835157626703,
+            "retention": 0.0459430653561828
+          },
+          "Signage-ND04-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.6901763964603457,
+            "retention": 0.005634852818080357
+          },
+          "Ski_Walker-ND04-1": {
+            "edformer_mesr": 1.008193945658805,
+            "raw_mesr": 0.9013816298331955,
+            "retention": 0.27912037333504097
+          },
+          "Snowball-ND04-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.9115092417475678,
+            "retention": 0.04659201882102273
+          },
+          "Sparkler-ND04-1": {
+            "edformer_mesr": 0.8681743737420045,
+            "raw_mesr": 0.8103497685168071,
+            "retention": 0.2225049703453819
+          },
+          "Squating-ND04-1": {
+            "edformer_mesr": 1.0593398174872182,
+            "raw_mesr": 0.9186371076055797,
+            "retention": 0.31012044270833333
+          },
+          "Station-ND04-1": {
+            "edformer_mesr": 1.1704671599450025,
+            "raw_mesr": 0.6906716740777623,
+            "retention": 0.024167769501731738
+          },
+          "String-ND04-1": {
+            "edformer_mesr": 0.906594453925585,
+            "raw_mesr": 0.8837084414070762,
+            "retention": 0.7402254321199634
+          },
+          "Tyre-ND04-1": {
+            "edformer_mesr": 1.042992060724257,
+            "raw_mesr": 1.0258444948574594,
+            "retention": 0.4689245432653636
+          },
+          "Wall-ND04-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.4536916983076107,
+            "retention": 0.005108439127604167
+          },
+          "Water-ND04-1": {
+            "edformer_mesr": 1.14771126021664,
+            "raw_mesr": 1.0065848593538043,
+            "retention": 0.285808253323486
+          },
+          "Water_Cooler-ND04-1": {
+            "edformer_mesr": 0.9001896002377963,
+            "raw_mesr": 0.8097453725238473,
+            "retention": 0.0958251953125
+          },
+          "Wheelchair-ND04-1": {
+            "edformer_mesr": 0.9633084078641004,
+            "raw_mesr": 0.9108220981564742,
+            "retention": 0.5534600997506235
+          },
+          "Windmill-ND04-1": {
+            "edformer_mesr": 1.1577555492030007,
+            "raw_mesr": 1.0667361572287477,
+            "retention": 0.6015374599358975
+          }
+        },
+        "raw_mesr": 0.8301966390775609,
+        "sequences": 48,
+        "std_retention": 0.25075287445139405
+      },
+      "ND16": {
+        "edformer_mesr": 1.1015086064416286,
+        "mean_retention": 0.1501774700242384,
+        "paper_edformer": 1.076,
+        "paper_raw": 0.786,
+        "per_sequence": {
+          "Bat-ND16-1": {
+            "edformer_mesr": 1.0018899326351853,
+            "raw_mesr": 0.83090794185294,
+            "retention": 0.21530408744352408
+          },
+          "Beams-ND16-1": {
+            "edformer_mesr": 1.0391892567070904,
+            "raw_mesr": 0.9098896373883201,
+            "retention": 0.49379773086376405
+          },
+          "Bed-ND16-1": {
+            "edformer_mesr": 0.9650896891735773,
+            "raw_mesr": 0.707508372386057,
+            "retention": 0.06967832533566566
+          },
+          "Bridge-ND16-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.8195682405221524,
+            "retention": 0.0003471809648288973
+          },
+          "Car_Night-ND16-1": {
+            "edformer_mesr": 1.2884943251130465,
+            "raw_mesr": 1.185151562728302,
+            "retention": 0.17130488134948502
+          },
+          "Ceiling-ND16-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.5761450503314901,
+            "retention": 0.0008673688027426161
+          },
+          "Checker_Blur-ND16-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.4775500095916693,
+            "retention": 0.011505126953125
+          },
+          "Checker_Lowlight-ND16-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.6374891909835416,
+            "retention": 0.0019626061893203883
+          },
+          "Cloth-ND16-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.39927335653606894,
+            "retention": 0.002317739298454221
+          },
+          "Cola_Can-ND16-1": {
+            "edformer_mesr": 1.2474821376580392,
+            "raw_mesr": 1.1942018455174208,
+            "retention": 0.2667766067216981
+          },
+          "Dark_Building-ND16-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.6393323993169834,
+            "retention": 0.0008149988511029412
+          },
+          "Fire-ND16-1": {
+            "edformer_mesr": 1.24613257140114,
+            "raw_mesr": 1.0078933168282318,
+            "retention": 0.31513157894736843
+          },
+          "Flip_Chariot-ND16-1": {
+            "edformer_mesr": 1.0039472694350535,
+            "raw_mesr": 0.9696398694513905,
+            "retention": 0.5492434446839081
+          },
+          "Fly_Soccer-ND16-1": {
+            "edformer_mesr": 1.0123800386102293,
+            "raw_mesr": 0.9261701335318135,
+            "retention": 0.3461251986228814
+          },
+          "Garage-ND16-1": {
+            "edformer_mesr": 0.9884086226134118,
+            "raw_mesr": 0.6636526470298627,
+            "retention": 0.08572103690778342
+          },
+          "Gas_Tank-ND16-1": {
+            "edformer_mesr": 1.017712336434743,
+            "raw_mesr": 0.6253195089405972,
+            "retention": 0.06689197814542483
+          },
+          "Gun-ND16-1": {
+            "edformer_mesr": 1.01357393128514,
+            "raw_mesr": 0.9339941486319553,
+            "retention": 0.43787565104166665
+          },
+          "Hall_Lowlight-ND16-1": {
+            "edformer_mesr": 1.195346669780514,
+            "raw_mesr": 0.7295516759782659,
+            "retention": 0.02833251953125
+          },
+          "Keyboard-ND16-1": {
+            "edformer_mesr": 1.135510473752497,
+            "raw_mesr": 0.846803964189886,
+            "retention": 0.14783224628654137
+          },
+          "LED-ND16-1": {
+            "edformer_mesr": 1.2791817509454513,
+            "raw_mesr": 0.9126573767567063,
+            "retention": 0.07271570737670068
+          },
+          "LEGO-ND16-1": {
+            "edformer_mesr": 1.0021752910491084,
+            "raw_mesr": 0.6824356111437976,
+            "retention": 0.06016178082734573
+          },
+          "Landmark-ND16-1": {
+            "edformer_mesr": 0.8921615242392046,
+            "raw_mesr": 0.785098508960573,
+            "retention": 0.12040855128002528
+          },
+          "Lantern-ND16-1": {
+            "edformer_mesr": 1.985405473915663,
+            "raw_mesr": 0.701424248320514,
+            "retention": 0.06021308740112406
+          },
+          "Light_Board-ND16-1": {
+            "edformer_mesr": 1.0201280982868524,
+            "raw_mesr": 0.7471749801557221,
+            "retention": 0.08748600667455221
+          },
+          "Lounge-ND16-1": {
+            "edformer_mesr": 1.5657531979644486,
+            "raw_mesr": 0.626995976810708,
+            "retention": 0.01364554882590806
+          },
+          "Machine-ND16-1": {
+            "edformer_mesr": 1.0680598349573867,
+            "raw_mesr": 0.8330236142028163,
+            "retention": 0.09933924264876802
+          },
+          "Mall-ND16-1": {
+            "edformer_mesr": 1.0912750988043316,
+            "raw_mesr": 0.6614389937468159,
+            "retention": 0.02142233455882353
+          },
+          "Office-ND16-1": {
+            "edformer_mesr": 0.9532528436395701,
+            "raw_mesr": 0.7856048348347209,
+            "retention": 0.1643846920411733
+          },
+          "Party-ND16-1": {
+            "edformer_mesr": 0.9774088831157721,
+            "raw_mesr": 0.5746876347358045,
+            "retention": 0.15429783523844642
+          },
+          "Pedestrian-ND16-1": {
+            "edformer_mesr": 1.0549985070221704,
+            "raw_mesr": 0.6762103418692623,
+            "retention": 0.09469833374023437
+          },
+          "Rain-ND16-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.8124043342960858,
+            "retention": 0.002061124902647975
+          },
+          "Rowing-ND16-1": {
+            "edformer_mesr": 1.2061471566436572,
+            "raw_mesr": 1.078004284447409,
+            "retention": 0.12268157503498134
+          },
+          "School-ND16-1": {
+            "edformer_mesr": 1.0736186666110763,
+            "raw_mesr": 0.5656369226989668,
+            "retention": 0.03725872830861175
+          },
+          "Screen-ND16-1": {
+            "edformer_mesr": 0.9891569333311173,
+            "raw_mesr": 0.9644549645402269,
+            "retention": 0.8062705726890297
+          },
+          "Shapes_Night-ND16-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.6309486200607939,
+            "retention": 0.0076596158222087376
+          },
+          "Signage-ND16-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.7285853940433715,
+            "retention": 0.00013069237918215612
+          },
+          "Ski_Walker-ND16-1": {
+            "edformer_mesr": 0.978117659163312,
+            "raw_mesr": 0.7634610416739692,
+            "retention": 0.1289257560808634
+          },
+          "Snowball-ND16-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.8587717760918716,
+            "retention": 0.00152734375
+          },
+          "Sparkler-ND16-1": {
+            "edformer_mesr": 1.1483524608573916,
+            "raw_mesr": 1.0603073789569648,
+            "retention": 0.29141018401954977
+          },
+          "Squating-ND16-1": {
+            "edformer_mesr": 1.0362591061389146,
+            "raw_mesr": 0.8337941565417046,
+            "retention": 0.2228585609297776
+          },
+          "Station-ND16-1": {
+            "edformer_mesr": 1.127016062851616,
+            "raw_mesr": 0.7715325811884968,
+            "retention": 0.04100739554073034
+          },
+          "String-ND16-1": {
+            "edformer_mesr": 0.8210191024955839,
+            "raw_mesr": 0.7959946832985745,
+            "retention": 0.31880535995751097
+          },
+          "Tyre-ND16-1": {
+            "edformer_mesr": 1.033789828113241,
+            "raw_mesr": 1.0026538054792975,
+            "retention": 0.28992316428195225
+          },
+          "Wall-ND16-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.5244346875551295,
+            "retention": 0.004119673585580065
+          },
+          "Water-ND16-1": {
+            "edformer_mesr": 1.1478926272761407,
+            "raw_mesr": 0.9630938838234808,
+            "retention": 0.18949589416058393
+          },
+          "Water_Cooler-ND16-1": {
+            "edformer_mesr": 1.162859162405055,
+            "raw_mesr": 0.7776141666161455,
+            "retention": 0.034387975305944056
+          },
+          "Wheelchair-ND16-1": {
+            "edformer_mesr": 0.9639499448160661,
+            "raw_mesr": 0.8523910294074715,
+            "retention": 0.2299549336336097
+          },
+          "Windmill-ND16-1": {
+            "edformer_mesr": 1.0226819690974573,
+            "raw_mesr": 0.8790533252336197,
+            "retention": 0.3194365832270408
+          }
+        },
+        "raw_mesr": 0.7902069172755827,
+        "sequences": 48,
+        "std_retention": 0.16846879590598934
+      },
+      "ND64": {
+        "edformer_mesr": 1.083437000444596,
+        "mean_retention": 0.08105662703745477,
+        "paper_edformer": 1.099,
+        "paper_raw": 0.768,
+        "per_sequence": {
+          "Bat-ND64-1": {
+            "edformer_mesr": 0.9500870046727553,
+            "raw_mesr": 0.7172988192113168,
+            "retention": 0.08745783025568182
+          },
+          "Beams-ND64-1": {
+            "edformer_mesr": 1.0496651432928568,
+            "raw_mesr": 0.8069463895371979,
+            "retention": 0.26966218256001173
+          },
+          "Bed-ND64-1": {
+            "edformer_mesr": 1.0406186514483942,
+            "raw_mesr": 0.6797419052689107,
+            "retention": 0.045351625100160255
+          },
+          "Bridge-ND64-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.8186108925557938,
+            "retention": 2.5640339611872145e-05
+          },
+          "Car_Night-ND64-1": {
+            "edformer_mesr": 1.187617273329908,
+            "raw_mesr": 1.0492502743928023,
+            "retention": 0.09440530164147112
+          },
+          "Ceiling-ND64-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.6737220811008783,
+            "retention": 5.208333333333334e-05
+          },
+          "Checker_Blur-ND64-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.6711064466017751,
+            "retention": 6.807767427884616e-05
+          },
+          "Checker_Lowlight-ND64-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.7787672536009943,
+            "retention": 0.0012218386627906976
+          },
+          "Cloth-ND64-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.4358807372881655,
+            "retention": 0.002771560831850534
+          },
+          "Cola_Can-ND64-1": {
+            "edformer_mesr": 1.0543953287431147,
+            "raw_mesr": 0.8797939584769225,
+            "retention": 0.23576702987938597
+          },
+          "Dark_Building-ND64-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.6923265611581794,
+            "retention": 9.836733919902912e-05
+          },
+          "Fire-ND64-1": {
+            "edformer_mesr": 1.5613825148219274,
+            "raw_mesr": 0.8165479177431955,
+            "retention": 0.06941163175491266
+          },
+          "Flip_Chariot-ND64-1": {
+            "edformer_mesr": 0.9306088349868668,
+            "raw_mesr": 0.8691200066144419,
+            "retention": 0.36769321986607145
+          },
+          "Fly_Soccer-ND64-1": {
+            "edformer_mesr": 0.8123521279828205,
+            "raw_mesr": 0.7507809671170415,
+            "retention": 0.10618571993670886
+          },
+          "Garage-ND64-1": {
+            "edformer_mesr": 0.9402287312120245,
+            "raw_mesr": 0.6663382110790917,
+            "retention": 0.06093622722896919
+          },
+          "Gas_Tank-ND64-1": {
+            "edformer_mesr": 1.2908878897116138,
+            "raw_mesr": 0.6757310524161381,
+            "retention": 0.060831705729166664
+          },
+          "Gun-ND64-1": {
+            "edformer_mesr": 0.9872980616730048,
+            "raw_mesr": 0.8371416610961401,
+            "retention": 0.268802938236532
+          },
+          "Hall_Lowlight-ND64-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.7603747881006392,
+            "retention": 0.004100012400793651
+          },
+          "Keyboard-ND64-1": {
+            "edformer_mesr": 1.1080905889719386,
+            "raw_mesr": 0.909455693029013,
+            "retention": 0.16375041723801964
+          },
+          "LED-ND64-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.8757255434045398,
+            "retention": 0.019296019616788323
+          },
+          "LEGO-ND64-1": {
+            "edformer_mesr": 1.085947375801256,
+            "raw_mesr": 0.6249012776741479,
+            "retention": 0.06307658042341431
+          },
+          "Landmark-ND64-1": {
+            "edformer_mesr": 0.8960426048328586,
+            "raw_mesr": 0.6943280829630756,
+            "retention": 0.10291068784652217
+          },
+          "Lantern-ND64-1": {
+            "edformer_mesr": 1.2743599851387688,
+            "raw_mesr": 0.6562720777526453,
+            "retention": 0.0392600726014115
+          },
+          "Light_Board-ND64-1": {
+            "edformer_mesr": 1.0445138484073588,
+            "raw_mesr": 0.8066944622816995,
+            "retention": 0.14192328425726863
+          },
+          "Lounge-ND64-1": {
+            "edformer_mesr": 1.5330984507340806,
+            "raw_mesr": 0.7733064836468403,
+            "retention": 0.020599223292151164
+          },
+          "Machine-ND64-1": {
+            "edformer_mesr": 1.0959620054295298,
+            "raw_mesr": 0.7977072341667653,
+            "retention": 0.10544200884458613
+          },
+          "Mall-ND64-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.7173027750176377,
+            "retention": 0.01869723412298387
+          },
+          "Office-ND64-1": {
+            "edformer_mesr": 0.8911371795392136,
+            "raw_mesr": 0.7021005533749088,
+            "retention": 0.10285291591995221
+          },
+          "Party-ND64-1": {
+            "edformer_mesr": 1.0706530097053308,
+            "raw_mesr": 0.5453952485525693,
+            "retention": 0.07485973120027539
+          },
+          "Pedestrian-ND64-1": {
+            "edformer_mesr": 1.2780013632877931,
+            "raw_mesr": 0.7539947917729264,
+            "retention": 0.03031932859492481
+          },
+          "Rain-ND64-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.8034859670049692,
+            "retention": 0.0001818068484042553
+          },
+          "Rowing-ND64-1": {
+            "edformer_mesr": 1.4893847080358897,
+            "raw_mesr": 1.2190050093160172,
+            "retention": 0.07317017973139045
+          },
+          "School-ND64-1": {
+            "edformer_mesr": 1.1534362279252408,
+            "raw_mesr": 0.6633804524670093,
+            "retention": 0.04884855309311224
+          },
+          "Screen-ND64-1": {
+            "edformer_mesr": 0.9329186013234202,
+            "raw_mesr": 0.8800451247808788,
+            "retention": 0.3849958228620338
+          },
+          "Shapes_Night-ND64-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.6819394197372062,
+            "retention": 6.853070175438596e-05
+          },
+          "Signage-ND64-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.8008885911763531,
+            "retention": 9.005186987704919e-05
+          },
+          "Ski_Walker-ND64-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.7113844334552305,
+            "retention": 0.01827584668464467
+          },
+          "Snowball-ND64-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.8145239968812134,
+            "retention": 0.00027025192179144385
+          },
+          "Sparkler-ND64-1": {
+            "edformer_mesr": 1.1144362124734923,
+            "raw_mesr": 0.97920518538238,
+            "retention": 0.18980466944893715
+          },
+          "Squating-ND64-1": {
+            "edformer_mesr": 1.2216236273976941,
+            "raw_mesr": 0.7301782637778246,
+            "retention": 0.07423885569852941
+          },
+          "Station-ND64-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.7868950037721338,
+            "retention": 0.013508717606707316
+          },
+          "String-ND64-1": {
+            "edformer_mesr": 0.7141144086485364,
+            "raw_mesr": 0.6489616457447552,
+            "retention": 0.0597783203125
+          },
+          "Tyre-ND64-1": {
+            "edformer_mesr": 1.0891034354351206,
+            "raw_mesr": 0.8006510377389825,
+            "retention": 0.1677346034356725
+          },
+          "Wall-ND64-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.6769070957568122,
+            "retention": 0.00013748533489761093
+          },
+          "Water-ND64-1": {
+            "edformer_mesr": 1.0810927452170143,
+            "raw_mesr": 0.8191128565185742,
+            "retention": 0.10989298657319392
+          },
+          "Water_Cooler-ND64-1": {
+            "edformer_mesr": NaN,
+            "raw_mesr": 0.790805207249492,
+            "retention": 0.016416892027243588
+          },
+          "Wheelchair-ND64-1": {
+            "edformer_mesr": 0.8854982224479726,
+            "raw_mesr": 0.7644902795274208,
+            "retention": 0.13099296137971697
+          },
+          "Windmill-ND64-1": {
+            "edformer_mesr": 0.8219908511546704,
+            "raw_mesr": 0.6940291437601629,
+            "retention": 0.04448106553819445
+          }
+        },
+        "raw_mesr": 0.7646365179384128,
+        "sequences": 48,
+        "std_retention": 0.09311515451247934
+      }
+    }
+  },
+  "wall_seconds": 24522.281899113004,
+  "what": "EDformer (ECCV 2024) official checkpoint on E-MLB, MESR via its own vendored cuke-emlb metric"
+}

@@ -1,0 +1,3915 @@
+{
+  "block": 10240,
+  "phase": "75 exact integer count versus occupancy: matched full filter",
+  "quality": {
+    "anchor": {
+      "arm": "beta0_support",
+      "artifact": "phase54_led.json",
+      "checks": 396,
+      "fields": [
+        "signal_recall",
+        "noise_rejection",
+        "balanced_accuracy",
+        "retained_fraction",
+        "event_auc",
+        "block_mean_auc"
+      ],
+      "max_absolute_error": 0.0
+    },
+    "latency_scope": "Acquisition to last event of fixed-count block only; processing/emission time reported separately by timing replay. Offline input file loading excluded.",
+    "per_scene": {
+      "scene_1038": {
+        "acquisition_to_block_close_us": {
+          "max": 644.0,
+          "mean": 286.95814980693245,
+          "median": 286.0,
+          "min": 0.0,
+          "p05": 29.0,
+          "p95": 552.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 644.0,
+          "mean": 573.3850574712644,
+          "median": 578.0,
+          "min": 507.0,
+          "p05": 511.65,
+          "p95": 633.35
+        },
+        "blocks": 174,
+        "discarded_tail_events": 3780,
+        "events": 1781760,
+        "multiplicity": {
+          "balanced_accuracy": 0.6378425557836779,
+          "block_mean_auc": 0.6813553609270714,
+          "event_auc": 0.6811039516915341,
+          "maximum_score": 35,
+          "noise_rejection": 0.9686889686889687,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3069961428783871
+        },
+        "noise_fraction": 0.09799467941810344,
+        "occupancy": {
+          "balanced_accuracy": 0.6378012840648697,
+          "block_mean_auc": 0.6813186705405048,
+          "event_auc": 0.6810665573908822,
+          "maximum_score": 22,
+          "noise_rejection": 0.9686145140690595,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3069880540606798
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_1084": {
+        "acquisition_to_block_close_us": {
+          "max": 856.0,
+          "mean": 366.99818761488973,
+          "median": 363.0,
+          "min": 0.0,
+          "p05": 36.0,
+          "p95": 718.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 856.0,
+          "mean": 732.9632352941177,
+          "median": 733.5,
+          "min": 564.0,
+          "p05": 595.25,
+          "p95": 842.0
+        },
+        "blocks": 136,
+        "discarded_tail_events": 4497,
+        "events": 1392640,
+        "multiplicity": {
+          "balanced_accuracy": 0.6541390221878778,
+          "block_mean_auc": 0.7147505112285523,
+          "event_auc": 0.7142586896478956,
+          "maximum_score": 70,
+          "noise_rejection": 0.9754614849635086,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3328165594122469
+        },
+        "noise_fraction": 0.17139102711397058,
+        "occupancy": {
+          "balanced_accuracy": 0.6539443588566123,
+          "block_mean_auc": 0.7147030839719738,
+          "event_auc": 0.714210188419739,
+          "maximum_score": 24,
+          "noise_rejection": 0.9751388853975516,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3327498323156729
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_1206": {
+        "acquisition_to_block_close_us": {
+          "max": 534.0,
+          "mean": 257.33192453286085,
+          "median": 257.0,
+          "min": 0.0,
+          "p05": 25.0,
+          "p95": 488.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 534.0,
+          "mean": 513.9484536082474,
+          "median": 512.0,
+          "min": 493.0,
+          "p05": 499.0,
+          "p95": 530.0
+        },
+        "blocks": 194,
+        "discarded_tail_events": 5856,
+        "events": 1986560,
+        "multiplicity": {
+          "balanced_accuracy": 0.6315635183346588,
+          "block_mean_auc": 0.6964750360540264,
+          "event_auc": 0.6958303154965514,
+          "maximum_score": 21,
+          "noise_rejection": 0.9684691188679926,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.2946579178013251
+        },
+        "noise_fraction": 0.05578084729381443,
+        "occupancy": {
+          "balanced_accuracy": 0.6314297145379371,
+          "block_mean_auc": 0.6964300677814147,
+          "event_auc": 0.6957839556637772,
+          "maximum_score": 17,
+          "noise_rejection": 0.9682164386528535,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.29464299042302056
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_1270": {
+        "acquisition_to_block_close_us": {
+          "max": 1594.0,
+          "mean": 427.93455936826507,
+          "median": 400.0,
+          "min": 0.0,
+          "p05": 39.0,
+          "p95": 939.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 1594.0,
+          "mean": 855.301724137931,
+          "median": 821.0,
+          "min": 554.0,
+          "p05": 564.5,
+          "p95": 1303.25
+        },
+        "blocks": 116,
+        "discarded_tail_events": 7945,
+        "events": 1187840,
+        "multiplicity": {
+          "balanced_accuracy": 0.6552648826120689,
+          "block_mean_auc": 0.8614792978255997,
+          "event_auc": 0.8590196518749966,
+          "maximum_score": 84,
+          "noise_rejection": 0.9984059208653573,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.31212384435878054
+        },
+        "noise_fraction": 0.10351141567887931,
+        "occupancy": {
+          "balanced_accuracy": 0.6551923056092903,
+          "block_mean_auc": 0.8612807521705647,
+          "event_auc": 0.8588118498963453,
+          "maximum_score": 24,
+          "noise_rejection": 0.9982757919564068,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3121088192621739
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_1278": {
+        "acquisition_to_block_close_us": {
+          "max": 2153.0,
+          "mean": 769.0100616455078,
+          "median": 747.0,
+          "min": 0.0,
+          "p05": 73.0,
+          "p95": 1569.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 2153.0,
+          "mean": 1545.4375,
+          "median": 1488.0,
+          "min": 1159.0,
+          "p05": 1181.6,
+          "p95": 1934.35
+        },
+        "blocks": 64,
+        "discarded_tail_events": 7172,
+        "events": 655360,
+        "multiplicity": {
+          "balanced_accuracy": 0.672593917595869,
+          "block_mean_auc": 0.9327836427775916,
+          "event_auc": 0.9333476603625417,
+          "maximum_score": 196,
+          "noise_rejection": 0.9999273830463619,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.345260452145376
+        },
+        "noise_fraction": 0.1891143798828125,
+        "occupancy": {
+          "balanced_accuracy": 0.672593917595869,
+          "block_mean_auc": 0.9325334097416729,
+          "event_auc": 0.9330834465529355,
+          "maximum_score": 24,
+          "noise_rejection": 0.9999273830463619,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.345260452145376
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_1279": {
+        "acquisition_to_block_close_us": {
+          "max": 2094.0,
+          "mean": 609.0289388020833,
+          "median": 582.0,
+          "min": 0.0,
+          "p05": 58.0,
+          "p95": 1295.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 2094.0,
+          "mean": 1220.9753086419753,
+          "median": 1126.0,
+          "min": 852.0,
+          "p05": 896.0,
+          "p95": 1759.0
+        },
+        "blocks": 81,
+        "discarded_tail_events": 10137,
+        "events": 829440,
+        "multiplicity": {
+          "balanced_accuracy": 0.6492835607896581,
+          "block_mean_auc": 0.9263872798859989,
+          "event_auc": 0.9261090877741481,
+          "maximum_score": 172,
+          "noise_rejection": 1.0,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.29856712157931614
+        },
+        "noise_fraction": 0.062252845293209874,
+        "occupancy": {
+          "balanced_accuracy": 0.6492835607896581,
+          "block_mean_auc": 0.9261051796130798,
+          "event_auc": 0.9257894164576987,
+          "maximum_score": 24,
+          "noise_rejection": 1.0,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.29856712157931614
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_1283": {
+        "acquisition_to_block_close_us": {
+          "max": 2959.0,
+          "mean": 1199.9595822217989,
+          "median": 1174.0,
+          "min": 0.0,
+          "p05": 119.0,
+          "p95": 2413.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 2959.0,
+          "mean": 2402.5365853658536,
+          "median": 2341.0,
+          "min": 1792.0,
+          "p05": 1883.0,
+          "p95": 2881.0
+        },
+        "blocks": 41,
+        "discarded_tail_events": 7450,
+        "events": 419840,
+        "multiplicity": {
+          "balanced_accuracy": 0.6709887729208039,
+          "block_mean_auc": 0.9000640196203558,
+          "event_auc": 0.8996260792589941,
+          "maximum_score": 295,
+          "noise_rejection": 0.9999737343226739,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.34200381151893394
+        },
+        "noise_fraction": 0.18136671112804878,
+        "occupancy": {
+          "balanced_accuracy": 0.6709727305257027,
+          "block_mean_auc": 0.8998376834810384,
+          "event_auc": 0.8993912817226682,
+          "maximum_score": 24,
+          "noise_rejection": 0.9999474686453477,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3419979924060577
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_1310": {
+        "acquisition_to_block_close_us": {
+          "max": 1796.0,
+          "mean": 659.7423138020833,
+          "median": 646.0,
+          "min": 0.0,
+          "p05": 65.0,
+          "p95": 1324.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 1796.0,
+          "mean": 1319.1733333333334,
+          "median": 1303.0,
+          "min": 1026.0,
+          "p05": 1070.4,
+          "p95": 1662.0
+        },
+        "blocks": 75,
+        "discarded_tail_events": 9271,
+        "events": 768000,
+        "multiplicity": {
+          "balanced_accuracy": 0.6601936105825751,
+          "block_mean_auc": 0.9103890493969967,
+          "event_auc": 0.9103418744799416,
+          "maximum_score": 124,
+          "noise_rejection": 1.0,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3203872211651501
+        },
+        "noise_fraction": 0.12611848958333333,
+        "occupancy": {
+          "balanced_accuracy": 0.6601936105825751,
+          "block_mean_auc": 0.9100222813785018,
+          "event_auc": 0.9099587365952839,
+          "maximum_score": 24,
+          "noise_rejection": 1.0,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3203872211651501
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_1355": {
+        "acquisition_to_block_close_us": {
+          "max": 1628.0,
+          "mean": 591.4089715866816,
+          "median": 581.0,
+          "min": 0.0,
+          "p05": 58.0,
+          "p95": 1182.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 1628.0,
+          "mean": 1184.0119047619048,
+          "median": 1133.0,
+          "min": 901.0,
+          "p05": 978.15,
+          "p95": 1492.0
+        },
+        "blocks": 84,
+        "discarded_tail_events": 5884,
+        "events": 860160,
+        "multiplicity": {
+          "balanced_accuracy": 0.6533199979118309,
+          "block_mean_auc": 0.9223677979068095,
+          "event_auc": 0.9223585332151699,
+          "maximum_score": 131,
+          "noise_rejection": 1.0,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.30663999582366175
+        },
+        "noise_fraction": 0.08694080171130952,
+        "occupancy": {
+          "balanced_accuracy": 0.6533199979118309,
+          "block_mean_auc": 0.9221791003834527,
+          "event_auc": 0.9221655133149066,
+          "maximum_score": 24,
+          "noise_rejection": 1.0,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.30663999582366175
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_1358": {
+        "acquisition_to_block_close_us": {
+          "max": 2140.0,
+          "mean": 880.9431780133929,
+          "median": 876.0,
+          "min": 0.0,
+          "p05": 89.0,
+          "p95": 1707.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 2140.0,
+          "mean": 1758.4642857142858,
+          "median": 1755.5,
+          "min": 1479.0,
+          "p05": 1502.0,
+          "p95": 2069.25
+        },
+        "blocks": 56,
+        "discarded_tail_events": 9278,
+        "events": 573440,
+        "multiplicity": {
+          "balanced_accuracy": 0.6775956459671448,
+          "block_mean_auc": 0.9094100053212998,
+          "event_auc": 0.9094306332627509,
+          "maximum_score": 200,
+          "noise_rejection": 0.9999835324534174,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3552077594808723
+        },
+        "noise_fraction": 0.21179373604910715,
+        "occupancy": {
+          "balanced_accuracy": 0.6775956459671448,
+          "block_mean_auc": 0.9091066953761106,
+          "event_auc": 0.9091206902169298,
+          "maximum_score": 24,
+          "noise_rejection": 0.9999835324534174,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3552077594808723
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_1385": {
+        "acquisition_to_block_close_us": {
+          "max": 1789.0,
+          "mean": 716.6529183650363,
+          "median": 713.0,
+          "min": 0.0,
+          "p05": 70.0,
+          "p95": 1399.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 1789.0,
+          "mean": 1431.9420289855072,
+          "median": 1420.0,
+          "min": 1137.0,
+          "p05": 1204.0,
+          "p95": 1688.3999999999999
+        },
+        "blocks": 69,
+        "discarded_tail_events": 8361,
+        "events": 706560,
+        "multiplicity": {
+          "balanced_accuracy": 0.6733321928107617,
+          "block_mean_auc": 0.8683888012421058,
+          "event_auc": 0.8688611220503789,
+          "maximum_score": 124,
+          "noise_rejection": 0.9992002501036039,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3474641355179195
+        },
+        "noise_fraction": 0.19466570425724639,
+        "occupancy": {
+          "balanced_accuracy": 0.673259969848029,
+          "block_mean_auc": 0.8681690789658981,
+          "event_auc": 0.8686344497385551,
+          "maximum_score": 24,
+          "noise_rejection": 0.9990839228459464,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.34743601685011166
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_1430": {
+        "acquisition_to_block_close_us": {
+          "max": 1373.0,
+          "mean": 573.6192539960489,
+          "median": 573.0,
+          "min": 0.0,
+          "p05": 54.0,
+          "p95": 1117.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 1373.0,
+          "mean": 1148.2413793103449,
+          "median": 1152.0,
+          "min": 917.0,
+          "p05": 978.9,
+          "p95": 1319.5
+        },
+        "blocks": 87,
+        "discarded_tail_events": 870,
+        "events": 890880,
+        "multiplicity": {
+          "balanced_accuracy": 0.6703627704961717,
+          "block_mean_auc": 0.8539888667529251,
+          "event_auc": 0.8542118541029873,
+          "maximum_score": 58,
+          "noise_rejection": 0.998996599587491,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.34172894140485227
+        },
+        "noise_fraction": 0.18122642780172413,
+        "occupancy": {
+          "balanced_accuracy": 0.6703098171407873,
+          "block_mean_auc": 0.8537961552168262,
+          "event_auc": 0.8540148374104679,
+          "maximum_score": 24,
+          "noise_rejection": 0.9989098859715951,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.34170974830997947
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_1484": {
+        "acquisition_to_block_close_us": {
+          "max": 1805.0,
+          "mean": 751.7979077888258,
+          "median": 747.0,
+          "min": 0.0,
+          "p05": 73.0,
+          "p95": 1458.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 1805.0,
+          "mean": 1507.1060606060605,
+          "median": 1501.5,
+          "min": 1160.0,
+          "p05": 1298.25,
+          "p95": 1730.0
+        },
+        "blocks": 66,
+        "discarded_tail_events": 3202,
+        "events": 675840,
+        "multiplicity": {
+          "balanced_accuracy": 0.6678675668242829,
+          "block_mean_auc": 0.9355334156724316,
+          "event_auc": 0.9355656842225144,
+          "maximum_score": 147,
+          "noise_rejection": 1.0,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.33573513364856594
+        },
+        "noise_fraction": 0.16606741240530304,
+        "occupancy": {
+          "balanced_accuracy": 0.6678675668242829,
+          "block_mean_auc": 0.9352191959122754,
+          "event_auc": 0.9352486508293405,
+          "maximum_score": 24,
+          "noise_rejection": 1.0,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.33573513364856594
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_1501": {
+        "acquisition_to_block_close_us": {
+          "max": 1547.0,
+          "mean": 636.344170673077,
+          "median": 627.0,
+          "min": 0.0,
+          "p05": 63.0,
+          "p95": 1252.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 1547.0,
+          "mean": 1270.525641025641,
+          "median": 1278.5,
+          "min": 1011.0,
+          "p05": 1069.55,
+          "p95": 1486.1999999999998
+        },
+        "blocks": 78,
+        "discarded_tail_events": 8639,
+        "events": 798720,
+        "multiplicity": {
+          "balanced_accuracy": 0.6675062035623058,
+          "block_mean_auc": 0.8342804683605857,
+          "event_auc": 0.8343385621632659,
+          "maximum_score": 45,
+          "noise_rejection": 0.9980565084880519,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3369558986365597
+        },
+        "noise_fraction": 0.17006961137820512,
+        "occupancy": {
+          "balanced_accuracy": 0.6674441116415686,
+          "block_mean_auc": 0.8341266316988071,
+          "event_auc": 0.8341786162078219,
+          "maximum_score": 24,
+          "noise_rejection": 0.9979534445442365,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.33693477873890076
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_1529": {
+        "acquisition_to_block_close_us": {
+          "max": 1085.0,
+          "mean": 423.9847449351165,
+          "median": 413.0,
+          "min": 0.0,
+          "p05": 40.0,
+          "p95": 841.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 1085.0,
+          "mean": 847.1440677966102,
+          "median": 853.0,
+          "min": 497.0,
+          "p05": 552.5500000000001,
+          "p95": 1039.6499999999999
+        },
+        "blocks": 118,
+        "discarded_tail_events": 347,
+        "events": 1208320,
+        "multiplicity": {
+          "balanced_accuracy": 0.656933818986104,
+          "block_mean_auc": 0.8985613611062703,
+          "event_auc": 0.8984543234414356,
+          "maximum_score": 141,
+          "noise_rejection": 1.0,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.31386763797220796
+        },
+        "noise_fraction": 0.10796643273305084,
+        "occupancy": {
+          "balanced_accuracy": 0.656933818986104,
+          "block_mean_auc": 0.8984626640973243,
+          "event_auc": 0.8983564065376779,
+          "maximum_score": 24,
+          "noise_rejection": 1.0,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.31386763797220796
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_1601": {
+        "acquisition_to_block_close_us": {
+          "max": 541.0,
+          "mean": 257.5237385228737,
+          "median": 257.0,
+          "min": 0.0,
+          "p05": 25.0,
+          "p95": 489.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 541.0,
+          "mean": 514.8505154639175,
+          "median": 515.0,
+          "min": 488.0,
+          "p05": 500.3,
+          "p95": 527.0
+        },
+        "blocks": 194,
+        "discarded_tail_events": 1820,
+        "events": 1986560,
+        "multiplicity": {
+          "balanced_accuracy": 0.6372220692738064,
+          "block_mean_auc": 0.7338021549870831,
+          "event_auc": 0.734363431916491,
+          "maximum_score": 16,
+          "noise_rejection": 0.9775659368510555,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.2968782016965572
+        },
+        "noise_fraction": 0.06157075547680412,
+        "occupancy": {
+          "balanced_accuracy": 0.636991198918366,
+          "block_mean_auc": 0.7336811627259282,
+          "event_auc": 0.7342486940619855,
+          "maximum_score": 13,
+          "noise_rejection": 0.977132625864578,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.2968497719721539
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_1647": {
+        "acquisition_to_block_close_us": {
+          "max": 526.0,
+          "mean": 257.26972756926546,
+          "median": 257.0,
+          "min": 0.0,
+          "p05": 26.0,
+          "p95": 489.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 526.0,
+          "mean": 514.4536082474227,
+          "median": 514.5,
+          "min": 502.0,
+          "p05": 505.65,
+          "p95": 522.0
+        },
+        "blocks": 194,
+        "discarded_tail_events": 3785,
+        "events": 1986560,
+        "multiplicity": {
+          "balanced_accuracy": 0.6153708318671975,
+          "block_mean_auc": 0.6382938353856243,
+          "event_auc": 0.638021834024575,
+          "maximum_score": 22,
+          "noise_rejection": 0.911709943190268,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.319031720544127
+        },
+        "noise_fraction": 0.16924230831185566,
+        "occupancy": {
+          "balanced_accuracy": 0.6153081772543024,
+          "block_mean_auc": 0.6382096865280761,
+          "event_auc": 0.6379374052152604,
+          "maximum_score": 22,
+          "noise_rejection": 0.9116058415871033,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3190105129215015
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_1697": {
+        "acquisition_to_block_close_us": {
+          "max": 532.0,
+          "mean": 257.7750414912565,
+          "median": 258.0,
+          "min": 0.0,
+          "p05": 26.0,
+          "p95": 490.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 532.0,
+          "mean": 515.7979274611399,
+          "median": 517.0,
+          "min": 493.0,
+          "p05": 506.0,
+          "p95": 526.0
+        },
+        "blocks": 193,
+        "discarded_tail_events": 8746,
+        "events": 1976320,
+        "multiplicity": {
+          "balanced_accuracy": 0.6144963124729202,
+          "block_mean_auc": 0.6507845109214487,
+          "event_auc": 0.6506259709668909,
+          "maximum_score": 15,
+          "noise_rejection": 0.9268991752512497,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3020934496945909
+        },
+        "noise_fraction": 0.09656634553108809,
+        "occupancy": {
+          "balanced_accuracy": 0.6143948141837228,
+          "block_mean_auc": 0.6506953732857608,
+          "event_auc": 0.6505366901319083,
+          "maximum_score": 12,
+          "noise_rejection": 0.9267157813105855,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.30207384705685997
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_1726": {
+        "acquisition_to_block_close_us": {
+          "max": 527.0,
+          "mean": 257.29656894329895,
+          "median": 257.0,
+          "min": 0.0,
+          "p05": 26.0,
+          "p95": 488.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 527.0,
+          "mean": 513.7371134020618,
+          "median": 513.0,
+          "min": 502.0,
+          "p05": 506.0,
+          "p95": 522.35
+        },
+        "blocks": 194,
+        "discarded_tail_events": 6461,
+        "events": 1986560,
+        "multiplicity": {
+          "balanced_accuracy": 0.6493502867734029,
+          "block_mean_auc": 0.7612845952840217,
+          "event_auc": 0.7609364879179201,
+          "maximum_score": 25,
+          "noise_rejection": 0.9943687366087692,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3043318369380365
+        },
+        "noise_fraction": 0.08152434358891752,
+        "occupancy": {
+          "balanced_accuracy": 0.649252807708399,
+          "block_mean_auc": 0.7611719167034223,
+          "event_auc": 0.7608236208305342,
+          "maximum_score": 20,
+          "noise_rejection": 0.9941896723123376,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3043159431044603
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_1774": {
+        "acquisition_to_block_close_us": {
+          "max": 536.0,
+          "mean": 257.5236876812178,
+          "median": 258.0,
+          "min": 0.0,
+          "p05": 25.0,
+          "p95": 489.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 536.0,
+          "mean": 515.1082474226804,
+          "median": 514.0,
+          "min": 497.0,
+          "p05": 505.0,
+          "p95": 525.0
+        },
+        "blocks": 194,
+        "discarded_tail_events": 1178,
+        "events": 1986560,
+        "multiplicity": {
+          "balanced_accuracy": 0.6160613783741202,
+          "block_mean_auc": 0.6503266451841067,
+          "event_auc": 0.6506079195872551,
+          "maximum_score": 12,
+          "noise_rejection": 0.9276878162523233,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3044349404959171
+        },
+        "noise_fraction": 0.1053514618234536,
+        "occupancy": {
+          "balanced_accuracy": 0.6159705849882674,
+          "block_mean_auc": 0.6502443394727467,
+          "event_auc": 0.6505276511384545,
+          "maximum_score": 11,
+          "noise_rejection": 0.9275253599124647,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3044158100640701
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_1783": {
+        "acquisition_to_block_close_us": {
+          "max": 585.0,
+          "mean": 257.0277751490013,
+          "median": 258.0,
+          "min": 0.0,
+          "p05": 21.0,
+          "p95": 491.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 585.0,
+          "mean": 514.1288659793814,
+          "median": 513.0,
+          "min": 443.0,
+          "p05": 479.65,
+          "p95": 547.0
+        },
+        "blocks": 194,
+        "discarded_tail_events": 4644,
+        "events": 1986560,
+        "multiplicity": {
+          "balanced_accuracy": 0.6675920822999142,
+          "block_mean_auc": 0.7898672120614963,
+          "event_auc": 0.7895018357656552,
+          "maximum_score": 47,
+          "noise_rejection": 0.9993803876053341,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3358037769944942
+        },
+        "noise_fraction": 0.16654518363402063,
+        "occupancy": {
+          "balanced_accuracy": 0.6675503778866592,
+          "block_mean_auc": 0.7897807359765274,
+          "event_auc": 0.7894141248005759,
+          "maximum_score": 24,
+          "noise_rejection": 0.999310870117152,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3357898856561664
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_18": {
+        "acquisition_to_block_close_us": {
+          "max": 535.0,
+          "mean": 257.1654301908827,
+          "median": 257.0,
+          "min": 0.0,
+          "p05": 25.0,
+          "p95": 488.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 535.0,
+          "mean": 513.8092783505155,
+          "median": 513.0,
+          "min": 492.0,
+          "p05": 500.0,
+          "p95": 527.0
+        },
+        "blocks": 194,
+        "discarded_tail_events": 6491,
+        "events": 1986560,
+        "multiplicity": {
+          "balanced_accuracy": 0.6423939927610263,
+          "block_mean_auc": 0.8062869425766391,
+          "event_auc": 0.8040645149796629,
+          "maximum_score": 20,
+          "noise_rejection": 0.9928378944846997,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.2919500910373529
+        },
+        "noise_fraction": 0.042029941204896906,
+        "occupancy": {
+          "balanced_accuracy": 0.6423502349448187,
+          "block_mean_auc": 0.806082936690901,
+          "event_auc": 0.8038513882763193,
+          "maximum_score": 19,
+          "noise_rejection": 0.9927540571291694,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.29194641276046795
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_1851": {
+        "acquisition_to_block_close_us": {
+          "max": 528.0,
+          "mean": 256.22971166237113,
+          "median": 256.0,
+          "min": 0.0,
+          "p05": 25.0,
+          "p95": 487.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 528.0,
+          "mean": 513.0360824742268,
+          "median": 513.0,
+          "min": 491.0,
+          "p05": 502.0,
+          "p95": 524.35
+        },
+        "blocks": 194,
+        "discarded_tail_events": 9169,
+        "events": 1986560,
+        "multiplicity": {
+          "balanced_accuracy": 0.650307912199186,
+          "block_mean_auc": 0.7742855007404073,
+          "event_auc": 0.7741569162330902,
+          "maximum_score": 16,
+          "noise_rejection": 0.9936471802002849,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.30696864419808717
+        },
+        "noise_fraction": 0.08977629671391753,
+        "occupancy": {
+          "balanced_accuracy": 0.6502740315927424,
+          "block_mean_auc": 0.7742403010100581,
+          "event_auc": 0.7741194455257598,
+          "maximum_score": 13,
+          "noise_rejection": 0.9935855023381517,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3069625608473333
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_1883": {
+        "acquisition_to_block_close_us": {
+          "max": 539.0,
+          "mean": 255.93118456024484,
+          "median": 257.0,
+          "min": 0.0,
+          "p05": 24.0,
+          "p95": 487.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 539.0,
+          "mean": 513.7422680412371,
+          "median": 516.0,
+          "min": 483.0,
+          "p05": 496.65,
+          "p95": 529.35
+        },
+        "blocks": 194,
+        "discarded_tail_events": 6861,
+        "events": 1986560,
+        "multiplicity": {
+          "balanced_accuracy": 0.6500820705140893,
+          "block_mean_auc": 0.7938731850891352,
+          "event_auc": 0.7937827870883424,
+          "maximum_score": 19,
+          "noise_rejection": 0.997954065021309,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3022100760068695
+        },
+        "noise_fraction": 0.07405817090850515,
+        "occupancy": {
+          "balanced_accuracy": 0.6501004224395599,
+          "block_mean_auc": 0.7937961799851838,
+          "event_auc": 0.7937062233644797,
+          "maximum_score": 17,
+          "noise_rejection": 0.9979880506521842,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3022127942269355
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_1894": {
+        "acquisition_to_block_close_us": {
+          "max": 536.0,
+          "mean": 256.9351512161727,
+          "median": 257.0,
+          "min": 0.0,
+          "p05": 26.0,
+          "p95": 488.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 536.0,
+          "mean": 513.7268041237113,
+          "median": 515.0,
+          "min": 490.0,
+          "p05": 499.65,
+          "p95": 529.0
+        },
+        "blocks": 194,
+        "discarded_tail_events": 6776,
+        "events": 1986560,
+        "multiplicity": {
+          "balanced_accuracy": 0.6426522697351473,
+          "block_mean_auc": 0.7408255926512002,
+          "event_auc": 0.740715277705255,
+          "maximum_score": 14,
+          "noise_rejection": 0.9830457121123237,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3022588273579708
+        },
+        "noise_fraction": 0.07808623952963918,
+        "occupancy": {
+          "balanced_accuracy": 0.6424389979781249,
+          "block_mean_auc": 0.7407502313692326,
+          "event_auc": 0.7406399528512677,
+          "maximum_score": 13,
+          "noise_rejection": 0.9826524757772864,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3022255201789633
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_1934": {
+        "acquisition_to_block_close_us": {
+          "max": 4038.0,
+          "mean": 257.75880396792763,
+          "median": 257.0,
+          "min": 0.0,
+          "p05": 26.0,
+          "p95": 489.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 4038.0,
+          "mean": 532.4578947368421,
+          "median": 514.0,
+          "min": 493.0,
+          "p05": 504.0,
+          "p95": 527.0999999999999
+        },
+        "blocks": 190,
+        "discarded_tail_events": 10094,
+        "events": 1945600,
+        "multiplicity": {
+          "balanced_accuracy": 0.5906520262462895,
+          "block_mean_auc": 0.611387700221307,
+          "event_auc": 0.6117193811301814,
+          "maximum_score": 10,
+          "noise_rejection": 0.8752691402533673,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.30603491223921164
+        },
+        "noise_fraction": 0.1437057976973684,
+        "occupancy": {
+          "balanced_accuracy": 0.590624876704409,
+          "block_mean_auc": 0.6113451419106716,
+          "event_auc": 0.6116744483303005,
+          "maximum_score": 8,
+          "noise_rejection": 0.8752226442627524,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3060271091460655
+        },
+        "reordered": true,
+        "skipped_files": 0
+      },
+      "scene_1953": {
+        "acquisition_to_block_close_us": {
+          "max": 1155.0,
+          "mean": 258.34903635499336,
+          "median": 257.0,
+          "min": 0.0,
+          "p05": 25.0,
+          "p95": 490.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 1155.0,
+          "mean": 518.5502645502645,
+          "median": 514.0,
+          "min": 488.0,
+          "p05": 498.4,
+          "p95": 530.6
+        },
+        "blocks": 189,
+        "discarded_tail_events": 3343,
+        "events": 1935360,
+        "multiplicity": {
+          "balanced_accuracy": 0.6233008802936233,
+          "block_mean_auc": 0.6507569323999698,
+          "event_auc": 0.6504568683894366,
+          "maximum_score": 10,
+          "noise_rejection": 0.9464453749139526,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.30015638567329406
+        },
+        "noise_fraction": 0.08181578621031746,
+        "occupancy": {
+          "balanced_accuracy": 0.6232630504976658,
+          "block_mean_auc": 0.6507222059837761,
+          "event_auc": 0.6504236496400596,
+          "maximum_score": 10,
+          "noise_rejection": 0.9463759054710345,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.30015019552429717
+        },
+        "reordered": true,
+        "skipped_files": 0
+      },
+      "scene_1960": {
+        "acquisition_to_block_close_us": {
+          "max": 1145.0,
+          "mean": 257.61450324487436,
+          "median": 257.0,
+          "min": 0.0,
+          "p05": 25.0,
+          "p95": 490.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 1145.0,
+          "mean": 518.8518518518518,
+          "median": 515.0,
+          "min": 486.0,
+          "p05": 496.0,
+          "p95": 532.0
+        },
+        "blocks": 189,
+        "discarded_tail_events": 3248,
+        "events": 1935360,
+        "multiplicity": {
+          "balanced_accuracy": 0.6195109670107483,
+          "block_mean_auc": 0.6564672677612542,
+          "event_auc": 0.6563372963499247,
+          "maximum_score": 28,
+          "noise_rejection": 0.9385074339604484,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.30051450006104813
+        },
+        "noise_fraction": 0.08590856481481482,
+        "occupancy": {
+          "balanced_accuracy": 0.6194320095120696,
+          "block_mean_auc": 0.6563944284345663,
+          "event_auc": 0.6562635025610716,
+          "maximum_score": 24,
+          "noise_rejection": 0.9383630852138767,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.30050093381026244
+        },
+        "reordered": true,
+        "skipped_files": 0
+      },
+      "scene_2004": {
+        "acquisition_to_block_close_us": {
+          "max": 841.0,
+          "mean": 258.59949673445766,
+          "median": 258.0,
+          "min": 0.0,
+          "p05": 25.0,
+          "p95": 491.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 841.0,
+          "mean": 517.5238095238095,
+          "median": 515.0,
+          "min": 487.0,
+          "p05": 500.0,
+          "p95": 529.0
+        },
+        "blocks": 189,
+        "discarded_tail_events": 3892,
+        "events": 1935360,
+        "multiplicity": {
+          "balanced_accuracy": 0.6301072483291887,
+          "block_mean_auc": 0.7019573072447309,
+          "event_auc": 0.701177504935513,
+          "maximum_score": 16,
+          "noise_rejection": 0.969392563930848,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.29082193272752954
+        },
+        "noise_fraction": 0.04166356646825397,
+        "occupancy": {
+          "balanced_accuracy": 0.6299907804128365,
+          "block_mean_auc": 0.7019017083124724,
+          "event_auc": 0.7011211666741751,
+          "maximum_score": 15,
+          "noise_rejection": 0.9691693330356922,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.29081222778998084
+        },
+        "reordered": true,
+        "skipped_files": 0
+      },
+      "scene_2046": {
+        "acquisition_to_block_close_us": {
+          "max": 847.0,
+          "mean": 260.39062448601976,
+          "median": 259.0,
+          "min": 0.0,
+          "p05": 26.0,
+          "p95": 494.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 847.0,
+          "mean": 520.3473684210526,
+          "median": 517.0,
+          "min": 492.0,
+          "p05": 501.45,
+          "p95": 538.0
+        },
+        "blocks": 190,
+        "discarded_tail_events": 1641,
+        "events": 1945600,
+        "multiplicity": {
+          "balanced_accuracy": 0.6365862983289542,
+          "block_mean_auc": 0.7386992294976997,
+          "event_auc": 0.7384402534578959,
+          "maximum_score": 15,
+          "noise_rejection": 0.9643875546543311,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.30878504200357726
+        },
+        "noise_fraction": 0.10544459292763157,
+        "occupancy": {
+          "balanced_accuracy": 0.6363274719762932,
+          "block_mean_auc": 0.7384863137038284,
+          "event_auc": 0.7382393269826656,
+          "maximum_score": 13,
+          "noise_rejection": 0.9639244856277998,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3087304583247867
+        },
+        "reordered": true,
+        "skipped_files": 0
+      },
+      "scene_205": {
+        "acquisition_to_block_close_us": {
+          "max": 1632.0,
+          "mean": 519.2399332682292,
+          "median": 514.0,
+          "min": 0.0,
+          "p05": 51.0,
+          "p95": 1002.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 1632.0,
+          "mean": 1039.90625,
+          "median": 1025.5,
+          "min": 909.0,
+          "p05": 923.75,
+          "p95": 1249.25
+        },
+        "blocks": 96,
+        "discarded_tail_events": 7249,
+        "events": 983040,
+        "multiplicity": {
+          "balanced_accuracy": 0.6293368212907479,
+          "block_mean_auc": 0.8279897334300458,
+          "event_auc": 0.8282403228332758,
+          "maximum_score": 17,
+          "noise_rejection": 0.9308854934941987,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.32778814908729703
+        },
+        "noise_fraction": 0.18481852213541666,
+        "occupancy": {
+          "balanced_accuracy": 0.6299546244259636,
+          "block_mean_auc": 0.8285019573796187,
+          "event_auc": 0.8287365762407831,
+          "maximum_score": 17,
+          "noise_rejection": 0.9318927368397878,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.32801651201213944
+        },
+        "reordered": true,
+        "skipped_files": 0
+      },
+      "scene_2092": {
+        "acquisition_to_block_close_us": {
+          "max": 4071.0,
+          "mean": 257.6576151945153,
+          "median": 257.0,
+          "min": 0.0,
+          "p05": 25.0,
+          "p95": 489.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 4071.0,
+          "mean": 531.5663265306123,
+          "median": 513.0,
+          "min": 493.0,
+          "p05": 502.0,
+          "p95": 527.25
+        },
+        "blocks": 196,
+        "discarded_tail_events": 7502,
+        "events": 2007040,
+        "multiplicity": {
+          "balanced_accuracy": 0.6347296211353031,
+          "block_mean_auc": 0.7090731555763802,
+          "event_auc": 0.7091198772475389,
+          "maximum_score": 16,
+          "noise_rejection": 0.9671145049166157,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3023447373539905
+        },
+        "noise_fraction": 0.08299685108418367,
+        "occupancy": {
+          "balanced_accuracy": 0.6346707023154982,
+          "block_mean_auc": 0.7090205278367137,
+          "event_auc": 0.7090784253405552,
+          "maximum_score": 13,
+          "noise_rejection": 0.9670064474300327,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.30233495720096365
+        },
+        "reordered": true,
+        "skipped_files": 0
+      },
+      "scene_2138": {
+        "acquisition_to_block_close_us": {
+          "max": 1134.0,
+          "mean": 257.3202210441468,
+          "median": 257.0,
+          "min": 0.0,
+          "p05": 25.0,
+          "p95": 488.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 1134.0,
+          "mean": 516.6349206349206,
+          "median": 513.0,
+          "min": 487.0,
+          "p05": 493.4,
+          "p95": 536.0
+        },
+        "blocks": 189,
+        "discarded_tail_events": 5927,
+        "events": 1935360,
+        "multiplicity": {
+          "balanced_accuracy": 0.6334712137589876,
+          "block_mean_auc": 0.678074305825199,
+          "event_auc": 0.6770397100995669,
+          "maximum_score": 12,
+          "noise_rejection": 0.9601095113594921,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3068329161584832
+        },
+        "noise_fraction": 0.10059265459656085,
+        "occupancy": {
+          "balanced_accuracy": 0.6334740692812099,
+          "block_mean_auc": 0.6780697835652436,
+          "event_auc": 0.6770474142656495,
+          "maximum_score": 10,
+          "noise_rejection": 0.9601146479148154,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.30683349064760435
+        },
+        "reordered": true,
+        "skipped_files": 0
+      },
+      "scene_2154": {
+        "acquisition_to_block_close_us": {
+          "max": 866.0,
+          "mean": 257.3111628605769,
+          "median": 258.0,
+          "min": 0.0,
+          "p05": 24.0,
+          "p95": 488.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 866.0,
+          "mean": 514.8205128205128,
+          "median": 513.0,
+          "min": 479.0,
+          "p05": 492.7,
+          "p95": 532.3
+        },
+        "blocks": 195,
+        "discarded_tail_events": 403,
+        "events": 1996800,
+        "multiplicity": {
+          "balanced_accuracy": 0.6369014022958743,
+          "block_mean_auc": 0.6846003325598992,
+          "event_auc": 0.6841652090017973,
+          "maximum_score": 11,
+          "noise_rejection": 0.9660704580265823,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3077323465651663
+        },
+        "noise_fraction": 0.10135717147435898,
+        "occupancy": {
+          "balanced_accuracy": 0.6368794093285953,
+          "block_mean_auc": 0.6846315715858149,
+          "event_auc": 0.6842033646577826,
+          "maximum_score": 10,
+          "noise_rejection": 0.9660309303819359,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3077278882752548
+        },
+        "reordered": true,
+        "skipped_files": 0
+      },
+      "scene_2231": {
+        "acquisition_to_block_close_us": {
+          "max": 1187.0,
+          "mean": 256.59230982730264,
+          "median": 256.0,
+          "min": 0.0,
+          "p05": 24.0,
+          "p95": 488.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 1187.0,
+          "mean": 516.4684210526316,
+          "median": 512.5,
+          "min": 474.0,
+          "p05": 497.0,
+          "p95": 530.0
+        },
+        "blocks": 190,
+        "discarded_tail_events": 5896,
+        "events": 1945600,
+        "multiplicity": {
+          "balanced_accuracy": 0.63218975104085,
+          "block_mean_auc": 0.7152917123165633,
+          "event_auc": 0.7140400015750552,
+          "maximum_score": 18,
+          "noise_rejection": 0.9703110682421027,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.2940684338395972
+        },
+        "noise_fraction": 0.05328690378289474,
+        "occupancy": {
+          "balanced_accuracy": 0.6320725840135397,
+          "block_mean_auc": 0.7153068150217434,
+          "event_auc": 0.7140908765012375,
+          "maximum_score": 15,
+          "noise_rejection": 0.9700892211237039,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.29405594690337555
+        },
+        "reordered": true,
+        "skipped_files": 0
+      },
+      "scene_2343": {
+        "acquisition_to_block_close_us": {
+          "max": 1175.0,
+          "mean": 257.30738467261904,
+          "median": 257.0,
+          "min": 0.0,
+          "p05": 25.0,
+          "p95": 488.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 1175.0,
+          "mean": 517.2116402116402,
+          "median": 514.0,
+          "min": 482.0,
+          "p05": 498.4,
+          "p95": 529.2
+        },
+        "blocks": 189,
+        "discarded_tail_events": 9142,
+        "events": 1935360,
+        "multiplicity": {
+          "balanced_accuracy": 0.6196541920564922,
+          "block_mean_auc": 0.65288712172206,
+          "event_auc": 0.6527742108534422,
+          "maximum_score": 11,
+          "noise_rejection": 0.941953896191703,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.2973544879212815
+        },
+        "noise_fraction": 0.07260096312830688,
+        "occupancy": {
+          "balanced_accuracy": 0.6195927990073526,
+          "block_mean_auc": 0.6528501221773929,
+          "event_auc": 0.6527393023833272,
+          "maximum_score": 10,
+          "noise_rejection": 0.9418400244824175,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.29734557353228763
+        },
+        "reordered": true,
+        "skipped_files": 0
+      },
+      "scene_246": {
+        "acquisition_to_block_close_us": {
+          "max": 526.0,
+          "mean": 256.44547861630156,
+          "median": 257.0,
+          "min": 0.0,
+          "p05": 25.0,
+          "p95": 487.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 526.0,
+          "mean": 513.159793814433,
+          "median": 513.0,
+          "min": 502.0,
+          "p05": 506.0,
+          "p95": 521.0
+        },
+        "blocks": 194,
+        "discarded_tail_events": 8848,
+        "events": 1986560,
+        "multiplicity": {
+          "balanced_accuracy": 0.6245744768199344,
+          "block_mean_auc": 0.64933652422548,
+          "event_auc": 0.6489488167820741,
+          "maximum_score": 14,
+          "noise_rejection": 0.9412963754584112,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3078525781814575
+        },
+        "noise_fraction": 0.11186926143685567,
+        "occupancy": {
+          "balanced_accuracy": 0.6245466109034851,
+          "block_mean_auc": 0.6493009225155789,
+          "event_auc": 0.6489111950302298,
+          "maximum_score": 14,
+          "noise_rejection": 0.9412468783044975,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.30784634350247264
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_2474": {
+        "acquisition_to_block_close_us": {
+          "max": 694.0,
+          "mean": 277.6410400390625,
+          "median": 275.0,
+          "min": 0.0,
+          "p05": 27.0,
+          "p95": 533.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 694.0,
+          "mean": 555.0,
+          "median": 542.5,
+          "min": 479.0,
+          "p05": 502.9,
+          "p95": 646.15
+        },
+        "blocks": 180,
+        "discarded_tail_events": 1792,
+        "events": 1843200,
+        "multiplicity": {
+          "balanced_accuracy": 0.6559803373697662,
+          "block_mean_auc": 0.896523378168059,
+          "event_auc": 0.8968098216274716,
+          "maximum_score": 97,
+          "noise_rejection": 0.9998053686685638,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3121553060709686
+        },
+        "noise_fraction": 0.10313747829861111,
+        "occupancy": {
+          "balanced_accuracy": 0.6560888441513111,
+          "block_mean_auc": 0.8966335006681353,
+          "event_auc": 0.89692612660365,
+          "maximum_score": 24,
+          "noise_rejection": 1.0,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.31217768830262227
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_2486": {
+        "acquisition_to_block_close_us": {
+          "max": 845.0,
+          "mean": 311.9240609031053,
+          "median": 305.0,
+          "min": 0.0,
+          "p05": 31.0,
+          "p95": 629.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 845.0,
+          "mean": 626.0817610062893,
+          "median": 614.0,
+          "min": 505.0,
+          "p05": 516.0,
+          "p95": 779.3999999999999
+        },
+        "blocks": 159,
+        "discarded_tail_events": 8870,
+        "events": 1628160,
+        "multiplicity": {
+          "balanced_accuracy": 0.6688458540944436,
+          "block_mean_auc": 0.8972927997313617,
+          "event_auc": 0.8979113829067504,
+          "maximum_score": 78,
+          "noise_rejection": 0.9997673361420037,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3379243720468836
+        },
+        "noise_fraction": 0.17158817315251573,
+        "occupancy": {
+          "balanced_accuracy": 0.6689841213225317,
+          "block_mean_auc": 0.8973836658239336,
+          "event_auc": 0.898002690532724,
+          "maximum_score": 24,
+          "noise_rejection": 0.9999964205560308,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3379718220890326
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_2494": {
+        "acquisition_to_block_close_us": {
+          "max": 1048.0,
+          "mean": 511.5605710373711,
+          "median": 512.0,
+          "min": 0.0,
+          "p05": 51.0,
+          "p95": 971.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 1048.0,
+          "mean": 1022.4948453608248,
+          "median": 1024.0,
+          "min": 974.0,
+          "p05": 998.8,
+          "p95": 1042.4
+        },
+        "blocks": 97,
+        "discarded_tail_events": 8236,
+        "events": 993280,
+        "multiplicity": {
+          "balanced_accuracy": 0.7610326808150552,
+          "block_mean_auc": 0.8168930812088747,
+          "event_auc": 0.8177987333856528,
+          "maximum_score": 193,
+          "noise_rejection": 0.9828665742069961,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.5391987874231141
+        },
+        "noise_fraction": 0.4965246456185567,
+        "occupancy": {
+          "balanced_accuracy": 0.7609078358659762,
+          "block_mean_auc": 0.8168862779811942,
+          "event_auc": 0.8177929973611038,
+          "maximum_score": 24,
+          "noise_rejection": 0.9827408614970357,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.5390748102349168
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_2548": {
+        "acquisition_to_block_close_us": {
+          "max": 1021.0,
+          "mean": 484.1400172557646,
+          "median": 484.0,
+          "min": 0.0,
+          "p05": 47.0,
+          "p95": 922.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 1021.0,
+          "mean": 968.3883495145631,
+          "median": 974.0,
+          "min": 863.0,
+          "p05": 912.1,
+          "p95": 1005.9
+        },
+        "blocks": 103,
+        "discarded_tail_events": 2799,
+        "events": 1054720,
+        "multiplicity": {
+          "balanced_accuracy": 0.7042620863002764,
+          "block_mean_auc": 0.8698147611440707,
+          "event_auc": 0.870370258121352,
+          "maximum_score": 158,
+          "noise_rejection": 0.9998976322952043,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.40862654030534856
+        },
+        "noise_fraction": 0.3149044296116505,
+        "occupancy": {
+          "balanced_accuracy": 0.7042664810372694,
+          "block_mean_auc": 0.8697804020666862,
+          "event_auc": 0.8703350445911844,
+          "maximum_score": 24,
+          "noise_rejection": 0.9999036539248982,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.4086293081496407
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_2576": {
+        "acquisition_to_block_close_us": {
+          "max": 1053.0,
+          "mean": 519.8720133463542,
+          "median": 520.0,
+          "min": 0.0,
+          "p05": 52.0,
+          "p95": 988.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 1053.0,
+          "mean": 1039.7083333333333,
+          "median": 1041.0,
+          "min": 1020.0,
+          "p05": 1026.0,
+          "p95": 1050.25
+        },
+        "blocks": 96,
+        "discarded_tail_events": 1710,
+        "events": 983040,
+        "multiplicity": {
+          "balanced_accuracy": 0.7944924244938589,
+          "block_mean_auc": 0.9030592160046194,
+          "event_auc": 0.9046441565504436,
+          "maximum_score": 226,
+          "noise_rejection": 0.998429668841466,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.5905551801462519
+        },
+        "noise_fraction": 0.5273050944010417,
+        "occupancy": {
+          "balanced_accuracy": 0.7944495720869197,
+          "block_mean_auc": 0.9030539093856476,
+          "event_auc": 0.9046391013636846,
+          "maximum_score": 24,
+          "noise_rejection": 0.9983891566125603,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.590509987561279
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_2581": {
+        "acquisition_to_block_close_us": {
+          "max": 837.0,
+          "mean": 339.516541108631,
+          "median": 337.0,
+          "min": 0.0,
+          "p05": 32.0,
+          "p95": 657.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 837.0,
+          "mean": 676.9251700680272,
+          "median": 671.0,
+          "min": 563.0,
+          "p05": 574.2,
+          "p95": 794.7
+        },
+        "blocks": 147,
+        "discarded_tail_events": 7686,
+        "events": 1505280,
+        "multiplicity": {
+          "balanced_accuracy": 0.6684551727467137,
+          "block_mean_auc": 0.9081605977112794,
+          "event_auc": 0.9083596875506791,
+          "maximum_score": 90,
+          "noise_rejection": 0.9997300078649883,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3371803376284391
+        },
+        "noise_fraction": 0.1697777157738095,
+        "occupancy": {
+          "balanced_accuracy": 0.6686177750642746,
+          "block_mean_auc": 0.9082583750206654,
+          "event_auc": 0.9084527777497649,
+          "maximum_score": 24,
+          "noise_rejection": 1.0,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3372355501285491
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_2661": {
+        "acquisition_to_block_close_us": {
+          "max": 637.0,
+          "mean": 267.0849630264037,
+          "median": 266.0,
+          "min": 0.0,
+          "p05": 26.0,
+          "p95": 506.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 637.0,
+          "mean": 534.312834224599,
+          "median": 520.0,
+          "min": 499.0,
+          "p05": 507.0,
+          "p95": 594.0
+        },
+        "blocks": 374,
+        "discarded_tail_events": 2773,
+        "events": 3829760,
+        "multiplicity": {
+          "balanced_accuracy": 0.6654829206622761,
+          "block_mean_auc": 0.7236566394289562,
+          "event_auc": 0.7242505027090861,
+          "maximum_score": 75,
+          "noise_rejection": 0.9325347810194747,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.39843106030507747
+        },
+        "noise_fraction": 0.3578937061330214,
+        "occupancy": {
+          "balanced_accuracy": 0.6655772280131769,
+          "block_mean_auc": 0.7237029705531484,
+          "event_auc": 0.7242604555333014,
+          "maximum_score": 24,
+          "noise_rejection": 0.9326558917066173,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3984985643197364
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_2662": {
+        "acquisition_to_block_close_us": {
+          "max": 623.0,
+          "mean": 282.6177366435021,
+          "median": 282.0,
+          "min": 0.0,
+          "p05": 28.0,
+          "p95": 537.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 623.0,
+          "mean": 565.243626062323,
+          "median": 562.0,
+          "min": 528.0,
+          "p05": 538.0,
+          "p95": 604.0
+        },
+        "blocks": 353,
+        "discarded_tail_events": 8361,
+        "events": 3614720,
+        "multiplicity": {
+          "balanced_accuracy": 0.6247175550319666,
+          "block_mean_auc": 0.795486267831506,
+          "event_auc": 0.7955414718370886,
+          "maximum_score": 15,
+          "noise_rejection": 0.9325293819740724,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3169057280898606
+        },
+        "noise_fraction": 0.14803553248937676,
+        "occupancy": {
+          "balanced_accuracy": 0.6247164582813433,
+          "block_mean_auc": 0.7954837073755845,
+          "event_auc": 0.7955389235193934,
+          "maximum_score": 15,
+          "noise_rejection": 0.932527513188951,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3169054033737356
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_2663": {
+        "acquisition_to_block_close_us": {
+          "max": 541.0,
+          "mean": 256.585388717063,
+          "median": 257.0,
+          "min": 0.0,
+          "p05": 25.0,
+          "p95": 488.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 541.0,
+          "mean": 513.853470437018,
+          "median": 514.0,
+          "min": 492.0,
+          "p05": 501.0,
+          "p95": 526.0
+        },
+        "blocks": 389,
+        "discarded_tail_events": 2076,
+        "events": 3983360,
+        "multiplicity": {
+          "balanced_accuracy": 0.5930724797789173,
+          "block_mean_auc": 0.6077170140657773,
+          "event_auc": 0.6092982223459315,
+          "maximum_score": 41,
+          "noise_rejection": 0.8344397353495933,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.35170522420824135
+        },
+        "noise_fraction": 0.38531666733611825,
+        "occupancy": {
+          "balanced_accuracy": 0.5930719498090057,
+          "block_mean_auc": 0.6077075200891264,
+          "event_auc": 0.6092896917495421,
+          "maximum_score": 24,
+          "noise_rejection": 0.8344390838222503,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.35170481579576107
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_2665": {
+        "acquisition_to_block_close_us": {
+          "max": 527.0,
+          "mean": 256.68660987163815,
+          "median": 257.0,
+          "min": 0.0,
+          "p05": 25.0,
+          "p95": 487.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 527.0,
+          "mean": 512.6283618581907,
+          "median": 512.0,
+          "min": 495.0,
+          "p05": 505.0,
+          "p95": 520.0
+        },
+        "blocks": 409,
+        "discarded_tail_events": 6344,
+        "events": 4188160,
+        "multiplicity": {
+          "balanced_accuracy": 0.6276895213634309,
+          "block_mean_auc": 0.7066618157055746,
+          "event_auc": 0.7089277638516878,
+          "maximum_score": 30,
+          "noise_rejection": 0.8970208740315099,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.35835816869535203
+        },
+        "noise_fraction": 0.3069073292328851,
+        "occupancy": {
+          "balanced_accuracy": 0.6276311524629061,
+          "block_mean_auc": 0.7065554589345803,
+          "event_auc": 0.7088145418564651,
+          "maximum_score": 21,
+          "noise_rejection": 0.896939963917201,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3583223410086114
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_2666": {
+        "acquisition_to_block_close_us": {
+          "max": 4515.0,
+          "mean": 330.7236790091692,
+          "median": 314.0,
+          "min": 0.0,
+          "p05": 28.0,
+          "p95": 676.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 4515.0,
+          "mean": 677.8323353293413,
+          "median": 655.0,
+          "min": 487.0,
+          "p05": 505.3,
+          "p95": 872.0999999999999
+        },
+        "blocks": 167,
+        "discarded_tail_events": 492,
+        "events": 1710080,
+        "multiplicity": {
+          "balanced_accuracy": 0.619472981327138,
+          "block_mean_auc": 0.6515792868879007,
+          "event_auc": 0.6535162068145269,
+          "maximum_score": 16,
+          "noise_rejection": 0.8932237756589826,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.34572218699529356
+        },
+        "noise_fraction": 0.27513215755988024,
+        "occupancy": {
+          "balanced_accuracy": 0.6194935062448641,
+          "block_mean_auc": 0.6516125834629644,
+          "event_auc": 0.6535509177759685,
+          "maximum_score": 12,
+          "noise_rejection": 0.8932535313646391,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.34573348112508895
+        },
+        "reordered": true,
+        "skipped_files": 0
+      },
+      "scene_2667": {
+        "acquisition_to_block_close_us": {
+          "max": 928.0,
+          "mean": 380.97693714488634,
+          "median": 379.0,
+          "min": 0.0,
+          "p05": 37.0,
+          "p95": 738.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 928.0,
+          "mean": 761.8581818181818,
+          "median": 769.0,
+          "min": 632.0,
+          "p05": 667.0,
+          "p95": 859.2
+        },
+        "blocks": 275,
+        "discarded_tail_events": 5725,
+        "events": 2816000,
+        "multiplicity": {
+          "balanced_accuracy": 0.5844871664783685,
+          "block_mean_auc": 0.6310989530678067,
+          "event_auc": 0.6318846248481027,
+          "maximum_score": 58,
+          "noise_rejection": 0.8350845714438364,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.33388976151290056
+        },
+        "noise_fraction": 0.31903835227272725,
+        "occupancy": {
+          "balanced_accuracy": 0.5845492798922591,
+          "block_mean_auc": 0.6310802025249018,
+          "event_auc": 0.631868102445794,
+          "maximum_score": 24,
+          "noise_rejection": 0.8351691651491743,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.333929394635344
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_283": {
+        "acquisition_to_block_close_us": {
+          "max": 521.0,
+          "mean": 256.4153018282861,
+          "median": 257.0,
+          "min": 0.0,
+          "p05": 25.0,
+          "p95": 487.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 521.0,
+          "mean": 513.1752577319587,
+          "median": 513.0,
+          "min": 505.0,
+          "p05": 508.0,
+          "p95": 518.35
+        },
+        "blocks": 194,
+        "discarded_tail_events": 8571,
+        "events": 1986560,
+        "multiplicity": {
+          "balanced_accuracy": 0.6466374431660747,
+          "block_mean_auc": 0.7203113026009417,
+          "event_auc": 0.7202346549201734,
+          "maximum_score": 18,
+          "noise_rejection": 0.9805925611589388,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3126823251732107
+        },
+        "noise_fraction": 0.11150581910438144,
+        "occupancy": {
+          "balanced_accuracy": 0.6465205809737554,
+          "block_mean_auc": 0.7202612027476551,
+          "event_auc": 0.7201847907025389,
+          "maximum_score": 15,
+          "noise_rejection": 0.9803848984032539,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3126562635442569
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_292": {
+        "acquisition_to_block_close_us": {
+          "max": 532.0,
+          "mean": 256.3565574919872,
+          "median": 256.0,
+          "min": 0.0,
+          "p05": 25.0,
+          "p95": 487.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 532.0,
+          "mean": 512.5487179487179,
+          "median": 512.0,
+          "min": 494.0,
+          "p05": 505.0,
+          "p95": 521.0
+        },
+        "blocks": 195,
+        "discarded_tail_events": 808,
+        "events": 1996800,
+        "multiplicity": {
+          "balanced_accuracy": 0.6512594592106266,
+          "block_mean_auc": 0.7026191453177099,
+          "event_auc": 0.7029028130179154,
+          "maximum_score": 25,
+          "noise_rejection": 0.963330006908728,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.339188911512525
+        },
+        "noise_fraction": 0.19571814903846155,
+        "occupancy": {
+          "balanced_accuracy": 0.6511337916574953,
+          "block_mean_auc": 0.7025643321960172,
+          "event_auc": 0.7028466489474391,
+          "maximum_score": 17,
+          "noise_rejection": 0.9631278626442517,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.33913972067073894
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_321": {
+        "acquisition_to_block_close_us": {
+          "max": 546.0,
+          "mean": 256.63819416478736,
+          "median": 257.0,
+          "min": 0.0,
+          "p05": 20.0,
+          "p95": 489.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 546.0,
+          "mean": 513.319587628866,
+          "median": 514.0,
+          "min": 483.0,
+          "p05": 493.65,
+          "p95": 534.35
+        },
+        "blocks": 194,
+        "discarded_tail_events": 8562,
+        "events": 1986560,
+        "multiplicity": {
+          "balanced_accuracy": 0.6613417696256347,
+          "block_mean_auc": 0.9018287588833215,
+          "event_auc": 0.9015479878122257,
+          "maximum_score": 34,
+          "noise_rejection": 1.0,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3226835392512694
+        },
+        "noise_fraction": 0.13233730670103092,
+        "occupancy": {
+          "balanced_accuracy": 0.6613417696256347,
+          "block_mean_auc": 0.9018094101443683,
+          "event_auc": 0.9015287960014968,
+          "maximum_score": 23,
+          "noise_rejection": 1.0,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3226835392512694
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_403": {
+        "acquisition_to_block_close_us": {
+          "max": 1497.0,
+          "mean": 543.1526154891304,
+          "median": 521.0,
+          "min": 0.0,
+          "p05": 52.0,
+          "p95": 1142.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 1497.0,
+          "mean": 1084.4782608695652,
+          "median": 1083.5,
+          "min": 718.0,
+          "p05": 744.05,
+          "p95": 1448.7
+        },
+        "blocks": 92,
+        "discarded_tail_events": 2042,
+        "events": 942080,
+        "multiplicity": {
+          "balanced_accuracy": 0.6560802519528924,
+          "block_mean_auc": 0.8039520247529844,
+          "event_auc": 0.8029548272628989,
+          "maximum_score": 73,
+          "noise_rejection": 0.9966262500116497,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3155342538941351
+        },
+        "noise_fraction": 0.11389584748641304,
+        "occupancy": {
+          "balanced_accuracy": 0.6560224047661093,
+          "block_mean_auc": 0.803826888012525,
+          "event_auc": 0.8028198579701027,
+          "maximum_score": 24,
+          "noise_rejection": 0.9965237327468103,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.31552107678540836
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_424": {
+        "acquisition_to_block_close_us": {
+          "max": 768.0,
+          "mean": 264.511733813996,
+          "median": 262.0,
+          "min": 0.0,
+          "p05": 24.0,
+          "p95": 502.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 768.0,
+          "mean": 530.5212765957447,
+          "median": 515.0,
+          "min": 469.0,
+          "p05": 498.35,
+          "p95": 635.3
+        },
+        "blocks": 188,
+        "discarded_tail_events": 5342,
+        "events": 1925120,
+        "multiplicity": {
+          "balanced_accuracy": 0.6544190628110347,
+          "block_mean_auc": 0.8322517619913767,
+          "event_auc": 0.8320651952424976,
+          "maximum_score": 62,
+          "noise_rejection": 0.9930885703521645,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3157495552699048
+        },
+        "noise_fraction": 0.1158182347074468,
+        "occupancy": {
+          "balanced_accuracy": 0.654365801359523,
+          "block_mean_auc": 0.8321982171579645,
+          "event_auc": 0.8319981094582272,
+          "maximum_score": 24,
+          "noise_rejection": 0.9929943847437255,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3157372179753207
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_667": {
+        "acquisition_to_block_close_us": {
+          "max": 660.0,
+          "mean": 276.80646050347224,
+          "median": 275.0,
+          "min": 0.0,
+          "p05": 27.0,
+          "p95": 529.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 660.0,
+          "mean": 553.9944444444444,
+          "median": 545.0,
+          "min": 492.0,
+          "p05": 505.9,
+          "p95": 626.0999999999999
+        },
+        "blocks": 180,
+        "discarded_tail_events": 5631,
+        "events": 1843200,
+        "multiplicity": {
+          "balanced_accuracy": 0.6524713440381772,
+          "block_mean_auc": 0.8958693666174314,
+          "event_auc": 0.8957815981235613,
+          "maximum_score": 99,
+          "noise_rejection": 1.0,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.30494268807635444
+        },
+        "noise_fraction": 0.08185872395833334,
+        "occupancy": {
+          "balanced_accuracy": 0.6524713440381772,
+          "block_mean_auc": 0.8957862418052882,
+          "event_auc": 0.8956939770925084,
+          "maximum_score": 24,
+          "noise_rejection": 1.0,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.30494268807635444
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_676": {
+        "acquisition_to_block_close_us": {
+          "max": 875.0,
+          "mean": 315.27228045886073,
+          "median": 306.0,
+          "min": 0.0,
+          "p05": 30.0,
+          "p95": 643.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 875.0,
+          "mean": 631.626582278481,
+          "median": 606.0,
+          "min": 496.0,
+          "p05": 513.0,
+          "p95": 827.9000000000001
+        },
+        "blocks": 158,
+        "discarded_tail_events": 2383,
+        "events": 1617920,
+        "multiplicity": {
+          "balanced_accuracy": 0.6590592023588537,
+          "block_mean_auc": 0.8548362163244166,
+          "event_auc": 0.8549609290146153,
+          "maximum_score": 92,
+          "noise_rejection": 0.9994360730361624,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.318682331681545
+        },
+        "noise_fraction": 0.12165867286392405,
+        "occupancy": {
+          "balanced_accuracy": 0.659033173862604,
+          "block_mean_auc": 0.8547395216705234,
+          "event_auc": 0.8548636395929811,
+          "maximum_score": 24,
+          "noise_rejection": 0.9993903492282837,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3186759984969242
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_685": {
+        "acquisition_to_block_close_us": {
+          "max": 1424.0,
+          "mean": 481.219917179988,
+          "median": 464.0,
+          "min": 0.0,
+          "p05": 45.0,
+          "p95": 993.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 1424.0,
+          "mean": 958.9807692307693,
+          "median": 940.0,
+          "min": 583.0,
+          "p05": 699.0,
+          "p95": 1306.0
+        },
+        "blocks": 104,
+        "discarded_tail_events": 3190,
+        "events": 1064960,
+        "multiplicity": {
+          "balanced_accuracy": 0.6686313130173821,
+          "block_mean_auc": 0.8692273858677932,
+          "event_auc": 0.8687011804160973,
+          "maximum_score": 119,
+          "noise_rejection": 0.9995447439870554,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.33771788204770886
+        },
+        "noise_fraction": 0.17119422325721154,
+        "occupancy": {
+          "balanced_accuracy": 0.6686081501205331,
+          "block_mean_auc": 0.8690713542398627,
+          "event_auc": 0.8685343771087625,
+          "maximum_score": 24,
+          "noise_rejection": 0.9995063489016263,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.33770995133944
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_694": {
+        "acquisition_to_block_close_us": {
+          "max": 1272.0,
+          "mean": 506.38154197225765,
+          "median": 497.0,
+          "min": 0.0,
+          "p05": 50.0,
+          "p95": 1001.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 1272.0,
+          "mean": 1011.4183673469388,
+          "median": 1009.5,
+          "min": 768.0,
+          "p05": 827.65,
+          "p95": 1227.8
+        },
+        "blocks": 98,
+        "discarded_tail_events": 7716,
+        "events": 1003520,
+        "multiplicity": {
+          "balanced_accuracy": 0.6664131879316102,
+          "block_mean_auc": 0.8458709561520052,
+          "event_auc": 0.8450263407536701,
+          "maximum_score": 105,
+          "noise_rejection": 0.9991294307959225,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.33369694506729786
+        },
+        "noise_fraction": 0.1613948899872449,
+        "occupancy": {
+          "balanced_accuracy": 0.6663322001751484,
+          "block_mean_auc": 0.84573561141865,
+          "event_auc": 0.8448857341114093,
+          "maximum_score": 24,
+          "noise_rejection": 0.9989935973030878,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3336708030472089
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_698": {
+        "acquisition_to_block_close_us": {
+          "max": 1613.0,
+          "mean": 583.8361155790441,
+          "median": 566.0,
+          "min": 0.0,
+          "p05": 59.0,
+          "p95": 1194.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 1613.0,
+          "mean": 1164.1529411764707,
+          "median": 1155.0,
+          "min": 809.0,
+          "p05": 900.4,
+          "p95": 1463.6
+        },
+        "blocks": 85,
+        "discarded_tail_events": 8299,
+        "events": 870400,
+        "multiplicity": {
+          "balanced_accuracy": 0.6654752489991733,
+          "block_mean_auc": 0.8688997875774112,
+          "event_auc": 0.8679060556625989,
+          "maximum_score": 112,
+          "noise_rejection": 0.9994757439267519,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.33147475407159477
+        },
+        "noise_fraction": 0.1555951286764706,
+        "occupancy": {
+          "balanced_accuracy": 0.6654708767551193,
+          "block_mean_auc": 0.8687217813686355,
+          "event_auc": 0.8677139595679002,
+          "maximum_score": 24,
+          "noise_rejection": 0.9994683600383962,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3314733934718424
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_711": {
+        "acquisition_to_block_close_us": {
+          "max": 1136.0,
+          "mean": 463.5812490957755,
+          "median": 461.0,
+          "min": 0.0,
+          "p05": 45.0,
+          "p95": 892.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 1136.0,
+          "mean": 924.7129629629629,
+          "median": 921.0,
+          "min": 745.0,
+          "p05": 805.0,
+          "p95": 1045.3
+        },
+        "blocks": 108,
+        "discarded_tail_events": 1037,
+        "events": 1105920,
+        "multiplicity": {
+          "balanced_accuracy": 0.664930360969053,
+          "block_mean_auc": 0.8877502311712725,
+          "event_auc": 0.8876820660686253,
+          "maximum_score": 115,
+          "noise_rejection": 0.9999880434977552,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.32987267844035084
+        },
+        "noise_fraction": 0.1512523509837963,
+        "occupancy": {
+          "balanced_accuracy": 0.6649338827762293,
+          "block_mean_auc": 0.8876640202781855,
+          "event_auc": 0.8875937849652037,
+          "maximum_score": 24,
+          "noise_rejection": 0.9999940217488776,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3298737438035811
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_719": {
+        "acquisition_to_block_close_us": {
+          "max": 1550.0,
+          "mean": 645.9240805093344,
+          "median": 638.0,
+          "min": 0.0,
+          "p05": 62.0,
+          "p95": 1254.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 1550.0,
+          "mean": 1295.3766233766235,
+          "median": 1295.0,
+          "min": 1041.0,
+          "p05": 1116.8,
+          "p95": 1486.8
+        },
+        "blocks": 77,
+        "discarded_tail_events": 1773,
+        "events": 788480,
+        "multiplicity": {
+          "balanced_accuracy": 0.6665934666328588,
+          "block_mean_auc": 0.8945077707568537,
+          "event_auc": 0.8944810368133851,
+          "maximum_score": 197,
+          "noise_rejection": 1.0,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.33318693326571763
+        },
+        "noise_fraction": 0.15968952922077922,
+        "occupancy": {
+          "balanced_accuracy": 0.6665934666328588,
+          "block_mean_auc": 0.894417998397299,
+          "event_auc": 0.8943914279488836,
+          "maximum_score": 24,
+          "noise_rejection": 1.0,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.33318693326571763
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_73": {
+        "acquisition_to_block_close_us": {
+          "max": 1275.0,
+          "mean": 610.1735906153549,
+          "median": 610.0,
+          "min": 0.0,
+          "p05": 61.0,
+          "p95": 1160.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 1275.0,
+          "mean": 1220.0740740740741,
+          "median": 1238.0,
+          "min": 1122.0,
+          "p05": 1140.0,
+          "p95": 1267.0
+        },
+        "blocks": 81,
+        "discarded_tail_events": 9668,
+        "events": 829440,
+        "multiplicity": {
+          "balanced_accuracy": 0.6584763797078085,
+          "block_mean_auc": 0.8600198228886422,
+          "event_auc": 0.8598168762065939,
+          "maximum_score": 22,
+          "noise_rejection": 0.9996620168377066,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.3172907425779104
+        },
+        "noise_fraction": 0.11771556712962963,
+        "occupancy": {
+          "balanced_accuracy": 0.6584705755058826,
+          "block_mean_auc": 0.8598591224080838,
+          "event_auc": 0.8596545190107494,
+          "maximum_score": 18,
+          "noise_rejection": 0.9996517749236977,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.31728937608806757
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_839": {
+        "acquisition_to_block_close_us": {
+          "max": 528.0,
+          "mean": 256.9161288861147,
+          "median": 257.0,
+          "min": 0.0,
+          "p05": 25.0,
+          "p95": 488.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 528.0,
+          "mean": 513.6494845360825,
+          "median": 514.0,
+          "min": 492.0,
+          "p05": 501.0,
+          "p95": 524.0
+        },
+        "blocks": 194,
+        "discarded_tail_events": 6969,
+        "events": 1986560,
+        "multiplicity": {
+          "balanced_accuracy": 0.6338193646332737,
+          "block_mean_auc": 0.7104388030722816,
+          "event_auc": 0.709701481516598,
+          "maximum_score": 12,
+          "noise_rejection": 0.9703046394633874,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.29733408980315995
+        },
+        "noise_fraction": 0.06483972293814433,
+        "occupancy": {
+          "balanced_accuracy": 0.6336782344084342,
+          "block_mean_auc": 0.7103594103778749,
+          "event_auc": 0.7096210558656401,
+          "maximum_score": 10,
+          "noise_rejection": 0.9700406807030619,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.2973157881138064
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_923": {
+        "acquisition_to_block_close_us": {
+          "max": 530.0,
+          "mean": 256.67940963273196,
+          "median": 257.0,
+          "min": 0.0,
+          "p05": 25.0,
+          "p95": 488.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 530.0,
+          "mean": 513.139175257732,
+          "median": 514.0,
+          "min": 490.0,
+          "p05": 500.3,
+          "p95": 525.0
+        },
+        "blocks": 194,
+        "discarded_tail_events": 8746,
+        "events": 1986560,
+        "multiplicity": {
+          "balanced_accuracy": 0.6327374394682559,
+          "block_mean_auc": 0.7153931610719079,
+          "event_auc": 0.7149383218282588,
+          "maximum_score": 20,
+          "noise_rejection": 0.9758733245364262,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.28960155440008567
+        },
+        "noise_fraction": 0.036241039787371136,
+        "occupancy": {
+          "balanced_accuracy": 0.6325644934844306,
+          "block_mean_auc": 0.7153200498148802,
+          "event_auc": 0.7148646033734003,
+          "maximum_score": 15,
+          "noise_rejection": 0.9755399680533371,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.2895890189155239
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_950": {
+        "acquisition_to_block_close_us": {
+          "max": 537.0,
+          "mean": 256.5973894571521,
+          "median": 256.0,
+          "min": 0.0,
+          "p05": 25.0,
+          "p95": 488.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 537.0,
+          "mean": 513.3969072164948,
+          "median": 514.0,
+          "min": 490.0,
+          "p05": 497.0,
+          "p95": 527.0
+        },
+        "blocks": 194,
+        "discarded_tail_events": 7808,
+        "events": 1986560,
+        "multiplicity": {
+          "balanced_accuracy": 0.6394675672519403,
+          "block_mean_auc": 0.7351330592687745,
+          "event_auc": 0.734863451194105,
+          "maximum_score": 23,
+          "noise_rejection": 0.9867153083700441,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.2922198261338365
+        },
+        "noise_fraction": 0.04387886597938144,
+        "occupancy": {
+          "balanced_accuracy": 0.6393055863663528,
+          "block_mean_auc": 0.7350561381434418,
+          "event_auc": 0.7347843619756944,
+          "maximum_score": 20,
+          "noise_rejection": 0.9864055616740088,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.2922056110586967
+        },
+        "reordered": false,
+        "skipped_files": 0
+      },
+      "scene_965": {
+        "acquisition_to_block_close_us": {
+          "max": 525.0,
+          "mean": 256.6106495650773,
+          "median": 257.0,
+          "min": 0.0,
+          "p05": 25.0,
+          "p95": 488.0
+        },
+        "ambiguous_labels": 0,
+        "block_span_us": {
+          "max": 525.0,
+          "mean": 513.6907216494845,
+          "median": 513.0,
+          "min": 506.0,
+          "p05": 508.0,
+          "p95": 520.35
+        },
+        "blocks": 194,
+        "discarded_tail_events": 6740,
+        "events": 1986560,
+        "multiplicity": {
+          "balanced_accuracy": 0.6283753765027165,
+          "block_mean_auc": 0.6802211577618575,
+          "event_auc": 0.6797307912226691,
+          "maximum_score": 12,
+          "noise_rejection": 0.9562847390901119,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.300466013915321
+        },
+        "noise_fraction": 0.0797876731636598,
+        "occupancy": {
+          "balanced_accuracy": 0.6283033878963855,
+          "block_mean_auc": 0.6801594893889376,
+          "event_auc": 0.6796673807315913,
+          "maximum_score": 10,
+          "noise_rejection": 0.9561522494842369,
+          "retained_fraction": 0.27998046875,
+          "signal_recall": 0.30045452630853414
+        },
+        "reordered": false,
+        "skipped_files": 0
+      }
+    },
+    "summary": {
+      "aggregation": "Equal scene means; no independent new benchmark claim.",
+      "block_wait_scene_mean_us": 390.65730643571897,
+      "events": 111134720,
+      "multiplicity": {
+        "balanced_accuracy": 0.6495380539542905,
+        "block_mean_auc": 0.7825672868905021,
+        "event_auc": 0.7824954983562303,
+        "noise_rejection": 0.9713543164217666,
+        "retained_fraction": 0.27998046875,
+        "signal_recall": 0.32772179148681446
+      },
+      "occupancy": {
+        "balanced_accuracy": 0.6495016207847373,
+        "block_mean_auc": 0.782487339029719,
+        "event_auc": 0.7824131429888865,
+        "noise_rejection": 0.9712875284395175,
+        "retained_fraction": 0.27998046875,
+        "signal_recall": 0.327715713129957
+      },
+      "scenes": 66
+    }
+  },
+  "quality_radius": 2,
+  "retention": 0.28,
+  "schema_version": 1,
+  "score_definitions": {
+    "multiplicity": "Number of same-polarity radius-2 ring events in the whole block, including repeated firings; exact zero decay",
+    "occupancy": "Number of occupied same-polarity radius-2 ring taps in the whole block"
+  },
+  "selection": "Keep floor(r*N) largest integer scores, arrival-index ties, emit in arrival order",
+  "timing": {
+    "1280x720": {
+      "blocks": 174,
+      "emission_replay_radius_2": {
+        "multiplicity": {
+          "acquisition_to_emission_us": {
+            "max": 1462.0519458763301,
+            "mean": 861.9696523658558,
+            "median": 872.1739904526621,
+            "min": 392.1129973605275,
+            "p05": 530.9309542551637,
+            "p95": 1165.0960326045752
+          },
+          "peak_additional_queue_bytes_int64_events": 607648,
+          "peak_additional_queue_bytes_packed_events": 132923,
+          "peak_additional_queued_complete_blocks": 1,
+          "peak_additional_queued_events_including_partial_block": 18989,
+          "processing_per_block_us": {
+            "max": 819.3529793061316,
+            "mean": 483.5075393704505,
+            "median": 467.3149960581213,
+            "min": 392.1129973605275,
+            "p05": 405.4623073898256,
+            "p95": 595.7064451649785
+          },
+          "queue_scope": "Input events arriving during service, excluding the block currently processed; observed prefix only, no general stream bound or output queue model.",
+          "queued_before_processing_us": {
+            "max": 435.05194587633014,
+            "mean": 38.45073099892544,
+            "median": 0.0,
+            "min": 0.0,
+            "p05": 0.0,
+            "p95": 267.17505665645
+          },
+          "scope": "Single-server FIFO replay using recorded block-close timestamps and measured complete-filter service; no file-I/O or output-transmission time; not a live deadline guarantee."
+        },
+        "occupancy": {
+          "acquisition_to_emission_us": {
+            "max": 1029.2070027329028,
+            "mean": 551.0480239135761,
+            "median": 566.2849811762571,
+            "min": 179.03702906146646,
+            "p05": 258.68002726882696,
+            "p95": 782.2970051206648
+          },
+          "peak_additional_queue_bytes_int64_events": 295584,
+          "peak_additional_queue_bytes_packed_events": 64659,
+          "peak_additional_queued_complete_blocks": 0,
+          "peak_additional_queued_events_including_partial_block": 9237,
+          "processing_per_block_us": {
+            "max": 465.1899798773229,
+            "mean": 210.74106481900418,
+            "median": 196.65498984977603,
+            "min": 177.03702906146646,
+            "p05": 182.78025672771037,
+            "p95": 295.5493808258325
+          },
+          "queue_scope": "Input events arriving during service, excluding the block currently processed; observed prefix only, no general stream bound or output queue model.",
+          "queued_before_processing_us": {
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "p05": 0.0,
+            "p95": 0.0
+          },
+          "scope": "Single-server FIFO replay using recorded block-close timestamps and measured complete-filter service; no file-I/O or output-transmission time; not a live deadline guarantee."
+        }
+      },
+      "events": 1781760,
+      "input_sha256": "ebca37995db65c12799b65db8229ebd8b50634cc4490ef599507953b4f132b40",
+      "radius_1": {
+        "complete": {
+          "multiplicity": {
+            "mean_block_processing_us": {
+              "max": 299.18515516830416,
+              "mean": 283.40225986658214,
+              "median": 280.7135056120868,
+              "min": 274.28589655546705,
+              "p05": 274.69778854945866,
+              "p95": 296.06057810008355
+            },
+            "seconds": [
+              0.04817711201030761,
+              0.048380379972513765,
+              0.04790491901803762,
+              0.04772574600065127,
+              0.05030725902179256,
+              0.05205821699928492,
+              0.04971112997736782,
+              0.05069902597460896,
+              0.048844149976503104
+            ],
+            "throughput_mev_s": {
+              "max": 37.333308524411244,
+              "mean": 36.16079346952855,
+              "median": 36.478472874584384,
+              "min": 34.226297070921085,
+              "p05": 34.593326416297366,
+              "p95": 37.27745520767928
+            }
+          },
+          "occupancy": {
+            "mean_block_processing_us": {
+              "max": 151.07314965430777,
+              "mean": 141.5877541590192,
+              "median": 140.0445287528009,
+              "min": 136.8952069388724,
+              "p05": 137.00075174585498,
+              "p95": 149.4608644861728
+            },
+            "seconds": [
+              0.02483752800617367,
+              0.023865677998401225,
+              0.024088294012472034,
+              0.024270913971122354,
+              0.02628672803984955,
+              0.024367748002987355,
+              0.023819766007363796,
+              0.02558538399171084,
+              0.024604382982943207
+            ],
+            "throughput_mev_s": {
+              "max": 74.80174236175013,
+              "mean": 72.39253961375519,
+              "median": 73.11960053844803,
+              "min": 67.78173370603326,
+              "p05": 68.52494421282341,
+              "p95": 74.74418192830882
+            }
+          },
+          "occupancy_speedup_median": 2.0044589254007006
+        },
+        "score": {
+          "multiplicity": {
+            "mean_block_processing_us": {
+              "max": 218.6703391977982,
+              "mean": 209.99261618164837,
+              "median": 211.63209196950854,
+              "min": 200.75030457603094,
+              "p05": 201.24926091300262,
+              "p95": 217.48415524964275
+            },
+            "seconds": [
+              0.03682398400269449,
+              0.0371291859773919,
+              0.037532649002969265,
+              0.038048639020416886,
+              0.03493055299622938,
+              0.03514759900281206,
+              0.03623962897108868,
+              0.03610087797278538,
+              0.03689531999407336
+            ],
+            "throughput_mev_s": {
+              "max": 51.0086399202536,
+              "mean": 48.79893570691772,
+              "median": 48.38585634486548,
+              "min": 46.828481803091776,
+              "p05": 47.08599657792914,
+              "p95": 50.882643016794916
+            }
+          },
+          "occupancy": {
+            "mean_block_processing_us": {
+              "max": 86.89908039135237,
+              "mean": 81.99085442213719,
+              "median": 81.71118378382305,
+              "min": 78.44094826636473,
+              "p05": 78.60465871769637,
+              "p95": 86.16804596218655
+            },
+            "seconds": [
+              0.014477921999059618,
+              0.015120439988095313,
+              0.01480244001140818,
+              0.014458368998020887,
+              0.013719939044676721,
+              0.013896676013246179,
+              0.014055420993827283,
+              0.01421774597838521,
+              0.013648724998347461
+            ],
+            "throughput_mev_s": {
+              "max": 130.54406182377687,
+              "mean": 125.0244375968521,
+              "median": 125.31944252687826,
+              "min": 117.83784079053405,
+              "p05": 118.85044224260201,
+              "p95": 130.27302356809787
+            }
+          },
+          "occupancy_speedup_median": 2.590001541642172
+        },
+        "storage": {
+          "block": 10240,
+          "common_packed_event_bytes": 7,
+          "height": 720,
+          "kept_events": 2867,
+          "multiplicity": {
+            "implemented_arrays": {
+              "diagnostic_output_indices_bytes": 11468,
+              "input_buffer_bytes": 327680,
+              "operand_bytes": 3702416,
+              "output_events_bytes": 91744,
+              "readonly_popcount_table_bytes": 0,
+              "score_bytes": 20480,
+              "selection_histogram_bytes": 40960,
+              "total_bytes": 4194748
+            },
+            "map_counter_bits": 14,
+            "packed_design": {
+              "input_buffer_bytes": 71680,
+              "operand_bytes": 3239614,
+              "output_events_bytes": 20069,
+              "readonly_popcount_table_bytes": 0,
+              "score_bytes": 17920,
+              "selection_histogram_bytes": 40960,
+              "total_bytes": 3390243
+            },
+            "score_bits": 14
+          },
+          "occupancy": {
+            "implemented_arrays": {
+              "diagnostic_output_indices_bytes": 11468,
+              "input_buffer_bytes": 327680,
+              "operand_bytes": 254144,
+              "output_events_bytes": 91744,
+              "readonly_popcount_table_bytes": 32,
+              "score_bytes": 10240,
+              "selection_histogram_bytes": 36,
+              "total_bytes": 695344
+            },
+            "map_counter_bits": 1,
+            "packed_design": {
+              "input_buffer_bytes": 71680,
+              "operand_bytes": 254144,
+              "output_events_bytes": 20069,
+              "readonly_popcount_table_bytes": 32,
+              "score_bytes": 5120,
+              "selection_histogram_bytes": 36,
+              "total_bytes": 351081
+            },
+            "score_bits": 4
+          },
+          "radius": 1,
+          "retention": 0.28,
+          "scope": "Conservative sum of working-array capacities; not measured RSS; input/output queues excluded.",
+          "width": 1280
+        }
+      },
+      "radius_2": {
+        "complete": {
+          "multiplicity": {
+            "mean_block_processing_us": {
+              "max": 439.50093095190823,
+              "mean": 416.62320053968506,
+              "median": 412.5319654791049,
+              "min": 400.3273447622256,
+              "p05": 402.7984873124067,
+              "p95": 434.52015626993585
+            },
+            "seconds": [
+              0.07073190499795601,
+              0.0741617709863931,
+              0.07430652499897406,
+              0.07209173805313185,
+              0.07178056199336424,
+              0.07647316198563203,
+              0.07161351101240143,
+              0.07161580002866685,
+              0.06965695798862725
+            ],
+            "throughput_mev_s": {
+              "max": 25.579067065933373,
+              "mean": 24.596613643371388,
+              "median": 24.8223188913555,
+              "min": 23.299154288072483,
+              "p05": 23.570897903799825,
+              "p95": 25.423572078799975
+            }
+          },
+          "occupancy": {
+            "mean_block_processing_us": {
+              "max": 183.0631895820428,
+              "mean": 178.29293487438906,
+              "median": 177.81734490638664,
+              "min": 171.32979299840997,
+              "p05": 173.37246654801413,
+              "p95": 182.13143332690086
+            },
+            "seconds": [
+              0.03069994697580114,
+              0.03140421101124957,
+              0.0314476810162887,
+              0.030940218013711274,
+              0.030746808042749763,
+              0.03185299498727545,
+              0.031384034955408424,
+              0.02981138398172334,
+              0.030919457029085606
+            ],
+            "throughput_mev_s": {
+              "max": 59.76777197235645,
+              "mean": 57.452462048499406,
+              "median": 57.58718310292469,
+              "min": 55.93696921472447,
+              "p05": 56.22534704589925,
+              "p95": 59.07581728650663
+            }
+          },
+          "occupancy_speedup_median": 2.3199759601420524
+        },
+        "score": {
+          "multiplicity": {
+            "mean_block_processing_us": {
+              "max": 365.9003678489819,
+              "mean": 331.48429178844515,
+              "median": 326.48592538350186,
+              "min": 320.3264709920676,
+              "p05": 321.8664963670803,
+              "p95": 353.10866887916694
+            },
+            "seconds": [
+              0.057707431027665734,
+              0.05573680595261976,
+              0.05658895202213898,
+              0.056808551016729325,
+              0.05810227495385334,
+              0.05640671699075028,
+              0.06366666400572285,
+              0.05653161997906864,
+              0.05755538499215618
+            ],
+            "throughput_mev_s": {
+              "max": 31.96738617413101,
+              "mean": 30.934232235100005,
+              "median": 31.364292313586674,
+              "min": 27.98576033196653,
+              "p05": 29.05782615743116,
+              "p95": 31.815522665664506
+            }
+          },
+          "occupancy": {
+            "mean_block_processing_us": {
+              "max": 117.25356299216035,
+              "mean": 110.93720565056417,
+              "median": 110.35790245434076,
+              "min": 105.07724725577081,
+              "p05": 105.75806332655765,
+              "p95": 116.59408946275369
+            },
+            "seconds": [
+              0.01828344102250412,
+              0.01974781003082171,
+              0.019202275027055293,
+              0.0190225740079768,
+              0.018720375024713576,
+              0.020115248975344002,
+              0.0204021199606359,
+              0.018579596013296396,
+              0.01965422398643568
+            ],
+            "throughput_mev_s": {
+              "max": 97.45211515747643,
+              "mean": 92.41930072395559,
+              "median": 92.78900533866775,
+              "min": 87.33210095018309,
+              "p05": 87.83029107207318,
+              "p95": 96.83076838015154
+            }
+          },
+          "occupancy_speedup_median": 2.9584281517001596
+        },
+        "storage": {
+          "block": 10240,
+          "common_packed_event_bytes": 7,
+          "height": 720,
+          "kept_events": 2867,
+          "multiplicity": {
+            "implemented_arrays": {
+              "diagnostic_output_indices_bytes": 11468,
+              "input_buffer_bytes": 327680,
+              "operand_bytes": 3718464,
+              "output_events_bytes": 91744,
+              "readonly_popcount_table_bytes": 0,
+              "score_bytes": 20480,
+              "selection_histogram_bytes": 40960,
+              "total_bytes": 4210796
+            },
+            "map_counter_bits": 14,
+            "packed_design": {
+              "input_buffer_bytes": 71680,
+              "operand_bytes": 3253656,
+              "output_events_bytes": 20069,
+              "readonly_popcount_table_bytes": 0,
+              "score_bytes": 17920,
+              "selection_histogram_bytes": 40960,
+              "total_bytes": 3404285
+            },
+            "score_bits": 14
+          },
+          "occupancy": {
+            "implemented_arrays": {
+              "diagnostic_output_indices_bytes": 11468,
+              "input_buffer_bytes": 327680,
+              "operand_bytes": 254848,
+              "output_events_bytes": 91744,
+              "readonly_popcount_table_bytes": 32,
+              "score_bytes": 10240,
+              "selection_histogram_bytes": 100,
+              "total_bytes": 696112
+            },
+            "map_counter_bits": 1,
+            "packed_design": {
+              "input_buffer_bytes": 71680,
+              "operand_bytes": 254848,
+              "output_events_bytes": 20069,
+              "readonly_popcount_table_bytes": 32,
+              "score_bytes": 6400,
+              "selection_histogram_bytes": 100,
+              "total_bytes": 353129
+            },
+            "score_bits": 5
+          },
+          "radius": 2,
+          "retention": 0.28,
+          "scope": "Conservative sum of working-array capacities; not measured RSS; input/output queues excluded.",
+          "width": 1280
+        }
+      },
+      "source": "LED/scene_1038"
+    },
+    "346x260": {
+      "blocks": 87,
+      "emission_replay_radius_2": {
+        "multiplicity": {
+          "acquisition_to_emission_us": {
+            "max": 117502.5,
+            "mean": 35645.50854752254,
+            "median": 34098.75,
+            "min": 253.0,
+            "p05": 4406.700000000001,
+            "p95": 73716.44999999998
+          },
+          "peak_additional_queue_bytes_int64_events": 15744,
+          "peak_additional_queue_bytes_packed_events": 3444,
+          "peak_additional_queued_complete_blocks": 0,
+          "peak_additional_queued_events_including_partial_block": 492,
+          "processing_per_block_us": {
+            "max": 563.7190188281238,
+            "mean": 280.7651629039868,
+            "median": 266.2329934537411,
+            "min": 253.03097208961844,
+            "p05": 255.7403000537306,
+            "p95": 347.6022917311639
+          },
+          "queue_scope": "Input events arriving during service, excluding the block currently processed; observed prefix only, no general stream bound or output queue model.",
+          "queued_before_processing_us": {
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "p05": 0.0,
+            "p95": 0.0
+          },
+          "scope": "Single-server FIFO replay using recorded block-close timestamps and measured complete-filter service; no file-I/O or output-transmission time; not a live deadline guarantee."
+        },
+        "occupancy": {
+          "acquisition_to_emission_us": {
+            "max": 117402.0,
+            "mean": 36914.413862261405,
+            "median": 35600.5,
+            "min": 152.5,
+            "p05": 5734.85,
+            "p95": 73541.29999999999
+          },
+          "peak_additional_queue_bytes_int64_events": 15392,
+          "peak_additional_queue_bytes_packed_events": 3367,
+          "peak_additional_queued_complete_blocks": 0,
+          "peak_additional_queued_events_including_partial_block": 481,
+          "processing_per_block_us": {
+            "max": 348.7369976937771,
+            "mean": 174.19564417274347,
+            "median": 163.7829700484872,
+            "min": 150.2379891462624,
+            "p05": 152.89177536033094,
+            "p95": 230.0168736837805
+          },
+          "queue_scope": "Input events arriving during service, excluding the block currently processed; observed prefix only, no general stream bound or output queue model.",
+          "queued_before_processing_us": {
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "p05": 0.0,
+            "p95": 0.0
+          },
+          "scope": "Single-server FIFO replay using recorded block-close timestamps and measured complete-filter service; no file-I/O or output-transmission time; not a live deadline guarantee."
+        }
+      },
+      "events": 890880,
+      "input_sha256": "8992c6d7d129690afd345a35995748b60ede447ca5a17d7f3621e3768b34b6cb",
+      "radius_1": {
+        "complete": {
+          "multiplicity": {
+            "mean_block_processing_us": {
+              "max": 174.82129891734868,
+              "mean": 166.63454269031644,
+              "median": 165.63444869357278,
+              "min": 157.587344613697,
+              "p05": 159.3222412088051,
+              "p95": 173.98724361890177
+            },
+            "seconds": [
+              0.013710098981391639,
+              0.01408743899082765,
+              0.01463546697050333,
+              0.014410197036340833,
+              0.014186366985086352,
+              0.014359526976477355,
+              0.015209453005809337,
+              0.015028045978397131,
+              0.014848252001684159
+            ],
+            "throughput_mev_s": {
+              "max": 64.97983721409804,
+              "mean": 61.51188312075065,
+              "median": 61.82288817795515,
+              "min": 58.574098599057,
+              "p05": 58.85692320913549,
+              "p95": 64.28362855889867
+            }
+          },
+          "occupancy": {
+            "mean_block_processing_us": {
+              "max": 142.6145746158543,
+              "mean": 134.05671526082003,
+              "median": 136.48657444008123,
+              "min": 124.30695391356433,
+              "p05": 125.02922989620733,
+              "p95": 141.4809101689393
+            },
+            "seconds": [
+              0.010814704990480095,
+              0.010971800016704947,
+              0.011888000008184463,
+              0.012407467991579324,
+              0.01150073204189539,
+              0.011260025028605014,
+              0.012160895974375308,
+              0.011874331976287067,
+              0.012088450021110475
+            ],
+            "throughput_mev_s": {
+              "max": 82.37672694578526,
+              "mean": 76.54192252204581,
+              "median": 75.02569422676402,
+              "min": 71.80191805488603,
+              "p05": 72.38425487648918,
+              "p95": 81.90493657191179
+            }
+          },
+          "occupancy_speedup_median": 1.2135585450295532
+        },
+        "score": {
+          "multiplicity": {
+            "mean_block_processing_us": {
+              "max": 113.82412617683582,
+              "mean": 106.80129108082212,
+              "median": 105.76767809474948,
+              "min": 101.63439089839144,
+              "p05": 102.71217465272238,
+              "p95": 112.83357469793195
+            },
+            "seconds": [
+              0.009201787994243205,
+              0.009138055960647762,
+              0.009902698977384716,
+              0.009687254030723125,
+              0.008842192008160055,
+              0.009380905015859753,
+              0.009170147008262575,
+              0.009225759946275502,
+              0.009076609974727035
+            ],
+            "throughput_mev_s": {
+              "max": 100.75329727943563,
+              "mean": 95.98010505417743,
+              "median": 96.81596669661916,
+              "min": 89.96335262079023,
+              "p05": 90.76366815480694,
+              "p95": 99.71245127464191
+            }
+          },
+          "occupancy": {
+            "mean_block_processing_us": {
+              "max": 74.8120806308399,
+              "mean": 72.42886593391688,
+              "median": 72.14902327449501,
+              "min": 70.25850535338294,
+              "p05": 70.66555380093297,
+              "p95": 74.49508277999088
+            },
+            "seconds": [
+              0.006327707029413432,
+              0.006215278001036495,
+              0.006508651014883071,
+              0.006276965024881065,
+              0.006426194973755628,
+              0.006201023003086448,
+              0.006112489965744317,
+              0.006203789031133056,
+              0.006439703982323408
+            ],
+            "throughput_mev_s": {
+              "max": 145.74747852228464,
+              "mean": 141.43591151866485,
+              "median": 141.92846327304179,
+              "min": 136.87628941279235,
+              "p05": 137.46247871644323,
+              "p95": 144.915134120265
+            }
+          },
+          "occupancy_speedup_median": 1.4659613296821832
+        },
+        "storage": {
+          "block": 10240,
+          "common_packed_event_bytes": 7,
+          "height": 260,
+          "kept_events": 2867,
+          "multiplicity": {
+            "implemented_arrays": {
+              "diagnostic_output_indices_bytes": 11468,
+              "input_buffer_bytes": 327680,
+              "operand_bytes": 364704,
+              "output_events_bytes": 91744,
+              "readonly_popcount_table_bytes": 0,
+              "score_bytes": 20480,
+              "selection_histogram_bytes": 40960,
+              "total_bytes": 857036
+            },
+            "map_counter_bits": 14,
+            "packed_design": {
+              "input_buffer_bytes": 71680,
+              "operand_bytes": 319116,
+              "output_events_bytes": 20069,
+              "readonly_popcount_table_bytes": 0,
+              "score_bytes": 17920,
+              "selection_histogram_bytes": 40960,
+              "total_bytes": 469745
+            },
+            "score_bits": 14
+          },
+          "occupancy": {
+            "implemented_arrays": {
+              "diagnostic_output_indices_bytes": 11468,
+              "input_buffer_bytes": 327680,
+              "operand_bytes": 29344,
+              "output_events_bytes": 91744,
+              "readonly_popcount_table_bytes": 32,
+              "score_bytes": 10240,
+              "selection_histogram_bytes": 36,
+              "total_bytes": 470544
+            },
+            "map_counter_bits": 1,
+            "packed_design": {
+              "input_buffer_bytes": 71680,
+              "operand_bytes": 29344,
+              "output_events_bytes": 20069,
+              "readonly_popcount_table_bytes": 32,
+              "score_bytes": 5120,
+              "selection_histogram_bytes": 36,
+              "total_bytes": 126281
+            },
+            "score_bits": 4
+          },
+          "radius": 1,
+          "retention": 0.28,
+          "scope": "Conservative sum of working-array capacities; not measured RSS; input/output queues excluded.",
+          "width": 346
+        }
+      },
+      "radius_2": {
+        "complete": {
+          "multiplicity": {
+            "mean_block_processing_us": {
+              "max": 278.80193090237594,
+              "mean": 262.16118900987914,
+              "median": 260.68788479435545,
+              "min": 252.9911152301249,
+              "p05": 254.22387373708614,
+              "p95": 273.8126479999173
+            },
+            "seconds": [
+              0.022010227025020868,
+              0.023170598957221955,
+              0.022496977006085217,
+              0.022609480016399175,
+              0.024255767988506705,
+              0.022752467019017786,
+              0.02301849500508979,
+              0.022679845977108926,
+              0.02227835200028494
+            ],
+            "throughput_mev_s": {
+              "max": 40.47572971361277,
+              "mean": 39.087039687945,
+              "median": 39.28069004080439,
+              "min": 36.7285835031953,
+              "p05": 37.416640319580715,
+              "p95": 40.28087591063635
+            }
+          },
+          "occupancy": {
+            "mean_block_processing_us": {
+              "max": 164.2980917902856,
+              "mean": 153.82497960351895,
+              "median": 152.48596566547266,
+              "min": 148.82931022787062,
+              "p05": 149.00719524821503,
+              "p95": 161.53894241727974
+            },
+            "seconds": [
+              0.013087914034258574,
+              0.012986839981749654,
+              0.013323123974259943,
+              0.012948149989824742,
+              0.01365034404443577,
+              0.014293933985754848,
+              0.013693818997126073,
+              0.01326627901289612,
+              0.013194555009249598
+            ],
+            "throughput_mev_s": {
+              "max": 68.80365154096106,
+              "mean": 66.62867012467397,
+              "median": 67.15372103466069,
+              "min": 62.325739078397845,
+              "p05": 63.41827901064501,
+              "p95": 68.72166045687085
+            }
+          },
+          "occupancy_speedup_median": 1.7095860832613197
+        },
+        "score": {
+          "multiplicity": {
+            "mean_block_processing_us": {
+              "max": 217.64857429561428,
+              "mean": 206.73699093575794,
+              "median": 205.7497127345581,
+              "min": 201.76242574000327,
+              "p05": 202.33134955874291,
+              "p95": 214.6094112828288
+            },
+            "seconds": [
+              0.01767707196995616,
+              0.017698037961963564,
+              0.018935425963718444,
+              0.018274408008437604,
+              0.017900225007906556,
+              0.01809753500856459,
+              0.018026509962510318,
+              0.017553331039380282,
+              0.01771251898026094
+            ],
+            "throughput_mev_s": {
+              "max": 50.75276014571491,
+              "mean": 49.55549684007669,
+              "median": 49.769206789663095,
+              "min": 47.04832105213721,
+              "p05": 47.72904975135244,
+              "p95": 50.61065077872475
+            }
+          },
+          "occupancy": {
+            "mean_block_processing_us": {
+              "max": 105.71796607611508,
+              "mean": 100.99882888280588,
+              "median": 100.03728776014056,
+              "min": 96.1026552818373,
+              "p05": 96.94230574151051,
+              "p95": 104.89010835473222
+            },
+            "seconds": [
+              0.00901740399422124,
+              0.00870324403513223,
+              0.0089238669606857,
+              0.008692457980941981,
+              0.008543554984498769,
+              0.008360931009519845,
+              0.009197463048622012,
+              0.008969268994405866,
+              0.00867389200720936
+            ],
+            "throughput_mev_s": {
+              "max": 106.55272708094762,
+              "mean": 101.46675680284064,
+              "median": 102.36183156577027,
+              "min": 96.8614927062386,
+              "p05": 97.63514280756307,
+              "p95": 105.64167389057555
+            }
+          },
+          "occupancy_speedup_median": 2.0567302187148884
+        },
+        "storage": {
+          "block": 10240,
+          "common_packed_event_bytes": 7,
+          "height": 260,
+          "kept_events": 2867,
+          "multiplicity": {
+            "implemented_arrays": {
+              "diagnostic_output_indices_bytes": 11468,
+              "input_buffer_bytes": 327680,
+              "operand_bytes": 369600,
+              "output_events_bytes": 91744,
+              "readonly_popcount_table_bytes": 0,
+              "score_bytes": 20480,
+              "selection_histogram_bytes": 40960,
+              "total_bytes": 861932
+            },
+            "map_counter_bits": 14,
+            "packed_design": {
+              "input_buffer_bytes": 71680,
+              "operand_bytes": 323400,
+              "output_events_bytes": 20069,
+              "readonly_popcount_table_bytes": 0,
+              "score_bytes": 17920,
+              "selection_histogram_bytes": 40960,
+              "total_bytes": 474029
+            },
+            "score_bits": 14
+          },
+          "occupancy": {
+            "implemented_arrays": {
+              "diagnostic_output_indices_bytes": 11468,
+              "input_buffer_bytes": 327680,
+              "operand_bytes": 29568,
+              "output_events_bytes": 91744,
+              "readonly_popcount_table_bytes": 32,
+              "score_bytes": 10240,
+              "selection_histogram_bytes": 100,
+              "total_bytes": 470832
+            },
+            "map_counter_bits": 1,
+            "packed_design": {
+              "input_buffer_bytes": 71680,
+              "operand_bytes": 29568,
+              "output_events_bytes": 20069,
+              "readonly_popcount_table_bytes": 32,
+              "score_bytes": 6400,
+              "selection_histogram_bytes": 100,
+              "total_bytes": 127849
+            },
+            "score_bits": 5
+          },
+          "radius": 2,
+          "retention": 0.28,
+          "scope": "Conservative sum of working-array capacities; not measured RSS; input/output queues excluded.",
+          "width": 346
+        }
+      },
+      "source": "DND21/1hz_hotel-bar"
+    }
+  },
+  "timing_environment": {
+    "compiler": "Numba nopython via LLVM",
+    "cpu": "12th Gen Intel(R) Core(TM) i7-12700",
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "fastmath": false,
+    "kernel_threads": 1,
+    "llvmlite": "0.45.1",
+    "logical_cpus": 20,
+    "numba": "0.62.1",
+    "numpy": "2.3.5",
+    "parallel_numba": false,
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:16:10) [GCC 11.2.0]",
+    "timing_clock": "time.perf_counter"
+  },
+  "timing_protocol": {
+    "contention": "Corrected-control experiment processes stopped during this timing window; root deferred tests and compilation. No unrelated processes were paused.",
+    "order": "Alternating occupancy then multiplicity / multiplicity then occupancy each repeat",
+    "repeats": 9,
+    "scope": "In-memory fixed-block replay; complete includes block copy, map and score, histogram retention, original-order event copy and diagnostic retained indices. File I/O, JIT compilation and external queues excluded.",
+    "selection": "First lexicographic LED scene and DND21 1hz_hotel-bar; no performance-based selection.",
+    "warmup_passes": 2
+  },
+  "working_storage": {
+    "1280x720": {
+      "block": 10240,
+      "common_packed_event_bytes": 7,
+      "height": 720,
+      "kept_events": 2867,
+      "multiplicity": {
+        "implemented_arrays": {
+          "diagnostic_output_indices_bytes": 11468,
+          "input_buffer_bytes": 327680,
+          "operand_bytes": 3718464,
+          "output_events_bytes": 91744,
+          "readonly_popcount_table_bytes": 0,
+          "score_bytes": 20480,
+          "selection_histogram_bytes": 40960,
+          "total_bytes": 4210796
+        },
+        "map_counter_bits": 14,
+        "packed_design": {
+          "input_buffer_bytes": 71680,
+          "operand_bytes": 3253656,
+          "output_events_bytes": 20069,
+          "readonly_popcount_table_bytes": 0,
+          "score_bytes": 17920,
+          "selection_histogram_bytes": 40960,
+          "total_bytes": 3404285
+        },
+        "score_bits": 14
+      },
+      "occupancy": {
+        "implemented_arrays": {
+          "diagnostic_output_indices_bytes": 11468,
+          "input_buffer_bytes": 327680,
+          "operand_bytes": 254848,
+          "output_events_bytes": 91744,
+          "readonly_popcount_table_bytes": 32,
+          "score_bytes": 10240,
+          "selection_histogram_bytes": 100,
+          "total_bytes": 696112
+        },
+        "map_counter_bits": 1,
+        "packed_design": {
+          "input_buffer_bytes": 71680,
+          "operand_bytes": 254848,
+          "output_events_bytes": 20069,
+          "readonly_popcount_table_bytes": 32,
+          "score_bytes": 6400,
+          "selection_histogram_bytes": 100,
+          "total_bytes": 353129
+        },
+        "score_bits": 5
+      },
+      "radius": 2,
+      "retention": 0.28,
+      "scope": "Conservative sum of working-array capacities; not measured RSS; input/output queues excluded.",
+      "width": 1280
+    },
+    "346x260": {
+      "block": 10240,
+      "common_packed_event_bytes": 7,
+      "height": 260,
+      "kept_events": 2867,
+      "multiplicity": {
+        "implemented_arrays": {
+          "diagnostic_output_indices_bytes": 11468,
+          "input_buffer_bytes": 327680,
+          "operand_bytes": 369600,
+          "output_events_bytes": 91744,
+          "readonly_popcount_table_bytes": 0,
+          "score_bytes": 20480,
+          "selection_histogram_bytes": 40960,
+          "total_bytes": 861932
+        },
+        "map_counter_bits": 14,
+        "packed_design": {
+          "input_buffer_bytes": 71680,
+          "operand_bytes": 323400,
+          "output_events_bytes": 20069,
+          "readonly_popcount_table_bytes": 0,
+          "score_bytes": 17920,
+          "selection_histogram_bytes": 40960,
+          "total_bytes": 474029
+        },
+        "score_bits": 14
+      },
+      "occupancy": {
+        "implemented_arrays": {
+          "diagnostic_output_indices_bytes": 11468,
+          "input_buffer_bytes": 327680,
+          "operand_bytes": 29568,
+          "output_events_bytes": 91744,
+          "readonly_popcount_table_bytes": 32,
+          "score_bytes": 10240,
+          "selection_histogram_bytes": 100,
+          "total_bytes": 470832
+        },
+        "map_counter_bits": 1,
+        "packed_design": {
+          "input_buffer_bytes": 71680,
+          "operand_bytes": 29568,
+          "output_events_bytes": 20069,
+          "readonly_popcount_table_bytes": 32,
+          "score_bytes": 6400,
+          "selection_histogram_bytes": 100,
+          "total_bytes": 127849
+        },
+        "score_bits": 5
+      },
+      "radius": 2,
+      "retention": 0.28,
+      "scope": "Conservative sum of working-array capacities; not measured RSS; input/output queues excluded.",
+      "width": 346
+    }
+  }
+}

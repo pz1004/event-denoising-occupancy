@@ -1,0 +1,285 @@
+{
+  "missingness": {
+    "cell_mean_margin": -0.003944911037327539,
+    "cells_ahead_cell_mean": 6,
+    "cells_ahead_complete_case": 6,
+    "complete_case_cell_mean_margin": 0.01895859310375056,
+    "dropped_baseline_total": 42,
+    "dropped_ours_total": 2,
+    "dropped_total": 44,
+    "mechanism": "MESR is undefined when filtering leaves a stream too sparse, so the baseline goes missing precisely where it filters hardest, which is where its cell-level advantage comes from",
+    "pearson_r_baseline_retention_vs_nan_rate": -0.9590733290526509,
+    "per_cell": [
+      {
+        "baseline_nan_rate": 0.0,
+        "baseline_retention": 0.4832529999272099,
+        "cell": "D-END/ND00",
+        "cell_mean_margin": 0.013911380783454996,
+        "complete_case_margin": 0.01971275827433103,
+        "dropped_baseline": 0,
+        "dropped_ours": 2,
+        "kept": 46,
+        "sequences": 48
+      },
+      {
+        "baseline_nan_rate": 0.020833333333333332,
+        "baseline_retention": 0.4436677510865643,
+        "cell": "D-END/ND04",
+        "cell_mean_margin": 0.024669505695276706,
+        "complete_case_margin": 0.03263481170413128,
+        "dropped_baseline": 1,
+        "dropped_ours": 0,
+        "kept": 47,
+        "sequences": 48
+      },
+      {
+        "baseline_nan_rate": 0.020833333333333332,
+        "baseline_retention": 0.398031794687264,
+        "cell": "D-END/ND16",
+        "cell_mean_margin": 0.03047249804346419,
+        "complete_case_margin": 0.035019997648385766,
+        "dropped_baseline": 1,
+        "dropped_ours": 0,
+        "kept": 47,
+        "sequences": 48
+      },
+      {
+        "baseline_nan_rate": 0.08333333333333333,
+        "baseline_retention": 0.3005655692951436,
+        "cell": "D-END/ND64",
+        "cell_mean_margin": 0.023486791315554756,
+        "complete_case_margin": 0.01728437013520093,
+        "dropped_baseline": 4,
+        "dropped_ours": 0,
+        "kept": 44,
+        "sequences": 48
+      },
+      {
+        "baseline_nan_rate": 0.020833333333333332,
+        "baseline_retention": 0.3595606753013402,
+        "cell": "N-END/ND00",
+        "cell_mean_margin": 0.04343909038268312,
+        "complete_case_margin": 0.053114257180270116,
+        "dropped_baseline": 1,
+        "dropped_ours": 0,
+        "kept": 47,
+        "sequences": 48
+      },
+      {
+        "baseline_nan_rate": 0.14583333333333334,
+        "baseline_retention": 0.23630442802149423,
+        "cell": "N-END/ND04",
+        "cell_mean_margin": 0.012799913015629327,
+        "complete_case_margin": 0.024530033548634766,
+        "dropped_baseline": 7,
+        "dropped_ours": 0,
+        "kept": 41,
+        "sequences": 48
+      },
+      {
+        "baseline_nan_rate": 0.22916666666666666,
+        "baseline_retention": 0.1501774700242384,
+        "cell": "N-END/ND16",
+        "cell_mean_margin": -0.09479926332932442,
+        "complete_case_margin": -0.017522135306429043,
+        "dropped_baseline": 11,
+        "dropped_ours": 0,
+        "kept": 37,
+        "sequences": 48
+      },
+      {
+        "baseline_nan_rate": 0.3541666666666667,
+        "baseline_retention": 0.08105662703745477,
+        "cell": "N-END/ND64",
+        "cell_mean_margin": -0.08553920420535899,
+        "complete_case_margin": -0.013105348354520364,
+        "dropped_baseline": 17,
+        "dropped_ours": 0,
+        "kept": 31,
+        "sequences": 48
+      }
+    ],
+    "verdict": "INFORMATIVE MISSINGNESS -- the pooled paired estimate is biased in our favour and must not be reported as evidence that we are ahead"
+  },
+  "our_cell_means": {
+    "D-END/ND00": {
+      "raw_mesr": 0.8208399845380558,
+      "sequences": 144,
+      "support_score_fixed_mesr": 0.9711337075045989
+    },
+    "D-END/ND04": {
+      "raw_mesr": 0.824378356951288,
+      "sequences": 144,
+      "support_score_fixed_mesr": 0.9724500998721753
+    },
+    "D-END/ND16": {
+      "raw_mesr": 0.8155549504292987,
+      "sequences": 144,
+      "support_score_fixed_mesr": 0.9675161733339177
+    },
+    "D-END/ND64": {
+      "raw_mesr": 0.7876095239838672,
+      "sequences": 144,
+      "support_score_fixed_mesr": 0.9582368105892503
+    },
+    "N-END/ND00": {
+      "raw_mesr": 0.8916544613222285,
+      "sequences": 144,
+      "support_score_fixed_mesr": 1.0832051782826169
+    },
+    "N-END/ND04": {
+      "raw_mesr": 0.8244670685155211,
+      "sequences": 144,
+      "support_score_fixed_mesr": 1.0674562038489706
+    },
+    "N-END/ND16": {
+      "raw_mesr": 0.786015637190598,
+      "sequences": 144,
+      "support_score_fixed_mesr": 1.0075100463739732
+    },
+    "N-END/ND64": {
+      "raw_mesr": 0.7671173614382237,
+      "sequences": 144,
+      "support_score_fixed_mesr": 1.0005985669685389
+    }
+  },
+  "our_delta_raw": {
+    "note": "our MESR improvement over unfiltered input, per sequence. No baseline involved, so this is a clean interval at the sequence level.",
+    "pooled_sequences": {
+      "bootstrap_se": 0.00418228515686247,
+      "ci95": [
+        0.18120129151386324,
+        0.1975625697477822
+      ],
+      "mean": 0.1893679453523693,
+      "n": 1149,
+      "replicates": 10000,
+      "sd": 0.14052718225913308
+    },
+    "stratified_by_cell": {
+      "bootstrap_se": 0.00399448979049034,
+      "cells": 8,
+      "ci95": [
+        0.18146111658963357,
+        0.197201901531891
+      ],
+      "mean": 0.1892759238045719,
+      "replicates": 10000,
+      "sequences_total": 1149
+    }
+  },
+  "paired_per_sequence": {
+    "BIAS_WARNING": "complete-case only. See `missingness`: the dropped pairs are not missing at random, they are where the baseline filters hardest, so this estimate is biased in our favour.",
+    "cells_covered": [
+      "D-END/ND00",
+      "D-END/ND04",
+      "D-END/ND16",
+      "D-END/ND64",
+      "N-END/ND00",
+      "N-END/ND04",
+      "N-END/ND16",
+      "N-END/ND64"
+    ],
+    "cells_expected": 8,
+    "pooled": {
+      "bootstrap_se": 0.0070699530419219645,
+      "ci95": [
+        0.007127600363262699,
+        0.035119847362555086
+      ],
+      "mean": 0.02145468195227966,
+      "n": 340,
+      "replicates": 10000,
+      "sd": 0.13102385932291225
+    },
+    "randomisation_test": {
+      "assignments": 200000,
+      "exact": false,
+      "n": 340,
+      "observed_mean_margin": 0.02145468195227966,
+      "p_two_sided": 0.00207
+    },
+    "sequences_ahead": 255,
+    "sequences_dropped_nonfinite": 44,
+    "sequences_finite_both_sides": 340,
+    "sequences_intersecting": 384,
+    "status": "available",
+    "stratified_by_cell": {
+      "bootstrap_se": 0.007207578145698657,
+      "cells": 8,
+      "ci95": [
+        0.004648445091756951,
+        0.03301715934787467
+      ],
+      "mean": 0.01895859310375056,
+      "replicates": 10000,
+      "sequences_total": 340
+    }
+  },
+  "phase": "25 per-sequence E-MLB intervals",
+  "rep1_restriction": {
+    "cell_mean_drift": {
+      "D-END/ND00": {
+        "difference": -0.0051898690569854855,
+        "rep1_mean": 0.9659438384476134,
+        "rep1_n": 46,
+        "reps123_mean": 0.9711337075045989,
+        "reps123_n": 141
+      },
+      "D-END/ND04": {
+        "difference": 0.0035535666956810763,
+        "rep1_mean": 0.9760036665678564,
+        "rep1_n": 48,
+        "reps123_mean": 0.9724500998721753,
+        "reps123_n": 144
+      },
+      "D-END/ND16": {
+        "difference": -0.0005931854411547199,
+        "rep1_mean": 0.966922987892763,
+        "rep1_n": 48,
+        "reps123_mean": 0.9675161733339177,
+        "reps123_n": 144
+      },
+      "D-END/ND64": {
+        "difference": 0.0002658455948868488,
+        "rep1_mean": 0.9585026561841371,
+        "rep1_n": 48,
+        "reps123_mean": 0.9582368105892503,
+        "reps123_n": 144
+      },
+      "N-END/ND00": {
+        "difference": -0.003503301646970103,
+        "rep1_mean": 1.0797018766356468,
+        "rep1_n": 48,
+        "reps123_mean": 1.0832051782826169,
+        "reps123_n": 144
+      },
+      "N-END/ND04": {
+        "difference": 0.0044995193592354266,
+        "rep1_mean": 1.071955723208206,
+        "rep1_n": 48,
+        "reps123_mean": 1.0674562038489706,
+        "reps123_n": 144
+      },
+      "N-END/ND16": {
+        "difference": -0.0008007032616690335,
+        "rep1_mean": 1.0067093431123042,
+        "rep1_n": 48,
+        "reps123_mean": 1.0075100463739732,
+        "reps123_n": 144
+      },
+      "N-END/ND64": {
+        "difference": -0.002700770729301971,
+        "rep1_mean": 0.9978977962392369,
+        "rep1_n": 48,
+        "reps123_mean": 1.0005985669685389,
+        "reps123_n": 144
+      }
+    },
+    "max_abs_drift": 0.0051898690569854855,
+    "note": "the EDformer reproduction ran --reps 1 only, so only rep 1 can ever be paired. If our rep-1 cell means differ from our reps-1-3 cell means, then Table 2 compares means taken over different sequence sets.",
+    "sequences_rep1": 384
+  },
+  "sequences_ours": 1152,
+  "source_ours": "native3d_ssm/experiments/analytic_contrast/phase24_emlb_per_sequence.json"
+}

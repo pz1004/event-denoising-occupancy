@@ -1,0 +1,304 @@
+{
+  "block_size": 10240,
+  "note": "Spans are measured over complete blocks only. The adopted configuration waits one block before emitting, so p95 is the latency figure a deployment budget should use, not the median.",
+  "per_condition": {
+    "DND21": {
+      "10hz_driving": {
+        "blocks": 607,
+        "max_ms": 17.578,
+        "mean_ms": 9.839401976935749,
+        "median_event_rate_hz": 1048535.7362277288,
+        "p50_ms": 9.766,
+        "p90_ms": 14.335600000000001,
+        "p95_ms": 15.625,
+        "p99_ms": 15.625
+      },
+      "10hz_hotel-bar": {
+        "blocks": 405,
+        "max_ms": 23.437,
+        "mean_ms": 15.276451851851853,
+        "median_event_rate_hz": 655360.0,
+        "p50_ms": 15.625,
+        "p90_ms": 15.625,
+        "p95_ms": 17.109999999999992,
+        "p99_ms": 19.171239999999997
+      },
+      "1hz_driving": {
+        "blocks": 300,
+        "max_ms": 74.364,
+        "mean_ms": 19.893383333333336,
+        "median_event_rate_hz": 705112.7560681701,
+        "p50_ms": 14.5225,
+        "p90_ms": 41.40200000000001,
+        "p95_ms": 48.42480000000001,
+        "p99_ms": 60.67373
+      },
+      "1hz_hotel-bar": {
+        "blocks": 87,
+        "max_ms": 117.187,
+        "mean_ms": 70.53222988505748,
+        "median_event_rate_hz": 148459.58680681407,
+        "p50_ms": 68.975,
+        "p90_ms": 90.47319999999999,
+        "p95_ms": 94.289,
+        "p99_ms": 110.46868
+      },
+      "3hz_driving": {
+        "blocks": 368,
+        "max_ms": 50.782,
+        "mean_ms": 16.220964673913045,
+        "median_event_rate_hz": 739697.3308773071,
+        "p50_ms": 13.8435,
+        "p90_ms": 29.805700000000005,
+        "p95_ms": 33.0203,
+        "p99_ms": 37.109
+      },
+      "3hz_hotel-bar": {
+        "blocks": 157,
+        "max_ms": 51.233,
+        "mean_ms": 39.18211464968153,
+        "median_event_rate_hz": 262140.64459974912,
+        "p50_ms": 39.063,
+        "p90_ms": 44.922,
+        "p95_ms": 45.640599999999985,
+        "p99_ms": 50.46264
+      },
+      "5hz_driving": {
+        "blocks": 437,
+        "max_ms": 33.203,
+        "mean_ms": 13.671187643020597,
+        "median_event_rate_hz": 832926.6308768505,
+        "p50_ms": 12.294,
+        "p90_ms": 23.437,
+        "p95_ms": 23.438,
+        "p99_ms": 27.344
+      },
+      "5hz_hotel-bar": {
+        "blocks": 229,
+        "max_ms": 39.062,
+        "mean_ms": 27.043248908296945,
+        "median_event_rate_hz": 374501.7006180741,
+        "p50_ms": 27.343,
+        "p90_ms": 31.25,
+        "p95_ms": 31.25,
+        "p99_ms": 31.25
+      },
+      "7hz_driving": {
+        "blocks": 504,
+        "max_ms": 23.438,
+        "mean_ms": 11.842361111111112,
+        "median_event_rate_hz": 873831.9750821351,
+        "p50_ms": 11.7185,
+        "p90_ms": 18.702299999999994,
+        "p95_ms": 19.531,
+        "p99_ms": 21.33288999999997
+      },
+      "7hz_hotel-bar": {
+        "blocks": 299,
+        "max_ms": 30.0,
+        "mean_ms": 20.691642140468225,
+        "median_event_rate_hz": 524267.8681138644,
+        "p50_ms": 19.532,
+        "p90_ms": 23.438,
+        "p95_ms": 23.438,
+        "p99_ms": 23.438
+      }
+    },
+    "DVSCLEAN": {
+      "MAH00446_100": {
+        "blocks": 37,
+        "max_ms": 19.381,
+        "mean_ms": 16.026783783783785,
+        "median_event_rate_hz": 648347.4737241991,
+        "p50_ms": 15.794,
+        "p90_ms": 18.774399999999996,
+        "p95_ms": 19.1804,
+        "p99_ms": 19.3684
+      },
+      "MAH00446_50": {
+        "blocks": 28,
+        "max_ms": 25.351,
+        "mean_ms": 21.514,
+        "median_event_rate_hz": 474392.53202381224,
+        "p50_ms": 21.5855,
+        "p90_ms": 24.4695,
+        "p95_ms": 24.756,
+        "p99_ms": 25.21114
+      },
+      "MAH00454_100": {
+        "blocks": 36,
+        "max_ms": 32.0,
+        "mean_ms": 22.70736111111111,
+        "median_event_rate_hz": 466058.3028013563,
+        "p50_ms": 21.9715,
+        "p90_ms": 27.538,
+        "p95_ms": 29.88225,
+        "p99_ms": 31.494249999999997
+      },
+      "MAH00454_50": {
+        "blocks": 27,
+        "max_ms": 42.464,
+        "mean_ms": 30.329,
+        "median_event_rate_hz": 346460.9554743538,
+        "p50_ms": 29.556,
+        "p90_ms": 35.6884,
+        "p95_ms": 39.3022,
+        "p99_ms": 42.0402
+      },
+      "MAH00455_100": {
+        "blocks": 35,
+        "max_ms": 34.123,
+        "mean_ms": 15.298171428571427,
+        "median_event_rate_hz": 708993.976320709,
+        "p50_ms": 14.443,
+        "p90_ms": 19.4414,
+        "p95_ms": 21.42249999999999,
+        "p99_ms": 30.784199999999966
+      },
+      "MAH00455_50": {
+        "blocks": 26,
+        "max_ms": 43.909,
+        "mean_ms": 20.519192307692308,
+        "median_event_rate_hz": 512704.9693328326,
+        "p50_ms": 19.9725,
+        "p90_ms": 25.8445,
+        "p95_ms": 27.26575,
+        "p99_ms": 39.86025
+      },
+      "MAH00456_100": {
+        "blocks": 36,
+        "max_ms": 36.136,
+        "mean_ms": 22.62161111111111,
+        "median_event_rate_hz": 472357.40480199276,
+        "p50_ms": 21.6785,
+        "p90_ms": 32.9015,
+        "p95_ms": 35.28925,
+        "p99_ms": 35.9743
+      },
+      "MAH00456_50": {
+        "blocks": 27,
+        "max_ms": 47.529,
+        "mean_ms": 30.192925925925927,
+        "median_event_rate_hz": 375614.4083339447,
+        "p50_ms": 27.262,
+        "p90_ms": 44.61860000000001,
+        "p95_ms": 46.528400000000005,
+        "p99_ms": 47.37274
+      },
+      "MAH00465_100": {
+        "blocks": 36,
+        "max_ms": 47.56,
+        "mean_ms": 35.06286111111111,
+        "median_event_rate_hz": 294536.4071735723,
+        "p50_ms": 34.7665,
+        "p90_ms": 38.189,
+        "p95_ms": 40.2175,
+        "p99_ms": 45.33504999999999
+      },
+      "MAH00465_50": {
+        "blocks": 27,
+        "max_ms": 62.065,
+        "mean_ms": 47.017740740740734,
+        "median_event_rate_hz": 220994.47513812155,
+        "p50_ms": 46.336,
+        "p90_ms": 53.0938,
+        "p95_ms": 54.905699999999996,
+        "p99_ms": 60.34951999999999
+      }
+    },
+    "ED24": {
+      "0.1": {
+        "blocks": 205,
+        "max_ms": 1379.111,
+        "mean_ms": 112.87459512195122,
+        "median_event_rate_hz": 193656.9775138529,
+        "p50_ms": 52.877,
+        "p90_ms": 189.93619999999999,
+        "p95_ms": 565.6775999999987,
+        "p99_ms": 1103.44428
+      },
+      "0.3": {
+        "blocks": 205,
+        "max_ms": 1379.99,
+        "mean_ms": 112.8766487804878,
+        "median_event_rate_hz": 193770.57866252886,
+        "p50_ms": 52.846,
+        "p90_ms": 189.9504,
+        "p95_ms": 580.6187999999999,
+        "p99_ms": 1102.3295600000001
+      },
+      "0.5": {
+        "blocks": 205,
+        "max_ms": 1380.075,
+        "mean_ms": 112.88182439024389,
+        "median_event_rate_hz": 193862.28961965884,
+        "p50_ms": 52.821,
+        "p90_ms": 189.811,
+        "p95_ms": 580.9377999999999,
+        "p99_ms": 1102.07424
+      },
+      "1.0": {
+        "blocks": 205,
+        "max_ms": 1378.984,
+        "mean_ms": 112.8828780487805,
+        "median_event_rate_hz": 193656.9775138529,
+        "p50_ms": 52.877,
+        "p90_ms": 189.8324,
+        "p95_ms": 580.0649999999997,
+        "p99_ms": 1103.37548
+      },
+      "2.0": {
+        "blocks": 242,
+        "max_ms": 643.344,
+        "mean_ms": 97.00092975206611,
+        "median_event_rate_hz": 202333.55397702014,
+        "p50_ms": 50.6095,
+        "p90_ms": 221.25770000000003,
+        "p95_ms": 423.3762999999996,
+        "p99_ms": 532.74819
+      },
+      "4.0": {
+        "blocks": 541,
+        "max_ms": 74.902,
+        "mean_ms": 43.95858595194085,
+        "median_event_rate_hz": 236883.50143425557,
+        "p50_ms": 43.228,
+        "p90_ms": 69.202,
+        "p95_ms": 71.258,
+        "p99_ms": 73.562
+      }
+    }
+  },
+  "phase": "41 wall-clock temporal span of one event block",
+  "pooled": {
+    "DND21": {
+      "best_condition_p50_ms": 9.766,
+      "blocks": 3393,
+      "conditions": 10,
+      "median_of_condition_p50_ms": 15.07375,
+      "worst_condition_max_ms": 117.187,
+      "worst_condition_p50_ms": 68.975,
+      "worst_condition_p95_ms": 94.289
+    },
+    "DVSCLEAN": {
+      "best_condition_p50_ms": 14.443,
+      "blocks": 315,
+      "conditions": 10,
+      "median_of_condition_p50_ms": 21.825,
+      "worst_condition_max_ms": 62.065,
+      "worst_condition_p50_ms": 46.336,
+      "worst_condition_p95_ms": 54.905699999999996
+    },
+    "ED24": {
+      "best_condition_p50_ms": 43.228,
+      "blocks": 1603,
+      "conditions": 6,
+      "median_of_condition_p50_ms": 52.8335,
+      "worst_condition_max_ms": 1380.075,
+      "worst_condition_p50_ms": 52.877,
+      "worst_condition_p95_ms": 580.9377999999999
+    }
+  },
+  "question": "A block holds a fixed number of events, so the lookahead latency it implies varies with scene activity. What is that distribution?",
+  "wall_seconds": 15.554423423000117
+}

@@ -1,0 +1,380 @@
+{
+  "audit": "mean_block_auc/operand_vs_magnitude must reproduce the manuscript's +0.0095 and its condition-level interval [+0.0071, +0.0121].",
+  "config": {
+    "clusters": "the 2 labelled datasets",
+    "replicates": 10000,
+    "seed": 20260730,
+    "units": "the 20 labelled conditions"
+  },
+  "phase": "29 condition-level versus dataset-clustered intervals",
+  "quantities": {
+    "gate_vs_beta0": {
+      "global_event_auc": {
+        "condition_level": {
+          "bootstrap_se": 0.007349658305722401,
+          "ci95": [
+            -0.02109483953737496,
+            0.007493296264354682
+          ],
+          "mean": -0.006394674182318016,
+          "n": 20,
+          "width": 0.02858813580172964
+        },
+        "conditions_positive": 6,
+        "conditions_total": 20,
+        "dataset_clustered": {
+          "bootstrap_se": 0.004008231598209166,
+          "ci95": [
+            -0.012014847968834341,
+            -0.0007745003958016916
+          ],
+          "cluster_means": [
+            -0.0007745003958016916,
+            -0.012014847968834341
+          ],
+          "clusters": 2,
+          "mean": -0.006394674182318016,
+          "warning": "with 2 clusters the bootstrap support has 3 atoms and the interval spans the two cluster means; read it as a between-dataset variance diagnostic, not as an interval with 95% coverage",
+          "width": 0.01124034757303265
+        },
+        "per_dataset_mean": {
+          "DND21": -0.0007745003958016916,
+          "DVSCLEAN": -0.012014847968834341
+        },
+        "per_dataset_positive": {
+          "DND21": 6,
+          "DVSCLEAN": 0
+        },
+        "se_ratio_clustered_over_condition": 0.5453629857987249,
+        "smallest_gain": -0.09519291424562859,
+        "width_ratio_clustered_over_condition": 0.3931822505317953
+      },
+      "mean_block_auc": {
+        "condition_level": {
+          "bootstrap_se": 0.005368958957015433,
+          "ci95": [
+            0.008638713667354945,
+            0.029487930844154537
+          ],
+          "mean": 0.018385680825511074,
+          "n": 20,
+          "width": 0.020849217176799592
+        },
+        "conditions_positive": 11,
+        "conditions_total": 20,
+        "dataset_clustered": {
+          "bootstrap_se": 0.013032748656581824,
+          "ci95": [
+            -5.9575251968235764e-05,
+            0.036830936902990385
+          ],
+          "cluster_means": [
+            0.036830936902990385,
+            -5.9575251968235764e-05
+          ],
+          "clusters": 2,
+          "mean": 0.018385680825511074,
+          "warning": "with 2 clusters the bootstrap support has 3 atoms and the interval spans the two cluster means; read it as a between-dataset variance diagnostic, not as an interval with 95% coverage",
+          "width": 0.03689051215495862
+        },
+        "per_dataset_mean": {
+          "DND21": 0.036830936902990385,
+          "DVSCLEAN": -5.9575251968235764e-05
+        },
+        "per_dataset_positive": {
+          "DND21": 10,
+          "DVSCLEAN": 1
+        },
+        "se_ratio_clustered_over_condition": 2.4274256445101674,
+        "smallest_gain": -0.0004900506937076665,
+        "width_ratio_clustered_over_condition": 1.769395552942358
+      },
+      "rank_normalised_event_auc": {
+        "condition_level": {
+          "bootstrap_se": 0.004649996421055464,
+          "ci95": [
+            0.007611488442933593,
+            0.025908007577726065
+          ],
+          "mean": 0.016350175907531028,
+          "n": 20,
+          "width": 0.018296519134792473
+        },
+        "conditions_positive": 12,
+        "conditions_total": 20,
+        "dataset_clustered": {
+          "bootstrap_se": 0.011634604366063936,
+          "ci95": [
+            1.1117671836891052e-05,
+            0.032689234143225165
+          ],
+          "cluster_means": [
+            0.032689234143225165,
+            1.1117671836891052e-05
+          ],
+          "clusters": 2,
+          "mean": 0.016350175907531028,
+          "warning": "with 2 clusters the bootstrap support has 3 atoms and the interval spans the two cluster means; read it as a between-dataset variance diagnostic, not as an interval with 95% coverage",
+          "width": 0.032678116471388276
+        },
+        "per_dataset_mean": {
+          "DND21": 0.032689234143225165,
+          "DVSCLEAN": 1.1117671836891052e-05
+        },
+        "per_dataset_positive": {
+          "DND21": 10,
+          "DVSCLEAN": 2
+        },
+        "se_ratio_clustered_over_condition": 2.502067380822434,
+        "smallest_gain": -0.00044675451205700156,
+        "width_ratio_clustered_over_condition": 1.786029147437553
+      }
+    },
+    "gate_vs_beta1": {
+      "global_event_auc": {
+        "condition_level": {
+          "bootstrap_se": 0.007864512912389238,
+          "ci95": [
+            -0.00987939083560674,
+            0.0209518842089287
+          ],
+          "mean": 0.005371464979904389,
+          "n": 20,
+          "width": 0.030831275044535443
+        },
+        "conditions_positive": 8,
+        "conditions_total": 20,
+        "dataset_clustered": {
+          "bootstrap_se": 0.01573346261514837,
+          "ci95": [
+            -0.016943539076771364,
+            0.02768646903658014
+          ],
+          "cluster_means": [
+            -0.016943539076771364,
+            0.02768646903658014
+          ],
+          "clusters": 2,
+          "mean": 0.005371464979904389,
+          "warning": "with 2 clusters the bootstrap support has 3 atoms and the interval spans the two cluster means; read it as a between-dataset variance diagnostic, not as an interval with 95% coverage",
+          "width": 0.04463000811335151
+        },
+        "per_dataset_mean": {
+          "DND21": -0.016943539076771364,
+          "DVSCLEAN": 0.02768646903658014
+        },
+        "per_dataset_positive": {
+          "DND21": 0,
+          "DVSCLEAN": 8
+        },
+        "se_ratio_clustered_over_condition": 2.0005641532310166,
+        "smallest_gain": -0.06592298553236664,
+        "width_ratio_clustered_over_condition": 1.4475563546718047
+      },
+      "mean_block_auc": {
+        "condition_level": {
+          "bootstrap_se": 0.00214697923774818,
+          "ci95": [
+            0.0034386445576818202,
+            0.0117101023372297
+          ],
+          "mean": 0.007541426831458947,
+          "n": 20,
+          "width": 0.00827145777954788
+        },
+        "conditions_positive": 11,
+        "conditions_total": 20,
+        "dataset_clustered": {
+          "bootstrap_se": 0.006060360296475636,
+          "ci95": [
+            -0.0010583290255731792,
+            0.016141182688491074
+          ],
+          "cluster_means": [
+            -0.0010583290255731792,
+            0.016141182688491074
+          ],
+          "clusters": 2,
+          "mean": 0.007541426831458947,
+          "warning": "with 2 clusters the bootstrap support has 3 atoms and the interval spans the two cluster means; read it as a between-dataset variance diagnostic, not as an interval with 95% coverage",
+          "width": 0.017199511714064253
+        },
+        "per_dataset_mean": {
+          "DND21": -0.0010583290255731792,
+          "DVSCLEAN": 0.016141182688491074
+        },
+        "per_dataset_positive": {
+          "DND21": 1,
+          "DVSCLEAN": 10
+        },
+        "se_ratio_clustered_over_condition": 2.822738194167138,
+        "smallest_gain": -0.004822453577148611,
+        "width_ratio_clustered_over_condition": 2.0793809474059097
+      },
+      "rank_normalised_event_auc": {
+        "condition_level": {
+          "bootstrap_se": 0.0023217400138152993,
+          "ci95": [
+            0.004503645754699998,
+            0.01342156131205156
+          ],
+          "mean": 0.008804251345204411,
+          "n": 20,
+          "width": 0.008917915557351563
+        },
+        "conditions_positive": 12,
+        "conditions_total": 20,
+        "dataset_clustered": {
+          "bootstrap_se": 0.006435109902783787,
+          "ci95": [
+            -0.00031418636918930656,
+            0.01792268905959813
+          ],
+          "cluster_means": [
+            -0.00031418636918930656,
+            0.01792268905959813
+          ],
+          "clusters": 2,
+          "mean": 0.008804251345204411,
+          "warning": "with 2 clusters the bootstrap support has 3 atoms and the interval spans the two cluster means; read it as a between-dataset variance diagnostic, not as an interval with 95% coverage",
+          "width": 0.018236875428787436
+        },
+        "per_dataset_mean": {
+          "DND21": -0.00031418636918930656,
+          "DVSCLEAN": 0.01792268905959813
+        },
+        "per_dataset_positive": {
+          "DND21": 2,
+          "DVSCLEAN": 10
+        },
+        "se_ratio_clustered_over_condition": 2.771675495314833,
+        "smallest_gain": -0.0024952899258842143,
+        "width_ratio_clustered_over_condition": 2.0449706337209825
+      }
+    },
+    "operand_vs_magnitude": {
+      "global_event_auc": {
+        "condition_level": {
+          "bootstrap_se": 0.004759445560744205,
+          "ci95": [
+            0.007091148743690724,
+            0.02543929743761828
+          ],
+          "mean": 0.014993548488895553,
+          "n": 20,
+          "width": 0.018348148693927556
+        },
+        "conditions_positive": 20,
+        "conditions_total": 20,
+        "dataset_clustered": {
+          "bootstrap_se": 0.006265011999192432,
+          "ci95": [
+            0.006158624178741789,
+            0.023828472799049316
+          ],
+          "cluster_means": [
+            0.023828472799049316,
+            0.006158624178741789
+          ],
+          "clusters": 2,
+          "mean": 0.014993548488895553,
+          "warning": "with 2 clusters the bootstrap support has 3 atoms and the interval spans the two cluster means; read it as a between-dataset variance diagnostic, not as an interval with 95% coverage",
+          "width": 0.017669848620307526
+        },
+        "per_dataset_mean": {
+          "DND21": 0.023828472799049316,
+          "DVSCLEAN": 0.006158624178741789
+        },
+        "per_dataset_positive": {
+          "DND21": 10,
+          "DVSCLEAN": 10
+        },
+        "se_ratio_clustered_over_condition": 1.3163323162819853,
+        "smallest_gain": 0.001894615505312669,
+        "width_ratio_clustered_over_condition": 0.9630316886496283
+      },
+      "mean_block_auc": {
+        "condition_level": {
+          "bootstrap_se": 0.0012722568718236454,
+          "ci95": [
+            0.0071328950481740405,
+            0.012109315405786334
+          ],
+          "mean": 0.009527925425974904,
+          "n": 20,
+          "width": 0.004976420357612294
+        },
+        "conditions_positive": 20,
+        "conditions_total": 20,
+        "dataset_clustered": {
+          "bootstrap_se": 4.607756715291407e-05,
+          "ci95": [
+            0.009462514352192763,
+            0.009593336499757044
+          ],
+          "cluster_means": [
+            0.009462514352192763,
+            0.009593336499757044
+          ],
+          "clusters": 2,
+          "mean": 0.009527925425974904,
+          "warning": "with 2 clusters the bootstrap support has 3 atoms and the interval spans the two cluster means; read it as a between-dataset variance diagnostic, not as an interval with 95% coverage",
+          "width": 0.00013082214756428116
+        },
+        "per_dataset_mean": {
+          "DND21": 0.009462514352192763,
+          "DVSCLEAN": 0.009593336499757044
+        },
+        "per_dataset_positive": {
+          "DND21": 10,
+          "DVSCLEAN": 10
+        },
+        "se_ratio_clustered_over_condition": 0.0362171886616472,
+        "smallest_gain": 0.002063351350428122,
+        "width_ratio_clustered_over_condition": 0.02628840374470499
+      },
+      "rank_normalised_event_auc": {
+        "condition_level": {
+          "bootstrap_se": 0.0011583824656202768,
+          "ci95": [
+            0.006200735455738475,
+            0.01073474670349943
+          ],
+          "mean": 0.00835039381407644,
+          "n": 20,
+          "width": 0.004534011247760955
+        },
+        "conditions_positive": 20,
+        "conditions_total": 20,
+        "dataset_clustered": {
+          "bootstrap_se": 0.0010394306289804077,
+          "ci95": [
+            0.006881949682934018,
+            0.009818837945218862
+          ],
+          "cluster_means": [
+            0.006881949682934018,
+            0.009818837945218862
+          ],
+          "clusters": 2,
+          "mean": 0.00835039381407644,
+          "warning": "with 2 clusters the bootstrap support has 3 atoms and the interval spans the two cluster means; read it as a between-dataset variance diagnostic, not as an interval with 95% coverage",
+          "width": 0.0029368882622848435
+        },
+        "per_dataset_mean": {
+          "DND21": 0.006881949682934018,
+          "DVSCLEAN": 0.009818837945218862
+        },
+        "per_dataset_positive": {
+          "DND21": 10,
+          "DVSCLEAN": 10
+        },
+        "se_ratio_clustered_over_condition": 0.8973121225758763,
+        "smallest_gain": 0.0019754472037113446,
+        "width_ratio_clustered_over_condition": 0.6477461351105329
+      }
+    }
+  },
+  "question": "Section 6.1 claims every labelled interval inherits the effective-sample-size-2 ceiling. Clustering widens an interval only through between-cluster variation. Does the operand gain have any?",
+  "source": "native3d_ssm/experiments/analytic_contrast/phase23_ablation_statistic.json"
+}

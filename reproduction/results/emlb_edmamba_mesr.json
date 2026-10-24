@@ -1,0 +1,63 @@
+{
+  "environment": {
+    "gpu": "NVIDIA GeForce GTX 1660 SUPER",
+    "python": "3.8.20",
+    "torch": "1.12.1",
+    "torch_cuda": "11.6"
+  },
+  "model": {
+    "checkpoint": "EDmamba/exp/ED24/EDmamba/model/model_best.pth",
+    "checkpoint_best_metric": 0.8879312271384658,
+    "checkpoint_epoch": 13,
+    "trainable_parameters": 88978
+  },
+  "protocol": {
+    "aggregation": "mean ESR over 30,000-event slices, then mean over sequences",
+    "block_size": 10240,
+    "first_grid_size": 0.05,
+    "max_events_per_sequence": 300000,
+    "reps": [
+      1,
+      2,
+      3
+    ],
+    "retention_argmax": "keep iff P(noise) < 0.5 (model decides, not tuned)",
+    "retention_sweep": [
+      0.3,
+      0.5,
+      0.7,
+      0.9
+    ],
+    "seed": 1024,
+    "sensor": [
+      346,
+      260
+    ],
+    "slice": 30000,
+    "test_grid_size": 0.1
+  },
+  "results": {
+    "D-END": {
+      "ND00": {
+        "edmamba_mesr": 0.8468899021281455,
+        "edmamba_mesr_by_retention": {
+          "0.3": 0.9526800383831534,
+          "0.5": 0.9261552057173384,
+          "0.7": 0.8947753081163449,
+          "0.9": 0.8591878219486334
+        },
+        "inference_seconds": 639.442891468294,
+        "mean_retention": 0.9745903607013788,
+        "paper_edmamba": 0.976,
+        "paper_raw": 0.821,
+        "raw_mesr": 0.8401312507189572,
+        "sequences": 144,
+        "std_retention": 0.0829580548562255
+      }
+    }
+  },
+  "timestamp_repairs": 0,
+  "wall_seconds": 736.2594413950574,
+  "what": "EDmamba official checkpoint applied to E-MLB, scored with bit-exact ESR",
+  "why_not_released_code": "compute_average_esr is commented out (test.py:481) and defined nowhere; ESRinference is commented out (default_runtime.py:38); ESR_dataset sets labels=polarity and hard-filters to 13 scenes at ND00 only. Table 2 is not regenerable by running the repo as shipped."
+}

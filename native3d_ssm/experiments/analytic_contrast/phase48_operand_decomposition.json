@@ -1,0 +1,342 @@
+{
+  "phase": "48 matched operand decomposition: occupancy versus fusion convention",
+  "purpose": "the headline support-minus-magnitude gain moves both the operand type and the pass-fusion point at once; this separates them. The temporal window arm is not run because phase 47 proved S carries no age information, so that difference is total and belongs to the operand",
+  "arms": {
+    "support": "sum_ring 1[a_fwd + a_rev > 0], then log1p; in [0, 24]",
+    "support_split": "sum_ring 1[a_fwd>0] + sum_ring 1[a_rev>0], then log1p; in [0, 48]",
+    "magnitude_fused": "log(1 + sum_ring(a_fwd + a_rev))",
+    "magnitude": "log(1 + sum_ring a_fwd) + log(1 + sum_ring a_rev)"
+  },
+  "metric": "block-mean AUC over 10,240-event blocks",
+  "pooling": "0.5 * (DND21 mean + DVSCLEAN mean), each a mean over 10 conditions",
+  "unit_of_analysis": "20 development conditions paired within condition; they nest in 2 datasets, so the 20-condition interval understates between-condition correlation and the dataset means are reported alongside it",
+  "score_radius": 2,
+  "gate_radius": 1,
+  "conditions": {
+    "DND21 1hz hotel-bar": {
+      "support": 0.9995857258579701,
+      "support_split": 0.9996102823442113,
+      "magnitude_fused": 0.9975039006669055,
+      "magnitude": 0.9975223736853776,
+      "blocks": 87,
+      "support_max": 24.0,
+      "support_split_max": 48.0
+    },
+    "DND21 1hz driving": {
+      "support": 0.9701765624806251,
+      "support_split": 0.9696632964528984,
+      "magnitude_fused": 0.9586583936233012,
+      "magnitude": 0.9586961759907159,
+      "blocks": 300,
+      "support_max": 24.0,
+      "support_split_max": 48.0
+    },
+    "DND21 3hz hotel-bar": {
+      "support": 0.9989527216094188,
+      "support_split": 0.9990120662142788,
+      "magnitude_fused": 0.9954779066818592,
+      "magnitude": 0.9955022478579719,
+      "blocks": 157,
+      "support_max": 24.0,
+      "support_split_max": 43.0
+    },
+    "DND21 3hz driving": {
+      "support": 0.985139362345199,
+      "support_split": 0.9848825031915192,
+      "magnitude_fused": 0.9745347446644218,
+      "magnitude": 0.9744905377504014,
+      "blocks": 368,
+      "support_max": 24.0,
+      "support_split_max": 48.0
+    },
+    "DND21 5hz hotel-bar": {
+      "support": 0.9984133791222269,
+      "support_split": 0.9985205189882694,
+      "magnitude_fused": 0.9932910233754013,
+      "magnitude": 0.9933486957618064,
+      "blocks": 229,
+      "support_max": 24.0,
+      "support_split_max": 41.0
+    },
+    "DND21 5hz driving": {
+      "support": 0.9922969407599614,
+      "support_split": 0.9922336516807481,
+      "magnitude_fused": 0.9855596504695328,
+      "magnitude": 0.9854698044355323,
+      "blocks": 437,
+      "support_max": 24.0,
+      "support_split_max": 48.0
+    },
+    "DND21 7hz hotel-bar": {
+      "support": 0.9957014870924559,
+      "support_split": 0.9958905107233491,
+      "magnitude_fused": 0.9780439176905078,
+      "magnitude": 0.978256200360312,
+      "blocks": 299,
+      "support_max": 24.0,
+      "support_split_max": 42.0
+    },
+    "DND21 7hz driving": {
+      "support": 0.990902130454507,
+      "support_split": 0.9909359424134192,
+      "magnitude_fused": 0.982655619788248,
+      "magnitude": 0.9827092100844345,
+      "blocks": 504,
+      "support_max": 24.0,
+      "support_split_max": 48.0
+    },
+    "DND21 10hz hotel-bar": {
+      "support": 0.9942499143424773,
+      "support_split": 0.9945148599353972,
+      "magnitude_fused": 0.9732411858656586,
+      "magnitude": 0.9735221071397477,
+      "blocks": 405,
+      "support_max": 24.0,
+      "support_split_max": 38.0
+    },
+    "DND21 10hz driving": {
+      "support": 0.9914300633937203,
+      "support_split": 0.9915050251777665,
+      "magnitude_fused": 0.9825866807527072,
+      "magnitude": 0.9827045824123762,
+      "blocks": 607,
+      "support_max": 24.0,
+      "support_split_max": 48.0
+    },
+    "DVSCLEAN MAH00446_50": {
+      "support": 0.9936715383811066,
+      "support_split": 0.9936709315370321,
+      "magnitude_fused": 0.9902723366761939,
+      "magnitude": 0.9902832496234479,
+      "blocks": 28,
+      "support_max": 23.0,
+      "support_split_max": 29.0
+    },
+    "DVSCLEAN MAH00446_100": {
+      "support": 0.989431438773313,
+      "support_split": 0.98943046848994,
+      "magnitude_fused": 0.982805631329418,
+      "magnitude": 0.9828277184687461,
+      "blocks": 37,
+      "support_max": 23.0,
+      "support_split_max": 26.0
+    },
+    "DVSCLEAN MAH00456_50": {
+      "support": 0.9697925632063554,
+      "support_split": 0.9697932135360636,
+      "magnitude_fused": 0.9642010162279111,
+      "magnitude": 0.9642027983254132,
+      "blocks": 27,
+      "support_max": 21.0,
+      "support_split_max": 29.0
+    },
+    "DVSCLEAN MAH00456_100": {
+      "support": 0.9494475171997662,
+      "support_split": 0.9494455207265374,
+      "magnitude_fused": 0.9360949272089445,
+      "magnitude": 0.936098968753988,
+      "blocks": 36,
+      "support_max": 18.0,
+      "support_split_max": 24.0
+    },
+    "DVSCLEAN MAH00454_50": {
+      "support": 0.9757891153693583,
+      "support_split": 0.9757874850040509,
+      "magnitude_fused": 0.9556661264228692,
+      "magnitude": 0.9556770316520479,
+      "blocks": 27,
+      "support_max": 22.0,
+      "support_split_max": 28.0
+    },
+    "DVSCLEAN MAH00454_100": {
+      "support": 0.9595611487466235,
+      "support_split": 0.9595596445107692,
+      "magnitude_fused": 0.9461129644472364,
+      "magnitude": 0.9461237145906201,
+      "blocks": 36,
+      "support_max": 21.0,
+      "support_split_max": 25.0
+    },
+    "DVSCLEAN MAH00455_50": {
+      "support": 0.9576587065464781,
+      "support_split": 0.9576590079332841,
+      "magnitude_fused": 0.951688206597876,
+      "magnitude": 0.9516925717272482,
+      "blocks": 26,
+      "support_max": 23.0,
+      "support_split_max": 38.0
+    },
+    "DVSCLEAN MAH00455_100": {
+      "support": 0.9329624088890542,
+      "support_split": 0.9329532445194962,
+      "magnitude_fused": 0.914806952774323,
+      "magnitude": 0.914819314157624,
+      "blocks": 35,
+      "support_max": 19.0,
+      "support_split_max": 29.0
+    },
+    "DVSCLEAN MAH00465_50": {
+      "support": 0.9913107653565442,
+      "support_split": 0.991310200494631,
+      "magnitude_fused": 0.9880580120542961,
+      "magnitude": 0.9880596465578527,
+      "blocks": 27,
+      "support_max": 24.0,
+      "support_split_max": 36.0
+    },
+    "DVSCLEAN MAH00465_100": {
+      "support": 0.9861995549777443,
+      "support_split": 0.9861979286195695,
+      "magnitude_fused": 0.9801045712395717,
+      "magnitude": 0.9801077687200491,
+      "blocks": 36,
+      "support_max": 24.0,
+      "support_split_max": 33.0
+    }
+  },
+  "dataset_means": {
+    "DND21": {
+      "support": 0.9916848287458562,
+      "support_split": 0.9916768657121857,
+      "magnitude_fused": 0.9821553023578543,
+      "magnitude": 0.9822221935478674
+    },
+    "DVSCLEAN": {
+      "support": 0.9705824757446344,
+      "support_split": 0.9705807645371374,
+      "magnitude_fused": 0.960981074497864,
+      "magnitude": 0.9609892782577039
+    }
+  },
+  "pooled": {
+    "support": 0.9811336522452453,
+    "support_split": 0.9811288151246615,
+    "magnitude_fused": 0.9715681884278591,
+    "magnitude": 0.9716057359027856
+  },
+  "comparisons": {
+    "support_minus_magnitude": {
+      "n": 20,
+      "mean_delta": 0.009527916342459631,
+      "sd": 0.005881552771720705,
+      "ci95_mean_delta": [
+        0.00695021218753895,
+        0.012105620497380312
+      ],
+      "wilcoxon_p": 1.9073486328125e-06,
+      "wins": 20,
+      "losses": 0,
+      "ties": 0,
+      "cohen_d_paired": 1.619966140280358,
+      "pooled_delta": 0.009527916342459641,
+      "per_dataset_delta": {
+        "DND21": 0.009462635197988734,
+        "DVSCLEAN": 0.00959319748693055
+      }
+    },
+    "support_minus_magnitude_fused": {
+      "n": 20,
+      "mean_delta": 0.009565463817386127,
+      "sd": 0.005922156803386179,
+      "ci95_mean_delta": [
+        0.006969964160972394,
+        0.01216096347379986
+      ],
+      "wilcoxon_p": 1.9073486328125e-06,
+      "wins": 20,
+      "losses": 0,
+      "ties": 0,
+      "cohen_d_paired": 1.61519934965531,
+      "pooled_delta": 0.00956546381738621,
+      "per_dataset_delta": {
+        "DND21": 0.009529526388001863,
+        "DVSCLEAN": 0.009601401246770447
+      }
+    },
+    "support_split_minus_magnitude": {
+      "n": 20,
+      "mean_delta": 0.009523079221875914,
+      "sd": 0.005902547874592598,
+      "ci95_mean_delta": [
+        0.006936173557420867,
+        0.01210998488633096
+      ],
+      "wilcoxon_p": 1.9073486328125e-06,
+      "wins": 20,
+      "losses": 0,
+      "ties": 0,
+      "cohen_d_paired": 1.6133844950022043,
+      "pooled_delta": 0.009523079221875896,
+      "per_dataset_delta": {
+        "DND21": 0.009454672164318279,
+        "DVSCLEAN": 0.009591486279433514
+      }
+    },
+    "magnitude_fused_minus_magnitude": {
+      "n": 20,
+      "mean_delta": -3.754747492649701e-05,
+      "sd": 8.249936618140975e-05,
+      "ci95_mean_delta": [
+        -7.370441633942378e-05,
+        -1.3905335135702416e-06
+      ],
+      "wilcoxon_p": 0.0042209625244140625,
+      "wins": 2,
+      "losses": 18,
+      "ties": 0,
+      "cohen_d_paired": -0.45512440476128035,
+      "pooled_delta": -3.754747492656918e-05,
+      "per_dataset_delta": {
+        "DND21": -6.689119001312971e-05,
+        "DVSCLEAN": -8.203759839897629e-06
+      }
+    },
+    "support_split_minus_support": {
+      "n": 20,
+      "mean_delta": -4.837120583717214e-06,
+      "sd": 0.00015582484174167803,
+      "ci95_mean_delta": [
+        -7.313036857235482e-05,
+        6.345612740492039e-05
+      ],
+      "wilcoxon_p": 0.9272785186767578,
+      "wins": 9,
+      "losses": 11,
+      "ties": 0,
+      "cohen_d_paired": -0.031042037518870413,
+      "pooled_delta": -4.837120583744969e-06,
+      "per_dataset_delta": {
+        "DND21": -7.963033670455033e-06,
+        "DVSCLEAN": -1.7112074970349056e-06
+      }
+    }
+  },
+  "attribution": {
+    "headline_pooled_delta": 0.009527916342459641,
+    "operand_at_matched_fusion": 0.00956546381738621,
+    "fusion_convention_alone": -3.754747492656918e-05,
+    "operand_share_of_headline": 1.0039407855376778,
+    "fusion_share_of_headline": -0.003940785537677828,
+    "additivity_residual": 0.0
+  },
+  "fusion_operand_interaction": {
+    "n": 20,
+    "mean_delta": -4.2384595510214226e-05,
+    "sd": 0.00013016373927320307,
+    "ci95_mean_delta": [
+      -9.943136947742068e-05,
+      1.4662178456992229e-05
+    ],
+    "wilcoxon_p": 0.06372261047363281,
+    "wins": 4,
+    "losses": 16,
+    "ties": 0,
+    "cohen_d_paired": -0.32562521441745323,
+    "reading": "operand effect under magnitude's fusion rule minus the same under support's; zero means the operand effect does not depend on where the two passes are combined"
+  },
+  "anchor_drift_vs_phase14": {
+    "DND21": 0.0,
+    "DVSCLEAN": 0.0
+  },
+  "wall_seconds": 92.0147930799867
+}

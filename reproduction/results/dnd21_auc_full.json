@@ -1,0 +1,184 @@
+{
+  "environment": {
+    "gpu": "NVIDIA GeForce GTX 1660 SUPER",
+    "python": "3.8.20",
+    "torch": "1.12.1",
+    "torch_cuda": "11.6"
+  },
+  "model": {
+    "checkpoint": "EDmamba/exp/ED24/EDmamba/model/model_best.pth",
+    "checkpoint_best_metric": 0.8879312271384658,
+    "checkpoint_epoch": 13,
+    "trainable_parameters": 88978
+  },
+  "protocol": {
+    "aggregation": "unweighted mean of per-block ROC AUC (released tester)",
+    "block_size": 10240,
+    "first_grid_size": 0.05,
+    "max_blocks_per_stream": null,
+    "seed": 1024,
+    "test_grid_size": 0.1
+  },
+  "results": {
+    "10hz": {
+      "driving": {
+        "blocks": 607,
+        "delta_from_paper": 0.0014656277622867586,
+        "event_global_auc": 0.9708957145788606,
+        "fragments": 1200,
+        "inference_seconds": 48.320984119491186,
+        "mean_block_auc": 0.9650656277622868,
+        "original_events": 6215680,
+        "paper_auc": 0.9636,
+        "peak_cuda_memory_mib": 21.6630859375,
+        "sampled_events": 6198111,
+        "source": "ECCV2024_datasets/AUC_test/10hz/driving_mix_result.txt",
+        "std_block_auc": 0.01508932670467877,
+        "wall_seconds": 55.007393151987344
+      },
+      "hotel-bar": {
+        "blocks": 405,
+        "delta_from_paper": -0.0023855741050745616,
+        "event_global_auc": 0.9902658257543548,
+        "fragments": 782,
+        "inference_seconds": 31.35982987022726,
+        "mean_block_auc": 0.9892144258949255,
+        "original_events": 4147200,
+        "paper_auc": 0.9916,
+        "peak_cuda_memory_mib": 21.51318359375,
+        "sampled_events": 4132096,
+        "source": "ECCV2024_datasets/AUC_test/10hz/mix_result.txt",
+        "std_block_auc": 0.01577135556392429,
+        "wall_seconds": 35.79668370401487
+      }
+    },
+    "1hz": {
+      "driving": {
+        "blocks": 300,
+        "delta_from_paper": 0.0002544755223188311,
+        "event_global_auc": 0.9742882427387715,
+        "fragments": 577,
+        "inference_seconds": 24.291464794194326,
+        "mean_block_auc": 0.9696544755223189,
+        "original_events": 3072000,
+        "paper_auc": 0.9694,
+        "peak_cuda_memory_mib": 19.14306640625,
+        "sampled_events": 3070668,
+        "source": "ECCV2024_datasets/AUC_test/1hz/driving_mix_result.txt",
+        "std_block_auc": 0.0075744268060499295,
+        "wall_seconds": 27.56799263501307
+      },
+      "hotel-bar": {
+        "blocks": 87,
+        "delta_from_paper": 0.00011490456986296138,
+        "event_global_auc": 0.9965221132723768,
+        "fragments": 174,
+        "inference_seconds": 8.895644062780775,
+        "mean_block_auc": 0.9964149045698629,
+        "original_events": 890880,
+        "paper_auc": 0.9963,
+        "peak_cuda_memory_mib": 18.6201171875,
+        "sampled_events": 878427,
+        "source": "ECCV2024_datasets/AUC_test/1hz/mix_result.txt",
+        "std_block_auc": 0.0010020970902191676,
+        "wall_seconds": 9.866841310053132
+      }
+    },
+    "3hz": {
+      "driving": {
+        "blocks": 368,
+        "delta_from_paper": 0.0001360632860430977,
+        "event_global_auc": 0.9757047091118941,
+        "fragments": 728,
+        "inference_seconds": 30.85704810952302,
+        "mean_block_auc": 0.9711360632860431,
+        "original_events": 3768320,
+        "paper_auc": 0.971,
+        "peak_cuda_memory_mib": 21.21337890625,
+        "sampled_events": 3765231,
+        "source": "ECCV2024_datasets/AUC_test/3hz/driving_mix_result.txt",
+        "std_block_auc": 0.007887316578211389,
+        "wall_seconds": 34.91298130899668
+      },
+      "hotel-bar": {
+        "blocks": 157,
+        "delta_from_paper": 0.00017835263423682246,
+        "event_global_auc": 0.9953824254613346,
+        "fragments": 314,
+        "inference_seconds": 13.398400075559039,
+        "mean_block_auc": 0.9950783526342368,
+        "original_events": 1607680,
+        "paper_auc": 0.9949,
+        "peak_cuda_memory_mib": 20.9228515625,
+        "sampled_events": 1605486,
+        "source": "ECCV2024_datasets/AUC_test/3hz/mix_result.txt",
+        "std_block_auc": 0.0016438864427133248,
+        "wall_seconds": 15.180615919991396
+      }
+    },
+    "5hz": {
+      "driving": {
+        "blocks": 437,
+        "delta_from_paper": 0.00011001721319647828,
+        "event_global_auc": 0.9770444997560246,
+        "fragments": 867,
+        "inference_seconds": 36.60826183378231,
+        "mean_block_auc": 0.9735100172131965,
+        "original_events": 4474880,
+        "paper_auc": 0.9734,
+        "peak_cuda_memory_mib": 21.50927734375,
+        "sampled_events": 4467583,
+        "source": "ECCV2024_datasets/AUC_test/5hz/driving_mix_result.txt",
+        "std_block_auc": 0.007540913187511793,
+        "wall_seconds": 41.34215201501502
+      },
+      "hotel-bar": {
+        "blocks": 229,
+        "delta_from_paper": -1.9604750622903566e-05,
+        "event_global_auc": 0.9958254513997364,
+        "fragments": 458,
+        "inference_seconds": 19.3726863230695,
+        "mean_block_auc": 0.9954803952493771,
+        "original_events": 2344960,
+        "paper_auc": 0.9955,
+        "peak_cuda_memory_mib": 21.34130859375,
+        "sampled_events": 2338312,
+        "source": "ECCV2024_datasets/AUC_test/5hz/mix_result.txt",
+        "std_block_auc": 0.0031083052143426886,
+        "wall_seconds": 21.890275998041034
+      }
+    },
+    "7hz": {
+      "driving": {
+        "blocks": 504,
+        "delta_from_paper": 8.891634316521291e-05,
+        "event_global_auc": 0.9738887671755009,
+        "fragments": 1005,
+        "inference_seconds": 42.360944892221596,
+        "mean_block_auc": 0.9689889163431652,
+        "original_events": 5160960,
+        "paper_auc": 0.9689,
+        "peak_cuda_memory_mib": 21.5380859375,
+        "sampled_events": 5151829,
+        "source": "ECCV2024_datasets/AUC_test/7hz/driving_mix_result.txt",
+        "std_block_auc": 0.010685198759992328,
+        "wall_seconds": 47.87766315299086
+      },
+      "hotel-bar": {
+        "blocks": 299,
+        "delta_from_paper": 0.0001569235158357385,
+        "event_global_auc": 0.994560429215707,
+        "fragments": 589,
+        "inference_seconds": 25.276191175333224,
+        "mean_block_auc": 0.9940569235158357,
+        "original_events": 3061760,
+        "paper_auc": 0.9939,
+        "peak_cuda_memory_mib": 21.23388671875,
+        "sampled_events": 3051533,
+        "source": "ECCV2024_datasets/AUC_test/7hz/mix_result.txt",
+        "std_block_auc": 0.005455608548696828,
+        "wall_seconds": 28.680129208951257
+      }
+    }
+  }
+}

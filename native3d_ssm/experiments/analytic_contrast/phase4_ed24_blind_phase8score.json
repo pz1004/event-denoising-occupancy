@@ -1,0 +1,110 @@
+{
+  "blind_test": {
+    "DND21": {
+      "beta0_ring_only": 0.9109090926089726,
+      "beta1_contrast": 0.9850716662517588,
+      "gate_theta0_theory": 0.9843510990072385,
+      "gate_theta_ED24_upper_edge": 0.9826623385895179
+    },
+    "DVSCLEAN": {
+      "beta0_ring_only": 0.9320563507478882,
+      "beta1_contrast": 0.5198146640970209,
+      "gate_theta0_theory": 0.928596802255114,
+      "gate_theta_ED24_upper_edge": 0.9316683062568705
+    },
+    "overall_theta0": 0.9564739506311762
+  },
+  "blind_test_new_score": {
+    "DND21": {
+      "beta0_ring_only": 0.8639149906781036,
+      "beta1_contrast": 0.9834481937347253,
+      "gate_theta0_theory": 0.980560830064689,
+      "gate_theta_ED24_upper_edge": 0.9778672813487355
+    },
+    "DVSCLEAN": {
+      "beta0_ring_only": 0.9429850735699196,
+      "beta1_contrast": 0.530530385346601,
+      "gate_theta0_theory": 0.9394785071033057,
+      "gate_theta_ED24_upper_edge": 0.9425869314271068
+    },
+    "overall_theta0": 0.9600196685839973
+  },
+  "ed24": {
+    "corr_mean_by_level": {
+      "0.1": 0.09775137847922045,
+      "0.3": 0.09812902431709328,
+      "0.5": 0.09767862377356624,
+      "1.0": 0.09782507706377953,
+      "2.0": 0.09971148113391945,
+      "4.0": 0.047930572689827235
+    },
+    "corr_predicts_winner": {
+      "P(beta1_better | corr<0)": 0.0,
+      "block_sign_agreement": 0.9725609756097561,
+      "frac_blocks_corr_negative": 0.007621951219512195
+    },
+    "corr_predicts_winner_new": {
+      "P(beta1_better | corr<0)": 0.0,
+      "block_sign_agreement": 0.975609756097561,
+      "frac_blocks_corr_negative": 0.007621951219512195
+    },
+    "endpoints": {
+      "beta0_ring_only": 0.9425808292682462,
+      "beta1_contrast": 0.6342984415430394
+    },
+    "endpoints_new": {
+      "beta0_ring_only": 0.9364714820178913,
+      "beta1_contrast": 0.637237038260588
+    },
+    "levels": [
+      "0.1",
+      "0.3",
+      "0.5",
+      "1.0",
+      "2.0",
+      "4.0"
+    ],
+    "scenes": [
+      "Bicycle_01",
+      "Car_04",
+      "Car_10",
+      "Drop_03",
+      "Headset_01",
+      "House_05",
+      "Knife_03",
+      "Monitor_01",
+      "Pedestrain_03",
+      "Pedestrain_09",
+      "PingPong_02",
+      "Roll_04",
+      "Sign_02",
+      "Stairs_01",
+      "Throw_05",
+      "Tree_03"
+    ],
+    "theta_fit": {
+      "best_gated_auc": 0.9425808292682462,
+      "plateau_width": 0.37,
+      "theta_lower_edge": -0.4,
+      "theta_upper_edge": -0.03
+    },
+    "theta_fit_new": {
+      "best_gated_auc": 0.9364714820178913,
+      "plateau_width": 0.37,
+      "theta_lower_edge": -0.4,
+      "theta_upper_edge": -0.03
+    },
+    "theta_used": 0.0
+  },
+  "gate_key": "corr(G, R_same) for BOTH scores -- frozen by decision 2.4",
+  "new_score": "s = beta*G - (R_same + R_opposite)",
+  "old_score": "s = beta*G - R_same",
+  "phase": "4 (re-validated on the Phase 8 score)",
+  "theta_note": "theta = 0 is the theory value and is what is applied blind. The ED24 fit is reported as a bound only; nothing is adopted from it, so ED24 remains unburned as a source of fitted parameters.",
+  "verdict": {
+    "gain_new_minus_old": 0.0035457179528211036,
+    "new_overall_theta0": 0.9600196685839973,
+    "old_overall_theta0": 0.9564739506311762
+  },
+  "wall_seconds": 53.31879672897048
+}

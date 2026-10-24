@@ -1,0 +1,7 @@
+# Python 3.10, torch==2.2.1+cu118 installed separately.
+numpy==1.26.4
+scipy==1.15.3
+dv-processing==1.7.9
+setuptools
+wheel
+# SparseConvNet 0.2 and PyTorch3D 0.7.5 require source builds; see README.md.

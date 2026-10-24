@@ -1,0 +1,264 @@
+{
+  "baseline_edformer": {
+    "events_per_second_our_reproduction": 41000,
+    "events_per_second_published": 40091.40841117749,
+    "gflops_100k_published": 8.41,
+    "gflops_note": "lower bound; same counter under-reports params by 11.7x",
+    "inf_time_s_100k_published": 2.4943,
+    "params_checkpoint_total_incl_buffers": 584019,
+    "params_published_table3": 49800,
+    "params_verified_from_checkpoint": 583973
+  },
+  "comparison_table3_style": {
+    "basis": "100K events, 346x260 sensor; ours = full pipeline (extract + score + retention), radius 1",
+    "native3d_vs_edformer": {
+      "gflops_ratio": 782.6644895288355,
+      "gflops_ratio_note": "EDformer GFLOPs is a lower bound, so this ratio is conservative",
+      "inf_time_caveat": "NOT like-for-like hardware: ours is single-thread numba CPU on GTX 1660 SUPER host, theirs is the EDmamba paper's setup. The one anchor is that our independent EDformer reproduction (~41 k ev/s) matches their reported 40.1 k ev/s within 2%, so the hosts are comparable for EDformer at least.",
+      "inf_time_ratio": 76.06138106801897,
+      "params_ratio": "infinite (0 trained parameters)"
+    },
+    "rows": {
+      "AEDNet": {
+        "gflops_100k": 4400.46,
+        "inf_time_s_100k": 43.425,
+        "params": 45870000,
+        "source": "EDmamba paper Table 3"
+      },
+      "EDformer": {
+        "gflops_100k": 8.41,
+        "inf_time_s_100k": 2.4943,
+        "params": 49800,
+        "params_note": "published 49.80K excludes the two SparseConvNet weights (90.5% of the model); our checkpoint count is 583,973 trainable",
+        "params_verified_by_us": 583973,
+        "source": "EDmamba paper Table 3"
+      },
+      "EDmamba": {
+        "gflops_100k": 2.27,
+        "inf_time_s_100k": null,
+        "params": 88980,
+        "source": "EDmamba paper Table 3"
+      },
+      "EDnCNN": {
+        "gflops_100k": 234.51,
+        "inf_time_s_100k": 20.1885,
+        "params": 614550,
+        "source": "EDmamba paper Table 3"
+      },
+      "Joint-SSM": {
+        "gflops_100k": 5.17,
+        "inf_time_s_100k": 0.0931,
+        "params": 102910,
+        "source": "EDmamba paper Table 3"
+      },
+      "Native3D (ours)": {
+        "gflops_100k": 0.010745345052083334,
+        "inf_time_s_100k": 0.0327932515157651,
+        "ops_per_event_effective": 107.45345052083334,
+        "params": 0,
+        "source": "measured, this phase"
+      },
+      "Pre-Mamba": {
+        "gflops_100k": 6.23,
+        "inf_time_s_100k": 0.0987,
+        "params": 264630,
+        "source": "EDmamba paper Table 3"
+      }
+    }
+  },
+  "op_counting_convention": "arithmetic = add,sub,mul,div,min,compare (1 each); transcendental = exp,log1p counted SEPARATELY because they are LUT/CORDIC-backed in hardware. 'worst_case_dense' assumes every ring tap hits a pixel with history; 'effective_measured' scales the neighbour body by measured ring occupancy.",
+  "phase": "12 efficiency profile (GFLOPs / params / inference time)",
+  "results": {
+    "DND21_346x260": {
+      "radius_1": {
+        "gflops_at_measured_rate": 0.3653905730144779,
+        "occupancy": {
+          "mean_occupancy": 0.19317754109700522,
+          "opposite_polarity_occupancy": 0.034735107421875,
+          "same_polarity_occupancy": 0.3516199747721354
+        },
+        "ops_per_event": {
+          "effective_measured": {
+            "arithmetic_ops": 34.5450439453125,
+            "bidirectional_arithmetic": 69.090087890625,
+            "bidirectional_total_ops": 105.45345052083334,
+            "bidirectional_transcendental": 36.363362630208336,
+            "gflops_per_1e9_events": 1.0745345052083334e-07,
+            "neighbours": 8,
+            "occupancy": 0.19317754109700522,
+            "total_ops": 52.72672526041667,
+            "transcendental_ops": 18.181681315104168,
+            "with_score_total_ops": 107.45345052083334
+          },
+          "worst_case_dense": {
+            "arithmetic_ops": 112.0,
+            "bidirectional_arithmetic": 224.0,
+            "bidirectional_total_ops": 312.0,
+            "bidirectional_transcendental": 88.0,
+            "gflops_per_1e9_events": 3.14e-07,
+            "neighbours": 8,
+            "occupancy": 1.0,
+            "total_ops": 156.0,
+            "transcendental_ops": 44.0,
+            "with_score_total_ops": 314.0
+          }
+        },
+        "state_MB": 2.15904,
+        "state_bytes": 2159040,
+        "timing": {
+          "events_timed": 245760,
+          "extract_events_per_second": 3772978.2903357125,
+          "extract_seconds": 0.06513687095139176,
+          "retention_events_per_second": 3049407.8927161517,
+          "retention_seconds": 0.08059269492514431,
+          "score_events_per_second": 3400454.53397176,
+          "score_seconds": 0.07227269106078893
+        },
+        "trained_parameters": 0
+      },
+      "radius_2": {
+        "gflops_at_measured_rate": 0.3843984461758079,
+        "occupancy": {
+          "mean_occupancy": 0.15556708441840278,
+          "opposite_polarity_occupancy": 0.042861090766059026,
+          "same_polarity_occupancy": 0.2682730780707465
+        },
+        "ops_per_event": {
+          "effective_measured": {
+            "arithmetic_ops": 60.8033203125,
+            "bidirectional_arithmetic": 121.606640625,
+            "bidirectional_total_ops": 175.47552083333335,
+            "bidirectional_transcendental": 53.86888020833334,
+            "gflops_per_1e9_events": 1.7747552083333335e-07,
+            "neighbours": 24,
+            "occupancy": 0.15556708441840278,
+            "total_ops": 87.73776041666667,
+            "transcendental_ops": 26.93444010416667,
+            "with_score_total_ops": 177.47552083333335
+          },
+          "worst_case_dense": {
+            "arithmetic_ops": 304.0,
+            "bidirectional_arithmetic": 608.0,
+            "bidirectional_total_ops": 824.0,
+            "bidirectional_transcendental": 216.0,
+            "gflops_per_1e9_events": 8.26e-07,
+            "neighbours": 24,
+            "occupancy": 1.0,
+            "total_ops": 412.0,
+            "transcendental_ops": 108.0,
+            "with_score_total_ops": 826.0
+          }
+        },
+        "state_MB": 2.15904,
+        "state_bytes": 2159040,
+        "timing": {
+          "events_timed": 245760,
+          "extract_events_per_second": 2553705.9137479053,
+          "extract_seconds": 0.09623660997021943,
+          "retention_events_per_second": 2116149.4088429175,
+          "retention_seconds": 0.1161354670766741,
+          "score_events_per_second": 2165923.7531512594,
+          "score_seconds": 0.11346659809350967
+        },
+        "trained_parameters": 0
+      }
+    },
+    "DVSCLEAN_1280x720": {
+      "radius_1": {
+        "gflops_at_measured_rate": 0.2169321040769284,
+        "occupancy": {
+          "mean_occupancy": 0.21171417236328124,
+          "opposite_polarity_occupancy": 0.08523763020833333,
+          "same_polarity_occupancy": 0.3381907145182292
+        },
+        "ops_per_event": {
+          "effective_measured": {
+            "arithmetic_ops": 36.324560546875,
+            "bidirectional_arithmetic": 72.64912109375,
+            "bidirectional_total_ops": 110.198828125,
+            "bidirectional_transcendental": 37.54970703125,
+            "gflops_per_1e9_events": 1.1219882812500001e-07,
+            "neighbours": 8,
+            "occupancy": 0.21171417236328124,
+            "total_ops": 55.0994140625,
+            "transcendental_ops": 18.774853515625,
+            "with_score_total_ops": 112.198828125
+          },
+          "worst_case_dense": {
+            "arithmetic_ops": 112.0,
+            "bidirectional_arithmetic": 224.0,
+            "bidirectional_total_ops": 312.0,
+            "bidirectional_transcendental": 88.0,
+            "gflops_per_1e9_events": 3.14e-07,
+            "neighbours": 8,
+            "occupancy": 1.0,
+            "total_ops": 156.0,
+            "transcendental_ops": 44.0,
+            "with_score_total_ops": 314.0
+          }
+        },
+        "state_MB": 22.1184,
+        "state_bytes": 22118400,
+        "timing": {
+          "events_timed": 245760,
+          "extract_events_per_second": 2252625.0000808774,
+          "extract_seconds": 0.10909938404802233,
+          "retention_events_per_second": 2053313.6689173812,
+          "retention_seconds": 0.11968945793341845,
+          "score_events_per_second": 1933461.4068807005,
+          "score_seconds": 0.12710882106330246
+        },
+        "trained_parameters": 0
+      },
+      "radius_2": {
+        "gflops_at_measured_rate": 0.2334284268083422,
+        "occupancy": {
+          "mean_occupancy": 0.17598003811306423,
+          "opposite_polarity_occupancy": 0.09536319308810765,
+          "same_polarity_occupancy": 0.2565968831380208
+        },
+        "ops_per_event": {
+          "effective_measured": {
+            "arithmetic_ops": 66.6822509765625,
+            "bidirectional_arithmetic": 133.364501953125,
+            "bidirectional_total_ops": 191.15266927083331,
+            "bidirectional_transcendental": 57.78816731770833,
+            "gflops_per_1e9_events": 1.931526692708333e-07,
+            "neighbours": 24,
+            "occupancy": 0.17598003811306423,
+            "total_ops": 95.57633463541666,
+            "transcendental_ops": 28.894083658854164,
+            "with_score_total_ops": 193.15266927083331
+          },
+          "worst_case_dense": {
+            "arithmetic_ops": 304.0,
+            "bidirectional_arithmetic": 608.0,
+            "bidirectional_total_ops": 824.0,
+            "bidirectional_transcendental": 216.0,
+            "gflops_per_1e9_events": 8.26e-07,
+            "neighbours": 24,
+            "occupancy": 1.0,
+            "total_ops": 412.0,
+            "transcendental_ops": 108.0,
+            "with_score_total_ops": 826.0
+          }
+        },
+        "state_MB": 22.1184,
+        "state_bytes": 22118400,
+        "timing": {
+          "events_timed": 245760,
+          "extract_events_per_second": 1446902.1444137427,
+          "extract_seconds": 0.16985253698658198,
+          "retention_events_per_second": 1255129.4598473683,
+          "retention_seconds": 0.19580450293142349,
+          "score_events_per_second": 1208517.737236317,
+          "score_seconds": 0.20335655193775892
+        },
+        "trained_parameters": 0
+      }
+    }
+  },
+  "stages": "extract = bidirectional_features only; score = + operands, corr, gate, score; retention = + gated_retention (this is the Step 3b number)",
+  "trained_parameters": 0,
+  "wall_seconds": 12.23953222099226
+}

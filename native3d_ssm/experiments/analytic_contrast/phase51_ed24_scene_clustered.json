@@ -1,0 +1,326 @@
+{
+  "anchor_drift_vs_published_point_estimate": 0.0,
+  "first_level_separated_above_zero": "1.9",
+  "interval_width_ratio_naive_over_clustered": 0.3233577582772969,
+  "levels_not_separated_from_zero": [
+    "1.5",
+    "1.6",
+    "1.7",
+    "1.8"
+  ],
+  "levels_separated_below_zero": [],
+  "per_level_scene_clustered": {
+    "1.5": {
+      "bootstrap_se": 0.0015632464957142254,
+      "ci95": [
+        -0.005227675714198173,
+        0.0008725635136226878
+      ],
+      "clusters_ahead": 29,
+      "clusters_behind": 71,
+      "mean": -0.00239529374716148,
+      "n_clusters": 100,
+      "replicates": 200000,
+      "sd_across_clusters": 0.01571906285791343
+    },
+    "1.6": {
+      "bootstrap_se": 0.0015872504144858642,
+      "ci95": [
+        -0.0032648916992562356,
+        0.00296015447551021
+      ],
+      "clusters_ahead": 36,
+      "clusters_behind": 64,
+      "mean": -0.00032247423245868154,
+      "n_clusters": 100,
+      "replicates": 200000,
+      "sd_across_clusters": 0.015998856531557176
+    },
+    "1.7": {
+      "bootstrap_se": 0.00124012375712312,
+      "ci95": [
+        -0.0027375582014203138,
+        0.002115714952616172
+      ],
+      "clusters_ahead": 40,
+      "clusters_behind": 60,
+      "mean": -0.0003810038579469144,
+      "n_clusters": 100,
+      "replicates": 200000,
+      "sd_across_clusters": 0.012467003394514632
+    },
+    "1.8": {
+      "bootstrap_se": 0.0014551418730973874,
+      "ci95": [
+        -0.0009372425512907779,
+        0.004759952169310746
+      ],
+      "clusters_ahead": 45,
+      "clusters_behind": 55,
+      "mean": 0.001734435450937204,
+      "n_clusters": 100,
+      "replicates": 200000,
+      "sd_across_clusters": 0.014643343443239941
+    },
+    "1.9": {
+      "bootstrap_se": 0.001218893062256902,
+      "ci95": [
+        0.0003551888359718804,
+        0.005143872751278857
+      ],
+      "clusters_ahead": 54,
+      "clusters_behind": 46,
+      "mean": 0.0025880913827932704,
+      "n_clusters": 100,
+      "replicates": 200000,
+      "sd_across_clusters": 0.012232163419587813
+    },
+    "2.0": {
+      "bootstrap_se": 0.0013991151099793594,
+      "ci95": [
+        0.0038703874920200548,
+        0.009343773969344046
+      ],
+      "clusters_ahead": 63,
+      "clusters_behind": 37,
+      "mean": 0.006438961552354274,
+      "n_clusters": 100,
+      "replicates": 200000,
+      "sd_across_clusters": 0.01406907410612165
+    },
+    "2.1": {
+      "bootstrap_se": 0.001178905298763335,
+      "ci95": [
+        0.004931501697526875,
+        0.009553675485162571
+      ],
+      "clusters_ahead": 70,
+      "clusters_behind": 30,
+      "mean": 0.007171163088577119,
+      "n_clusters": 100,
+      "replicates": 200000,
+      "sd_across_clusters": 0.011858377433138955
+    },
+    "2.2": {
+      "bootstrap_se": 0.001268788309397408,
+      "ci95": [
+        0.008142206333869282,
+        0.013111209076479344
+      ],
+      "clusters_ahead": 74,
+      "clusters_behind": 26,
+      "mean": 0.010576206133383588,
+      "n_clusters": 100,
+      "replicates": 200000,
+      "sd_across_clusters": 0.012782113241581215
+    },
+    "2.3": {
+      "bootstrap_se": 0.0013008247998968607,
+      "ci95": [
+        0.011379905961585243,
+        0.016479560253186892
+      ],
+      "clusters_ahead": 83,
+      "clusters_behind": 17,
+      "mean": 0.013916079717989608,
+      "n_clusters": 100,
+      "replicates": 200000,
+      "sd_across_clusters": 0.013075762867151976
+    },
+    "2.4": {
+      "bootstrap_se": 0.0015698885599000156,
+      "ci95": [
+        0.014265983359396288,
+        0.020414045132889993
+      ],
+      "clusters_ahead": 87,
+      "clusters_behind": 13,
+      "mean": 0.017274806096585483,
+      "n_clusters": 100,
+      "replicates": 200000,
+      "sd_across_clusters": 0.015789584055340936
+    },
+    "2.5": {
+      "bootstrap_se": 0.001692109618636113,
+      "ci95": [
+        0.01674548246627994,
+        0.023382267890313176
+      ],
+      "clusters_ahead": 88,
+      "clusters_behind": 12,
+      "mean": 0.02000379389779046,
+      "n_clusters": 100,
+      "replicates": 200000,
+      "sd_across_clusters": 0.017059462778524867
+    },
+    "2.6": {
+      "bootstrap_se": 0.0019416132568226374,
+      "ci95": [
+        0.02014561665210615,
+        0.027750276385777553
+      ],
+      "clusters_ahead": 91,
+      "clusters_behind": 9,
+      "mean": 0.023863024193486272,
+      "n_clusters": 100,
+      "replicates": 200000,
+      "sd_across_clusters": 0.0194774861057969
+    },
+    "2.7": {
+      "bootstrap_se": 0.001971243741516375,
+      "ci95": [
+        0.02094482548999488,
+        0.028676340070940595
+      ],
+      "clusters_ahead": 93,
+      "clusters_behind": 7,
+      "mean": 0.024721933705720747,
+      "n_clusters": 100,
+      "replicates": 200000,
+      "sd_across_clusters": 0.019795788802343915
+    },
+    "2.8": {
+      "bootstrap_se": 0.0021360119646823047,
+      "ci95": [
+        0.022601118862292005,
+        0.030975015010511066
+      ],
+      "clusters_ahead": 94,
+      "clusters_behind": 6,
+      "mean": 0.02669273301830352,
+      "n_clusters": 100,
+      "replicates": 200000,
+      "sd_across_clusters": 0.0214702592441865
+    },
+    "2.9": {
+      "bootstrap_se": 0.0021858651389505177,
+      "ci95": [
+        0.023457106362697124,
+        0.03202965425699974
+      ],
+      "clusters_ahead": 94,
+      "clusters_behind": 6,
+      "mean": 0.027649473249216284,
+      "n_clusters": 100,
+      "replicates": 200000,
+      "sd_across_clusters": 0.0219521252594503
+    },
+    "3.0": {
+      "bootstrap_se": 0.0021510437540371245,
+      "ci95": [
+        0.024981472724440446,
+        0.03340154332684928
+      ],
+      "clusters_ahead": 97,
+      "clusters_behind": 3,
+      "mean": 0.029130982604572645,
+      "n_clusters": 100,
+      "replicates": 200000,
+      "sd_across_clusters": 0.021602371302648766
+    },
+    "3.1": {
+      "bootstrap_se": 0.0022562660899605436,
+      "ci95": [
+        0.026310848211886246,
+        0.03515279627550278
+      ],
+      "clusters_ahead": 97,
+      "clusters_behind": 3,
+      "mean": 0.03067403397323156,
+      "n_clusters": 100,
+      "replicates": 200000,
+      "sd_across_clusters": 0.02267289436760648
+    },
+    "3.2": {
+      "bootstrap_se": 0.0021442817135795137,
+      "ci95": [
+        0.02640608598152863,
+        0.034812215175630906
+      ],
+      "clusters_ahead": 97,
+      "clusters_behind": 3,
+      "mean": 0.03057643632777979,
+      "n_clusters": 100,
+      "replicates": 200000,
+      "sd_across_clusters": 0.02156109659963649
+    },
+    "3.3": {
+      "bootstrap_se": 0.002096820571107469,
+      "ci95": [
+        0.026601237057890626,
+        0.03480806398189809
+      ],
+      "clusters_ahead": 97,
+      "clusters_behind": 3,
+      "mean": 0.03066976605156722,
+      "n_clusters": 100,
+      "replicates": 200000,
+      "sd_across_clusters": 0.021166280607241024
+    },
+    "3.4": {
+      "bootstrap_se": 0.0022550571505426864,
+      "ci95": [
+        0.027300461547669075,
+        0.03613225714126361
+      ],
+      "clusters_ahead": 98,
+      "clusters_behind": 2,
+      "mean": 0.031671601574876466,
+      "n_clusters": 100,
+      "replicates": 200000,
+      "sd_across_clusters": 0.02268004009435753
+    },
+    "3.5": {
+      "bootstrap_se": 0.002186727252815001,
+      "ci95": [
+        0.027389490317491185,
+        0.035936137517816644
+      ],
+      "clusters_ahead": 98,
+      "clusters_behind": 2,
+      "mean": 0.03162533704455395,
+      "n_clusters": 100,
+      "replicates": 200000,
+      "sd_across_clusters": 0.02200018369843997
+    }
+  },
+  "phase": "51 ED24 operand effect, resampled over scenes rather than conditions",
+  "pooled_condition_level_for_contrast": {
+    "bootstrap_se": 0.00047357019720633723,
+    "ci95": [
+      0.01640116338344481,
+      0.01825989810560229
+    ],
+    "mean": 0.01732762320124535,
+    "n": 2100,
+    "replicates": 200000
+  },
+  "pooled_scene_clustered": {
+    "bootstrap_se": 0.0014637660563039004,
+    "ci95": [
+      0.014476475330422811,
+      0.020224705192170907
+    ],
+    "clusters_ahead": 87,
+    "clusters_behind": 13,
+    "mean": 0.01732762320124535,
+    "n_clusters": 100,
+    "replicates": 200000,
+    "sd_across_clusters": 0.014713398302454156
+  },
+  "rescored": false,
+  "seed": 20260825,
+  "sign_flip_scene_clustered": {
+    "draws": 200000,
+    "n_clusters": 100,
+    "observed_mean": 0.01732762320124535,
+    "p_two_sided": 5e-06
+  },
+  "source": "native3d_ssm/experiments/analytic_contrast/phase36_ed24_inrange_ours.json",
+  "unit": {
+    "conditions": 2100,
+    "levels": 21,
+    "scenes": 100,
+    "why": "voltage is crossed with scene, not nested in it, so the scene is the cluster and its 21 levels are carried together"
+  }
+}

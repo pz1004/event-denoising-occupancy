@@ -1,0 +1,150 @@
+{
+  "caveat": "retention is a free operating point; E-MLB is unlabeled so it cannot be calibrated there. Sweep reported.",
+  "denoiser": "frozen corr-gated Native3D: beta=1 iff corr(G,R)<0, s=beta*G-R, 250us bidirectional, 10,240-event blocks",
+  "metric": "MESR = mean ESR over 30,000-event slices (official cuke-emlb definition, numpy verified bit-exact)",
+  "phase": "5 E-MLB MESR",
+  "results": {
+    "D-END": {
+      "ND00": {
+        "frac_blocks_beta1": 0.007901629156123762,
+        "mean_actual_retention": 0.4999999468888151,
+        "mean_corr_GR": 0.07278027608933836,
+        "ours_mesr_by_retention": {
+          "0.3": 0.8863159581274266,
+          "0.5": 0.8953180720067865,
+          "0.7": 0.8804643847626463,
+          "0.9": 0.8443466204337576
+        },
+        "paper_edmamba": 0.976,
+        "paper_raw": 0.821,
+        "raw_mesr": 0.8208399845380558,
+        "sequences": 144
+      },
+      "ND04": {
+        "frac_blocks_beta1": 0.005339117377158588,
+        "mean_actual_retention": 0.4999999353399542,
+        "mean_corr_GR": 0.07283706661726563,
+        "ours_mesr_by_retention": {
+          "0.3": 0.8950088848478062,
+          "0.5": 0.9008653723075928,
+          "0.7": 0.883913076038642,
+          "0.9": 0.8459366469645716
+        },
+        "paper_edmamba": 0.99,
+        "paper_raw": 0.824,
+        "raw_mesr": 0.824378356951288,
+        "sequences": 144
+      },
+      "ND16": {
+        "frac_blocks_beta1": 0.0031830763147489127,
+        "mean_actual_retention": 0.49999998822152997,
+        "mean_corr_GR": 0.07180455066150566,
+        "ours_mesr_by_retention": {
+          "0.3": 0.8918578075280644,
+          "0.5": 0.8970984982956792,
+          "0.7": 0.8748747459613453,
+          "0.9": 0.836472222037928
+        },
+        "paper_edmamba": 0.985,
+        "paper_raw": 0.815,
+        "raw_mesr": 0.8155549504292987,
+        "sequences": 144
+      },
+      "ND64": {
+        "frac_blocks_beta1": 0.003588072751268198,
+        "mean_actual_retention": 0.49999999404853335,
+        "mean_corr_GR": 0.07062492801091876,
+        "ours_mesr_by_retention": {
+          "0.3": 0.8846347958519267,
+          "0.5": 0.8814629571134115,
+          "0.7": 0.8513728081324837,
+          "0.9": 0.8084406697747176
+        },
+        "paper_edmamba": 0.972,
+        "paper_raw": 0.786,
+        "raw_mesr": 0.7876095239838672,
+        "sequences": 144
+      }
+    },
+    "N-END": {
+      "ND00": {
+        "frac_blocks_beta1": 0.03883766415199776,
+        "mean_actual_retention": 0.49999998293603437,
+        "mean_corr_GR": 0.09576893712745271,
+        "ours_mesr_by_retention": {
+          "0.3": 1.0360116319264623,
+          "0.5": 1.0105173456243959,
+          "0.7": 0.9712229166236068,
+          "0.9": 0.9199064661203281
+        },
+        "paper_edmamba": 1.002,
+        "paper_raw": 0.89,
+        "raw_mesr": 0.8916544613222285,
+        "sequences": 144
+      },
+      "ND04": {
+        "frac_blocks_beta1": 0.027316497985653925,
+        "mean_actual_retention": 0.5000000284618649,
+        "mean_corr_GR": 0.09423282240851943,
+        "ours_mesr_by_retention": {
+          "0.3": 1.0346209134680737,
+          "0.5": 0.9863666100123629,
+          "0.7": 0.9204918875633273,
+          "0.9": 0.8541978960646784
+        },
+        "paper_edmamba": 1.025,
+        "paper_raw": 0.824,
+        "raw_mesr": 0.8244670685155211,
+        "sequences": 144
+      },
+      "ND16": {
+        "frac_blocks_beta1": 0.02722195787733841,
+        "mean_actual_retention": 0.5000000305599683,
+        "mean_corr_GR": 0.06133464341888726,
+        "ours_mesr_by_retention": {
+          "0.3": 0.9753665994132226,
+          "0.5": 0.9296785743083922,
+          "0.7": 0.8691001168251257,
+          "0.9": 0.811536598546906
+        },
+        "paper_edmamba": 1.082,
+        "paper_raw": 0.786,
+        "raw_mesr": 0.786015637190598,
+        "sequences": 144
+      },
+      "ND64": {
+        "frac_blocks_beta1": 0.040033159476356606,
+        "mean_actual_retention": 0.4999999814678681,
+        "mean_corr_GR": 0.05423313337410168,
+        "ours_mesr_by_retention": {
+          "0.3": 0.9609692950382056,
+          "0.5": 0.9081511877796513,
+          "0.7": 0.8437345060081829,
+          "0.9": 0.7883825552818058
+        },
+        "paper_edmamba": 1.089,
+        "paper_raw": 0.768,
+        "raw_mesr": 0.7671173614382237,
+        "sequences": 144
+      }
+    }
+  },
+  "settings": {
+    "headline_retention": 0.5,
+    "max_events_per_sequence": 0,
+    "reps": [
+      1,
+      2,
+      3
+    ],
+    "retentions": [
+      0.3,
+      0.5,
+      0.7,
+      0.9
+    ],
+    "slice": 30000
+  },
+  "timestamp_repairs": 1,
+  "wall_seconds": 2591.9134894380113
+}

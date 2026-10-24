@@ -1,0 +1,5105 @@
+{
+  "caveat": "MESR scales with pixel count K, so DVSCLEAN (1280x720) and DND21 (346x260) absolute values are not comparable; only the shape in r and the argmax are.",
+  "gate_key": "corr(G, R_same), theta = 0 (Phase 8 showed the original key is better)",
+  "phase": "9 is dev MESR a legitimate retention target",
+  "results": {
+    "DND21": {
+      "10hz_driving": {
+        "accuracy_at_mesr_star": 0.6906097104534301,
+        "accuracy_at_star": 0.8281344547498082,
+        "blocks": 607,
+        "curve": [
+          {
+            "balanced_accuracy": 0.520070654251919,
+            "kept_events": 124435,
+            "mesr": 0.7070905973745512,
+            "noise_rejection": 0.9976061486356251,
+            "r": 0.02,
+            "signal_recall": 0.04253515986821278
+          },
+          {
+            "balanced_accuracy": 0.5418155305410801,
+            "kept_events": 248870,
+            "mesr": 0.768213189617021,
+            "noise_rejection": 0.9966825683105249,
+            "r": 0.04,
+            "signal_recall": 0.08694849277163526
+          },
+          {
+            "balanced_accuracy": 0.5636112044530047,
+            "kept_events": 372698,
+            "mesr": 0.7884025666298636,
+            "noise_rejection": 0.9959012537746327,
+            "r": 0.06,
+            "signal_recall": 0.13132115513137685
+          },
+          {
+            "balanced_accuracy": 0.5853822098414595,
+            "kept_events": 497133,
+            "mesr": 0.81047064682686,
+            "noise_rejection": 0.9950006195445659,
+            "r": 0.08,
+            "signal_recall": 0.17576380013835313
+          },
+          {
+            "balanced_accuracy": 0.6071303522680322,
+            "kept_events": 621568,
+            "mesr": 0.8214707116605917,
+            "noise_rejection": 0.9940799074813448,
+            "r": 0.1,
+            "signal_recall": 0.22018079705471982
+          },
+          {
+            "balanced_accuracy": 0.6287547080867013,
+            "kept_events": 746003,
+            "mesr": 0.8306259464994771,
+            "noise_rejection": 0.9930504882929023,
+            "r": 0.12,
+            "signal_recall": 0.2644589278805004
+          },
+          {
+            "balanced_accuracy": 0.6501893013217501,
+            "kept_events": 870438,
+            "mesr": 0.8388685758043595,
+            "noise_rejection": 0.9918544230892786,
+            "r": 0.14,
+            "signal_recall": 0.3085241795542215
+          },
+          {
+            "balanced_accuracy": 0.6708751417411759,
+            "kept_events": 994266,
+            "mesr": 0.8432945400795002,
+            "noise_rejection": 0.9900984731668364,
+            "r": 0.16,
+            "signal_recall": 0.35165181031551546
+          },
+          {
+            "balanced_accuracy": 0.6906097104534301,
+            "kept_events": 1118701,
+            "mesr": 0.848270130170446,
+            "noise_rejection": 0.9874094776550927,
+            "r": 0.18,
+            "signal_recall": 0.39380994325176755
+          },
+          {
+            "balanced_accuracy": 0.7092435908579382,
+            "kept_events": 1243136,
+            "mesr": 0.8458565266695047,
+            "noise_rejection": 0.9837538778900606,
+            "r": 0.2,
+            "signal_recall": 0.43473330382581576
+          },
+          {
+            "balanced_accuracy": 0.7265174516442107,
+            "kept_events": 1367571,
+            "mesr": 0.8414949052605438,
+            "noise_rejection": 0.9789039338785326,
+            "r": 0.22,
+            "signal_recall": 0.47413096940988875
+          },
+          {
+            "balanced_accuracy": 0.7423558450380369,
+            "kept_events": 1492006,
+            "mesr": 0.8379836323436726,
+            "noise_rejection": 0.9727933887710989,
+            "r": 0.24,
+            "signal_recall": 0.5119183013049748
+          },
+          {
+            "balanced_accuracy": 0.7566390762892894,
+            "kept_events": 1615834,
+            "mesr": 0.8335231295456094,
+            "noise_rejection": 0.965414785086874,
+            "r": 0.26,
+            "signal_recall": 0.5478633674917047
+          },
+          {
+            "balanced_accuracy": 0.7697038657930921,
+            "kept_events": 1740269,
+            "mesr": 0.8270655448196935,
+            "noise_rejection": 0.9568685119916293,
+            "r": 0.28,
+            "signal_recall": 0.582539219594555
+          },
+          {
+            "balanced_accuracy": 0.7818061246016643,
+            "kept_events": 1864704,
+            "mesr": 0.8193381232976148,
+            "noise_rejection": 0.9474769621205863,
+            "r": 0.3,
+            "signal_recall": 0.6161352870827422
+          },
+          {
+            "balanced_accuracy": 0.8063712666571148,
+            "kept_events": 2175488,
+            "mesr": 0.805644036037358,
+            "noise_rejection": 0.9190496186359005,
+            "r": 0.35,
+            "signal_recall": 0.6936929146783289
+          },
+          {
+            "balanced_accuracy": 0.8202662644022526,
+            "kept_events": 2486272,
+            "mesr": 0.7865459119974232,
+            "noise_rejection": 0.8812519504180778,
+            "r": 0.4,
+            "signal_recall": 0.7592805783864274
+          },
+          {
+            "balanced_accuracy": 0.8271612764466154,
+            "kept_events": 2797056,
+            "mesr": 0.7675514993594907,
+            "noise_rejection": 0.8373070233407679,
+            "r": 0.45,
+            "signal_recall": 0.8170155295524628
+          },
+          {
+            "balanced_accuracy": 0.8281344547498082,
+            "kept_events": 3107840,
+            "mesr": 0.7503693990738459,
+            "noise_rejection": 0.7881616506502923,
+            "r": 0.5,
+            "signal_recall": 0.868107258849324
+          },
+          {
+            "balanced_accuracy": 0.8237452886504569,
+            "kept_events": 3418624,
+            "mesr": 0.7333952870321275,
+            "noise_rejection": 0.7343071656065571,
+            "r": 0.55,
+            "signal_recall": 0.9131834116943568
+          },
+          {
+            "balanced_accuracy": 0.8069741956233163,
+            "kept_events": 3729408,
+            "mesr": 0.7147765592769485,
+            "noise_rejection": 0.6695790997787996,
+            "r": 0.6,
+            "signal_recall": 0.9443692914678329
+          },
+          {
+            "balanced_accuracy": 0.7814286244396189,
+            "kept_events": 4040192,
+            "mesr": 0.6968361075355675,
+            "noise_rejection": 0.5971454484125891,
+            "r": 0.65,
+            "signal_recall": 0.9657118004666487
+          },
+          {
+            "balanced_accuracy": 0.7505030717113542,
+            "kept_events": 4350976,
+            "mesr": 0.6792136540373135,
+            "noise_rejection": 0.5199871960789713,
+            "r": 0.7,
+            "signal_recall": 0.9810189473437372
+          },
+          {
+            "balanced_accuracy": 0.7145225181109872,
+            "kept_events": 4661760,
+            "mesr": 0.6631412061919366,
+            "noise_rejection": 0.43838973483492577,
+            "r": 0.75,
+            "signal_recall": 0.9906553013870487
+          },
+          {
+            "balanced_accuracy": 0.675508702696366,
+            "kept_events": 4972544,
+            "mesr": 0.6466997914268054,
+            "noise_rejection": 0.3541285187836734,
+            "r": 0.8,
+            "signal_recall": 0.9968888866090586
+          },
+          {
+            "balanced_accuracy": 0.6326757928062332,
+            "kept_events": 5283328,
+            "mesr": 0.6311945096128896,
+            "noise_rejection": 0.26651344411708017,
+            "r": 0.85,
+            "signal_recall": 0.9988381414953863
+          },
+          {
+            "balanced_accuracy": 0.5887399083121663,
+            "kept_events": 5594112,
+            "mesr": 0.6161264075416746,
+            "noise_rejection": 0.1779297574138833,
+            "r": 0.9,
+            "signal_recall": 0.9995500592104491
+          },
+          {
+            "balanced_accuracy": 0.5443973897103415,
+            "kept_events": 5904896,
+            "mesr": 0.6019538354504926,
+            "noise_rejection": 0.08898897210672688,
+            "r": 0.95,
+            "signal_recall": 0.9998058073139561
+          },
+          {
+            "balanced_accuracy": 0.5,
+            "kept_events": 6215680,
+            "mesr": 0.5882862554317799,
+            "noise_rejection": 0.0,
+            "r": 1.0,
+            "signal_recall": 1.0
+          }
+        ],
+        "events": 6215680,
+        "gated_retention_mean": 0.42108667112850084,
+        "grid_points": 29,
+        "mesr_argmax_at_evaluable_floor": false,
+        "mesr_at_evaluable_floor": 0.7070905973745512,
+        "mesr_at_star": 0.848270130170446,
+        "r_star_accuracy": 0.5,
+        "r_star_mesr": 0.18,
+        "raw_mesr": 0.5882862554317799,
+        "signal_fraction": 0.4390908154859967,
+        "signal_recall_at_mesr_star": 0.39380994325176755,
+        "smallest_evaluable_r": 0.02,
+        "valid_grid_points": 29
+      },
+      "10hz_hotel-bar": {
+        "accuracy_at_mesr_star": 0.8767780327615806,
+        "accuracy_at_star": 0.9308201042137154,
+        "blocks": 405,
+        "curve": [
+          {
+            "balanced_accuracy": 0.5706080121049307,
+            "kept_events": 83025,
+            "mesr": 0.9461935119360965,
+            "noise_rejection": 0.9981827688844637,
+            "r": 0.02,
+            "signal_recall": 0.14303325532539785
+          },
+          {
+            "balanced_accuracy": 0.6420127466559478,
+            "kept_events": 166050,
+            "mesr": 1.0816746665655406,
+            "noise_rejection": 0.9965709277899065,
+            "r": 0.04,
+            "signal_recall": 0.28745456552198906
+          },
+          {
+            "balanced_accuracy": 0.7123987107362315,
+            "kept_events": 248670,
+            "mesr": 1.1366544768270066,
+            "noise_rejection": 0.9947941103442663,
+            "r": 0.06,
+            "signal_recall": 0.4300033111281968
+          },
+          {
+            "balanced_accuracy": 0.7785259643943727,
+            "kept_events": 331695,
+            "mesr": 1.153332324264541,
+            "noise_rejection": 0.9918217679651911,
+            "r": 0.08,
+            "signal_recall": 0.5652301608235543
+          },
+          {
+            "balanced_accuracy": 0.8348488074659727,
+            "kept_events": 414720,
+            "mesr": 1.2019144384898948,
+            "noise_rejection": 0.9863219103818566,
+            "r": 0.1,
+            "signal_recall": 0.6833757045500888
+          },
+          {
+            "balanced_accuracy": 0.8767780327615806,
+            "kept_events": 497745,
+            "mesr": 1.2092624038910738,
+            "noise_rejection": 0.9771114689289464,
+            "r": 0.12,
+            "signal_recall": 0.7764445965942147
+          },
+          {
+            "balanced_accuracy": 0.904972922736583,
+            "kept_events": 580770,
+            "mesr": 1.1819365295460778,
+            "noise_rejection": 0.9643604024647909,
+            "r": 0.14,
+            "signal_recall": 0.8455854430083751
+          },
+          {
+            "balanced_accuracy": 0.9225357591413776,
+            "kept_events": 663390,
+            "mesr": 1.177445974451577,
+            "noise_rejection": 0.9489661159058517,
+            "r": 0.16,
+            "signal_recall": 0.8961054023769036
+          },
+          {
+            "balanced_accuracy": 0.9308201042137154,
+            "kept_events": 746415,
+            "mesr": 1.1764793886392237,
+            "noise_rejection": 0.9310822365589255,
+            "r": 0.18,
+            "signal_recall": 0.9305579718685052
+          },
+          {
+            "balanced_accuracy": 0.9308150998469886,
+            "kept_events": 829440,
+            "mesr": 1.1573093207635645,
+            "noise_rejection": 0.9110614152147503,
+            "r": 0.2,
+            "signal_recall": 0.9505687844792269
+          },
+          {
+            "balanced_accuracy": 0.9245705346524893,
+            "kept_events": 912465,
+            "mesr": 1.1198300602282436,
+            "noise_rejection": 0.889432074447516,
+            "r": 0.22,
+            "signal_recall": 0.9597089948574625
+          },
+          {
+            "balanced_accuracy": 0.9154064434055527,
+            "kept_events": 995490,
+            "mesr": 1.0919789852092403,
+            "noise_rejection": 0.8670500982799555,
+            "r": 0.24,
+            "signal_recall": 0.9637627885311498
+          },
+          {
+            "balanced_accuracy": 0.9062951841153681,
+            "kept_events": 1078110,
+            "mesr": 1.0716294805990179,
+            "noise_rejection": 0.8447793981075884,
+            "r": 0.26,
+            "signal_recall": 0.9678109701231478
+          },
+          {
+            "balanced_accuracy": 0.8985774340205583,
+            "kept_events": 1161135,
+            "mesr": 1.0417069415220448,
+            "noise_rejection": 0.8227702795657136,
+            "r": 0.28,
+            "signal_recall": 0.9743845884754032
+          },
+          {
+            "balanced_accuracy": 0.8913009951458855,
+            "kept_events": 1244160,
+            "mesr": 1.0126560815543577,
+            "noise_rejection": 0.800874928272656,
+            "r": 0.3,
+            "signal_recall": 0.9817270620191147
+          },
+          {
+            "balanced_accuracy": 0.8704261691209729,
+            "kept_events": 1451520,
+            "mesr": 0.9512957092188099,
+            "noise_rejection": 0.7454935297991302,
+            "r": 0.35,
+            "signal_recall": 0.9953588084428157
+          },
+          {
+            "balanced_accuracy": 0.8427641698053446,
+            "kept_events": 1658880,
+            "mesr": 0.8933751002389524,
+            "noise_rejection": 0.6883624408638671,
+            "r": 0.4,
+            "signal_recall": 0.9971658987468222
+          },
+          {
+            "balanced_accuracy": 0.8143859792881806,
+            "kept_events": 1866240,
+            "mesr": 0.8445879705534154,
+            "noise_rejection": 0.6310467223544893,
+            "r": 0.45,
+            "signal_recall": 0.9977252362218718
+          },
+          {
+            "balanced_accuracy": 0.7858939712787185,
+            "kept_events": 2073600,
+            "mesr": 0.8027396961588257,
+            "noise_rejection": 0.5737016624135431,
+            "r": 0.5,
+            "signal_recall": 0.9980862801438938
+          },
+          {
+            "balanced_accuracy": 0.7573912257699829,
+            "kept_events": 2280960,
+            "mesr": 0.7685343940487543,
+            "noise_rejection": 0.516353834413015,
+            "r": 0.55,
+            "signal_recall": 0.9984286171269509
+          },
+          {
+            "balanced_accuracy": 0.7288412352644444,
+            "kept_events": 2488320,
+            "mesr": 0.7395779603554095,
+            "noise_rejection": 0.45899382695032637,
+            "r": 0.6,
+            "signal_recall": 0.9986886435785626
+          },
+          {
+            "balanced_accuracy": 0.7002472210118851,
+            "kept_events": 2695680,
+            "mesr": 0.7129165246564745,
+            "noise_rejection": 0.4016224704433518,
+            "r": 0.65,
+            "signal_recall": 0.9988719715804183
+          },
+          {
+            "balanced_accuracy": 0.6716371005104156,
+            "kept_events": 2903040,
+            "mesr": 0.6899093474330233,
+            "noise_rejection": 0.3442469618470044,
+            "r": 0.7,
+            "signal_recall": 0.9990272391738267
+          },
+          {
+            "balanced_accuracy": 0.6430194637594546,
+            "kept_events": 3110400,
+            "mesr": 0.6693465945341993,
+            "noise_rejection": 0.2868695156089496,
+            "r": 0.75,
+            "signal_recall": 0.9991694119099598
+          },
+          {
+            "balanced_accuracy": 0.6144426295057327,
+            "kept_events": 3317760,
+            "mesr": 0.6512434217912121,
+            "noise_rejection": 0.22950258799730613,
+            "r": 0.8,
+            "signal_recall": 0.9993826710141592
+          },
+          {
+            "balanced_accuracy": 0.5858464677533186,
+            "kept_events": 3525120,
+            "mesr": 0.6349367125008574,
+            "noise_rejection": 0.17213067787841518,
+            "r": 0.85,
+            "signal_recall": 0.999562257628222
+          },
+          {
+            "balanced_accuracy": 0.5572438635013405,
+            "kept_events": 3732480,
+            "mesr": 0.6199699902910891,
+            "noise_rejection": 0.11475710692377511,
+            "r": 0.9,
+            "signal_recall": 0.9997306200789059
+          },
+          {
+            "balanced_accuracy": 0.5286154892511062,
+            "kept_events": 3939840,
+            "mesr": 0.6063611539709503,
+            "noise_rejection": 0.0573768926261384,
+            "r": 0.95,
+            "signal_recall": 0.999854085876074
+          },
+          {
+            "balanced_accuracy": 0.5,
+            "kept_events": 4147200,
+            "mesr": 0.5944097006320028,
+            "noise_rejection": 0.0,
+            "r": 1.0,
+            "signal_recall": 1.0
+          }
+        ],
+        "events": 4147200,
+        "gated_retention_mean": 0.17834876543209874,
+        "grid_points": 29,
+        "mesr_argmax_at_evaluable_floor": false,
+        "mesr_at_evaluable_floor": 0.9461935119360965,
+        "mesr_at_star": 1.2092624038910738,
+        "r_star_accuracy": 0.18,
+        "r_star_mesr": 0.12,
+        "raw_mesr": 0.5944097006320028,
+        "signal_fraction": 0.12889684606481477,
+        "signal_recall_at_mesr_star": 0.7764445965942147,
+        "smallest_evaluable_r": 0.02,
+        "valid_grid_points": 29
+      },
+      "1hz_driving": {
+        "accuracy_at_mesr_star": 0.687223194412686,
+        "accuracy_at_star": 0.8698336052573562,
+        "blocks": 300,
+        "curve": [
+          {
+            "balanced_accuracy": 0.5093839236997095,
+            "kept_events": 61500,
+            "mesr": 0.7161831921033361,
+            "noise_rejection": 0.9966172246334849,
+            "r": 0.02,
+            "signal_recall": 0.022150622765934165
+          },
+          {
+            "balanced_accuracy": 0.5201196499243468,
+            "kept_events": 123000,
+            "mesr": 0.7816194663331455,
+            "noise_rejection": 0.9956310596113822,
+            "r": 0.04,
+            "signal_recall": 0.04460824023731132
+          },
+          {
+            "balanced_accuracy": 0.5307857404689112,
+            "kept_events": 184200,
+            "mesr": 0.8040786788733523,
+            "noise_rejection": 0.9946190937602128,
+            "r": 0.06,
+            "signal_recall": 0.06695238717760965
+          },
+          {
+            "balanced_accuracy": 0.5416281879455165,
+            "kept_events": 245700,
+            "mesr": 0.8363752652941352,
+            "noise_rejection": 0.9938221348179321,
+            "r": 0.08,
+            "signal_recall": 0.08943424107310073
+          },
+          {
+            "balanced_accuracy": 0.5525191450821071,
+            "kept_events": 307200,
+            "mesr": 0.8353247277967407,
+            "noise_rejection": 0.993111178639207,
+            "r": 0.1,
+            "signal_recall": 0.11192711152500721
+          },
+          {
+            "balanced_accuracy": 0.5633680605133771,
+            "kept_events": 368700,
+            "mesr": 0.8576959408572628,
+            "noise_rejection": 0.992325686732067,
+            "r": 0.12,
+            "signal_recall": 0.13441043429468702
+          },
+          {
+            "balanced_accuracy": 0.5742137419673146,
+            "kept_events": 430200,
+            "mesr": 0.855722429929019,
+            "noise_rejection": 0.9915344613073567,
+            "r": 0.14,
+            "signal_recall": 0.15689302262727245
+          },
+          {
+            "balanced_accuracy": 0.5849331931378631,
+            "kept_events": 491400,
+            "mesr": 0.8720234414383877,
+            "noise_rejection": 0.9906170984960984,
+            "r": 0.16,
+            "signal_recall": 0.17924928777962773
+          },
+          {
+            "balanced_accuracy": 0.5956867062378283,
+            "kept_events": 552900,
+            "mesr": 0.8701461303558577,
+            "noise_rejection": 0.9896624678206326,
+            "r": 0.18,
+            "signal_recall": 0.20171094465502387
+          },
+          {
+            "balanced_accuracy": 0.6064757930884495,
+            "kept_events": 614400,
+            "mesr": 0.8747277862169882,
+            "noise_rejection": 0.988770905838441,
+            "r": 0.2,
+            "signal_recall": 0.22418068033845798
+          },
+          {
+            "balanced_accuracy": 0.6171743285737645,
+            "kept_events": 675900,
+            "mesr": 0.8794314239296152,
+            "noise_rejection": 0.987718805364279,
+            "r": 0.22,
+            "signal_recall": 0.24662985178324998
+          },
+          {
+            "balanced_accuracy": 0.6279601814470533,
+            "kept_events": 737400,
+            "mesr": 0.8865790169612845,
+            "noise_rejection": 0.986821509864517,
+            "r": 0.24,
+            "signal_recall": 0.26909885302958975
+          },
+          {
+            "balanced_accuracy": 0.6387653330169094,
+            "kept_events": 798600,
+            "mesr": 0.8838688539652177,
+            "noise_rejection": 0.9860560852688733,
+            "r": 0.26,
+            "signal_recall": 0.2914745807649456
+          },
+          {
+            "balanced_accuracy": 0.6495899936181866,
+            "kept_events": 860100,
+            "mesr": 0.8852975607466211,
+            "noise_rejection": 0.9852275919799556,
+            "r": 0.28,
+            "signal_recall": 0.3139523952564177
+          },
+          {
+            "balanced_accuracy": 0.6602416364321825,
+            "kept_events": 921600,
+            "mesr": 0.8850541969957638,
+            "noise_rejection": 0.9840923555010235,
+            "r": 0.3,
+            "signal_recall": 0.3363909173633415
+          },
+          {
+            "balanced_accuracy": 0.687223194412686,
+            "kept_events": 1075200,
+            "mesr": 0.8877093786807317,
+            "noise_rejection": 0.9819279526182108,
+            "r": 0.35,
+            "signal_recall": 0.3925184362071612
+          },
+          {
+            "balanced_accuracy": 0.7140818612545599,
+            "kept_events": 1228800,
+            "mesr": 0.8834741074142688,
+            "noise_rejection": 0.9795456760677244,
+            "r": 0.4,
+            "signal_recall": 0.44861804644139525
+          },
+          {
+            "balanced_accuracy": 0.7407949991164772,
+            "kept_events": 1382400,
+            "mesr": 0.8823586416777587,
+            "noise_rejection": 0.9769053912265714,
+            "r": 0.45,
+            "signal_recall": 0.504684607006383
+          },
+          {
+            "balanced_accuracy": 0.7673755439077677,
+            "kept_events": 1536000,
+            "mesr": 0.8770996174885471,
+            "noise_rejection": 0.9740300321650336,
+            "r": 0.5,
+            "signal_recall": 0.5607210556505019
+          },
+          {
+            "balanced_accuracy": 0.7934596731785406,
+            "kept_events": 1689600,
+            "mesr": 0.8730975496873522,
+            "noise_rejection": 0.9702745781564448,
+            "r": 0.55,
+            "signal_recall": 0.6166447682006365
+          },
+          {
+            "balanced_accuracy": 0.8189180278355013,
+            "kept_events": 1843200,
+            "mesr": 0.8671388941268059,
+            "noise_rejection": 0.9654096884979904,
+            "r": 0.6,
+            "signal_recall": 0.6724263671730121
+          },
+          {
+            "balanced_accuracy": 0.842728671041623,
+            "kept_events": 1996800,
+            "mesr": 0.863619352542507,
+            "noise_rejection": 0.9576235716374353,
+            "r": 0.65,
+            "signal_recall": 0.7278337704458107
+          },
+          {
+            "balanced_accuracy": 0.8606599434575088,
+            "kept_events": 2150400,
+            "mesr": 0.8572570114810876,
+            "noise_rejection": 0.9394139198339573,
+            "r": 0.7,
+            "signal_recall": 0.7819059670810605
+          },
+          {
+            "balanced_accuracy": 0.8698336052573562,
+            "kept_events": 2304000,
+            "mesr": 0.8494713872772242,
+            "noise_rejection": 0.9056779024499321,
+            "r": 0.75,
+            "signal_recall": 0.8339893080647803
+          },
+          {
+            "balanced_accuracy": 0.8644252632655791,
+            "kept_events": 2457600,
+            "mesr": 0.8411973445431632,
+            "noise_rejection": 0.8460894543411328,
+            "r": 0.8,
+            "signal_recall": 0.8827610721900253
+          },
+          {
+            "balanced_accuracy": 0.8389969845978094,
+            "kept_events": 2611200,
+            "mesr": 0.829923413826173,
+            "noise_rejection": 0.7510076657129916,
+            "r": 0.85,
+            "signal_recall": 0.9269863034826272
+          },
+          {
+            "balanced_accuracy": 0.7838047955516378,
+            "kept_events": 2764800,
+            "mesr": 0.8168621403603511,
+            "noise_rejection": 0.6031574481259998,
+            "r": 0.9,
+            "signal_recall": 0.9644521429772758
+          },
+          {
+            "balanced_accuracy": 0.6714746949972784,
+            "kept_events": 2918400,
+            "mesr": 0.8020095242638015,
+            "noise_rejection": 0.3540074421058063,
+            "r": 0.95,
+            "signal_recall": 0.9889419478887504
+          },
+          {
+            "balanced_accuracy": 0.5,
+            "kept_events": 3072000,
+            "mesr": 0.7835168743783788,
+            "noise_rejection": 0.0,
+            "r": 1.0,
+            "signal_recall": 1.0
+          }
+        ],
+        "events": 3072000,
+        "gated_retention_mean": 0.6737503255208334,
+        "grid_points": 29,
+        "mesr_argmax_at_evaluable_floor": false,
+        "mesr_at_evaluable_floor": 0.7161831921033361,
+        "mesr_at_star": 0.8877093786807317,
+        "r_star_accuracy": 0.75,
+        "r_star_mesr": 0.35,
+        "raw_mesr": 0.7835168743783788,
+        "signal_fraction": 0.8864498697916666,
+        "signal_recall_at_mesr_star": 0.3925184362071612,
+        "smallest_evaluable_r": 0.02,
+        "valid_grid_points": 29
+      },
+      "1hz_hotel-bar": {
+        "accuracy_at_mesr_star": 0.8089926228255521,
+        "accuracy_at_star": 0.920051816110369,
+        "blocks": 87,
+        "curve": [
+          {
+            "balanced_accuracy": 0.516421969115429,
+            "kept_events": 17835,
+            "mesr": NaN,
+            "noise_rejection": 0.9995823879059538,
+            "r": 0.02,
+            "signal_recall": 0.03326155032490431
+          },
+          {
+            "balanced_accuracy": 0.5331214972902119,
+            "kept_events": 35670,
+            "mesr": 0.8829304748044885,
+            "noise_rejection": 0.9994960814065176,
+            "r": 0.04,
+            "signal_recall": 0.06674691317390609
+          },
+          {
+            "balanced_accuracy": 0.5497415440722309,
+            "kept_events": 53418,
+            "mesr": 0.9338618640533703,
+            "noise_rejection": 0.9994125589877083,
+            "r": 0.06,
+            "signal_recall": 0.10007052915675341
+          },
+          {
+            "balanced_accuracy": 0.5664667289667858,
+            "kept_events": 71253,
+            "mesr": 0.965314275980563,
+            "noise_rejection": 0.9993568773751688,
+            "r": 0.08,
+            "signal_recall": 0.13357658055840285
+          },
+          {
+            "balanced_accuracy": 0.5831872490032004,
+            "kept_events": 89088,
+            "mesr": 0.9725698813188202,
+            "noise_rejection": 0.9992956276013754,
+            "r": 0.1,
+            "signal_recall": 0.16707887040502545
+          },
+          {
+            "balanced_accuracy": 0.5999194311849659,
+            "kept_events": 106923,
+            "mesr": 1.03584119205956,
+            "noise_rejection": 0.9992482982307168,
+            "r": 0.12,
+            "signal_recall": 0.20059056413921514
+          },
+          {
+            "balanced_accuracy": 0.6166492809376614,
+            "kept_events": 124758,
+            "mesr": 1.079360109245689,
+            "noise_rejection": 0.9991981847794312,
+            "r": 0.14,
+            "signal_recall": 0.23410037709589143
+          },
+          {
+            "balanced_accuracy": 0.6333043141557333,
+            "kept_events": 142506,
+            "mesr": 1.0707177971102861,
+            "noise_rejection": 0.9991564235700265,
+            "r": 0.16,
+            "signal_recall": 0.2674522047414401
+          },
+          {
+            "balanced_accuracy": 0.6500458260537797,
+            "kept_events": 160341,
+            "mesr": 1.1017919934493299,
+            "noise_rejection": 0.9991202305218759,
+            "r": 0.18,
+            "signal_recall": 0.3009714215856835
+          },
+          {
+            "balanced_accuracy": 0.6667873379518261,
+            "kept_events": 178176,
+            "mesr": 1.0668946839087918,
+            "noise_rejection": 0.9990840374737252,
+            "r": 0.2,
+            "signal_recall": 0.33449063842992693
+          },
+          {
+            "balanced_accuracy": 0.6835218525626618,
+            "kept_events": 196011,
+            "mesr": 1.114282190870003,
+            "noise_rejection": 0.9990394921836936,
+            "r": 0.22,
+            "signal_recall": 0.36800421294163005
+          },
+          {
+            "balanced_accuracy": 0.7002423725990764,
+            "kept_events": 213846,
+            "mesr": 1.1391138986107692,
+            "noise_rejection": 0.9989782424099002,
+            "r": 0.24,
+            "signal_recall": 0.4015065027882527
+          },
+          {
+            "balanced_accuracy": 0.716892740959008,
+            "kept_events": 231594,
+            "mesr": 1.1299954575485367,
+            "noise_rejection": 0.9989309130392416,
+            "r": 0.26,
+            "signal_recall": 0.4348545688787745
+          },
+          {
+            "balanced_accuracy": 0.733629587998914,
+            "kept_events": 249429,
+            "mesr": 1.142685783078208,
+            "noise_rejection": 0.998889151829837,
+            "r": 0.28,
+            "signal_recall": 0.46837002416799106
+          },
+          {
+            "balanced_accuracy": 0.7503454431771882,
+            "kept_events": 267264,
+            "mesr": 1.1298835834075869,
+            "noise_rejection": 0.9988223338947896,
+            "r": 0.3,
+            "signal_recall": 0.5018685524595868
+          },
+          {
+            "balanced_accuracy": 0.7915413885223194,
+            "kept_events": 311808,
+            "mesr": 1.1505751405551732,
+            "noise_rejection": 0.997995461948578,
+            "r": 0.35,
+            "signal_recall": 0.5850873150960607
+          },
+          {
+            "balanced_accuracy": 0.8314055168683667,
+            "kept_events": 356352,
+            "mesr": 1.136872731608189,
+            "noise_rejection": 0.9955788799643638,
+            "r": 0.4,
+            "signal_recall": 0.6672321537723696
+          },
+          {
+            "balanced_accuracy": 0.8698491959106625,
+            "kept_events": 400896,
+            "mesr": 1.1635806562795865,
+            "noise_rejection": 0.9914667928783217,
+            "r": 0.45,
+            "signal_recall": 0.7482315989430031
+          },
+          {
+            "balanced_accuracy": 0.901218617583043,
+            "kept_events": 445440,
+            "mesr": 1.1709437747574185,
+            "noise_rejection": 0.9789105892506647,
+            "r": 0.5,
+            "signal_recall": 0.8235266459154215
+          },
+          {
+            "balanced_accuracy": 0.9176651580642873,
+            "kept_events": 489984,
+            "mesr": 1.1883553813862624,
+            "noise_rejection": 0.9485418377716218,
+            "r": 0.55,
+            "signal_recall": 0.8867884783569527
+          },
+          {
+            "balanced_accuracy": 0.920051816110369,
+            "kept_events": 534528,
+            "mesr": 1.1958631067637164,
+            "noise_rejection": 0.9013906482731739,
+            "r": 0.6,
+            "signal_recall": 0.938712983947564
+          },
+          {
+            "balanced_accuracy": 0.9041498978170163,
+            "kept_events": 579072,
+            "mesr": 1.2111645675877345,
+            "noise_rejection": 0.8324094825786155,
+            "r": 0.65,
+            "signal_recall": 0.9758903130554171
+          },
+          {
+            "balanced_accuracy": 0.8664817514405618,
+            "kept_events": 623616,
+            "mesr": 1.2261702364094842,
+            "noise_rejection": 0.7374472764731267,
+            "r": 0.7,
+            "signal_recall": 0.9955162264079971
+          },
+          {
+            "balanced_accuracy": 0.8089926228255521,
+            "kept_events": 668160,
+            "mesr": 1.2337295927112706,
+            "noise_rejection": 0.6188259531996047,
+            "r": 0.75,
+            "signal_recall": 0.9991592924514995
+          },
+          {
+            "balanced_accuracy": 0.7478695697191714,
+            "kept_events": 712704,
+            "mesr": 1.2328304247265658,
+            "noise_rejection": 0.49586703230925566,
+            "r": 0.8,
+            "signal_recall": 0.9998721071290871
+          },
+          {
+            "balanced_accuracy": 0.6859301664382209,
+            "kept_events": 757248,
+            "mesr": 1.2243070720157032,
+            "noise_rejection": 0.37193368319946546,
+            "r": 0.85,
+            "signal_recall": 0.9999266496769764
+          },
+          {
+            "balanced_accuracy": 0.6239721037247089,
+            "kept_events": 801792,
+            "mesr": 1.208677780268957,
+            "noise_rejection": 0.24797806144465945,
+            "r": 0.9,
+            "signal_recall": 0.9999661460047584
+          },
+          {
+            "balanced_accuracy": 0.5619883842914246,
+            "kept_events": 846336,
+            "mesr": 1.1950383986536504,
+            "noise_rejection": 0.12399181480295669,
+            "r": 0.95,
+            "signal_recall": 0.9999849537798926
+          },
+          {
+            "balanced_accuracy": 0.5,
+            "kept_events": 890880,
+            "mesr": 1.175420654517643,
+            "noise_rejection": 0.0,
+            "r": 1.0,
+            "signal_recall": 1.0
+          }
+        ],
+        "events": 890880,
+        "gated_retention_mean": 0.5553048670977011,
+        "grid_points": 29,
+        "mesr_argmax_at_evaluable_floor": false,
+        "mesr_at_evaluable_floor": 0.8829304748044885,
+        "mesr_at_star": 1.2337295927112706,
+        "r_star_accuracy": 0.6,
+        "r_star_mesr": 0.75,
+        "raw_mesr": 1.175420654517643,
+        "signal_fraction": 0.596819998204023,
+        "signal_recall_at_mesr_star": 0.9991592924514995,
+        "smallest_evaluable_r": 0.04,
+        "valid_grid_points": 28
+      },
+      "3hz_driving": {
+        "accuracy_at_mesr_star": 0.6718485881607283,
+        "accuracy_at_star": 0.8438874787924828,
+        "blocks": 368,
+        "curve": [
+          {
+            "balanced_accuracy": 0.5115432354209828,
+            "kept_events": 75440,
+            "mesr": 0.6688719600882834,
+            "noise_rejection": 0.9966725302183694,
+            "r": 0.02,
+            "signal_recall": 0.026413940623596116
+          },
+          {
+            "balanced_accuracy": 0.5247283009539748,
+            "kept_events": 150880,
+            "mesr": 0.7369973362769267,
+            "noise_rejection": 0.9957192240183341,
+            "r": 0.04,
+            "signal_recall": 0.05373737788961544
+          },
+          {
+            "balanced_accuracy": 0.5380658040232789,
+            "kept_events": 225952,
+            "mesr": 0.7865565562002388,
+            "noise_rejection": 0.9950840059172051,
+            "r": 0.06,
+            "signal_recall": 0.0810476021293526
+          },
+          {
+            "balanced_accuracy": 0.5515198699701029,
+            "kept_events": 301392,
+            "mesr": 0.8058401762258202,
+            "noise_rejection": 0.9945196869706516,
+            "r": 0.08,
+            "signal_recall": 0.10852005296955425
+          },
+          {
+            "balanced_accuracy": 0.564990499981818,
+            "kept_events": 376832,
+            "mesr": 0.8239399828361117,
+            "noise_rejection": 0.9939793204411843,
+            "r": 0.1,
+            "signal_recall": 0.13600167952245187
+          },
+          {
+            "balanced_accuracy": 0.5784286644263467,
+            "kept_events": 452272,
+            "mesr": 0.8346948717726703,
+            "noise_rejection": 0.9933920071742279,
+            "r": 0.12,
+            "signal_recall": 0.16346532167846542
+          },
+          {
+            "balanced_accuracy": 0.5918124987380323,
+            "kept_events": 527712,
+            "mesr": 0.8416822592998305,
+            "noise_rejection": 0.9927261299792285,
+            "r": 0.14,
+            "signal_recall": 0.1908988674968362
+          },
+          {
+            "balanced_accuracy": 0.6051493392447407,
+            "kept_events": 602784,
+            "mesr": 0.8473226258135842,
+            "noise_rejection": 0.992089953781416,
+            "r": 0.16,
+            "signal_recall": 0.21820872470806552
+          },
+          {
+            "balanced_accuracy": 0.6185629888732305,
+            "kept_events": 678224,
+            "mesr": 0.8522168255898772,
+            "noise_rejection": 0.9914671909371718,
+            "r": 0.18,
+            "signal_recall": 0.24565878680928904
+          },
+          {
+            "balanced_accuracy": 0.6319541113734681,
+            "kept_events": 753664,
+            "mesr": 0.8555347902103237,
+            "noise_rejection": 0.9908118528056903,
+            "r": 0.2,
+            "signal_recall": 0.2730963699412461
+          },
+          {
+            "balanced_accuracy": 0.6453313200591974,
+            "kept_events": 829104,
+            "mesr": 0.8626181130702465,
+            "noise_rejection": 0.9901363946438563,
+            "r": 0.22,
+            "signal_recall": 0.3005262454745385
+          },
+          {
+            "balanced_accuracy": 0.6587038908067571,
+            "kept_events": 904544,
+            "mesr": 0.8651419967412084,
+            "noise_rejection": 0.9894542298052381,
+            "r": 0.24,
+            "signal_recall": 0.32795355180827607
+          },
+          {
+            "balanced_accuracy": 0.6718485881607283,
+            "kept_events": 979616,
+            "mesr": 0.8688816133915956,
+            "noise_rejection": 0.9885402055692244,
+            "r": 0.26,
+            "signal_recall": 0.3551569707522323
+          },
+          {
+            "balanced_accuracy": 0.6851105109548152,
+            "kept_events": 1055056,
+            "mesr": 0.8640069728673224,
+            "noise_rejection": 0.9876980385844696,
+            "r": 0.28,
+            "signal_recall": 0.3825229833251608
+          },
+          {
+            "balanced_accuracy": 0.6983598450595849,
+            "kept_events": 1130496,
+            "mesr": 0.8669725504432028,
+            "noise_rejection": 0.9868376677627293,
+            "r": 0.3,
+            "signal_recall": 0.40988202235644045
+          },
+          {
+            "balanced_accuracy": 0.7312221547284815,
+            "kept_events": 1318912,
+            "mesr": 0.8653943884763955,
+            "noise_rejection": 0.9843581135459541,
+            "r": 0.35,
+            "signal_recall": 0.4780861959110088
+          },
+          {
+            "balanced_accuracy": 0.7628580610328385,
+            "kept_events": 1507328,
+            "mesr": 0.8606552989386773,
+            "noise_rejection": 0.9801051223681084,
+            "r": 0.4,
+            "signal_recall": 0.5456109996975685
+          },
+          {
+            "balanced_accuracy": 0.791053279778009,
+            "kept_events": 1695744,
+            "mesr": 0.8574498101349983,
+            "noise_rejection": 0.9708767351130937,
+            "r": 0.45,
+            "signal_recall": 0.6112298244429242
+          },
+          {
+            "balanced_accuracy": 0.8142647026787347,
+            "kept_events": 1884160,
+            "mesr": 0.8510971634135848,
+            "noise_rejection": 0.9544415446051492,
+            "r": 0.5,
+            "signal_recall": 0.6740878607523203
+          },
+          {
+            "balanced_accuracy": 0.8313328451926365,
+            "kept_events": 2072576,
+            "mesr": 0.8431737417804487,
+            "noise_rejection": 0.9291228816482329,
+            "r": 0.55,
+            "signal_recall": 0.7335428087370403
+          },
+          {
+            "balanced_accuracy": 0.8417998765661233,
+            "kept_events": 2260992,
+            "mesr": 0.8340465071292089,
+            "noise_rejection": 0.8942587014340792,
+            "r": 0.6,
+            "signal_recall": 0.7893410516981675
+          },
+          {
+            "balanced_accuracy": 0.8438874787924828,
+            "kept_events": 2449408,
+            "mesr": 0.8235842910906578,
+            "noise_rejection": 0.8472774724643013,
+            "r": 0.65,
+            "signal_recall": 0.8404974851206642
+          },
+          {
+            "balanced_accuracy": 0.8346724256997275,
+            "kept_events": 2637824,
+            "mesr": 0.8127663558649351,
+            "noise_rejection": 0.783952072171507,
+            "r": 0.7,
+            "signal_recall": 0.8853927792279482
+          },
+          {
+            "balanced_accuracy": 0.8139758253870334,
+            "kept_events": 2826240,
+            "mesr": 0.7990292388829867,
+            "noise_rejection": 0.7040238144511639,
+            "r": 0.75,
+            "signal_recall": 0.9239278363229029
+          },
+          {
+            "balanced_accuracy": 0.7817884019780612,
+            "kept_events": 3014656,
+            "mesr": 0.7868636220784001,
+            "noise_rejection": 0.6074792859497038,
+            "r": 0.8,
+            "signal_recall": 0.9560975180064186
+          },
+          {
+            "balanced_accuracy": 0.7348788376938484,
+            "kept_events": 3203072,
+            "mesr": 0.7724712949321484,
+            "noise_rejection": 0.4896458491419286,
+            "r": 0.85,
+            "signal_recall": 0.9801118262457682
+          },
+          {
+            "balanced_accuracy": 0.6706717517251214,
+            "kept_events": 3391488,
+            "mesr": 0.7552126969039749,
+            "noise_rejection": 0.3467993822192585,
+            "r": 0.9,
+            "signal_recall": 0.9945441212309842
+          },
+          {
+            "balanced_accuracy": 0.5882382313127854,
+            "kept_events": 3579904,
+            "mesr": 0.7377761541614647,
+            "noise_rejection": 0.17759663363149303,
+            "r": 0.95,
+            "signal_recall": 0.9988798289940777
+          },
+          {
+            "balanced_accuracy": 0.5,
+            "kept_events": 3768320,
+            "mesr": 0.7189339401504892,
+            "noise_rejection": 0.0,
+            "r": 1.0,
+            "signal_recall": 1.0
+          }
+        ],
+        "events": 3768320,
+        "gated_retention_mean": 0.5788149626358695,
+        "grid_points": 29,
+        "mesr_argmax_at_evaluable_floor": false,
+        "mesr_at_evaluable_floor": 0.6688719600882834,
+        "mesr_at_star": 0.8688816133915956,
+        "r_star_accuracy": 0.65,
+        "r_star_mesr": 0.26,
+        "raw_mesr": 0.7189339401504892,
+        "signal_fraction": 0.7230235224184782,
+        "signal_recall_at_mesr_star": 0.3551569707522323,
+        "smallest_evaluable_r": 0.02,
+        "valid_grid_points": 29
+      },
+      "3hz_hotel-bar": {
+        "accuracy_at_mesr_star": 0.9222029147781365,
+        "accuracy_at_star": 0.923783442002893,
+        "blocks": 157,
+        "curve": [
+          {
+            "balanced_accuracy": 0.5284328641813114,
+            "kept_events": 32185,
+            "mesr": 0.8562565743510404,
+            "noise_rejection": 0.9988214150832824,
+            "r": 0.02,
+            "signal_recall": 0.05804431327934037
+          },
+          {
+            "balanced_accuracy": 0.5581979251263618,
+            "kept_events": 64370,
+            "mesr": 0.9610278741971999,
+            "noise_rejection": 0.9985256060828749,
+            "r": 0.04,
+            "signal_recall": 0.1178702441698488
+          },
+          {
+            "balanced_accuracy": 0.5879349352204546,
+            "kept_events": 96398,
+            "mesr": 1.010527883178845,
+            "noise_rejection": 0.9983088655259725,
+            "r": 0.06,
+            "signal_recall": 0.17756100491493668
+          },
+          {
+            "balanced_accuracy": 0.6178389713811112,
+            "kept_events": 128583,
+            "mesr": 1.0695256003378757,
+            "noise_rejection": 0.998105148006824,
+            "r": 0.08,
+            "signal_recall": 0.23757279475539836
+          },
+          {
+            "balanced_accuracy": 0.6476826445693328,
+            "kept_events": 160768,
+            "mesr": 1.1069878567314126,
+            "noise_rejection": 0.9978614311574318,
+            "r": 0.1,
+            "signal_recall": 0.29750385798123385
+          },
+          {
+            "balanced_accuracy": 0.6774968381663653,
+            "kept_events": 192953,
+            "mesr": 1.1116837715703463,
+            "noise_rejection": 0.9975981797514089,
+            "r": 0.12,
+            "signal_recall": 0.35739549658132175
+          },
+          {
+            "balanced_accuracy": 0.7069221819177121,
+            "kept_events": 225138,
+            "mesr": 1.1384419426314119,
+            "noise_rejection": 0.9970772582412574,
+            "r": 0.14,
+            "signal_recall": 0.41676710559416663
+          },
+          {
+            "balanced_accuracy": 0.7359937955249636,
+            "kept_events": 257166,
+            "mesr": 1.148579589304938,
+            "noise_rejection": 0.9964195948346911,
+            "r": 0.16,
+            "signal_recall": 0.47556799621523593
+          },
+          {
+            "balanced_accuracy": 0.7648295474525268,
+            "kept_events": 289351,
+            "mesr": 1.1605141077892958,
+            "noise_rejection": 0.995507982191926,
+            "r": 0.18,
+            "signal_recall": 0.5341511127131277
+          },
+          {
+            "balanced_accuracy": 0.7931093985176658,
+            "kept_events": 321536,
+            "mesr": 1.1730732134460495,
+            "noise_rejection": 0.9942280036241253,
+            "r": 0.2,
+            "signal_recall": 0.5919907934112063
+          },
+          {
+            "balanced_accuracy": 0.8204009813829394,
+            "kept_events": 353721,
+            "mesr": 1.1602534864667708,
+            "noise_rejection": 0.9922931523007057,
+            "r": 0.22,
+            "signal_recall": 0.6485088104651731
+          },
+          {
+            "balanced_accuracy": 0.8457062013180854,
+            "kept_events": 385906,
+            "mesr": 1.1756427277992099,
+            "noise_rejection": 0.9890420439471711,
+            "r": 0.24,
+            "signal_recall": 0.7023703586889998
+          },
+          {
+            "balanced_accuracy": 0.8673826489070253,
+            "kept_events": 417934,
+            "mesr": 1.1909980656190744,
+            "noise_rejection": 0.9834839974772516,
+            "r": 0.26,
+            "signal_recall": 0.751281300336799
+          },
+          {
+            "balanced_accuracy": 0.8850386168236101,
+            "kept_events": 450119,
+            "mesr": 1.204908901735797,
+            "noise_rejection": 0.9751641367865468,
+            "r": 0.28,
+            "signal_recall": 0.7949130968606734
+          },
+          {
+            "balanced_accuracy": 0.8997550483616177,
+            "kept_events": 482304,
+            "mesr": 1.2120477753706491,
+            "noise_rejection": 0.9648964017346686,
+            "r": 0.3,
+            "signal_recall": 0.8346136949885669
+          },
+          {
+            "balanced_accuracy": 0.9222029147781365,
+            "kept_events": 562688,
+            "mesr": 1.222115822083205,
+            "noise_rejection": 0.9297714084787417,
+            "r": 0.35,
+            "signal_recall": 0.9146344210775313
+          },
+          {
+            "balanced_accuracy": 0.923783442002893,
+            "kept_events": 643072,
+            "mesr": 1.2112863345822222,
+            "noise_rejection": 0.8808187397792409,
+            "r": 0.4,
+            "signal_recall": 0.9667481442265452
+          },
+          {
+            "balanced_accuracy": 0.9054750717053563,
+            "kept_events": 723456,
+            "mesr": 1.21347777226622,
+            "noise_rejection": 0.8186867568729082,
+            "r": 0.45,
+            "signal_recall": 0.9922633865378044
+          },
+          {
+            "balanced_accuracy": 0.8729547308745265,
+            "kept_events": 803840,
+            "mesr": 1.1927261897584442,
+            "noise_rejection": 0.747137257236623,
+            "r": 0.5,
+            "signal_recall": 0.99877220451243
+          },
+          {
+            "balanced_accuracy": 0.836246884304778,
+            "kept_events": 884224,
+            "mesr": 1.1707268840329754,
+            "noise_rejection": 0.672812920341799,
+            "r": 0.55,
+            "signal_recall": 0.999680848267757
+          },
+          {
+            "balanced_accuracy": 0.7989115435797172,
+            "kept_events": 964608,
+            "mesr": 1.1337395587996835,
+            "noise_rejection": 0.5980727764558361,
+            "r": 0.6,
+            "signal_recall": 0.9997503107035981
+          },
+          {
+            "balanced_accuracy": 0.7615481270535237,
+            "kept_events": 1044992,
+            "mesr": 1.1055131966909193,
+            "noise_rejection": 0.523314028230225,
+            "r": 0.65,
+            "signal_recall": 0.9997822258768224
+          },
+          {
+            "balanced_accuracy": 0.7241889218975002,
+            "kept_events": 1125376,
+            "mesr": 1.069912352012281,
+            "noise_rejection": 0.44855807065556114,
+            "r": 0.7,
+            "signal_recall": 0.9998197731394393
+          },
+          {
+            "balanced_accuracy": 0.6868269091613635,
+            "kept_events": 1205760,
+            "mesr": 1.038454861345742,
+            "noise_rejection": 0.3738002526469324,
+            "r": 0.75,
+            "signal_recall": 0.9998535656757944
+          },
+          {
+            "balanced_accuracy": 0.6494648964252266,
+            "kept_events": 1286144,
+            "mesr": 1.0080575909713458,
+            "noise_rejection": 0.2990424346383037,
+            "r": 0.8,
+            "signal_recall": 0.9998873582121496
+          },
+          {
+            "balanced_accuracy": 0.61209867231892,
+            "kept_events": 1366528,
+            "mesr": 0.9793793160859866,
+            "noise_rejection": 0.2242818259787278,
+            "r": 0.85,
+            "signal_recall": 0.9999155186591122
+          },
+          {
+            "balanced_accuracy": 0.5747422747430097,
+            "kept_events": 1446912,
+            "mesr": 0.9502516884711616,
+            "noise_rejection": 0.14952772883802876,
+            "r": 0.9,
+            "signal_recall": 0.9999568206479906
+          },
+          {
+            "balanced_accuracy": 0.5373732430565898,
+            "kept_events": 1527296,
+            "mesr": 0.9277623232042502,
+            "noise_rejection": 0.074765259744488,
+            "r": 0.95,
+            "signal_recall": 0.9999812263686916
+          },
+          {
+            "balanced_accuracy": 0.5,
+            "kept_events": 1607680,
+            "mesr": 0.9014446356260362,
+            "noise_rejection": 0.0,
+            "r": 1.0,
+            "signal_recall": 1.0
+          }
+        ],
+        "events": 1607680,
+        "gated_retention_mean": 0.32408128483280263,
+        "grid_points": 29,
+        "mesr_argmax_at_evaluable_floor": false,
+        "mesr_at_evaluable_floor": 0.8562565743510404,
+        "mesr_at_star": 1.222115822083205,
+        "r_star_accuracy": 0.4,
+        "r_star_mesr": 0.35,
+        "raw_mesr": 0.9014446356260362,
+        "signal_fraction": 0.33132339769108277,
+        "signal_recall_at_mesr_star": 0.9146344210775313,
+        "smallest_evaluable_r": 0.02,
+        "valid_grid_points": 29
+      },
+      "5hz_driving": {
+        "accuracy_at_mesr_star": 0.7345896638947056,
+        "accuracy_at_star": 0.8365884019209648,
+        "blocks": 437,
+        "curve": [
+          {
+            "balanced_accuracy": 0.5146101545917704,
+            "kept_events": 89585,
+            "mesr": 0.6615391734540903,
+            "noise_rejection": 0.9978091683609976,
+            "r": 0.02,
+            "signal_recall": 0.03141114082254315
+          },
+          {
+            "balanced_accuracy": 0.530490474215314,
+            "kept_events": 179170,
+            "mesr": 0.7626719742106179,
+            "noise_rejection": 0.997168312847548,
+            "r": 0.04,
+            "signal_recall": 0.06381263558308004
+          },
+          {
+            "balanced_accuracy": 0.5464011549509195,
+            "kept_events": 268318,
+            "mesr": 0.7954955405223183,
+            "noise_rejection": 0.9966621630994478,
+            "r": 0.06,
+            "signal_recall": 0.09614014680239107
+          },
+          {
+            "balanced_accuracy": 0.5624186373663557,
+            "kept_events": 357903,
+            "mesr": 0.8140168164670967,
+            "noise_rejection": 0.9961886866646451,
+            "r": 0.08,
+            "signal_recall": 0.1286485880680663
+          },
+          {
+            "balanced_accuracy": 0.5784596065612256,
+            "kept_events": 447488,
+            "mesr": 0.815436952684192,
+            "noise_rejection": 0.9957438710309806,
+            "r": 0.1,
+            "signal_recall": 0.16117534209147075
+          },
+          {
+            "balanced_accuracy": 0.5945311085693594,
+            "kept_events": 537073,
+            "mesr": 0.8353453275308703,
+            "noise_rejection": 0.9953363144387957,
+            "r": 0.12,
+            "signal_recall": 0.19372590269992312
+          },
+          {
+            "balanced_accuracy": 0.6106077776689686,
+            "kept_events": 626658,
+            "mesr": 0.846239424575753,
+            "noise_rejection": 0.9949350632228612,
+            "r": 0.14,
+            "signal_recall": 0.2262804921150759
+          },
+          {
+            "balanced_accuracy": 0.6265795240311015,
+            "kept_events": 715806,
+            "mesr": 0.8451555665438479,
+            "noise_rejection": 0.9945034315577203,
+            "r": 0.16,
+            "signal_recall": 0.25865561650448277
+          },
+          {
+            "balanced_accuracy": 0.6425984156533038,
+            "kept_events": 805391,
+            "mesr": 0.8553861161493052,
+            "noise_rejection": 0.9940316747709859,
+            "r": 0.18,
+            "signal_recall": 0.2911651565356218
+          },
+          {
+            "balanced_accuracy": 0.6585632876828087,
+            "kept_events": 894976,
+            "mesr": 0.851687658513479,
+            "noise_rejection": 0.9934939981416336,
+            "r": 0.2,
+            "signal_recall": 0.3236325772239837
+          },
+          {
+            "balanced_accuracy": 0.6744576993740126,
+            "kept_events": 984561,
+            "mesr": 0.8594974613141099,
+            "noise_rejection": 0.9928703391088669,
+            "r": 0.22,
+            "signal_recall": 0.3560450596391581
+          },
+          {
+            "balanced_accuracy": 0.6902346771680479,
+            "kept_events": 1074146,
+            "mesr": 0.8604036059871669,
+            "noise_rejection": 0.9921033760704092,
+            "r": 0.24,
+            "signal_recall": 0.38836597826568664
+          },
+          {
+            "balanced_accuracy": 0.7055398687298532,
+            "kept_events": 1163294,
+            "mesr": 0.861793470092433,
+            "noise_rejection": 0.9908583508689668,
+            "r": 0.26,
+            "signal_recall": 0.42022138659073954
+          },
+          {
+            "balanced_accuracy": 0.7203506004179872,
+            "kept_events": 1252879,
+            "mesr": 0.8590894509157092,
+            "noise_rejection": 0.9889122824716846,
+            "r": 0.28,
+            "signal_recall": 0.4517889183642898
+          },
+          {
+            "balanced_accuracy": 0.7345896638947056,
+            "kept_events": 1342464,
+            "mesr": 0.8618000253508952,
+            "noise_rejection": 0.986268610174699,
+            "r": 0.3,
+            "signal_recall": 0.48291071761471205
+          },
+          {
+            "balanced_accuracy": 0.7672542077202229,
+            "kept_events": 1566208,
+            "mesr": 0.8523835682865101,
+            "noise_rejection": 0.9761289919480345,
+            "r": 0.35,
+            "signal_recall": 0.5583794234924114
+          },
+          {
+            "balanced_accuracy": 0.7936971036737597,
+            "kept_events": 1789952,
+            "mesr": 0.8439451570320663,
+            "noise_rejection": 0.9583971274998667,
+            "r": 0.4,
+            "signal_recall": 0.6289970798476525
+          },
+          {
+            "balanced_accuracy": 0.8146210761959711,
+            "kept_events": 2013696,
+            "mesr": 0.833658428832875,
+            "noise_rejection": 0.9339305480002499,
+            "r": 0.45,
+            "signal_recall": 0.6953116043916923
+          },
+          {
+            "balanced_accuracy": 0.8286244342902556,
+            "kept_events": 2237440,
+            "mesr": 0.8219200269878524,
+            "noise_rejection": 0.9010187768372576,
+            "r": 0.5,
+            "signal_recall": 0.7562300917432536
+          },
+          {
+            "balanced_accuracy": 0.8365884019209648,
+            "kept_events": 2461184,
+            "mesr": 0.8106113407540744,
+            "noise_rejection": 0.8607371672695944,
+            "r": 0.55,
+            "signal_recall": 0.8124396365723352
+          },
+          {
+            "balanced_accuracy": 0.8332787154235095,
+            "kept_events": 2684928,
+            "mesr": 0.7964774596321718,
+            "noise_rejection": 0.8066983731556058,
+            "r": 0.6,
+            "signal_recall": 0.8598590576914131
+          },
+          {
+            "balanced_accuracy": 0.8232710691671585,
+            "kept_events": 2908672,
+            "mesr": 0.7818402933644956,
+            "noise_rejection": 0.7444860917730317,
+            "r": 0.65,
+            "signal_recall": 0.9020560465612852
+          },
+          {
+            "balanced_accuracy": 0.804428635959036,
+            "kept_events": 3132416,
+            "mesr": 0.7673664381523627,
+            "noise_rejection": 0.6714927634343206,
+            "r": 0.7,
+            "signal_recall": 0.9373645084837513
+          },
+          {
+            "balanced_accuracy": 0.775177331841497,
+            "kept_events": 3356160,
+            "mesr": 0.7528313807025624,
+            "noise_rejection": 0.585797541247192,
+            "r": 0.75,
+            "signal_recall": 0.9645571224358018
+          },
+          {
+            "balanced_accuracy": 0.7369498503599956,
+            "kept_events": 3579904,
+            "mesr": 0.736295200218286,
+            "noise_rejection": 0.4891487340810745,
+            "r": 0.8,
+            "signal_recall": 0.9847509666389167
+          },
+          {
+            "balanced_accuracy": 0.685700358889287,
+            "kept_events": 3803648,
+            "mesr": 0.7200957893398917,
+            "noise_rejection": 0.37660923233190585,
+            "r": 0.85,
+            "signal_recall": 0.9947914854466683
+          },
+          {
+            "balanced_accuracy": 0.6274057730596531,
+            "kept_events": 4027392,
+            "mesr": 0.7026855652139865,
+            "noise_rejection": 0.25547263667332937,
+            "r": 0.9,
+            "signal_recall": 0.9993389094459768
+          },
+          {
+            "balanced_accuracy": 0.5641249439562497,
+            "kept_events": 4251136,
+            "mesr": 0.6863436132962724,
+            "noise_rejection": 0.12825135293311773,
+            "r": 0.95,
+            "signal_recall": 0.9999985349793816
+          },
+          {
+            "balanced_accuracy": 0.5,
+            "kept_events": 4474880,
+            "mesr": 0.6688034145895164,
+            "noise_rejection": 0.0,
+            "r": 1.0,
+            "signal_recall": 1.0
+          }
+        ],
+        "events": 4474880,
+        "gated_retention_mean": 0.5471344482980549,
+        "grid_points": 29,
+        "mesr_argmax_at_evaluable_floor": false,
+        "mesr_at_evaluable_floor": 0.6615391734540903,
+        "mesr_at_star": 0.8618000253508952,
+        "r_star_accuracy": 0.55,
+        "r_star_mesr": 0.3,
+        "raw_mesr": 0.6688034145895164,
+        "signal_fraction": 0.6101475346824943,
+        "signal_recall_at_mesr_star": 0.48291071761471205,
+        "smallest_evaluable_r": 0.02,
+        "valid_grid_points": 29
+      },
+      "5hz_hotel-bar": {
+        "accuracy_at_mesr_star": 0.9238404301014183,
+        "accuracy_at_star": 0.9370620951155322,
+        "blocks": 229,
+        "curve": [
+          {
+            "balanced_accuracy": 0.5425658377718231,
+            "kept_events": 46945,
+            "mesr": 0.8938090152356378,
+            "noise_rejection": 0.9993983731213663,
+            "r": 0.02,
+            "signal_recall": 0.08573330242227989
+          },
+          {
+            "balanced_accuracy": 0.5853145424534137,
+            "kept_events": 93890,
+            "mesr": 0.9907521282972032,
+            "noise_rejection": 0.9988801674169048,
+            "r": 0.04,
+            "signal_recall": 0.17174891748992274
+          },
+          {
+            "balanced_accuracy": 0.6278697632911103,
+            "kept_events": 140606,
+            "mesr": 1.052082044696774,
+            "noise_rejection": 0.9983713535002641,
+            "r": 0.06,
+            "signal_recall": 0.2573681730819567
+          },
+          {
+            "balanced_accuracy": 0.6706027244639131,
+            "kept_events": 187551,
+            "mesr": 1.0950401427466165,
+            "noise_rejection": 0.9978459658404103,
+            "r": 0.08,
+            "signal_recall": 0.343359483087416
+          },
+          {
+            "balanced_accuracy": 0.7129517862301176,
+            "kept_events": 234496,
+            "mesr": 1.1196450507922298,
+            "noise_rejection": 0.9971454489606053,
+            "r": 0.1,
+            "signal_recall": 0.42875812349962983
+          },
+          {
+            "balanced_accuracy": 0.7548333868892338,
+            "kept_events": 281441,
+            "mesr": 1.1403674441780622,
+            "noise_rejection": 0.996231683251459,
+            "r": 0.12,
+            "signal_recall": 0.5134350905270085
+          },
+          {
+            "balanced_accuracy": 0.7951103606911172,
+            "kept_events": 328386,
+            "mesr": 1.1658589706590146,
+            "noise_rejection": 0.994585910550403,
+            "r": 0.14,
+            "signal_recall": 0.5956348108318315
+          },
+          {
+            "balanced_accuracy": 0.8313052039784842,
+            "kept_events": 375102,
+            "mesr": 1.1765915696125941,
+            "noise_rejection": 0.991175586655264,
+            "r": 0.16,
+            "signal_recall": 0.6714348213017044
+          },
+          {
+            "balanced_accuracy": 0.8628203096203075,
+            "kept_events": 422047,
+            "mesr": 1.1956871878358708,
+            "noise_rejection": 0.9855327795493267,
+            "r": 0.18,
+            "signal_recall": 0.7401078396912883
+          },
+          {
+            "balanced_accuracy": 0.8882620539873969,
+            "kept_events": 468992,
+            "mesr": 1.2039152690486423,
+            "noise_rejection": 0.9771193950362744,
+            "r": 0.2,
+            "signal_recall": 0.7994047129385194
+          },
+          {
+            "balanced_accuracy": 0.9089565249353522,
+            "kept_events": 515937,
+            "mesr": 1.2091090669530968,
+            "noise_rejection": 0.9665403747433832,
+            "r": 0.22,
+            "signal_recall": 0.8513726751273212
+          },
+          {
+            "balanced_accuracy": 0.9238404301014183,
+            "kept_events": 562882,
+            "mesr": 1.2138702495223188,
+            "noise_rejection": 0.9533106604526179,
+            "r": 0.24,
+            "signal_recall": 0.8943701997502187
+          },
+          {
+            "balanced_accuracy": 0.932871665533893,
+            "kept_events": 609598,
+            "mesr": 1.2131116918904943,
+            "noise_rejection": 0.9375087012151868,
+            "r": 0.26,
+            "signal_recall": 0.9282346298525992
+          },
+          {
+            "balanced_accuracy": 0.9370620951155322,
+            "kept_events": 656543,
+            "mesr": 1.2082640227296388,
+            "noise_rejection": 0.9194007818387132,
+            "r": 0.28,
+            "signal_recall": 0.954723408392351
+          },
+          {
+            "balanced_accuracy": 0.9365779136262891,
+            "kept_events": 703488,
+            "mesr": 1.2035645914810171,
+            "noise_rejection": 0.8991603741688268,
+            "r": 0.3,
+            "signal_recall": 0.9739954530837515
+          },
+          {
+            "balanced_accuracy": 0.9191239331604911,
+            "kept_events": 820736,
+            "mesr": 1.1810763045708204,
+            "noise_rejection": 0.8411981269460337,
+            "r": 0.35,
+            "signal_recall": 0.9970497393749486
+          },
+          {
+            "balanced_accuracy": 0.8881983533287626,
+            "kept_events": 937984,
+            "mesr": 1.1404803482319574,
+            "noise_rejection": 0.7770903357398409,
+            "r": 0.4,
+            "signal_recall": 0.9993063709176844
+          },
+          {
+            "balanced_accuracy": 0.8559248869369585,
+            "kept_events": 1055232,
+            "mesr": 1.0942869291798754,
+            "noise_rejection": 0.7123676586604438,
+            "r": 0.45,
+            "signal_recall": 0.9994821152134732
+          },
+          {
+            "balanced_accuracy": 0.823598134823103,
+            "kept_events": 1172480,
+            "mesr": 1.0475956758467762,
+            "noise_rejection": 0.6476206734243343,
+            "r": 0.5,
+            "signal_recall": 0.9995755962218715
+          },
+          {
+            "balanced_accuracy": 0.791259272317872,
+            "kept_events": 1289728,
+            "mesr": 1.008531028459127,
+            "noise_rejection": 0.5828681636071537,
+            "r": 0.55,
+            "signal_recall": 0.9996503810285903
+          },
+          {
+            "balanced_accuracy": 0.7588852896776526,
+            "kept_events": 1406976,
+            "mesr": 0.9681452796588309,
+            "noise_rejection": 0.5180996325048671,
+            "r": 0.6,
+            "signal_recall": 0.9996709468504379
+          },
+          {
+            "balanced_accuracy": 0.7265464271724216,
+            "kept_events": 1524224,
+            "mesr": 0.9306337260956434,
+            "noise_rejection": 0.45334712268768657,
+            "r": 0.65,
+            "signal_recall": 0.9997457316571565
+          },
+          {
+            "balanced_accuracy": 0.6941736555713397,
+            "kept_events": 1641472,
+            "mesr": 0.898480349381273,
+            "noise_rejection": 0.3885791440435072,
+            "r": 0.7,
+            "signal_recall": 0.9997681670991722
+          },
+          {
+            "balanced_accuracy": 0.6618299489095586,
+            "kept_events": 1758720,
+            "mesr": 0.8675534268531568,
+            "noise_rejection": 0.3238244243938982,
+            "r": 0.75,
+            "signal_recall": 0.999835473425219
+          },
+          {
+            "balanced_accuracy": 0.6294523331519265,
+            "kept_events": 1875968,
+            "mesr": 0.8405666747415158,
+            "noise_rejection": 0.2590542359172904,
+            "r": 0.8,
+            "signal_recall": 0.9998504303865626
+          },
+          {
+            "balanced_accuracy": 0.5970965160987701,
+            "kept_events": 1993216,
+            "mesr": 0.8150107708620278,
+            "noise_rejection": 0.1942939916866104,
+            "r": 0.85,
+            "signal_recall": 0.9998990405109298
+          },
+          {
+            "balanced_accuracy": 0.5647176893020005,
+            "kept_events": 2110464,
+            "mesr": 0.7922548479599228,
+            "noise_rejection": 0.1295232507518955,
+            "r": 0.9,
+            "signal_recall": 0.9999121278521056
+          },
+          {
+            "balanced_accuracy": 0.5323727716010819,
+            "kept_events": 2227712,
+            "mesr": 0.7705103281673589,
+            "noise_rejection": 0.06476797864417941,
+            "r": 0.95,
+            "signal_recall": 0.9999775645579844
+          },
+          {
+            "balanced_accuracy": 0.5,
+            "kept_events": 2344960,
+            "mesr": 0.7512359588942936,
+            "noise_rejection": 0.0,
+            "r": 1.0,
+            "signal_recall": 1.0
+          }
+        ],
+        "events": 2344960,
+        "gated_retention_mean": 0.23613707696506553,
+        "grid_points": 29,
+        "mesr_argmax_at_evaluable_floor": false,
+        "mesr_at_evaluable_floor": 0.8938090152356378,
+        "mesr_at_star": 1.2138702495223188,
+        "r_star_accuracy": 0.28,
+        "r_star_mesr": 0.24,
+        "raw_mesr": 0.7512359588942936,
+        "signal_fraction": 0.2280925900655022,
+        "signal_recall_at_mesr_star": 0.8943701997502187,
+        "smallest_evaluable_r": 0.02,
+        "valid_grid_points": 29
+      },
+      "7hz_driving": {
+        "accuracy_at_mesr_star": 0.6804203253695482,
+        "accuracy_at_star": 0.8295472258021437,
+        "blocks": 504,
+        "curve": [
+          {
+            "balanced_accuracy": 0.5163682389844747,
+            "kept_events": 103320,
+            "mesr": 0.690232154530526,
+            "noise_rejection": 0.9972568174405032,
+            "r": 0.02,
+            "signal_recall": 0.035479660528446255
+          },
+          {
+            "balanced_accuracy": 0.5345032162640354,
+            "kept_events": 206640,
+            "mesr": 0.7691468758197665,
+            "noise_rejection": 0.9963783917958902,
+            "r": 0.04,
+            "signal_recall": 0.07262804073218058
+          },
+          {
+            "balanced_accuracy": 0.5527322566950743,
+            "kept_events": 309456,
+            "mesr": 0.7932585820757582,
+            "noise_rejection": 0.9956969041752912,
+            "r": 0.06,
+            "signal_recall": 0.1097676092148573
+          },
+          {
+            "balanced_accuracy": 0.5711027990806463,
+            "kept_events": 412776,
+            "mesr": 0.8067827183521094,
+            "noise_rejection": 0.995067112785996,
+            "r": 0.08,
+            "signal_recall": 0.1471384853752967
+          },
+          {
+            "balanced_accuracy": 0.5895021068422002,
+            "kept_events": 516096,
+            "mesr": 0.8190035816491201,
+            "noise_rejection": 0.9944676826754031,
+            "r": 0.1,
+            "signal_recall": 0.18453653100899714
+          },
+          {
+            "balanced_accuracy": 0.6078897529648424,
+            "kept_events": 619416,
+            "mesr": 0.8289687612375399,
+            "noise_rejection": 0.9938559439383091,
+            "r": 0.12,
+            "signal_recall": 0.22192356199137553
+          },
+          {
+            "balanced_accuracy": 0.6262346397448093,
+            "kept_events": 722736,
+            "mesr": 0.8339866134864568,
+            "noise_rejection": 0.993199073570712,
+            "r": 0.14,
+            "signal_recall": 0.2592702059189065
+          },
+          {
+            "balanced_accuracy": 0.6444360809637577,
+            "kept_events": 825552,
+            "mesr": 0.8454948613304113,
+            "noise_rejection": 0.9924884555340611,
+            "r": 0.16,
+            "signal_recall": 0.29638370639345435
+          },
+          {
+            "balanced_accuracy": 0.6626087642091321,
+            "kept_events": 928872,
+            "mesr": 0.8509048720876068,
+            "noise_rejection": 0.9916498277818009,
+            "r": 0.18,
+            "signal_recall": 0.3335677006364633
+          },
+          {
+            "balanced_accuracy": 0.6804203253695482,
+            "kept_events": 1032192,
+            "mesr": 0.8554128851454529,
+            "noise_rejection": 0.9904300428955634,
+            "r": 0.2,
+            "signal_recall": 0.3704106078435332
+          },
+          {
+            "balanced_accuracy": 0.6978062367096962,
+            "kept_events": 1135512,
+            "mesr": 0.8543590163559943,
+            "noise_rejection": 0.9887609931420436,
+            "r": 0.22,
+            "signal_recall": 0.4068514802773489
+          },
+          {
+            "balanced_accuracy": 0.7142561071665512,
+            "kept_events": 1238832,
+            "mesr": 0.8523529237198835,
+            "noise_rejection": 0.9861039709680529,
+            "r": 0.24,
+            "signal_recall": 0.4424082433650494
+          },
+          {
+            "balanced_accuracy": 0.7295883964919838,
+            "kept_events": 1341648,
+            "mesr": 0.8500783494548206,
+            "noise_rejection": 0.9823650205246347,
+            "r": 0.26,
+            "signal_recall": 0.476811772459333
+          },
+          {
+            "balanced_accuracy": 0.744048791350544,
+            "kept_events": 1444968,
+            "mesr": 0.8464327964231368,
+            "noise_rejection": 0.9776081466695934,
+            "r": 0.28,
+            "signal_recall": 0.5104894360314945
+          },
+          {
+            "balanced_accuracy": 0.7573974432995452,
+            "kept_events": 1548288,
+            "mesr": 0.845563785154666,
+            "noise_rejection": 0.9716778504214679,
+            "r": 0.3,
+            "signal_recall": 0.5431170361776223
+          },
+          {
+            "balanced_accuracy": 0.7867664062751345,
+            "kept_events": 1806336,
+            "mesr": 0.8356248817182431,
+            "noise_rejection": 0.9526762031169546,
+            "r": 0.35,
+            "signal_recall": 0.6208566094333146
+          },
+          {
+            "balanced_accuracy": 0.8099500359720865,
+            "kept_events": 2064384,
+            "mesr": 0.8247630125824272,
+            "noise_rejection": 0.9271460603163727,
+            "r": 0.4,
+            "signal_recall": 0.6927540116278003
+          },
+          {
+            "balanced_accuracy": 0.8238393394566061,
+            "kept_events": 2322432,
+            "mesr": 0.8088860905425608,
+            "noise_rejection": 0.8918059421945871,
+            "r": 0.45,
+            "signal_recall": 0.7558727367186252
+          },
+          {
+            "balanced_accuracy": 0.8295472258021437,
+            "kept_events": 2580480,
+            "mesr": 0.7932964597307596,
+            "noise_rejection": 0.8478305020073318,
+            "r": 0.5,
+            "signal_recall": 0.8112639495969556
+          },
+          {
+            "balanced_accuracy": 0.8287125439970561,
+            "kept_events": 2838528,
+            "mesr": 0.7776312602851422,
+            "noise_rejection": 0.7969495120655311,
+            "r": 0.55,
+            "signal_recall": 0.860475575928581
+          },
+          {
+            "balanced_accuracy": 0.8190410609461624,
+            "kept_events": 3096576,
+            "mesr": 0.7614195981409324,
+            "noise_rejection": 0.7367414552489112,
+            "r": 0.6,
+            "signal_recall": 0.9013406666434135
+          },
+          {
+            "balanced_accuracy": 0.8033467301187974,
+            "kept_events": 3354624,
+            "mesr": 0.7445836732794012,
+            "noise_rejection": 0.6701764031321351,
+            "r": 0.65,
+            "signal_recall": 0.9365170571054597
+          },
+          {
+            "balanced_accuracy": 0.7800540640980234,
+            "kept_events": 3612672,
+            "mesr": 0.7291649695619695,
+            "noise_rejection": 0.5955914602749337,
+            "r": 0.7,
+            "signal_recall": 0.964516667921113
+          },
+          {
+            "balanced_accuracy": 0.7442686730327011,
+            "kept_events": 3870720,
+            "mesr": 0.7125053865701295,
+            "noise_rejection": 0.5078206961348861,
+            "r": 0.75,
+            "signal_recall": 0.9807166499305159
+          },
+          {
+            "balanced_accuracy": 0.7027815179822696,
+            "kept_events": 4128768,
+            "mesr": 0.696092221415561,
+            "noise_rejection": 0.4140318342110068,
+            "r": 0.8,
+            "signal_recall": 0.9915312017535325
+          },
+          {
+            "balanced_accuracy": 0.6566164908431553,
+            "kept_events": 4386816,
+            "mesr": 0.6789341067428674,
+            "noise_rejection": 0.3153055719100732,
+            "r": 0.85,
+            "signal_recall": 0.9979274097762374
+          },
+          {
+            "balanced_accuracy": 0.6057296661087914,
+            "kept_events": 4644864,
+            "mesr": 0.6628487142205318,
+            "noise_rejection": 0.21159554673893197,
+            "r": 0.9,
+            "signal_recall": 0.9998637854786508
+          },
+          {
+            "balanced_accuracy": 0.552927222822572,
+            "kept_events": 4902912,
+            "mesr": 0.6463077474055272,
+            "noise_rejection": 0.10586362452124572,
+            "r": 0.95,
+            "signal_recall": 0.9999908211238983
+          },
+          {
+            "balanced_accuracy": 0.5,
+            "kept_events": 5160960,
+            "mesr": 0.6311197279224376,
+            "noise_rejection": 0.0,
+            "r": 1.0,
+            "signal_recall": 1.0
+          }
+        ],
+        "events": 5160960,
+        "gated_retention_mean": 0.48268403552827377,
+        "grid_points": 29,
+        "mesr_argmax_at_evaluable_floor": false,
+        "mesr_at_evaluable_floor": 0.690232154530526,
+        "mesr_at_star": 0.8554128851454529,
+        "r_star_accuracy": 0.5,
+        "r_star_mesr": 0.2,
+        "raw_mesr": 0.6311197279224376,
+        "signal_fraction": 0.527739994109623,
+        "signal_recall_at_mesr_star": 0.3704106078435332,
+        "smallest_evaluable_r": 0.02,
+        "valid_grid_points": 29
+      },
+      "7hz_hotel-bar": {
+        "accuracy_at_mesr_star": 0.91200661025608,
+        "accuracy_at_star": 0.9288273845384347,
+        "blocks": 299,
+        "curve": [
+          {
+            "balanced_accuracy": 0.5524910845167091,
+            "kept_events": 61295,
+            "mesr": 0.9395972158635708,
+            "noise_rejection": 0.9983095909740388,
+            "r": 0.02,
+            "signal_recall": 0.10667257805937956
+          },
+          {
+            "balanced_accuracy": 0.6059113884796307,
+            "kept_events": 122590,
+            "mesr": 1.0563874170065621,
+            "noise_rejection": 0.9969436518453829,
+            "r": 0.04,
+            "signal_recall": 0.2148791251138785
+          },
+          {
+            "balanced_accuracy": 0.6585148895373388,
+            "kept_events": 183586,
+            "mesr": 1.091140678041566,
+            "noise_rejection": 0.9953901532882847,
+            "r": 0.06,
+            "signal_recall": 0.32163962578639294
+          },
+          {
+            "balanced_accuracy": 0.7110025744707082,
+            "kept_events": 244881,
+            "mesr": 1.1355255357275498,
+            "noise_rejection": 0.9936985571773335,
+            "r": 0.08,
+            "signal_recall": 0.42830659176408303
+          },
+          {
+            "balanced_accuracy": 0.7621621555126621,
+            "kept_events": 306176,
+            "mesr": 1.14717695844891,
+            "noise_rejection": 0.9915432065302336,
+            "r": 0.1,
+            "signal_recall": 0.5327811044950904
+          },
+          {
+            "balanced_accuracy": 0.8080081877945066,
+            "kept_events": 367471,
+            "mesr": 1.1642885619066183,
+            "noise_rejection": 0.9875324420435431,
+            "r": 0.12,
+            "signal_recall": 0.62848393354547
+          },
+          {
+            "balanced_accuracy": 0.8456238288106924,
+            "kept_events": 428766,
+            "mesr": 1.1757307627161295,
+            "noise_rejection": 0.9806477447957205,
+            "r": 0.14,
+            "signal_recall": 0.7105999128256644
+          },
+          {
+            "balanced_accuracy": 0.87544105593616,
+            "kept_events": 489762,
+            "mesr": 1.187654733261148,
+            "noise_rejection": 0.9711376112447021,
+            "r": 0.16,
+            "signal_recall": 0.7797445006276178
+          },
+          {
+            "balanced_accuracy": 0.8968758134493389,
+            "kept_events": 551057,
+            "mesr": 1.1854786571068676,
+            "noise_rejection": 0.9586027851388038,
+            "r": 0.18,
+            "signal_recall": 0.835148841759874
+          },
+          {
+            "balanced_accuracy": 0.91200661025608,
+            "kept_events": 612352,
+            "mesr": 1.1879819096291935,
+            "noise_rejection": 0.943866707766187,
+            "r": 0.2,
+            "signal_recall": 0.8801465127459729
+          },
+          {
+            "balanced_accuracy": 0.9230182452494285,
+            "kept_events": 673647,
+            "mesr": 1.1840622728575274,
+            "noise_rejection": 0.9276922790805157,
+            "r": 0.22,
+            "signal_recall": 0.9183442114183414
+          },
+          {
+            "balanced_accuracy": 0.9288273845384347,
+            "kept_events": 734942,
+            "mesr": 1.183898904928596,
+            "noise_rejection": 0.9097012146649314,
+            "r": 0.24,
+            "signal_recall": 0.9479535544119381
+          },
+          {
+            "balanced_accuracy": 0.9283214614673224,
+            "kept_events": 795938,
+            "mesr": 1.175610196334478,
+            "noise_rejection": 0.8896026786968497,
+            "r": 0.26,
+            "signal_recall": 0.9670402442377951
+          },
+          {
+            "balanced_accuracy": 0.9238060661533525,
+            "kept_events": 857233,
+            "mesr": 1.1595709646881949,
+            "noise_rejection": 0.8680064371662065,
+            "r": 0.28,
+            "signal_recall": 0.9796056951404984
+          },
+          {
+            "balanced_accuracy": 0.9163670291671535,
+            "kept_events": 918528,
+            "mesr": 1.1418669768625136,
+            "noise_rejection": 0.8453893025440419,
+            "r": 0.3,
+            "signal_recall": 0.9873447557902653
+          },
+          {
+            "balanced_accuracy": 0.8913505719042811,
+            "kept_events": 1071616,
+            "mesr": 1.0881485159690054,
+            "noise_rejection": 0.7866539200118392,
+            "r": 0.35,
+            "signal_recall": 0.996047223796723
+          },
+          {
+            "balanced_accuracy": 0.8621945553279773,
+            "kept_events": 1224704,
+            "mesr": 1.030213912813192,
+            "noise_rejection": 0.7264730636566412,
+            "r": 0.4,
+            "signal_recall": 0.9979160469993135
+          },
+          {
+            "balanced_accuracy": 0.8321059197221214,
+            "kept_events": 1377792,
+            "mesr": 0.9777857700574433,
+            "noise_rejection": 0.6659665503191478,
+            "r": 0.45,
+            "signal_recall": 0.9982452891250951
+          },
+          {
+            "balanced_accuracy": 0.8019186961994114,
+            "kept_events": 1530880,
+            "mesr": 0.9270725330280374,
+            "noise_rejection": 0.6054256115169403,
+            "r": 0.5,
+            "signal_recall": 0.9984117808818825
+          },
+          {
+            "balanced_accuracy": 0.7717734008712256,
+            "kept_events": 1683968,
+            "mesr": 0.8860495537593227,
+            "noise_rejection": 0.5448993134296112,
+            "r": 0.55,
+            "signal_recall": 0.9986474883128399
+          },
+          {
+            "balanced_accuracy": 0.7416451034597387,
+            "kept_events": 1837056,
+            "mesr": 0.8504258718080999,
+            "noise_rejection": 0.4843789507672328,
+            "r": 0.6,
+            "signal_recall": 0.9989112561522445
+          },
+          {
+            "balanced_accuracy": 0.711451080770349,
+            "kept_events": 1990144,
+            "mesr": 0.8182184716622256,
+            "noise_rejection": 0.423835637795045,
+            "r": 0.65,
+            "signal_recall": 0.999066523745653
+          },
+          {
+            "balanced_accuracy": 0.6812173962753283,
+            "kept_events": 2143232,
+            "mesr": 0.7897755375909286,
+            "noise_rejection": 0.36327847549797226,
+            "r": 0.7,
+            "signal_recall": 0.9991563170526844
+          },
+          {
+            "balanced_accuracy": 0.6510856992805016,
+            "kept_events": 2296320,
+            "mesr": 0.7645197573248371,
+            "noise_rejection": 0.30275692575060376,
+            "r": 0.75,
+            "signal_recall": 0.9994144728103995
+          },
+          {
+            "balanced_accuracy": 0.6208406828410149,
+            "kept_events": 2449408,
+            "mesr": 0.741377171991282,
+            "noise_rejection": 0.24219580650356382,
+            "r": 0.8,
+            "signal_recall": 0.999485559178466
+          },
+          {
+            "balanced_accuracy": 0.5905956664015283,
+            "kept_events": 2602496,
+            "mesr": 0.7204304232917621,
+            "noise_rejection": 0.18163468725652393,
+            "r": 0.85,
+            "signal_recall": 0.9995566455465326
+          },
+          {
+            "balanced_accuracy": 0.5604367727399832,
+            "kept_events": 2755584,
+            "mesr": 0.7020360416053792,
+            "noise_rejection": 0.12110364082923426,
+            "r": 0.9,
+            "signal_recall": 0.9997699046507321
+          },
+          {
+            "balanced_accuracy": 0.5301804243560305,
+            "kept_events": 2908672,
+            "mesr": 0.6843973531400868,
+            "noise_rejection": 0.06053856463222722,
+            "r": 0.95,
+            "signal_recall": 0.9998222840798338
+          },
+          {
+            "balanced_accuracy": 0.5,
+            "kept_events": 3061760,
+            "mesr": 0.6677958179460362,
+            "noise_rejection": 0.0,
+            "r": 1.0,
+            "signal_recall": 1.0
+          }
+        ],
+        "events": 3061760,
+        "gated_retention_mean": 0.21235073944397992,
+        "grid_points": 29,
+        "mesr_argmax_at_evaluable_floor": false,
+        "mesr_at_evaluable_floor": 0.9395972158635708,
+        "mesr_at_star": 1.1879819096291935,
+        "r_star_accuracy": 0.24,
+        "r_star_mesr": 0.2,
+        "raw_mesr": 0.6677958179460362,
+        "signal_fraction": 0.17459271791387965,
+        "signal_recall_at_mesr_star": 0.8801465127459729,
+        "smallest_evaluable_r": 0.02,
+        "valid_grid_points": 29
+      }
+    },
+    "DVSCLEAN": {
+      "MAH00446_100": {
+        "accuracy_at_mesr_star": 0.8839106321466245,
+        "accuracy_at_star": 0.9296914991523366,
+        "blocks": 37,
+        "curve": [
+          {
+            "balanced_accuracy": 0.5200182568778857,
+            "kept_events": 7585,
+            "mesr": NaN,
+            "noise_rejection": 0.9999631146029287,
+            "r": 0.02,
+            "signal_recall": 0.04007339915284263
+          },
+          {
+            "balanced_accuracy": 0.5397778558426324,
+            "kept_events": 15170,
+            "mesr": NaN,
+            "noise_rejection": 0.9996680314263583,
+            "r": 0.04,
+            "signal_recall": 0.07988768025890652
+          },
+          {
+            "balanced_accuracy": 0.5593076562013817,
+            "kept_events": 22718,
+            "mesr": NaN,
+            "noise_rejection": 0.999241214688819,
+            "r": 0.06,
+            "signal_recall": 0.11937409771394425
+          },
+          {
+            "balanced_accuracy": 0.578850827116359,
+            "kept_events": 30303,
+            "mesr": 0.5226971522113567,
+            "noise_rejection": 0.9987300884722595,
+            "r": 0.08,
+            "signal_recall": 0.1589715657604586
+          },
+          {
+            "balanced_accuracy": 0.5984362278947061,
+            "kept_events": 37888,
+            "mesr": 0.5408102924168505,
+            "noise_rejection": 0.9982611169952101,
+            "r": 0.1,
+            "signal_recall": 0.1986113387942021
+          },
+          {
+            "balanced_accuracy": 0.6178579879524959,
+            "kept_events": 45473,
+            "mesr": 0.5557277958981397,
+            "noise_rejection": 0.9976287959025594,
+            "r": 0.12,
+            "signal_recall": 0.23808718000243254
+          },
+          {
+            "balanced_accuracy": 0.6374328312650006,
+            "kept_events": 53058,
+            "mesr": 0.5646169922755064,
+            "noise_rejection": 0.9971492857406324,
+            "r": 0.14,
+            "signal_recall": 0.2777163767893688
+          },
+          {
+            "balanced_accuracy": 0.6567567610398228,
+            "kept_events": 60606,
+            "mesr": 0.5689371524879772,
+            "noise_rejection": 0.9965169646479816,
+            "r": 0.16,
+            "signal_recall": 0.3169965574316642
+          },
+          {
+            "balanced_accuracy": 0.6763052106877215,
+            "kept_events": 68191,
+            "mesr": 0.5839313535431826,
+            "noise_rejection": 0.9960111077738609,
+            "r": 0.18,
+            "signal_recall": 0.3565993136015822
+          },
+          {
+            "balanced_accuracy": 0.6957692006088809,
+            "kept_events": 75776,
+            "mesr": 0.6009019514540725,
+            "noise_rejection": 0.9954209414207201,
+            "r": 0.2,
+            "signal_recall": 0.3961174597970418
+          },
+          {
+            "balanced_accuracy": 0.7150431561448771,
+            "kept_events": 83361,
+            "mesr": 0.6028654211689699,
+            "noise_rejection": 0.994641078739784,
+            "r": 0.22,
+            "signal_recall": 0.4354452335499701
+          },
+          {
+            "balanced_accuracy": 0.7343171116808732,
+            "kept_events": 90946,
+            "mesr": 0.6183119715465629,
+            "noise_rejection": 0.993861216058848,
+            "r": 0.24,
+            "signal_recall": 0.4747730073028984
+          },
+          {
+            "balanced_accuracy": 0.753419334673005,
+            "kept_events": 98494,
+            "mesr": 0.6173070694090437,
+            "noise_rejection": 0.9930075825837694,
+            "r": 0.26,
+            "signal_recall": 0.5138310867622407
+          },
+          {
+            "balanced_accuracy": 0.7725877155505771,
+            "kept_events": 106079,
+            "mesr": 0.618875351722023,
+            "noise_rejection": 0.9921223330540582,
+            "r": 0.28,
+            "signal_recall": 0.553053098047096
+          },
+          {
+            "balanced_accuracy": 0.7916082919063555,
+            "kept_events": 113664,
+            "mesr": 0.6385404942172274,
+            "noise_rejection": 0.9910895419360618,
+            "r": 0.3,
+            "signal_recall": 0.5921270418766492
+          },
+          {
+            "balanced_accuracy": 0.8384193036416403,
+            "kept_events": 132608,
+            "mesr": 0.6406957430279718,
+            "noise_rejection": 0.9878172802815937,
+            "r": 0.35,
+            "signal_recall": 0.689021327001687
+          },
+          {
+            "balanced_accuracy": 0.8839106321466245,
+            "kept_events": 151552,
+            "mesr": 0.6654790771853942,
+            "noise_rejection": 0.9832276830174362,
+            "r": 0.4,
+            "signal_recall": 0.7845935812758127
+          },
+          {
+            "balanced_accuracy": 0.9180579636039446,
+            "kept_events": 170496,
+            "mesr": 0.6489103471128383,
+            "noise_rejection": 0.9673142688523899,
+            "r": 0.45,
+            "signal_recall": 0.8688016583554994
+          },
+          {
+            "balanced_accuracy": 0.9296914991523366,
+            "kept_events": 189440,
+            "mesr": 0.6331214378776241,
+            "noise_rejection": 0.9289271091860447,
+            "r": 0.5,
+            "signal_recall": 0.9304558891186284
+          },
+          {
+            "balanced_accuracy": 0.9086919077818552,
+            "kept_events": 208384,
+            "mesr": 0.6062493492248021,
+            "noise_rejection": 0.8579648745633033,
+            "r": 0.55,
+            "signal_recall": 0.9594189410004071
+          },
+          {
+            "balanced_accuracy": 0.8668307639067819,
+            "kept_events": 227328,
+            "mesr": 0.599703531015229,
+            "noise_rejection": 0.7661781986225938,
+            "r": 0.6,
+            "signal_recall": 0.96748332919097
+          },
+          {
+            "balanced_accuracy": 0.8207941422910376,
+            "kept_events": 246272,
+            "mesr": 0.5466913815282107,
+            "noise_rejection": 0.6702234728128277,
+            "r": 0.65,
+            "signal_recall": 0.9713648117692475
+          },
+          {
+            "balanced_accuracy": 0.7749053251970868,
+            "kept_events": 265216,
+            "mesr": 0.5133254609996606,
+            "noise_rejection": 0.5744162885913466,
+            "r": 0.7,
+            "signal_recall": 0.975394361802827
+          },
+          {
+            "balanced_accuracy": 0.7287156203266276,
+            "kept_events": 284160,
+            "mesr": 0.486838614437938,
+            "noise_rejection": 0.47830875185085653,
+            "r": 0.75,
+            "signal_recall": 0.9791224888023987
+          },
+          {
+            "balanced_accuracy": 0.6820297145615754,
+            "kept_events": 303104,
+            "mesr": 0.46509289599969994,
+            "noise_rejection": 0.3817058969211232,
+            "r": 0.8,
+            "signal_recall": 0.9823535322020275
+          },
+          {
+            "balanced_accuracy": 0.6354177110574198,
+            "kept_events": 322048,
+            "mesr": 0.443036355268584,
+            "noise_rejection": 0.2851768127855325,
+            "r": 0.85,
+            "signal_recall": 0.9856586093293073
+          },
+          {
+            "balanced_accuracy": 0.5894233193050451,
+            "kept_events": 340992,
+            "mesr": 0.41721659195369226,
+            "noise_rejection": 0.18926424171527634,
+            "r": 0.9,
+            "signal_recall": 0.989582396894814
+          },
+          {
+            "balanced_accuracy": 0.5442840822859052,
+            "kept_events": 359936,
+            "mesr": 0.39492377852494,
+            "noise_rejection": 0.09420530412009885,
+            "r": 0.95,
+            "signal_recall": 0.9943628604517115
+          },
+          {
+            "balanced_accuracy": 0.5,
+            "kept_events": 378880,
+            "mesr": 0.37589456515601444,
+            "noise_rejection": 0.0,
+            "r": 1.0,
+            "signal_recall": 1.0
+          }
+        ],
+        "events": 378880,
+        "gated_retention_mean": 0.4991105363175675,
+        "grid_points": 29,
+        "mesr_argmax_at_evaluable_floor": false,
+        "mesr_at_evaluable_floor": 0.5226971522113567,
+        "mesr_at_star": 0.6654790771853942,
+        "r_star_accuracy": 0.5,
+        "r_star_mesr": 0.4,
+        "raw_mesr": 0.37589456515601444,
+        "signal_fraction": 0.4991105363175675,
+        "signal_recall_at_mesr_star": 0.7845935812758127,
+        "smallest_evaluable_r": 0.08,
+        "valid_grid_points": 26
+      },
+      "MAH00446_50": {
+        "accuracy_at_mesr_star": 0.9062320662110539,
+        "accuracy_at_star": 0.9495121062036602,
+        "blocks": 28,
+        "curve": [
+          {
+            "balanced_accuracy": 0.5150189437548406,
+            "kept_events": 5740,
+            "mesr": NaN,
+            "noise_rejection": 1.0,
+            "r": 0.02,
+            "signal_recall": 0.0300378875096812
+          },
+          {
+            "balanced_accuracy": 0.5299986618353839,
+            "kept_events": 11480,
+            "mesr": NaN,
+            "noise_rejection": 0.9999477140586439,
+            "r": 0.04,
+            "signal_recall": 0.060049609612124
+          },
+          {
+            "balanced_accuracy": 0.5448188202922059,
+            "kept_events": 17192,
+            "mesr": NaN,
+            "noise_rejection": 0.9997803990463044,
+            "r": 0.06,
+            "signal_recall": 0.0898572415381073
+          },
+          {
+            "balanced_accuracy": 0.5597122418892952,
+            "kept_events": 22932,
+            "mesr": NaN,
+            "noise_rejection": 0.999613084033965,
+            "r": 0.08,
+            "signal_recall": 0.11981139974462562
+          },
+          {
+            "balanced_accuracy": 0.5746605794304008,
+            "kept_events": 28672,
+            "mesr": NaN,
+            "noise_rejection": 0.999518969339524,
+            "r": 0.1,
+            "signal_recall": 0.14980218952127772
+          },
+          {
+            "balanced_accuracy": 0.5895147753531931,
+            "kept_events": 34412,
+            "mesr": 0.5324890438324165,
+            "noise_rejection": 0.9992993683858284,
+            "r": 0.12,
+            "signal_recall": 0.17973018232055762
+          },
+          {
+            "balanced_accuracy": 0.6043925066805635,
+            "kept_events": 40152,
+            "mesr": 0.545987879554507,
+            "noise_rejection": 0.9991111389969465,
+            "r": 0.14,
+            "signal_recall": 0.2096738743641806
+          },
+          {
+            "balanced_accuracy": 0.6191812845979476,
+            "kept_events": 45864,
+            "mesr": 0.5585527045829682,
+            "noise_rejection": 0.9989019952315221,
+            "r": 0.16,
+            "signal_recall": 0.23946057396437317
+          },
+          {
+            "balanced_accuracy": 0.6340747061950371,
+            "kept_events": 51604,
+            "mesr": 0.5691829404528366,
+            "noise_rejection": 0.9987346802191827,
+            "r": 0.18,
+            "signal_recall": 0.2694147321708915
+          },
+          {
+            "balanced_accuracy": 0.6489367472526887,
+            "kept_events": 57344,
+            "mesr": 0.5808770548097544,
+            "noise_rejection": 0.9985255364537583,
+            "r": 0.2,
+            "signal_recall": 0.2993479580516191
+          },
+          {
+            "balanced_accuracy": 0.6638223237149187,
+            "kept_events": 63084,
+            "mesr": 0.5772699121226107,
+            "noise_rejection": 0.9983477642531476,
+            "r": 0.22,
+            "signal_recall": 0.32929688317668976
+          },
+          {
+            "balanced_accuracy": 0.6787235904468676,
+            "kept_events": 68824,
+            "mesr": 0.587479981567759,
+            "noise_rejection": 0.9981909064290794,
+            "r": 0.24,
+            "signal_recall": 0.35925627446465574
+          },
+          {
+            "balanced_accuracy": 0.6935123683642517,
+            "kept_events": 74536,
+            "mesr": 0.5986489514749503,
+            "noise_rejection": 0.997981762663655,
+            "r": 0.26,
+            "signal_recall": 0.38904297406484833
+          },
+          {
+            "balanced_accuracy": 0.70842148023106,
+            "kept_events": 80276,
+            "mesr": 0.6051080221899333,
+            "noise_rejection": 0.9978353620278579,
+            "r": 0.28,
+            "signal_recall": 0.41900759843426205
+          },
+          {
+            "balanced_accuracy": 0.7232050699401171,
+            "kept_events": 86016,
+            "mesr": 0.6082706326672127,
+            "noise_rejection": 0.9975216463797214,
+            "r": 0.3,
+            "signal_recall": 0.44888849350051285
+          },
+          {
+            "balanced_accuracy": 0.7603706118232691,
+            "kept_events": 100352,
+            "mesr": 0.6246006678881791,
+            "noise_rejection": 0.9970615300957878,
+            "r": 0.35,
+            "signal_recall": 0.5236796935507504
+          },
+          {
+            "balanced_accuracy": 0.7971282066937297,
+            "kept_events": 114688,
+            "mesr": 0.6441594098528111,
+            "noise_rejection": 0.9960576400217509,
+            "r": 0.4,
+            "signal_recall": 0.5981987733657087
+          },
+          {
+            "balanced_accuracy": 0.8338151953504555,
+            "kept_events": 129024,
+            "mesr": 0.6415540077161319,
+            "noise_rejection": 0.9949596352532731,
+            "r": 0.45,
+            "signal_recall": 0.6726707554476378
+          },
+          {
+            "balanced_accuracy": 0.87037666184943,
+            "kept_events": 143360,
+            "mesr": 0.6434188922303645,
+            "noise_rejection": 0.9936943154724558,
+            "r": 0.5,
+            "signal_recall": 0.747059008226404
+          },
+          {
+            "balanced_accuracy": 0.9062320662110539,
+            "kept_events": 157696,
+            "mesr": 0.661254639541562,
+            "noise_rejection": 0.9914878487472288,
+            "r": 0.55,
+            "signal_recall": 0.8209762836748791
+          },
+          {
+            "balanced_accuracy": 0.9401889479366914,
+            "kept_events": 172032,
+            "mesr": 0.6597905568636134,
+            "noise_rejection": 0.9867507424603672,
+            "r": 0.6,
+            "signal_recall": 0.8936271534130157
+          },
+          {
+            "balanced_accuracy": 0.9495121062036602,
+            "kept_events": 186368,
+            "mesr": 0.6516167941097152,
+            "noise_rejection": 0.9491780650018823,
+            "r": 0.65,
+            "signal_recall": 0.9498461474054383
+          },
+          {
+            "balanced_accuracy": 0.9116860039653427,
+            "kept_events": 200704,
+            "mesr": 0.6302821660746998,
+            "noise_rejection": 0.8487576860333793,
+            "r": 0.7,
+            "signal_recall": 0.974614321897306
+          },
+          {
+            "balanced_accuracy": 0.8452408497597564,
+            "kept_events": 215040,
+            "mesr": 0.5926712290282838,
+            "noise_rejection": 0.7101894842514744,
+            "r": 0.75,
+            "signal_recall": 0.9802922152680384
+          },
+          {
+            "balanced_accuracy": 0.7757204026892663,
+            "kept_events": 229376,
+            "mesr": 0.6039393034123338,
+            "noise_rejection": 0.5675220646672523,
+            "r": 0.8,
+            "signal_recall": 0.9839187407112804
+          },
+          {
+            "balanced_accuracy": 0.7048192118835133,
+            "kept_events": 243712,
+            "mesr": 0.5607442400350954,
+            "noise_rejection": 0.4230141799472958,
+            "r": 0.85,
+            "signal_recall": 0.9866242438197308
+          },
+          {
+            "balanced_accuracy": 0.6353693710267583,
+            "kept_events": 258048,
+            "mesr": 0.5309445601680487,
+            "noise_rejection": 0.2804408750575145,
+            "r": 0.9,
+            "signal_recall": 0.990297866996002
+          },
+          {
+            "balanced_accuracy": 0.566405928531289,
+            "kept_events": 272384,
+            "mesr": 0.5127581010009206,
+            "noise_rejection": 0.1385159158405488,
+            "r": 0.95,
+            "signal_recall": 0.9942959412220291
+          },
+          {
+            "balanced_accuracy": 0.5,
+            "kept_events": 286720,
+            "mesr": 0.4906081581952761,
+            "noise_rejection": 0.0,
+            "r": 1.0,
+            "signal_recall": 1.0
+          }
+        ],
+        "events": 286720,
+        "gated_retention_mean": 0.6543352399553571,
+        "grid_points": 29,
+        "mesr_argmax_at_evaluable_floor": false,
+        "mesr_at_evaluable_floor": 0.5324890438324165,
+        "mesr_at_star": 0.661254639541562,
+        "r_star_accuracy": 0.65,
+        "r_star_mesr": 0.55,
+        "raw_mesr": 0.4906081581952761,
+        "signal_fraction": 0.6664760044642857,
+        "signal_recall_at_mesr_star": 0.8209762836748791,
+        "smallest_evaluable_r": 0.12,
+        "valid_grid_points": 24
+      },
+      "MAH00454_100": {
+        "accuracy_at_mesr_star": 0.8340504260346573,
+        "accuracy_at_star": 0.901652956434296,
+        "blocks": 36,
+        "curve": [
+          {
+            "balanced_accuracy": 0.5200040468572846,
+            "kept_events": 7380,
+            "mesr": NaN,
+            "noise_rejection": 0.9998866225394392,
+            "r": 0.02,
+            "signal_recall": 0.040121471175130034
+          },
+          {
+            "balanced_accuracy": 0.539411291227935,
+            "kept_events": 14760,
+            "mesr": NaN,
+            "noise_rejection": 0.9991793631426072,
+            "r": 0.04,
+            "signal_recall": 0.0796432193132626
+          },
+          {
+            "balanced_accuracy": 0.5588397595989489,
+            "kept_events": 22104,
+            "mesr": NaN,
+            "noise_rejection": 0.9985908801330295,
+            "r": 0.06,
+            "signal_recall": 0.11908863906486822
+          },
+          {
+            "balanced_accuracy": 0.5781059415636675,
+            "kept_events": 29484,
+            "mesr": NaN,
+            "noise_rejection": 0.9977432486421699,
+            "r": 0.08,
+            "signal_recall": 0.15846863448516504
+          },
+          {
+            "balanced_accuracy": 0.5972202101681519,
+            "kept_events": 36864,
+            "mesr": 0.641400902667906,
+            "noise_rejection": 0.9967444472038959,
+            "r": 0.1,
+            "signal_recall": 0.19769597313240794
+          },
+          {
+            "balanced_accuracy": 0.6164484137928119,
+            "kept_events": 44244,
+            "mesr": 0.6596150858361194,
+            "noise_rejection": 0.9958590232261826,
+            "r": 0.12,
+            "signal_recall": 0.23703780435944127
+          },
+          {
+            "balanced_accuracy": 0.635551831442994,
+            "kept_events": 51624,
+            "mesr": 0.6737723920353171,
+            "noise_rejection": 0.9948494239345218,
+            "r": 0.14,
+            "signal_recall": 0.27625423895146606
+          },
+          {
+            "balanced_accuracy": 0.6546113673677249,
+            "kept_events": 58968,
+            "mesr": 0.6833190453896844,
+            "noise_rejection": 0.9938938139097947,
+            "r": 0.16,
+            "signal_recall": 0.31532892082565506
+          },
+          {
+            "balanced_accuracy": 0.6738015926523264,
+            "kept_events": 66348,
+            "mesr": 0.6898704671776033,
+            "noise_rejection": 0.9929705974452279,
+            "r": 0.18,
+            "signal_recall": 0.3546325878594249
+          },
+          {
+            "balanced_accuracy": 0.6927856498051815,
+            "kept_events": 73728,
+            "mesr": 0.6966691468780282,
+            "noise_rejection": 0.9918422217663129,
+            "r": 0.2,
+            "signal_recall": 0.3937290778440502
+          },
+          {
+            "balanced_accuracy": 0.7116503464607098,
+            "kept_events": 81108,
+            "mesr": 0.7004468485508472,
+            "noise_rejection": 0.9905950697001437,
+            "r": 0.22,
+            "signal_recall": 0.432705623221276
+          },
+          {
+            "balanced_accuracy": 0.7304662138218772,
+            "kept_events": 88488,
+            "mesr": 0.7095085847330302,
+            "noise_rejection": 0.989299327293734,
+            "r": 0.24,
+            "signal_recall": 0.47163310035002015
+          },
+          {
+            "balanced_accuracy": 0.7491513918231738,
+            "kept_events": 95832,
+            "mesr": 0.7080834745976138,
+            "noise_rejection": 0.9879711913271642,
+            "r": 0.26,
+            "signal_recall": 0.5103315923191835
+          },
+          {
+            "balanced_accuracy": 0.7678696005956192,
+            "kept_events": 103212,
+            "mesr": 0.7212386368287818,
+            "noise_rejection": 0.9865782682402738,
+            "r": 0.28,
+            "signal_recall": 0.5491609329509645
+          },
+          {
+            "balanced_accuracy": 0.7867668501140548,
+            "kept_events": 110592,
+            "mesr": 0.7205917540705583,
+            "noise_rejection": 0.9853635097342648,
+            "r": 0.3,
+            "signal_recall": 0.5881701904938447
+          },
+          {
+            "balanced_accuracy": 0.8340504260346573,
+            "kept_events": 129024,
+            "mesr": 0.7260769396453928,
+            "noise_rejection": 0.982415695759683,
+            "r": 0.35,
+            "signal_recall": 0.6856851563096316
+          },
+          {
+            "balanced_accuracy": 0.8763100101132295,
+            "kept_events": 147456,
+            "mesr": 0.7143591747168503,
+            "noise_rejection": 0.9744684756670374,
+            "r": 0.4,
+            "signal_recall": 0.7781515445594217
+          },
+          {
+            "balanced_accuracy": 0.901652956434296,
+            "kept_events": 165888,
+            "mesr": 0.6824591988952664,
+            "noise_rejection": 0.9496874021444537,
+            "r": 0.45,
+            "signal_recall": 0.8536185107241383
+          },
+          {
+            "balanced_accuracy": 0.8845252676156077,
+            "kept_events": 184320,
+            "mesr": 0.6445624485191874,
+            "noise_rejection": 0.8826435304661433,
+            "r": 0.5,
+            "signal_recall": 0.8864070047650722
+          },
+          {
+            "balanced_accuracy": 0.8462870472015203,
+            "kept_events": 202752,
+            "mesr": 0.6059999807930955,
+            "noise_rejection": 0.7945924350239173,
+            "r": 0.55,
+            "signal_recall": 0.8979816593791231
+          },
+          {
+            "balanced_accuracy": 0.8077667019755692,
+            "kept_events": 221184,
+            "mesr": 0.5622427418842652,
+            "noise_rejection": 0.7062605953936357,
+            "r": 0.6,
+            "signal_recall": 0.9092728085575026
+          },
+          {
+            "balanced_accuracy": 0.7682968982481545,
+            "kept_events": 239616,
+            "mesr": 0.527494334290526,
+            "noise_rejection": 0.6169839435920139,
+            "r": 0.65,
+            "signal_recall": 0.9196098529042951
+          },
+          {
+            "balanced_accuracy": 0.7289573059723692,
+            "kept_events": 258048,
+            "mesr": 0.5006026817326721,
+            "noise_rejection": 0.5278368660310331,
+            "r": 0.7,
+            "signal_recall": 0.9300777459137053
+          },
+          {
+            "balanced_accuracy": 0.6897316487167595,
+            "kept_events": 276480,
+            "mesr": 0.46864164656266305,
+            "noise_rejection": 0.43880316593061297,
+            "r": 0.75,
+            "signal_recall": 0.940660131502906
+          },
+          {
+            "balanced_accuracy": 0.6508532219988279,
+            "kept_events": 294912,
+            "mesr": 0.4347693500605249,
+            "noise_rejection": 0.35011499713856886,
+            "r": 0.8,
+            "signal_recall": 0.9515914468590869
+          },
+          {
+            "balanced_accuracy": 0.6123925570215403,
+            "kept_events": 313344,
+            "mesr": 0.4114776478696018,
+            "noise_rejection": 0.26184254570191445,
+            "r": 0.85,
+            "signal_recall": 0.9629425683411661
+          },
+          {
+            "balanced_accuracy": 0.5741923149475112,
+            "kept_events": 331776,
+            "mesr": 0.3885777924080509,
+            "noise_rejection": 0.173829242746542,
+            "r": 0.9,
+            "signal_recall": 0.9745553871484806
+          },
+          {
+            "balanced_accuracy": 0.5364478129541848,
+            "kept_events": 350208,
+            "mesr": 0.36761298018716515,
+            "noise_rejection": 0.08626944963341288,
+            "r": 0.95,
+            "signal_recall": 0.9866261762749566
+          },
+          {
+            "balanced_accuracy": 0.5,
+            "kept_events": 368640,
+            "mesr": 0.3520563106984071,
+            "noise_rejection": 0.0,
+            "r": 1.0,
+            "signal_recall": 1.0
+          }
+        ],
+        "events": 368640,
+        "gated_retention_mean": 0.4565972222222222,
+        "grid_points": 29,
+        "mesr_argmax_at_evaluable_floor": false,
+        "mesr_at_evaluable_floor": 0.641400902667906,
+        "mesr_at_star": 0.7260769396453928,
+        "r_star_accuracy": 0.45,
+        "r_star_mesr": 0.35,
+        "raw_mesr": 0.3520563106984071,
+        "signal_fraction": 0.49755316840277775,
+        "signal_recall_at_mesr_star": 0.6856851563096316,
+        "smallest_evaluable_r": 0.1,
+        "valid_grid_points": 25
+      },
+      "MAH00454_50": {
+        "accuracy_at_mesr_star": 0.8192739396877774,
+        "accuracy_at_star": 0.9151099038742602,
+        "blocks": 27,
+        "curve": [
+          {
+            "balanced_accuracy": 0.5148975607925181,
+            "kept_events": 5535,
+            "mesr": NaN,
+            "noise_rejection": 0.9997948496463855,
+            "r": 0.02,
+            "signal_recall": 0.030000271938650642
+          },
+          {
+            "balanced_accuracy": 0.5297951215850363,
+            "kept_events": 11070,
+            "mesr": NaN,
+            "noise_rejection": 0.9995896992927712,
+            "r": 0.04,
+            "signal_recall": 0.060000543877301284
+          },
+          {
+            "balanced_accuracy": 0.5443757165412042,
+            "kept_events": 16578,
+            "mesr": NaN,
+            "noise_rejection": 0.9990606273281866,
+            "r": 0.06,
+            "signal_recall": 0.08969080575422185
+          },
+          {
+            "balanced_accuracy": 0.5585670043717584,
+            "kept_events": 22113,
+            "mesr": NaN,
+            "noise_rejection": 0.9979161043027587,
+            "r": 0.08,
+            "signal_recall": 0.11921790444075817
+          },
+          {
+            "balanced_accuracy": 0.5727420560422676,
+            "kept_events": 27648,
+            "mesr": NaN,
+            "noise_rejection": 0.9967499865032662,
+            "r": 0.1,
+            "signal_recall": 0.14873412558126886
+          },
+          {
+            "balanced_accuracy": 0.5869658161929121,
+            "kept_events": 33183,
+            "mesr": 0.6300791707024905,
+            "noise_rejection": 0.9956486530259677,
+            "r": 0.12,
+            "signal_recall": 0.1782829793598564
+          },
+          {
+            "balanced_accuracy": 0.6012220486636469,
+            "kept_events": 38718,
+            "mesr": 0.647087800843205,
+            "noise_rejection": 0.9945905090967986,
+            "r": 0.14,
+            "signal_recall": 0.2078535882304952
+          },
+          {
+            "balanced_accuracy": 0.6152912045783927,
+            "kept_events": 44226,
+            "mesr": 0.6649558341343081,
+            "noise_rejection": 0.9933812017491767,
+            "r": 0.16,
+            "signal_recall": 0.23720120740760883
+          },
+          {
+            "balanced_accuracy": 0.6297097986495791,
+            "kept_events": 49761,
+            "mesr": 0.673922851734567,
+            "noise_rejection": 0.9925390055606543,
+            "r": 0.18,
+            "signal_recall": 0.2668805917385038
+          },
+          {
+            "balanced_accuracy": 0.6439092045601559,
+            "kept_events": 55296,
+            "mesr": 0.6828953663200154,
+            "noise_rejection": 0.9914052799222588,
+            "r": 0.2,
+            "signal_recall": 0.2964131291980529
+          },
+          {
+            "balanced_accuracy": 0.6580761381506424,
+            "kept_events": 60831,
+            "mesr": 0.6808213543778574,
+            "noise_rejection": 0.990228364735734,
+            "r": 0.22,
+            "signal_recall": 0.32592391156555084
+          },
+          {
+            "balanced_accuracy": 0.6722674259811966,
+            "kept_events": 66366,
+            "mesr": 0.6875064523012103,
+            "noise_rejection": 0.989083841710306,
+            "r": 0.24,
+            "signal_recall": 0.35545101025208714
+          },
+          {
+            "balanced_accuracy": 0.6861498660554233,
+            "kept_events": 71874,
+            "mesr": 0.6921385462785419,
+            "noise_rejection": 0.9876261944609405,
+            "r": 0.26,
+            "signal_recall": 0.3846735376499062
+          },
+          {
+            "balanced_accuracy": 0.7001869103655487,
+            "kept_events": 77409,
+            "mesr": 0.6972275724396666,
+            "noise_rejection": 0.9862765210818982,
+            "r": 0.28,
+            "signal_recall": 0.4140972996491991
+          },
+          {
+            "balanced_accuracy": 0.7141508919554709,
+            "kept_events": 82944,
+            "mesr": 0.7045341070780176,
+            "noise_rejection": 0.9848296712195649,
+            "r": 0.3,
+            "signal_recall": 0.4434721126913768
+          },
+          {
+            "balanced_accuracy": 0.749267676613117,
+            "kept_events": 96768,
+            "mesr": 0.7079988839714818,
+            "noise_rejection": 0.9815364681747017,
+            "r": 0.35,
+            "signal_recall": 0.5169988850515324
+          },
+          {
+            "balanced_accuracy": 0.7841733911901763,
+            "kept_events": 110592,
+            "mesr": 0.7148588772671007,
+            "noise_rejection": 0.9779625330669978,
+            "r": 0.4,
+            "signal_recall": 0.5903842493133549
+          },
+          {
+            "balanced_accuracy": 0.8192739396877774,
+            "kept_events": 124416,
+            "mesr": 0.7305127468069939,
+            "noise_rejection": 0.9746477352480699,
+            "r": 0.45,
+            "signal_recall": 0.6639001441274849
+          },
+          {
+            "balanced_accuracy": 0.8545612040258976,
+            "kept_events": 138240,
+            "mesr": 0.727178097863099,
+            "noise_rejection": 0.971581277330886,
+            "r": 0.5,
+            "signal_recall": 0.7375411307209093
+          },
+          {
+            "balanced_accuracy": 0.8890447784417832,
+            "kept_events": 152064,
+            "mesr": 0.7116729258895341,
+            "noise_rejection": 0.9674458780975004,
+            "r": 0.55,
+            "signal_recall": 0.8106436787860659
+          },
+          {
+            "balanced_accuracy": 0.9151099038742602,
+            "kept_events": 165888,
+            "mesr": 0.6856251514915723,
+            "noise_rejection": 0.9521135885115802,
+            "r": 0.6,
+            "signal_recall": 0.8781062192369401
+          },
+          {
+            "balanced_accuracy": 0.8971831536644128,
+            "kept_events": 179712,
+            "mesr": 0.6559336143060319,
+            "noise_rejection": 0.8782702585974195,
+            "r": 0.65,
+            "signal_recall": 0.9160960487314062
+          },
+          {
+            "balanced_accuracy": 0.8442025339170942,
+            "kept_events": 193536,
+            "mesr": 0.6213899493139673,
+            "noise_rejection": 0.7578038114776224,
+            "r": 0.7,
+            "signal_recall": 0.930601256356566
+          },
+          {
+            "balanced_accuracy": 0.7886971912827553,
+            "kept_events": 207360,
+            "mesr": 0.6000426664255339,
+            "noise_rejection": 0.6339793769907682,
+            "r": 0.75,
+            "signal_recall": 0.9434150055747423
+          },
+          {
+            "balanced_accuracy": 0.730155686719974,
+            "kept_events": 221184,
+            "mesr": 0.5636299678734213,
+            "noise_rejection": 0.5061167197538196,
+            "r": 0.8,
+            "signal_recall": 0.9541946536861284
+          },
+          {
+            "balanced_accuracy": 0.6716547725573055,
+            "kept_events": 235008,
+            "mesr": 0.5417713706761049,
+            "noise_rejection": 0.3783080494520326,
+            "r": 0.85,
+            "signal_recall": 0.9650014956625785
+          },
+          {
+            "balanced_accuracy": 0.6126424193532151,
+            "kept_events": 248832,
+            "mesr": 0.5160435522908955,
+            "noise_rejection": 0.24981914376720835,
+            "r": 0.9,
+            "signal_recall": 0.9754656949392218
+          },
+          {
+            "balanced_accuracy": 0.5539710255100726,
+            "kept_events": 262656,
+            "mesr": 0.4985884355746438,
+            "noise_rejection": 0.12178372833774227,
+            "r": 0.95,
+            "signal_recall": 0.9861583226824029
+          },
+          {
+            "balanced_accuracy": 0.5,
+            "kept_events": 276480,
+            "mesr": 0.4713491099763374,
+            "noise_rejection": 0.0,
+            "r": 1.0,
+            "signal_recall": 1.0
+          }
+        ],
+        "events": 276480,
+        "gated_retention_mean": 0.6083695023148148,
+        "grid_points": 29,
+        "mesr_argmax_at_evaluable_floor": false,
+        "mesr_at_evaluable_floor": 0.6300791707024905,
+        "mesr_at_star": 0.7305127468069939,
+        "r_star_accuracy": 0.6,
+        "r_star_mesr": 0.45,
+        "raw_mesr": 0.4713491099763374,
+        "signal_fraction": 0.6650209780092593,
+        "signal_recall_at_mesr_star": 0.6639001441274849,
+        "smallest_evaluable_r": 0.12,
+        "valid_grid_points": 24
+      },
+      "MAH00455_100": {
+        "accuracy_at_mesr_star": 0.7580818080137276,
+        "accuracy_at_star": 0.8514157287964972,
+        "blocks": 35,
+        "curve": [
+          {
+            "balanced_accuracy": 0.519420339774655,
+            "kept_events": 7175,
+            "mesr": NaN,
+            "noise_rejection": 0.9991673743066047,
+            "r": 0.02,
+            "signal_recall": 0.039673305242705285
+          },
+          {
+            "balanced_accuracy": 0.5384611604297069,
+            "kept_events": 14350,
+            "mesr": NaN,
+            "noise_rejection": 0.9979597913473097,
+            "r": 0.04,
+            "signal_recall": 0.0789625295121042
+          },
+          {
+            "balanced_accuracy": 0.5573250004272985,
+            "kept_events": 21490,
+            "mesr": NaN,
+            "noise_rejection": 0.9966750113038587,
+            "r": 0.06,
+            "signal_recall": 0.11797498955073822
+          },
+          {
+            "balanced_accuracy": 0.5761760615225489,
+            "kept_events": 28665,
+            "mesr": NaN,
+            "noise_rejection": 0.9952799497116137,
+            "r": 0.08,
+            "signal_recall": 0.15707217333348394
+          },
+          {
+            "balanced_accuracy": 0.5950047979637049,
+            "kept_events": 35840,
+            "mesr": 0.6062087815142857,
+            "noise_rejection": 0.9938628318096099,
+            "r": 0.1,
+            "signal_recall": 0.19614676411779988
+          },
+          {
+            "balanced_accuracy": 0.6136047067003945,
+            "kept_events": 43015,
+            "mesr": 0.6183703675593547,
+            "noise_rejection": 0.9922196367325783,
+            "r": 0.12,
+            "signal_recall": 0.23498977666821053
+          },
+          {
+            "balanced_accuracy": 0.6319869500596644,
+            "kept_events": 50190,
+            "mesr": 0.6379942061063297,
+            "noise_rejection": 0.9903613926353981,
+            "r": 0.14,
+            "signal_recall": 0.27361250748393073
+          },
+          {
+            "balanced_accuracy": 0.6503819723212757,
+            "kept_events": 57330,
+            "mesr": 0.6421904465403737,
+            "noise_rejection": 0.9886134300870122,
+            "r": 0.16,
+            "signal_recall": 0.3121505145555392
+          },
+          {
+            "balanced_accuracy": 0.6687251475358807,
+            "kept_events": 64505,
+            "mesr": 0.6294025964109442,
+            "noise_rejection": 0.9867165874477541,
+            "r": 0.18,
+            "signal_recall": 0.3507337076240073
+          },
+          {
+            "balanced_accuracy": 0.6869176313353492,
+            "kept_events": 71680,
+            "mesr": 0.6300451373637124,
+            "noise_rejection": 0.9846708647176241,
+            "r": 0.2,
+            "signal_recall": 0.38916439795307434
+          },
+          {
+            "balanced_accuracy": 0.7050654658266291,
+            "kept_events": 78855,
+            "mesr": 0.6405494643201324,
+            "noise_rejection": 0.9825810293679764,
+            "r": 0.22,
+            "signal_recall": 0.4275499022852818
+          },
+          {
+            "balanced_accuracy": 0.7229342421417302,
+            "kept_events": 86030,
+            "mesr": 0.6372977295290293,
+            "noise_rejection": 0.9802154901463436,
+            "r": 0.24,
+            "signal_recall": 0.4656529941371169
+          },
+          {
+            "balanced_accuracy": 0.7406148754723239,
+            "kept_events": 93170,
+            "mesr": 0.6414133930056637,
+            "noise_rejection": 0.9777617256856755,
+            "r": 0.26,
+            "signal_recall": 0.5034680252589723
+          },
+          {
+            "balanced_accuracy": 0.7580818080137276,
+            "kept_events": 100345,
+            "mesr": 0.6436050579401812,
+            "noise_rejection": 0.974999172888384,
+            "r": 0.28,
+            "signal_recall": 0.5411644431390712
+          },
+          {
+            "balanced_accuracy": 0.7753868868129477,
+            "kept_events": 107520,
+            "mesr": 0.6320435744941226,
+            "noise_rejection": 0.9720767118453412,
+            "r": 0.3,
+            "signal_recall": 0.5786970617805542
+          },
+          {
+            "balanced_accuracy": 0.8174616042681233,
+            "kept_events": 125440,
+            "mesr": 0.6215786490063397,
+            "noise_rejection": 0.9636456874400344,
+            "r": 0.35,
+            "signal_recall": 0.6712775210962123
+          },
+          {
+            "balanced_accuracy": 0.8514157287964972,
+            "kept_events": 143360,
+            "mesr": 0.6080910182471075,
+            "noise_rejection": 0.9471916803599589,
+            "r": 0.4,
+            "signal_recall": 0.7556397772330354
+          },
+          {
+            "balanced_accuracy": 0.8486737031573648,
+            "kept_events": 161280,
+            "mesr": 0.5722808236771182,
+            "noise_rejection": 0.8944826141138326,
+            "r": 0.45,
+            "signal_recall": 0.8028647922008969
+          },
+          {
+            "balanced_accuracy": 0.823054488235098,
+            "kept_events": 179200,
+            "mesr": 0.5302687899169631,
+            "noise_rejection": 0.8191713444423614,
+            "r": 0.5,
+            "signal_recall": 0.8269376320278345
+          },
+          {
+            "balanced_accuracy": 0.7933275369594799,
+            "kept_events": 197120,
+            "mesr": 0.48397327651636046,
+            "noise_rejection": 0.7398017137752683,
+            "r": 0.55,
+            "signal_recall": 0.8468533601436915
+          },
+          {
+            "balanced_accuracy": 0.7611002244253001,
+            "kept_events": 215040,
+            "mesr": 0.4401571319871453,
+            "noise_rejection": 0.6579617764151879,
+            "r": 0.6,
+            "signal_recall": 0.8642386724354123
+          },
+          {
+            "balanced_accuracy": 0.7285157174256116,
+            "kept_events": 232960,
+            "mesr": 0.41617495299284496,
+            "noise_rejection": 0.5757689380989667,
+            "r": 0.65,
+            "signal_recall": 0.8812624967522564
+          },
+          {
+            "balanced_accuracy": 0.6956075029415557,
+            "kept_events": 250880,
+            "mesr": 0.3841705155173737,
+            "noise_rejection": 0.49325628329124255,
+            "r": 0.7,
+            "signal_recall": 0.8979587225918688
+          },
+          {
+            "balanced_accuracy": 0.6627383566021647,
+            "kept_events": 268800,
+            "mesr": 0.35665019362019196,
+            "noise_rejection": 0.41078222702559636,
+            "r": 0.75,
+            "signal_recall": 0.9146944861787332
+          },
+          {
+            "balanced_accuracy": 0.6288590196650068,
+            "kept_events": 286720,
+            "mesr": 0.33773301381005544,
+            "noise_rejection": 0.3273101227433638,
+            "r": 0.8,
+            "signal_recall": 0.9304079165866498
+          },
+          {
+            "balanced_accuracy": 0.5960624284514224,
+            "kept_events": 304640,
+            "mesr": 0.3204916132021077,
+            "noise_rejection": 0.24490774948443375,
+            "r": 0.85,
+            "signal_recall": 0.947217107418411
+          },
+          {
+            "balanced_accuracy": 0.5630370095333714,
+            "kept_events": 322560,
+            "mesr": 0.2884492506504999,
+            "noise_rejection": 0.16227929905047586,
+            "r": 0.9,
+            "signal_recall": 0.963794720016267
+          },
+          {
+            "balanced_accuracy": 0.5308989956155689,
+            "kept_events": 340480,
+            "mesr": 0.25830281688974244,
+            "noise_rejection": 0.08052758692943084,
+            "r": 0.95,
+            "signal_recall": 0.9812704043017069
+          },
+          {
+            "balanced_accuracy": 0.5,
+            "kept_events": 358400,
+            "mesr": 0.2607016453494207,
+            "noise_rejection": 0.0,
+            "r": 1.0,
+            "signal_recall": 1.0
+          }
+        ],
+        "events": 358400,
+        "gated_retention_mean": 0.41340959821428575,
+        "grid_points": 29,
+        "mesr_argmax_at_evaluable_floor": false,
+        "mesr_at_evaluable_floor": 0.6062087815142857,
+        "mesr_at_star": 0.6436050579401812,
+        "r_star_accuracy": 0.4,
+        "r_star_mesr": 0.28,
+        "raw_mesr": 0.2607016453494207,
+        "signal_fraction": 0.49398995535714285,
+        "signal_recall_at_mesr_star": 0.5411644431390712,
+        "smallest_evaluable_r": 0.1,
+        "valid_grid_points": 25
+      },
+      "MAH00455_50": {
+        "accuracy_at_mesr_star": 0.72165652134298,
+        "accuracy_at_star": 0.8959760401445591,
+        "blocks": 26,
+        "curve": [
+          {
+            "balanced_accuracy": 0.5149645513758448,
+            "kept_events": 5330,
+            "mesr": NaN,
+            "noise_rejection": 0.9997672433858329,
+            "r": 0.02,
+            "signal_recall": 0.03016185936585671
+          },
+          {
+            "balanced_accuracy": 0.5297866009510992,
+            "kept_events": 10660,
+            "mesr": NaN,
+            "noise_rejection": 0.9993460647506733,
+            "r": 0.04,
+            "signal_recall": 0.06022713715152514
+          },
+          {
+            "balanced_accuracy": 0.544576706318148,
+            "kept_events": 15964,
+            "mesr": NaN,
+            "noise_rejection": 0.9989803043569822,
+            "r": 0.06,
+            "signal_recall": 0.09017310827931393
+          },
+          {
+            "balanced_accuracy": 0.559449050646552,
+            "kept_events": 21294,
+            "mesr": NaN,
+            "noise_rejection": 0.9986256276115846,
+            "r": 0.08,
+            "signal_recall": 0.1202724736815194
+          },
+          {
+            "balanced_accuracy": 0.5742627177629482,
+            "kept_events": 26624,
+            "mesr": NaN,
+            "noise_rejection": 0.9981933653281314,
+            "r": 0.1,
+            "signal_recall": 0.15033207019776498
+          },
+          {
+            "balanced_accuracy": 0.5890344725850531,
+            "kept_events": 31954,
+            "mesr": 0.6141177832373355,
+            "noise_rejection": 0.9977056848032099,
+            "r": 0.12,
+            "signal_recall": 0.18036326036689637
+          },
+          {
+            "balanced_accuracy": 0.6037894624894415,
+            "kept_events": 37284,
+            "mesr": 0.6233096113401834,
+            "noise_rejection": 0.9971958369817009,
+            "r": 0.14,
+            "signal_recall": 0.21038308799718208
+          },
+          {
+            "balanced_accuracy": 0.6183951537616086,
+            "kept_events": 42588,
+            "mesr": 0.6305261312165216,
+            "noise_rejection": 0.9965862363255489,
+            "r": 0.16,
+            "signal_recall": 0.2402040711976684
+          },
+          {
+            "balanced_accuracy": 0.6331752910425719,
+            "kept_events": 47918,
+            "mesr": 0.6407584428177464,
+            "noise_rejection": 0.9961096394489211,
+            "r": 0.18,
+            "signal_recall": 0.2702409426362226
+          },
+          {
+            "balanced_accuracy": 0.6480979301241254,
+            "kept_events": 53248,
+            "mesr": 0.6429265311652036,
+            "noise_rejection": 0.9958214645932856,
+            "r": 0.2,
+            "signal_recall": 0.30037439565496515
+          },
+          {
+            "balanced_accuracy": 0.6628696849462302,
+            "kept_events": 58578,
+            "mesr": 0.6502846612713706,
+            "noise_rejection": 0.9953337840683639,
+            "r": 0.22,
+            "signal_recall": 0.3304055858240965
+          },
+          {
+            "balanced_accuracy": 0.6775659976386108,
+            "kept_events": 63908,
+            "mesr": 0.644505822751041,
+            "noise_rejection": 0.9947463507087994,
+            "r": 0.24,
+            "signal_recall": 0.36038564456842237
+          },
+          {
+            "balanced_accuracy": 0.6922974257936518,
+            "kept_events": 69212,
+            "mesr": 0.6453074888510806,
+            "noise_rejection": 0.9943030047770525,
+            "r": 0.26,
+            "signal_recall": 0.3902918468102513
+          },
+          {
+            "balanced_accuracy": 0.7069937384860324,
+            "kept_events": 74542,
+            "mesr": 0.654962830627415,
+            "noise_rejection": 0.9937155714174878,
+            "r": 0.28,
+            "signal_recall": 0.4202719055545771
+          },
+          {
+            "balanced_accuracy": 0.72165652134298,
+            "kept_events": 79872,
+            "mesr": 0.657392105934071,
+            "noise_rejection": 0.9930838034647484,
+            "r": 0.3,
+            "signal_recall": 0.4502292392212116
+          },
+          {
+            "balanced_accuracy": 0.7577610290143177,
+            "kept_events": 93184,
+            "mesr": 0.6544779832553759,
+            "noise_rejection": 0.9908227392128393,
+            "r": 0.35,
+            "signal_recall": 0.5246993188157962
+          },
+          {
+            "balanced_accuracy": 0.7940248034039623,
+            "kept_events": 106496,
+            "mesr": 0.6505299863497368,
+            "noise_rejection": 0.98877226427851,
+            "r": 0.4,
+            "signal_recall": 0.5992773425294148
+          },
+          {
+            "balanced_accuracy": 0.8299700443569932,
+            "kept_events": 119808,
+            "mesr": 0.6518331614807645,
+            "noise_rejection": 0.986300610709021,
+            "r": 0.45,
+            "signal_recall": 0.6736394780049654
+          },
+          {
+            "balanced_accuracy": 0.8652027763070722,
+            "kept_events": 133120,
+            "mesr": 0.6348112463436596,
+            "noise_rejection": 0.9828868470345699,
+            "r": 0.5,
+            "signal_recall": 0.7475187055795747
+          },
+          {
+            "balanced_accuracy": 0.8959760401445591,
+            "kept_events": 146432,
+            "mesr": 0.6263072039469433,
+            "noise_rejection": 0.9735765824678851,
+            "r": 0.55,
+            "signal_recall": 0.8183754978212332
+          },
+          {
+            "balanced_accuracy": 0.893001524618707,
+            "kept_events": 159744,
+            "mesr": 0.5962401925054562,
+            "noise_rejection": 0.9196435498708755,
+            "r": 0.6,
+            "signal_recall": 0.8663594993665384
+          },
+          {
+            "balanced_accuracy": 0.8557343699037292,
+            "kept_events": 173056,
+            "mesr": 0.557166284290963,
+            "noise_rejection": 0.8203673121044524,
+            "r": 0.65,
+            "signal_recall": 0.8911014277030059
+          },
+          {
+            "balanced_accuracy": 0.8078382573564826,
+            "kept_events": 186368,
+            "mesr": 0.5216836809543872,
+            "noise_rejection": 0.7070370083016526,
+            "r": 0.7,
+            "signal_recall": 0.9086395064113125
+          },
+          {
+            "balanced_accuracy": 0.7563628348767606,
+            "kept_events": 199680,
+            "mesr": 0.49351634312023734,
+            "noise_rejection": 0.5889739866774547,
+            "r": 0.75,
+            "signal_recall": 0.9237516830760665
+          },
+          {
+            "balanced_accuracy": 0.7039988717580636,
+            "kept_events": 212992,
+            "mesr": 0.4547212484502537,
+            "noise_rejection": 0.46973609833412766,
+            "r": 0.8,
+            "signal_recall": 0.9382616451819995
+          },
+          {
+            "balanced_accuracy": 0.6517522630633821,
+            "kept_events": 226304,
+            "mesr": 0.4452656497771512,
+            "noise_rejection": 0.35065338106691196,
+            "r": 0.85,
+            "signal_recall": 0.9528511450598521
+          },
+          {
+            "balanced_accuracy": 0.5993799174858268,
+            "kept_events": 239616,
+            "mesr": 0.41880052117093725,
+            "noise_rejection": 0.23140440907529122,
+            "r": 0.9,
+            "signal_recall": 0.9673554258963623
+          },
+          {
+            "balanced_accuracy": 0.54860023909134,
+            "kept_events": 252928,
+            "mesr": 0.3907076282718421,
+            "noise_rejection": 0.1142613302594682,
+            "r": 0.95,
+            "signal_recall": 0.9829391479232119
+          },
+          {
+            "balanced_accuracy": 0.5,
+            "kept_events": 266240,
+            "mesr": 0.3658867165900813,
+            "noise_rejection": 0.0,
+            "r": 1.0,
+            "signal_recall": 1.0
+          }
+        ],
+        "events": 266240,
+        "gated_retention_mean": 0.5846491887019231,
+        "grid_points": 29,
+        "mesr_argmax_at_evaluable_floor": false,
+        "mesr_at_evaluable_floor": 0.6141177832373355,
+        "mesr_at_star": 0.657392105934071,
+        "r_star_accuracy": 0.55,
+        "r_star_mesr": 0.3,
+        "raw_mesr": 0.3658867165900813,
+        "signal_fraction": 0.6611215444711538,
+        "signal_recall_at_mesr_star": 0.4502292392212116,
+        "smallest_evaluable_r": 0.12,
+        "valid_grid_points": 24
+      },
+      "MAH00456_100": {
+        "accuracy_at_mesr_star": 0.7838876521340141,
+        "accuracy_at_star": 0.8681239210313971,
+        "blocks": 36,
+        "curve": [
+          {
+            "balanced_accuracy": 0.5195324812680024,
+            "kept_events": 7380,
+            "mesr": NaN,
+            "noise_rejection": 0.9994379229089652,
+            "r": 0.02,
+            "signal_recall": 0.039627039627039624
+          },
+          {
+            "balanced_accuracy": 0.5387068843361086,
+            "kept_events": 14760,
+            "mesr": NaN,
+            "noise_rejection": 0.9985191430486197,
+            "r": 0.04,
+            "signal_recall": 0.07889462562359759
+          },
+          {
+            "balanced_accuracy": 0.557685596905021,
+            "kept_events": 22104,
+            "mesr": NaN,
+            "noise_rejection": 0.9975030806148258,
+            "r": 0.06,
+            "signal_recall": 0.11786811319521599
+          },
+          {
+            "balanced_accuracy": 0.576887127109483,
+            "kept_events": 29484,
+            "mesr": NaN,
+            "noise_rejection": 0.9966113236915494,
+            "r": 0.08,
+            "signal_recall": 0.1571629305274165
+          },
+          {
+            "balanced_accuracy": 0.5959204690685391,
+            "kept_events": 36864,
+            "mesr": 0.5693955930574522,
+            "noise_rejection": 0.9955520245584452,
+            "r": 0.1,
+            "signal_recall": 0.1962889135786332
+          },
+          {
+            "balanced_accuracy": 0.6149972144457647,
+            "kept_events": 44244,
+            "mesr": 0.5852049629654322,
+            "noise_rejection": 0.9945359621246515,
+            "r": 0.12,
+            "signal_recall": 0.23545846676687798
+          },
+          {
+            "balanced_accuracy": 0.6339003461503132,
+            "kept_events": 51624,
+            "mesr": 0.599800044747524,
+            "noise_rejection": 0.9933469528936161,
+            "r": 0.14,
+            "signal_recall": 0.27445373940701046
+          },
+          {
+            "balanced_accuracy": 0.6525860856465833,
+            "kept_events": 58968,
+            "mesr": 0.6149681042654844,
+            "noise_rejection": 0.9920390427394773,
+            "r": 0.16,
+            "signal_recall": 0.3131331285536893
+          },
+          {
+            "balanced_accuracy": 0.6716953835874356,
+            "kept_events": 66348,
+            "mesr": 0.6276734736295533,
+            "noise_rejection": 0.9910554078301662,
+            "r": 0.18,
+            "signal_recall": 0.3523353593447051
+          },
+          {
+            "balanced_accuracy": 0.6903706473465958,
+            "kept_events": 73728,
+            "mesr": 0.6295521558688353,
+            "noise_rejection": 0.9896394059277515,
+            "r": 0.2,
+            "signal_recall": 0.39110188876544016
+          },
+          {
+            "balanced_accuracy": 0.7086010260695214,
+            "kept_events": 81108,
+            "mesr": 0.6288906484766916,
+            "noise_rejection": 0.9877802278574054,
+            "r": 0.22,
+            "signal_recall": 0.4294218242816374
+          },
+          {
+            "balanced_accuracy": 0.7272545881195969,
+            "kept_events": 88488,
+            "mesr": 0.6328729607791274,
+            "noise_rejection": 0.9863426076053354,
+            "r": 0.24,
+            "signal_recall": 0.46816656863385836
+          },
+          {
+            "balanced_accuracy": 0.7458589462067996,
+            "kept_events": 95832,
+            "mesr": 0.6426018731634309,
+            "noise_rejection": 0.9849536286399896,
+            "r": 0.26,
+            "signal_recall": 0.5067642637736096
+          },
+          {
+            "balanced_accuracy": 0.7646427185113829,
+            "kept_events": 103212,
+            "mesr": 0.6417333329657158,
+            "noise_rejection": 0.9836457184858508,
+            "r": 0.28,
+            "signal_recall": 0.5456397185369148
+          },
+          {
+            "balanced_accuracy": 0.7838876521340141,
+            "kept_events": 110592,
+            "mesr": 0.6443161237907885,
+            "noise_rejection": 0.9827971982618847,
+            "r": 0.3,
+            "signal_recall": 0.5849781060061434
+          },
+          {
+            "balanced_accuracy": 0.8271250522287446,
+            "kept_events": 129024,
+            "mesr": 0.6243596807702083,
+            "noise_rejection": 0.9758685171973972,
+            "r": 0.35,
+            "signal_recall": 0.6783815872600919
+          },
+          {
+            "balanced_accuracy": 0.8636186462254313,
+            "kept_events": 147456,
+            "mesr": 0.5969003142366958,
+            "noise_rejection": 0.9622219339775602,
+            "r": 0.4,
+            "signal_recall": 0.7650153584733024
+          },
+          {
+            "balanced_accuracy": 0.8681239210313971,
+            "kept_events": 165888,
+            "mesr": 0.5558420813266209,
+            "noise_rejection": 0.916709903365977,
+            "r": 0.45,
+            "signal_recall": 0.8195379386968172
+          },
+          {
+            "balanced_accuracy": 0.84152522129184,
+            "kept_events": 184320,
+            "mesr": 0.5213586061935847,
+            "noise_rejection": 0.8402133731110967,
+            "r": 0.5,
+            "signal_recall": 0.8428370694725835
+          },
+          {
+            "balanced_accuracy": 0.8083400528451028,
+            "kept_events": 202752,
+            "mesr": 0.48165592839008226,
+            "noise_rejection": 0.757155673735867,
+            "r": 0.55,
+            "signal_recall": 0.8595244319543385
+          },
+          {
+            "balanced_accuracy": 0.7739612903987116,
+            "kept_events": 221184,
+            "mesr": 0.44711228567406086,
+            "noise_rejection": 0.672908965129602,
+            "r": 0.6,
+            "signal_recall": 0.8750136156678213
+          },
+          {
+            "balanced_accuracy": 0.7389531783888668,
+            "kept_events": 239616,
+            "mesr": 0.4133044741504119,
+            "noise_rejection": 0.5880353243833366,
+            "r": 0.65,
+            "signal_recall": 0.8898710323943969
+          },
+          {
+            "balanced_accuracy": 0.7037280492881757,
+            "kept_events": 258048,
+            "mesr": 0.3803231841052259,
+            "noise_rejection": 0.5029455001405193,
+            "r": 0.7,
+            "signal_recall": 0.904510598435832
+          },
+          {
+            "balanced_accuracy": 0.6685083456147558,
+            "kept_events": 276480,
+            "mesr": 0.35849551469390356,
+            "noise_rejection": 0.4178610804851158,
+            "r": 0.75,
+            "signal_recall": 0.9191556107443958
+          },
+          {
+            "balanced_accuracy": 0.634455108804634,
+            "kept_events": 294912,
+            "mesr": 0.3435555968483779,
+            "noise_rejection": 0.3339386471236786,
+            "r": 0.8,
+            "signal_recall": 0.9349715704855892
+          },
+          {
+            "balanced_accuracy": 0.5996748647401774,
+            "kept_events": 313344,
+            "mesr": 0.3176378221009973,
+            "noise_rejection": 0.24929199904879262,
+            "r": 0.85,
+            "signal_recall": 0.9500577304315622
+          },
+          {
+            "balanced_accuracy": 0.5659959824117651,
+            "kept_events": 331776,
+            "mesr": 0.29779984964020295,
+            "noise_rejection": 0.16574248221890742,
+            "r": 0.9,
+            "signal_recall": 0.9662494826046228
+          },
+          {
+            "balanced_accuracy": 0.5329952784922469,
+            "kept_events": 350208,
+            "mesr": 0.27411384358874297,
+            "noise_rejection": 0.08286853881574681,
+            "r": 0.95,
+            "signal_recall": 0.9831220181687471
+          },
+          {
+            "balanced_accuracy": 0.5,
+            "kept_events": 368640,
+            "mesr": 0.26574107780173867,
+            "noise_rejection": 0.0,
+            "r": 1.0,
+            "signal_recall": 1.0
+          }
+        ],
+        "events": 368640,
+        "gated_retention_mean": 0.4284505208333334,
+        "grid_points": 29,
+        "mesr_argmax_at_evaluable_floor": false,
+        "mesr_at_evaluable_floor": 0.5693955930574522,
+        "mesr_at_star": 0.6443161237907885,
+        "r_star_accuracy": 0.45,
+        "r_star_mesr": 0.3,
+        "raw_mesr": 0.26574107780173867,
+        "signal_fraction": 0.4980794270833333,
+        "signal_recall_at_mesr_star": 0.5849781060061434,
+        "smallest_evaluable_r": 0.1,
+        "valid_grid_points": 25
+      },
+      "MAH00456_50": {
+        "accuracy_at_mesr_star": 0.7936249059841616,
+        "accuracy_at_star": 0.9088019954291708,
+        "blocks": 27,
+        "curve": [
+          {
+            "balanced_accuracy": 0.514946893898862,
+            "kept_events": 5535,
+            "mesr": NaN,
+            "noise_rejection": 0.9998703039211447,
+            "r": 0.02,
+            "signal_recall": 0.03002348387657918
+          },
+          {
+            "balanced_accuracy": 0.5295689060154691,
+            "kept_events": 11070,
+            "mesr": NaN,
+            "noise_rejection": 0.9993082875794389,
+            "r": 0.04,
+            "signal_recall": 0.05982952445149927
+          },
+          {
+            "balanced_accuracy": 0.544223117596999,
+            "kept_events": 16578,
+            "mesr": NaN,
+            "noise_rejection": 0.9988867753231594,
+            "r": 0.06,
+            "signal_recall": 0.08955945987083867
+          },
+          {
+            "balanced_accuracy": 0.5590644249166282,
+            "kept_events": 22113,
+            "mesr": NaN,
+            "noise_rejection": 0.9986165751588777,
+            "r": 0.08,
+            "signal_recall": 0.11951227467437865
+          },
+          {
+            "balanced_accuracy": 0.5739544645035956,
+            "kept_events": 27648,
+            "mesr": NaN,
+            "noise_rejection": 0.9984112230340236,
+            "r": 0.1,
+            "signal_recall": 0.1494977059731675
+          },
+          {
+            "balanced_accuracy": 0.5886333309320972,
+            "kept_events": 33183,
+            "mesr": 0.5687647426460276,
+            "noise_rejection": 0.9979248627383166,
+            "r": 0.12,
+            "signal_recall": 0.17934179912587792
+          },
+          {
+            "balanced_accuracy": 0.6034665162071701,
+            "kept_events": 38718,
+            "mesr": 0.5811911018282739,
+            "noise_rejection": 0.9976438545674636,
+            "r": 0.14,
+            "signal_recall": 0.20928917784687642
+          },
+          {
+            "balanced_accuracy": 0.6182344364124892,
+            "kept_events": 44226,
+            "mesr": 0.590992126815806,
+            "noise_rejection": 0.9973736544031819,
+            "r": 0.16,
+            "signal_recall": 0.2390952184217965
+          },
+          {
+            "balanced_accuracy": 0.6329782791974419,
+            "kept_events": 49761,
+            "mesr": 0.5988297735024933,
+            "noise_rejection": 0.996973758160045,
+            "r": 0.18,
+            "signal_recall": 0.2689828002348388
+          },
+          {
+            "balanced_accuracy": 0.6475434370021543,
+            "kept_events": 55296,
+            "mesr": 0.6081836468521008,
+            "noise_rejection": 0.9963360857723401,
+            "r": 0.2,
+            "signal_recall": 0.2987507882319685
+          },
+          {
+            "balanced_accuracy": 0.6622304254752124,
+            "kept_events": 60831,
+            "mesr": 0.6312395943576787,
+            "noise_rejection": 0.9958605334832044,
+            "r": 0.22,
+            "signal_recall": 0.3286003174672204
+          },
+          {
+            "balanced_accuracy": 0.6768443155472631,
+            "kept_events": 66366,
+            "mesr": 0.6344035991760906,
+            "noise_rejection": 0.9952877091349271,
+            "r": 0.24,
+            "signal_recall": 0.35840092195959905
+          },
+          {
+            "balanced_accuracy": 0.6913685744158911,
+            "kept_events": 71874,
+            "mesr": 0.6337619883197534,
+            "noise_rejection": 0.9946932687735074,
+            "r": 0.26,
+            "signal_recall": 0.3880438800582748
+          },
+          {
+            "balanced_accuracy": 0.7060718069780619,
+            "kept_events": 77409,
+            "mesr": 0.6413977107075289,
+            "noise_rejection": 0.9942393324975142,
+            "r": 0.28,
+            "signal_recall": 0.4179042814586097
+          },
+          {
+            "balanced_accuracy": 0.7204501577579778,
+            "kept_events": 82944,
+            "mesr": 0.6367451096768036,
+            "noise_rejection": 0.9933530759586702,
+            "r": 0.3,
+            "signal_recall": 0.4475472395572854
+          },
+          {
+            "balanced_accuracy": 0.7569035181358895,
+            "kept_events": 96768,
+            "mesr": 0.65195691852663,
+            "noise_rejection": 0.9918615710518351,
+            "r": 0.35,
+            "signal_recall": 0.5219454652199439
+          },
+          {
+            "balanced_accuracy": 0.7936249059841616,
+            "kept_events": 110592,
+            "mesr": 0.6543321981821358,
+            "noise_rejection": 0.9907267303618521,
+            "r": 0.4,
+            "signal_recall": 0.5965230816064712
+          },
+          {
+            "balanced_accuracy": 0.8306224433473502,
+            "kept_events": 124416,
+            "mesr": 0.6455552723610598,
+            "noise_rejection": 0.989959361895292,
+            "r": 0.45,
+            "signal_recall": 0.6712855247994085
+          },
+          {
+            "balanced_accuracy": 0.8655407373041075,
+            "kept_events": 138240,
+            "mesr": 0.6233330140471482,
+            "noise_rejection": 0.9864251437464874,
+            "r": 0.5,
+            "signal_recall": 0.7446563308617278
+          },
+          {
+            "balanced_accuracy": 0.8966985246312644,
+            "kept_events": 152064,
+            "mesr": 0.6059681081283993,
+            "noise_rejection": 0.9778868185551857,
+            "r": 0.55,
+            "signal_recall": 0.8155102307073431
+          },
+          {
+            "balanced_accuracy": 0.9088019954291708,
+            "kept_events": 165888,
+            "mesr": 0.57105804969604,
+            "noise_rejection": 0.9439929099476893,
+            "r": 0.6,
+            "signal_recall": 0.8736110809106525
+          },
+          {
+            "balanced_accuracy": 0.8735458244188685,
+            "kept_events": 179712,
+            "mesr": 0.5448021829568519,
+            "noise_rejection": 0.8470775150231291,
+            "r": 0.65,
+            "signal_recall": 0.9000141338146078
+          },
+          {
+            "balanced_accuracy": 0.822443544479083,
+            "kept_events": 193536,
+            "mesr": 0.518368980414596,
+            "noise_rejection": 0.7290756992780252,
+            "r": 0.7,
+            "signal_recall": 0.9158113896801409
+          },
+          {
+            "balanced_accuracy": 0.7674426831522387,
+            "kept_events": 207360,
+            "mesr": 0.4789196857569243,
+            "noise_rejection": 0.6058860403787125,
+            "r": 0.75,
+            "signal_recall": 0.9289993259257648
+          },
+          {
+            "balanced_accuracy": 0.7125474084046273,
+            "kept_events": 221184,
+            "mesr": 0.45429897918925727,
+            "noise_rejection": 0.4828368855648264,
+            "r": 0.8,
+            "signal_recall": 0.942257931244428
+          },
+          {
+            "balanced_accuracy": 0.6576115234342339,
+            "kept_events": 235008,
+            "mesr": 0.43811651711643895,
+            "noise_rejection": 0.359733690718084,
+            "r": 0.85,
+            "signal_recall": 0.9554893561503838
+          },
+          {
+            "balanced_accuracy": 0.6025862959737205,
+            "kept_events": 248832,
+            "mesr": 0.40509636156807427,
+            "noise_rejection": 0.23651160779905755,
+            "r": 0.9,
+            "signal_recall": 0.9686609841483833
+          },
+          {
+            "balanced_accuracy": 0.5492991860482708,
+            "kept_events": 262656,
+            "mesr": 0.3813554338105649,
+            "noise_rejection": 0.11560243828628247,
+            "r": 0.95,
+            "signal_recall": 0.982995933810259
+          },
+          {
+            "balanced_accuracy": 0.5,
+            "kept_events": 276480,
+            "mesr": 0.3642415448529685,
+            "noise_rejection": 0.0,
+            "r": 1.0,
+            "signal_recall": 1.0
+          }
+        ],
+        "events": 276480,
+        "gated_retention_mean": 0.5998263888888888,
+        "grid_points": 29,
+        "mesr_argmax_at_evaluable_floor": false,
+        "mesr_at_evaluable_floor": 0.5687647426460276,
+        "mesr_at_star": 0.6543321981821358,
+        "r_star_accuracy": 0.6,
+        "r_star_mesr": 0.4,
+        "raw_mesr": 0.3642415448529685,
+        "signal_fraction": 0.6653501157407408,
+        "signal_recall_at_mesr_star": 0.5965230816064712,
+        "smallest_evaluable_r": 0.12,
+        "valid_grid_points": 24
+      },
+      "MAH00465_100": {
+        "accuracy_at_mesr_star": 0.8945682360863039,
+        "accuracy_at_star": 0.9446211886168299,
+        "blocks": 36,
+        "curve": [
+          {
+            "balanced_accuracy": 0.5202673152471751,
+            "kept_events": 7380,
+            "mesr": NaN,
+            "noise_rejection": 0.9999305574103255,
+            "r": 0.02,
+            "signal_recall": 0.04060407308402458
+          },
+          {
+            "balanced_accuracy": 0.5402687233361135,
+            "kept_events": 14760,
+            "mesr": NaN,
+            "noise_rejection": 0.9995993696749552,
+            "r": 0.04,
+            "signal_recall": 0.08093807699727175
+          },
+          {
+            "balanced_accuracy": 0.5601763490186079,
+            "kept_events": 22104,
+            "mesr": NaN,
+            "noise_rejection": 0.9992735236772522,
+            "r": 0.06,
+            "signal_recall": 0.12107917435996363
+          },
+          {
+            "balanced_accuracy": 0.5800637968968735,
+            "kept_events": 29484,
+            "mesr": NaN,
+            "noise_rejection": 0.9988301594508694,
+            "r": 0.08,
+            "signal_recall": 0.1612974343428776
+          },
+          {
+            "balanced_accuracy": 0.6000000848654274,
+            "kept_events": 36864,
+            "mesr": 0.7616366517750907,
+            "noise_rejection": 0.9984348708634919,
+            "r": 0.1,
+            "signal_recall": 0.20156529886736296
+          },
+          {
+            "balanced_accuracy": 0.6200286263378594,
+            "kept_events": 44244,
+            "mesr": 0.7754784447632356,
+            "noise_rejection": 0.9981303918164579,
+            "r": 0.12,
+            "signal_recall": 0.2419268608592609
+          },
+          {
+            "balanced_accuracy": 0.640008327720003,
+            "kept_events": 51624,
+            "mesr": 0.7874471483195497,
+            "noise_rejection": 0.9977778371304186,
+            "r": 0.14,
+            "signal_recall": 0.28223881830958747
+          },
+          {
+            "balanced_accuracy": 0.6597097396879466,
+            "kept_events": 58968,
+            "mesr": 0.7967401633558266,
+            "noise_rejection": 0.9972490051013595,
+            "r": 0.16,
+            "signal_recall": 0.3221704742745336
+          },
+          {
+            "balanced_accuracy": 0.6794669473254431,
+            "kept_events": 66348,
+            "mesr": 0.8164360950958576,
+            "noise_rejection": 0.9966774391709623,
+            "r": 0.18,
+            "signal_recall": 0.36225645547992397
+          },
+          {
+            "balanced_accuracy": 0.6994466487075868,
+            "kept_events": 73728,
+            "mesr": 0.8240417029217753,
+            "noise_rejection": 0.996324884484923,
+            "r": 0.2,
+            "signal_recall": 0.40256841293025053
+          },
+          {
+            "balanced_accuracy": 0.7192255630518782,
+            "kept_events": 81108,
+            "mesr": 0.8298940360882874,
+            "noise_rejection": 0.9957746855051949,
+            "r": 0.22,
+            "signal_recall": 0.4426764405985615
+          },
+          {
+            "balanced_accuracy": 0.7389393572757851,
+            "kept_events": 88488,
+            "mesr": 0.8388164798718809,
+            "noise_rejection": 0.9951603856734595,
+            "r": 0.24,
+            "signal_recall": 0.4827183288781106
+          },
+          {
+            "balanced_accuracy": 0.75846711558937,
+            "kept_events": 95832,
+            "mesr": 0.8453216265788952,
+            "noise_rejection": 0.9944606180390481,
+            "r": 0.26,
+            "signal_recall": 0.5224736131396919
+          },
+          {
+            "balanced_accuracy": 0.7780615229259054,
+            "kept_events": 103212,
+            "mesr": 0.8466251135327081,
+            "noise_rejection": 0.9937287999786331,
+            "r": 0.28,
+            "signal_recall": 0.5623942458731778
+          },
+          {
+            "balanced_accuracy": 0.7972814895702299,
+            "kept_events": 110592,
+            "mesr": 0.8514435058854749,
+            "noise_rejection": 0.9926284020191768,
+            "r": 0.3,
+            "signal_recall": 0.6019345771212831
+          },
+          {
+            "balanced_accuracy": 0.8453523484365533,
+            "kept_events": 129024,
+            "mesr": 0.8548972410108365,
+            "noise_rejection": 0.9899468497102107,
+            "r": 0.35,
+            "signal_recall": 0.7007578471628958
+          },
+          {
+            "balanced_accuracy": 0.8945682360863039,
+            "kept_events": 147456,
+            "mesr": 0.8582290602538061,
+            "noise_rejection": 0.9883924040490372,
+            "r": 0.4,
+            "signal_recall": 0.8007440681235705
+          },
+          {
+            "balanced_accuracy": 0.9391226084518648,
+            "kept_events": 165888,
+            "mesr": 0.842162730083027,
+            "noise_rejection": 0.9822494057316845,
+            "r": 0.45,
+            "signal_recall": 0.8959958111720451
+          },
+          {
+            "balanced_accuracy": 0.9446211886168299,
+            "kept_events": 184320,
+            "mesr": 0.8140604720519041,
+            "noise_rejection": 0.937661921423039,
+            "r": 0.5,
+            "signal_recall": 0.9515804558106209
+          },
+          {
+            "balanced_accuracy": 0.9061745408756638,
+            "kept_events": 202752,
+            "mesr": 0.7822679176668239,
+            "noise_rejection": 0.8498170454848962,
+            "r": 0.55,
+            "signal_recall": 0.9625320362664315
+          },
+          {
+            "balanced_accuracy": 0.8616717219387406,
+            "kept_events": 221184,
+            "mesr": 0.7518847556069966,
+            "noise_rejection": 0.7560107903100879,
+            "r": 0.6,
+            "signal_recall": 0.9673326535673933
+          },
+          {
+            "balanced_accuracy": 0.816561115211562,
+            "kept_events": 239616,
+            "mesr": 0.7153435740977858,
+            "noise_rejection": 0.661606260516546,
+            "r": 0.65,
+            "signal_recall": 0.9715159699065781
+          },
+          {
+            "balanced_accuracy": 0.7714450818076849,
+            "kept_events": 258048,
+            "mesr": 0.6855764272621545,
+            "noise_rejection": 0.567196388985337,
+            "r": 0.7,
+            "signal_recall": 0.9756937746300328
+          },
+          {
+            "balanced_accuracy": 0.7260631412455709,
+            "kept_events": 276480,
+            "mesr": 0.6607627678283383,
+            "noise_rejection": 0.47252477230843193,
+            "r": 0.75,
+            "signal_recall": 0.97960151018271
+          },
+          {
+            "balanced_accuracy": 0.6808548543378158,
+            "kept_events": 294912,
+            "mesr": 0.63748031133872,
+            "noise_rejection": 0.37802409123687936,
+            "r": 0.8,
+            "signal_recall": 0.9836856174387522
+          },
+          {
+            "balanced_accuracy": 0.6354132203320161,
+            "kept_events": 313344,
+            "mesr": 0.6090786422392446,
+            "noise_rejection": 0.2832937154456345,
+            "r": 0.85,
+            "signal_recall": 0.9875327252183977
+          },
+          {
+            "balanced_accuracy": 0.5900258530932035,
+            "kept_events": 331776,
+            "mesr": 0.5858390152380311,
+            "noise_rejection": 0.1886167570310622,
+            "r": 0.9,
+            "signal_recall": 0.9914349491553449
+          },
+          {
+            "balanced_accuracy": 0.5447090326514742,
+            "kept_events": 350208,
+            "mesr": 0.566690293960054,
+            "noise_rejection": 0.09400924120616437,
+            "r": 0.95,
+            "signal_recall": 0.995408824096784
+          },
+          {
+            "balanced_accuracy": 0.5,
+            "kept_events": 368640,
+            "mesr": 0.5432625312335203,
+            "noise_rejection": 0.0,
+            "r": 1.0,
+            "signal_recall": 1.0
+          }
+        ],
+        "events": 368640,
+        "gated_retention_mean": 0.49473470052083335,
+        "grid_points": 29,
+        "mesr_argmax_at_evaluable_floor": false,
+        "mesr_at_evaluable_floor": 0.7616366517750907,
+        "mesr_at_star": 0.8582290602538061,
+        "r_star_accuracy": 0.5,
+        "r_star_mesr": 0.4,
+        "raw_mesr": 0.5432625312335203,
+        "signal_fraction": 0.4921739366319444,
+        "signal_recall_at_mesr_star": 0.8007440681235705,
+        "smallest_evaluable_r": 0.1,
+        "valid_grid_points": 25
+      },
+      "MAH00465_50": {
+        "accuracy_at_mesr_star": 0.8734567709246706,
+        "accuracy_at_star": 0.9587145027107815,
+        "blocks": 27,
+        "curve": [
+          {
+            "balanced_accuracy": 0.51513552240112,
+            "kept_events": 5535,
+            "mesr": NaN,
+            "noise_rejection": 1.0,
+            "r": 0.02,
+            "signal_recall": 0.03027104480224011
+          },
+          {
+            "balanced_accuracy": 0.5301902991381626,
+            "kept_events": 11070,
+            "mesr": NaN,
+            "noise_rejection": 0.9998931989063568,
+            "r": 0.04,
+            "signal_recall": 0.0604873993699685
+          },
+          {
+            "balanced_accuracy": 0.5451470203593911,
+            "kept_events": 16578,
+            "mesr": NaN,
+            "noise_rejection": 0.9997543574846206,
+            "r": 0.06,
+            "signal_recall": 0.09053968323416171
+          },
+          {
+            "balanced_accuracy": 0.5601291259987641,
+            "kept_events": 22113,
+            "mesr": NaN,
+            "noise_rejection": 0.9995514354066986,
+            "r": 0.08,
+            "signal_recall": 0.12070681659082955
+          },
+          {
+            "balanced_accuracy": 0.5752081264350298,
+            "kept_events": 27648,
+            "mesr": NaN,
+            "noise_rejection": 0.9994766746411483,
+            "r": 0.1,
+            "signal_recall": 0.15093957822891144
+          },
+          {
+            "balanced_accuracy": 0.590246754039257,
+            "kept_events": 33183,
+            "mesr": 0.7557507791843017,
+            "noise_rejection": 0.9993485133287765,
+            "r": 0.12,
+            "signal_recall": 0.1811449947497375
+          },
+          {
+            "balanced_accuracy": 0.6052853816434841,
+            "kept_events": 38718,
+            "mesr": 0.7654244498647926,
+            "noise_rejection": 0.9992203520164047,
+            "r": 0.14,
+            "signal_recall": 0.21135041127056353
+          },
+          {
+            "balanced_accuracy": 0.6202501774311203,
+            "kept_events": 44226,
+            "mesr": 0.7759617115737857,
+            "noise_rejection": 0.9990921907040328,
+            "r": 0.16,
+            "signal_recall": 0.2414081641582079
+          },
+          {
+            "balanced_accuracy": 0.63520805937127,
+            "kept_events": 49761,
+            "mesr": 0.7878222767736929,
+            "noise_rejection": 0.9988572282980178,
+            "r": 0.18,
+            "signal_recall": 0.27155889044452225
+          },
+          {
+            "balanced_accuracy": 0.6502143887098661,
+            "kept_events": 55296,
+            "mesr": 0.7938773199553352,
+            "noise_rejection": 0.9986863465481887,
+            "r": 0.2,
+            "signal_recall": 0.30174243087154357
+          },
+          {
+            "balanced_accuracy": 0.6652207180484622,
+            "kept_events": 60831,
+            "mesr": 0.8104373866413188,
+            "noise_rejection": 0.9985154647983595,
+            "r": 0.22,
+            "signal_recall": 0.33192597129856494
+          },
+          {
+            "balanced_accuracy": 0.6801785999886119,
+            "kept_events": 66366,
+            "mesr": 0.8175777230266816,
+            "noise_rejection": 0.9982805023923444,
+            "r": 0.24,
+            "signal_recall": 0.36207669758487926
+          },
+          {
+            "balanced_accuracy": 0.6950545755457629,
+            "kept_events": 71874,
+            "mesr": 0.8220620395368656,
+            "noise_rejection": 0.9980348598769652,
+            "r": 0.26,
+            "signal_recall": 0.3920742912145607
+          },
+          {
+            "balanced_accuracy": 0.7099963083530971,
+            "kept_events": 77409,
+            "mesr": 0.8288552690455515,
+            "noise_rejection": 0.9977785372522214,
+            "r": 0.28,
+            "signal_recall": 0.4222140794539727
+          },
+          {
+            "balanced_accuracy": 0.7249541902932467,
+            "kept_events": 82944,
+            "mesr": 0.8348344445528633,
+            "noise_rejection": 0.9975435748462064,
+            "r": 0.3,
+            "signal_recall": 0.45236480574028703
+          },
+          {
+            "balanced_accuracy": 0.7623765757665873,
+            "kept_events": 96768,
+            "mesr": 0.8476777808007311,
+            "noise_rejection": 0.9970416097060834,
+            "r": 0.35,
+            "signal_recall": 0.5277115418270913
+          },
+          {
+            "balanced_accuracy": 0.7992983381226477,
+            "kept_events": 110592,
+            "mesr": 0.8532694774825584,
+            "noise_rejection": 0.9958774777853725,
+            "r": 0.4,
+            "signal_recall": 0.602719198459923
+          },
+          {
+            "balanced_accuracy": 0.8362685478771545,
+            "kept_events": 124416,
+            "mesr": 0.8574992447363596,
+            "noise_rejection": 0.9947774265208476,
+            "r": 0.45,
+            "signal_recall": 0.6777596692334616
+          },
+          {
+            "balanced_accuracy": 0.8734567709246706,
+            "kept_events": 138240,
+            "mesr": 0.8588540858937983,
+            "noise_rejection": 0.9939657382091592,
+            "r": 0.5,
+            "signal_recall": 0.752947803640182
+          },
+          {
+            "balanced_accuracy": 0.9109760511949042,
+            "kept_events": 152064,
+            "mesr": 0.8574351762200729,
+            "noise_rejection": 0.993591934381408,
+            "r": 0.55,
+            "signal_recall": 0.8283601680084004
+          },
+          {
+            "balanced_accuracy": 0.9469853875468893,
+            "kept_events": 165888,
+            "mesr": 0.8439636884878109,
+            "noise_rejection": 0.9912209501025291,
+            "r": 0.6,
+            "signal_recall": 0.9027498249912496
+          },
+          {
+            "balanced_accuracy": 0.9587145027107815,
+            "kept_events": 179712,
+            "mesr": 0.8274993791923153,
+            "noise_rejection": 0.9567348769651401,
+            "r": 0.65,
+            "signal_recall": 0.9606941284564228
+          },
+          {
+            "balanced_accuracy": 0.9054514328587243,
+            "kept_events": 193536,
+            "mesr": 0.8032500498557268,
+            "noise_rejection": 0.8362846035543404,
+            "r": 0.7,
+            "signal_recall": 0.9746182621631082
+          },
+          {
+            "balanced_accuracy": 0.8419175145360138,
+            "kept_events": 207360,
+            "mesr": 0.7772246666457937,
+            "noise_rejection": 0.7022492310321258,
+            "r": 0.75,
+            "signal_recall": 0.981585798039902
+          },
+          {
+            "balanced_accuracy": 0.7737326459624416,
+            "kept_events": 221184,
+            "mesr": 0.7563401837718544,
+            "noise_rejection": 0.5620621155160629,
+            "r": 0.8,
+            "signal_recall": 0.9854031764088205
+          },
+          {
+            "balanced_accuracy": 0.7048856629434342,
+            "kept_events": 235008,
+            "mesr": 0.7281729157263687,
+            "noise_rejection": 0.4209992310321258,
+            "r": 0.85,
+            "signal_recall": 0.9887720948547427
+          },
+          {
+            "balanced_accuracy": 0.6360952018892811,
+            "kept_events": 248832,
+            "mesr": 0.7053283068084134,
+            "noise_rejection": 0.2800111073137389,
+            "r": 0.9,
+            "signal_recall": 0.9921792964648233
+          },
+          {
+            "balanced_accuracy": 0.5671674732061962,
+            "kept_events": 262656,
+            "mesr": 0.6864856211687974,
+            "noise_rejection": 0.13884142173615857,
+            "r": 0.95,
+            "signal_recall": 0.9954935246762339
+          },
+          {
+            "balanced_accuracy": 0.5,
+            "kept_events": 276480,
+            "mesr": 0.6635181003296321,
+            "noise_rejection": 0.0,
+            "r": 1.0,
+            "signal_recall": 1.0
+          }
+        ],
+        "events": 276480,
+        "gated_retention_mean": 0.6534432870370371,
+        "grid_points": 29,
+        "mesr_argmax_at_evaluable_floor": false,
+        "mesr_at_evaluable_floor": 0.7557507791843017,
+        "mesr_at_star": 0.8588540858937983,
+        "r_star_accuracy": 0.65,
+        "r_star_mesr": 0.5,
+        "raw_mesr": 0.6635181003296321,
+        "signal_fraction": 0.6613425925925926,
+        "signal_recall_at_mesr_star": 0.752947803640182,
+        "smallest_evaluable_r": 0.12,
+        "valid_grid_points": 24
+      }
+    }
+  },
+  "retention_grid": [
+    0.02,
+    0.04,
+    0.06,
+    0.08,
+    0.1,
+    0.12,
+    0.14,
+    0.16,
+    0.18,
+    0.2,
+    0.22,
+    0.24,
+    0.26,
+    0.28,
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9,
+    0.95,
+    1.0
+  ],
+  "score": "s = beta*G - (R_same + R_opposite)",
+  "verdict": {
+    "accuracy_cost_of_chasing_mesr": 0.08974503996588246,
+    "conditions": 20,
+    "conditions_measurable_below_r0.10": 15,
+    "grid_floor": 0.02,
+    "mean_accuracy_at_accuracy_star": 0.8986077925448743,
+    "mean_accuracy_at_mesr_star": 0.8088627525789919,
+    "mean_gated_retention": 0.48013096809447225,
+    "mean_r_star_accuracy": 0.5,
+    "mean_r_star_mesr": 0.344,
+    "mean_signal_recall_at_mesr_star": 0.6570651802706651,
+    "mean_smallest_evaluable_r": 0.065,
+    "mesr_argmax_pinned_at_evaluable_floor": 0,
+    "mesr_is_gameable_by_overfiltering": false,
+    "per_dataset_mean_r_star_mesr": {
+      "DND21": 0.29500000000000004,
+      "DVSCLEAN": 0.393
+    },
+    "pinned_among_decisive": [],
+    "pinned_conditions": []
+  },
+  "wall_seconds": 78.40213952201884
+}

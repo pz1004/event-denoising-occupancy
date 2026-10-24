@@ -1,0 +1,171 @@
+{
+  "benchmark": "DVSCLEAN labeled simulated paper subset",
+  "edmamba": {
+    "checkpoint": "EDmamba/exp/ED24/EDmamba/model/model_best.pth",
+    "checkpoint_best_metric": 0.8879312271384658,
+    "checkpoint_epoch": 13,
+    "trainable_parameters": 88978
+  },
+  "environment": {
+    "gpu": "NVIDIA GeForce GTX 1660 SUPER",
+    "numpy": "1.24.4",
+    "python": "3.8.20",
+    "torch": "1.12.1",
+    "torch_cuda": "11.6"
+  },
+  "native": {
+    "fixed_point": {
+      "native_q12_8": "four unsigned score operands, 12 total / 8 fractional bits",
+      "native_q8_4": "four unsigned score operands, 8 total / 4 fractional bits"
+    },
+    "method": "bidirectional 250-us same-polarity local/global log contrast",
+    "state_config": {
+      "global_reference_pixels": 100000.0,
+      "height": 720,
+      "max_age_factor": 20.0,
+      "radius": 1,
+      "taus_us": [
+        250.0,
+        1000.0,
+        4000.0,
+        16000.0
+      ],
+      "width": 1280
+    },
+    "trained_parameters": 0
+  },
+  "protocol": {
+    "aggregation": "unweighted mean of per-block ROC AUC within each condition; unweighted mean of ten conditions",
+    "block_size": 10240,
+    "edmamba_input": "continuous HDF5 polarity transformed to 2*p-1",
+    "first_grid_size": 0.05,
+    "label_convention": "0=simulated signal, 1=injected noise",
+    "max_blocks_per_stream": 1,
+    "native_input": "timestamp seconds rounded to relative microseconds; polarity threshold p>=0.5",
+    "native_score_direction": "DND21-frozen: higher score means noise",
+    "oriented_auc": "diagnostic only; not used for the primary comparison",
+    "seed": 1024,
+    "sequence_mapping_provenance": "released EDmamba loader commented test-list order matched to paper table order",
+    "tail_policy": "drop incomplete final block",
+    "test_grid_size": 0.1
+  },
+  "results": {
+    "MAH00470": {
+      "100": {
+        "dropped_tail_events": 362696,
+        "edmamba_delta_vs_paper": 0.09573129583996143,
+        "edmamba_fragments": 1,
+        "edmamba_sampled_events": 10238,
+        "evaluated_blocks": 1,
+        "evaluated_events": 10240,
+        "methods": {
+          "edmamba": {
+            "block_aucs": [
+              0.9993312958399614
+            ],
+            "event_global_auc": 0.9993312958399614,
+            "mean_block_auc": 0.9993312958399614,
+            "std_block_auc": 0.0
+          },
+          "native_float": {
+            "block_aucs": [
+              0.33380189857631043
+            ],
+            "event_global_auc": 0.33380189857631043,
+            "mean_block_auc": 0.33380189857631043,
+            "std_block_auc": 0.0
+          },
+          "native_q12_8": {
+            "block_aucs": [
+              0.3335849627942323
+            ],
+            "event_global_auc": 0.3335849627942323,
+            "mean_block_auc": 0.3335849627942323,
+            "std_block_auc": 0.0
+          },
+          "native_q8_4": {
+            "block_aucs": [
+              0.333454347110839
+            ],
+            "event_global_auc": 0.333454347110839,
+            "mean_block_auc": 0.333454347110839,
+            "std_block_auc": 0.0
+          }
+        },
+        "noise_events": 186468,
+        "noise_level_percent_of_signal_count": 100,
+        "paper_edmamba_auc": 0.9036,
+        "peak_cuda_memory_mib": 19.68310546875,
+        "scene_alias": "multi-car",
+        "signal_events": 186468,
+        "source": "DVSCLEAN/simulated_data/MAH00470_100.hdf5",
+        "source_sha256": "0f9bae5f9a980c6bb754ca0c0179b6575ebefacdc9a6380e6cb26454c500f4eb",
+        "timing": {
+          "edmamba_block_wall_seconds": 1.7889897980494425,
+          "edmamba_gpu_inference_seconds": 1.6849853720050305,
+          "native_block_wall_seconds": 0.9017594520119019
+        },
+        "total_source_events": 372936
+      }
+    }
+  },
+  "summary": {
+    "candidates": {
+      "native_float": {
+        "conditions_beating_reproduced_edmamba": 0,
+        "delta_vs_reproduced_edmamba": -0.6655293972636509,
+        "mean_auc": 0.33380189857631043,
+        "mean_oriented_auc_diagnostic": 0.6661981014236895,
+        "paired_cluster_bootstrap": {
+          "95ci": [
+            -0.6655293972636509,
+            -0.6655293972636509
+          ],
+          "cluster_blocks": 10,
+          "cluster_events": 102400,
+          "observed_paired_mean_delta": -0.6655293972636509,
+          "replicates": 100,
+          "stratification": "unweighted mean of condition-level paired deltas"
+        }
+      },
+      "native_q12_8": {
+        "conditions_beating_reproduced_edmamba": 0,
+        "delta_vs_reproduced_edmamba": -0.6657463330457292,
+        "mean_auc": 0.3335849627942323,
+        "mean_oriented_auc_diagnostic": 0.6664150372057678,
+        "paired_cluster_bootstrap": {
+          "95ci": [
+            -0.6657463330457292,
+            -0.6657463330457292
+          ],
+          "cluster_blocks": 10,
+          "cluster_events": 102400,
+          "observed_paired_mean_delta": -0.6657463330457292,
+          "replicates": 100,
+          "stratification": "unweighted mean of condition-level paired deltas"
+        }
+      },
+      "native_q8_4": {
+        "conditions_beating_reproduced_edmamba": 0,
+        "delta_vs_reproduced_edmamba": -0.6658769487291224,
+        "mean_auc": 0.333454347110839,
+        "mean_oriented_auc_diagnostic": 0.666545652889161,
+        "paired_cluster_bootstrap": {
+          "95ci": [
+            -0.6658769487291224,
+            -0.6658769487291224
+          ],
+          "cluster_blocks": 10,
+          "cluster_events": 102400,
+          "observed_paired_mean_delta": -0.6658769487291224,
+          "replicates": 100,
+          "stratification": "unweighted mean of condition-level paired deltas"
+        }
+      }
+    },
+    "conditions": 1,
+    "paper_edmamba_mean_auc": 0.9036,
+    "reproduced_edmamba_delta_vs_paper": 0.09573129583996143,
+    "reproduced_edmamba_mean_auc": 0.9993312958399614
+  }
+}

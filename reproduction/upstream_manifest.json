@@ -1,0 +1,45 @@
+{
+  "audit_date": "2026-10-25",
+  "repositories": [
+    {
+      "name": "EDmamba",
+      "url": "https://github.com/gongzihang/EDmamba",
+      "revision": "302f7586c083aa0bd5f7befa13011a1b6c1e7022",
+      "license": "No root license file found at this revision; consult upstream terms",
+      "vendored": false,
+      "local_compatibility_patch": "patches/edmamba-import-compatibility.patch",
+      "patch_sha256": "81922208bdf4b9b74582a0c136da4d5a061422b26755de4e0d38affa11937106"
+    },
+    {
+      "name": "EDformer",
+      "url": "https://github.com/NJUVISION/EDformer",
+      "revision": "820ff16b3bc50694e163f054fbb52cf3505acfff",
+      "license": "No root license file found at this revision; consult upstream terms",
+      "vendored": false
+    },
+    {
+      "name": "E-RAFT",
+      "url": "https://github.com/uzh-rpg/E-RAFT.git",
+      "revision": "c58ce0524ea0ebfa9849991caafb547f44fe9bfd",
+      "license": "MIT",
+      "vendored": false,
+      "license_sha256": "9546e25a24ef10d194ba797456703792301d5a55bf8805d94a7bae791340b4ca"
+    },
+    {
+      "name": "cuke-emlb",
+      "url": "https://github.com/KugaMaxx/cuke-emlb",
+      "revision": "105a1c36c368f10ff63b4a6f862992ae8842628d",
+      "license": "MIT",
+      "vendored": false,
+      "license_sha256": "2548c748dcc12b9c9d681bf75a6111f543fbdb9518cc0e0b487dcf00026cfcf9"
+    },
+    {
+      "name": "EBF",
+      "url": "https://github.com/shicy17/EBF",
+      "revision": "e2fa7760c841dc056bfde9fa1d70125a14275d2b",
+      "license": "GPL-3.0 license text",
+      "vendored": false,
+      "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    }
+  ]
+}

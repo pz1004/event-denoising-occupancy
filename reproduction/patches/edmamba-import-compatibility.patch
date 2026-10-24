@@ -1,0 +1,69 @@
+diff --git a/pointcept/datasets/denoise_emlb.py b/pointcept/datasets/denoise_emlb.py
+index 94a8183..b3f6262 100644
+--- a/pointcept/datasets/denoise_emlb.py
++++ b/pointcept/datasets/denoise_emlb.py
+@@ -7,7 +7,10 @@ import random
+ from .builder import DATASETS
+ from .defaults import DefaultMultiScansDataset
+ from .denoise_ed24 import denoise_ed24_multi_scan
+-import dv_processing as dv
++try:
++    import dv_processing as dv
++except ImportError:  # Optional: only required when reading native E-MLB recordings.
++    dv = None
+ from copy import deepcopy
+ 
+ def absoluteFilePaths(directory, selected_file_list=None):
+diff --git a/pointcept/engines/test.py b/pointcept/engines/test.py
+index f34357c..8b404c4 100644
+--- a/pointcept/engines/test.py
++++ b/pointcept/engines/test.py
+@@ -30,7 +30,10 @@ from pointcept.utils.misc import (
+ )
+ from sklearn.metrics import roc_curve, auc
+ import matplotlib.pyplot as plt
+-import dv_processing as dv
++try:
++    import dv_processing as dv
++except ImportError:  # The semantic/AUC tester does not use dv-processing.
++    dv = None
+ from tqdm import tqdm
+ 
+ 
+@@ -512,4 +515,4 @@ class SemSegTester(TesterBase):
+             logger.info("<<<<<<<<<<<<<<<<< End Evaluation <<<<<<<<<<<<<<<<<")
+     @staticmethod
+     def collate_fn(batch):
+-        return batch
+\ No newline at end of file
++        return batch
+diff --git a/pointcept/models/losses/misc.py b/pointcept/models/losses/misc.py
+index 1392b40..53c7ad9 100644
+--- a/pointcept/models/losses/misc.py
++++ b/pointcept/models/losses/misc.py
+@@ -10,8 +10,16 @@ import torch.nn as nn
+ import torch.nn.functional as F
+ from torch import Tensor
+ from .builder import LOSSES
+-from pytorch3d.ops import knn_points, knn_gather
+-import faiss
++try:
++    from pytorch3d.ops import knn_points, knn_gather
++except ImportError:  # Optional: only required by the point-cloud regularization losses below.
++    knn_points = None
++    knn_gather = None
++
++try:
++    import faiss
++except ImportError:  # Optional: EDmamba's configured CrossEntropyLoss does not use FAISS.
++    faiss = None
+ import numpy as np
+ 
+ @LOSSES.register_module()
+@@ -766,4 +774,4 @@ class CurvatureLoss(nn.Module):
+     #     """
+     #     norm = torch.norm(vectors, dim=-1, keepdim=True)  # (..., 1)
+     #     norm = torch.clamp(norm, min=1e-6)  # 防止除以零
+-    #     return vectors / norm
+\ No newline at end of file
++    #     return vectors / norm

@@ -1,0 +1,91 @@
+{
+  "dense_levels_only_3_and_4": {
+    "multi_logsum": 0.9317904765189858,
+    "multi_scale0": 0.9277476462316905,
+    "multi_sum": 0.9317255459045244,
+    "single_tau": 0.9308997260068753
+  },
+  "gate": "unchanged: corr(G, R_same) on the radius-1, 250 us plane, theta = 0",
+  "levels": {
+    "0.5": {
+      "auc_multi_logsum": 0.9472181962911957,
+      "auc_multi_scale0": 0.9435353315689756,
+      "auc_multi_sum": 0.9452405411306294,
+      "auc_single_tau": 0.9407540269376198,
+      "blocks": 69,
+      "mean_support_multi_sum": 53.26315104166667,
+      "mean_support_single": 13.737150418931158
+    },
+    "1.0": {
+      "auc_multi_logsum": 0.9633172313233358,
+      "auc_multi_scale0": 0.9578556046301882,
+      "auc_multi_sum": 0.9616062443755865,
+      "auc_single_tau": 0.9578243922518029,
+      "blocks": 71,
+      "mean_support_multi_sum": 54.38543821522888,
+      "mean_support_single": 14.007377860915492
+    },
+    "2.0": {
+      "auc_multi_logsum": 0.9541877118071133,
+      "auc_multi_scale0": 0.9489110927916837,
+      "auc_multi_sum": 0.9523164021074231,
+      "auc_single_tau": 0.9490205562517017,
+      "blocks": 78,
+      "mean_support_multi_sum": 44.96873622796473,
+      "mean_support_single": 11.525631009615385
+    },
+    "3.0": {
+      "auc_multi_logsum": 0.9327082145562275,
+      "auc_multi_scale0": 0.9283325306950235,
+      "auc_multi_sum": 0.9325779622026182,
+      "auc_single_tau": 0.9314962781397247,
+      "blocks": 80,
+      "mean_support_multi_sum": 26.61458740234375,
+      "mean_support_single": 6.7313720703125
+    },
+    "4.0": {
+      "auc_multi_logsum": 0.9308727384817441,
+      "auc_multi_scale0": 0.9271627617683575,
+      "auc_multi_sum": 0.9308731296064305,
+      "auc_single_tau": 0.930303173874026,
+      "blocks": 80,
+      "mean_support_multi_sum": 24.71152099609375,
+      "mean_support_single": 6.230576171875
+    }
+  },
+  "motivation": "Phase 16: the dense regime has ZERO gate headroom (+0.0000 at 4.0 Hz/px, oracle beta* = 0), so it is an operand problem. Support collapses there because max_age = 20*taus[-1] = 5 ms is short relative to the block.",
+  "no_new_parameter": "uses the pre-declared tau bank {250us, 1, 4, 16ms}; max_age_factor is left at its existing 20.0. Nothing is fitted.",
+  "overall_all_levels": {
+    "multi_logsum": 0.9456608184919233,
+    "multi_scale0": 0.9411594642908456,
+    "multi_sum": 0.9445228558845375,
+    "single_tau": 0.941879685490975
+  },
+  "phase": "17 multi-tau support fusion for the dense low-corr regime",
+  "split": {
+    "half_used": "dev",
+    "scenes": [
+      "Bicycle_01",
+      "Bicycle_03",
+      "Car_02",
+      "Car_04",
+      "Car_06",
+      "Car_08",
+      "Car_10",
+      "Crossing_01",
+      "Drop_01",
+      "Drop_03",
+      "Fire_01",
+      "Floor_01",
+      "Headset_01",
+      "House_01",
+      "House_03",
+      "House_05",
+      "Key_01",
+      "Knife_01",
+      "Knife_03",
+      "Library_01"
+    ]
+  },
+  "wall_seconds": 25.149278177996166
+}

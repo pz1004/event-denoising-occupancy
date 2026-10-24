@@ -1,0 +1,243 @@
+{
+  "phase": "43 end-to-end memory and data-movement accounting",
+  "question": "Zero stored weights is half a hardware ledger. What is the persistent state, the transient buffer, and the per-event memory traffic?",
+  "state_is_independent_of_radius": true,
+  "stored_widths": {
+    "decayed_state": "float32 (32 bit) per pixel per polarity per scale",
+    "last_timestamp": "int64 (64 bit) per pixel per polarity",
+    "note": "These are what the implementation stores. The fixed-point certificate covers the score operands and the gate decision, not these arrays; narrowing them is untested and is not claimed."
+  },
+  "table": {
+    "DND21 346x260": {
+      "block_buffer": {
+        "events": 10240,
+        "implemented_bytes": 327680,
+        "implemented_mb": 0.32768,
+        "packed_bits_per_event": 52,
+        "packed_bytes": 66560.0,
+        "packed_mb": 0.06656
+      },
+      "measured_occupancy": {
+        "resampled_here": {
+          "radius1": {
+            "conditions": 10,
+            "max_occupancy": 0.3754241943359375,
+            "mean_occupancy": 0.1682305908203125,
+            "min_occupancy": 0.08059183756510417
+          },
+          "radius2": {
+            "conditions": 10,
+            "max_occupancy": 0.3432284884982639,
+            "mean_occupancy": 0.1470095486111111,
+            "min_occupancy": 0.07269727918836806
+          }
+        },
+        "source": "phase12_efficiency.json, the same estimate behind the manuscript's operation count",
+        "used_for_traffic": {
+          "1": 0.19317754109700522,
+          "2": 0.15556708441840278
+        }
+      },
+      "radius1": {
+        "bidirectional": {
+          "state": {
+            "bytes_per_pixel_per_polarity_per_direction": 12.00006669630947,
+            "decayed_states_bytes": 1439360,
+            "directions": 2,
+            "global_state_bytes": 24,
+            "last_timestamps_bytes": 2878720,
+            "total_bytes": 4318104,
+            "total_mb": 4.318104
+          },
+          "traffic": {
+            "bytes_read_per_event_at_occupancy": 97.090087890625,
+            "measured_ring_occupancy": 0.19317754109700522,
+            "note": "6 bytes is the mean of the two stored widths, float32 state and int64 timestamp, weighted by how often each is touched",
+            "reads_per_event_at_occupancy": 16.181681315104168,
+            "reads_per_event_worst_case": 42,
+            "ring_taps": 8,
+            "writes_per_event": 4
+          }
+        },
+        "causal": {
+          "state": {
+            "bytes_per_pixel_per_polarity_per_direction": 12.00006669630947,
+            "decayed_states_bytes": 719680,
+            "directions": 1,
+            "global_state_bytes": 12,
+            "last_timestamps_bytes": 1439360,
+            "total_bytes": 2159052,
+            "total_mb": 2.159052
+          },
+          "traffic": {
+            "bytes_read_per_event_at_occupancy": 48.5450439453125,
+            "measured_ring_occupancy": 0.19317754109700522,
+            "note": "6 bytes is the mean of the two stored widths, float32 state and int64 timestamp, weighted by how often each is touched",
+            "reads_per_event_at_occupancy": 8.090840657552084,
+            "reads_per_event_worst_case": 21,
+            "ring_taps": 8,
+            "writes_per_event": 2
+          }
+        }
+      },
+      "radius2": {
+        "bidirectional": {
+          "state": {
+            "bytes_per_pixel_per_polarity_per_direction": 12.00006669630947,
+            "decayed_states_bytes": 1439360,
+            "directions": 2,
+            "global_state_bytes": 24,
+            "last_timestamps_bytes": 2878720,
+            "total_bytes": 4318104,
+            "total_mb": 4.318104
+          },
+          "traffic": {
+            "bytes_read_per_event_at_occupancy": 149.606640625,
+            "measured_ring_occupancy": 0.15556708441840278,
+            "note": "6 bytes is the mean of the two stored widths, float32 state and int64 timestamp, weighted by how often each is touched",
+            "reads_per_event_at_occupancy": 24.93444010416667,
+            "reads_per_event_worst_case": 106,
+            "ring_taps": 24,
+            "writes_per_event": 4
+          }
+        },
+        "causal": {
+          "state": {
+            "bytes_per_pixel_per_polarity_per_direction": 12.00006669630947,
+            "decayed_states_bytes": 719680,
+            "directions": 1,
+            "global_state_bytes": 12,
+            "last_timestamps_bytes": 1439360,
+            "total_bytes": 2159052,
+            "total_mb": 2.159052
+          },
+          "traffic": {
+            "bytes_read_per_event_at_occupancy": 74.8033203125,
+            "measured_ring_occupancy": 0.15556708441840278,
+            "note": "6 bytes is the mean of the two stored widths, float32 state and int64 timestamp, weighted by how often each is touched",
+            "reads_per_event_at_occupancy": 12.467220052083334,
+            "reads_per_event_worst_case": 53,
+            "ring_taps": 24,
+            "writes_per_event": 2
+          }
+        }
+      }
+    },
+    "DVSCLEAN 1280x720": {
+      "block_buffer": {
+        "events": 10240,
+        "implemented_bytes": 327680,
+        "implemented_mb": 0.32768,
+        "packed_bits_per_event": 52,
+        "packed_bytes": 66560.0,
+        "packed_mb": 0.06656
+      },
+      "measured_occupancy": {
+        "resampled_here": {
+          "radius1": {
+            "conditions": 10,
+            "max_occupancy": 0.23276468912760417,
+            "mean_occupancy": 0.13750183105468752,
+            "min_occupancy": 0.08062540690104167
+          },
+          "radius2": {
+            "conditions": 10,
+            "max_occupancy": 0.1802730984157986,
+            "mean_occupancy": 0.10485124376085068,
+            "min_occupancy": 0.05815667046440972
+          }
+        },
+        "source": "phase12_efficiency.json, the same estimate behind the manuscript's operation count",
+        "used_for_traffic": {
+          "1": 0.21171417236328124,
+          "2": 0.17598003811306423
+        }
+      },
+      "radius1": {
+        "bidirectional": {
+          "state": {
+            "bytes_per_pixel_per_polarity_per_direction": 12.000006510416666,
+            "decayed_states_bytes": 14745600,
+            "directions": 2,
+            "global_state_bytes": 24,
+            "last_timestamps_bytes": 29491200,
+            "total_bytes": 44236824,
+            "total_mb": 44.236824
+          },
+          "traffic": {
+            "bytes_read_per_event_at_occupancy": 100.64912109375001,
+            "measured_ring_occupancy": 0.21171417236328124,
+            "note": "6 bytes is the mean of the two stored widths, float32 state and int64 timestamp, weighted by how often each is touched",
+            "reads_per_event_at_occupancy": 16.774853515625,
+            "reads_per_event_worst_case": 42,
+            "ring_taps": 8,
+            "writes_per_event": 4
+          }
+        },
+        "causal": {
+          "state": {
+            "bytes_per_pixel_per_polarity_per_direction": 12.000006510416666,
+            "decayed_states_bytes": 7372800,
+            "directions": 1,
+            "global_state_bytes": 12,
+            "last_timestamps_bytes": 14745600,
+            "total_bytes": 22118412,
+            "total_mb": 22.118412
+          },
+          "traffic": {
+            "bytes_read_per_event_at_occupancy": 50.324560546875006,
+            "measured_ring_occupancy": 0.21171417236328124,
+            "note": "6 bytes is the mean of the two stored widths, float32 state and int64 timestamp, weighted by how often each is touched",
+            "reads_per_event_at_occupancy": 8.3874267578125,
+            "reads_per_event_worst_case": 21,
+            "ring_taps": 8,
+            "writes_per_event": 2
+          }
+        }
+      },
+      "radius2": {
+        "bidirectional": {
+          "state": {
+            "bytes_per_pixel_per_polarity_per_direction": 12.000006510416666,
+            "decayed_states_bytes": 14745600,
+            "directions": 2,
+            "global_state_bytes": 24,
+            "last_timestamps_bytes": 29491200,
+            "total_bytes": 44236824,
+            "total_mb": 44.236824
+          },
+          "traffic": {
+            "bytes_read_per_event_at_occupancy": 161.364501953125,
+            "measured_ring_occupancy": 0.17598003811306423,
+            "note": "6 bytes is the mean of the two stored widths, float32 state and int64 timestamp, weighted by how often each is touched",
+            "reads_per_event_at_occupancy": 26.894083658854164,
+            "reads_per_event_worst_case": 106,
+            "ring_taps": 24,
+            "writes_per_event": 4
+          }
+        },
+        "causal": {
+          "state": {
+            "bytes_per_pixel_per_polarity_per_direction": 12.000006510416666,
+            "decayed_states_bytes": 7372800,
+            "directions": 1,
+            "global_state_bytes": 12,
+            "last_timestamps_bytes": 14745600,
+            "total_bytes": 22118412,
+            "total_mb": 22.118412
+          },
+          "traffic": {
+            "bytes_read_per_event_at_occupancy": 80.6822509765625,
+            "measured_ring_occupancy": 0.17598003811306423,
+            "note": "6 bytes is the mean of the two stored widths, float32 state and int64 timestamp, weighted by how often each is touched",
+            "reads_per_event_at_occupancy": 13.447041829427082,
+            "reads_per_event_worst_case": 53,
+            "ring_taps": 24,
+            "writes_per_event": 2
+          }
+        }
+      }
+    }
+  },
+  "wall_seconds": 2.3439080710013513
+}

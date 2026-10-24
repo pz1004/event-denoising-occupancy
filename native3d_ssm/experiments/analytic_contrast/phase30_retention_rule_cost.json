@@ -1,0 +1,25 @@
+{
+  "block_size": 10240,
+  "caveat": "Single-thread CPU on the authors' host; the ratio, not the absolute time, is what Appendix D quotes. Score arrays are synthetic but match the two shapes the gate produces, and the ratio is dominated by EM iterations against a histogram pass rather than by the distribution.",
+  "phase": "30 per-block cost of the retention rules",
+  "question": "how much slower is the two-component mixture than the adopted rule's two halves",
+  "repeats": 200,
+  "results": {
+    "open_branch_continuous": {
+      "below_top": 1.5193514991551638e-05,
+      "gmm2": 0.010166725125163794,
+      "gmm2_over_below_top": 669.1489843408195,
+      "gmm2_over_otsu": 84.22668015517696,
+      "otsu": 0.00012070670607499778
+    },
+    "shut_branch_atom": {
+      "below_top": 1.8151024123653768e-05,
+      "gmm2": 0.01300175728974864,
+      "gmm2_over_below_top": 716.3098457240885,
+      "gmm2_over_otsu": 67.87840535715301,
+      "otsu": 0.00019154482521116734
+    }
+  },
+  "seed": 20260813,
+  "unit": "seconds per block, mean over repeats"
+}

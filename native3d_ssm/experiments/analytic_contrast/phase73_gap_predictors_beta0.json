@@ -1,0 +1,899 @@
+{
+  "arm": "beta0",
+  "counterexample": {
+    "benchmark": "BUAA_Campus",
+    "development_mean_support": 4.5280801586458646,
+    "mean_gap": 0.017244821558179135,
+    "mean_support": 5.61856990448416,
+    "support_is_above_development": true,
+    "verdict": "occupancy is the strongest single predictor of the gap but is not sufficient: BUAA_Campus sits above development's own mean occupancy and we still lose there"
+  },
+  "metric": "paired block-mean AUC, EBF minus ours",
+  "per_benchmark": {
+    "BUAA_Campus": {
+      "corr_noise_vs_gap": 0.45653781884327516,
+      "corr_support_vs_gap": 0.270079189424962,
+      "ebf_block_mean_auc": 0.8763960678088183,
+      "mean_gap": 0.017244821558179135,
+      "mean_noise_fraction": 0.11619594444444444,
+      "mean_support": 5.61856990448416,
+      "ours_block_mean_auc": 0.8591512462506391,
+      "support_range": [
+        4.589682215860445,
+        6.715465806934931
+      ],
+      "units": 6
+    },
+    "LED": {
+      "corr_noise_vs_gap": -0.16967408818593002,
+      "corr_support_vs_gap": -0.8184528151446316,
+      "ebf_block_mean_auc": 0.9060221254786729,
+      "mean_gap": 0.12353478644895395,
+      "mean_noise_fraction": 0.14889417016775838,
+      "mean_support": 2.5363957620407973,
+      "ours_block_mean_auc": 0.782487339029719,
+      "support_range": [
+        0.37306126644736837,
+        7.402469308035713
+      ],
+      "units": 66
+    },
+    "development": {
+      "corr_noise_vs_gap": 0.08519048168625251,
+      "corr_support_vs_gap": -0.6442460256264371,
+      "ebf_block_mean_auc": 0.9664262442297122,
+      "mean_gap": 0.0036782728099780835,
+      "mean_noise_fraction": 0.477680222725082,
+      "mean_support": 4.5280801586458646,
+      "ours_block_mean_auc": 0.9627479714197342,
+      "support_range": [
+        1.5355496651785716,
+        10.13733723958333
+      ],
+      "units": 20
+    }
+  },
+  "phase": "63 predictors of the gap to EBF across 92 labelled units",
+  "pooled": {
+    "caveat": "pooled across three benchmarks, both predictors are confounded with benchmark identity, so the between-benchmark part of this fit rests on an effective sample of three",
+    "corr_noise_vs_gap": -0.48916713061191397,
+    "corr_support_vs_gap": -0.7587193555854234,
+    "r2_both": 0.7359620174060457,
+    "r2_noise_only": 0.23928448167109295,
+    "r2_support_only": 0.5756550605399602,
+    "units": 92
+  },
+  "support_max": 24,
+  "unit": "one condition, scene or sequence on which both filters scored the same blocks",
+  "units": [
+    {
+      "benchmark": "development",
+      "ebf": 0.9179457361729311,
+      "gap": 0.003311416797700195,
+      "mean_support": 4.410735591278829,
+      "name": "DND21/10hz_driving",
+      "noise_fraction": 0.5609091845140033,
+      "ours": 0.9146343193752309
+    },
+    {
+      "benchmark": "development",
+      "ebf": 0.9693139973923606,
+      "gap": 0.0031919013454619893,
+      "mean_support": 2.2301936246141976,
+      "name": "DND21/10hz_hotel-bar",
+      "noise_fraction": 0.8711031539351852,
+      "ours": 0.9661220960468986
+    },
+    {
+      "benchmark": "development",
+      "ebf": 0.937186077639387,
+      "gap": -0.007897408553541263,
+      "mean_support": 9.836736002604166,
+      "name": "DND21/1hz_driving",
+      "noise_fraction": 0.11355013020833334,
+      "ours": 0.9450834861929283
+    },
+    {
+      "benchmark": "development",
+      "ebf": 0.9835371975900888,
+      "gap": -0.004495424382394253,
+      "mean_support": 10.13733723958333,
+      "name": "DND21/1hz_hotel-bar",
+      "noise_fraction": 0.403180001795977,
+      "ours": 0.9880326219724831
+    },
+    {
+      "benchmark": "development",
+      "ebf": 0.9323887326213315,
+      "gap": -0.0063055500820599075,
+      "mean_support": 7.687083368716032,
+      "name": "DND21/3hz_driving",
+      "noise_fraction": 0.2769764775815217,
+      "ours": 0.9386942827033914
+    },
+    {
+      "benchmark": "development",
+      "ebf": 0.9800492973419629,
+      "gap": -0.004779593561651585,
+      "mean_support": 5.1486228602707005,
+      "name": "DND21/3hz_hotel-bar",
+      "noise_fraction": 0.6686766023089172,
+      "ours": 0.9848288909036145
+    },
+    {
+      "benchmark": "development",
+      "ebf": 0.9280271466789327,
+      "gap": -0.004205265461844743,
+      "mean_support": 6.310032000858123,
+      "name": "DND21/5hz_driving",
+      "noise_fraction": 0.3898524653175057,
+      "ours": 0.9322324121407775
+    },
+    {
+      "benchmark": "development",
+      "ebf": 0.9764709813470182,
+      "gap": -0.0031689016034101014,
+      "mean_support": 3.4946075839246724,
+      "name": "DND21/5hz_hotel-bar",
+      "noise_fraction": 0.7719074099344978,
+      "ours": 0.9796398829504283
+    },
+    {
+      "benchmark": "development",
+      "ebf": 0.9237000767691363,
+      "gap": -0.0013109948532535887,
+      "mean_support": 5.365833488343254,
+      "name": "DND21/7hz_driving",
+      "noise_fraction": 0.472260005890377,
+      "ours": 0.9250110716223899
+    },
+    {
+      "benchmark": "development",
+      "ebf": 0.9734682685270628,
+      "gap": -0.0007915859934530811,
+      "mean_support": 2.771116612667224,
+      "name": "DND21/7hz_hotel-bar",
+      "noise_fraction": 0.8254072820861204,
+      "ours": 0.9742598545205159
+    },
+    {
+      "benchmark": "development",
+      "ebf": 0.9854208209505112,
+      "gap": -0.004010617822801765,
+      "mean_support": 3.8489706503378383,
+      "name": "DVSCLEAN/MAH00446_100",
+      "noise_fraction": 0.5008894636824325,
+      "ours": 0.989431438773313
+    },
+    {
+      "benchmark": "development",
+      "ebf": 0.9860758025617387,
+      "gap": -0.007595735819367899,
+      "mean_support": 6.139627511160714,
+      "name": "DVSCLEAN/MAH00446_50",
+      "noise_fraction": 0.33352399553571427,
+      "ours": 0.9936715383811066
+    },
+    {
+      "benchmark": "development",
+      "ebf": 0.9788742244979629,
+      "gap": 0.019223050456860014,
+      "mean_support": 1.9746337890624999,
+      "name": "DVSCLEAN/MAH00454_100",
+      "noise_fraction": 0.5024468315972223,
+      "ours": 0.9596511740411029
+    },
+    {
+      "benchmark": "development",
+      "ebf": 0.9819575096770335,
+      "gap": 0.005858860375326236,
+      "mean_support": 3.2544379340277776,
+      "name": "DVSCLEAN/MAH00454_50",
+      "noise_fraction": 0.33497902199074076,
+      "ours": 0.9760986493017073
+    },
+    {
+      "benchmark": "development",
+      "ebf": 0.9770026566557968,
+      "gap": 0.04355019707303487,
+      "mean_support": 1.5355496651785716,
+      "name": "DVSCLEAN/MAH00455_100",
+      "noise_fraction": 0.5060100446428571,
+      "ours": 0.9334524595827619
+    },
+    {
+      "benchmark": "development",
+      "ebf": 0.9805991122381779,
+      "gap": 0.02294040569169975,
+      "mean_support": 2.5609374999999996,
+      "name": "DVSCLEAN/MAH00455_50",
+      "noise_fraction": 0.33887845552884616,
+      "ours": 0.9576587065464781
+    },
+    {
+      "benchmark": "development",
+      "ebf": 0.9809023306702002,
+      "gap": 0.03174867087128774,
+      "mean_support": 1.7883707682291667,
+      "name": "DVSCLEAN/MAH00456_100",
+      "noise_fraction": 0.5019205729166667,
+      "ours": 0.9491536597989124
+    },
+    {
+      "benchmark": "development",
+      "ebf": 0.9810565427284734,
+      "gap": 0.011263979522117995,
+      "mean_support": 3.01273509837963,
+      "name": "DVSCLEAN/MAH00456_50",
+      "noise_fraction": 0.33464988425925923,
+      "ours": 0.9697925632063554
+    },
+    {
+      "benchmark": "development",
+      "ebf": 0.98252429524375,
+      "gap": -0.003675259733994296,
+      "mean_support": 3.414458550347222,
+      "name": "DVSCLEAN/MAH00465_100",
+      "noise_fraction": 0.5078260633680556,
+      "ours": 0.9861995549777443
+    },
+    {
+      "benchmark": "development",
+      "ebf": 0.9720240772903895,
+      "gap": -0.019286688066154634,
+      "mean_support": 5.639583333333333,
+      "name": "DVSCLEAN/MAH00465_50",
+      "noise_fraction": 0.3386574074074074,
+      "ours": 0.9913107653565442
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9108064380047405,
+      "gap": 0.22948776746423571,
+      "mean_support": 0.6841875448994253,
+      "name": "scene_1038",
+      "noise_fraction": 0.09799467941810344,
+      "ours": 0.6813186705405048
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.8922049436954985,
+      "gap": 0.17750185972352472,
+      "mean_support": 1.4025218290441175,
+      "name": "scene_1084",
+      "noise_fraction": 0.17139102711397058,
+      "ours": 0.7147030839719738
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.8808708441965779,
+      "gap": 0.1844407764151632,
+      "mean_support": 0.6355544257409793,
+      "name": "scene_1206",
+      "noise_fraction": 0.05578084729381443,
+      "ours": 0.6964300677814147
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9474673236757224,
+      "gap": 0.08618657150515774,
+      "mean_support": 3.4179359172952584,
+      "name": "scene_1270",
+      "noise_fraction": 0.10351141567887931,
+      "ours": 0.8612807521705647
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9705526809898898,
+      "gap": 0.03801927124821691,
+      "mean_support": 5.0309799194335945,
+      "name": "scene_1278",
+      "noise_fraction": 0.1891143798828125,
+      "ours": 0.9325334097416729
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.958756996955698,
+      "gap": 0.03265181734261824,
+      "mean_support": 5.463721305941358,
+      "name": "scene_1279",
+      "noise_fraction": 0.062252845293209874,
+      "ours": 0.9261051796130798
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9436812733082728,
+      "gap": 0.04384358982723435,
+      "mean_support": 5.0327886814024385,
+      "name": "scene_1283",
+      "noise_fraction": 0.18136671112804878,
+      "ours": 0.8998376834810384
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.951081891923821,
+      "gap": 0.04105961054531915,
+      "mean_support": 5.831545572916667,
+      "name": "scene_1310",
+      "noise_fraction": 0.12611848958333333,
+      "ours": 0.9100222813785018
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9642854936000484,
+      "gap": 0.042106393216595706,
+      "mean_support": 5.838513764880953,
+      "name": "scene_1355",
+      "noise_fraction": 0.08694080171130952,
+      "ours": 0.9221791003834527
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9539239055456851,
+      "gap": 0.04481721016957452,
+      "mean_support": 6.066554478236607,
+      "name": "scene_1358",
+      "noise_fraction": 0.21179373604910715,
+      "ours": 0.9091066953761106
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9405099576526642,
+      "gap": 0.07234087868676609,
+      "mean_support": 3.7106077332427536,
+      "name": "scene_1385",
+      "noise_fraction": 0.19466570425724639,
+      "ours": 0.8681690789658981
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9444461984341959,
+      "gap": 0.09065004321736969,
+      "mean_support": 2.524630702227012,
+      "name": "scene_1430",
+      "noise_fraction": 0.18122642780172413,
+      "ours": 0.8537961552168262
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9726847688080857,
+      "gap": 0.03746557289581032,
+      "mean_support": 7.161155007102272,
+      "name": "scene_1484",
+      "noise_fraction": 0.16606741240530304,
+      "ours": 0.9352191959122754
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.93152970810099,
+      "gap": 0.09740307640218293,
+      "mean_support": 2.5212890624999997,
+      "name": "scene_1501",
+      "noise_fraction": 0.17006961137820512,
+      "ours": 0.8341266316988071
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9543248817869954,
+      "gap": 0.055862217689671034,
+      "mean_support": 6.934341896186442,
+      "name": "scene_1529",
+      "noise_fraction": 0.10796643273305084,
+      "ours": 0.8984626640973243
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.8799341341354393,
+      "gap": 0.1462529714095111,
+      "mean_support": 0.8982009101159794,
+      "name": "scene_1601",
+      "noise_fraction": 0.06157075547680412,
+      "ours": 0.7336811627259282
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.7881136875425268,
+      "gap": 0.14990400101445067,
+      "mean_support": 0.5005441567332475,
+      "name": "scene_1647",
+      "noise_fraction": 0.16924230831185566,
+      "ours": 0.6382096865280761
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.8249196666436553,
+      "gap": 0.17422429335789458,
+      "mean_support": 0.5358145442033679,
+      "name": "scene_1697",
+      "noise_fraction": 0.09656634553108809,
+      "ours": 0.6506953732857608
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.886189319575839,
+      "gap": 0.1250174028724167,
+      "mean_support": 1.3054828447164948,
+      "name": "scene_1726",
+      "noise_fraction": 0.08152434358891752,
+      "ours": 0.7611719167034223
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.8132298252024563,
+      "gap": 0.1629854857297096,
+      "mean_support": 0.5224765423646908,
+      "name": "scene_1774",
+      "noise_fraction": 0.1053514618234536,
+      "ours": 0.6502443394727467
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9168759241155333,
+      "gap": 0.1270951881390059,
+      "mean_support": 2.5202812902706184,
+      "name": "scene_1783",
+      "noise_fraction": 0.16654518363402063,
+      "ours": 0.7897807359765274
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.8671780555994856,
+      "gap": 0.061095118908584545,
+      "mean_support": 1.4620132288981957,
+      "name": "scene_18",
+      "noise_fraction": 0.042029941204896906,
+      "ours": 0.806082936690901
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9490845053914101,
+      "gap": 0.17484420438135195,
+      "mean_support": 1.089271907216495,
+      "name": "scene_1851",
+      "noise_fraction": 0.08977629671391753,
+      "ours": 0.7742403010100581
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9490685058671089,
+      "gap": 0.15527232588192508,
+      "mean_support": 1.4009151498067012,
+      "name": "scene_1883",
+      "noise_fraction": 0.07405817090850515,
+      "ours": 0.7937961799851838
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9289146053022218,
+      "gap": 0.18816437393298924,
+      "mean_support": 0.879552593427835,
+      "name": "scene_1894",
+      "noise_fraction": 0.07808623952963918,
+      "ours": 0.7407502313692326
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.7889757752253442,
+      "gap": 0.17763063331467266,
+      "mean_support": 0.37306126644736837,
+      "name": "scene_1934",
+      "noise_fraction": 0.1437057976973684,
+      "ours": 0.6113451419106716
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.8756827026379381,
+      "gap": 0.22496049665416207,
+      "mean_support": 0.47841228505291006,
+      "name": "scene_1953",
+      "noise_fraction": 0.08181578621031746,
+      "ours": 0.6507222059837761
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.8292616964301645,
+      "gap": 0.17286726799559815,
+      "mean_support": 0.5530640294312169,
+      "name": "scene_1960",
+      "noise_fraction": 0.08590856481481482,
+      "ours": 0.6563944284345663
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.8878482982430548,
+      "gap": 0.18594658993058233,
+      "mean_support": 0.72050212880291,
+      "name": "scene_2004",
+      "noise_fraction": 0.04166356646825397,
+      "ours": 0.7019017083124724
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.7994671669936314,
+      "gap": 0.06098085328980296,
+      "mean_support": 1.0490815172697368,
+      "name": "scene_2046",
+      "noise_fraction": 0.10544459292763157,
+      "ours": 0.7384863137038284
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.854799162000961,
+      "gap": 0.02629720462134222,
+      "mean_support": 3.2119862874348963,
+      "name": "scene_205",
+      "noise_fraction": 0.18481852213541666,
+      "ours": 0.8285019573796187
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.8976385026592311,
+      "gap": 0.1886179748225174,
+      "mean_support": 0.7279989437181121,
+      "name": "scene_2092",
+      "noise_fraction": 0.08299685108418367,
+      "ours": 0.7090205278367137
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9259068081449902,
+      "gap": 0.24783702457974655,
+      "mean_support": 0.5394799933862435,
+      "name": "scene_2138",
+      "noise_fraction": 0.10059265459656085,
+      "ours": 0.6780697835652436
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9472073648506107,
+      "gap": 0.26257579326479585,
+      "mean_support": 0.5526337139423076,
+      "name": "scene_2154",
+      "noise_fraction": 0.10135717147435898,
+      "ours": 0.6846315715858149
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9050087917883245,
+      "gap": 0.18970197676658107,
+      "mean_support": 0.8448478618421055,
+      "name": "scene_2231",
+      "noise_fraction": 0.05328690378289474,
+      "ours": 0.7153068150217434
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.8657208425785639,
+      "gap": 0.21287072040117094,
+      "mean_support": 0.4972020709325397,
+      "name": "scene_2343",
+      "noise_fraction": 0.07260096312830688,
+      "ours": 0.6528501221773929
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.865914163928522,
+      "gap": 0.21661324141294314,
+      "mean_support": 0.476183452802835,
+      "name": "scene_246",
+      "noise_fraction": 0.11186926143685567,
+      "ours": 0.6493009225155789
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9691879368328181,
+      "gap": 0.07255443616468282,
+      "mean_support": 6.525137803819444,
+      "name": "scene_2474",
+      "noise_fraction": 0.10313747829861111,
+      "ours": 0.8966335006681353
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9745005814313804,
+      "gap": 0.07711691560744682,
+      "mean_support": 3.942382198309748,
+      "name": "scene_2486",
+      "noise_fraction": 0.17158817315251573,
+      "ours": 0.8973836658239336
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9407249426077755,
+      "gap": 0.12383866462658133,
+      "mean_support": 1.7484968991623713,
+      "name": "scene_2494",
+      "noise_fraction": 0.4965246456185567,
+      "ours": 0.8168862779811942
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9533307461690147,
+      "gap": 0.08355034410232853,
+      "mean_support": 4.364595342839806,
+      "name": "scene_2548",
+      "noise_fraction": 0.3149044296116505,
+      "ours": 0.8697804020666862
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9754178107530521,
+      "gap": 0.07236390136740456,
+      "mean_support": 3.0461883544921875,
+      "name": "scene_2576",
+      "noise_fraction": 0.5273050944010417,
+      "ours": 0.9030539093856476
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9740254738645008,
+      "gap": 0.06576709884383536,
+      "mean_support": 4.792570153061225,
+      "name": "scene_2581",
+      "noise_fraction": 0.1697777157738095,
+      "ours": 0.9082583750206654
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.8812185196993995,
+      "gap": 0.1575155491462511,
+      "mean_support": 2.066751963569519,
+      "name": "scene_2661",
+      "noise_fraction": 0.3578937061330214,
+      "ours": 0.7237029705531484
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.8409759382153176,
+      "gap": 0.04549223083973308,
+      "mean_support": 2.334397685021246,
+      "name": "scene_2662",
+      "noise_fraction": 0.14803553248937676,
+      "ours": 0.7954837073755845
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.7730694716202848,
+      "gap": 0.1653619515311584,
+      "mean_support": 0.5156596441195372,
+      "name": "scene_2663",
+      "noise_fraction": 0.38531666733611825,
+      "ours": 0.6077075200891264
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.8247274533737639,
+      "gap": 0.11817199443918358,
+      "mean_support": 1.1492075278881417,
+      "name": "scene_2665",
+      "noise_fraction": 0.3069073292328851,
+      "ours": 0.7065554589345803
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.8320278235232486,
+      "gap": 0.1804152400602842,
+      "mean_support": 0.5389800477170659,
+      "name": "scene_2666",
+      "noise_fraction": 0.27513215755988024,
+      "ours": 0.6516125834629644
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.8027962173275294,
+      "gap": 0.17171601480262755,
+      "mean_support": 1.0183206676136363,
+      "name": "scene_2667",
+      "noise_fraction": 0.31903835227272725,
+      "ours": 0.6310802025249018
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9233201293658502,
+      "gap": 0.20305892661819502,
+      "mean_support": 0.7945282297036081,
+      "name": "scene_283",
+      "noise_fraction": 0.11150581910438144,
+      "ours": 0.7202612027476551
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9053026464334794,
+      "gap": 0.20273831423746214,
+      "mean_support": 0.7376111778846154,
+      "name": "scene_292",
+      "noise_fraction": 0.19571814903846155,
+      "ours": 0.7025643321960172
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9629343043847636,
+      "gap": 0.061124894240395244,
+      "mean_support": 5.003129530444588,
+      "name": "scene_321",
+      "noise_fraction": 0.13233730670103092,
+      "ours": 0.9018094101443683
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9055587865267093,
+      "gap": 0.1017318985141843,
+      "mean_support": 2.513707965353261,
+      "name": "scene_403",
+      "noise_fraction": 0.11389584748641304,
+      "ours": 0.803826888012525
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9473839275713216,
+      "gap": 0.11518571041335712,
+      "mean_support": 2.9705249542885643,
+      "name": "scene_424",
+      "noise_fraction": 0.1158182347074468,
+      "ours": 0.8321982171579645
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9673355989098743,
+      "gap": 0.0715493571045861,
+      "mean_support": 5.574552951388889,
+      "name": "scene_667",
+      "noise_fraction": 0.08185872395833334,
+      "ours": 0.8957862418052882
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9468103788668853,
+      "gap": 0.09207085719636199,
+      "mean_support": 3.8243485462816458,
+      "name": "scene_676",
+      "noise_fraction": 0.12165867286392405,
+      "ours": 0.8547395216705234
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9413447257751069,
+      "gap": 0.07227337153524416,
+      "mean_support": 4.748707932692308,
+      "name": "scene_685",
+      "noise_fraction": 0.17119422325721154,
+      "ours": 0.8690713542398627
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9413188615849686,
+      "gap": 0.09558325016631863,
+      "mean_support": 3.357854352678571,
+      "name": "scene_694",
+      "noise_fraction": 0.1613948899872449,
+      "ours": 0.84573561141865
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9401806641217968,
+      "gap": 0.07145888275316126,
+      "mean_support": 3.7657582720588247,
+      "name": "scene_698",
+      "noise_fraction": 0.1555951286764706,
+      "ours": 0.8687217813686355
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.952288445835279,
+      "gap": 0.06462442555709358,
+      "mean_support": 5.830357530381944,
+      "name": "scene_711",
+      "noise_fraction": 0.1512523509837963,
+      "ours": 0.8876640202781855
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9533654371555219,
+      "gap": 0.05894743875822295,
+      "mean_support": 7.402469308035713,
+      "name": "scene_719",
+      "noise_fraction": 0.15968952922077922,
+      "ours": 0.894417998397299
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.9092373498802696,
+      "gap": 0.04937822747218579,
+      "mean_support": 2.4083875868055555,
+      "name": "scene_73",
+      "noise_fraction": 0.11771556712962963,
+      "ours": 0.8598591224080838
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.864104261595171,
+      "gap": 0.15374485121729609,
+      "mean_support": 0.7154160961662371,
+      "name": "scene_839",
+      "noise_fraction": 0.06483972293814433,
+      "ours": 0.7103594103778749
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.8795309568665667,
+      "gap": 0.1642109070516865,
+      "mean_support": 0.7550866825064433,
+      "name": "scene_923",
+      "noise_fraction": 0.036241039787371136,
+      "ours": 0.7153200498148802
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.8968944209436476,
+      "gap": 0.16183828280020573,
+      "mean_support": 0.977942775451031,
+      "name": "scene_950",
+      "noise_fraction": 0.04387886597938144,
+      "ours": 0.7350561381434418
+    },
+    {
+      "benchmark": "LED",
+      "ebf": 0.8544796588212284,
+      "gap": 0.1743201694322909,
+      "mean_support": 0.5837135550902062,
+      "name": "scene_965",
+      "noise_fraction": 0.0797876731636598,
+      "ours": 0.6801594893889376
+    },
+    {
+      "benchmark": "BUAA_Campus",
+      "ebf": 0.8871018394467011,
+      "gap": 0.021734813464029057,
+      "mean_support": 6.715465806934931,
+      "name": "campus1_1Hz",
+      "noise_fraction": 0.045420666666666665,
+      "ours": 0.865367025982672
+    },
+    {
+      "benchmark": "BUAA_Campus",
+      "ebf": 0.8852668058890887,
+      "gap": 0.0266354778429434,
+      "mean_support": 6.003425995291096,
+      "name": "campus1_3Hz",
+      "noise_fraction": 0.119587,
+      "ours": 0.8586313280461453
+    },
+    {
+      "benchmark": "BUAA_Campus",
+      "ebf": 0.8853604157646601,
+      "gap": 0.0321046590944426,
+      "mean_support": 5.519399815389555,
+      "name": "campus1_5Hz",
+      "noise_fraction": 0.181195,
+      "ours": 0.8532557566702175
+    },
+    {
+      "benchmark": "BUAA_Campus",
+      "ebf": 0.8672989143506618,
+      "gap": 0.0004388733586196958,
+      "mean_support": 5.7630227284888695,
+      "name": "campus2_1Hz",
+      "noise_fraction": 0.042312666666666665,
+      "ours": 0.8668600409920421
+    },
+    {
+      "benchmark": "BUAA_Campus",
+      "ebf": 0.8667097873032297,
+      "gap": 0.007601635981259847,
+      "mean_support": 5.1204228649400685,
+      "name": "campus2_3Hz",
+      "noise_fraction": 0.120013,
+      "ours": 0.8591081513219698
+    },
+    {
+      "benchmark": "BUAA_Campus",
+      "ebf": 0.8666386440985684,
+      "gap": 0.014953469607780212,
+      "mean_support": 4.589682215860445,
+      "name": "campus2_5Hz",
+      "noise_fraction": 0.18864733333333333,
+      "ours": 0.8516851744907882
+    }
+  ],
+  "wall_seconds": 0.009580628015100956
+}

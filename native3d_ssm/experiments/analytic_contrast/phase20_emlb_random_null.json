@@ -1,0 +1,82 @@
+{
+  "phase": "20 random-subsampling null on E-MLB, Phase 10 units",
+  "purpose": "separate 'the score discriminates' from 'MESR rewards discarding' for the Table 2 row, which is measured at the same fixed retention",
+  "null": "seeded uniform per-event ranking, reseeded per recording; removes signal and noise in the proportion they occur",
+  "retention": "fixed r = 0.28, matching the Table 2 row",
+  "metric": "MESR = mean ESR over 30,000-event slices (same mesr() as Phase 5/10)",
+  "settings": {
+    "max_events_per_sequence": 0,
+    "reps": [
+      1,
+      2,
+      3
+    ],
+    "slice": 30000,
+    "block": 10240,
+    "seed": 20260726
+  },
+  "results": {
+    "D-END": {
+      "ND00": {
+        "sequences": 144,
+        "raw_mesr": 0.8208399845380558,
+        "random_null_fixed_mesr": 0.7485227922571551,
+        "delta_over_raw": -0.07231719228090072,
+        "paper_raw": 0.821
+      },
+      "ND04": {
+        "sequences": 144,
+        "raw_mesr": 0.824378356951288,
+        "random_null_fixed_mesr": 0.7576382011010995,
+        "delta_over_raw": -0.06674015585018855,
+        "paper_raw": 0.824
+      },
+      "ND16": {
+        "sequences": 144,
+        "raw_mesr": 0.8155549504292987,
+        "random_null_fixed_mesr": 0.7515914956570339,
+        "delta_over_raw": -0.06396345477226484,
+        "paper_raw": 0.815
+      },
+      "ND64": {
+        "sequences": 144,
+        "raw_mesr": 0.7876095239838672,
+        "random_null_fixed_mesr": 0.738517918020186,
+        "delta_over_raw": -0.04909160596368123,
+        "paper_raw": 0.786
+      }
+    },
+    "N-END": {
+      "ND00": {
+        "sequences": 144,
+        "raw_mesr": 0.8916544613222285,
+        "random_null_fixed_mesr": 0.8375144501287772,
+        "delta_over_raw": -0.05414001119345124,
+        "paper_raw": 0.89
+      },
+      "ND04": {
+        "sequences": 144,
+        "raw_mesr": 0.8244670685155211,
+        "random_null_fixed_mesr": 0.7835289299009891,
+        "delta_over_raw": -0.040938138614531994,
+        "paper_raw": 0.824
+      },
+      "ND16": {
+        "sequences": 144,
+        "raw_mesr": 0.786015637190598,
+        "random_null_fixed_mesr": 0.7468714683892242,
+        "delta_over_raw": -0.039144168801373724,
+        "paper_raw": 0.786
+      },
+      "ND64": {
+        "sequences": 144,
+        "raw_mesr": 0.7671173614382237,
+        "random_null_fixed_mesr": 0.731173869921049,
+        "delta_over_raw": -0.035943491517174686,
+        "paper_raw": 0.768
+      }
+    }
+  },
+  "timestamp_repairs": 1,
+  "wall_seconds": 409.2315736009914
+}

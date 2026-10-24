@@ -1,0 +1,110 @@
+{
+  "retrieved_utc": "2026-10-22T14:31:23Z",
+  "files": [
+    {
+      "sequence": "thun_00_a",
+      "name": "events_left.zip",
+      "url": "https://download.ifi.uzh.ch/rpg/DSEC/train/thun_00_a/thun_00_a_events_left.zip",
+      "bytes": 298970058,
+      "sha256": "63ed84769edb576cad8e99d9ba5234a597b00eaa8513ccc82f253c1de56780f0"
+    },
+    {
+      "sequence": "thun_00_a",
+      "name": "optical_flow_forward_event.zip",
+      "url": "https://download.ifi.uzh.ch/rpg/DSEC/train/thun_00_a/thun_00_a_optical_flow_forward_event.zip",
+      "bytes": 11763206,
+      "sha256": "0a18cf8dde08282efa0470c15a753f847775f3978dc17bacda7e1c9e7e48177b"
+    },
+    {
+      "sequence": "thun_00_a",
+      "name": "optical_flow_forward_timestamps.txt",
+      "url": "https://download.ifi.uzh.ch/rpg/DSEC/train/thun_00_a/thun_00_a_optical_flow_forward_timestamps.txt",
+      "bytes": 1062,
+      "sha256": "27505c9e88e4245d5c52ef625cb57d983760b4af9291b687dac94f6a15852608"
+    },
+    {
+      "sequence": "thun_00_a",
+      "name": "calibration.zip",
+      "url": "https://download.ifi.uzh.ch/rpg/DSEC/train/thun_00_a/thun_00_a_calibration.zip",
+      "bytes": 2218,
+      "sha256": "3ceade305bbbfe3e6d4737993a51e92a0016aa7c332edbb5fdc4e332aa24ba73"
+    },
+    {
+      "sequence": "thun_00_a",
+      "name": "image_timestamps.txt",
+      "url": "https://download.ifi.uzh.ch/rpg/DSEC/train/thun_00_a/thun_00_a_image_timestamps.txt",
+      "bytes": 2868,
+      "sha256": "47bab24137108f95005d00a1905d5dcb7c5328b01cf011d2128cb2be74bcd120"
+    },
+    {
+      "sequence": "zurich_city_02_a",
+      "name": "events_left.zip",
+      "url": "https://download.ifi.uzh.ch/rpg/DSEC/train/zurich_city_02_a/zurich_city_02_a_events_left.zip",
+      "bytes": 356855810,
+      "sha256": "d91e233d2f87ffc624213038e9d243f34d9d1036932bc8b8c759b5a223461bfa"
+    },
+    {
+      "sequence": "zurich_city_02_a",
+      "name": "optical_flow_forward_event.zip",
+      "url": "https://download.ifi.uzh.ch/rpg/DSEC/train/zurich_city_02_a/zurich_city_02_a_optical_flow_forward_event.zip",
+      "bytes": 16900357,
+      "sha256": "fa5c90019cf16fb7d5d26c1b8406afb6d81c3141d235697b2f109fb82fd56918"
+    },
+    {
+      "sequence": "zurich_city_02_a",
+      "name": "optical_flow_forward_timestamps.txt",
+      "url": "https://download.ifi.uzh.ch/rpg/DSEC/train/zurich_city_02_a/zurich_city_02_a_optical_flow_forward_timestamps.txt",
+      "bytes": 1637,
+      "sha256": "ddb02829d3aa6fc2e78c0aad1ca82c1c19bc030f8e5778fd5662f56549a32aff"
+    },
+    {
+      "sequence": "zurich_city_02_a",
+      "name": "calibration.zip",
+      "url": "https://download.ifi.uzh.ch/rpg/DSEC/train/zurich_city_02_a/zurich_city_02_a_calibration.zip",
+      "bytes": 2232,
+      "sha256": "46be592e870f46219687c27edbb87ceb6f74e0309c1f8529777e376030fc4895"
+    },
+    {
+      "sequence": "zurich_city_02_a",
+      "name": "image_timestamps.txt",
+      "url": "https://download.ifi.uzh.ch/rpg/DSEC/train/zurich_city_02_a/zurich_city_02_a_image_timestamps.txt",
+      "bytes": 2820,
+      "sha256": "30ee4fc57a3eda86bbf460229376dd1514dff819ae4a133ab2ccbbb607059671"
+    },
+    {
+      "sequence": "zurich_city_11_a",
+      "name": "events_left.zip",
+      "url": "https://download.ifi.uzh.ch/rpg/DSEC/train/zurich_city_11_a/zurich_city_11_a_events_left.zip",
+      "bytes": 335996306,
+      "sha256": "6fc8b61dff235a734517a974dc41f23cfc51f1f777e387edbc4aaa87a461b16f"
+    },
+    {
+      "sequence": "zurich_city_11_a",
+      "name": "optical_flow_forward_event.zip",
+      "url": "https://download.ifi.uzh.ch/rpg/DSEC/train/zurich_city_11_a/zurich_city_11_a_optical_flow_forward_event.zip",
+      "bytes": 69266172,
+      "sha256": "aeb847b5552a5ed66759d2a88f70dde27c29a4f76994648c1036409de2b49d98"
+    },
+    {
+      "sequence": "zurich_city_11_a",
+      "name": "optical_flow_forward_timestamps.txt",
+      "url": "https://download.ifi.uzh.ch/rpg/DSEC/train/zurich_city_11_a/zurich_city_11_a_optical_flow_forward_timestamps.txt",
+      "bytes": 5812,
+      "sha256": "e202718c537e7f1f517a078a96f5da4b3e508e0a9127772310419a1136890f7b"
+    },
+    {
+      "sequence": "zurich_city_11_a",
+      "name": "calibration.zip",
+      "url": "https://download.ifi.uzh.ch/rpg/DSEC/train/zurich_city_11_a/zurich_city_11_a_calibration.zip",
+      "bytes": 2224,
+      "sha256": "259f4857e7237ad5089da960b6dabd0a7a7abb1d60b92b28a713aa7ab787edd7"
+    },
+    {
+      "sequence": "zurich_city_11_a",
+      "name": "image_timestamps.txt",
+      "url": "https://download.ifi.uzh.ch/rpg/DSEC/train/zurich_city_11_a/zurich_city_11_a_image_timestamps.txt",
+      "bytes": 5580,
+      "sha256": "275f25f419fada580ca411ddcfed8d244451fbcccc19ff8ca626488021be1eb9"
+    }
+  ]
+}

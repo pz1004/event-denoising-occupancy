@@ -1,0 +1,140 @@
+{
+  "environment": {
+    "gpu": "NVIDIA GeForce GTX 1660 SUPER",
+    "python": "3.10.20",
+    "torch": "2.2.1+cu118",
+    "torch_cuda": "11.8"
+  },
+  "model": {
+    "checkpoint": "EDformer/pretrained_model.pth",
+    "strict_load": true,
+    "tensors": 118,
+    "trainable_parameters": 583973
+  },
+  "paper_reference": {
+    "edformer": {
+      "D-END": {
+        "ND00": 0.952,
+        "ND04": 0.955,
+        "ND16": 0.956,
+        "ND64": 0.942
+      },
+      "N-END": {
+        "ND00": 1.048,
+        "ND04": 1.019,
+        "ND16": 1.076,
+        "ND64": 1.099
+      }
+    },
+    "raw": {
+      "D-END": {
+        "ND00": 0.821,
+        "ND04": 0.824,
+        "ND16": 0.815,
+        "ND64": 0.786
+      },
+      "N-END": {
+        "ND00": 0.89,
+        "ND04": 0.824,
+        "ND16": 0.786,
+        "ND64": 0.768
+      }
+    }
+  },
+  "protocol": {
+    "batch_blocks": 1,
+    "coordinates": "raw pixel x,y passed unnormalised (matches dataset.py training convention)",
+    "max_events_per_sequence": 0,
+    "metric": "metrics.EventStructuralRatio.evalEventStorePerNumber, 30,000-event slices",
+    "noise_threshold": 0.005,
+    "reps": [
+      1
+    ],
+    "retention_rule": "keep iff sigmoid(f) < 0.005 (as released, not 0.5)",
+    "seed": 230086,
+    "seq_len": 4096,
+    "timestamp_normalisation": "min-max over the whole recording, before blocking (as released)"
+  },
+  "reader_repairs": 0,
+  "released_path": "EDformer/eval_mesr.py is complete and runnable; model.py and metrics.py are imported unmodified. Only the aggregation (by ND level) and a Raw row are added.",
+  "results": {
+    "D-END": {
+      "ND00": {
+        "edformer_mesr": 0.9520324576641584,
+        "mean_retention": 0.4832529999272099,
+        "paper_edformer": 0.952,
+        "paper_raw": 0.821,
+        "raw_mesr": 0.8244916192280707,
+        "sequences": 48,
+        "std_retention": 0.3435221063435337
+      },
+      "ND04": {
+        "edformer_mesr": 0.9513341608725797,
+        "mean_retention": 0.4436677510865643,
+        "paper_edformer": 0.955,
+        "paper_raw": 0.824,
+        "raw_mesr": 0.8223869696155403,
+        "sequences": 48,
+        "std_retention": 0.3504761691333368
+      },
+      "ND16": {
+        "edformer_mesr": 0.9364504898492988,
+        "mean_retention": 0.398031794687264,
+        "paper_edformer": 0.956,
+        "paper_raw": 0.815,
+        "raw_mesr": 0.8186495615830737,
+        "sequences": 48,
+        "std_retention": 0.3408686681900811
+      },
+      "ND64": {
+        "edformer_mesr": 0.9350158648685823,
+        "mean_retention": 0.3005655692951436,
+        "paper_edformer": 0.942,
+        "paper_raw": 0.786,
+        "raw_mesr": 0.7872047169465612,
+        "sequences": 48,
+        "std_retention": 0.32340585440163305
+      }
+    },
+    "N-END": {
+      "ND00": {
+        "edformer_mesr": 1.0362627862529636,
+        "mean_retention": 0.3595606753013402,
+        "paper_edformer": 1.048,
+        "paper_raw": 0.89,
+        "raw_mesr": 0.8923000918002689,
+        "sequences": 48,
+        "std_retention": 0.2963675171852288
+      },
+      "ND04": {
+        "edformer_mesr": 1.0591558101925767,
+        "mean_retention": 0.23630442802149423,
+        "paper_edformer": 1.019,
+        "paper_raw": 0.824,
+        "raw_mesr": 0.8301966390775609,
+        "sequences": 48,
+        "std_retention": 0.25075287445139405
+      },
+      "ND16": {
+        "edformer_mesr": 1.1015086064416286,
+        "mean_retention": 0.1501774700242384,
+        "paper_edformer": 1.076,
+        "paper_raw": 0.786,
+        "raw_mesr": 0.7902069172755827,
+        "sequences": 48,
+        "std_retention": 0.16846879590598934
+      },
+      "ND64": {
+        "edformer_mesr": 1.083437000444596,
+        "mean_retention": 0.08105662703745477,
+        "paper_edformer": 1.099,
+        "paper_raw": 0.768,
+        "raw_mesr": 0.7646365179384128,
+        "sequences": 48,
+        "std_retention": 0.09311515451247934
+      }
+    }
+  },
+  "wall_seconds": 22546.156985107926,
+  "what": "EDformer (ECCV 2024) official checkpoint on E-MLB, MESR via its own vendored cuke-emlb metric"
+}

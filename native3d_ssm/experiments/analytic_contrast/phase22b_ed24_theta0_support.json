@@ -1,0 +1,71 @@
+{
+  "audit": {
+    "DND21_deviation_vs_phase19": -1.5171254143853119e-05,
+    "DVSCLEAN_deviation_vs_phase19": -1.7524255365608532e-05,
+    "note": "theta = 0 here is the adopted filter, so these must match Phase 19's log_support|gated condition means."
+  },
+  "blind_transfer": {
+    "DND21": {
+      "beta0_ring_only": 0.9548538918428658,
+      "beta1_contrast": 0.9927431577714294,
+      "gate_theta0_theory": 0.9916848287458562,
+      "gate_theta_ED24_upper_edge": 0.9906782291591643
+    },
+    "DVSCLEAN": {
+      "beta0_ring_only": 0.9706420509966026,
+      "beta1_contrast": 0.9544412930561433,
+      "gate_theta0_theory": 0.9705824757446344,
+      "gate_theta_ED24_upper_edge": 0.9706714367366882
+    },
+    "cost_of_theta0_vs_fitted": 0.00045881929731905746,
+    "overall_theta0": 0.9811336522452453,
+    "overall_theta_ED24_upper_edge": 0.9806748329479262
+  },
+  "ed24": {
+    "best_fitted_gated_auc": 0.9535902434117546,
+    "cost_of_theta0_vs_fitted": -0.0001968758330230802,
+    "endpoints": {
+      "beta0_ring_only": 0.9535902434117546,
+      "beta1_contrast": 0.9074814974059171
+    },
+    "gate_theta0_on_ed24": 0.9533933675787315,
+    "plateau_width": 0.37,
+    "theta0_inside_plateau": false,
+    "theta_plateau": [
+      -0.4,
+      -0.03
+    ]
+  },
+  "frac_blocks_corr_negative": 0.007621951219512195,
+  "gate_key": "corr(G, R_same) at radius 1 -- unchanged from Phase 4",
+  "levels": [
+    "0.1",
+    "0.3",
+    "0.5",
+    "1.0",
+    "2.0",
+    "4.0"
+  ],
+  "max_blocks_per_condition": 8,
+  "phase": "22b theta = 0 on ED24 under the adopted radius-2 support score",
+  "scenes": [
+    "Bicycle_01",
+    "Car_04",
+    "Car_10",
+    "Drop_03",
+    "Headset_01",
+    "House_05",
+    "Knife_03",
+    "Monitor_01",
+    "Pedestrain_03",
+    "Pedestrain_09",
+    "PingPong_02",
+    "Roll_04",
+    "Sign_02",
+    "Stairs_01",
+    "Throw_05",
+    "Tree_03"
+  ],
+  "score": "s = beta*G - log(1 + S_r2)",
+  "wall_seconds": 75.88545864401385
+}
