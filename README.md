@@ -118,7 +118,23 @@ The download/prepare stages write external input caches, not shipped result arti
 
 ## Citation
 
-The associated manuscript is being prepared for IEEE Transactions on Circuits and Systems for Video Technology; this repository does not assert acceptance or publication. Until bibliographic metadata is finalized, cite the repository title, URL and the exact commit or release used. Cite the original datasets and baseline methods when using their data or results; [DATA.md](DATA.md) and [reproduction/UPSTREAM.md](reproduction/UPSTREAM.md) identify those sources.
+If you use this work, please cite the manuscript:
+
+S. Jang and K. Han, “Occupancy versus Multiplicity in Training-Free Event Denoising: Representation, Horizon, and Application Cost,” manuscript prepared for submission to *IEEE Transactions on Circuits and Systems for Video Technology*, 2026.
+
+```bibtex
+@unpublished{jang2026occupancy,
+  author = {Jang, Sooyoung and Han, Kyuseung},
+  title = {{Occupancy versus Multiplicity in Training-Free Event Denoising:
+            Representation, Horizon, and Application Cost}},
+  year = {2026},
+  note = {Manuscript prepared for submission to IEEE Transactions on
+          Circuits and Systems for Video Technology},
+  url = {https://github.com/pz1004/event-denoising-occupancy}
+}
+```
+
+For reproducible use of the implementation, also record the repository commit or release used. Cite the original datasets and baseline methods when using their data or results; [DATA.md](DATA.md) and [reproduction/UPSTREAM.md](reproduction/UPSTREAM.md) identify those sources.
 
 ## License
 
